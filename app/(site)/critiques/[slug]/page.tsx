@@ -27,7 +27,9 @@ export default function CritiquePage({ params }: CritiquePageProps) {
       <Card>
         <CardHeader className="space-y-4">
           <div>
-            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Critique dossier</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">
+              Critique dossier
+            </p>
             <CardTitle className="mt-2 text-4xl">{critique.title}</CardTitle>
             <p className="text-[var(--text-secondary)]">Response to “{critique.targetTitle}”</p>
           </div>

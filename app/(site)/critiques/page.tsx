@@ -7,7 +7,8 @@ import { getCritiques } from '@/lib/content';
 
 export const metadata: Metadata = {
   title: 'Critiques & Responses - Elden Ring Is The Large Glass',
-  description: 'Detailed analyses and responses to existing Elden Ring scholarship through the lens of the Duchamp discovery',
+  description:
+    'Detailed analyses and responses to existing Elden Ring scholarship through the lens of the Duchamp discovery',
 };
 
 export default function CritiquesPage() {
@@ -18,13 +19,14 @@ export default function CritiquesPage() {
       {/* Hero Section */}
       <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-8 lg:p-12">
         <div className="max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)] mb-4">Critical Analysis</p>
-          <h1 className="page-hero-title">
-            Critiques & Responses
-          </h1>
+          <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)] mb-4">
+            Critical Analysis
+          </p>
+          <h1 className="page-hero-title">Critiques & Responses</h1>
           <p className="page-hero-description leading-relaxed">
-            This section addresses existing Elden Ring scholarship and community theories. Each critique demonstrates
-            how the Duchamp framework recontextualizes and often resolves apparent contradictions in the lore.
+            This section addresses existing Elden Ring scholarship and community theories. Each
+            critique demonstrates how the Duchamp framework recontextualizes and often resolves
+            apparent contradictions in the lore.
           </p>
         </div>
       </section>
@@ -38,8 +40,8 @@ export default function CritiquesPage() {
           <CardContent className="space-y-3 text-sm text-[var(--text-secondary)]">
             <p>
               The Elden Ring community has produced brilliant analyses, but most approach the game
-              through traditional fantasy or mythological lenses. These miss the fundamental artistic
-              framework FromSoftware employed.
+              through traditional fantasy or mythological lenses. These miss the fundamental
+              artistic framework FromSoftware employed.
             </p>
             <p>
               By understanding Elden Ring as The Large Glass, apparent contradictions resolve into
@@ -53,9 +55,7 @@ export default function CritiquesPage() {
             <CardTitle className="text-lg">Methodology</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm text-[var(--text-secondary)]">
-            <p>
-              Each critique follows a structured approach:
-            </p>
+            <p>Each critique follows a structured approach:</p>
             <ul className="space-y-1 ml-4">
               <li>• Summarize the original interpretation</li>
               <li>• Identify points of agreement</li>
@@ -76,18 +76,25 @@ export default function CritiquesPage() {
         {critiques.length > 0 ? (
           <div className="grid gap-6">
             {critiques.map((critique) => (
-              <Card key={critique.slug} className="group hover:shadow-lg transition-all duration-300">
+              <Card
+                key={critique.slug}
+                className="group hover:shadow-lg transition-all duration-300"
+              >
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <CardTitle className="text-xl group-hover:text-[var(--accent-gold)] transition-colors">
-                        <Link href={`/critiques/${critique.slug}`} className="inline-flex items-center gap-2">
+                        <Link
+                          href={`/critiques/${critique.slug}`}
+                          className="inline-flex items-center gap-2"
+                        >
                           {critique.title}
                           <ArrowRight className="h-4 w-4 opacity-0 -ml-1 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                         </Link>
                       </CardTitle>
                       <CardDescription className="mt-2">
-                        Response to: <span className="text-[var(--text-primary)]">{critique.targetTitle}</span>
+                        Response to:{' '}
+                        <span className="text-[var(--text-primary)]">{critique.targetTitle}</span>
                       </CardDescription>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-[var(--text-tertiary)]">
@@ -97,9 +104,7 @@ export default function CritiquesPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-[var(--text-secondary)] mb-4">
-                    {critique.summary}
-                  </p>
+                  <p className="text-sm text-[var(--text-secondary)] mb-4">{critique.summary}</p>
                   <div className="flex flex-wrap gap-3">
                     <Button asChild size="sm">
                       <Link href={`/critiques/${critique.slug}`}>
@@ -156,7 +161,6 @@ export default function CritiquesPage() {
           </li>
         </ul>
       </section>
-
     </div>
   );
 }

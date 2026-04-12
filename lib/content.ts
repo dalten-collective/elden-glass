@@ -103,9 +103,7 @@ export function getMasterListDocument(): MasterListDoc {
 export function getBachelorMachinesCatalog(): VocabDoc {
   const doc = allVocabDocs.find((d) => d.slug === 'bachelor-machines');
   if (!doc) {
-    throw new Error(
-      'Bachelor machine catalog is missing. Add content/vocab/bachelor-machines.mdx',
-    );
+    throw new Error('Bachelor machine catalog is missing. Add content/vocab/bachelor-machines.mdx');
   }
   return doc;
 }
@@ -120,9 +118,7 @@ export function getBachelorMachinesCatalog(): VocabDoc {
 export function getPataphysicsVocabulary(): VocabDoc {
   const doc = allVocabDocs.find((d) => d.slug === 'pataphysics');
   if (!doc) {
-    throw new Error(
-      "'Pataphysics Vocabulary is missing. Add content/vocab/pataphysics.mdx",
-    );
+    throw new Error("'Pataphysics Vocabulary is missing. Add content/vocab/pataphysics.mdx");
   }
   return doc;
 }
@@ -130,7 +126,9 @@ export function getPataphysicsVocabulary(): VocabDoc {
 export function getCritiques(): Array<Critique & { readingMinutes: number }> {
   return allCritiques
     .slice()
-    .sort((a: Critique, b: Critique) => new Date(b.updated).getTime() - new Date(a.updated).getTime())
+    .sort(
+      (a: Critique, b: Critique) => new Date(b.updated).getTime() - new Date(a.updated).getTime()
+    )
     .map((critique) => withReadingTime(critique));
 }
 

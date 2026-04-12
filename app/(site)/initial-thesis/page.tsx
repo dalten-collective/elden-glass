@@ -11,7 +11,8 @@ import { getInitialThesisDocument } from '@/lib/content';
 
 export const metadata: Metadata = {
   title: 'The Initial Thesis - Elden Ring Is The Large Glass',
-  description: 'The first written statement of the discovery, sent as an email in July 2025 and later sealed on Ethereum via EAS attestation.',
+  description:
+    'The first written statement of the discovery, sent as an email in July 2025 and later sealed on Ethereum via EAS attestation.',
 };
 
 export default function InitialThesisPage() {
@@ -25,7 +26,9 @@ export default function InitialThesisPage() {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-4">
               <Lock className="h-4 w-4 text-[var(--accent-gold)]" />
-              <p className="text-sm uppercase tracking-[0.35em] text-[var(--accent-gold)]">The Initial Thesis</p>
+              <p className="text-sm uppercase tracking-[0.35em] text-[var(--accent-gold)]">
+                The Initial Thesis
+              </p>
             </div>
             <h1 className="page-hero-title">{doc.title}</h1>
             {doc.subtitle && <p className="mt-4 page-hero-description">{doc.subtitle}</p>}
@@ -39,7 +42,11 @@ export default function InitialThesisPage() {
         </div>
         <HeroMeta
           items={[
-            { label: 'Sealed', value: doc.sealedDate ?? new Date(doc.updated).toLocaleDateString(), icon: CalendarDays },
+            {
+              label: 'Sealed',
+              value: doc.sealedDate ?? new Date(doc.updated).toLocaleDateString(),
+              icon: CalendarDays,
+            },
             { label: 'Reading Time', value: `${doc.readingMinutes || 9} min`, icon: Clock },
             { label: 'Status', value: 'Attested on Ethereum', icon: ShieldCheck },
           ]}
@@ -70,18 +77,16 @@ export default function InitialThesisPage() {
         <div className="flex flex-wrap gap-4 justify-between items-center">
           <div>
             <p className="text-sm text-[var(--text-tertiary)] mb-2">Continue reading</p>
-            <p className="text-[var(--text-secondary)]">The manuscript is the origin. Everything since is an elaboration of the claim it made.</p>
+            <p className="text-[var(--text-secondary)]">
+              The manuscript is the origin. Everything since is an elaboration of the claim it made.
+            </p>
           </div>
           <div className="flex gap-3">
             <Button asChild variant="outline">
-              <Link href="/tldr">
-                TL;DR
-              </Link>
+              <Link href="/tldr">TL;DR</Link>
             </Button>
             <Button asChild>
-              <Link href="/living-thesis">
-                The Living Thesis →
-              </Link>
+              <Link href="/living-thesis">The Living Thesis →</Link>
             </Button>
           </div>
         </div>

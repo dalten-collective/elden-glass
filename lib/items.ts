@@ -50,7 +50,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
     category: 'key-items',
     summary: 'Great Rune of Malenia, Blade of Miquella.',
     description:
-      'A Great Rune of the shardbearer Malenia. The blessing of this half-rotted rune reduces the healing power of Flask of Crimson Tears. And yet, due to the infusion of Malenia\'s spirit of resistance, attacks made immediately after receiving damage will partially recover HP.',
+      "A Great Rune of the shardbearer Malenia. The blessing of this half-rotted rune reduces the healing power of Flask of Crimson Tears. And yet, due to the infusion of Malenia's spirit of resistance, attacks made immediately after receiving damage will partially recover HP.",
     icon: '/images/items/malenias-great-rune.png',
     isGreatRune: true,
     relatedTo: ['chocolate-grinder', 'rollers'],
@@ -81,7 +81,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
     id: 7,
     name: "Mohg's Great Rune",
     category: 'key-items',
-    summary: "Great Rune of Mohg, Lord of Blood.",
+    summary: 'Great Rune of Mohg, Lord of Blood.',
     description:
       "A Great Rune of the shardbearer Mohg. Its blessing grants a blessing of blood to summoned phantoms, and imparts a phantom Great Rune upon successful invasion. Mohg and Morgott are twin brothers, and their Great Runes are naturally similar. However, Mohg's rune is soaked in accursed blood, from his devout love for the wretched mire that he was born into far below the earth.",
     icon: '/images/items/mohgs-great-rune.png',
@@ -91,7 +91,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
     id: 8,
     name: 'Great Rune of the Unborn',
     category: 'key-items',
-    summary: "Amber egg clutched by Rennala, Queen of the Full Moon.",
+    summary: 'Amber egg clutched by Rennala, Queen of the Full Moon.',
     description:
       'Amber egg clutched by Rennala, Queen of the Full Moon. Great Rune of unborn demigods. Perfects those who have been born anew.',
     icon: '/images/items/great-rune-of-the-unborn.png',
@@ -103,7 +103,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
     category: 'key-items',
     summary: 'Great Rune relinquished by Miquella.',
     description:
-      "A Great Rune relinquished by Miquella. Broken and bereft of its bounty, it retains naught but the power to resist charms. Miquella abandoned everything—including her golden form, strength, and fate—to reach the tower shrouded in shadow, attempting to bury original sin and be reborn as a new deity.",
+      'A Great Rune relinquished by Miquella. Broken and bereft of its bounty, it retains naught but the power to resist charms. Miquella abandoned everything—including her golden form, strength, and fate—to reach the tower shrouded in shadow, attempting to bury original sin and be reborn as a new deity.',
     icon: '/images/items/miquellas-great-rune.png',
     isGreatRune: true,
   },
@@ -230,7 +230,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
     category: 'remembrances',
     summary: 'Remembrance of Morgott, the Omen King.',
     description:
-      'Though born one of the graceless Omen, Morgott took it upon himself to become the Erdtree\'s protector. He loved not in return, for he was never loved. But nevertheless love it he did.',
+      "Though born one of the graceless Omen, Morgott took it upon himself to become the Erdtree's protector. He loved not in return, for he was never loved. But nevertheless love it he did.",
     icon: '/images/items/remembrance-of-the-omen-king.png',
   },
   'remembrance-of-the-blood-lord': {
@@ -374,7 +374,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
     category: 'talismans',
     summary: 'A medallion with cerulean amber inlaid.',
     description:
-      'A medallion with cerulean amber inlaid. Boosts maximum FP. The Erdtree\'s old sap becomes amber, treasured as the most precious of jewels in the age of Godfrey, the first Elden Lord. A primordial life energy resides inside.',
+      "A medallion with cerulean amber inlaid. Boosts maximum FP. The Erdtree's old sap becomes amber, treasured as the most precious of jewels in the age of Godfrey, the first Elden Lord. A primordial life energy resides inside.",
     icon: '/images/items/cerulean-amber-medallion.png',
   },
   'sacred-relic-sword': {
@@ -526,9 +526,7 @@ const LOCAL_ITEMS: Record<string, EldenRingItem> = {
 /**
  * Get item data from local database or ERDB API
  */
-export async function getItemData(
-  itemSlug: string
-): Promise<EldenRingItem | null> {
+export async function getItemData(itemSlug: string): Promise<EldenRingItem | null> {
   // Check local database first
   if (LOCAL_ITEMS[itemSlug]) {
     return LOCAL_ITEMS[itemSlug];

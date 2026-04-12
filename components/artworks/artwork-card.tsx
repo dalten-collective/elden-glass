@@ -37,9 +37,7 @@ export function ArtworkCard({ artworkSlug, children }: ArtworkCardProps) {
   return (
     <HoverCard.Root openDelay={200} closeDelay={100}>
       <HoverCard.Trigger asChild>
-        <span className="cursor-help">
-          {children}
-        </span>
+        <span className="cursor-help">{children}</span>
       </HoverCard.Trigger>
       <HoverCard.Portal>
         <HoverCard.Content

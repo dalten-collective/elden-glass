@@ -15,7 +15,7 @@ export async function GET(request: Request) {
       total: 0,
       page: 1,
       limit,
-      totalPages: 0
+      totalPages: 0,
     });
   }
 
@@ -33,6 +33,6 @@ export async function GET(request: Request) {
     total,
     page,
     limit,
-    totalPages
+    totalPages,
   });
 }

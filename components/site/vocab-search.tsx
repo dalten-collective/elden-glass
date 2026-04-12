@@ -7,7 +7,7 @@ interface VocabSearchProps {
   placeholder?: string;
 }
 
-export function VocabSearch({ placeholder = "Filter vocabulary..." }: VocabSearchProps) {
+export function VocabSearch({ placeholder = 'Filter vocabulary...' }: VocabSearchProps) {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
@@ -15,9 +15,9 @@ export function VocabSearch({ placeholder = "Filter vocabulary..." }: VocabSearc
     const tables = document.querySelectorAll('table');
     const lowerQuery = query.toLowerCase().trim();
 
-    tables.forEach(table => {
+    tables.forEach((table) => {
       const rows = table.querySelectorAll('tbody tr');
-      rows.forEach(row => {
+      rows.forEach((row) => {
         const text = row.textContent?.toLowerCase() || '';
         if (lowerQuery === '' || text.includes(lowerQuery)) {
           (row as HTMLElement).style.display = '';
@@ -40,7 +40,7 @@ export function VocabSearch({ placeholder = "Filter vocabulary..." }: VocabSearc
 
     // Also filter section headers
     const sections = document.querySelectorAll('section[id]');
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const visibleTables = section.querySelectorAll('.space-y-4:not([style*="display: none"])');
       if (visibleTables.length === 0 && lowerQuery !== '') {
         (section as HTMLElement).style.opacity = '0.3';

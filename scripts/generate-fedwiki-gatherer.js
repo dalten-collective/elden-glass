@@ -16,9 +16,9 @@ const data = JSON.parse(fs.readFileSync(TITLE_CARDS_PATH, 'utf8'));
 const cards = Array.isArray(data) ? data : data.cards || [];
 
 // Extract unique values for filters
-const sections = [...new Set(cards.map(c => c.section).filter(Boolean))].sort();
-const categories = [...new Set(cards.map(c => c.category).filter(Boolean))].sort();
-const subcategories = [...new Set(cards.map(c => c.subcategory).filter(Boolean))].sort();
+const sections = [...new Set(cards.map((c) => c.section).filter(Boolean))].sort();
+const categories = [...new Set(cards.map((c) => c.category).filter(Boolean))].sort();
+const subcategories = [...new Set(cards.map((c) => c.subcategory).filter(Boolean))].sort();
 
 // Generate HTML
 const html = `<!DOCTYPE html>

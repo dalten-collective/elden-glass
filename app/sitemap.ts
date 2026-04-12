@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/search',
     '/card-database',
     '/bibliography',
-  ].map(path => ({
+  ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/belevan',
     '/rhonda-shearer-archive',
     '/chess-research',
-  ].map(path => ({
+  ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
@@ -50,10 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Tool pages
-  const toolPages = [
-    '/gatherer',
-    '/vocab',
-  ].map(path => ({
+  const toolPages = ['/gatherer', '/vocab'].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,

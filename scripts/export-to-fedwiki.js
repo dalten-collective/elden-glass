@@ -10,7 +10,9 @@ const path = require('path');
 
 // Paths
 const TITLE_CARDS_PATH = path.join(__dirname, '../data/title-cards.json');
-const FEDWIKI_PAGES_PATH = path.expanduser ? path.expanduser('~/.wiki/pages') : `${process.env.HOME}/.wiki/pages`;
+const FEDWIKI_PAGES_PATH = path.expanduser
+  ? path.expanduser('~/.wiki/pages')
+  : `${process.env.HOME}/.wiki/pages`;
 
 // Generate a random ID for story items
 function generateId() {
@@ -39,7 +41,7 @@ function cardToFedwikiPage(card, allCards) {
     story.push({
       type: 'paragraph',
       id: generateId(),
-      text: `<i>${categoryText}</i>`
+      text: `<i>${categoryText}</i>`,
     });
   }
 
@@ -50,7 +52,7 @@ function cardToFedwikiPage(card, allCards) {
       id: generateId(),
       url: card.image,
       caption: card.title,
-      text: card.title
+      text: card.title,
     });
   }
 
@@ -62,7 +64,7 @@ function cardToFedwikiPage(card, allCards) {
         id: generateId(),
         url: img,
         caption: card.title,
-        text: card.title
+        text: card.title,
       });
     }
   }
@@ -72,47 +74,52 @@ function cardToFedwikiPage(card, allCards) {
     story.push({
       type: 'paragraph',
       id: generateId(),
-      text: card.description
+      text: card.description,
     });
   }
 
   // Add source badge
   if (card.source) {
-    const sourceText = card.source === 'dlc' ? 'Shadow of the Erdtree (DLC)' : 'Elden Ring (Base Game)';
+    const sourceText =
+      card.source === 'dlc' ? 'Shadow of the Erdtree (DLC)' : 'Elden Ring (Base Game)';
     story.push({
       type: 'paragraph',
       id: generateId(),
-      text: `<b>Source:</b> ${sourceText}`
+      text: `<b>Source:</b> ${sourceText}`,
     });
   }
 
   // Add grace connections as wiki links
   if (card.connections && card.connections.length > 0) {
-    const connectionLinks = card.connections.map(conn => {
-      const connectedCard = allCards.find(c => c.id === conn.cardId);
-      if (connectedCard) {
-        const linkText = conn.label ? `${connectedCard.title} (${conn.label})` : connectedCard.title;
-        return `[[${connectedCard.title}]]`;
-      }
-      return null;
-    }).filter(Boolean);
+    const connectionLinks = card.connections
+      .map((conn) => {
+        const connectedCard = allCards.find((c) => c.id === conn.cardId);
+        if (connectedCard) {
+          const linkText = conn.label
+            ? `${connectedCard.title} (${conn.label})`
+            : connectedCard.title;
+          return `[[${connectedCard.title}]]`;
+        }
+        return null;
+      })
+      .filter(Boolean);
 
     if (connectionLinks.length > 0) {
       story.push({
         type: 'paragraph',
         id: generateId(),
-        text: `<b>Grace Connections:</b> ${connectionLinks.join(', ')}`
+        text: `<b>Grace Connections:</b> ${connectionLinks.join(', ')}`,
       });
     }
   }
 
   // Add external links
   if (card.links && card.links.length > 0) {
-    const linkItems = card.links.map(link => `[${link.url} ${link.label}]`).join('\n');
+    const linkItems = card.links.map((link) => `[${link.url} ${link.label}]`).join('\n');
     story.push({
       type: 'paragraph',
       id: generateId(),
-      text: `<b>References:</b>\n${linkItems}`
+      text: `<b>References:</b>\n${linkItems}`,
     });
   }
 
@@ -120,7 +127,7 @@ function cardToFedwikiPage(card, allCards) {
   story.push({
     type: 'paragraph',
     id: generateId(),
-    text: `<i>Search term: "${card.term}"</i>`
+    text: `<i>Search term: "${card.term}"</i>`,
   });
 
   // Create the page object
@@ -131,15 +138,15 @@ function cardToFedwikiPage(card, allCards) {
       {
         type: 'create',
         item: { title: card.title, story: [] },
-        date: now
+        date: now,
       },
       {
         type: 'add',
         id: story[0]?.id,
         item: story[0],
-        date: now
-      }
-    ]
+        date: now,
+      },
+    ],
   };
 
   return page;

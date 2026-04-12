@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import type { TitleCardDatabase, TitleCard, CreateTitleCardRequest } from '@/types/title-cards';
 
+export const dynamic = 'force-dynamic';
+
 const titleCardsPath = path.join(process.cwd(), 'data', 'title-cards.json');
 
 function readDatabase(): TitleCardDatabase {
@@ -43,7 +45,7 @@ export async function GET(request: Request) {
 
     // If meta only, return filter options quickly
     if (metaOnly) {
-      const sections = Array.from(new Set(cards.map(c => c.section).filter(Boolean))).sort();
+      const sections = Array.from(new Set(cards.map((c) => c.section).filter(Boolean))).sort();
       return NextResponse.json({
         total: cards.length,
         sections,
@@ -52,32 +54,33 @@ export async function GET(request: Request) {
 
     // Apply filters
     if (query) {
-      cards = cards.filter(card =>
-        (card.title && card.title.toLowerCase().includes(query)) ||
-        (card.term && card.term.toLowerCase().includes(query)) ||
-        (card.description && card.description.toLowerCase().includes(query))
+      cards = cards.filter(
+        (card) =>
+          (card.title && card.title.toLowerCase().includes(query)) ||
+          (card.term && card.term.toLowerCase().includes(query)) ||
+          (card.description && card.description.toLowerCase().includes(query))
       );
     }
 
     if (section) {
-      cards = cards.filter(card => card.section === section);
+      cards = cards.filter((card) => card.section === section);
     }
 
     if (category) {
-      cards = cards.filter(card => card.category === category);
+      cards = cards.filter((card) => card.category === category);
     }
 
     if (subcategory) {
-      cards = cards.filter(card => card.subcategory === subcategory);
+      cards = cards.filter((card) => card.subcategory === subcategory);
     }
 
     if (source) {
       if (source === 'base') {
-        cards = cards.filter(card => card.source === 'base');
+        cards = cards.filter((card) => card.source === 'base');
       } else if (source === 'dlc') {
-        cards = cards.filter(card => card.source === 'dlc');
+        cards = cards.filter((card) => card.source === 'dlc');
       } else if (source === 'other') {
-        cards = cards.filter(card => card.source !== 'base' && card.source !== 'dlc');
+        cards = cards.filter((card) => card.source !== 'base' && card.source !== 'dlc');
       }
     }
 
@@ -87,19 +90,22 @@ export async function GET(request: Request) {
 
     // Get unique values for filter dropdowns (from filtered results where appropriate)
     const allCards = db.cards;
-    const sections = Array.from(new Set(allCards.map(c => c.section).filter(Boolean))).sort();
+    const sections = Array.from(new Set(allCards.map((c) => c.section).filter(Boolean))).sort();
 
     // Categories depend on section filter
-    const cardsForCategories = section
-      ? allCards.filter(c => c.section === section)
-      : allCards;
-    const categories = Array.from(new Set(cardsForCategories.map(c => c.category).filter(Boolean))).sort();
+    const cardsForCategories = section ? allCards.filter((c) => c.section === section) : allCards;
+    const categories = Array.from(
+      new Set(cardsForCategories.map((c) => c.category).filter(Boolean))
+    ).sort();
 
     // Subcategories depend on section and category filter
     let cardsForSubcategories = allCards;
-    if (section) cardsForSubcategories = cardsForSubcategories.filter(c => c.section === section);
-    if (category) cardsForSubcategories = cardsForSubcategories.filter(c => c.category === category);
-    const subcategories = Array.from(new Set(cardsForSubcategories.map(c => c.subcategory).filter(Boolean))).sort();
+    if (section) cardsForSubcategories = cardsForSubcategories.filter((c) => c.section === section);
+    if (category)
+      cardsForSubcategories = cardsForSubcategories.filter((c) => c.category === category);
+    const subcategories = Array.from(
+      new Set(cardsForSubcategories.map((c) => c.subcategory).filter(Boolean))
+    ).sort();
 
     // Apply pagination
     const start = (page - 1) * limit;
@@ -179,7 +185,7 @@ export async function DELETE(request: Request) {
 
     const db = readDatabase();
     const initialLength = db.cards.length;
-    db.cards = db.cards.filter(card => card.id !== id);
+    db.cards = db.cards.filter((card) => card.id !== id);
 
     if (db.cards.length === initialLength) {
       return NextResponse.json({ error: 'Card not found' }, { status: 404 });
@@ -199,7 +205,10 @@ export async function PUT(request: Request) {
     const cards: TitleCard[] = await request.json();
 
     if (!Array.isArray(cards)) {
-      return NextResponse.json({ error: 'Request body must be an array of cards' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'Request body must be an array of cards' },
+        { status: 400 }
+      );
     }
 
     const db: TitleCardDatabase = { cards };
@@ -223,7 +232,7 @@ export async function PATCH(request: Request) {
     }
 
     const db = readDatabase();
-    const cardIndex = db.cards.findIndex(card => card.id === id);
+    const cardIndex = db.cards.findIndex((card) => card.id === id);
 
     if (cardIndex === -1) {
       return NextResponse.json({ error: 'Card not found' }, { status: 404 });

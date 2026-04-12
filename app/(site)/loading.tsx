@@ -17,11 +17,8 @@ export default function Loading() {
 
       {/* Cards skeleton */}
       <div className="grid gap-6 md:grid-cols-3 pt-4">
-        {[1, 2, 3].map(i => (
-          <div
-            key={i}
-            className="border border-[var(--border-subtle)] rounded-lg p-6 space-y-4"
-          >
+        {[1, 2, 3].map((i) => (
+          <div key={i} className="border border-[var(--border-subtle)] rounded-lg p-6 space-y-4">
             <div className="h-12 w-12 bg-[var(--bg-tertiary)] rounded-lg" />
             <div className="h-6 bg-[var(--bg-tertiary)] rounded w-3/4" />
             <div className="space-y-2">

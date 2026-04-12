@@ -7,7 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Duchamp: Biography & Legacy - Elden Ring Is The Large Glass',
-  description: 'The life and lasting influence of Marcel Duchamp, from his early works to his impact on contemporary art',
+  description:
+    'The life and lasting influence of Marcel Duchamp, from his early works to his impact on contemporary art',
 };
 
 export default function DuchampBiographyPage() {
@@ -18,14 +19,14 @@ export default function DuchampBiographyPage() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 mb-4">
             <User className="h-5 w-5 text-[var(--accent-gold)]" />
-            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Artist Profile</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">
+              Artist Profile
+            </p>
           </div>
-          <h1 className="page-hero-title">
-            Duchamp: Biography &amp; Legacy
-          </h1>
+          <h1 className="page-hero-title">Duchamp: Biography &amp; Legacy</h1>
           <p className="page-hero-description">
-            Marcel Duchamp (1887-1968) revolutionized art in the 20th century. Understanding his life
-            and methods is essential for understanding what FromSoftware has accomplished.
+            Marcel Duchamp (1887-1968) revolutionized art in the 20th century. Understanding his
+            life and methods is essential for understanding what FromSoftware has accomplished.
           </p>
         </div>
         <HeroMeta
@@ -81,19 +82,15 @@ export default function DuchampBiographyPage() {
       {/* Main Content */}
       <section className="prose prose-lg prose-invert max-w-none">
         <h2>Preliminary Works (1911-1918)</h2>
-        <p>
-          Content to be written...
-        </p>
+        <p>Content to be written...</p>
 
         <h2>The Readymades As An Era (1915-1920)</h2>
-        <p>
-          Content to be written...
-        </p>
+        <p>Content to be written...</p>
 
         <h2>Rhonda Shearer</h2>
         <p>
-          For a detailed examination of Rhonda Shearer&apos;s groundbreaking research into the readymades,
-          see the <Link href="/rhonda-shearer">dedicated page</Link>.
+          For a detailed examination of Rhonda Shearer&apos;s groundbreaking research into the
+          readymades, see the <Link href="/rhonda-shearer">dedicated page</Link>.
         </p>
 
         <h2>Chess</h2>
@@ -105,19 +102,26 @@ export default function DuchampBiographyPage() {
 
       {/* Key Figures */}
       <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="text-sm uppercase tracking-[0.25em] text-[var(--text-tertiary)] mb-4">Key Scholars &amp; Figures</h2>
+        <h2 className="text-sm uppercase tracking-[0.25em] text-[var(--text-tertiary)] mb-4">
+          Key Scholars &amp; Figures
+        </h2>
         <div className="grid gap-3 md:grid-cols-2">
-          <Link href="/rhonda-shearer" className="group flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--accent-gold)] transition-colors">
+          <Link
+            href="/rhonda-shearer"
+            className="group flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--accent-gold)] transition-colors"
+          >
             <Microscope className="h-4 w-4 text-[var(--accent-gold)] opacity-50 group-hover:opacity-100" />
             Rhonda Shearer - Readymade Research
           </Link>
-          <Link href="/belevan" className="group flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--accent-gold)] transition-colors">
+          <Link
+            href="/belevan"
+            className="group flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--accent-gold)] transition-colors"
+          >
             <User className="h-4 w-4 text-[var(--accent-gold)] opacity-50 group-hover:opacity-100" />
             Mónica Belevan - &apos;Pataphysical Analysis
           </Link>
         </div>
       </section>
-
     </div>
   );
 }

@@ -19,7 +19,10 @@ export function Sidebar({ data }: SidebarProps) {
   return (
     <aside className="fixed bottom-0 left-0 top-0 z-[70] hidden w-[280px] flex-col overflow-hidden border-r border-[var(--border-subtle)] bg-[var(--bg-secondary)] pt-safe lg:flex">
       <div className="sticky top-0 flex-shrink-0 bg-[var(--bg-secondary)]">
-        <Link href="/" className="flex items-center gap-3 border-b border-[var(--border-subtle)] p-3">
+        <Link
+          href="/"
+          className="flex items-center gap-3 border-b border-[var(--border-subtle)] p-3"
+        >
           <Image
             src="/images/dashusnavnulsigil.png"
             alt="DashusNavnul Sigil"

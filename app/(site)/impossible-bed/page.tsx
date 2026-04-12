@@ -1,15 +1,16 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "The Impossible Bed | Elden Glass",
-  description: "Rhonda Roland Shearer's groundbreaking essay on Duchamp's readymades and Poincaré's discovery theory",
+  title: 'The Impossible Bed | Elden Glass',
+  description:
+    "Rhonda Roland Shearer's groundbreaking essay on Duchamp's readymades and Poincaré's discovery theory",
 };
 
 function DefinitionItem({
   term,
   definition,
   source,
-  explanation
+  explanation,
 }: {
   term: string;
   definition: string;
@@ -21,12 +22,8 @@ function DefinitionItem({
       <dt className="text-[var(--accent-gold)] font-medium text-lg mb-1">{term}</dt>
       <dd className="text-[var(--text-secondary)] leading-relaxed">
         <span className="italic text-[var(--text-tertiary)]">&quot;{definition}&quot;</span>
-        {source && (
-          <span className="text-[var(--text-tertiary)] text-sm ml-1">{source}</span>
-        )}
-        {explanation && (
-          <p className="mt-3 text-[var(--text-secondary)]">{explanation}</p>
-        )}
+        {source && <span className="text-[var(--text-tertiary)] text-sm ml-1">{source}</span>}
+        {explanation && <p className="mt-3 text-[var(--text-secondary)]">{explanation}</p>}
       </dd>
     </div>
   );
@@ -42,15 +39,18 @@ export default function ImpossibleBedPage() {
         Part II: A Possible Route of Influence From Art To Science
       </p>
       <p className="text-[var(--text-tertiary)] mb-8 text-sm italic">
-        From Rhonda Roland Shearer&apos;s essay, originally published in Art &amp; Academe (ISSN: 1040-7812), Vol. 10, No. 2 (Fall 1998): 76-95
+        From Rhonda Roland Shearer&apos;s essay, originally published in Art &amp; Academe (ISSN:
+        1040-7812), Vol. 10, No. 2 (Fall 1998): 76-95
       </p>
 
       {/* Introduction */}
       <section className="mb-10 prose prose-invert max-w-none">
         <p className="text-[var(--text-secondary)]">
-          Shearer&apos;s essay argues that Duchamp&apos;s readymades were never truly &quot;readymade&quot; — they were carefully crafted objects
-          designed to appear mass-produced. More importantly, she connects Duchamp&apos;s methodology to Henri Poincaré&apos;s
-          probabilistic theory of discovery, revealing the 3 Standard Stoppages as the key to understanding Duchamp&apos;s entire project.
+          Shearer&apos;s essay argues that Duchamp&apos;s readymades were never truly
+          &quot;readymade&quot; — they were carefully crafted objects designed to appear
+          mass-produced. More importantly, she connects Duchamp&apos;s methodology to Henri
+          Poincaré&apos;s probabilistic theory of discovery, revealing the 3 Standard Stoppages as
+          the key to understanding Duchamp&apos;s entire project.
         </p>
       </section>
 
@@ -428,19 +428,19 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="Constant Relation to the Large Glass"
-            definition="Duchamp scholar William Camfield discusses Duchamp's determination to maintain a constant relation between his Large Glass and three of his readymades: 50 cc&apos;s Paris Air (at the top of the stack), the urinal (at the bottom), and the traveler&apos;s folding item (typewriter cover) in between."
+            definition="Duchamp scholar William Camfield discusses Duchamp's determination to maintain a constant relation between his Large Glass and three of his readymades: 50 cc's Paris Air (at the top of the stack), the urinal (at the bottom), and the traveler's folding item (typewriter cover) in between."
             source="(Camfield, 1991)"
             explanation="Duchamp insisted on this specific arrangement in the Boîte, in exhibitions at Pasadena and Stockholm. This wasn't aesthetic preference—it was semantic necessity. The readymades are positioned to communicate their relationship to the Large Glass. They're not separate works; they're satellites of the central machine."
           />
           <DefinitionItem
             term="Readymade Talk About the Large Glass"
-            definition="When Duchamp was asked why he wanted this relation between these readymades and the Glass, he said: 'because they were &apos;readymade talk&apos; about what was going on in the Large Glass.'"
+            definition="When Duchamp was asked why he wanted this relation between these readymades and the Glass, he said: 'because they were 'readymade talk' about what was going on in the Large Glass.'"
             source="(Camfield, 1991, p. 165)"
             explanation="'Readymade talk'—Duchamp's own phrase. The objects speak about the Glass. They're not silent artifacts but communicating elements. And what they communicate, according to Shearer, is the system of deceptive perspectives that reveals the Large Glass as a 4-D creativity machine."
           />
           <DefinitionItem
             term="Removed From Its Machine"
-            definition="When specifically asked why the typewriter cover occupied the level of the line or 'Bride&apos;s clothes' (in between the Bachelors and Bride), Duchamp stated, 'Oh, it was removed from its machine.'"
+            definition="When specifically asked why the typewriter cover occupied the level of the line or 'Bride's clothes' (in between the Bachelors and Bride), Duchamp stated, 'Oh, it was removed from its machine.'"
             source="(Camfield, 1991, p. 166)"
             explanation="The double meaning is deliberate: the typewriter cover was removed from its typewriter machine, but also 'removed' from the Large Glass machine. The pun reveals the conceptual link. The typewriter cover represents something extracted from the creativity machine—a component that once belonged to the system Duchamp is describing."
           />
@@ -454,8 +454,8 @@ export default function ImpossibleBedPage() {
         </h2>
         <dl className="space-y-6">
           <DefinitionItem
-            term="50 cc&apos;s Paris Air (Microcosmic)"
-            definition="The three readymades are probably analogous to Poincaré&apos;s three scales of universal probabilistic systems: gaseous molecules (50 cc&apos;s Paris Air, at microcosmic scale)."
+            term="50 cc's Paris Air (Microcosmic)"
+            definition="The three readymades are probably analogous to Poincaré's three scales of universal probabilistic systems: gaseous molecules (50 cc's Paris Air, at microcosmic scale)."
             source="(Shearer)"
             explanation="The sealed glass ampule contains invisible gas—Parisian air as pure probability. At the molecular scale, gas behavior is governed by statistical mechanics. Duchamp's 'air' is Poincaré's gaseous molecules made art: a sample of the microcosmic probabilistic system."
           />
@@ -481,14 +481,14 @@ export default function ImpossibleBedPage() {
         </h2>
         <dl className="space-y-6">
           <DefinitionItem
-            term="Nature&apos;s Garb"
+            term="Nature's Garb"
             definition="Poincaré literally said that we periodically change the 'garb' or 'vestments' in which we 'clothe nature' with broader perspectives or generalizations. But 'she' (nature) always remains the same."
             source="(Poincaré, 1902, p 161-162, p 145; 1904, p 95, 139)"
             explanation="This is Poincaré's metaphor: Nature is a woman we dress in laws. The laws change; she doesn't. We strip off old garments (old theories) and clothe her in new ones (new generalizations). The metaphor directly anticipates Duchamp's 'Bride Stripped Bare'—nature being undressed of old laws."
           />
           <DefinitionItem
             term="The Bride Is Nature"
-            definition="Poincaré&apos;s metaphor, in relation to Duchamp&apos;s, reveals that: the Bride is nature, a probabilistic system at all scales."
+            definition="Poincaré's metaphor, in relation to Duchamp's, reveals that: the Bride is nature, a probabilistic system at all scales."
             source="(Shearer)"
             explanation="The Bride isn't a woman—she's Nature herself. Probabilistic, operating at micro, human, and macro scales simultaneously. The 'stripping' is the removal of old theoretical garments. The 'bachelors' are those attempting to understand her through their limited frames."
           />
@@ -500,7 +500,7 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="Cemetery of Liveries"
-            definition="They live as a 'cemetery' of liveries and uniforms (nature&apos;s old clothes), dead fixed beliefs acting as old uniforms of convention that we unthinkingly wear (and act as old molds where old ideas are cast)."
+            definition="They live as a 'cemetery' of liveries and uniforms (nature's old clothes), dead fixed beliefs acting as old uniforms of convention that we unthinkingly wear (and act as old molds where old ideas are cast)."
             source="(Shearer)"
             explanation="Duchamp's phrase 'cemetery of liveries' now makes sense: liveries are servants' uniforms, clothing that identifies your role in a hierarchy. The bachelors wear dead conventions—inherited beliefs that mark them as servants of old paradigms. They're buried in their uniforms."
           />
@@ -526,8 +526,8 @@ export default function ImpossibleBedPage() {
             explanation="The rubber material isn't accidental. Laws stretch under pressure from anomalies. They can accommodate considerable strain before breaking—and when they 'break,' they're replaced by broader laws that include the old as special cases. The rubber typewriter cover embodies this elasticity of theoretical frameworks."
           />
           <DefinitionItem
-            term="Under Nature&apos;s Facts"
-            definition="If nature is essentially made of raw facts that we can never directly access except through laws, and if the 'Underwood' typewriter cover represents the rubber-like flexibility and persistence of law, then perhaps the Underwood cover is, by analogy, under nature&apos;s facts (Under Wood) and over the invisible creativity machine."
+            term="Under Nature's Facts"
+            definition="If nature is essentially made of raw facts that we can never directly access except through laws, and if the 'Underwood' typewriter cover represents the rubber-like flexibility and persistence of law, then perhaps the Underwood cover is, by analogy, under nature's facts (Under Wood) and over the invisible creativity machine."
             source="(Shearer)"
             explanation="The brand name 'Underwood' becomes a pun: the cover is UNDER the WOOD of nature's raw facts (which we cannot directly perceive), positioned OVER the invisible creativity mechanism. The typewriter cover is the flexible mediating layer between inaccessible nature and invisible creative process."
           />
@@ -554,13 +554,13 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="Probabilistic Systems as Ciphers"
-            definition="From Poincaré&apos;s descriptions, Duchamp would have known that a probabilistic system operates like a cipher. Simple initial conditions (a message) in a probabilistic machine are generated, and through time become very complex and seem jumbled. But a relation (in a cipher, or probabilistic initial conditions, or Duchamp&apos;s notes) is maintained and can be deciphered with the right technique."
+            definition="From Poincaré's descriptions, Duchamp would have known that a probabilistic system operates like a cipher. Simple initial conditions (a message) in a probabilistic machine are generated, and through time become very complex and seem jumbled. But a relation (in a cipher, or probabilistic initial conditions, or Duchamp's notes) is maintained and can be deciphered with the right technique."
             source="(Shearer)"
             explanation="A cipher scrambles a message into apparent nonsense while preserving retrievable order. A probabilistic system does the same: simple initial conditions evolve into complex-seeming chaos, but the original relations persist. Duchamp's notes and readymades are the scrambled output; the initial conditions can be recovered."
           />
           <DefinitionItem
             term="Poincaré Cut"
-            definition="Duchamp&apos;s notes orbit from his initial conditions. A Poincaré cut allows us to decipher the relations between the readymade orbits and the initial conditions of Duchamp&apos;s mock probabilistic system."
+            definition="Duchamp's notes orbit from his initial conditions. A Poincaré cut allows us to decipher the relations between the readymade orbits and the initial conditions of Duchamp's mock probabilistic system."
             source="(Shearer)"
             explanation="In dynamical systems, a 'Poincaré section' (or 'cut') is a slice through phase space that reveals periodic structure in chaotic-seeming motion. Duchamp's Large Glass is this cut: it's the cross-section that lets us see the order hidden in the apparently random orbits of his readymades around his initial creative impulse."
           />
@@ -572,7 +572,7 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="Higher Degree of Intellectuality"
-            definition="No wonder Duchamp said his readymades 'look trivial, but they&apos;re not ... they represent a much higher degree of intellectuality.'"
+            definition="No wonder Duchamp said his readymades 'look trivial, but they're not ... they represent a much higher degree of intellectuality.'"
             source="(Roberts, 1968, p. 62)"
             explanation="The readymades appear to be jokes: a urinal, a bottle rack, a snow shovel. But their apparent triviality conceals profound intellectual content. They're not found objects but calculated outputs of a 4-D creativity machine—a machine that models how discoveries actually happen. The joke is that we took them at face value."
           />
@@ -587,7 +587,7 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="How Can the Large Glass Be 4-D?"
-            definition="Duchamp&apos;s seemingly contradictory statements about the 4-D as physically unseeable, while maintaining that his Glass (which we do see) is 4-D, provides a major clue to what the Large Glass is!"
+            definition="Duchamp's seemingly contradictory statements about the 4-D as physically unseeable, while maintaining that his Glass (which we do see) is 4-D, provides a major clue to what the Large Glass is!"
             source="(Shearer)"
             explanation="This is the central puzzle. Duchamp said the fourth dimension can only be seen by the mind. Yet we physically see the Large Glass. How can something be 4-D if we can perceive it with our senses? The contradiction is deliberate—and its resolution reveals the true nature of the work."
           />
@@ -599,7 +599,7 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="The Poincaré Cut Solution"
-            definition="If Duchamp wanted to represent Poincaré&apos;s creativity 'machine in motion' and unconscious sieves as a fourth-dimensional object, how could he logically ever depict it in 3-D so we could actually see it? The answer, of course, resides in the device of the Poincaré cut itself."
+            definition="If Duchamp wanted to represent Poincaré's creativity 'machine in motion' and unconscious sieves as a fourth-dimensional object, how could he logically ever depict it in 3-D so we could actually see it? The answer, of course, resides in the device of the Poincaré cut itself."
             source="(Shearer)"
             explanation="The Poincaré cut is a dimensional translation device. It captures snapshots of higher-dimensional systems in lower-dimensional slices. You can't see a 4-D object—but you can see its 3-D cross-section. The Large Glass isn't a 4-D object; it's a 3-D slice of a 4-D process."
           />
@@ -620,25 +620,25 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="The Summary"
-            definition="To summarize, Duchamp described his Large Glass as four-dimensional; the fourth dimension cannot be physically seen, yet we see the Glass in three-dimensions. The Poincaré cut itself can translate a fourth-dimensional system that we can&apos;t see into a lower third-dimensional slice that becomes visible."
+            definition="To summarize, Duchamp described his Large Glass as four-dimensional; the fourth dimension cannot be physically seen, yet we see the Glass in three-dimensions. The Poincaré cut itself can translate a fourth-dimensional system that we can't see into a lower third-dimensional slice that becomes visible."
             source="(Shearer)"
             explanation="The logic is precise: (1) Duchamp said the Glass is 4-D. (2) 4-D cannot be seen physically. (3) We see the Glass physically. (4) Therefore the Glass we see is a lower-dimensional representation of something 4-D. (5) The Poincaré cut is exactly the device that produces such representations. QED: The Large Glass is a Poincaré cut."
           />
           <DefinitionItem
             term="Return Trajectories in Unstable Equilibrium"
-            definition="Objects in irregular orbits from Duchamp&apos;s initial conditions, although separating from each other in trajectories generated from initial conditions in time and space, eventually return to a 3-D slice in an unstable 4-D equilibrium."
+            definition="Objects in irregular orbits from Duchamp's initial conditions, although separating from each other in trajectories generated from initial conditions in time and space, eventually return to a 3-D slice in an unstable 4-D equilibrium."
             source="(Shearer)"
             explanation="In a Poincaré section, orbits cross the slice repeatedly. They diverge into higher-dimensional space, then return. Each return is slightly different—an 'unstable equilibrium.' Duchamp's readymades are like these return trajectories: they orbit from his notes (initial conditions) and periodically cross the visible 3-D plane of the Large Glass."
           />
           <DefinitionItem
             term="Stretching the Dimensional Technique"
-            definition="This reduction of 4-D mentality (in Duchamp&apos;s chosen metaphor) to 3-D visibility represents a new application of Poincaré&apos;s technique -- a device that was conventionally used to translate 3-D systems to 2-D cuts or 2-D systems to 1-D cuts."
+            definition="This reduction of 4-D mentality (in Duchamp's chosen metaphor) to 3-D visibility represents a new application of Poincaré's technique -- a device that was conventionally used to translate 3-D systems to 2-D cuts or 2-D systems to 1-D cuts."
             source="(Shearer)"
             explanation="Poincaré used his cuts to reduce 3-D to 2-D, or 2-D to 1-D. Duchamp stretched the technique upward: 4-D to 3-D. This was his innovation—applying Poincaré's method to mental processes, treating invisible creativity as a fourth dimension that could be sliced into visible art."
           />
           <DefinitionItem
-            term="Duchamp&apos;s Defense"
-            definition="Poincaré&apos;s explanation about n-dim&apos;l continuums by means of the Poincaré cut of the n-1 continuum is not an error. It is on the contrary confirmed and it is by even basing oneself on this explanation that one can justify the name of the fourth-dimension given to this continuum of virtual images in which the Poincaré cut could only be obtained by means of the 3-dim&apos;l prototype object considered in its geometric infinity."
+            term="Duchamp's Defense"
+            definition="Poincaré's explanation about n-dim'l continuums by means of the Poincaré cut of the n-1 continuum is not an error. It is on the contrary confirmed and it is by even basing oneself on this explanation that one can justify the name of the fourth-dimension given to this continuum of virtual images in which the Poincaré cut could only be obtained by means of the 3-dim'l prototype object considered in its geometric infinity."
             source="(Sanouillet &amp; Peterson, p. 98)"
             explanation="Duchamp explicitly defended his use of Poincaré's technique for the fourth dimension. He's saying: Poincaré's dimensional reduction method is valid, and I'm applying it correctly. The 'continuum of virtual images' (the 4-D creative process) can only be cut with a '3-D prototype object' (the Large Glass). The note is a mathematical justification."
           />
@@ -652,20 +652,20 @@ export default function ImpossibleBedPage() {
         </h2>
         <dl className="space-y-6">
           <DefinitionItem
-            term="My Landscapes Began Where DaVinci&apos;s Ended"
-            definition="Duchamp had said that 'my landscapes began where DaVinci&apos;s ended.'"
+            term="My Landscapes Began Where DaVinci's Ended"
+            definition="Duchamp had said that 'my landscapes began where DaVinci's ended.'"
             source="(Roberts, pp. 46-64)"
             explanation="Leonardo perfected Renaissance perspective: a 2-D window capturing 3-D static reality. Duchamp's 'landscape' begins at that endpoint and extends into new dimensional territory. Where Leonardo stopped at representing visible space, Duchamp begins representing invisible process."
           />
           <DefinitionItem
-            term="Leonardo&apos;s 2-D Window"
-            definition="Leonardo&apos;s 2-D windows capture the projections between a 3-D singular landscape and the 3-D retina in a perspective system of straight lines (a one-to-one map capturing static reality)."
+            term="Leonardo's 2-D Window"
+            definition="Leonardo's 2-D windows capture the projections between a 3-D singular landscape and the 3-D retina in a perspective system of straight lines (a one-to-one map capturing static reality)."
             source="(Shearer)"
             explanation="Leonardo's system: 3-D scene → 2-D picture plane → 3-D retina. It's geometrically precise, ray-traced, static. Each point in the scene maps to exactly one point in the painting. This is 'retinal' art at its most sophisticated—capturing what the eye sees."
           />
           <DefinitionItem
-            term="Duchamp&apos;s 3-D Window"
-            definition="Duchamp&apos;s 3-D window is a geometric 'snapshot' (Poincaré cut) of a 4-D probabilistic system of nature&apos;s whole, encompassing a mix of random and occasionally emergent ordered movements in vast times and space -- movements that appear overwhelmingly complex and are, for the most part, and with the exception of limited slices, unseen."
+            term="Duchamp's 3-D Window"
+            definition="Duchamp's 3-D window is a geometric 'snapshot' (Poincaré cut) of a 4-D probabilistic system of nature's whole, encompassing a mix of random and occasionally emergent ordered movements in vast times and space -- movements that appear overwhelmingly complex and are, for the most part, and with the exception of limited slices, unseen."
             source="(Shearer)"
             explanation="Duchamp's system: 4-D creative process → 3-D Large Glass → mental comprehension. It's probabilistic, dynamic, procedural. The Glass doesn't map static points; it captures a moment in an ongoing creative flux. This is 'non-retinal' art—capturing what the mind conceives."
           />
@@ -677,7 +677,7 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="The Whole Embodied Within"
-            definition="The whole of nature stands outside Duchamp&apos;s 3-D cut, but the cut is also embodied within, capturing a slice of nature&apos;s whole."
+            definition="The whole of nature stands outside Duchamp's 3-D cut, but the cut is also embodied within, capturing a slice of nature's whole."
             source="(Shearer)"
             explanation="A Poincaré cut doesn't separate from the system it slices—it remains part of it. The Large Glass is simultaneously inside the 4-D creative process (as one moment in its evolution) and a window onto that process (revealing its structure). Container and contained are unified."
           />
@@ -697,20 +697,20 @@ export default function ImpossibleBedPage() {
             explanation="Newtonian physics assumes exact repeatability: same initial conditions produce same results. Duchamp rejected this. He recognized that real creativity never repeats—each act is unique. Traditional formulas require repetition to validate; Duchamp sought a system that produced novelty without repetition."
           />
           <DefinitionItem
-            term="Poincaré&apos;s Non-Repeating Patterns"
-            definition="This statement had been true until Poincaré&apos;s probabilistic system of chance. In an unstable equilibrium, one can discover definite patterns with a Poincaré cut. These 'return trajectories' are not exact, but only similar, and by definition, can never be the same."
+            term="Poincaré's Non-Repeating Patterns"
+            definition="This statement had been true until Poincaré's probabilistic system of chance. In an unstable equilibrium, one can discover definite patterns with a Poincaré cut. These 'return trajectories' are not exact, but only similar, and by definition, can never be the same."
             source="(Shearer)"
             explanation="Poincaré provided exactly what Duchamp needed: a system with patterns but without repetition. Return trajectories are 'similar' but never identical. The system is deterministic (not random) yet never repeats. This resolves Duchamp's problem: how to have discoverable structure without mechanical repetition."
           />
           <DefinitionItem
-            term="A Machine That Couldn&apos;t Repeat"
-            definition="In Poincaré&apos;s mechanism, Duchamp found a creative machine that couldn&apos;t repeat movements. His ideas and objects would emerge and disappear through time and space, and always stay similar across all scales of nature."
+            term="A Machine That Couldn't Repeat"
+            definition="In Poincaré's mechanism, Duchamp found a creative machine that couldn't repeat movements. His ideas and objects would emerge and disappear through time and space, and always stay similar across all scales of nature."
             source="(Shearer)"
             explanation="The Large Glass is a perpetual novelty machine. It generates outputs (readymades, notes, works) that are recognizably related—'similar across scales'—yet never identical. Each manifestation is new. The machine produces family resemblances, not copies. This is creativity itself, mechanized but not mechanical."
           />
           <DefinitionItem
             term="Notes as Initial Conditions"
-            definition="Duchamp&apos;s ideas were generated from his initial conditions (notes), and then emerged as a variety of words, schematics and objects (never art)."
+            definition="Duchamp's ideas were generated from his initial conditions (notes), and then emerged as a variety of words, schematics and objects (never art)."
             source="(Shearer)"
             explanation="The notes are the seed—the initial conditions from which the entire probabilistic system evolves. Words, diagrams, readymades, the Large Glass itself—all are trajectories emanating from these initial conditions. And Duchamp insisted the outputs were 'never art.' They're something else: demonstrations of creative process made visible."
           />
@@ -725,7 +725,7 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="The Public Is Not Prepared"
-            definition="I don&apos;t think that the public is prepared to accept it...my canned chance. This depending on coincidence is too difficult for them. They think everything has to be done on purpose by complete deliberation...in time they will come to accept chance as a possibility to produce things."
+            definition="I don't think that the public is prepared to accept it...my canned chance. This depending on coincidence is too difficult for them. They think everything has to be done on purpose by complete deliberation...in time they will come to accept chance as a possibility to produce things."
             source="(Roberts, p. 62)"
             explanation="Duchamp predicted resistance. The public expects intention, deliberation, purpose. 'Canned chance'—preserved probability—sounds like nonsense to minds trained on determinism. But Duchamp was patient: 'in time they will come to accept chance.' He was right; it took until chaos theory emerged in the 1960s-70s."
           />
@@ -764,13 +764,13 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="No Two Facts Are the Same"
-            definition="Whether in nature&apos;s return orbits from her initial conditions, or in Duchamp&apos;s readymades from his initial conditions, or in the choice made by the unconscious from its random combinations of gaseous molecules -- whatever probabilistic example you use, no two facts are the same."
+            definition="Whether in nature's return orbits from her initial conditions, or in Duchamp's readymades from his initial conditions, or in the choice made by the unconscious from its random combinations of gaseous molecules -- whatever probabilistic example you use, no two facts are the same."
             source="(Shearer)"
             explanation="This is the key insight. In any probabilistic system, individual outputs differ. Nature's orbits, Duchamp's readymades, unconscious thoughts—all are unique instances from a common generative process. They share process, not identity. Looking for a 'common denominator' misunderstands the system."
           />
           <DefinitionItem
             term="Focus on Relations"
-            definition="Therefore we must focus on the relations among facts or objects -- according to Poincaré, the only aspect of nature&apos;s reality we can know."
+            definition="Therefore we must focus on the relations among facts or objects -- according to Poincaré, the only aspect of nature's reality we can know."
             source="(Poincaré, 1902, p. 20)"
             explanation="Poincaré's epistemology: we can't know things-in-themselves, only relations between things. Individual readymades are unique; their relations reveal the system. This is why Duchamp insisted on displaying them in specific arrangements—the relations, not the objects, carry the meaning."
           />
@@ -785,7 +785,7 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="Not Equally Valid"
-            definition="When Duchamp told us that the fourth-dimensional Large Glass is open to all perspectives or 'interpretations,' he didn&apos;t mean that all choices are equally valid."
+            definition="When Duchamp told us that the fourth-dimensional Large Glass is open to all perspectives or 'interpretations,' he didn't mean that all choices are equally valid."
             source="(Hulton, March 28, 1965)"
             explanation="Postmodern readings claim Duchamp endorsed unlimited interpretation—any meaning is as good as any other. Shearer argues this misreads him. 'Open to all perspectives' describes the probabilistic possibility space, not an invitation to interpretive anarchy. Some perspectives are better than others."
           />
@@ -812,7 +812,7 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="Not Absolute Truth"
-            definition="I&apos;m not offering an absolute truth in my new interpretation. I&apos;ve learned too much from Duchamp and Poincaré to make that mistake."
+            definition="I'm not offering an absolute truth in my new interpretation. I've learned too much from Duchamp and Poincaré to make that mistake."
             source="(Shearer)"
             explanation="Shearer practices what she preaches. No interpretation is final—perspectives change 'every fifty years.' Her claim isn't absolute truth but 'best current perspective.' This humility is itself a lesson from the Poincaré/Duchamp system: even valid discoveries will be superseded."
           />
@@ -824,13 +824,13 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="New Unity Forged"
-            definition="Why? Because this new perspective forges a new unity in Duchamp&apos;s words and works. In science, gaseous molecules, dust in fluid, and the Milky Way seemed unrelated until a new perspective demonstrated unity."
+            definition="Why? Because this new perspective forges a new unity in Duchamp's words and works. In science, gaseous molecules, dust in fluid, and the Milky Way seemed unrelated until a new perspective demonstrated unity."
             source="(Shearer)"
             explanation="Before Poincaré, gas, dust, and galaxies seemed to have nothing in common. His probabilistic perspective revealed their deep structural similarity. Shearer claims the same achievement for Duchamp studies: scattered comments and works suddenly cohere when viewed through the Poincaré lens."
           />
           <DefinitionItem
             term="Aggregating Relations"
-            definition="Single facts shared between Poincaré and Duchamp (they both use the term 'sieves') aggregate into larger relations ('sieves sifting illuminating gas'), into even larger relations (of 'unconscious choice,' 'sieves' sifting 'illuminating gas,' 'readymades,' 'mental beauty,' discovery and change every 'fifty years') -- all steps of Poincaré&apos;s creativity process within the universal probabilistic system of chance."
+            definition="Single facts shared between Poincaré and Duchamp (they both use the term 'sieves') aggregate into larger relations ('sieves sifting illuminating gas'), into even larger relations (of 'unconscious choice,' 'sieves' sifting 'illuminating gas,' 'readymades,' 'mental beauty,' discovery and change every 'fifty years') -- all steps of Poincaré's creativity process within the universal probabilistic system of chance."
             source="(Shearer)"
             explanation="This is the inductive argument. One shared term ('sieves') might be coincidence. Two shared terms less likely. But the full pattern—sieves, illuminating gas, unconscious choice, readymades, fifty-year cycles, mental beauty—the probability of coincidence approaches zero. The pattern demands explanation."
           />
@@ -845,7 +845,7 @@ export default function ImpossibleBedPage() {
         <dl className="space-y-6">
           <DefinitionItem
             term="The Key to the Thesis"
-            definition="The key to my thesis is not a claim that Poincaré was the major influence on Duchamp&apos;s career, but that the master work of Duchamp&apos;s life, the Bride Stripped Bare by Her Bachelors, Even (the Large Glass), and the Green Box Notes of the same name, represent the 'mock' universal probabilistic system that Duchamp created and left for us to discover."
+            definition="The key to my thesis is not a claim that Poincaré was the major influence on Duchamp's career, but that the master work of Duchamp's life, the Bride Stripped Bare by Her Bachelors, Even (the Large Glass), and the Green Box Notes of the same name, represent the 'mock' universal probabilistic system that Duchamp created and left for us to discover."
             source="(Shearer)"
             explanation="Shearer's claim is specific: not that Poincaré influenced everything Duchamp did, but that the Large Glass and Green Box together constitute a deliberate model of Poincaré's creativity machine. 'Mock' because it's an artistic simulation, not a scientific instrument. But structurally accurate."
           />
@@ -857,13 +857,13 @@ export default function ImpossibleBedPage() {
           />
           <DefinitionItem
             term="New Perspective Never Applied Before"
-            definition="Poincaré&apos;s probabilistic system of chance offered a new perspective never applied before in art or science. (Poincaré&apos;s ideas didn&apos;t begin to get translated into chaos theory until the 1960&apos;s!)"
+            definition="Poincaré's probabilistic system of chance offered a new perspective never applied before in art or science. (Poincaré's ideas didn't begin to get translated into chaos theory until the 1960's!)"
             source="(Shearer)"
             explanation="Duchamp applied Poincaré's ideas fifty years before scientists did. Chaos theory, non-linear dynamics, complex systems—these emerged in the 1960s-70s. Duchamp was working with the same concepts in 1913. He wasn't illustrating existing science; he was anticipating future science."
           />
           <DefinitionItem
             term="Fifty Years Before Scientists"
-            definition="As with the case of impossible figures, Duchamp&apos;s application of probabilistic systems of chance came 50 years before scientists recognized the power of the concept. Probabilistic systems, as part of the discipline of chaos theory and non-linear dynamics, sets a perspective that many mathematicians and scientists have recently adopted and are now busy applying to their work."
+            definition="As with the case of impossible figures, Duchamp's application of probabilistic systems of chance came 50 years before scientists recognized the power of the concept. Probabilistic systems, as part of the discipline of chaos theory and non-linear dynamics, sets a perspective that many mathematicians and scientists have recently adopted and are now busy applying to their work."
             source="(Shearer)"
             explanation="Impossible figures (like Apolinère Enameled's bed) appeared in Duchamp's work before Penrose triangles and Escher drawings. Probabilistic creativity systems appeared before Lorenz attractors and chaos theory. Duchamp was consistently half a century ahead. The Large Glass is still waiting to be fully understood."
           />
@@ -879,9 +879,17 @@ export default function ImpossibleBedPage() {
       {/* Source Citation */}
       <footer className="mt-8 pt-6 border-t border-[var(--border-subtle)]">
         <p className="text-xs text-[var(--text-tertiary)]">
-          Source: Rhonda Roland Shearer, &quot;Marcel Duchamp&apos;s Impossible Bed and Other &apos;Not&apos; Readymade Objects:
-          A Possible Route of Influence From Art To Science,&quot; Part II, Art &amp; Academe, Vol. 10, No. 2 (Fall 1998): 76-95.
-          Available at <a href="http://www.marcelduchamp.org/ImpossibleBed/PartII/" className="text-[var(--accent-gold)] hover:underline" target="_blank" rel="noopener noreferrer">marcelduchamp.org</a>
+          Source: Rhonda Roland Shearer, &quot;Marcel Duchamp&apos;s Impossible Bed and Other
+          &apos;Not&apos; Readymade Objects: A Possible Route of Influence From Art To
+          Science,&quot; Part II, Art &amp; Academe, Vol. 10, No. 2 (Fall 1998): 76-95. Available at{' '}
+          <a
+            href="http://www.marcelduchamp.org/ImpossibleBed/PartII/"
+            className="text-[var(--accent-gold)] hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            marcelduchamp.org
+          </a>
         </p>
       </footer>
     </div>

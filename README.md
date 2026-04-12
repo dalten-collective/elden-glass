@@ -1,8 +1,8 @@
 # Elden Glass
 
-**Elden Ring Is Marcel Duchamp's *The Bride Stripped Bare by Her Bachelors, Even*.**
+**Elden Ring Is Marcel Duchamp's _The Bride Stripped Bare by Her Bachelors, Even_.**
 
-This is the thesis site for ~dashus-navnul's discovery that FromSoftware's Elden Ring is a literal instantiation of Marcel Duchamp's *The Large Glass* (1915-1923).
+This is the thesis site for ~dashus-navnul's discovery that FromSoftware's Elden Ring is a literal instantiation of Marcel Duchamp's _The Large Glass_ (1915-1923).
 
 Live at [eldenringisthelargeglass.com](https://eldenringisthelargeglass.com).
 

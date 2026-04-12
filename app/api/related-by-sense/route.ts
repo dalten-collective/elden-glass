@@ -26,7 +26,7 @@ function getSenseLabel(senseKey: string): string {
     v: 'verb',
     a: 'adj',
     r: 'adv',
-    s: 'adj'
+    s: 'adj',
   };
 
   return `${match[1]} (${posLabels[match[2]] || match[2]})`;
@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
     const cards: TitleCard[] = cardsData.cards || cardsData;
 
     // Find the target card
-    const targetCard = cards.find(c => c.id === cardId);
+    const targetCard = cards.find((c) => c.id === cardId);
     if (!targetCard || !targetCard.senses || targetCard.senses.length === 0) {
       return NextResponse.json({ related: [] });
     }
@@ -62,7 +62,7 @@ export async function GET(request: NextRequest) {
     );
 
     // Build card lookup
-    const cardById = new Map(cards.map(c => [c.id, c]));
+    const cardById = new Map(cards.map((c) => [c.id, c]));
 
     // Find related cards for each sense
     const results: RelatedResult[] = [];
@@ -70,21 +70,21 @@ export async function GET(request: NextRequest) {
     for (const sense of targetCard.senses) {
       const relatedIds = senseIndex[sense] || [];
       const relatedCards = relatedIds
-        .filter(id => id !== cardId)
-        .map(id => cardById.get(id))
+        .filter((id) => id !== cardId)
+        .map((id) => cardById.get(id))
         .filter((c): c is TitleCard => c !== undefined)
         .slice(0, 5)
-        .map(c => ({
+        .map((c) => ({
           id: c.id,
           title: c.title,
-          category: c.category
+          category: c.category,
         }));
 
       if (relatedCards.length > 0) {
         results.push({
           sense,
           senseLabel: getSenseLabel(sense),
-          cards: relatedCards
+          cards: relatedCards,
         });
       }
     }

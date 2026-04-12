@@ -42,10 +42,7 @@ export function HashVerification({
     : null;
 
   // Build the "sealed on X and/or Y" phrase based on which chains are present.
-  const chainPhrase = [
-    bitcoinOts ? 'Bitcoin' : null,
-    ethereumAttestation ? 'Ethereum' : null,
-  ]
+  const chainPhrase = [bitcoinOts ? 'Bitcoin' : null, ethereumAttestation ? 'Ethereum' : null]
     .filter(Boolean)
     .join(' and ');
 
@@ -64,7 +61,8 @@ export function HashVerification({
               <CardTitle>Cryptographic Proof</CardTitle>
               <CardDescription>
                 The {subject} was sealed on {chainPhrase}
-                {sealedDate ? ` on ${sealedDate}` : ''}, before any public disclosure of the discovery.
+                {sealedDate ? ` on ${sealedDate}` : ''}, before any public disclosure of the
+                discovery.
               </CardDescription>
             </div>
           </div>
@@ -72,7 +70,9 @@ export function HashVerification({
         <CardContent className="space-y-4">
           <div className="rounded-xl border border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.8)] p-4 font-mono text-sm text-[var(--accent-gold)]">
             <div className="flex items-center justify-between gap-4">
-              <span className="uppercase text-[0.65rem] tracking-[0.3em] text-[var(--text-tertiary)]">SHA-256 Hash</span>
+              <span className="uppercase text-[0.65rem] tracking-[0.3em] text-[var(--text-tertiary)]">
+                SHA-256 Hash
+              </span>
               <CopyButton value={documentHash} label="Copy hash" />
             </div>
             <p className="mt-3 break-all text-[var(--text-primary)]">{documentHash}</p>
@@ -81,7 +81,12 @@ export function HashVerification({
           <div className="flex flex-wrap gap-3">
             {easUrl && (
               <Button asChild>
-                <Link href={easUrl as any} target="_blank" rel="noreferrer" className="flex items-center gap-2">
+                <Link
+                  href={easUrl as any}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2"
+                >
                   Ethereum attestation (EAS)
                   <ArrowUpRight className="h-4 w-4" />
                 </Link>
@@ -109,14 +114,18 @@ export function HashVerification({
         <CardHeader>
           <CardTitle>Verify it yourself</CardTitle>
           <CardDescription>
-            Two steps. Either one is enough to confirm the {subject} has not been altered since it was sealed.
+            Two steps. Either one is enough to confirm the {subject} has not been altered since it
+            was sealed.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-5">
           <section className="space-y-2">
-            <p className="text-sm font-semibold text-[var(--text-primary)]">1. Confirm the hash matches the file</p>
+            <p className="text-sm font-semibold text-[var(--text-primary)]">
+              1. Confirm the hash matches the file
+            </p>
             <p className="text-sm text-[var(--text-secondary)]">
-              Download the hashable file and compute its SHA-256 hash. The result must match the hash above.
+              Download the hashable file and compute its SHA-256 hash. The result must match the
+              hash above.
             </p>
             <div className="glass-card border border-dashed border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.5)] p-4 text-xs">
               <pre className="overflow-x-auto text-[var(--text-secondary)]">{`curl -O https://eldenglass.com${hashableFileUrl}
@@ -126,9 +135,14 @@ shasum -a 256 ${hashableFile}`}</pre>
 
           {bitcoinOts && (
             <section className="space-y-2">
-              <p className="text-sm font-semibold text-[var(--text-primary)]">{stepNumber++}. Verify the Bitcoin timestamp</p>
+              <p className="text-sm font-semibold text-[var(--text-primary)]">
+                {stepNumber++}. Verify the Bitcoin timestamp
+              </p>
               <p className="text-sm text-[var(--text-secondary)]">
-                Download the OpenTimestamps proof file and verify it against the hashable file with the <code className="text-[var(--accent-gold)]">ots</code> client. This proves the document existed at the Bitcoin block height recorded in the proof, which cannot be backdated.
+                Download the OpenTimestamps proof file and verify it against the hashable file with
+                the <code className="text-[var(--accent-gold)]">ots</code> client. This proves the
+                document existed at the Bitcoin block height recorded in the proof, which cannot be
+                backdated.
               </p>
               <div className="glass-card border border-dashed border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.5)] p-4 text-xs">
                 <pre className="overflow-x-auto text-[var(--text-secondary)]">{`pip install opentimestamps-client
@@ -137,7 +151,12 @@ ots verify -f ${hashableFile} ${bitcoinOts}`}</pre>
               </div>
               <p className="text-xs text-[var(--text-tertiary)]">
                 Or upload the <code>.ots</code> file at{' '}
-                <Link href={'https://opentimestamps.org/' as any} target="_blank" rel="noreferrer" className="text-[var(--accent-gold)] underline">
+                <Link
+                  href={'https://opentimestamps.org/' as any}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[var(--accent-gold)] underline"
+                >
                   opentimestamps.org
                 </Link>{' '}
                 for browser-based verification.
@@ -147,9 +166,12 @@ ots verify -f ${hashableFile} ${bitcoinOts}`}</pre>
 
           {ethereumAttestation && (
             <section className="space-y-2">
-              <p className="text-sm font-semibold text-[var(--text-primary)]">{stepNumber++}. Verify the Ethereum attestation</p>
+              <p className="text-sm font-semibold text-[var(--text-primary)]">
+                {stepNumber++}. Verify the Ethereum attestation
+              </p>
               <p className="text-sm text-[var(--text-secondary)]">
-                Visit the Ethereum Attestation Service (EAS) record linked above. It contains the document hash, the attester&apos;s signature, and the block timestamp.
+                Visit the Ethereum Attestation Service (EAS) record linked above. It contains the
+                document hash, the attester&apos;s signature, and the block timestamp.
               </p>
               <div className="glass-card border border-dashed border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.5)] p-4 text-xs font-mono">
                 <p className="text-[var(--text-tertiary)]">UID</p>
