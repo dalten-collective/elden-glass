@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import type { TitleCardDatabase, TitleCard, CreateTitleCardRequest } from '@/types/title-cards';
 
+export const dynamic = 'force-dynamic';
+
 const titleCardsPath = path.join(process.cwd(), 'data', 'title-cards.json');
 
 function readDatabase(): TitleCardDatabase {

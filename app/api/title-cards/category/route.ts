@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+export const dynamic = 'force-dynamic';
+
 const splitDir = path.join(process.cwd(), 'data', 'title-cards-split');
 
 // GET - Retrieve title cards for a specific category file
