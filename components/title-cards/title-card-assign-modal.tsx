@@ -29,10 +29,11 @@ export function TitleCardAssignModal({ isOpen, onClose }: TitleCardAssignModalPr
   const filteredCards = useMemo(() => {
     if (!searchQuery.trim()) return cards;
     const query = searchQuery.toLowerCase();
-    return cards.filter(card =>
-      card.title.toLowerCase().includes(query) ||
-      card.term.toLowerCase().includes(query) ||
-      card.description.toLowerCase().includes(query)
+    return cards.filter(
+      (card) =>
+        card.title.toLowerCase().includes(query) ||
+        card.term.toLowerCase().includes(query) ||
+        card.description.toLowerCase().includes(query)
     );
   }, [cards, searchQuery]);
 
@@ -51,7 +52,7 @@ export function TitleCardAssignModal({ isOpen, onClose }: TitleCardAssignModalPr
         setIsSaving(false);
         return;
       }
-      if (currentAliases.some(a => a.toLowerCase() === normalizedText)) {
+      if (currentAliases.some((a) => a.toLowerCase() === normalizedText)) {
         alert('This text is already an alias for this card.');
         setIsSaving(false);
         return;
@@ -90,10 +91,7 @@ export function TitleCardAssignModal({ isOpen, onClose }: TitleCardAssignModalPr
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center">
       {/* Backdrop */}
-      <div
-        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
-        onClick={onClose}
-      />
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
 
       {/* Modal */}
       <div className="relative w-full max-w-lg mx-4 bg-[var(--bg-secondary)] rounded-lg shadow-2xl border border-[var(--border-emphasis)] max-h-[80vh] flex flex-col">
@@ -118,9 +116,7 @@ export function TitleCardAssignModal({ isOpen, onClose }: TitleCardAssignModalPr
           <p className="text-xs text-[var(--text-tertiary)] uppercase tracking-wider mb-1">
             Selected Text
           </p>
-          <p className="text-[var(--accent-gold)] font-medium">
-            &quot;{selectedText}&quot;
-          </p>
+          <p className="text-[var(--accent-gold)] font-medium">&quot;{selectedText}&quot;</p>
         </div>
 
         {/* Search */}
@@ -141,9 +137,7 @@ export function TitleCardAssignModal({ isOpen, onClose }: TitleCardAssignModalPr
         {/* Card List */}
         <div className="flex-1 overflow-y-auto p-2 min-h-[200px] max-h-[40vh]">
           {filteredCards.length === 0 ? (
-            <p className="text-center text-[var(--text-tertiary)] py-8">
-              No cards found
-            </p>
+            <p className="text-center text-[var(--text-tertiary)] py-8">No cards found</p>
           ) : (
             <div className="space-y-1">
               {filteredCards.map((card) => (
@@ -188,11 +182,7 @@ export function TitleCardAssignModal({ isOpen, onClose }: TitleCardAssignModalPr
           <Button variant="outline" onClick={onClose}>
             Cancel
           </Button>
-          <Button
-            onClick={handleAssign}
-            disabled={!selectedCard || isSaving}
-            className="gap-2"
-          >
+          <Button onClick={handleAssign} disabled={!selectedCard || isSaving} className="gap-2">
             {isSaving ? 'Assigning...' : 'Assign as Alias'}
           </Button>
         </div>

@@ -61,7 +61,11 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
         label: 'Scratch Writings',
         children: [
           { type: 'link', href: '/belevan', label: 'Belevan, Mónica' },
-          { type: 'link', href: '/large-glass-breakdown', label: 'Selected Quotes on the Large Glass' },
+          {
+            type: 'link',
+            href: '/large-glass-breakdown',
+            label: 'Selected Quotes on the Large Glass',
+          },
           { type: 'link', href: '/duchamp-biography', label: 'Duchamp Biography' },
           { type: 'link', href: '/endings', label: 'Endings as Post-War Japan' },
           { type: 'link', href: '/golden-bough', label: 'The Golden Bough' },
@@ -90,8 +94,16 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
           {
             type: 'group',
             children: [
-              { type: 'link', href: '/xenotext-theory#uncontrollable-meaning', label: 'Uncontrollable Meaning' },
-              { type: 'link', href: '/xenotext-theory#flower-crucible-erdtree', label: 'Flower Crucible & Erdtree' },
+              {
+                type: 'link',
+                href: '/xenotext-theory#uncontrollable-meaning',
+                label: 'Uncontrollable Meaning',
+              },
+              {
+                type: 'link',
+                href: '/xenotext-theory#flower-crucible-erdtree',
+                label: 'Flower Crucible & Erdtree',
+              },
               { type: 'link', href: '/xenotext-theory#flower-maidens', label: 'Flower Maidens' },
             ],
           },
@@ -173,7 +185,20 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
 function formatShortDate(iso: string): string {
   const dateOnly = iso.split('T')[0];
   const [, monthStr, dayStr] = dateOnly.split('-');
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
   const monthIndex = Number(monthStr) - 1;
   const day = Number(dayStr);
   return `${months[monthIndex] ?? ''} ${day}`;

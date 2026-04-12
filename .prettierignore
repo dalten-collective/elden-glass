@@ -1,0 +1,11 @@
+.contentlayer
+.next
+node_modules
+coverage
+data/title-cards.json
+data/title-cards-split
+data/sense-index.json
+public/images
+public/animations
+public/proofs
+tsconfig.tsbuildinfo

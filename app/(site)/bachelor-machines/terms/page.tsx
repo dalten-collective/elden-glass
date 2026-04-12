@@ -25,12 +25,8 @@ export default function BachelorMachineTermsPage() {
               Reference Catalog
             </p>
           </div>
-          <h1 className="page-hero-title">
-            {doc.title}
-          </h1>
-          {doc.subtitle && (
-            <p className="page-hero-description">{doc.subtitle}</p>
-          )}
+          <h1 className="page-hero-title">{doc.title}</h1>
+          {doc.subtitle && <p className="page-hero-description">{doc.subtitle}</p>}
         </div>
         <HeroMeta
           items={[

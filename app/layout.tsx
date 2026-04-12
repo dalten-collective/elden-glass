@@ -17,8 +17,18 @@ const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenglass.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'Elden Glass — Blockchain Verified Lore Discovery',
-  description: 'A groundbreaking discovery reveals Elden Ring as a digital reimagining of Marcel Duchamp\'s The Large Glass. Blockchain-timestamped research with cryptographic verification.',
-  keywords: ['Elden Ring', 'Marcel Duchamp', 'The Large Glass', 'FromSoftware', 'Pataphysics', 'Game Analysis', 'Art History', 'Blockchain Verification'],
+  description:
+    "A groundbreaking discovery reveals Elden Ring as a digital reimagining of Marcel Duchamp's The Large Glass. Blockchain-timestamped research with cryptographic verification.",
+  keywords: [
+    'Elden Ring',
+    'Marcel Duchamp',
+    'The Large Glass',
+    'FromSoftware',
+    'Pataphysics',
+    'Game Analysis',
+    'Art History',
+    'Blockchain Verification',
+  ],
   authors: [{ name: 'TGB' }],
   icons: {
     icon: '/images/dashusnavnulsigil.png',
@@ -27,7 +37,8 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   openGraph: {
     title: 'Elden Ring Is The Large Glass - Verified Discovery',
-    description: 'FromSoftware\'s masterpiece decoded: A complete digital reimagining of Duchamp\'s mechanical bride fantasy.',
+    description:
+      "FromSoftware's masterpiece decoded: A complete digital reimagining of Duchamp's mechanical bride fantasy.",
     type: 'website',
     locale: 'en_US',
     siteName: 'Elden Glass',
@@ -43,7 +54,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Elden Ring Is The Large Glass',
-    description: 'A blockchain-verified discovery proving Elden Ring reimagines Duchamp\'s The Large Glass',
+    description:
+      "A blockchain-verified discovery proving Elden Ring reimagines Duchamp's The Large Glass",
     images: ['/images/replica-large-glass.jpg'],
   },
   viewport: 'width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover',

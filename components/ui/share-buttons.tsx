@@ -77,11 +77,7 @@ export function ShareButtons({
         {variant === 'default' && <span className="text-[var(--text-secondary)]">Bluesky</span>}
       </a>
 
-      <a
-        href={shareLinks.email}
-        className={buttonClass}
-        title="Share via Email"
-      >
+      <a href={shareLinks.email} className={buttonClass} title="Share via Email">
         <Mail size={iconSize} className="text-[var(--text-secondary)]" />
         {variant === 'default' && <span className="text-[var(--text-secondary)]">Email</span>}
       </a>

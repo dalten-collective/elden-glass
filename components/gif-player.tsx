@@ -7,8 +7,8 @@ interface GifPlayerProps {
   src: string;
   alt: string;
   className?: string;
-  skipMs?: number;      // Milliseconds to skip at start (default: 2000)
-  durationMs?: number;  // Max duration to play in ms (default: 18000)
+  skipMs?: number; // Milliseconds to skip at start (default: 2000)
+  durationMs?: number; // Max duration to play in ms (default: 18000)
 }
 
 export function GifPlayer({
@@ -175,7 +175,6 @@ export function GifPlayer({
         // Start animation
         console.log('[GifPlayer] Starting animation');
         animationRef.current = requestAnimationFrame(animate);
-
       } catch (err) {
         if (!cancelled) {
           console.error('GIF loading error:', err);

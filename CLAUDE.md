@@ -30,15 +30,16 @@ Never force-push to `main` or `dev`. Never bypass review.
 
 Vercel deploys automatically from `dalten-collective/elden-glass` on GitHub:
 
-| Branch | Environment | URL |
-|--------|-------------|-----|
-| `main` | Production | [eldenringisthelargeglass.com](https://eldenringisthelargeglass.com) |
-| `dev` | Integration / preview | Unique Vercel preview URL per push |
-| Any PR | Preview | Unique Vercel preview URL per PR |
+| Branch | Environment           | URL                                                                  |
+| ------ | --------------------- | -------------------------------------------------------------------- |
+| `main` | Production            | [eldenringisthelargeglass.com](https://eldenringisthelargeglass.com) |
+| `dev`  | Integration / preview | Unique Vercel preview URL per push                                   |
+| Any PR | Preview               | Unique Vercel preview URL per PR                                     |
 
 Every push to `dev` and every PR gets its own preview deployment at a unique Vercel URL. Use these to verify changes before merging.
 
 One environment variable is set in Vercel:
+
 - `NEXT_PUBLIC_BASE_URL` = `https://eldenringisthelargeglass.com`
 
 ## Content Architecture

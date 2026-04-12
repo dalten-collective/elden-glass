@@ -3,7 +3,16 @@
 import { useState, useEffect, useCallback, memo, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
-import { Search, Filter, X, ChevronDown, Database, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  Search,
+  Filter,
+  X,
+  ChevronDown,
+  Database,
+  Globe,
+  ChevronLeft,
+  ChevronRight,
+} from 'lucide-react';
 import type { TitleCard } from '@/types/title-cards';
 import { CardDetailModal } from '@/components/title-cards/card-detail-modal';
 
@@ -74,31 +83,34 @@ function GathererContent() {
   const [selectedCard, setSelectedCard] = useState<TitleCard | null>(null);
 
   // Update URL with new params
-  const updateUrl = useCallback((params: Record<string, string | number | undefined>) => {
-    const newParams = new URLSearchParams();
+  const updateUrl = useCallback(
+    (params: Record<string, string | number | undefined>) => {
+      const newParams = new URLSearchParams();
 
-    // Merge current params with new ones
-    const current = {
-      q: urlQuery,
-      page: urlPage,
-      section: urlSection,
-      category: urlCategory,
-      subcategory: urlSubcategory,
-      source: urlSource,
-      ...params,
-    };
+      // Merge current params with new ones
+      const current = {
+        q: urlQuery,
+        page: urlPage,
+        section: urlSection,
+        category: urlCategory,
+        subcategory: urlSubcategory,
+        source: urlSource,
+        ...params,
+      };
 
-    // Only add non-empty params
-    if (current.q) newParams.set('q', String(current.q));
-    if (current.page && current.page !== 1) newParams.set('page', String(current.page));
-    if (current.section) newParams.set('section', String(current.section));
-    if (current.category) newParams.set('category', String(current.category));
-    if (current.subcategory) newParams.set('subcategory', String(current.subcategory));
-    if (current.source) newParams.set('source', String(current.source));
+      // Only add non-empty params
+      if (current.q) newParams.set('q', String(current.q));
+      if (current.page && current.page !== 1) newParams.set('page', String(current.page));
+      if (current.section) newParams.set('section', String(current.section));
+      if (current.category) newParams.set('category', String(current.category));
+      if (current.subcategory) newParams.set('subcategory', String(current.subcategory));
+      if (current.source) newParams.set('source', String(current.source));
 
-    const queryString = newParams.toString();
-    router.push(queryString ? `/gatherer?${queryString}` : '/gatherer', { scroll: false });
-  }, [router, urlQuery, urlPage, urlSection, urlCategory, urlSubcategory, urlSource]);
+      const queryString = newParams.toString();
+      router.push(queryString ? `/gatherer?${queryString}` : '/gatherer', { scroll: false });
+    },
+    [router, urlQuery, urlPage, urlSection, urlCategory, urlSubcategory, urlSource]
+  );
 
   // Debounce search input -> URL
   useEffect(() => {
@@ -152,7 +164,12 @@ function GathererContent() {
 
   // Filter handlers that reset cascading filters
   const handleSectionChange = (section: string) => {
-    updateUrl({ section: section || undefined, category: undefined, subcategory: undefined, page: 1 });
+    updateUrl({
+      section: section || undefined,
+      category: undefined,
+      subcategory: undefined,
+      page: 1,
+    });
   };
 
   const handleCategoryChange = (category: string) => {
@@ -256,8 +273,10 @@ function GathererContent() {
                   className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
                 >
                   <option value="">All Sections</option>
-                  {data?.sections?.map(section => (
-                    <option key={section} value={section}>{section}</option>
+                  {data?.sections?.map((section) => (
+                    <option key={section} value={section}>
+                      {section}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -273,8 +292,10 @@ function GathererContent() {
                   className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
                 >
                   <option value="">All Categories</option>
-                  {data?.categories?.map(category => (
-                    <option key={category} value={category}>{category}</option>
+                  {data?.categories?.map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -290,8 +311,10 @@ function GathererContent() {
                   className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
                 >
                   <option value="">All Subcategories</option>
-                  {data?.subcategories?.map(subcategory => (
-                    <option key={subcategory} value={subcategory}>{subcategory}</option>
+                  {data?.subcategories?.map((subcategory) => (
+                    <option key={subcategory} value={subcategory}>
+                      {subcategory}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -321,7 +344,7 @@ function GathererContent() {
                   Quick Filters
                 </label>
                 <div className="flex flex-wrap gap-2">
-                  {data.sections.map(section => (
+                  {data.sections.map((section) => (
                     <button
                       key={section}
                       onClick={() => handleSectionChange(section === urlSection ? '' : section)}
@@ -341,7 +364,9 @@ function GathererContent() {
             {hasActiveFilters && (
               <div className="mt-4 pt-4 border-t border-[var(--border-subtle)] flex items-center justify-between">
                 <span className="text-sm text-[var(--text-secondary)]">
-                  {data ? `Showing ${data.cards.length} of ${data.total.toLocaleString()} matching cards` : 'Loading...'}
+                  {data
+                    ? `Showing ${data.cards.length} of ${data.total.toLocaleString()} matching cards`
+                    : 'Loading...'}
                 </span>
                 <button
                   onClick={clearFilters}
@@ -386,7 +411,9 @@ function GathererContent() {
                   <span className="animate-pulse">Loading...</span>
                 ) : (
                   <>
-                    Showing {((data.page - 1) * CARDS_PER_PAGE) + 1}–{Math.min(data.page * CARDS_PER_PAGE, data.total)} of {data.total.toLocaleString()} cards
+                    Showing {(data.page - 1) * CARDS_PER_PAGE + 1}–
+                    {Math.min(data.page * CARDS_PER_PAGE, data.total)} of{' '}
+                    {data.total.toLocaleString()} cards
                   </>
                 )}
               </div>
@@ -400,13 +427,11 @@ function GathererContent() {
             </div>
 
             {/* Card Grid */}
-            <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ${loading ? 'opacity-50' : ''}`}>
-              {data.cards.map(card => (
-                <CardTile
-                  key={card.id}
-                  card={card}
-                  onClick={handleCardClick}
-                />
+            <div
+              className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ${loading ? 'opacity-50' : ''}`}
+            >
+              {data.cards.map((card) => (
+                <CardTile key={card.id} card={card} onClick={handleCardClick} />
               ))}
             </div>
 
@@ -440,10 +465,7 @@ function GathererContent() {
 
       {/* Card Detail Modal — read-only view */}
       {selectedCard && (
-        <CardDetailModal
-          card={selectedCard}
-          onClose={() => setSelectedCard(null)}
-        />
+        <CardDetailModal card={selectedCard} onClose={() => setSelectedCard(null)} />
       )}
     </div>
   );
@@ -472,14 +494,22 @@ function GathererSkeleton() {
 }
 
 // Memoized Card Tile
-const CardTile = memo(function CardTile({ card, onClick }: { card: TitleCard; onClick: (card: TitleCard) => void }) {
+const CardTile = memo(function CardTile({
+  card,
+  onClick,
+}: {
+  card: TitleCard;
+  onClick: (card: TitleCard) => void;
+}) {
   const isDLC = card.source === 'dlc';
 
   return (
     <button
       onClick={() => onClick(card)}
       className={`text-left bg-[var(--bg-secondary)] border rounded-lg p-4 transition-all duration-150 hover:shadow-lg hover:scale-[1.02] group ${
-        isDLC ? 'border-[var(--accent-red)]/30 hover:border-[var(--accent-red)]' : 'border-[var(--accent-gold)]/30 hover:border-[var(--accent-gold)]'
+        isDLC
+          ? 'border-[var(--accent-red)]/30 hover:border-[var(--accent-red)]'
+          : 'border-[var(--accent-gold)]/30 hover:border-[var(--accent-gold)]'
       }`}
     >
       {card.image && (
@@ -495,26 +525,29 @@ const CardTile = memo(function CardTile({ card, onClick }: { card: TitleCard; on
         </div>
       )}
 
-      <h3 className={`font-serif text-lg group-hover:underline mb-1 line-clamp-1 ${
-        isDLC ? 'text-[var(--accent-red)]' : 'text-[var(--accent-gold)]'
-      }`}>
+      <h3
+        className={`font-serif text-lg group-hover:underline mb-1 line-clamp-1 ${
+          isDLC ? 'text-[var(--accent-red)]' : 'text-[var(--accent-gold)]'
+        }`}
+      >
         {card.title}
       </h3>
 
       <div className="text-xs text-[var(--text-tertiary)] mb-2 line-clamp-1">
-        {card.category}{card.subcategory && ` — ${card.subcategory}`}
+        {card.category}
+        {card.subcategory && ` — ${card.subcategory}`}
       </div>
 
-      <p className="text-sm text-[var(--text-secondary)] line-clamp-3">
-        {card.description || ''}
-      </p>
+      <p className="text-sm text-[var(--text-secondary)] line-clamp-3">{card.description || ''}</p>
 
       {card.source && (
-        <div className={`mt-3 inline-block px-2 py-0.5 rounded text-xs ${
-          isDLC
-            ? 'bg-[var(--accent-red)]/10 text-[var(--accent-red)]'
-            : 'bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]'
-        }`}>
+        <div
+          className={`mt-3 inline-block px-2 py-0.5 rounded text-xs ${
+            isDLC
+              ? 'bg-[var(--accent-red)]/10 text-[var(--accent-red)]'
+              : 'bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]'
+          }`}
+        >
           {isDLC ? 'DLC' : 'Base Game'}
         </div>
       )}
@@ -539,7 +572,11 @@ function CardSkeleton() {
 }
 
 // Pagination
-function Pagination({ currentPage, totalPages, onPageChange }: {
+function Pagination({
+  currentPage,
+  totalPages,
+  onPageChange,
+}: {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
@@ -575,9 +612,11 @@ function Pagination({ currentPage, totalPages, onPageChange }: {
         <ChevronLeft className="h-4 w-4" />
       </button>
 
-      {getPageNumbers().map((page, i) => (
+      {getPageNumbers().map((page, i) =>
         page === '...' ? (
-          <span key={`ellipsis-${i}`} className="px-2 text-[var(--text-tertiary)]">...</span>
+          <span key={`ellipsis-${i}`} className="px-2 text-[var(--text-tertiary)]">
+            ...
+          </span>
         ) : (
           <button
             key={page}
@@ -591,7 +630,7 @@ function Pagination({ currentPage, totalPages, onPageChange }: {
             {page}
           </button>
         )
-      ))}
+      )}
 
       <button
         onClick={() => onPageChange(currentPage + 1)}

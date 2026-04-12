@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"],
+      "@/content/*": ["content/*"],
+      "@/data/*": ["data/*"],
+      "@/types/*": ["types/*"],
+      "contentlayer/generated": ["types/contentlayer-generated"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "exclude": ["node_modules", ".next"]
+}

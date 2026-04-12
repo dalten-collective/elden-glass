@@ -22,7 +22,7 @@ function escapeXml(text: string): string {
 function generateRss(items: FeedItem[]): string {
   const itemsXml = items
     .map(
-      item => `
+      (item) => `
     <item>
       <title>${escapeXml(item.title)}</title>
       <link>${item.link}</link>
@@ -54,7 +54,7 @@ export async function GET() {
       title: 'The Discovery: Elden Ring Is The Large Glass',
       link: `${BASE_URL}/discovery`,
       description:
-        'How a question to ChatGPT revealed that Elden Ring is a complete digital reimagining of Marcel Duchamp\'s The Bride Stripped Bare by Her Bachelors, Even.',
+        "How a question to ChatGPT revealed that Elden Ring is a complete digital reimagining of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even.",
       pubDate: new Date('2024-10-01'),
       guid: `${BASE_URL}/discovery`,
     },
@@ -70,7 +70,7 @@ export async function GET() {
       title: 'What Is Pataphysics?',
       link: `${BASE_URL}/what-is-pataphysics`,
       description:
-        'The science of imaginary solutions. Alfred Jarry\'s discipline extends beyond metaphysics as far as metaphysics extends beyond physics. FromSoftware built the first true \'pataphysical video game.',
+        "The science of imaginary solutions. Alfred Jarry's discipline extends beyond metaphysics as far as metaphysics extends beyond physics. FromSoftware built the first true 'pataphysical video game.",
       pubDate: new Date('2024-10-20'),
       guid: `${BASE_URL}/what-is-pataphysics`,
     },
@@ -91,10 +91,10 @@ export async function GET() {
       guid: `${BASE_URL}/living`,
     },
     {
-      title: 'Rhonda Shearer and Duchamp\'s Secret',
+      title: "Rhonda Shearer and Duchamp's Secret",
       link: `${BASE_URL}/rhonda-shearer-archive`,
       description:
-        'Rhonda Roland Shearer discovered that Duchamp\'s readymades were not found objects but carefully constructed artworks. Her research validates the depth of Duchamp\'s conceptual games.',
+        "Rhonda Roland Shearer discovered that Duchamp's readymades were not found objects but carefully constructed artworks. Her research validates the depth of Duchamp's conceptual games.",
       pubDate: new Date('2024-12-01'),
       guid: `${BASE_URL}/rhonda-shearer-archive`,
     },

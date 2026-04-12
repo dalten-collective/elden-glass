@@ -20,11 +20,7 @@ export function ScrollToText() {
     // Give the page a moment to render
     setTimeout(() => {
       // Find the text in the page
-      const walker = document.createTreeWalker(
-        document.body,
-        NodeFilter.SHOW_TEXT,
-        null
-      );
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
 
       let node;
       while ((node = walker.nextNode())) {

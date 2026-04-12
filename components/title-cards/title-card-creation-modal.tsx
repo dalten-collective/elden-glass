@@ -83,7 +83,7 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
 
     // Validate split card images
     if (isSplit) {
-      const validImages = splitImages.filter(img => img.trim());
+      const validImages = splitImages.filter((img) => img.trim());
       if (validImages.length < 2) {
         alert('Please provide at least 2 image URLs for split card');
         return;
@@ -121,10 +121,10 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
           title,
           description,
           image: image || undefined,
-          images: isSplit ? splitImages.filter(img => img.trim()) : undefined,
+          images: isSplit ? splitImages.filter((img) => img.trim()) : undefined,
           category: category || undefined,
           subcategory: subcategory || undefined,
-          links: links.filter(l => l.label && l.url),
+          links: links.filter((l) => l.label && l.url),
           isSplit,
           headerPopup,
         }),
@@ -265,9 +265,7 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
               <option value="Works of Marcel Duchamp">Works of Marcel Duchamp</option>
               <option value="Elden Ring">Elden Ring</option>
             </select>
-            <p className="text-xs text-gray-500 mt-1">
-              Main category (like MTG card types)
-            </p>
+            <p className="text-xs text-gray-500 mt-1">Main category (like MTG card types)</p>
           </div>
 
           <div>
@@ -282,9 +280,7 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
               <option value="The Large Glass">The Large Glass</option>
               <option value="The Readymades">The Readymades</option>
             </select>
-            <p className="text-xs text-gray-500 mt-1">
-              Subcategory (like MTG card subtypes)
-            </p>
+            <p className="text-xs text-gray-500 mt-1">Subcategory (like MTG card subtypes)</p>
           </div>
 
           <div>
@@ -311,11 +307,7 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
                   onChange={(e) => handleLinkChange(index, 'url', e.target.value)}
                   placeholder="URL"
                 />
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  onClick={() => handleRemoveLink(index)}
-                >
+                <Button size="sm" variant="ghost" onClick={() => handleRemoveLink(index)}>
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </div>
@@ -330,12 +322,16 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
                 checked={isSplit}
                 onChange={(e) => setIsSplit(e.target.checked)}
               />
-              <span className="text-sm font-medium">Enable Split Card (multiple images side-by-side)</span>
+              <span className="text-sm font-medium">
+                Enable Split Card (multiple images side-by-side)
+              </span>
             </label>
 
             {isSplit && (
               <div className="space-y-4 pl-6 border-l-2 border-gray-200">
-                <p className="text-xs text-gray-500">Add image URLs to display side-by-side (at least 2 required)</p>
+                <p className="text-xs text-gray-500">
+                  Add image URLs to display side-by-side (at least 2 required)
+                </p>
 
                 {splitImages.map((imageUrl, index) => (
                   <div key={index} className="flex gap-2 items-center">
@@ -383,7 +379,9 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
                       checked={hasHeaderPopup}
                       onChange={(e) => setHasHeaderPopup(e.target.checked)}
                     />
-                    <span className="text-sm font-medium">Add Header Popup (appears above split cards)</span>
+                    <span className="text-sm font-medium">
+                      Add Header Popup (appears above split cards)
+                    </span>
                   </label>
 
                   {hasHeaderPopup && (
@@ -404,7 +402,9 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
 
                       {headerType === 'titlecard' && (
                         <div>
-                          <label className="block text-sm font-medium mb-1">Select Title Card</label>
+                          <label className="block text-sm font-medium mb-1">
+                            Select Title Card
+                          </label>
                           <select
                             className="w-full p-2 border rounded"
                             value={headerTitleCardId}
@@ -412,8 +412,8 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
                           >
                             <option value="">Select a card...</option>
                             {availableCards
-                              .filter(c => !c.isSplit)
-                              .map(card => (
+                              .filter((c) => !c.isSplit)
+                              .map((card) => (
                                 <option key={card.id} value={card.id}>
                                   {card.title}
                                 </option>
@@ -494,7 +494,9 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
                             />
                           </div>
                           <div>
-                            <label className="block text-sm font-medium mb-1">Preview Image (optional)</label>
+                            <label className="block text-sm font-medium mb-1">
+                              Preview Image (optional)
+                            </label>
                             <input
                               type="text"
                               className="w-full p-2 border rounded"

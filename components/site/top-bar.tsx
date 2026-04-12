@@ -47,8 +47,12 @@ export function TopBar({ data }: TopBarProps) {
         </div>
 
         {/* Title */}
-        <Link href="/" className="block pb-2 text-center font-serif text-3xl leading-tight text-[var(--accent-gold)]">
-          Elden Ring Is Marcel Duchamp&apos;s <em>The Bride Stripped Bare By Her Bachelors, Even</em>
+        <Link
+          href="/"
+          className="block pb-2 text-center font-serif text-3xl leading-tight text-[var(--accent-gold)]"
+        >
+          Elden Ring Is Marcel Duchamp&apos;s{' '}
+          <em>The Bride Stripped Bare By Her Bachelors, Even</em>
         </Link>
       </div>
     </header>

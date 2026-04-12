@@ -5,7 +5,11 @@ import Image from 'next/image';
 import { duchampArtworks } from '@/lib/duchamp-artworks';
 
 export default function DuchampWorksPage() {
-  const [hoveredWork, setHoveredWork] = useState<{ title: string; year?: string; imagePath: string } | null>(null);
+  const [hoveredWork, setHoveredWork] = useState<{
+    title: string;
+    year?: string;
+    imagePath: string;
+  } | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -17,8 +21,8 @@ export default function DuchampWorksPage() {
       <div className="mb-12">
         <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-4">Duchamp&apos;s Works</h1>
         <p className="text-[var(--text-secondary)] leading-relaxed">
-          A comprehensive collection of Marcel Duchamp&apos;s artworks from 1901 to 1968, organized chronologically by period.
-          Hover over any title to preview the artwork.
+          A comprehensive collection of Marcel Duchamp&apos;s artworks from 1901 to 1968, organized
+          chronologically by period. Hover over any title to preview the artwork.
         </p>
       </div>
 
@@ -26,7 +30,10 @@ export default function DuchampWorksPage() {
         {duchampArtworks.map((period) => (
           <div key={period.title} className="space-y-4">
             <h2 className="text-2xl font-serif text-[var(--accent-gold)] border-b border-[var(--border-subtle)] pb-2">
-              {period.title} {period.years && <span className="text-lg text-[var(--text-tertiary)]">({period.years})</span>}
+              {period.title}{' '}
+              {period.years && (
+                <span className="text-lg text-[var(--text-tertiary)]">({period.years})</span>
+              )}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -34,18 +41,18 @@ export default function DuchampWorksPage() {
                 <div
                   key={work.filename}
                   className="p-4 border border-[var(--border-subtle)] rounded-lg hover:border-[var(--accent-gold)] transition-colors cursor-default bg-[var(--bg-secondary)]"
-                  onMouseEnter={() => setHoveredWork({
-                    title: work.title,
-                    year: work.year,
-                    imagePath: `/images/duchamp/paintings/${work.filename}`
-                  })}
+                  onMouseEnter={() =>
+                    setHoveredWork({
+                      title: work.title,
+                      year: work.year,
+                      imagePath: `/images/duchamp/paintings/${work.filename}`,
+                    })
+                  }
                   onMouseLeave={() => setHoveredWork(null)}
                   onMouseMove={handleMouseMove}
                 >
                   <h3 className="font-medium text-[var(--text-primary)] mb-1">{work.title}</h3>
-                  {work.year && (
-                    <p className="text-sm text-[var(--text-tertiary)]">{work.year}</p>
-                  )}
+                  {work.year && <p className="text-sm text-[var(--text-tertiary)]">{work.year}</p>}
                 </div>
               ))}
             </div>
@@ -78,7 +85,6 @@ export default function DuchampWorksPage() {
           </div>
         </div>
       )}
-
     </div>
   );
 }

@@ -10,8 +10,8 @@ export default function NotFound() {
             The Illuminating Gas Has Dispersed
           </h2>
           <p className="text-[var(--text-secondary)] max-w-md mx-auto">
-            Like the Bachelors forever separated from the Bride, this page exists
-            only in the realm of possibility.
+            Like the Bachelors forever separated from the Bride, this page exists only in the realm
+            of possibility.
           </p>
         </div>
 

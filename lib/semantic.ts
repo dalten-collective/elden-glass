@@ -43,7 +43,7 @@ export function getSenseLabel(senseKey: string): string {
     v: '(verb)',
     a: '(adj)',
     r: '(adv)',
-    s: '(sat adj)'
+    s: '(sat adj)',
   };
 
   return `${parsed.word} ${posLabels[parsed.pos] || ''}`.trim();
@@ -56,48 +56,48 @@ export function getSenseEmoji(senseKey: string): string {
   // Common sense categories
   const emojiMap: Record<string, string> = {
     // Abstract
-    'concept': '💭',
-    'idea': '💡',
-    'thought': '🧠',
+    concept: '💭',
+    idea: '💡',
+    thought: '🧠',
 
     // People
-    'person': '👤',
-    'character': '🎭',
-    'queen': '👑',
-    'king': '🤴',
-    'god': '✨',
-    'deity': '✨',
-    'warrior': '⚔️',
-    'knight': '🛡️',
+    person: '👤',
+    character: '🎭',
+    queen: '👑',
+    king: '🤴',
+    god: '✨',
+    deity: '✨',
+    warrior: '⚔️',
+    knight: '🛡️',
 
     // Objects
-    'weapon': '⚔️',
-    'sword': '🗡️',
-    'armor': '🛡️',
-    'ring': '💍',
-    'glass': '🔮',
-    'machine': '⚙️',
+    weapon: '⚔️',
+    sword: '🗡️',
+    armor: '🛡️',
+    ring: '💍',
+    glass: '🔮',
+    machine: '⚙️',
 
     // Places
-    'location': '📍',
-    'place': '🗺️',
-    'area': '🌍',
-    'tree': '🌳',
+    location: '📍',
+    place: '🗺️',
+    area: '🌍',
+    tree: '🌳',
 
     // Actions
-    'suspended': '⛓️',
-    'broken': '💔',
-    'shattered': '💔',
+    suspended: '⛓️',
+    broken: '💔',
+    shattered: '💔',
 
     // Magic
-    'magic': '✨',
-    'sorcery': '🔮',
-    'spell': '🪄',
+    magic: '✨',
+    sorcery: '🔮',
+    spell: '🪄',
 
     // Default by POS
-    'default_n': '📦',
-    'default_v': '▶️',
-    'default_a': '🏷️',
+    default_n: '📦',
+    default_v: '▶️',
+    default_a: '🏷️',
   };
 
   if (emojiMap[word]) return emojiMap[word];
@@ -124,15 +124,15 @@ export async function findRelatedBySense(
   }
 
   const index = await loadSenseIndex();
-  const cardById = new Map(allCards.map(c => [c.id, c]));
+  const cardById = new Map(allCards.map((c) => [c.id, c]));
 
   const senseResults: { sense: string; cards: TitleCard[] }[] = [];
 
   for (const sense of card.senses) {
     const relatedIds = index[sense] || [];
     const relatedCards = relatedIds
-      .filter(id => id !== card.id)
-      .map(id => cardById.get(id))
+      .filter((id) => id !== card.id)
+      .map((id) => cardById.get(id))
       .filter((c): c is TitleCard => c !== undefined)
       .slice(0, 5);
 
@@ -163,13 +163,13 @@ export function findBySenseIntersection(
   for (const card of allCards) {
     if (!card.senses) continue;
 
-    const sharedSenses = card.senses.filter(s => senseSet.has(s));
+    const sharedSenses = card.senses.filter((s) => senseSet.has(s));
 
     if (sharedSenses.length >= minShared) {
       results.push({
         card,
         sharedSenses,
-        score: sharedSenses.length / Math.max(senses.length, card.senses.length)
+        score: sharedSenses.length / Math.max(senses.length, card.senses.length),
       });
     }
   }
@@ -183,9 +183,7 @@ export function findBySenseIntersection(
 /**
  * Group cards by their primary sense categories
  */
-export function groupBySenseCategory(
-  cards: TitleCard[]
-): Map<string, TitleCard[]> {
+export function groupBySenseCategory(cards: TitleCard[]): Map<string, TitleCard[]> {
   const groups = new Map<string, TitleCard[]>();
 
   for (const card of cards) {

@@ -42,11 +42,16 @@ export function MobileSidebar({ data }: MobileSidebarProps) {
       <SheetContent className="w-[min(24rem,calc(100vw-1rem))] max-w-[calc(100vw-1rem)]">
         <SheetHeader>
           <SheetTitle className="pr-12 font-serif text-base leading-tight text-[var(--accent-gold)]">
-            Elden Ring Is Marcel Duchamp&apos;s <em>The Bride Stripped Bare By Her Bachelors, Even</em>
+            Elden Ring Is Marcel Duchamp&apos;s{' '}
+            <em>The Bride Stripped Bare By Her Bachelors, Even</em>
           </SheetTitle>
           <Badge>Living Document</Badge>
         </SheetHeader>
-        <NavigationMenu navigation={navigation} onNavigate={() => setOpen(false)} className="mt-6" />
+        <NavigationMenu
+          navigation={navigation}
+          onNavigate={() => setOpen(false)}
+          className="mt-6"
+        />
       </SheetContent>
     </Sheet>
   );

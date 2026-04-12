@@ -6,7 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Rhonda Shearer - Elden Ring Is The Large Glass',
-  description: 'The researcher who revolutionized our understanding of Duchamp\'s readymades and artistic practice',
+  description:
+    "The researcher who revolutionized our understanding of Duchamp's readymades and artistic practice",
 };
 
 export default function RhondaShearerPage() {
@@ -17,14 +18,15 @@ export default function RhondaShearerPage() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 mb-4">
             <User className="h-5 w-5 text-[var(--accent-gold)]" />
-            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Key Scholar</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">
+              Key Scholar
+            </p>
           </div>
-          <h1 className="page-hero-title">
-            Rhonda Shearer
-          </h1>
+          <h1 className="page-hero-title">Rhonda Shearer</h1>
           <p className="page-hero-description">
-            The researcher whose groundbreaking work revealed that Duchamp&apos;s &quot;readymades&quot;
-            were often carefully crafted fakes - transforming our understanding of his entire project.
+            The researcher whose groundbreaking work revealed that Duchamp&apos;s
+            &quot;readymades&quot; were often carefully crafted fakes - transforming our
+            understanding of his entire project.
           </p>
         </div>
         <HeroMeta
@@ -45,7 +47,8 @@ export default function RhondaShearerPage() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-[var(--text-secondary)]">
-              Shearer applied scientific methods to examine Duchamp&apos;s objects, revealing hidden craftsmanship.
+              Shearer applied scientific methods to examine Duchamp&apos;s objects, revealing hidden
+              craftsmanship.
             </p>
           </CardContent>
         </Card>
@@ -57,7 +60,8 @@ export default function RhondaShearerPage() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-[var(--text-secondary)]">
-              Many &quot;found objects&quot; were actually hand-made, deliberately crafted to appear mass-produced.
+              Many &quot;found objects&quot; were actually hand-made, deliberately crafted to appear
+              mass-produced.
             </p>
           </CardContent>
         </Card>
@@ -69,7 +73,8 @@ export default function RhondaShearerPage() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-[var(--text-secondary)]">
-              Her findings forced a complete reconsideration of Duchamp&apos;s relationship to craftsmanship and deception.
+              Her findings forced a complete reconsideration of Duchamp&apos;s relationship to
+              craftsmanship and deception.
             </p>
           </CardContent>
         </Card>
@@ -77,36 +82,44 @@ export default function RhondaShearerPage() {
 
       {/* Biography Section */}
       <section className="glass-card border border-[var(--border-subtle)] p-8">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">About Rhonda Roland Shearer</h2>
+        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+          About Rhonda Roland Shearer
+        </h2>
         <div className="prose prose-lg prose-invert max-w-none">
           <p>
-            Born in 1954 in Aurora, Illinois, <strong>Rhonda Roland Shearer</strong> is a multidisciplinary artist,
-            researcher, and cultural advocate who built a career bridging art, science, and journalism.
+            Born in 1954 in Aurora, Illinois, <strong>Rhonda Roland Shearer</strong> is a
+            multidisciplinary artist, researcher, and cultural advocate who built a career bridging
+            art, science, and journalism.
           </p>
 
           <h3>Art Science Research Laboratory</h3>
           <p>
-            In 1996, Shearer co-founded the <strong>Art Science Research Laboratory</strong> in New York City with
-            renowned paleontologist <strong>Stephen Jay Gould</strong>. The organization operates as a 501(c)(3)
-            nonprofit dedicated to exploring intersections between artistic and scientific inquiry.
+            In 1996, Shearer co-founded the <strong>Art Science Research Laboratory</strong> in New
+            York City with renowned paleontologist <strong>Stephen Jay Gould</strong>. The
+            organization operates as a 501(c)(3) nonprofit dedicated to exploring intersections
+            between artistic and scientific inquiry.
           </p>
           <p>
-            This collaboration proved essential: Gould brought evolutionary biology&apos;s emphasis on empirical
-            evidence and skepticism toward received narratives, while Shearer contributed deep knowledge of art
-            history and forensic examination techniques.
+            This collaboration proved essential: Gould brought evolutionary biology&apos;s emphasis
+            on empirical evidence and skepticism toward received narratives, while Shearer
+            contributed deep knowledge of art history and forensic examination techniques.
           </p>
 
           <h3>Tout-Fait: The Marcel Duchamp Studies Online Journal</h3>
           <p>
-            Shearer founded and edited <strong>Tout-Fait: The Marcel Duchamp Studies Online Journal</strong>,
-            a peer-reviewed publication that became a crucial resource for Duchamp scholars worldwide.
+            Shearer founded and edited{' '}
+            <strong>Tout-Fait: The Marcel Duchamp Studies Online Journal</strong>, a peer-reviewed
+            publication that became a crucial resource for Duchamp scholars worldwide.
           </p>
 
           <h3>Key Publications</h3>
           <p>
             Her most influential work on Duchamp includes the two-part essay series
-            <em>&quot;Marcel Duchamp&apos;s Impossible Bed and Other &apos;Not&apos; Readymade Objects&quot;</em>,
-            which systematically demonstrates that many of Duchamp&apos;s supposedly found objects
+            <em>
+              &quot;Marcel Duchamp&apos;s Impossible Bed and Other &apos;Not&apos; Readymade
+              Objects&quot;
+            </em>
+            , which systematically demonstrates that many of Duchamp&apos;s supposedly found objects
             were carefully crafted to appear mass-produced.
           </p>
         </div>
@@ -114,7 +127,9 @@ export default function RhondaShearerPage() {
 
       {/* Links to Essays */}
       <section className="glass-card border border-[var(--border-subtle)] p-8">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">The Impossible Bed Essays</h2>
+        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+          The Impossible Bed Essays
+        </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <Link
             href="/rhonda-shearer-archive"
@@ -124,8 +139,8 @@ export default function RhondaShearerPage() {
               Part I: The Impossible Bed (Archive)
             </h3>
             <p className="text-sm text-[var(--text-secondary)]">
-              Marcel Duchamp&apos;s &quot;Impossible Bed&quot; and Poincare&apos;s influence.
-              Full essay with original illustrations from marcelduchamp.org.
+              Marcel Duchamp&apos;s &quot;Impossible Bed&quot; and Poincare&apos;s influence. Full
+              essay with original illustrations from marcelduchamp.org.
             </p>
           </Link>
           <Link
@@ -136,13 +151,12 @@ export default function RhondaShearerPage() {
               Part II: Discovery Theory
             </h3>
             <p className="text-sm text-[var(--text-secondary)]">
-              A Possible Route of Influence From Art To Science.
-              Key definitions and concepts extracted from the essay.
+              A Possible Route of Influence From Art To Science. Key definitions and concepts
+              extracted from the essay.
             </p>
           </Link>
         </div>
       </section>
-
     </div>
   );
 }

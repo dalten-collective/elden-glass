@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { BookText, Link2 } from 'lucide-react';
 import { TitleCardCreationModal } from './title-card-creation-modal';
 import { TitleCardAssignModal } from './title-card-assign-modal';
@@ -57,12 +57,12 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
   const showCardById = (cardId: string) => {
     const event = new CustomEvent('showTitleCard', {
       detail: { cardId },
-      bubbles: true
+      bubbles: true,
     });
     window.dispatchEvent(event);
   };
 
-  const refreshCards = async () => {
+  const refreshCards = useCallback(async () => {
     try {
       // The rollover system needs every card in memory so any data-card-id
       // attribute in any MDX paragraph can be resolved client-side. The
@@ -82,14 +82,14 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
     } catch (error) {
       console.error('Failed to fetch title cards:', error);
     }
-  };
+  }, []);
 
   // Helper function to ensure all grace connections are bidirectional
   const makeBidirectionalConnections = (cards: TitleCard[]): TitleCard[] => {
     // Create a mutable copy of the cards
-    const processedCards = cards.map(card => ({
+    const processedCards = cards.map((card) => ({
       ...card,
-      connections: card.connections ? [...card.connections] : undefined
+      connections: card.connections ? [...card.connections] : undefined,
     }));
 
     // For each card with connections
@@ -102,7 +102,7 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
         const connection = card.connections[j];
 
         // Find the connected card
-        const connectedCardIndex = processedCards.findIndex(c => c.id === connection.cardId);
+        const connectedCardIndex = processedCards.findIndex((c) => c.id === connection.cardId);
         if (connectedCardIndex === -1) continue;
 
         const connectedCard = processedCards[connectedCardIndex];
@@ -113,14 +113,14 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
         }
 
         const hasReverseConnection = connectedCard.connections.some(
-          conn => conn.cardId === card.id
+          (conn) => conn.cardId === card.id
         );
 
         // If no reverse connection exists, add it
         if (!hasReverseConnection) {
           connectedCard.connections.push({
             cardId: card.id,
-            label: card.title
+            label: card.title,
           });
         }
       }
@@ -161,7 +161,7 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
   // Load cards on mount
   useEffect(() => {
     refreshCards();
-  }, []);
+  }, [refreshCards]);
 
   // Preload GIFs when cards change
   useEffect(() => {
@@ -187,7 +187,19 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
   }, [isCreationMode, isAssignMode]);
 
   return (
-    <TitleCardContext.Provider value={{ isCreationMode, toggleCreationMode, isAssignMode, toggleAssignMode, cards, refreshCards, selectedText, setSelectedText, showCardById }}>
+    <TitleCardContext.Provider
+      value={{
+        isCreationMode,
+        toggleCreationMode,
+        isAssignMode,
+        toggleAssignMode,
+        cards,
+        refreshCards,
+        selectedText,
+        setSelectedText,
+        showCardById,
+      }}
+    >
       {children}
       <TitleCardCreationModal isOpen={isCreationMode} onClose={() => setIsCreationMode(false)} />
       <TitleCardAssignModal isOpen={isAssignMode} onClose={() => setIsAssignMode(false)} />

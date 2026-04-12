@@ -9,7 +9,10 @@ type FloatMeta = {
 
 function parseMeta(raw?: string): FloatMeta | null {
   if (!raw) return null;
-  const segments = raw.split('|').map((segment) => segment.trim()).filter(Boolean);
+  const segments = raw
+    .split('|')
+    .map((segment) => segment.trim())
+    .filter(Boolean);
   if (!segments.length) return null;
 
   const caption = segments.shift();
@@ -56,9 +59,7 @@ export function remarkFloatImages() {
         attributes: [
           { type: 'mdxJsxAttribute', name: 'src', value: node.url },
           { type: 'mdxJsxAttribute', name: 'alt', value: node.alt || '' },
-          meta.align
-            ? { type: 'mdxJsxAttribute', name: 'align', value: meta.align }
-            : null,
+          meta.align ? { type: 'mdxJsxAttribute', name: 'align', value: meta.align } : null,
         ].filter(Boolean),
         children: meta.caption ? [{ type: 'text', value: meta.caption }] : [],
       } as Parent;

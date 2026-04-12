@@ -22,7 +22,7 @@ export interface SearchResult {
 function extractSentences(text: string): string[] {
   // Split by sentence endings, keeping the punctuation
   const sentences = text.match(/[^.!?]+[.!?]+/g) || [];
-  return sentences.map(s => s.trim()).filter(s => s.length > 20); // Filter out very short sentences
+  return sentences.map((s) => s.trim()).filter((s) => s.length > 20); // Filter out very short sentences
 }
 
 function buildSearchIndex(): SearchResult[] {
@@ -30,12 +30,20 @@ function buildSearchIndex(): SearchResult[] {
   let idCounter = 0;
 
   const allDocs = [
-    ...allInitialThesisDocs.map((doc) => ({ ...doc, page: '/initial-thesis', pageTitle: doc.title })),
+    ...allInitialThesisDocs.map((doc) => ({
+      ...doc,
+      page: '/initial-thesis',
+      pageTitle: doc.title,
+    })),
     ...allTldrDocs.map((doc) => ({ ...doc, page: '/tldr', pageTitle: doc.title })),
     ...allLivingThesisDocs.map((doc) => ({ ...doc, page: '/living-thesis', pageTitle: doc.title })),
     ...allBibliographyDocs.map((doc) => ({ ...doc, page: '/bibliography', pageTitle: doc.title })),
     ...allAboutDocs.map((doc) => ({ ...doc, page: '/about', pageTitle: doc.title })),
-    ...allVocabDocs.map((doc) => ({ ...doc, page: `/bachelor-machines/terms`, pageTitle: doc.title })),
+    ...allVocabDocs.map((doc) => ({
+      ...doc,
+      page: `/bachelor-machines/terms`,
+      pageTitle: doc.title,
+    })),
   ];
 
   for (const doc of allDocs) {
@@ -90,15 +98,19 @@ function searchTitleCards(query: string): SearchResult[] {
   const lowerQuery = query.toLowerCase();
   const results: SearchResult[] = [];
 
-  const cards = (titleCardsData as { cards: Array<{
-    id: string;
-    term: string;
-    title: string;
-    description: string;
-    section?: string;
-    category?: string;
-    source?: string;
-  }> }).cards;
+  const cards = (
+    titleCardsData as {
+      cards: Array<{
+        id: string;
+        term: string;
+        title: string;
+        description: string;
+        section?: string;
+        category?: string;
+        source?: string;
+      }>;
+    }
+  ).cards;
 
   for (const card of cards) {
     const lowerTerm = card.term.toLowerCase();
@@ -132,7 +144,7 @@ export function searchContent(query: string, limit = 10): SearchResult[] {
   const titleCardResults = searchTitleCards(query);
 
   // Score each content result based on relevance
-  const scored = index.map(result => {
+  const scored = index.map((result) => {
     const lowerSentence = result.sentence.toLowerCase();
     let score = 0;
 
@@ -150,7 +162,7 @@ export function searchContent(query: string, limit = 10): SearchResult[] {
     const sentenceWords = lowerSentence.split(/\s+/);
 
     for (const word of queryWords) {
-      if (sentenceWords.some(sw => sw.includes(word))) {
+      if (sentenceWords.some((sw) => sw.includes(word))) {
         score += 10;
       }
     }

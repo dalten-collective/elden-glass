@@ -171,15 +171,15 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
 
       {/* Dropdown Results */}
       {isOpen && (
-        <div className={
-          variant === 'sidebar'
-            ? "fixed left-[280px] top-[120px] w-[500px] bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-[100] max-h-[70vh] overflow-y-auto"
-            : "absolute top-full mt-2 w-full bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-50 max-h-[70vh] overflow-y-auto"
-        }>
+        <div
+          className={
+            variant === 'sidebar'
+              ? 'fixed left-[280px] top-[120px] w-[500px] bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-[100] max-h-[70vh] overflow-y-auto'
+              : 'absolute top-full mt-2 w-full bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-50 max-h-[70vh] overflow-y-auto'
+          }
+        >
           {isLoading ? (
-            <div className="p-4 text-center text-sm text-[var(--text-tertiary)]">
-              Searching...
-            </div>
+            <div className="p-4 text-center text-sm text-[var(--text-tertiary)]">Searching...</div>
           ) : results.length === 0 ? (
             <div className="p-4 text-center text-sm text-[var(--text-tertiary)]">
               No results found
