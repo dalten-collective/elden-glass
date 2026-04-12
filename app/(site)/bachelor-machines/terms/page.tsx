@@ -25,11 +25,11 @@ export default function BachelorMachineTermsPage() {
               Reference Catalog
             </p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             {doc.title}
           </h1>
           {doc.subtitle && (
-            <p className="text-lg text-[var(--text-secondary)]">{doc.subtitle}</p>
+            <p className="page-hero-description">{doc.subtitle}</p>
           )}
         </div>
         <HeroMeta

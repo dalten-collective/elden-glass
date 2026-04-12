@@ -26,6 +26,7 @@ export function SidebarLink({ href, label, icon, meta, onNavigate, external }: S
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={onNavigate}
         className="sidebar-link border-l-4 border-transparent"
       >
         {icon}

@@ -18,7 +18,7 @@ const SheetOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Overlay
     className={cn(
-      'fixed inset-0 z-50 bg-[rgba(0,0,0,0.7)] backdrop-blur-sm transition-opacity',
+      'fixed inset-0 z-[90] bg-[rgba(0,0,0,0.78)] backdrop-blur-sm',
       className
     )}
     {...props}
@@ -36,18 +36,17 @@ const SheetContent = React.forwardRef<
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
-        'fixed inset-y-0 left-0 z-50 w-80 max-w-[85vw] border-r border-[var(--border-subtle)] bg-[var(--bg-secondary)] shadow-panel flex flex-col transition-transform',
+        'fixed left-0 top-0 z-[100] flex h-[100dvh] max-h-[100dvh] w-80 max-w-[85vw] flex-col overflow-hidden border-r border-[var(--border-subtle)] bg-[var(--bg-secondary)] shadow-panel outline-none',
         className
       )}
       {...props}
     >
-      {/* Close button - fixed at top */}
-      <DialogPrimitive.Close className="absolute right-4 top-4 z-10 rounded-full bg-[rgb(var(--bg-primary-rgb)/0.4)] p-1 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors">
+      {/* Keep the close affordance inside the safe area so it stays tappable on mobile browsers. */}
+      <DialogPrimitive.Close className="absolute right-4 top-[max(1rem,env(safe-area-inset-top,0px))] z-10 rounded-full bg-[rgb(var(--bg-primary-rgb)/0.55)] p-1.5 text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]">
         <X className="h-4 w-4" />
         <span className="sr-only">Close</span>
       </DialogPrimitive.Close>
-      {/* Scrollable content area */}
-      <div className="flex-1 overflow-y-auto p-6 pb-8">
+      <div className="flex-1 overflow-y-auto overscroll-contain px-4 pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] pt-[max(1.25rem,env(safe-area-inset-top,0px)+1.25rem)]">
         {children}
       </div>
     </DialogPrimitive.Content>

@@ -18,10 +18,10 @@ export default function GoldenBoughPage() {
             <TreeDeciduous className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Mythological Source</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             The Golden Bough
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             James George Frazer&apos;s monumental study of magic, religion, and mythology - a key source
             for understanding the deep structures underlying both Duchamp&apos;s art and Elden Ring.
           </p>

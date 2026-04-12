@@ -19,10 +19,10 @@ export default function CritiquesPage() {
       <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-8 lg:p-12">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)] mb-4">Critical Analysis</p>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Critiques & Responses
           </h1>
-          <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
+          <p className="page-hero-description leading-relaxed">
             This section addresses existing Elden Ring scholarship and community theories. Each critique demonstrates
             how the Duchamp framework recontextualizes and often resolves apparent contradictions in the lore.
           </p>

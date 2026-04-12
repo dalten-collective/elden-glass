@@ -12,10 +12,10 @@ export default function EndingsPage() {
       <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-8 lg:p-12">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)] mb-4">Analysis</p>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Endings as Post-War Japan
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             Elden Ring as allegory for post-war Japan. The endings read through Shuji Terayama, Henrik Ibsen, and Yukio Mishima.
           </p>
         </div>

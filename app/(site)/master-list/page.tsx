@@ -12,7 +12,7 @@ export default function MasterListPage() {
         <h1 className="text-4xl font-serif text-[var(--text-primary)] mb-4">
           {doc.title}
         </h1>
-        <p className="text-lg text-[var(--text-secondary)]">
+        <p className="page-hero-description">
           {count} Correspondences
         </p>
       </header>

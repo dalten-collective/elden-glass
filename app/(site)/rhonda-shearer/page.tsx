@@ -19,10 +19,10 @@ export default function RhondaShearerPage() {
             <User className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Key Scholar</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Rhonda Shearer
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             The researcher whose groundbreaking work revealed that Duchamp&apos;s &quot;readymades&quot;
             were often carefully crafted fakes - transforming our understanding of his entire project.
           </p>
