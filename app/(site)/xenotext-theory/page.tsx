@@ -26,10 +26,10 @@ export default function XenotextTheoryPage() {
             <Dna className="h-5 w-5 text-[var(--accent-purple)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Research Notes</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             The Xenotext Theory
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             Connecting Christian Bök&apos;s <em>The Xenotext</em> to Elden Ring and The Large Glass.
             The xenotext means what interpreters cannot prevent it from meaning.
           </p>

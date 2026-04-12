@@ -18,7 +18,7 @@ export default function BelevanPage() {
             <User className="h-5 w-5 text-[var(--accent-purple)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Key Figure</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Mónica Belevan
           </h1>
           <div className="flex gap-4 text-sm">

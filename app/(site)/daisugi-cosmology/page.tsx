@@ -12,10 +12,10 @@ export default function DaisugiCosmologyPage() {
             <TreeDeciduous className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Cosmological Structure</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             The Daisugi Cosmology
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             The candelabra tree that spans all of Miyazaki&apos;s worlds. Multiple flames on branching arms, each burning down.
           </p>
         </div>

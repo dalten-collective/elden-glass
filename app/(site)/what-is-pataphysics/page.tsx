@@ -18,10 +18,10 @@ export default function WhatIsPataphysicsPage() {
             <HelpCircle className="h-5 w-5 text-[var(--accent-blue)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Foundation</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             What is &apos;Pataphysics?
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             &apos;Pataphysics is the science of imaginary solutions, which symbolically attributes
             the properties of objects, described by their virtuality, to their lineaments.
           </p>

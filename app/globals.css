@@ -185,6 +185,14 @@ body {
 }
 
 @layer components {
+  .page-hero-title {
+    @apply mb-4 font-serif leading-tight text-[var(--text-primary)] text-3xl lg:text-5xl;
+  }
+
+  .page-hero-description {
+    @apply text-base text-[var(--text-secondary)] lg:text-lg;
+  }
+
   .glass-card {
     @apply bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-xl shadow-panel;
   }

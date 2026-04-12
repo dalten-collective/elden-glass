@@ -13,7 +13,7 @@ export default function PressPage() {
       {/* Header */}
       <header className="space-y-4">
         <h1 className="font-serif text-4xl text-[var(--text-primary)]">Press Kit</h1>
-        <p className="text-lg text-[var(--text-secondary)]">
+        <p className="page-hero-description">
           Resources for journalists and content creators covering the discovery that
           Elden Ring is a digital reimagining of Marcel Duchamp&apos;s The Large Glass.
         </p>

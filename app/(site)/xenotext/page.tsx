@@ -534,10 +534,10 @@ export default function XenotextPage() {
             <Dna className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Biologically Accurate Model</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Xenotext Cipher
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             The Elden Beast as cosmic code. Modeled after Christian Bök&apos;s Xenotext using actual biological transcription and translation.
           </p>
         </div>

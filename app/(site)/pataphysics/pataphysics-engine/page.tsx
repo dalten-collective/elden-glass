@@ -18,10 +18,10 @@ export default function PataphysicsEnginePage() {
             <Gamepad2 className="h-5 w-5 text-[var(--accent-blue)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Academic Paper</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             A &apos;Pataphysics Engine
           </h1>
-          <p className="text-lg text-[var(--text-secondary)] mb-2">
+          <p className="page-hero-description mb-2">
             Play, Technology, and Realities
           </p>
           <p className="text-[var(--text-tertiary)]">

@@ -20,10 +20,10 @@ export default function DuchampBiographyPage() {
             <User className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Artist Profile</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Duchamp: Biography &amp; Legacy
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             Marcel Duchamp (1887-1968) revolutionized art in the 20th century. Understanding his life
             and methods is essential for understanding what FromSoftware has accomplished.
           </p>

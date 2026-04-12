@@ -11,11 +11,11 @@ interface TopBarProps {
 
 export function TopBar({ data }: TopBarProps) {
   return (
-    <header className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-4 py-4 lg:py-6 relative z-[60]">
+    <header className="relative z-[40] border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-4 py-4 lg:py-6">
       {/* Desktop: Title with actions */}
       <div className="hidden lg:block">
         <div className="flex items-center justify-between gap-4">
-          <MobileSidebar data={data} />
+          <div className="w-12" aria-hidden="true" />
           <Link href="/" className="flex-1 text-center">
             <span className="text-3xl xl:text-4xl font-serif text-[var(--accent-gold)] leading-tight">
               Elden Ring is Marcel Duchamp&apos;s The Bride Stripped Bare by her Bachelors, Even
@@ -33,7 +33,7 @@ export function TopBar({ data }: TopBarProps) {
             <MobileSidebar data={data} />
           </div>
           <div className="flex-1 flex flex-col justify-end gap-1">
-            <div className="font-mono font-bold text-white text-2xl leading-none whitespace-nowrap">
+            <div className="font-mono font-bold text-white text-xl leading-none whitespace-nowrap">
               ~dashus-navnul
             </div>
             <Link
@@ -47,7 +47,7 @@ export function TopBar({ data }: TopBarProps) {
         </div>
 
         {/* Title */}
-        <Link href="/" className="block font-serif text-[var(--accent-gold)] leading-tight text-center text-4xl pb-2 text-4xl">
+        <Link href="/" className="block pb-2 text-center font-serif text-3xl leading-tight text-[var(--accent-gold)]">
           Elden Ring Is Marcel Duchamp&apos;s <em>The Bride Stripped Bare By Her Bachelors, Even</em>
         </Link>
       </div>
