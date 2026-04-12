@@ -13,12 +13,7 @@ const FEDWIKI_PAGES_PATH = path.join(process.env.HOME, '.wiki/pages');
 const TITLE_CARDS_PATH = path.join(__dirname, '../data/title-cards.json');
 
 // Pages to skip (not title cards)
-const SKIP_PAGES = new Set([
-  'welcome-visitors',
-  'gatherer',
-  'how-to-wiki',
-  'recent-changes'
-]);
+const SKIP_PAGES = new Set(['welcome-visitors', 'gatherer', 'how-to-wiki', 'recent-changes']);
 
 // Parse category path from first story item
 // Format: <i>Section → Category → Subcategory</i>
@@ -26,11 +21,11 @@ function parseCategoryPath(text) {
   const match = text.match(/<i>(.+?)<\/i>/);
   if (!match) return {};
 
-  const parts = match[1].split('→').map(s => s.trim());
+  const parts = match[1].split('→').map((s) => s.trim());
   return {
     section: parts[0] || null,
     category: parts[1] || null,
-    subcategory: parts[2] || null
+    subcategory: parts[2] || null,
   };
 }
 
@@ -65,7 +60,7 @@ function parseConnections(text, allPageSlugs) {
     if (allPageSlugs.has(linkedSlug)) {
       connections.push({
         cardId: linkedSlug, // We'll map this to real IDs later
-        linkedTitle: linkedTitle
+        linkedTitle: linkedTitle,
       });
     }
   }
@@ -82,7 +77,7 @@ function parseLinks(text) {
   for (const match of linkMatches) {
     links.push({
       url: match[1],
-      label: match[2]
+      label: match[2],
     });
   }
 
@@ -120,12 +115,12 @@ function pageToCard(pageData, filename, allPageSlugs) {
     connections: [],
     links: [],
     createdAt: new Date().toISOString(),
-    updatedAt: new Date().toISOString()
+    updatedAt: new Date().toISOString(),
   };
 
   // Extract creation date from journal if available
   if (pageData.journal && pageData.journal.length > 0) {
-    const createEntry = pageData.journal.find(j => j.type === 'create');
+    const createEntry = pageData.journal.find((j) => j.type === 'create');
     if (createEntry && createEntry.date) {
       card.createdAt = new Date(createEntry.date).toISOString();
     }
@@ -194,7 +189,7 @@ async function syncFromFedwiki() {
 
   // Read all page files
   const files = fs.readdirSync(FEDWIKI_PAGES_PATH);
-  const pageFiles = files.filter(f => !SKIP_PAGES.has(f) && !f.startsWith('.'));
+  const pageFiles = files.filter((f) => !SKIP_PAGES.has(f) && !f.startsWith('.'));
 
   console.log(`Found ${pageFiles.length} page files`);
 
@@ -228,7 +223,6 @@ async function syncFromFedwiki() {
         cardsByTitle.set(card.title, card);
         cards.push(card);
       }
-
     } catch (err) {
       console.error(`Error processing ${filename}:`, err.message);
       errors++;

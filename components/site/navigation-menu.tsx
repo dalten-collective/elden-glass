@@ -27,7 +27,7 @@ export function NavigationMenu({ navigation, onNavigate, className }: Navigation
   useEffect(() => {
     const activeSections = collectOpenSections(navigation.secondary, pathname);
     setOpenSections((previous) => ({ ...previous, ...activeSections }));
-  }, [pathname]);
+  }, [navigation.secondary, pathname]);
 
   const toggleSection = (sectionId: string) => {
     setOpenSections((previous) => ({
@@ -81,7 +81,9 @@ function renderItems({
   level?: number;
 }) {
   return (
-    <div className={cn('space-y-3', level > 0 && 'ml-3 border-l border-[var(--border-subtle)] pl-3')}>
+    <div
+      className={cn('space-y-3', level > 0 && 'ml-3 border-l border-[var(--border-subtle)] pl-3')}
+    >
       {items.map((item) => {
         if (item.type === 'link') {
           return (

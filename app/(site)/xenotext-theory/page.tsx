@@ -4,7 +4,8 @@ import theoriesData from '@/data/xenotext-theories.json';
 
 export const metadata: Metadata = {
   title: 'The Xenotext Theory - Elden Ring Is The Large Glass',
-  description: 'Research notes connecting Christian Bök\'s The Xenotext to Elden Ring and The Large Glass',
+  description:
+    "Research notes connecting Christian Bök's The Xenotext to Elden Ring and The Large Glass",
 };
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -24,11 +25,11 @@ export default function XenotextTheoryPage() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 mb-4">
             <Dna className="h-5 w-5 text-[var(--accent-purple)]" />
-            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Research Notes</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">
+              Research Notes
+            </p>
           </div>
-          <h1 className="page-hero-title">
-            The Xenotext Theory
-          </h1>
+          <h1 className="page-hero-title">The Xenotext Theory</h1>
           <p className="page-hero-description">
             Connecting Christian Bök&apos;s <em>The Xenotext</em> to Elden Ring and The Large Glass.
             The xenotext means what interpreters cannot prevent it from meaning.
@@ -38,7 +39,9 @@ export default function XenotextTheoryPage() {
 
       {/* Theories Grid */}
       <section className="space-y-8">
-        <h2 className="text-sm uppercase tracking-[0.25em] text-[var(--text-tertiary)]">Research Notes</h2>
+        <h2 className="text-sm uppercase tracking-[0.25em] text-[var(--text-tertiary)]">
+          Research Notes
+        </h2>
 
         {theoriesData.theories.map((theory) => (
           <article
@@ -51,9 +54,7 @@ export default function XenotextTheoryPage() {
                 <span className="text-[var(--accent-purple)]">
                   {iconMap[theory.id] || <BookOpen className="h-5 w-5" />}
                 </span>
-                <h3 className="font-serif text-2xl text-[var(--text-primary)]">
-                  {theory.title}
-                </h3>
+                <h3 className="font-serif text-2xl text-[var(--text-primary)]">{theory.title}</h3>
               </div>
               <p className="text-[var(--text-secondary)]">{theory.summary}</p>
             </header>
@@ -69,16 +70,22 @@ export default function XenotextTheoryPage() {
                       // Handle blockquotes
                       if (paragraph.startsWith('>')) {
                         return (
-                          <blockquote key={pIndex} className="border-l-2 border-[var(--accent-gold)] pl-4 italic text-[var(--text-secondary)] my-3">
+                          <blockquote
+                            key={pIndex}
+                            className="border-l-2 border-[var(--accent-gold)] pl-4 italic text-[var(--text-secondary)] my-3"
+                          >
                             {paragraph.replace(/^>\s*"?|"$/g, '')}
                           </blockquote>
                         );
                       }
                       // Handle lists
                       if (paragraph.startsWith('-')) {
-                        const items = paragraph.split('\n').filter(l => l.startsWith('-'));
+                        const items = paragraph.split('\n').filter((l) => l.startsWith('-'));
                         return (
-                          <ul key={pIndex} className="list-disc list-inside space-y-1 text-[var(--text-secondary)]">
+                          <ul
+                            key={pIndex}
+                            className="list-disc list-inside space-y-1 text-[var(--text-secondary)]"
+                          >
                             {items.map((item, iIndex) => (
                               <li key={iIndex}>{item.replace(/^-\s*/, '')}</li>
                             ))}
@@ -87,9 +94,12 @@ export default function XenotextTheoryPage() {
                       }
                       // Handle numbered lists
                       if (/^\d+\./.test(paragraph)) {
-                        const items = paragraph.split('\n').filter(l => /^\d+\./.test(l));
+                        const items = paragraph.split('\n').filter((l) => /^\d+\./.test(l));
                         return (
-                          <ol key={pIndex} className="list-decimal list-inside space-y-1 text-[var(--text-secondary)]">
+                          <ol
+                            key={pIndex}
+                            className="list-decimal list-inside space-y-1 text-[var(--text-secondary)]"
+                          >
                             {items.map((item, iIndex) => (
                               <li key={iIndex}>{item.replace(/^\d+\.\s*/, '')}</li>
                             ))}
@@ -103,8 +113,11 @@ export default function XenotextTheoryPage() {
                           className="text-[var(--text-secondary)] my-2"
                           dangerouslySetInnerHTML={{
                             __html: paragraph
-                              .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-[var(--text-primary)]">$1</strong>')
-                              .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+                              .replace(
+                                /\*\*([^*]+)\*\*/g,
+                                '<strong class="text-[var(--text-primary)]">$1</strong>'
+                              )
+                              .replace(/\*([^*]+)\*/g, '<em>$1</em>'),
                           }}
                         />
                       );
@@ -116,9 +129,7 @@ export default function XenotextTheoryPage() {
 
             {theory.source && (
               <footer className="mt-6 pt-4 border-t border-[var(--border-subtle)]">
-                <p className="text-xs text-[var(--text-tertiary)]">
-                  Source: {theory.source}
-                </p>
+                <p className="text-xs text-[var(--text-tertiary)]">Source: {theory.source}</p>
               </footer>
             )}
           </article>
@@ -127,7 +138,9 @@ export default function XenotextTheoryPage() {
 
       {/* Navigation */}
       <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="text-sm uppercase tracking-[0.25em] text-[var(--text-tertiary)] mb-4">Quick Navigation</h2>
+        <h2 className="text-sm uppercase tracking-[0.25em] text-[var(--text-tertiary)] mb-4">
+          Quick Navigation
+        </h2>
         <div className="flex flex-wrap gap-2">
           {theoriesData.theories.map((theory) => (
             <a

@@ -46,13 +46,7 @@ export function ArtworkLink({ title, year, imagePath }: ArtworkLinkProps) {
         >
           <div className="bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg shadow-2xl p-2 max-w-[300px]">
             <div className="relative w-full h-[250px]">
-              <Image
-                src={imagePath}
-                alt={title}
-                fill
-                className="object-contain"
-                unoptimized
-              />
+              <Image src={imagePath} alt={title} fill className="object-contain" unoptimized />
             </div>
             <p className="text-[0.7rem] text-[var(--text-tertiary)] mt-2 text-center">
               {title} {year && `(${year})`}

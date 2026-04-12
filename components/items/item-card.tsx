@@ -37,9 +37,7 @@ export function ItemCard({ itemSlug, children }: ItemCardProps) {
   return (
     <HoverCard.Root openDelay={200} closeDelay={100}>
       <HoverCard.Trigger asChild>
-        <span className="cursor-help">
-          {children}
-        </span>
+        <span className="cursor-help">{children}</span>
       </HoverCard.Trigger>
       <HoverCard.Portal>
         <HoverCard.Content
@@ -90,9 +88,7 @@ export function ItemCard({ itemSlug, children }: ItemCardProps) {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="elden-card-title">
-                    {item.name}
-                  </h3>
+                  <h3 className="elden-card-title">{item.name}</h3>
                   {item.summary && (
                     <p className="text-xs text-amber-100/50 italic leading-tight mt-1 font-light">
                       {item.summary}
@@ -117,9 +113,7 @@ export function ItemCard({ itemSlug, children }: ItemCardProps) {
                     <span className="text-xs text-amber-200/60 uppercase tracking-wider font-light">
                       Weight
                     </span>
-                    <span className="text-sm text-amber-100/90 font-light">
-                      {item.weight}
-                    </span>
+                    <span className="text-sm text-amber-100/90 font-light">{item.weight}</span>
                   </div>
                 )}
                 {item.maxHeld && (
@@ -127,9 +121,7 @@ export function ItemCard({ itemSlug, children }: ItemCardProps) {
                     <span className="text-xs text-amber-200/60 uppercase tracking-wider font-light">
                       Max Held
                     </span>
-                    <span className="text-sm text-amber-100/90 font-light">
-                      {item.maxHeld}
-                    </span>
+                    <span className="text-sm text-amber-100/90 font-light">{item.maxHeld}</span>
                   </div>
                 )}
               </div>

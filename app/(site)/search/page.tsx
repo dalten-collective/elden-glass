@@ -51,17 +51,20 @@ function SearchContent() {
   }, [urlQuery]);
 
   // Build URL from params
-  const buildUrl = useCallback((params: { q?: string; page?: number }) => {
-    const newParams = new URLSearchParams();
-    const query = params.q ?? urlQuery;
-    const page = params.page ?? urlPage;
+  const buildUrl = useCallback(
+    (params: { q?: string; page?: number }) => {
+      const newParams = new URLSearchParams();
+      const query = params.q ?? urlQuery;
+      const page = params.page ?? urlPage;
 
-    if (query) newParams.set('q', query);
-    if (page > 1) newParams.set('page', String(page));
+      if (query) newParams.set('q', query);
+      if (page > 1) newParams.set('page', String(page));
 
-    const queryString = newParams.toString();
-    return queryString ? `/search?${queryString}` : '/search';
-  }, [urlQuery, urlPage]);
+      const queryString = newParams.toString();
+      return queryString ? `/search?${queryString}` : '/search';
+    },
+    [urlQuery, urlPage]
+  );
 
   // Fetch results when URL params change
   useEffect(() => {
@@ -149,7 +152,8 @@ function SearchContent() {
             Search through all documents and pages. For title cards, use the{' '}
             <Link href="/gatherer" className="text-[var(--accent-gold)] hover:underline">
               Gatherer
-            </Link>.
+            </Link>
+            .
           </p>
         </div>
       </div>
@@ -169,7 +173,8 @@ function SearchContent() {
         {!loading && results.length > 0 && (
           <div className="space-y-1">
             <p className="text-sm text-[var(--text-tertiary)] mb-6">
-              Showing {((urlPage - 1) * 20) + 1}-{Math.min(urlPage * 20, total)} of {total} result{total !== 1 ? 's' : ''} for &quot;{urlQuery}&quot;
+              Showing {(urlPage - 1) * 20 + 1}-{Math.min(urlPage * 20, total)} of {total} result
+              {total !== 1 ? 's' : ''} for &quot;{urlQuery}&quot;
             </p>
             {results.map((result) => (
               <SearchResultItem key={result.id} result={result} query={urlQuery} />
@@ -190,7 +195,9 @@ function SearchContent() {
         {!loading && urlQuery && results.length === 0 && (
           <div className="text-center py-16">
             <FileText className="h-12 w-12 text-[var(--text-tertiary)] mx-auto mb-4" />
-            <p className="text-[var(--text-secondary)] mb-2">No results found for &quot;{urlQuery}&quot;</p>
+            <p className="text-[var(--text-secondary)] mb-2">
+              No results found for &quot;{urlQuery}&quot;
+            </p>
             <p className="text-sm text-[var(--text-tertiary)]">
               Try different keywords or check your spelling
             </p>
@@ -201,7 +208,9 @@ function SearchContent() {
         {!loading && !urlQuery && (
           <div className="text-center py-16">
             <Search className="h-12 w-12 text-[var(--text-tertiary)] mx-auto mb-4" />
-            <p className="text-[var(--text-secondary)]">Enter a search term to find content across the site</p>
+            <p className="text-[var(--text-secondary)]">
+              Enter a search term to find content across the site
+            </p>
           </div>
         )}
       </div>
@@ -209,7 +218,13 @@ function SearchContent() {
   );
 }
 
-const SearchResultItem = memo(function SearchResultItem({ result, query }: { result: SearchResult; query: string }) {
+const SearchResultItem = memo(function SearchResultItem({
+  result,
+  query,
+}: {
+  result: SearchResult;
+  query: string;
+}) {
   const textFragment = encodeURIComponent(result.textToFind);
   const href = `${result.page}#:~:text=${textFragment}`;
 
@@ -221,21 +236,15 @@ const SearchResultItem = memo(function SearchResultItem({ result, query }: { res
       {/* Page Title */}
       <div className="flex items-center gap-2 mb-2">
         <FileText className="h-4 w-4 text-[var(--accent-gold)]" />
-        <span className="text-sm font-medium text-[var(--accent-gold)]">
-          {result.pageTitle}
-        </span>
+        <span className="text-sm font-medium text-[var(--accent-gold)]">{result.pageTitle}</span>
         <ArrowRight className="h-3 w-3 text-[var(--text-tertiary)] opacity-0 group-hover:opacity-100 transition" />
       </div>
 
       {/* Matched Sentence */}
-      <p className="text-[var(--text-primary)] mb-1">
-        {highlightMatch(result.sentence, query)}
-      </p>
+      <p className="text-[var(--text-primary)] mb-1">{highlightMatch(result.sentence, query)}</p>
 
       {/* Context */}
-      <p className="text-sm text-[var(--text-tertiary)] line-clamp-2">
-        {result.context}
-      </p>
+      <p className="text-sm text-[var(--text-tertiary)] line-clamp-2">{result.context}</p>
     </Link>
   );
 });
@@ -243,7 +252,7 @@ const SearchResultItem = memo(function SearchResultItem({ result, query }: { res
 const Pagination = memo(function Pagination({
   currentPage,
   totalPages,
-  onPageChange
+  onPageChange,
 }: {
   currentPage: number;
   totalPages: number;
@@ -334,7 +343,10 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   const parts = text.split(new RegExp(`(${escapeRegex(query)})`, 'gi'));
   return parts.map((part, index) =>
     part.toLowerCase() === query.toLowerCase() ? (
-      <mark key={index} className="bg-[var(--accent-gold)]/30 text-[var(--text-primary)] px-0.5 rounded">
+      <mark
+        key={index}
+        className="bg-[var(--accent-gold)]/30 text-[var(--text-primary)] px-0.5 rounded"
+      >
         {part}
       </mark>
     ) : (

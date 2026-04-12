@@ -9,18 +9,20 @@ export default function GlobalError({
 }) {
   return (
     <html lang="en">
-      <body style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '100vh',
-        padding: '2rem',
-        fontFamily: 'system-ui, sans-serif',
-        backgroundColor: '#1a1a1a',
-        color: '#c9a961',
-        margin: 0,
-      }}>
+      <body
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minHeight: '100vh',
+          padding: '2rem',
+          fontFamily: 'system-ui, sans-serif',
+          backgroundColor: '#1a1a1a',
+          color: '#c9a961',
+          margin: 0,
+        }}
+      >
         <h2 style={{ marginBottom: '1rem' }}>Something went wrong</h2>
         <button
           onClick={() => reset()}

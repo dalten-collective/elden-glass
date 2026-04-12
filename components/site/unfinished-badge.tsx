@@ -19,7 +19,8 @@ export function UnfinishedBadge({ note }: UnfinishedBadgeProps) {
       <div className="text-sm text-[var(--text-secondary)]">
         <p className="font-medium text-[var(--accent-gold)]">Unfinished notes</p>
         <p className="mt-1">
-          This page is a working draft rather than finished prose. Content may be incomplete, contradictory, or still under revision.
+          This page is a working draft rather than finished prose. Content may be incomplete,
+          contradictory, or still under revision.
           {note ? ` ${note}` : ''}
         </p>
       </div>

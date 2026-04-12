@@ -27,11 +27,13 @@ interface CardDetailModalProps {
  */
 export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
   const [allCards, setAllCards] = useState<TitleCard[]>([]);
-  const [relatedBySense, setRelatedBySense] = useState<Array<{
-    sense: string;
-    senseLabel: string;
-    cards: Array<{ id: string; title: string; category?: string }>;
-  }>>([]);
+  const [relatedBySense, setRelatedBySense] = useState<
+    Array<{
+      sense: string;
+      senseLabel: string;
+      cards: Array<{ id: string; title: string; category?: string }>;
+    }>
+  >([]);
 
   // Fetch other cards so we can resolve connection titles when a
   // connection entry was saved without an explicit label. We still use
@@ -85,9 +87,7 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
       >
         {/* Header */}
         <div className="sticky top-0 bg-[var(--bg-secondary)] border-b border-[var(--border-subtle)] p-4 flex items-center justify-between">
-          <h2 className="text-2xl font-serif text-[var(--accent-gold)]">
-            Card Details
-          </h2>
+          <h2 className="text-2xl font-serif text-[var(--accent-gold)]">Card Details</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-[var(--bg-primary)] rounded transition-colors"
@@ -132,7 +132,8 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
               <p className="text-lg font-semibold text-[var(--accent-gold)]">{card.title}</p>
               {card.category && (
                 <p className="text-xs text-[var(--text-secondary)] italic mt-1 font-serif">
-                  {card.category}{card.subcategory && ` - ${card.subcategory}`}
+                  {card.category}
+                  {card.subcategory && ` - ${card.subcategory}`}
                 </p>
               )}
             </div>
@@ -143,7 +144,9 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
             <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
               Term
             </label>
-            <p className="text-sm text-[var(--text-tertiary)] uppercase tracking-wider">{card.term}</p>
+            <p className="text-sm text-[var(--text-tertiary)] uppercase tracking-wider">
+              {card.term}
+            </p>
           </div>
 
           {/* Category */}
@@ -277,7 +280,9 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
           <div className="pt-4 border-t border-[var(--border-subtle)]">
             <ShareButtons
               title={`${card.title} - Elden Glass`}
-              description={card.description.slice(0, 200) + (card.description.length > 200 ? '...' : '')}
+              description={
+                card.description.slice(0, 200) + (card.description.length > 200 ? '...' : '')
+              }
               variant="default"
               className="share-buttons"
             />

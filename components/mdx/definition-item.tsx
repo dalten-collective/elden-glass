@@ -40,12 +40,8 @@ export function DefinitionItem({
       <dt className="text-[var(--accent-gold)] font-medium text-lg mb-1">{term}</dt>
       <dd className="text-[var(--text-secondary)] leading-relaxed">
         <span className="italic text-[var(--text-tertiary)]">&quot;{definition}&quot;</span>
-        {source && (
-          <span className="text-[var(--text-tertiary)] text-sm ml-1">{source}</span>
-        )}
-        {children && (
-          <div className="mt-3 text-[var(--text-secondary)]">{children}</div>
-        )}
+        {source && <span className="text-[var(--text-tertiary)] text-sm ml-1">{source}</span>}
+        {children && <div className="mt-3 text-[var(--text-secondary)]">{children}</div>}
       </dd>
     </div>
   );

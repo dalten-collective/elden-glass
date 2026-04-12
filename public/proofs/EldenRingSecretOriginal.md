@@ -2,7 +2,7 @@
 
 **[Elden Ring](https://en.wikipedia.org/wiki/Elden_Ring) is [Marcel Duchamp's](https://en.wikipedia.org/wiki/Marcel_Duchamp) "[The Bride Stripped Bare by Her Bachelors, Even](https://en.wikipedia.org/wiki/The_Bride_Stripped_Bare_by_Her_Bachelors,_Even)."**
 
-![The Large Glass](/images/large-glass.jpg "The Bride Stripped Bare by Her Bachelors, Even - Marcel Duchamp")
+![The Large Glass](/images/large-glass.jpg 'The Bride Stripped Bare by Her Bachelors, Even - Marcel Duchamp')
 
 ---
 
@@ -36,7 +36,7 @@ Elden Ring tells a story of ambition in a world of fracture and gold. Thousands 
 
 After her victory she stripped her warriors of the [Grace of Gold](https://eldenring.wiki.fextralife.com/Grace) they had used to fight in her name and sent them off to fight and die in foreign lands, with the promise that one day, after they had died, that Grace would be restored to them and they would return to their home, guided by rays of gold. Among these warriors was Hoarah Loux, who would later be known as Godfrey, Marika's first consort and Elden Lord.
 
-Later, when Marika's son Godwyn the Golden was assassinated, in her grief Marika would shatter the [Elden Ring](https://eldenring.wiki.fextralife.com/Elden+Ring+(Item)), a [pataphysical](https://en.wikipedia.org/wiki/Pataphysics) construct that makes up both the world's physical laws such as gravity and life as well as metaphysical concepts like souls and fate. At the same time Marika was shattering the Elden Ring, her consort Radagon attempted to put the pieces back together, creating the fractured world the game takes place in.
+Later, when Marika's son Godwyn the Golden was assassinated, in her grief Marika would shatter the [Elden Ring](<https://eldenring.wiki.fextralife.com/Elden+Ring+(Item)>), a [pataphysical](https://en.wikipedia.org/wiki/Pataphysics) construct that makes up both the world's physical laws such as gravity and life as well as metaphysical concepts like souls and fate. At the same time Marika was shattering the Elden Ring, her consort Radagon attempted to put the pieces back together, creating the fractured world the game takes place in.
 
 As punishment for her crime, The Greater Will crucified Marika within the Erdtree which led her various inbred [demigod](https://eldenring.wiki.fextralife.com/Demigods) children to war amongst themselves to see who would fill the power vacuum left in her absence. Among these demigods were Rennala, Radagon's former wife and mother to Ranni, who plotted the Night of the Black Knives. Also among the key figures were Mohg, twin brother to Morgott, and Maliketh, guardian of Destined Death. In the Shadow Lands, hidden from view, Messmer the Impaler carried out Marika's brutal campaign of conquest.
 
@@ -48,7 +48,7 @@ No clear winner emerged from the war, resulting in the abandonment of The Greate
 
 The game itself, as the player experiences it, is one cycle of the process shown within The Large Glass.
 
-Queen Marika (the Bride) originally forged the Elden Ring by using gossamer strands of hair (the Capillary Tubes, with Capillary deriving from the Latin *capillus* meaning to be like or resemble hair). The Elden Ring itself is a Chocolate Grinder with the individual [Great Runes](https://eldenring.wiki.fextralife.com/Great+Runes) that make it up, each claimed by one of Marika's demigod children after its shattering, perfectly corresponding to the named parts of Duchamp's Chocolate Grinder in the middle of The Large Glass. Godrick's (Louis XV Chassis) and Morgott's (Necktie) runes are explicitly said to be the "anchor runes" that hold the structure together from the top and bottom. Malenia's, Radahn's, and Rykard's runes are the Rollers within the Chocolate Grinder. Notably, Miquella's rune, which is the form of a cross and semi-circle and does not cleanly overlay onto the rest of the Elden Ring, bears a striking similarity to the Scissors and the Sieves connected to the Chocolate Grinder.
+Queen Marika (the Bride) originally forged the Elden Ring by using gossamer strands of hair (the Capillary Tubes, with Capillary deriving from the Latin _capillus_ meaning to be like or resemble hair). The Elden Ring itself is a Chocolate Grinder with the individual [Great Runes](https://eldenring.wiki.fextralife.com/Great+Runes) that make it up, each claimed by one of Marika's demigod children after its shattering, perfectly corresponding to the named parts of Duchamp's Chocolate Grinder in the middle of The Large Glass. Godrick's (Louis XV Chassis) and Morgott's (Necktie) runes are explicitly said to be the "anchor runes" that hold the structure together from the top and bottom. Malenia's, Radahn's, and Rykard's runes are the Rollers within the Chocolate Grinder. Notably, Miquella's rune, which is the form of a cross and semi-circle and does not cleanly overlay onto the rest of the Elden Ring, bears a striking similarity to the Scissors and the Sieves connected to the Chocolate Grinder.
 
 In the same way that The Large Glass was shattered then later put back together by Duchamp, Marika shattered the Elden Ring which was then put back together by her consort Radagon, both events leading to the creation of the shattered world that the events of the game, and the glass, take place in.
 

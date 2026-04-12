@@ -17,7 +17,9 @@ export function HeroMeta({ items }: HeroMetaProps) {
         <div key={label} className="flex items-center gap-2">
           <Icon className="h-4 w-4 text-[var(--accent-gold)]" />
           <div>
-            <p className="text-[0.6rem] uppercase tracking-[0.25em] sm:text-[0.65rem] sm:tracking-[0.3em]">{label}</p>
+            <p className="text-[0.6rem] uppercase tracking-[0.25em] sm:text-[0.65rem] sm:tracking-[0.3em]">
+              {label}
+            </p>
             <p className="text-sm text-[var(--text-secondary)] sm:text-base">{value}</p>
           </div>
         </div>

@@ -59,7 +59,7 @@ export default function CardDatabasePage() {
       }
 
       // Remove the card from the local state
-      setCards(cards.filter(card => card.id !== cardId));
+      setCards(cards.filter((card) => card.id !== cardId));
     } catch (error) {
       console.error('Failed to delete card:', error);
       alert('Failed to delete card. Please try again.');
@@ -75,14 +75,17 @@ export default function CardDatabasePage() {
   };
 
   // Group cards by section
-  const cardsBySection = cards.reduce((acc, card) => {
-    const section = card.section || 'Uncategorized';
-    if (!acc[section]) {
-      acc[section] = [];
-    }
-    acc[section].push(card);
-    return acc;
-  }, {} as Record<string, TitleCard[]>);
+  const cardsBySection = cards.reduce(
+    (acc, card) => {
+      const section = card.section || 'Uncategorized';
+      if (!acc[section]) {
+        acc[section] = [];
+      }
+      acc[section].push(card);
+      return acc;
+    },
+    {} as Record<string, TitleCard[]>
+  );
 
   // Filter cards if a section is selected
   const displayedSections = selectedSection
@@ -111,9 +114,7 @@ export default function CardDatabasePage() {
                 <ArrowLeft className="h-4 w-4" />
                 Back to Site
               </Link>
-              <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-2">
-                Card Database
-              </h1>
+              <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-2">Card Database</h1>
               <p className="text-[var(--text-secondary)]">
                 Visual spoiler of all title cards organized by section
               </p>
@@ -136,7 +137,10 @@ export default function CardDatabasePage() {
       </div>
 
       {/* Section Filter */}
-      <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] sticky top-0 z-10" spellCheck={false}>
+      <div
+        className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] sticky top-0 z-10"
+        spellCheck={false}
+      >
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex flex-wrap gap-2">
             {SECTIONS.map((section) => {
@@ -225,7 +229,10 @@ export default function CardDatabasePage() {
                   )}
                   <div className="p-4">
                     <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-lg font-semibold text-[var(--accent-gold)] title-card-term cursor-help" data-card-id={card.id}>
+                      <h3
+                        className="text-lg font-semibold text-[var(--accent-gold)] title-card-term cursor-help"
+                        data-card-id={card.id}
+                      >
                         {card.title}
                       </h3>
                       {card.isSplit && (
@@ -261,9 +268,7 @@ export default function CardDatabasePage() {
               ))}
             </div>
             {sectionCards.length === 0 && (
-              <p className="text-[var(--text-tertiary)] italic">
-                No cards in this section yet.
-              </p>
+              <p className="text-[var(--text-tertiary)] italic">No cards in this section yet.</p>
             )}
           </div>
         ))}
@@ -279,10 +284,7 @@ export default function CardDatabasePage() {
 
       {/* Card Detail Modal — read-only view */}
       {selectedCard && (
-        <CardDetailModal
-          card={selectedCard}
-          onClose={() => setSelectedCard(null)}
-        />
+        <CardDetailModal card={selectedCard} onClose={() => setSelectedCard(null)} />
       )}
     </div>
   );

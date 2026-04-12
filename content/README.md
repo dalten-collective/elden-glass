@@ -10,13 +10,13 @@ All markdown documents should start with YAML front matter enclosed in `---`:
 
 ```markdown
 ---
-title: "Document Title"
-subtitle: "Optional Subtitle"
-author: "Your Name"
-created: "2024-03-15"
-updated: "2024-10-24"
-version: "1.0"
-tags: ["tag1", "tag2", "tag3"]
+title: 'Document Title'
+subtitle: 'Optional Subtitle'
+author: 'Your Name'
+created: '2024-03-15'
+updated: '2024-10-24'
+version: '1.0'
+tags: ['tag1', 'tag2', 'tag3']
 ---
 ```
 
@@ -51,7 +51,7 @@ We use a special syntax for inserting images that allows for better control and 
 ### Basic Syntax
 
 ```markdown
-![image:image-id](path/to/image.jpg "Alt text / caption")
+![image:image-id](path/to/image.jpg 'Alt text / caption')
 ```
 
 ### Components
@@ -66,9 +66,9 @@ We use a special syntax for inserting images that allows for better control and 
 ```markdown
 ![image:large-glass](assets/images/large-glass.jpg "Marcel Duchamp's The Large Glass")
 
-![image:erdtree-view](assets/images/erdtree-panorama.jpg "The Erdtree as seen from Limgrave")
+![image:erdtree-view](assets/images/erdtree-panorama.jpg 'The Erdtree as seen from Limgrave')
 
-![image:marika-statue](assets/images/marika-crucified.jpg "Marika crucified within the Erdtree")
+![image:marika-statue](assets/images/marika-crucified.jpg 'Marika crucified within the Erdtree')
 ```
 
 ### Image Organization
@@ -101,8 +101,11 @@ assets/
 
 ```markdown
 # H1 - Document Title
+
 ## H2 - Major Section
+
 ### H3 - Subsection
+
 #### H4 - Minor subsection
 ```
 
@@ -111,16 +114,16 @@ assets/
 ### Emphasis
 
 ```markdown
-*italic text* or _italic text_
-**bold text** or __bold text__
-***bold and italic*** or ___bold and italic___
+_italic text_ or _italic text_
+**bold text** or **bold text**
+**_bold and italic_** or **_bold and italic_**
 ```
 
 ### Links
 
 ```markdown
 [Link text](https://example.com)
-[Link with title](https://example.com "Link title on hover")
+[Link with title](https://example.com 'Link title on hover')
 ```
 
 ### External References
@@ -143,6 +146,7 @@ As described in [Duchamp's Green Box](https://www.metmuseum.org/art/collection/s
 ### Lists
 
 **Unordered:**
+
 ```markdown
 - Item 1
 - Item 2
@@ -152,6 +156,7 @@ As described in [Duchamp's Green Box](https://www.metmuseum.org/art/collection/s
 ```
 
 **Ordered:**
+
 ```markdown
 1. First item
 2. Second item
@@ -161,11 +166,13 @@ As described in [Duchamp's Green Box](https://www.metmuseum.org/art/collection/s
 ### Code
 
 **Inline code:**
+
 ```markdown
 Use the `sha256sum` command to generate the hash.
 ```
 
 **Code blocks:**
+
 ````markdown
 ```bash
 sha256sum discovery.md
@@ -181,7 +188,7 @@ sha256sum discovery.md
 or
 
 ```markdown
-***
+---
 ```
 
 ---
@@ -219,11 +226,14 @@ Content...
 ## Evidence (H2 - appears in nav)
 
 ### Item Descriptions (H3)
+
 ### Environmental Clues (H3)
+
 ### Cut Content (H3)
 ```
 
 This will generate a nav like:
+
 ```
 - The Mystery
 - The Discovery
@@ -251,7 +261,7 @@ This is some text with a footnote.[^1]
 
 ```markdown
 | Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
+| -------- | -------- | -------- |
 | Cell 1   | Cell 2   | Cell 3   |
 | Cell 4   | Cell 5   | Cell 6   |
 ```
@@ -273,11 +283,13 @@ This is some text with a footnote.[^1]
 Use descriptive, kebab-case names:
 
 ✅ Good:
+
 - `large-glass-upper-panel.jpg`
 - `erdtree-interior-view.jpg`
 - `marika-shattering-moment.jpg`
 
 ❌ Bad:
+
 - `IMG_1234.jpg`
 - `Screen Shot 2024-10-24.png`
 - `image (1).jpg`
@@ -346,19 +358,19 @@ Use descriptive, kebab-case names:
 
 ```markdown
 ---
-title: "Document Title"
-author: "Your Name"
+title: 'Document Title'
+author: 'Your Name'
 ---
 
 # Main Title
 
 ## Section Heading
 
-Some text with **bold** and *italic* emphasis.
+Some text with **bold** and _italic_ emphasis.
 
 [Link to source](https://example.com)
 
-![image:unique-id](path/to/image.jpg "Caption text")
+![image:unique-id](path/to/image.jpg 'Caption text')
 
 > Blockquote for emphasis
 
@@ -391,12 +403,12 @@ Horizontal rule above
 ```markdown
 ---
 title: "The Erdtree's True Nature"
-subtitle: "A Deeper Analysis"
-author: "Luke"
-created: "2024-03-20"
-updated: "2024-10-24"
-version: "1.1"
-tags: ["erdtree", "analysis", "lore"]
+subtitle: 'A Deeper Analysis'
+author: 'Luke'
+created: '2024-03-20'
+updated: '2024-10-24'
+version: '1.1'
+tags: ['erdtree', 'analysis', 'lore']
 ---
 
 # The Erdtree's True Nature
@@ -405,7 +417,7 @@ tags: ["erdtree", "analysis", "lore"]
 
 The Erdtree is not what it appears to be. Through careful analysis of [item descriptions](https://eldenring.wiki.fextralife.com) and environmental storytelling, a different picture emerges.
 
-![image:erdtree-exterior](assets/images/erdtree-exterior.jpg "The Erdtree viewed from Leyndell")
+![image:erdtree-exterior](assets/images/erdtree-exterior.jpg 'The Erdtree viewed from Leyndell')
 
 ## The Cinematic Blossoming
 
@@ -413,7 +425,7 @@ Duchamp described the Bride's transformation as a "cinematic blossoming" - a mom
 
 ### Visual Evidence
 
-![image:erdtree-interior](assets/images/erdtree-interior.jpg "Inside the Erdtree")
+![image:erdtree-interior](assets/images/erdtree-interior.jpg 'Inside the Erdtree')
 
 The interior of the Erdtree shows this exact moment: a tree that has burst open, frozen in time.
 
@@ -427,24 +439,24 @@ This aligns with Duchamp's concept of the Bride containing the ring (the Elden R
 
 ## Conclusion
 
-The parallels are too numerous to be coincidental. The Erdtree *is* the Bride's domain, crystallized in three dimensions.
+The parallels are too numerous to be coincidental. The Erdtree _is_ the Bride's domain, crystallized in three dimensions.
 
 ---
 
-*This analysis is part of the ongoing investigation documented at [discovery site].*
+_This analysis is part of the ongoing investigation documented at [discovery site]._
 ```
 
 ### Complete Criticism Example
 
 ```markdown
 ---
-source_piece: "The Erdtree as Cosmic Tree Theory"
-source_url: "https://example.com/erdtree-theory"
-author: "VaatiVidya"
-publication: "YouTube"
-published_date: "2024-03-10"
-criticism_date: "2024-10-24"
-tags: ["erdtree", "response", "lore-critique"]
+source_piece: 'The Erdtree as Cosmic Tree Theory'
+source_url: 'https://example.com/erdtree-theory'
+author: 'VaatiVidya'
+publication: 'YouTube'
+published_date: '2024-03-10'
+criticism_date: '2024-10-24'
+tags: ['erdtree', 'response', 'lore-critique']
 ---
 
 # Response to "The Erdtree as Cosmic Tree Theory"
@@ -465,9 +477,9 @@ VaatiVidya proposes that the Erdtree represents a Norse-style World Tree (Yggdra
 
 The interior of the Erdtree contradicts a "world tree" interpretation:
 
-![image:erdtree-hollow](assets/criticisms/erdtree-interior-analysis.jpg "The Erdtree is hollow and burnt")
+![image:erdtree-hollow](assets/criticisms/erdtree-interior-analysis.jpg 'The Erdtree is hollow and burnt')
 
-A cosmic tree should be alive and growing. The Erdtree is clearly hollow, burnt, and *frozen in a moment of expansion*.
+A cosmic tree should be alive and growing. The Erdtree is clearly hollow, burnt, and _frozen in a moment of expansion_.
 
 ### Issue 2: Miyazaki's Own Words
 

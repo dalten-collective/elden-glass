@@ -28,7 +28,9 @@ export function FloatImage({ src, alt, align = 'center', width = 320, children }
     >
       <img src={src} alt={alt || ''} className="block h-auto w-full" />
       {children && (
-        <figcaption className="px-4 py-3 text-sm text-[var(--text-secondary)] [&>p]:my-0">{children}</figcaption>
+        <figcaption className="px-4 py-3 text-sm text-[var(--text-secondary)] [&>p]:my-0">
+          {children}
+        </figcaption>
       )}
     </figure>
   );

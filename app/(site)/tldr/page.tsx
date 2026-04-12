@@ -10,7 +10,8 @@ import { getTldrDocument } from '@/lib/content';
 
 export const metadata: Metadata = {
   title: 'TL;DR - Elden Ring Is The Large Glass',
-  description: 'The discovery in about 3,000 words. The polished condensation of the thesis, timestamped on Bitcoin via OpenTimestamps before publication.',
+  description:
+    'The discovery in about 3,000 words. The polished condensation of the thesis, timestamped on Bitcoin via OpenTimestamps before publication.',
 };
 
 export default function TldrPage() {
@@ -38,7 +39,11 @@ export default function TldrPage() {
         </div>
         <HeroMeta
           items={[
-            { label: 'Sealed', value: doc.sealedDate ?? new Date(doc.updated).toLocaleDateString(), icon: CalendarDays },
+            {
+              label: 'Sealed',
+              value: doc.sealedDate ?? new Date(doc.updated).toLocaleDateString(),
+              icon: CalendarDays,
+            },
             { label: 'Reading Time', value: `${doc.readingMinutes || 18} min`, icon: Clock },
             { label: 'Status', value: 'Timestamped on Bitcoin', icon: ShieldCheck },
           ]}
@@ -64,18 +69,16 @@ export default function TldrPage() {
         <div className="flex flex-wrap gap-4 justify-between items-center">
           <div>
             <p className="text-sm text-[var(--text-tertiary)] mb-2">Go deeper</p>
-            <p className="text-[var(--text-secondary)]">The initial email and the full expanded thesis are both waiting.</p>
+            <p className="text-[var(--text-secondary)]">
+              The initial email and the full expanded thesis are both waiting.
+            </p>
           </div>
           <div className="flex gap-3">
             <Button asChild variant="outline">
-              <Link href="/initial-thesis">
-                The Initial Thesis
-              </Link>
+              <Link href="/initial-thesis">The Initial Thesis</Link>
             </Button>
             <Button asChild>
-              <Link href="/living-thesis">
-                The Living Thesis →
-              </Link>
+              <Link href="/living-thesis">The Living Thesis →</Link>
             </Button>
           </div>
         </div>

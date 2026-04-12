@@ -47,16 +47,19 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
   }, []);
 
   // Navigate to Gatherer with the card's term as search
-  const navigateToGatherer = useCallback((card: TitleCard) => {
-    router.push(`/gatherer?q=${encodeURIComponent(card.term || card.title)}`);
-    setHoverState(null);
-    setConnectedCards([]);
-  }, [router]);
+  const navigateToGatherer = useCallback(
+    (card: TitleCard) => {
+      router.push(`/gatherer?q=${encodeURIComponent(card.term || card.title)}`);
+      setHoverState(null);
+      setConnectedCards([]);
+    },
+    [router]
+  );
 
   // Adjust zoom level based on number of connected cards
   useEffect(() => {
     // Start at 1, reduce by 0.08 for each connected card (min 0.65)
-    const newZoom = Math.max(0.65, 1 - (connectedCards.length * 0.08));
+    const newZoom = Math.max(0.65, 1 - connectedCards.length * 0.08);
     setZoomLevel(newZoom);
   }, [connectedCards.length]);
 
@@ -67,8 +70,8 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
     // Helper to show card popup
     const showCardPopup = (target: HTMLElement, cardIdAttr: string) => {
       // Support comma-separated card IDs for showing multiple cards
-      const cardIds = cardIdAttr.split(',').map(id => id.trim());
-      const primaryCard = cards.find(c => c.id === cardIds[0]);
+      const cardIds = cardIdAttr.split(',').map((id) => id.trim());
+      const primaryCard = cards.find((c) => c.id === cardIds[0]);
 
       if (primaryCard) {
         const rect = target.getBoundingClientRect();
@@ -80,8 +83,9 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
 
         // If multiple card IDs, show additional cards as connected
         if (cardIds.length > 1) {
-          const additionalCards = cardIds.slice(1)
-            .map(id => cards.find(c => c.id === id))
+          const additionalCards = cardIds
+            .slice(1)
+            .map((id) => cards.find((c) => c.id === id))
             .filter((c): c is TitleCard => c !== undefined);
           setConnectedCards(additionalCards);
         } else {
@@ -148,7 +152,7 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
         const cardIdAttr = target.getAttribute('data-card-id');
         if (cardIdAttr) {
           // If popup is already showing for this card, close it
-          const cardIds = cardIdAttr.split(',').map(id => id.trim());
+          const cardIds = cardIdAttr.split(',').map((id) => id.trim());
           if (hoverState?.card.id === cardIds[0]) {
             setHoverState(null);
             setConnectedCards([]);
@@ -193,7 +197,7 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
   // Listen for programmatic card show requests (from search)
   useEffect(() => {
     const handleShowTitleCard = (e: CustomEvent<{ cardId: string }>) => {
-      const card = cards.find(c => c.id === e.detail.cardId);
+      const card = cards.find((c) => c.id === e.detail.cardId);
       if (card) {
         // Position card in center of viewport
         const viewportWidth = window.innerWidth;
@@ -276,7 +280,10 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
     for (let i = 0; i < images.length; i++) {
       const imgSrc = images[i];
       imageElements.push(
-        <div key={i} className="relative w-28 h-28 rounded overflow-hidden border border-[var(--border-subtle)]">
+        <div
+          key={i}
+          className="relative w-28 h-28 rounded overflow-hidden border border-[var(--border-subtle)]"
+        >
           {isGif(imgSrc) ? (
             <GifPlayer
               src={imgSrc}
@@ -375,7 +382,7 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
     const buttonElements = [];
     for (let i = 0; i < connections.length; i++) {
       const connection = connections[i];
-      const connectedCard = cards.find(c => c.id === connection.cardId);
+      const connectedCard = cards.find((c) => c.id === connection.cardId);
       if (!connectedCard) continue;
 
       buttonElements.push(
@@ -384,8 +391,8 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
           onClick={(e) => {
             e.stopPropagation();
             // Add to connected cards if not already there
-            if (!connectedCards.find(c => c.id === connectedCard.id)) {
-              setConnectedCards(prev => [...prev, connectedCard]);
+            if (!connectedCards.find((c) => c.id === connectedCard.id)) {
+              setConnectedCards((prev) => [...prev, connectedCard]);
             }
           }}
           className="group relative flex items-center gap-1 px-2 py-0.5 rounded-full bg-[var(--bg-primary)] border border-[var(--accent-gold)]/30 hover:border-[var(--accent-gold)] hover:bg-[var(--accent-gold)]/10 transition-all shadow"
@@ -404,11 +411,13 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
   };
 
   // Helper to render regular connection buttons (larger version)
-  const renderRegularConnectionButtons = (connections: Array<{ cardId: string; label?: string }>) => {
+  const renderRegularConnectionButtons = (
+    connections: Array<{ cardId: string; label?: string }>
+  ) => {
     const buttonElements = [];
     for (let i = 0; i < connections.length; i++) {
       const connection = connections[i];
-      const connectedCard = cards.find(c => c.id === connection.cardId);
+      const connectedCard = cards.find((c) => c.id === connection.cardId);
       if (!connectedCard) continue;
 
       buttonElements.push(
@@ -417,8 +426,8 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
           onClick={(e) => {
             e.stopPropagation();
             // Add to connected cards if not already there
-            if (!connectedCards.find(c => c.id === connectedCard.id)) {
-              setConnectedCards(prev => [...prev, connectedCard]);
+            if (!connectedCards.find((c) => c.id === connectedCard.id)) {
+              setConnectedCards((prev) => [...prev, connectedCard]);
             }
           }}
           className="group flex items-center gap-1.5 px-2 py-1 rounded bg-[var(--bg-primary)] border border-[var(--accent-gold)]/30 hover:border-[var(--accent-gold)] hover:bg-[var(--accent-gold)]/10 transition-all"
@@ -440,7 +449,9 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
     for (let idx = 0; idx < connectedCards.length; idx++) {
       const connectedCard = connectedCards[idx];
       const connectedIsDLC = connectedCard.source === 'dlc';
-      const connectedBorderColor = connectedIsDLC ? 'border-[var(--accent-red)]/50' : 'border-[var(--accent-gold)]/50';
+      const connectedBorderColor = connectedIsDLC
+        ? 'border-[var(--accent-red)]/50'
+        : 'border-[var(--accent-gold)]/50';
       cardElements.push(
         <div key={connectedCard.id} className="relative">
           {/* Connection line */}
@@ -451,7 +462,7 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
               <CardTitle className="text-xs text-[var(--accent-gold)] flex items-center justify-between">
                 <span>{connectedCard.title}</span>
                 <button
-                  onClick={() => setConnectedCards(prev => prev.filter((_, i) => i !== idx))}
+                  onClick={() => setConnectedCards((prev) => prev.filter((_, i) => i !== idx))}
                   className="text-[var(--text-tertiary)] hover:text-[var(--accent-gold)] ml-2"
                   title="Close"
                 >
@@ -485,7 +496,9 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
                   {renderMiniImages(connectedCard.images, connectedCard.title)}
                 </div>
               )}
-              <p className="text-[10px] text-[var(--text-secondary)] line-clamp-3">{connectedCard.description}</p>
+              <p className="text-[10px] text-[var(--text-secondary)] line-clamp-3">
+                {connectedCard.description}
+              </p>
             </CardContent>
           </Card>
         </div>
@@ -496,25 +509,255 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
 
   // Check if this is a split card with multiple images
   if (card?.isSplit && card.images && card.images.length > 0) {
-
     // Get header card if it's a titlecard type
     let headerCard: TitleCard | undefined;
     if (card.headerPopup?.type === 'titlecard' && card.headerPopup.titleCardId) {
-      headerCard = cards.find(c => c.id === card.headerPopup!.titleCardId);
+      headerCard = cards.find((c) => c.id === card.headerPopup!.titleCardId);
     }
 
     const splitIsDLC = card.source === 'dlc';
-    const splitBorderColor = splitIsDLC ? 'border-[var(--accent-red)]' : 'border-[var(--accent-gold)]';
+    const splitBorderColor = splitIsDLC
+      ? 'border-[var(--accent-red)]'
+      : 'border-[var(--accent-gold)]';
 
     return (
       <>
+        {/* View-only card detail modal */}
+        {detailCard && <CardDetailModal card={detailCard} onClose={() => setDetailCard(null)} />}
+        <div
+          ref={cardRef}
+          className="fixed z-50 pointer-events-auto origin-top"
+          style={{
+            left: `${safeX}px`,
+            top: `${safeY}px`,
+            transform: `translateX(-50%) scale(${zoomLevel})`,
+            willChange: 'transform',
+            backfaceVisibility: 'hidden',
+          }}
+        >
+          <div className="flex gap-3 items-start">
+            <div className="flex flex-col items-center gap-2">
+              {/* Header Popup */}
+              {card.headerPopup && (
+                <div className="relative">
+                  <Card className={`shadow-2xl border-2 ${splitBorderColor} max-w-md`}>
+                    <CardContent className="p-4">
+                      {card.headerPopup.type === 'titlecard' && headerCard && (
+                        <>
+                          <CardTitle className="text-sm text-[var(--accent-gold)] mb-2">
+                            {headerCard.title}
+                          </CardTitle>
+                          {headerCard.image && (
+                            <div className="relative w-full h-32 rounded overflow-hidden mb-2">
+                              {isGif(headerCard.image) ? (
+                                <GifPlayer
+                                  src={headerCard.image}
+                                  alt={headerCard.title}
+                                  className="w-full h-full object-contain"
+                                  skipMs={2000}
+                                  durationMs={18000}
+                                />
+                              ) : (
+                                <Image
+                                  src={headerCard.image}
+                                  alt={headerCard.title}
+                                  fill
+                                  className="object-contain"
+                                />
+                              )}
+                            </div>
+                          )}
+                          <p className="text-xs text-[var(--text-secondary)]">
+                            {headerCard.description}
+                          </p>
+                        </>
+                      )}
+
+                      {card.headerPopup.type === 'note' && (
+                        <>
+                          {card.headerPopup.title && (
+                            <CardTitle className="text-sm text-[var(--accent-gold)] mb-2">
+                              {card.headerPopup.title}
+                            </CardTitle>
+                          )}
+                          <p className="text-xs text-[var(--text-secondary)]">
+                            {card.headerPopup.note}
+                          </p>
+                        </>
+                      )}
+
+                      {card.headerPopup.type === 'image' && (
+                        <>
+                          {card.headerPopup.title && (
+                            <CardTitle className="text-sm text-[var(--accent-gold)] mb-2">
+                              {card.headerPopup.title}
+                            </CardTitle>
+                          )}
+                          {card.headerPopup.imageUrl && (
+                            <div className="relative w-full h-32 rounded overflow-hidden">
+                              {isGif(card.headerPopup.imageUrl) ? (
+                                <GifPlayer
+                                  src={card.headerPopup.imageUrl}
+                                  alt={card.headerPopup.title || 'Image'}
+                                  className="w-full h-full object-contain"
+                                  skipMs={2000}
+                                  durationMs={18000}
+                                />
+                              ) : (
+                                <Image
+                                  src={card.headerPopup.imageUrl}
+                                  alt={card.headerPopup.title || 'Image'}
+                                  fill
+                                  className="object-contain"
+                                />
+                              )}
+                            </div>
+                          )}
+                        </>
+                      )}
+
+                      {card.headerPopup.type === 'webpage' && (
+                        <a
+                          href={card.headerPopup.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block hover:opacity-80 transition"
+                        >
+                          {card.headerPopup.title && (
+                            <CardTitle className="text-sm text-[var(--accent-gold)] mb-2 flex items-center gap-1">
+                              {card.headerPopup.title}
+                              <ExternalLink className="h-3 w-3" />
+                            </CardTitle>
+                          )}
+                          {card.headerPopup.imageUrl && (
+                            <div className="relative w-full h-32 rounded overflow-hidden">
+                              {isGif(card.headerPopup.imageUrl) ? (
+                                <GifPlayer
+                                  src={card.headerPopup.imageUrl}
+                                  alt={card.headerPopup.title || 'Webpage preview'}
+                                  className="w-full h-full object-contain"
+                                  skipMs={2000}
+                                  durationMs={18000}
+                                />
+                              ) : (
+                                <Image
+                                  src={card.headerPopup.imageUrl}
+                                  alt={card.headerPopup.title || 'Webpage preview'}
+                                  fill
+                                  className="object-contain"
+                                />
+                              )}
+                            </div>
+                          )}
+                        </a>
+                      )}
+                    </CardContent>
+                  </Card>
+                  {/* Visual connector line */}
+                  <div className="absolute left-1/2 -bottom-2 w-0.5 h-4 bg-[var(--accent-gold)] transform -translate-x-1/2" />
+                </div>
+              )}
+
+              {/* Split Card - Multiple Images Side-by-Side */}
+              <Card
+                className={`shadow-2xl border-2 ${splitBorderColor} max-w-xl ${isMobile ? 'cursor-pointer active:scale-[0.98] transition-transform' : ''}`}
+                onClick={isMobile ? () => navigateToGatherer(card) : undefined}
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="text-sm text-[var(--accent-gold)]">
+                      {card.title}
+                    </CardTitle>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setDetailCard(card);
+                      }}
+                      className="p-1 hover:bg-[var(--accent-gold)]/20 rounded transition-colors"
+                      title="View card"
+                    >
+                      <Eye className="h-3 w-3 text-[var(--accent-gold)]" />
+                    </button>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  {/* Description first */}
+                  <p className="text-xs text-[var(--text-secondary)]">{card.description}</p>
+                  {/* Images displayed side-by-side */}
+                  <div className="flex gap-1.5 justify-center">
+                    {renderImages(card.images, card.title)}
+                  </div>
+                  {/* Category/subcategory after images */}
+                  {card.category && (
+                    <div className="text-[10px] text-[var(--text-secondary)] italic font-serif">
+                      {card.category}
+                      {card.subcategory && ` - ${card.subcategory}`}
+                    </div>
+                  )}
+                  {card.links && card.links.length > 0 && (
+                    <div className="space-y-1 pt-2 border-t border-[var(--border-subtle)]">
+                      {renderLinks(card.links)}
+                    </div>
+                  )}
+
+                  {/* Guidance of Grace Connections */}
+                  {card.connections && card.connections.length > 0 && (
+                    <div className="pt-2 border-t border-[var(--border-subtle)] relative">
+                      <div className="text-[10px] text-[var(--accent-gold)] mb-2 font-semibold tracking-wide">
+                        Guided by Grace
+                      </div>
+                      {/* Visual connection container */}
+                      <div className="relative min-h-[60px]">
+                        {/* Connection lines (SVG overlay) */}
+                        <svg
+                          className="absolute inset-0 pointer-events-none"
+                          style={{ width: '100%', height: '100%' }}
+                        >
+                          {renderConnectionLines(card.connections)}
+                        </svg>
+                        {/* Connection buttons */}
+                        <div className="flex flex-wrap gap-1.5 justify-center pt-6">
+                          {renderConnectionButtons(card.connections)}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Mobile tap hint */}
+                  {isMobile && (
+                    <div className="pt-2 mt-2 border-t border-[var(--border-subtle)] text-center">
+                      <span className="text-[10px] text-[var(--accent-gold)] opacity-70">
+                        Tap to view in Gatherer →
+                      </span>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Connected Cards via Grace */}
+            {renderConnectedCards()}
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  // Regular single card display - only render if card exists
+  if (!card) {
+    // Only modal to show, no hover card
+    return detailCard ? (
+      <CardDetailModal card={detailCard} onClose={() => setDetailCard(null)} />
+    ) : null;
+  }
+
+  const isDLC = card.source === 'dlc';
+  const borderColor = isDLC ? 'border-[var(--accent-red)]' : 'border-[var(--accent-gold)]';
+
+  return (
+    <>
       {/* View-only card detail modal */}
-      {detailCard && (
-        <CardDetailModal
-          card={detailCard}
-          onClose={() => setDetailCard(null)}
-        />
-      )}
+      {detailCard && <CardDetailModal card={detailCard} onClose={() => setDetailCard(null)} />}
       <div
         ref={cardRef}
         className="fixed z-50 pointer-events-auto origin-top"
@@ -527,132 +770,13 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
         }}
       >
         <div className="flex gap-3 items-start">
-          <div className="flex flex-col items-center gap-2">
-          {/* Header Popup */}
-          {card.headerPopup && (
-            <div className="relative">
-              <Card className={`shadow-2xl border-2 ${splitBorderColor} max-w-md`}>
-                <CardContent className="p-4">
-                  {card.headerPopup.type === 'titlecard' && headerCard && (
-                    <>
-                      <CardTitle className="text-sm text-[var(--accent-gold)] mb-2">
-                        {headerCard.title}
-                      </CardTitle>
-                      {headerCard.image && (
-                        <div className="relative w-full h-32 rounded overflow-hidden mb-2">
-                          {isGif(headerCard.image) ? (
-                            <GifPlayer
-                              src={headerCard.image}
-                              alt={headerCard.title}
-                              className="w-full h-full object-contain"
-                              skipMs={2000}
-                              durationMs={18000}
-                            />
-                          ) : (
-                            <Image
-                              src={headerCard.image}
-                              alt={headerCard.title}
-                              fill
-                              className="object-contain"
-                            />
-                          )}
-                        </div>
-                      )}
-                      <p className="text-xs text-[var(--text-secondary)]">{headerCard.description}</p>
-                    </>
-                  )}
-
-                  {card.headerPopup.type === 'note' && (
-                    <>
-                      {card.headerPopup.title && (
-                        <CardTitle className="text-sm text-[var(--accent-gold)] mb-2">
-                          {card.headerPopup.title}
-                        </CardTitle>
-                      )}
-                      <p className="text-xs text-[var(--text-secondary)]">{card.headerPopup.note}</p>
-                    </>
-                  )}
-
-                  {card.headerPopup.type === 'image' && (
-                    <>
-                      {card.headerPopup.title && (
-                        <CardTitle className="text-sm text-[var(--accent-gold)] mb-2">
-                          {card.headerPopup.title}
-                        </CardTitle>
-                      )}
-                      {card.headerPopup.imageUrl && (
-                        <div className="relative w-full h-32 rounded overflow-hidden">
-                          {isGif(card.headerPopup.imageUrl) ? (
-                            <GifPlayer
-                              src={card.headerPopup.imageUrl}
-                              alt={card.headerPopup.title || 'Image'}
-                              className="w-full h-full object-contain"
-                              skipMs={2000}
-                              durationMs={18000}
-                            />
-                          ) : (
-                            <Image
-                              src={card.headerPopup.imageUrl}
-                              alt={card.headerPopup.title || 'Image'}
-                              fill
-                              className="object-contain"
-                            />
-                          )}
-                        </div>
-                      )}
-                    </>
-                  )}
-
-                  {card.headerPopup.type === 'webpage' && (
-                    <a
-                      href={card.headerPopup.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block hover:opacity-80 transition"
-                    >
-                      {card.headerPopup.title && (
-                        <CardTitle className="text-sm text-[var(--accent-gold)] mb-2 flex items-center gap-1">
-                          {card.headerPopup.title}
-                          <ExternalLink className="h-3 w-3" />
-                        </CardTitle>
-                      )}
-                      {card.headerPopup.imageUrl && (
-                        <div className="relative w-full h-32 rounded overflow-hidden">
-                          {isGif(card.headerPopup.imageUrl) ? (
-                            <GifPlayer
-                              src={card.headerPopup.imageUrl}
-                              alt={card.headerPopup.title || 'Webpage preview'}
-                              className="w-full h-full object-contain"
-                              skipMs={2000}
-                              durationMs={18000}
-                            />
-                          ) : (
-                            <Image
-                              src={card.headerPopup.imageUrl}
-                              alt={card.headerPopup.title || 'Webpage preview'}
-                              fill
-                              className="object-contain"
-                            />
-                          )}
-                        </div>
-                      )}
-                    </a>
-                  )}
-                </CardContent>
-              </Card>
-              {/* Visual connector line */}
-              <div className="absolute left-1/2 -bottom-2 w-0.5 h-4 bg-[var(--accent-gold)] transform -translate-x-1/2" />
-            </div>
-          )}
-
-          {/* Split Card - Multiple Images Side-by-Side */}
           <Card
-            className={`shadow-2xl border-2 ${splitBorderColor} max-w-xl ${isMobile ? 'cursor-pointer active:scale-[0.98] transition-transform' : ''}`}
+            className={`shadow-2xl border-2 ${borderColor} max-w-sm ${isMobile ? 'cursor-pointer active:scale-[0.98] transition-transform' : ''}`}
             onClick={isMobile ? () => navigateToGatherer(card) : undefined}
           >
-            <CardHeader className="pb-2">
+            <CardHeader className="pb-3">
               <div className="flex items-center justify-between">
-                <CardTitle className="text-sm text-[var(--accent-gold)]">{card.title}</CardTitle>
+                <CardTitle className="text-lg text-[var(--accent-gold)]">{card.title}</CardTitle>
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -661,21 +785,34 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
                   className="p-1 hover:bg-[var(--accent-gold)]/20 rounded transition-colors"
                   title="View card"
                 >
-                  <Eye className="h-3 w-3 text-[var(--accent-gold)]" />
+                  <Eye className="h-4 w-4 text-[var(--accent-gold)]" />
                 </button>
               </div>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-3">
               {/* Description first */}
-              <p className="text-xs text-[var(--text-secondary)]">{card.description}</p>
-              {/* Images displayed side-by-side */}
-              <div className="flex gap-1.5 justify-center">
-                {renderImages(card.images, card.title)}
-              </div>
-              {/* Category/subcategory after images */}
+              <p className="text-sm text-[var(--text-secondary)]">{card.description}</p>
+              {/* Image after description */}
+              {card.image && (
+                <div className="relative w-full h-48 rounded overflow-hidden">
+                  {isGif(card.image) ? (
+                    <GifPlayer
+                      src={card.image}
+                      alt={card.title}
+                      className="w-full h-full object-contain"
+                      skipMs={2000}
+                      durationMs={18000}
+                    />
+                  ) : (
+                    <Image src={card.image} alt={card.title} fill className="object-contain" />
+                  )}
+                </div>
+              )}
+              {/* Category/Subcategory after image */}
               {card.category && (
-                <div className="text-[10px] text-[var(--text-secondary)] italic font-serif">
-                  {card.category}{card.subcategory && ` - ${card.subcategory}`}
+                <div className="text-xs text-[var(--text-secondary)] italic font-serif">
+                  {card.category}
+                  {card.subcategory && ` - ${card.subcategory}`}
                 </div>
               )}
               {card.links && card.links.length > 0 && (
@@ -686,161 +823,31 @@ export function TitleCardDisplay({ cards }: TitleCardDisplayProps) {
 
               {/* Guidance of Grace Connections */}
               {card.connections && card.connections.length > 0 && (
-                <div className="pt-2 border-t border-[var(--border-subtle)] relative">
-                  <div className="text-[10px] text-[var(--accent-gold)] mb-2 font-semibold tracking-wide">
+                <div className="pt-3 border-t border-[var(--border-subtle)]">
+                  <div className="text-xs text-[var(--accent-gold)] mb-2 font-semibold tracking-wide">
                     Guided by Grace
                   </div>
-                  {/* Visual connection container */}
-                  <div className="relative min-h-[60px]">
-                    {/* Connection lines (SVG overlay) */}
-                    <svg className="absolute inset-0 pointer-events-none" style={{ width: '100%', height: '100%' }}>
-                      {renderConnectionLines(card.connections)}
-                    </svg>
-                    {/* Connection buttons */}
-                    <div className="flex flex-wrap gap-1.5 justify-center pt-6">
-                      {renderConnectionButtons(card.connections)}
-                    </div>
+                  <div className="flex flex-wrap gap-2">
+                    {renderRegularConnectionButtons(card.connections)}
                   </div>
                 </div>
               )}
 
               {/* Mobile tap hint */}
               {isMobile && (
-                <div className="pt-2 mt-2 border-t border-[var(--border-subtle)] text-center">
-                  <span className="text-[10px] text-[var(--accent-gold)] opacity-70">
+                <div className="pt-3 mt-3 border-t border-[var(--border-subtle)] text-center">
+                  <span className="text-xs text-[var(--accent-gold)] opacity-70">
                     Tap to view in Gatherer →
                   </span>
                 </div>
               )}
             </CardContent>
           </Card>
-          </div>
 
           {/* Connected Cards via Grace */}
           {renderConnectedCards()}
         </div>
       </div>
-      </>
-    );
-  }
-
-  // Regular single card display - only render if card exists
-  if (!card) {
-    // Only modal to show, no hover card
-    return detailCard ? (
-      <CardDetailModal
-        card={detailCard}
-        onClose={() => setDetailCard(null)}
-      />
-    ) : null;
-  }
-
-  const isDLC = card.source === 'dlc';
-  const borderColor = isDLC ? 'border-[var(--accent-red)]' : 'border-[var(--accent-gold)]';
-
-  return (
-    <>
-    {/* View-only card detail modal */}
-    {detailCard && (
-      <CardDetailModal
-        card={detailCard}
-        onClose={() => setDetailCard(null)}
-      />
-    )}
-    <div
-      ref={cardRef}
-      className="fixed z-50 pointer-events-auto origin-top"
-      style={{
-        left: `${safeX}px`,
-        top: `${safeY}px`,
-        transform: `translateX(-50%) scale(${zoomLevel})`,
-        willChange: 'transform',
-        backfaceVisibility: 'hidden',
-      }}
-    >
-      <div className="flex gap-3 items-start">
-      <Card
-        className={`shadow-2xl border-2 ${borderColor} max-w-sm ${isMobile ? 'cursor-pointer active:scale-[0.98] transition-transform' : ''}`}
-        onClick={isMobile ? () => navigateToGatherer(card) : undefined}
-      >
-        <CardHeader className="pb-3">
-          <div className="flex items-center justify-between">
-            <CardTitle className="text-lg text-[var(--accent-gold)]">{card.title}</CardTitle>
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setDetailCard(card);
-              }}
-              className="p-1 hover:bg-[var(--accent-gold)]/20 rounded transition-colors"
-              title="View card"
-            >
-              <Eye className="h-4 w-4 text-[var(--accent-gold)]" />
-            </button>
-          </div>
-        </CardHeader>
-        <CardContent className="space-y-3">
-          {/* Description first */}
-          <p className="text-sm text-[var(--text-secondary)]">{card.description}</p>
-          {/* Image after description */}
-          {card.image && (
-            <div className="relative w-full h-48 rounded overflow-hidden">
-              {isGif(card.image) ? (
-                <GifPlayer
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-full object-contain"
-                  skipMs={2000}
-                  durationMs={18000}
-                />
-              ) : (
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  fill
-                  className="object-contain"
-                />
-              )}
-            </div>
-          )}
-          {/* Category/Subcategory after image */}
-          {card.category && (
-            <div className="text-xs text-[var(--text-secondary)] italic font-serif">
-              {card.category}{card.subcategory && ` - ${card.subcategory}`}
-            </div>
-          )}
-          {card.links && card.links.length > 0 && (
-            <div className="space-y-1 pt-2 border-t border-[var(--border-subtle)]">
-              {renderLinks(card.links)}
-            </div>
-          )}
-
-          {/* Guidance of Grace Connections */}
-          {card.connections && card.connections.length > 0 && (
-            <div className="pt-3 border-t border-[var(--border-subtle)]">
-              <div className="text-xs text-[var(--accent-gold)] mb-2 font-semibold tracking-wide">
-                Guided by Grace
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {renderRegularConnectionButtons(card.connections)}
-              </div>
-            </div>
-          )}
-
-          {/* Mobile tap hint */}
-          {isMobile && (
-            <div className="pt-3 mt-3 border-t border-[var(--border-subtle)] text-center">
-              <span className="text-xs text-[var(--accent-gold)] opacity-70">
-                Tap to view in Gatherer →
-              </span>
-            </div>
-          )}
-        </CardContent>
-      </Card>
-
-      {/* Connected Cards via Grace */}
-      {renderConnectedCards()}
-      </div>
-    </div>
     </>
   );
 }

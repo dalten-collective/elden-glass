@@ -26,7 +26,10 @@ export function ManuscriptDisplay({ filename }: ManuscriptDisplayProps) {
   const masked = raw.replace(/ *<[^>\s]+@[^>\s]+>/g, '');
 
   const { header, body } = splitHeader(masked.trim());
-  const paragraphs = body.split(/\n\s*\n+/).map((p) => p.trim()).filter(Boolean);
+  const paragraphs = body
+    .split(/\n\s*\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean);
 
   return (
     <section className="space-y-6">

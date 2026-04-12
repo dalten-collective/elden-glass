@@ -18,9 +18,7 @@ export default function VocabPage() {
         {doc.title}
       </h1>
       {doc.subtitle && (
-        <p className="text-[var(--text-secondary)] mb-8 text-sm italic">
-          {doc.subtitle}
-        </p>
+        <p className="text-[var(--text-secondary)] mb-8 text-sm italic">{doc.subtitle}</p>
       )}
       <section className="prose prose-lg prose-invert max-w-none">
         <MarkdownRenderer code={doc.body.code} />

@@ -22,7 +22,7 @@ export function EldenOrrery() {
   useEffect(() => {
     if (paused) return;
     const interval = setInterval(() => {
-      setTime(t => t + 1);
+      setTime((t) => t + 1);
     }, 50);
     return () => clearInterval(interval);
   }, [paused]);
@@ -32,7 +32,7 @@ export function EldenOrrery() {
   // Its orbit period sets the fundamental rhythm that all other bodies follow
   const moonOrbitRadius = 55;
   const moonSpeed = 1.2; // Fastest orbit - it drives everything else
-  const moonAngle = (time * moonSpeed) * (Math.PI / 180);
+  const moonAngle = time * moonSpeed * (Math.PI / 180);
   const moonX = Math.cos(moonAngle) * moonOrbitRadius;
   const moonY = Math.sin(moonAngle) * moonOrbitRadius;
 
@@ -45,7 +45,7 @@ export function EldenOrrery() {
 
   // Calculate binary positions (they orbit each other around the center)
   // Radagon (Mars) is driven by the Moon; Marika orbits opposite to him
-  const binaryAngle = (time * binarySpeed) * (Math.PI / 180);
+  const binaryAngle = time * binarySpeed * (Math.PI / 180);
   const radagonX = Math.cos(binaryAngle) * binaryOrbitRadius; // Radagon leads - driven by Moon
   const radagonY = Math.sin(binaryAngle) * binaryOrbitRadius;
   const marikaX = Math.cos(binaryAngle + Math.PI) * binaryOrbitRadius; // Marika opposite
@@ -68,13 +68,52 @@ export function EldenOrrery() {
 
   // Stars (frozen until Radahn falls)
   const stars: CelestialBody[] = [
-    { id: 'star1', name: 'Star of Ruin', color: '#ff6b6b', size: 4, orbitRadius: 180, orbitSpeed: 0.3, startAngle: 0 },
-    { id: 'star2', name: 'Star of Darkness', color: '#9b59b6', size: 3, orbitRadius: 200, orbitSpeed: 0.25, startAngle: 72 },
-    { id: 'star3', name: 'Star of Ill Omen', color: '#3498db', size: 3.5, orbitRadius: 165, orbitSpeed: 0.35, startAngle: 144 },
-    { id: 'star4', name: 'Amber Star', color: '#f39c12', size: 3, orbitRadius: 190, orbitSpeed: 0.28, startAngle: 216 },
-    { id: 'star5', name: 'Glintstone Star', color: '#1abc9c', size: 2.5, orbitRadius: 175, orbitSpeed: 0.32, startAngle: 288 },
+    {
+      id: 'star1',
+      name: 'Star of Ruin',
+      color: '#ff6b6b',
+      size: 4,
+      orbitRadius: 180,
+      orbitSpeed: 0.3,
+      startAngle: 0,
+    },
+    {
+      id: 'star2',
+      name: 'Star of Darkness',
+      color: '#9b59b6',
+      size: 3,
+      orbitRadius: 200,
+      orbitSpeed: 0.25,
+      startAngle: 72,
+    },
+    {
+      id: 'star3',
+      name: 'Star of Ill Omen',
+      color: '#3498db',
+      size: 3.5,
+      orbitRadius: 165,
+      orbitSpeed: 0.35,
+      startAngle: 144,
+    },
+    {
+      id: 'star4',
+      name: 'Amber Star',
+      color: '#f39c12',
+      size: 3,
+      orbitRadius: 190,
+      orbitSpeed: 0.28,
+      startAngle: 216,
+    },
+    {
+      id: 'star5',
+      name: 'Glintstone Star',
+      color: '#1abc9c',
+      size: 2.5,
+      orbitRadius: 175,
+      orbitSpeed: 0.32,
+      startAngle: 288,
+    },
   ];
-
 
   const getPosition = (body: CelestialBody, frozen: boolean = false) => {
     const effectiveSpeed = frozen ? 0 : body.orbitSpeed;
@@ -151,7 +190,6 @@ export function EldenOrrery() {
             />
           </g>
 
-
           {/* Binary orbit path */}
           <circle
             cx={centerX}
@@ -163,9 +201,8 @@ export function EldenOrrery() {
             strokeDasharray="4,4"
           />
 
-
           {/* Star orbit paths */}
-          {stars.map(s => (
+          {stars.map((s) => (
             <circle
               key={`orbit-${s.id}`}
               cx={centerX}
@@ -209,7 +246,13 @@ export function EldenOrrery() {
             <text y="20" textAnchor="middle" fill="white" fontSize="8" fontFamily="serif">
               Radagon
             </text>
-            <text y="28" textAnchor="middle" fill="rgba(231,76,60,0.7)" fontSize="5" fontFamily="serif">
+            <text
+              y="28"
+              textAnchor="middle"
+              fill="rgba(231,76,60,0.7)"
+              fontSize="5"
+              fontFamily="serif"
+            >
               (Mars)
             </text>
           </g>
@@ -238,7 +281,7 @@ export function EldenOrrery() {
               strokeDasharray="3,3"
             />
             {/* Moon glow - changes based on which side faces us */}
-            <circle r="18" fill={radahnFallen ? "url(#darkMoonGlow)" : "url(#moonGlow)"} />
+            <circle r="18" fill={radahnFallen ? 'url(#darkMoonGlow)' : 'url(#moonGlow)'} />
 
             {/* Moon body - rotating to show different face */}
             {radahnFallen ? (
@@ -269,13 +312,31 @@ export function EldenOrrery() {
             )}
 
             {/* Moon label - changes based on which side faces us */}
-            <text y="22" textAnchor="middle" fill={radahnFallen ? "#a0aec0" : "white"} fontSize="7" fontFamily="serif">
-              {radahnFallen ? "Dark Moon" : "Full Moon"}
+            <text
+              y="22"
+              textAnchor="middle"
+              fill={radahnFallen ? '#a0aec0' : 'white'}
+              fontSize="7"
+              fontFamily="serif"
+            >
+              {radahnFallen ? 'Dark Moon' : 'Full Moon'}
             </text>
-            <text y="30" textAnchor="middle" fill={radahnFallen ? "rgba(100,100,180,0.7)" : "rgba(200,200,220,0.7)"} fontSize="5" fontFamily="serif">
-              {radahnFallen ? "(Ranni)" : "(Rennala)"}
+            <text
+              y="30"
+              textAnchor="middle"
+              fill={radahnFallen ? 'rgba(100,100,180,0.7)' : 'rgba(200,200,220,0.7)'}
+              fontSize="5"
+              fontFamily="serif"
+            >
+              {radahnFallen ? '(Ranni)' : '(Rennala)'}
             </text>
-            <text y="38" textAnchor="middle" fill="rgba(200,200,220,0.5)" fontSize="4" fontFamily="serif">
+            <text
+              y="38"
+              textAnchor="middle"
+              fill="rgba(200,200,220,0.5)"
+              fontSize="4"
+              fontFamily="serif"
+            >
               Driveshaft
             </text>
           </g>
@@ -307,7 +368,7 @@ export function EldenOrrery() {
           />
 
           {/* Stars */}
-          {stars.map(s => {
+          {stars.map((s) => {
             const pos = getPosition(s, !radahnFallen);
             return (
               <g key={s.id} transform={`translate(${centerX + pos.x}, ${centerY + pos.y})`}>
@@ -316,12 +377,7 @@ export function EldenOrrery() {
                 <circle r={s.size} fill={s.color} />
                 {/* Frozen indicator */}
                 {!radahnFallen && (
-                  <circle
-                    r={s.size + 4}
-                    fill="none"
-                    stroke="rgba(231,76,60,0.5)"
-                    strokeWidth="1"
-                  />
+                  <circle r={s.size + 4} fill="none" stroke="rgba(231,76,60,0.5)" strokeWidth="1" />
                 )}
               </g>
             );
@@ -357,8 +413,14 @@ export function EldenOrrery() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 text-sm">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 rounded-full relative overflow-hidden">
-            <div className="absolute inset-0 bg-[#e8e8f0]" style={{ clipPath: 'inset(0 50% 0 0)' }} />
-            <div className="absolute inset-0 bg-[#2d3748]" style={{ clipPath: 'inset(0 0 0 50%)' }} />
+            <div
+              className="absolute inset-0 bg-[#e8e8f0]"
+              style={{ clipPath: 'inset(0 50% 0 0)' }}
+            />
+            <div
+              className="absolute inset-0 bg-[#2d3748]"
+              style={{ clipPath: 'inset(0 0 0 50%)' }}
+            />
           </div>
           <span className="text-[var(--text-secondary)]">The Moon (Full/Dark)</span>
         </div>
@@ -383,33 +445,38 @@ export function EldenOrrery() {
       {/* Explanation */}
       <div className="text-sm text-[var(--text-tertiary)] space-y-2">
         <p>
-          <strong className="text-[var(--text-secondary)]">The Moon as Driveshaft:</strong> In the TYCHOS model,
-          the Moon acts as the mechanical driver of the entire solar system&mdash;a driveshaft that keeps all
-          other bodies in synchronized motion. The rotating gear teeth show how its orbit powers the entire celestial mechanism.
+          <strong className="text-[var(--text-secondary)]">The Moon as Driveshaft:</strong> In the
+          TYCHOS model, the Moon acts as the mechanical driver of the entire solar system&mdash;a
+          driveshaft that keeps all other bodies in synchronized motion. The rotating gear teeth
+          show how its orbit powers the entire celestial mechanism.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">Radagon is Mars:</strong> The Moon-Mars relationship in TYCHOS
-          shows Mars orbiting at exactly half the Moon&apos;s angular velocity&mdash;a 2:1 resonance. In the Lands Between,
-          Radagon (the red-haired warrior god) <em>is</em> Mars. The dashed line shows the mechanical linkage: the Moon
-          literally drives Radagon&apos;s motion. Mars does not move independently; it is coupled to the lunar driveshaft.
+          <strong className="text-[var(--text-secondary)]">Radagon is Mars:</strong> The Moon-Mars
+          relationship in TYCHOS shows Mars orbiting at exactly half the Moon&apos;s angular
+          velocity&mdash;a 2:1 resonance. In the Lands Between, Radagon (the red-haired warrior god){' '}
+          <em>is</em> Mars. The dashed line shows the mechanical linkage: the Moon literally drives
+          Radagon&apos;s motion. Mars does not move independently; it is coupled to the lunar
+          driveshaft.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">One Moon, Two Faces:</strong> Rennala&apos;s Full Moon
-          and Ranni&apos;s Dark Moon are the <em>same celestial body</em>&mdash;just different sides. While Radahn
-          holds the stars, we see the bright side (Rennala&apos;s domain, the Academy, order). When Radahn falls,
-          the Moon turns to show its dark side (Ranni&apos;s domain, enabling the Age of Stars). Mother and
-          daughter share the same celestial inheritance.
+          <strong className="text-[var(--text-secondary)]">One Moon, Two Faces:</strong>{' '}
+          Rennala&apos;s Full Moon and Ranni&apos;s Dark Moon are the <em>same celestial body</em>
+          &mdash;just different sides. While Radahn holds the stars, we see the bright side
+          (Rennala&apos;s domain, the Academy, order). When Radahn falls, the Moon turns to show its
+          dark side (Ranni&apos;s domain, enabling the Age of Stars). Mother and daughter share the
+          same celestial inheritance.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">The Binary System:</strong> Marika and Radagon
-          orbit each other as a true syzygy&mdash;two gods sharing one vessel but retaining distinct wills.
-          The Erdtree sits at their barycenter, the axis around which all else revolves.
+          <strong className="text-[var(--text-secondary)]">The Binary System:</strong> Marika and
+          Radagon orbit each other as a true syzygy&mdash;two gods sharing one vessel but retaining
+          distinct wills. The Erdtree sits at their barycenter, the axis around which all else
+          revolves.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">Radahn&apos;s Gravity:</strong> While Radahn lives,
-          his mastery of gravity magic holds the stars frozen in place. Toggle &quot;Stars Released&quot; to see
-          what happens when he falls&mdash;the stars resume their motion, the Moon turns to its dark side, and
-          Ranni&apos;s ending becomes possible.
+          <strong className="text-[var(--text-secondary)]">Radahn&apos;s Gravity:</strong> While
+          Radahn lives, his mastery of gravity magic holds the stars frozen in place. Toggle
+          &quot;Stars Released&quot; to see what happens when he falls&mdash;the stars resume their
+          motion, the Moon turns to its dark side, and Ranni&apos;s ending becomes possible.
         </p>
       </div>
     </div>
