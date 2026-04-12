@@ -1,0 +1,5376 @@
+{
+  "section": "Elden Ring",
+  "category": "Items",
+  "cards": [
+    {
+      "id": "bloody-finger",
+      "term": "bloody finger",
+      "title": "Bloody Finger",
+      "description": "Attempts invasion of other player's world",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "finger-severer",
+      "term": "finger severer",
+      "title": "Finger Severer",
+      "description": "Sends another, or oneself, home",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "white-cipher-ring",
+      "term": "white cipher ring",
+      "title": "White Cipher Ring",
+      "description": "When invaded, requests the aid of a hunter",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "tarnished-s-wizened-finger",
+      "term": "tarnished's wizened finger",
+      "title": "Tarnished's Wizened Finger",
+      "description": "Used to write messages to other worlds",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "phantom-bloody-finger",
+      "term": "phantom bloody finger",
+      "title": "Phantom Bloody Finger",
+      "description": "Attempts repeat invasion of last targeted world",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "taunter-s-tongue",
+      "term": "taunter's tongue",
+      "title": "Taunter's Tongue",
+      "description": "Lures in invaders",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "festering-bloody-finger",
+      "term": "festering bloody finger",
+      "title": "Festering Bloody Finger",
+      "description": "Item for online play.\n(Can also be used from the Multiplayer menu.)\nConsumed upon use.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "recusant-finger",
+      "term": "recusant finger",
+      "title": "Recusant Finger",
+      "description": "Item for online play.\n(Can also be used from the Multiplayer menu.)",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flask-of-crimson-tears",
+      "term": "flask of crimson tears",
+      "title": "Flask of Crimson Tears",
+      "description": "Restores HP, but is currently empty",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flask-of-cerulean-tears",
+      "term": "flask of cerulean tears",
+      "title": "Flask of Cerulean Tears",
+      "description": "Restores FP, but is currently empty",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flask-of-wondrous-physick",
+      "term": "flask of wondrous physick",
+      "title": "Flask of Wondrous Physick",
+      "description": "Bestows various special effects",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "beastlure-pot",
+      "term": "beastlure pot",
+      "title": "Beastlure Pot",
+      "description": "Uses FP. Lures beasts only.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "roped-volcano-pot",
+      "term": "roped volcano pot",
+      "title": "Roped Volcano Pot",
+      "description": "Creates heat cloud, causing continuous fire damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "volcano-pot",
+      "term": "volcano pot",
+      "title": "Volcano Pot",
+      "description": "Craftable item prepared using a cracked pot.\nPowdered volcanic rock is sealed inside.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rowa-raisin",
+      "term": "rowa raisin",
+      "title": "Rowa Raisin",
+      "description": "On horseback, feed to Torrent to restore HP",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sweet-raisin",
+      "term": "sweet raisin",
+      "title": "Sweet Raisin",
+      "description": "On horseback, feed to Torrent to greatly restore HP",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "frozen-raisin",
+      "term": "frozen raisin",
+      "title": "Frozen Raisin",
+      "description": "On horseback, feed to Torrent to vastly restore HP",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "boiled-crab",
+      "term": "boiled crab",
+      "title": "Boiled Crab",
+      "description": "Greatly boosts physical damage negation for a time",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "boiled-prawn",
+      "term": "boiled prawn",
+      "title": "Boiled Prawn",
+      "description": "Boosts physical damage negation for a time",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "pickled-turtle-neck",
+      "term": "pickled turtle neck",
+      "title": "Pickled Turtle Neck",
+      "description": "Temporarily boosts stamina recovery",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "immunizing-cured-meat",
+      "term": "immunizing cured meat",
+      "title": "Immunizing Cured Meat",
+      "description": "Temporarily boosts immunity",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "invigorating-cured-meat",
+      "term": "invigorating cured meat",
+      "title": "Invigorating Cured Meat",
+      "description": "Temporarily boosts robustness",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "clarifying-cured-meat",
+      "term": "clarifying cured meat",
+      "title": "Clarifying Cured Meat",
+      "description": "Temporarily boosts focus",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dappled-cured-meat",
+      "term": "dappled cured meat",
+      "title": "Dappled Cured Meat",
+      "description": "Temporarily boosts immunity, robustness and focus",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "spellproof-dried-liver",
+      "term": "spellproof dried liver",
+      "title": "Spellproof Dried Liver",
+      "description": "Temporarily boosts magic damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fireproof-dried-liver",
+      "term": "fireproof dried liver",
+      "title": "Fireproof Dried Liver",
+      "description": "Temporarily boosts fire damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lightningproof-dried-liver",
+      "term": "lightningproof dried liver",
+      "title": "Lightningproof Dried Liver",
+      "description": "Temporarily boosts lightning damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "holyproof-dried-liver",
+      "term": "holyproof dried liver",
+      "title": "Holyproof Dried Liver",
+      "description": "Temporarily boosts holy damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "silver-pickled-fowl-foot",
+      "term": "silver-pickled fowl foot",
+      "title": "Silver-Pickled Fowl Foot",
+      "description": "Temporarily boosts item discovery",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "exalted-flesh",
+      "term": "exalted flesh",
+      "title": "Exalted Flesh",
+      "description": "Temporarily boosts physical attack",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "deathsbane-jerky",
+      "term": "deathsbane jerky",
+      "title": "Deathsbane Jerky",
+      "description": "Boost instant death resistance for a short time",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "raw-meat-dumpling",
+      "term": "raw meat dumpling",
+      "title": "Raw Meat Dumpling",
+      "description": "Restores HP but causes poison buildup",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "shabriri-grape",
+      "term": "shabriri grape",
+      "title": "Shabriri Grape",
+      "description": "Yellowing, oozing eyeball of the infirm",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "starlight-shards",
+      "term": "starlight shards",
+      "title": "Starlight Shards",
+      "description": "Use to gradually recover FP",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "immunizing-white-cured-meat",
+      "term": "immunizing white cured meat",
+      "title": "Immunizing White Cured Meat",
+      "description": "A white sliced meat, dried out after pickling in a green medicinal solution.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "invigorating-white-cured-meat",
+      "term": "invigorating white cured meat",
+      "title": "Invigorating White Cured Meat",
+      "description": "A white sliced meat, dried out after pickling in a red medicinal solution.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "clarifying-white-cured-meat",
+      "term": "clarifying white cured meat",
+      "title": "Clarifying White Cured Meat",
+      "description": "A white sliced meat, dried out after pickling in a purple medicinal solution.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dappled-white-cured-meat",
+      "term": "dappled white cured meat",
+      "title": "Dappled White Cured Meat",
+      "description": "A white sliced meat, dried out after pickling in a dappled medicinal solution.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "deathsbane-white-jerky",
+      "term": "deathsbane white jerky",
+      "title": "Deathsbane White Jerky",
+      "description": "A black-gold colored cured liver,\ndried out after pickling in a medicinal solution.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "throwing-dagger",
+      "term": "throwing dagger",
+      "title": "Throwing Dagger",
+      "description": "Throw at enemies to inflict damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bone-dart",
+      "term": "bone dart",
+      "title": "Bone Dart",
+      "description": "Animal bone sharpened into a knife for throwing.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poisonbone-dart",
+      "term": "poisonbone dart",
+      "title": "Poisonbone Dart",
+      "description": "Throw at enemies to inflict damage and build up poison",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "kukri",
+      "term": "kukri",
+      "title": "Kukri",
+      "description": "Throw at enemies to inflict damage and build up onset of blood loss",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-dart",
+      "term": "crystal dart",
+      "title": "Crystal Dart",
+      "description": "Throwing knife chiseled from impure crystal.\nCraftable item.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fan-daggers",
+      "term": "fan daggers",
+      "title": "Fan Daggers",
+      "description": "Throw fanned-out knives at enemies to inflict damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ruin-fragment",
+      "term": "ruin fragment",
+      "title": "Ruin Fragment",
+      "description": "Material used for crafting items",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fetid-flesh",
+      "term": "fetid flesh",
+      "title": "Fetid Flesh",
+      "description": "Utterly entrances wild beasts",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "explosive-stone",
+      "term": "explosive stone",
+      "title": "Explosive Stone",
+      "description": "Explodes when thrown, inflicting fire damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "explosive-stone-clump",
+      "term": "explosive stone clump",
+      "title": "Explosive Stone Clump",
+      "description": "Explodes when thrown together, inflicting fire damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poisoned-stone",
+      "term": "poisoned stone",
+      "title": "Poisoned Stone",
+      "description": "A small stone with a poison core.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poisoned-stone-clump",
+      "term": "poisoned stone clump",
+      "title": "Poisoned Stone Clump",
+      "description": "Throw together to cause buildup of poison",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rainbow-stone",
+      "term": "rainbow stone",
+      "title": "Rainbow Stone",
+      "description": "Shines with colored light when placed, serving as a guide",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glowstone",
+      "term": "glowstone",
+      "title": "Glowstone",
+      "description": "Emits a faint light from the location it is placed",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "telescope",
+      "term": "telescope",
+      "title": "Telescope",
+      "description": "Allows viewer to see faraway things",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grace-mimic",
+      "term": "grace mimic",
+      "title": "Grace Mimic",
+      "description": "Light shows the path, but without order",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lantern",
+      "term": "lantern",
+      "title": "Lantern",
+      "description": "Attach to waist to illuminate surroundings",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "blasphemous-claw",
+      "term": "blasphemous claw",
+      "title": "Blasphemous Claw",
+      "description": "Deflects the power of the Black Blade",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "deathroot",
+      "term": "deathroot",
+      "title": "Deathroot",
+      "description": "Beast Clergyman seeks and devours these",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "soft-cotton",
+      "term": "soft cotton",
+      "title": "Soft Cotton",
+      "description": "Temporarily reduces fall damage and sound",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "soap",
+      "term": "soap",
+      "title": "Soap",
+      "description": "Removes filth and accumulations on the body",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "celestial-dew",
+      "term": "celestial dew",
+      "title": "Celestial Dew",
+      "description": "Carry out Absolution at the Church of Vows",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "margit-s-shackle",
+      "term": "margit's shackle",
+      "title": "Margit's Shackle",
+      "description": "Briefly binds Margit, once imprisoned, to earth",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "mohg-s-shackle",
+      "term": "mohg's shackle",
+      "title": "Mohg's Shackle",
+      "description": "Briefly binds Mohg, once imprisoned, to earth",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "pureblood-knight-s-medal",
+      "term": "pureblood knight's medal",
+      "title": "Pureblood Knight's Medal",
+      "description": "Audience with Mohg will be granted, one day",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "miquella-s-needle",
+      "term": "miquella's needle",
+      "title": "Miquella's Needle",
+      "description": "Subdues a once-accepted frenzied flame",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-hello",
+      "term": "prattling pate \"hello\"",
+      "title": "Prattling Pate \"Hello\"",
+      "description": "Emits a voice that says \"Hello\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-thank-you",
+      "term": "prattling pate \"thank you\"",
+      "title": "Prattling Pate \"Thank you\"",
+      "description": "Emits a voice that says \"Thank you\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-apologies",
+      "term": "prattling pate \"apologies\"",
+      "title": "Prattling Pate \"Apologies\"",
+      "description": "Emits a voice that says \"Apologies\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-wonderful",
+      "term": "prattling pate \"wonderful\"",
+      "title": "Prattling Pate \"Wonderful\"",
+      "description": "Emits a voice that says \"Wonderful\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-please-help",
+      "term": "prattling pate \"please help\"",
+      "title": "Prattling Pate \"Please help\"",
+      "description": "Emits a voice that says \"Please help\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-my-beloved",
+      "term": "prattling pate \"my beloved\"",
+      "title": "Prattling Pate \"My beloved\"",
+      "description": "Emits a voice that says \"My beloved\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-let-s-get-to-it",
+      "term": "prattling pate \"let's get to it\"",
+      "title": "Prattling Pate \"Let's get to it\"",
+      "description": "Emits a voice that says \"Let's get to it\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prattling-pate-you-re-beautiful",
+      "term": "prattling pate \"you're beautiful\"",
+      "title": "Prattling Pate \"You're beautiful\"",
+      "description": "Emits a voice that says \"You're beautiful\"",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ancestral-infant-s-head",
+      "term": "ancestral infant's head",
+      "title": "Ancestral Infant's Head",
+      "description": "Uses FP to spray spirit vapor",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "omen-bairn",
+      "term": "omen bairn",
+      "title": "Omen Bairn",
+      "description": "Uses FP to unleash wraiths that chase down foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "regal-omen-bairn",
+      "term": "regal omen bairn",
+      "title": "Regal Omen Bairn",
+      "description": "Uses FP to unleash many wraiths that chase down foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "miranda-s-prayer",
+      "term": "miranda's prayer",
+      "title": "Miranda's Prayer",
+      "description": "Uses FP to call down a deluge of light",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "mimic-s-veil",
+      "term": "mimic's veil",
+      "title": "Mimic's Veil",
+      "description": "Uses FP to mimic nearby objects",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gravity-stone-fan",
+      "term": "gravity stone fan",
+      "title": "Gravity Stone Fan",
+      "description": "Uses FP to emit fan-shaped gravitational shockwave",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gravity-stone-chunk",
+      "term": "gravity stone chunk",
+      "title": "Gravity Stone Chunk",
+      "description": "Uses FP to cause a gravitational explosion",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "wraith-calling-bell",
+      "term": "wraith calling bell",
+      "title": "Wraith Calling Bell",
+      "description": "Uses FP to ring bell and calls prowling wraiths",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "warming-stone",
+      "term": "warming stone",
+      "title": "Warming Stone",
+      "description": "Uses FP to continuously heal nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "frenzyflame-stone",
+      "term": "frenzyflame stone",
+      "title": "Frenzyflame Stone",
+      "description": "Uses FP to continuously heal chaos followers",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "scriptstone",
+      "term": "scriptstone",
+      "title": "Scriptstone",
+      "description": "Reveals more messages from other worlds",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bewitching-branch",
+      "term": "bewitching branch",
+      "title": "Bewitching Branch",
+      "description": "Uses FP to charm pierced enemy",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "baldachin-s-blessing",
+      "term": "baldachin's blessing",
+      "title": "Baldachin's Blessing",
+      "description": "Uses FP to temporarily boost poise",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "radiant-baldachin-s-blessing",
+      "term": "radiant baldachin's blessing",
+      "title": "Radiant Baldachin's Blessing",
+      "description": "Protection of a hidden temple in the guise of a bedchamber. This blessing is of the utmost rarity.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "uplifting-aromatic",
+      "term": "uplifting aromatic",
+      "title": "Uplifting Aromatic",
+      "description": "Boosts ally attack power and reduces incoming damage once",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "spark-aromatic",
+      "term": "spark aromatic",
+      "title": "Spark Aromatic",
+      "description": "Uses FP to scatter sparks in a wide area",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ironjar-aromatic",
+      "term": "ironjar aromatic",
+      "title": "Ironjar Aromatic",
+      "description": "Uses FP to temporarily turn wielder's body to steel",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bloodboil-aromatic",
+      "term": "bloodboil aromatic",
+      "title": "Bloodboil Aromatic",
+      "description": "Uses FP to enter a temporary state of fervor",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poison-spraymist",
+      "term": "poison spraymist",
+      "title": "Poison Spraymist",
+      "description": "Uses FP to release poison mist from the mouth",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "acid-spraymist",
+      "term": "acid spraymist",
+      "title": "Acid Spraymist",
+      "description": "Uses FP to release acid mist from the mouth",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-pebble",
+      "term": "glintstone pebble",
+      "title": "Glintstone Pebble",
+      "description": "Fires magic projectiles from glintstone",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "great-glintstone-shard",
+      "term": "great glintstone shard",
+      "title": "Great Glintstone Shard",
+      "description": "Fires larger magic projectiles from glintstone",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "swift-glintstone-shard",
+      "term": "swift glintstone shard",
+      "title": "Swift Glintstone Shard",
+      "description": "Swiftly fires magic projectiles from glintstone",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-cometshard",
+      "term": "glintstone cometshard",
+      "title": "Glintstone Cometshard",
+      "description": "Fires a magic comet with a trailing tail",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "comet",
+      "term": "comet",
+      "title": "Comet",
+      "description": "Fires a great magic comet",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "shard-spiral",
+      "term": "shard spiral",
+      "title": "Shard Spiral",
+      "description": "Fires twin spiraling projectiles",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-stars",
+      "term": "glintstone stars",
+      "title": "Glintstone Stars",
+      "description": "Fires three shooting stars that pursue foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "star-shower",
+      "term": "star shower",
+      "title": "Star Shower",
+      "description": "Fires six shooting stars that pursue foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-barrage",
+      "term": "crystal barrage",
+      "title": "Crystal Barrage",
+      "description": "Fires a volley of glintstone crystal shards",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-arc",
+      "term": "glintstone arc",
+      "title": "Glintstone Arc",
+      "description": "Fires a horizontally-widening magic arc",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cannon-of-haima",
+      "term": "cannon of haima",
+      "title": "Cannon of Haima",
+      "description": "Lobs an explosive magic projectile in an arc",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-burst",
+      "term": "crystal burst",
+      "title": "Crystal Burst",
+      "description": "Fires a burst of glintstone crystal shards",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "shatter-earth",
+      "term": "shatter earth",
+      "title": "Shatter Earth",
+      "description": "Thrust staff into ground to emit a shockwave",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rock-blaster",
+      "term": "rock blaster",
+      "title": "Rock Blaster",
+      "description": "Thrust staff into ground to emit a massive shockwave",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gavel-of-haima",
+      "term": "gavel of haima",
+      "title": "Gavel of Haima",
+      "description": "Attacks using a magic greathammer",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "terra-magicus",
+      "term": "terra magicus",
+      "title": "Terra Magicus",
+      "description": "Raises the magic strength of those within the sigil",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "starlight",
+      "term": "starlight",
+      "title": "Starlight",
+      "description": "Creates star light to illuminate surroundings",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "comet-azur",
+      "term": "comet azur",
+      "title": "Comet Azur",
+      "description": "Fires a tremendous comet within a starry torrent",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "founding-rain-of-stars",
+      "term": "founding rain of stars",
+      "title": "Founding Rain of Stars",
+      "description": "Releases a downpour of star rain for a while",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "stars-of-ruin",
+      "term": "stars of ruin",
+      "title": "Stars of Ruin",
+      "description": "Fires twelve dark shooting stars that pursue foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintblade-phalanx",
+      "term": "glintblade phalanx",
+      "title": "Glintblade Phalanx",
+      "description": "Forms a defensive arch of magic glintblades",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carian-phalanx",
+      "term": "carian phalanx",
+      "title": "Carian Phalanx",
+      "description": "Forms a defensive arch of numerous magic glintblades",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "greatblade-phalanx",
+      "term": "greatblade phalanx",
+      "title": "Greatblade Phalanx",
+      "description": "Forms a defensive arch of larger magic glintblades",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rennala-s-full-moon",
+      "term": "rennala's full moon",
+      "title": "Rennala's Full Moon",
+      "description": "Incarnate a full moon and launch it at foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ranni-s-dark-moon",
+      "term": "ranni's dark moon",
+      "title": "Ranni's Dark Moon",
+      "description": "Incarnate a cold, dark moon and launch it at foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "magic-glintblade",
+      "term": "magic glintblade",
+      "title": "Magic Glintblade",
+      "description": "Creates sigil that forms a projectile glintblade after delay",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-icecrag",
+      "term": "glintstone icecrag",
+      "title": "Glintstone Icecrag",
+      "description": "Fires mass of cold magic from glintstone",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "zamor-ice-storm",
+      "term": "zamor ice storm",
+      "title": "Zamor Ice Storm",
+      "description": "Thrust staff into ground to create freezing tornado",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "freezing-mist",
+      "term": "freezing mist",
+      "title": "Freezing Mist",
+      "description": "Releases cold mist before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carian-greatsword",
+      "term": "carian greatsword",
+      "title": "Carian Greatsword",
+      "description": "Performs sweeping slash using magical greatsword",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "adula-s-moonblade",
+      "term": "adula's moonblade",
+      "title": "Adula's Moonblade",
+      "description": "Sweeping slash followed by cold blade projectile",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carian-slicer",
+      "term": "carian slicer",
+      "title": "Carian Slicer",
+      "description": "Performs swift sweeping slash using magical sword",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carian-piercer",
+      "term": "carian piercer",
+      "title": "Carian Piercer",
+      "description": "Impales foes with magical greatsword",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "scholar-s-armament",
+      "term": "scholar's armament",
+      "title": "Scholar's Armament",
+      "description": "Enchants right-hand armament with magic damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "scholar-s-shield",
+      "term": "scholar's shield",
+      "title": "Scholar's Shield",
+      "description": "Enhances left-hand shield damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lucidity",
+      "term": "lucidity",
+      "title": "Lucidity",
+      "description": "Alleviates buildup of sleep and madness",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "frozen-armament",
+      "term": "frozen armament",
+      "title": "Frozen Armament",
+      "description": "Enchants right-hand armament with frost",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "shattering-crystal",
+      "term": "shattering crystal",
+      "title": "Shattering Crystal",
+      "description": "Creates crystal mass that shatters in forward burst",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-release",
+      "term": "crystal release",
+      "title": "Crystal Release",
+      "description": "Scours area with violent rain of crystal shards",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-torrent",
+      "term": "crystal torrent",
+      "title": "Crystal Torrent",
+      "description": "Creates crystal mass that fires stream of crystal shards",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ambush-shard",
+      "term": "ambush shard",
+      "title": "Ambush Shard",
+      "description": "Strikes from behind with projectile fired from distance",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "night-shard",
+      "term": "night shard",
+      "title": "Night Shard",
+      "description": "Swiftly fires semi-invisible magic projectile",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "night-comet",
+      "term": "night comet",
+      "title": "Night Comet",
+      "description": "Fires semi-invisible magic comet",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "thops-s-barrier",
+      "term": "thops's barrier",
+      "title": "Thops's Barrier",
+      "description": "Erect a magic forcefield to deflect spells",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carian-retaliation",
+      "term": "carian retaliation",
+      "title": "Carian Retaliation",
+      "description": "Dispels enemy spells and retaliates with glintblades",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "eternal-darkness",
+      "term": "eternal darkness",
+      "title": "Eternal Darkness",
+      "description": "Creates dark space that draws in spells",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "unseen-blade",
+      "term": "unseen blade",
+      "title": "Unseen Blade",
+      "description": "Makes right-hand armament completely invisible",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "unseen-form",
+      "term": "unseen form",
+      "title": "Unseen Form",
+      "description": "Makes the caster semi-invisible",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "meteorite",
+      "term": "meteorite",
+      "title": "Meteorite",
+      "description": "Calls small meteorites down from the sky",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "meteorite-of-astel",
+      "term": "meteorite of astel",
+      "title": "Meteorite of Astel",
+      "description": "Calls a hail of small meteorites from the void",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gravity-well",
+      "term": "gravity well",
+      "title": "Gravity Well",
+      "description": "Pulls foes toward caster with gravity projectile",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "collapsing-stars",
+      "term": "collapsing stars",
+      "title": "Collapsing Stars",
+      "description": "Pulls foes toward caster with gravity projectile volley",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "magma-shot",
+      "term": "magma shot",
+      "title": "Magma Shot",
+      "description": "Fires lump of magma that explodes on contact",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-s-fury",
+      "term": "gelmir's fury",
+      "title": "Gelmir's Fury",
+      "description": "Covers area with surge of magma from the earth",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "roiling-magma",
+      "term": "roiling magma",
+      "title": "Roiling Magma",
+      "description": "Fires lump of magma that explodes after delay",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rykard-s-rancor",
+      "term": "rykard's rancor",
+      "title": "Rykard's Rancor",
+      "description": "Releases searing spirits that repeatedly explode after delay",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "briars-of-punishment",
+      "term": "briars of punishment",
+      "title": "Briars of Punishment",
+      "description": "Wounds caster to unleash trail of bloodthorns",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "explosive-ghostflame",
+      "term": "explosive ghostflame",
+      "title": "Explosive Ghostflame",
+      "description": "Causes ghostflame explosion that burns wide area",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fia-s-mist",
+      "term": "fia's mist",
+      "title": "Fia's Mist",
+      "description": "Releases a mist of death before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "death-lightning",
+      "term": "death lightning",
+      "title": "Death Lightning",
+      "description": "Strikes surroundings with storm of death lightning",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "oracle-bubbles",
+      "term": "oracle bubbles",
+      "title": "Oracle Bubbles",
+      "description": "Launches several small magic bubbles",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "great-oracular-bubble",
+      "term": "great oracular bubble",
+      "title": "Great Oracular Bubble",
+      "description": "Launches a large magic bubble",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "catch-flame",
+      "term": "catch flame",
+      "title": "Catch Flame",
+      "description": "Momentarily sparks flame from hand",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "o-flame",
+      "term": "o, flame!",
+      "title": "O, Flame!",
+      "description": "Momentarily sparks roaring flame from hand",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-sling",
+      "term": "flame sling",
+      "title": "Flame Sling",
+      "description": "Throws ball of raging fire",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-fall-upon-them",
+      "term": "flame, fall upon them",
+      "title": "Flame, Fall Upon Them",
+      "description": "Hurls several balls of fire at once",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "whirl-o-flame",
+      "term": "whirl, o flame!",
+      "title": "Whirl, O Flame!",
+      "description": "Sweeps area before caster with stream of fire",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-cleanse-me",
+      "term": "flame, cleanse me",
+      "title": "Flame, Cleanse Me",
+      "description": "Alleviates buildup & cures poison and scarlet rot",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-grant-me-strength",
+      "term": "flame, grant me strength",
+      "title": "Flame, Grant Me Strength",
+      "description": "Raises physical and fire-affinity attack power",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-protect-me",
+      "term": "flame, protect me",
+      "title": "Flame, Protect Me",
+      "description": "Greatly increases fire damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "giantsflame-take-thee",
+      "term": "giantsflame take thee",
+      "title": "Giantsflame Take Thee",
+      "description": "Hurls massive ball of raging fire",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "burn-o-flame",
+      "term": "burn, o flame!",
+      "title": "Burn, O Flame!",
+      "description": "Raises a series of flame pillars around caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "black-flame",
+      "term": "black flame",
+      "title": "Black Flame",
+      "description": "Throws a ball of raging black fire",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "surge-o-flame",
+      "term": "surge, o flame!",
+      "title": "Surge, O Flame!",
+      "description": "Incinerates area before caster with stream of fire",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "scouring-black-flame",
+      "term": "scouring black flame",
+      "title": "Scouring Black Flame",
+      "description": "Sweeps area before caster with black flame",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "black-flame-blade",
+      "term": "black flame blade",
+      "title": "Black Flame Blade",
+      "description": "Enchants right-hand armament with black flame",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "black-flame-s-protection",
+      "term": "black flame's protection",
+      "title": "Black Flame's Protection",
+      "description": "Increases physical damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "noble-presence",
+      "term": "noble presence",
+      "title": "Noble Presence",
+      "description": "Thrust out belly with gusto to unleash repelling shockwave",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bloodflame-talons",
+      "term": "bloodflame talons",
+      "title": "Bloodflame Talons",
+      "description": "Creates bloodflame lacerations that then explode",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bloodboon",
+      "term": "bloodboon",
+      "title": "Bloodboon",
+      "description": "Scatters bloodflame before caster to set area aflame",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bloodflame-blade",
+      "term": "bloodflame blade",
+      "title": "Bloodflame Blade",
+      "description": "Enchants right-hand armament with bloodflame",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "barrier-of-gold",
+      "term": "barrier of gold",
+      "title": "Barrier of Gold",
+      "description": "Greatly increases magic damage negation for self & allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "protection-of-the-erdtree",
+      "term": "protection of the erdtree",
+      "title": "Protection of the Erdtree",
+      "description": "Increases affinity damage negation for self & allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rejection",
+      "term": "rejection",
+      "title": "Rejection",
+      "description": "Produces a shockwave that pushes away foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "wrath-of-gold",
+      "term": "wrath of gold",
+      "title": "Wrath of Gold",
+      "description": "Produces golden shockwave that knocks back foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "urgent-heal",
+      "term": "urgent heal",
+      "title": "Urgent Heal",
+      "description": "Heals a small amount of HP",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "heal",
+      "term": "heal",
+      "title": "Heal",
+      "description": "Heals HP for self and nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "great-heal",
+      "term": "great heal",
+      "title": "Great Heal",
+      "description": "Greatly heals HP for self and nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lord-s-heal",
+      "term": "lord's heal",
+      "title": "Lord's Heal",
+      "description": "Massively heals HP for self and nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-heal",
+      "term": "erdtree heal",
+      "title": "Erdtree Heal",
+      "description": "Vastly heals HP for self and nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "blessing-s-boon",
+      "term": "blessing's boon",
+      "title": "Blessing's Boon",
+      "description": "Grants blessing to self and nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "blessing-of-the-erdtree",
+      "term": "blessing of the erdtree",
+      "title": "Blessing of the Erdtree",
+      "description": "Grants greater blessing to self and nearby allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cure-poison",
+      "term": "cure poison",
+      "title": "Cure Poison",
+      "description": "Incantation of the Two Fingers' faithful.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lord-s-aid",
+      "term": "lord's aid",
+      "title": "Lord's Aid",
+      "description": "Alleviates poison/blood loss/sleep buildup for self/allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-fortification",
+      "term": "flame fortification",
+      "title": "Flame Fortification",
+      "description": "Increases fire damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "magic-fortification",
+      "term": "magic fortification",
+      "title": "Magic Fortification",
+      "description": "Increases magic damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lightning-fortification",
+      "term": "lightning fortification",
+      "title": "Lightning Fortification",
+      "description": "Increases lightning damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "divine-fortification",
+      "term": "divine fortification",
+      "title": "Divine Fortification",
+      "description": "Increases holy damage negation",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lord-s-divine-fortification",
+      "term": "lord's divine fortification",
+      "title": "Lord's Divine Fortification",
+      "description": "Greatly increases holy damage negation incl. allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "night-maiden-s-mist",
+      "term": "night maiden's mist",
+      "title": "Night Maiden's Mist",
+      "description": "Releases life-sapping silver mist before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "assassin-s-approach",
+      "term": "assassin's approach",
+      "title": "Assassin's Approach",
+      "description": "Silences footsteps, reduces fall damage/sound",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "shadow-bait",
+      "term": "shadow bait",
+      "title": "Shadow Bait",
+      "description": "Creates shadow that lures the aggression of foes of human build",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "darkness",
+      "term": "darkness",
+      "title": "Darkness",
+      "description": "Creates area of darkness that conceals caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-vow",
+      "term": "golden vow",
+      "title": "Golden Vow",
+      "description": "Increases attack and defense for self and allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "discus-of-light",
+      "term": "discus of light",
+      "title": "Discus of Light",
+      "description": "Fires ring of light before the caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "triple-rings-of-light",
+      "term": "triple rings of light",
+      "title": "Triple Rings of Light",
+      "description": "Fires three rings of light before the caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "radagon-s-rings-of-light",
+      "term": "radagon's rings of light",
+      "title": "Radagon's Rings of Light",
+      "description": "Creates golden ring of light to attack wide area",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "elden-stars",
+      "term": "elden stars",
+      "title": "Elden Stars",
+      "description": "Creates a stream of golden shooting stars that assail the area",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "law-of-regression",
+      "term": "law of regression",
+      "title": "Law of Regression",
+      "description": "Heals all ailments and dispels all special effects",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "immutable-shield",
+      "term": "immutable shield",
+      "title": "Immutable Shield",
+      "description": "Increases left-hand shield's affinity/ailment resistance",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "litany-of-proper-death",
+      "term": "litany of proper death",
+      "title": "Litany of Proper Death",
+      "description": "Creates image of Order to deal holy damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "law-of-causality",
+      "term": "law of causality",
+      "title": "Law of Causality",
+      "description": "Retaliates upon receiving a number of blows",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "order-s-blade",
+      "term": "order's blade",
+      "title": "Order's Blade",
+      "description": "Enchanted right-hand armament with holy damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "order-healing",
+      "term": "order healing",
+      "title": "Order Healing",
+      "description": "One of the incantations of the Golden Order fundamentalists.\nUsed by hunters of Those Who Live in Death.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bestial-sling",
+      "term": "bestial sling",
+      "title": "Bestial Sling",
+      "description": "Swiftly flings numerous sharp rock shards",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "stone-of-gurranq",
+      "term": "stone of gurranq",
+      "title": "Stone of Gurranq",
+      "description": "Hurls a boulder before the caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gurranq-s-beast-claw",
+      "term": "gurranq's beast claw",
+      "title": "Gurranq's Beast Claw",
+      "description": "Creates beast claws to rend surroundings with shockwaves",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bestial-vitality",
+      "term": "bestial vitality",
+      "title": "Bestial Vitality",
+      "description": "Heals HP over a period of time",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bestial-constitution",
+      "term": "bestial constitution",
+      "title": "Bestial Constitution",
+      "description": "Alleviates blood loss and frost buildup",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lightning-spear",
+      "term": "lightning spear",
+      "title": "Lightning Spear",
+      "description": "Hurls lightning spear before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "frozen-lightning-spear",
+      "term": "frozen lightning spear",
+      "title": "Frozen Lightning Spear",
+      "description": "Stabs with ice lightning spear from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragons-lightning-spear",
+      "term": "ancient dragons' lightning spear",
+      "title": "Ancient Dragons' Lightning Spear",
+      "description": "Stabs with red lightning spear from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fortissax-s-lightning-spear",
+      "term": "fortissax's lightning spear",
+      "title": "Fortissax's Lightning Spear",
+      "description": "Stabs from above with two red lightning spears in tandem",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lansseax-s-glaive",
+      "term": "lansseax's glaive",
+      "title": "Lansseax's Glaive",
+      "description": "Sweeps from above with red lightning glaive",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "electrify-armament",
+      "term": "electrify armament",
+      "title": "Electrify Armament",
+      "description": "Enchants right-hand armament with lightning damage",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dragonfire",
+      "term": "dragonfire",
+      "title": "Dragonfire",
+      "description": "Channels dragon to spew flame breath",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "agheel-s-flame",
+      "term": "agheel's flame",
+      "title": "Agheel's Flame",
+      "description": "Spews flame breath of Agheel from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "magma-breath",
+      "term": "magma breath",
+      "title": "Magma Breath",
+      "description": "Channels wyrm to spew magma breath",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "theodorix-s-magma",
+      "term": "theodorix's magma",
+      "title": "Theodorix's Magma",
+      "description": "Spews magma breath of Theodorix from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dragonice",
+      "term": "dragonice",
+      "title": "Dragonice",
+      "description": "Channels dragon to spew icy breath",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "borealis-s-mist",
+      "term": "borealis's mist",
+      "title": "Borealis's Mist",
+      "description": "Spews icy breath of Borealis from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rotten-breath",
+      "term": "rotten breath",
+      "title": "Rotten Breath",
+      "description": "Channels dragon to spew scarlet rot breath",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ekzykes-s-decay",
+      "term": "ekzykes's decay",
+      "title": "Ekzykes's Decay",
+      "description": "Spews scarlet rot breath of Ekzykes from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-breath",
+      "term": "glintstone breath",
+      "title": "Glintstone Breath",
+      "description": "Channels dragon to spew magic breath",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smarag-s-glintstone-breath",
+      "term": "smarag's glintstone breath",
+      "title": "Smarag's Glintstone Breath",
+      "description": "Spews magic breath of Glintstone Dragon Smarag from above",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "placidusax-s-ruin",
+      "term": "placidusax's ruin",
+      "title": "Placidusax's Ruin",
+      "description": "Spews golden breath of Dragonlord Placidusax",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dragonclaw",
+      "term": "dragonclaw",
+      "title": "Dragonclaw",
+      "description": "Channels dragon to rend foes with dragon claws",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dragonmaw",
+      "term": "dragonmaw",
+      "title": "Dragonmaw",
+      "description": "Channels dragon to bite foes before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "greyoll-s-roar",
+      "term": "greyoll's roar",
+      "title": "Greyoll's Roar",
+      "description": "Emits the roar of Elder Dragon Greyoll",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "pest-threads",
+      "term": "pest threads",
+      "title": "Pest Threads",
+      "description": "Launches countless sticky threads before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "swarm-of-flies",
+      "term": "swarm of flies",
+      "title": "Swarm of Flies",
+      "description": "Releases a swarm of bloodflies before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poison-mist",
+      "term": "poison mist",
+      "title": "Poison Mist",
+      "description": "Releases poison mist before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poison-armament",
+      "term": "poison armament",
+      "title": "Poison Armament",
+      "description": "Enchants right-hand armament with poison",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "scarlet-aeonia",
+      "term": "scarlet aeonia",
+      "title": "Scarlet Aeonia",
+      "description": "Creates giant flower that explodes with scarlet rot",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "inescapable-frenzy",
+      "term": "inescapable frenzy",
+      "title": "Inescapable Frenzy",
+      "description": "Latches onto foes to spread madness",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "the-flame-of-frenzy",
+      "term": "the flame of frenzy",
+      "title": "The Flame of Frenzy",
+      "description": "Emits burst of yellow flame of frenzy from eyes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "unendurable-frenzy",
+      "term": "unendurable frenzy",
+      "title": "Unendurable Frenzy",
+      "description": "Emits violent burst of yellow flame of frenzy from eyes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-burst",
+      "term": "frenzied burst",
+      "title": "Frenzied Burst",
+      "description": "Emits concentrated blast of yellow flame of frenzy from eyes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "howl-of-shabriri",
+      "term": "howl of shabriri",
+      "title": "Howl of Shabriri",
+      "description": "Shrieks, building up madness in nearby foes",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "aspects-of-the-crucible-tail",
+      "term": "aspects of the crucible: tail",
+      "title": "Aspects of the Crucible: Tail",
+      "description": "Creates supple tail to sweep area before caster",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "aspects-of-the-crucible-horns",
+      "term": "aspects of the crucible: horns",
+      "title": "Aspects of the Crucible: Horns",
+      "description": "Creates shoulder horn to gore foes from low stance",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "aspects-of-the-crucible-breath",
+      "term": "aspects of the crucible: breath",
+      "title": "Aspects of the Crucible: Breath",
+      "description": "Creates throat pouch to spew fire while walking",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "black-blade",
+      "term": "black blade",
+      "title": "Black Blade",
+      "description": "Black blade spinning slash that emits wave of light",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fire-s-deadly-sin",
+      "term": "fire's deadly sin",
+      "title": "Fire's Deadly Sin",
+      "description": "Sets area and self ablaze with raging flames",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-lightning-fortification",
+      "term": "golden lightning fortification",
+      "title": "Golden Lightning Fortification",
+      "description": "Greatly increases lightning resistance for self and allies",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "stonesword-key",
+      "term": "stonesword key",
+      "title": "Stonesword Key",
+      "description": "Use to break one imp statue seal",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rusty-key",
+      "term": "rusty key",
+      "title": "Rusty Key",
+      "description": "Opens a locked door in Stormveil Castle",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lucent-baldachin-s-blessing",
+      "term": "lucent baldachin's blessing",
+      "title": "Lucent Baldachin's Blessing",
+      "description": "Raise in prayer to gain protection",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dectus-medallion-left",
+      "term": "dectus medallion (left)",
+      "title": "Dectus Medallion (Left)",
+      "description": "Join medallions to operate Grand Lift of Dectus",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dectus-medallion-right",
+      "term": "dectus medallion (right)",
+      "title": "Dectus Medallion (Right)",
+      "description": "Right half of a split medallion depicting the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rold-medallion",
+      "term": "rold medallion",
+      "title": "Rold Medallion",
+      "description": "Operates Grand Lift of Rold",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "academy-glintstone-key",
+      "term": "academy glintstone key",
+      "title": "Academy Glintstone Key",
+      "description": "Key to open the academy's two sealed gates",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carian-inverted-statue",
+      "term": "carian inverted statue",
+      "title": "Carian Inverted Statue",
+      "description": "Key revealing the hidden form of Carian Study Hall",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dark-moon-ring",
+      "term": "dark moon ring",
+      "title": "Dark Moon Ring",
+      "description": "Ring of Lunar Princess Ranni's cold oath",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fingerprint-grape",
+      "term": "fingerprint grape",
+      "title": "Fingerprint Grape",
+      "description": "Eyeball of the knight Vyke, inflamed yellow",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "letter-from-volcano-manor",
+      "term": "letter from volcano manor",
+      "title": "Letter from Volcano Manor",
+      "description": "Request from Volcano Manor\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "tonic-of-forgetfulness",
+      "term": "tonic of forgetfulness",
+      "title": "Tonic of Forgetfulness",
+      "description": "Tonic that banishes distress and bitter memories",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "serpent-s-amnion",
+      "term": "serpent's amnion",
+      "title": "Serpent's Amnion",
+      "description": "Amnion from a womb that bore unintended offspring",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rya-s-necklace",
+      "term": "rya's necklace",
+      "title": "Rya's Necklace",
+      "description": "Necklace worn everywhere by Irina",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "irina-s-letter",
+      "term": "irina's letter",
+      "title": "Irina's Letter",
+      "description": "Letter addressed to the commander of Castle Morne",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "red-letter",
+      "term": "red letter",
+      "title": "Red Letter",
+      "description": "A written request from Volcano Manor disclosing the name of a Tarnished to be hunted. As the final request, the letter is vivid red.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "drawing-room-key",
+      "term": "drawing-room key",
+      "title": "Drawing-Room Key",
+      "description": "Key to the Volcano Manor drawing room",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "volcano-manor-invitation",
+      "term": "volcano manor invitation",
+      "title": "Volcano Manor Invitation",
+      "description": "Letter of invitation to Volcano Manor",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "amber-starlight",
+      "term": "amber starlight",
+      "title": "Amber Starlight",
+      "description": "Ingredient used in special draught",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "seluvis-s-introduction",
+      "term": "seluvis's introduction",
+      "title": "Seluvis's Introduction",
+      "description": "Letter of introduction addressed to Sellen",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sellen-s-primal-glintstone",
+      "term": "sellen's primal glintstone",
+      "title": "Sellen's Primal Glintstone",
+      "description": "Glintstone from within Sellen's body",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "miniature-ranni",
+      "term": "miniature ranni",
+      "title": "Miniature Ranni",
+      "description": "Doll resembling Ranni the Witch",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "asimi-silver-tear",
+      "term": "asimi, silver tear",
+      "title": "Asimi, Silver Tear",
+      "description": "Asimi that has infected a tarnished",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lord-of-blood-s-favor",
+      "term": "lord of blood's favor",
+      "title": "Lord of Blood's Favor",
+      "description": "Pure white oath-cloth given by Varré",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "burial-crow-s-letter",
+      "term": "burial crow's letter",
+      "title": "Burial Crow's Letter",
+      "description": "Letter affixed to a graveyard crow's leg",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fingerslayer-blade",
+      "term": "fingerslayer blade",
+      "title": "Fingerslayer Blade",
+      "description": "Hidden treasure of the Eternal City of Nokron",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sewing-needle",
+      "term": "sewing needle",
+      "title": "Sewing Needle",
+      "description": "Boc the demi-human's prized sewing needle",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gold-sewing-needle",
+      "term": "gold sewing needle",
+      "title": "Gold Sewing Needle",
+      "description": "Special sewing needle for demigod attire",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "tailoring-tools",
+      "term": "tailoring tools",
+      "title": "Tailoring Tools",
+      "description": "Enables armor adjustment at sites of grace",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "seluvis-s-potion",
+      "term": "seluvis's potion",
+      "title": "Seluvis's Potion",
+      "description": "Small flask received from Preceptor Seluvis",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "amber-draught",
+      "term": "amber draught",
+      "title": "Amber Draught",
+      "description": "Glistening amber draught made for a scheme",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "letter-to-patches",
+      "term": "letter to patches",
+      "title": "Letter to Patches",
+      "description": "Request from Volcano Manor to Patches\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dancer-s-castanets",
+      "term": "dancer's castanets",
+      "title": "Dancer's Castanets",
+      "description": "Castanets used by dancers from distant lands",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sellian-sealbreaker",
+      "term": "sellian sealbreaker",
+      "title": "Sellian Sealbreaker",
+      "description": "Can release Master Lusat from his confinement",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "chrysalids-memento",
+      "term": "chrysalids' memento",
+      "title": "Chrysalids' Memento",
+      "description": "Broach wrapped in red velvet",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "black-knifeprint",
+      "term": "black knifeprint",
+      "title": "Black Knifeprint",
+      "description": "Mark of the Night of the Black Knives ritual",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "letter-to-bernahl",
+      "term": "letter to bernahl",
+      "title": "Letter to Bernahl",
+      "description": "Request from Volcano Manor to Bernahl\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-secret-medallion-left",
+      "term": "haligtree secret medallion (left)",
+      "title": "Haligtree Secret Medallion (Left)",
+      "description": "Join medallions to operate Grand Lift of Rold",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-secret-medallion-right",
+      "term": "haligtree secret medallion (right)",
+      "title": "Haligtree Secret Medallion (Right)",
+      "description": "Right half of a split medallion depicting the Haligtree.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "larval-tear",
+      "term": "larval tear",
+      "title": "Larval Tear",
+      "description": "Material needed by Rennala to grant rebirth",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "imbued-sword-key",
+      "term": "imbued sword key",
+      "title": "Imbued Sword Key",
+      "description": "Unseals sending gate, but disappears upon use",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-tailoring-tools",
+      "term": "golden tailoring tools",
+      "title": "Golden Tailoring Tools",
+      "description": "Allows demigod garb alteration at sites of grace",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "iji-s-confession",
+      "term": "iji's confession",
+      "title": "Iji's Confession",
+      "description": "Letter of confession found on Iji's corpse",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "knifeprint-clue",
+      "term": "knifeprint clue",
+      "title": "Knifeprint Clue",
+      "description": "Simple map showing location of black knifeprint\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cursemark-of-death",
+      "term": "cursemark of death",
+      "title": "Cursemark of Death",
+      "description": "Cursemark carved into Lunar Princess Ranni's discarded flesh",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "asimi-s-husk",
+      "term": "asimi's husk",
+      "title": "Asimi's Husk",
+      "description": "The shedding of an Asimi that infected a tarnished",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "seedbed-curse",
+      "term": "seedbed curse",
+      "title": "Seedbed Curse",
+      "description": "Curse grown on a body defiled by the Dung Eater",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "asimi-silver-chrysalid",
+      "term": "asimi, silver chrysalid",
+      "title": "Asimi, Silver Chrysalid",
+      "description": "An Asimi that infected a tarnished",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "unalloyed-gold-needle",
+      "term": "unalloyed gold needle",
+      "title": "Unalloyed Gold Needle",
+      "description": "Intricate needle of unalloyed gold",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sewer-gaol-key",
+      "term": "sewer-gaol key",
+      "title": "Sewer-Gaol Key",
+      "description": "Unlocks sewer-gaol door beneath Leyndell",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "meeting-place-map",
+      "term": "meeting place map",
+      "title": "Meeting Place Map",
+      "description": "Simple map showing a meeting place\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "discarded-palace-key",
+      "term": "discarded palace key",
+      "title": "Discarded Palace Key",
+      "description": "Key to treasure chest for Carian Princesses",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "homing-instinct-painting",
+      "term": "\"homing instinct\" painting",
+      "title": "\"Homing Instinct\" Painting",
+      "description": "Reminiscence of the painting \"Homing Instinct\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "resurrection-painting",
+      "term": "\"resurrection\" painting",
+      "title": "\"Resurrection\" Painting",
+      "description": "Reminiscence of the painting \"Resurrection\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "champion-s-song-painting",
+      "term": "\"champion's song\" painting",
+      "title": "\"Champion's Song\" Painting",
+      "description": "Reminiscence of the painting \"Champion's Song\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sorcerer-painting",
+      "term": "\"sorcerer\" painting",
+      "title": "\"Sorcerer\" Painting",
+      "description": "Reminiscence of the painting \"Sorcerer\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "prophecy-painting",
+      "term": "\"prophecy\" painting",
+      "title": "\"Prophecy\" Painting",
+      "description": "Reminiscence of the painting \"Prophecy\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flightless-bird-painting",
+      "term": "\"flightless bird\" painting",
+      "title": "\"Flightless Bird\" Painting",
+      "description": "Reminiscence of the painting \"Flightless Bird\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "redmane-painting",
+      "term": "\"redmane\" painting",
+      "title": "\"Redmane\" Painting",
+      "description": "Reminiscence of the painting \"Redmane\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "zorayas-s-letter",
+      "term": "zorayas's letter",
+      "title": "Zorayas's Letter",
+      "description": "Farewell letter written in an inexpert hand\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "alexander-s-innards",
+      "term": "alexander's innards",
+      "title": "Alexander's Innards",
+      "description": "Keepsake of the warrior jar Alexander",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rogier-s-letter",
+      "term": "rogier's letter",
+      "title": "Rogier's Letter",
+      "description": "Letter written in a trembling hand\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crafting-kit",
+      "term": "crafting kit",
+      "title": "Crafting Kit",
+      "description": "Enables the practice of item crafting",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "whetstone-knife",
+      "term": "whetstone knife",
+      "title": "Whetstone Knife",
+      "description": "Can add new battle arts and affinities to weapons",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-limgrave-west",
+      "term": "map: limgrave, west",
+      "title": "Map: Limgrave, West",
+      "description": "Map of Limgrave's western region",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-weeping-peninsula",
+      "term": "map: weeping peninsula",
+      "title": "Map: Weeping Peninsula",
+      "description": "Map of Weeping peninsula",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-limgrave-east",
+      "term": "map: limgrave, east",
+      "title": "Map: Limgrave, East",
+      "description": "Map of Limgrave's eastern region",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-liurnia-east",
+      "term": "map: liurnia, east",
+      "title": "Map: Liurnia, East",
+      "description": "Map of Liurnia's eastern region",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-liurnia-north",
+      "term": "map: liurnia, north",
+      "title": "Map: Liurnia, North",
+      "description": "Map of Liurnia's northern region",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-liurnia-west",
+      "term": "map: liurnia, west",
+      "title": "Map: Liurnia, West",
+      "description": "Map of Liurnia's western region",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-altus-plateau",
+      "term": "map: altus plateau",
+      "title": "Map: Altus Plateau",
+      "description": "Map of Altus Plateau and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-leyndell-royal-capital",
+      "term": "map: leyndell, royal capital",
+      "title": "Map: Leyndell, Royal Capital",
+      "description": "Map of Leyndell Capital and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-mt-gelmir",
+      "term": "map: mt. gelmir",
+      "title": "Map: Mt. Gelmir",
+      "description": "Map of Mt. Gelmir and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-caelid",
+      "term": "map: caelid",
+      "title": "Map: Caelid",
+      "description": "Map of Caelid and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-mountaintops-of-the-giants-west",
+      "term": "map: mountaintops of the giants, west",
+      "title": "Map: Mountaintops of the Giants, West",
+      "description": "Map of Western Mountaintops of the Giants",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-mountaintops-of-the-giants-east",
+      "term": "map: mountaintops of the giants, east",
+      "title": "Map: Mountaintops of the Giants, East",
+      "description": "Map of Eastern Mountaintops of the Giants",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-ainsel-river",
+      "term": "map: ainsel river",
+      "title": "Map: Ainsel River",
+      "description": "Map of Ainsel River and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-lake-of-rot",
+      "term": "map: lake of rot",
+      "title": "Map: Lake of Rot",
+      "description": "Map of Lake of Rot and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-siofra-river",
+      "term": "map: siofra river",
+      "title": "Map: Siofra River",
+      "description": "Map of Siofra River and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-mohgwyn-palace",
+      "term": "map: mohgwyn palace",
+      "title": "Map: Mohgwyn Palace",
+      "description": "Map of Mohgwyn Palace and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-deeproot-depths",
+      "term": "map: deeproot depths",
+      "title": "Map: Deeproot Depths",
+      "description": "Map of Deeproot Depths and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "map-consecrated-snowfield",
+      "term": "map: consecrated snowfield",
+      "title": "Map: Consecrated Snowfield",
+      "description": "Map of Consecrated Snowfield and environs",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "mirage-riddle",
+      "term": "mirage riddle",
+      "title": "Mirage Riddle",
+      "description": "Simple map taken from an imp statue\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-hidden-cave",
+      "term": "note: hidden cave",
+      "title": "Note: Hidden Cave",
+      "description": "Note imparting knowledge in brief\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-imp-shades",
+      "term": "note: imp shades",
+      "title": "Note: Imp Shades",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-flask-of-wondrous-physick",
+      "term": "note: flask of wondrous physick",
+      "title": "Note: Flask of Wondrous Physick",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-stonedigger-trolls",
+      "term": "note: stonedigger trolls",
+      "title": "Note: Stonedigger Trolls",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-walking-mausoleum",
+      "term": "note: walking mausoleum",
+      "title": "Note: Walking Mausoleum",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-unseen-assassins",
+      "term": "note: unseen assassins",
+      "title": "Note: Unseen Assassins",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-great-coffins",
+      "term": "note: great coffins",
+      "title": "Note: Great Coffins",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-flame-chariots",
+      "term": "note: flame chariots",
+      "title": "Note: Flame Chariots",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-demi-human-mobs",
+      "term": "note: demi-human mobs",
+      "title": "Note: Demi-human Mobs",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-land-squirts",
+      "term": "note: land squirts",
+      "title": "Note: Land Squirts",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-gravity-s-advantage",
+      "term": "note: gravity's advantage",
+      "title": "Note: Gravity's Advantage",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-revenants",
+      "term": "note: revenants",
+      "title": "Note: Revenants",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-waypoint-ruins",
+      "term": "note: waypoint ruins",
+      "title": "Note: Waypoint Ruins",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-gateway",
+      "term": "note: gateway",
+      "title": "Note: Gateway",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-miquella-s-needle",
+      "term": "note: miquella's needle",
+      "title": "Note: Miquella's Needle",
+      "description": "Note written by a nomadic merchant succinctly detailing knowledge acquired.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-frenzied-flame-village",
+      "term": "note: frenzied flame village",
+      "title": "Note: Frenzied Flame Village",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "note-the-lord-of-frenzied-flame",
+      "term": "note: the lord of frenzied flame",
+      "title": "Note: The Lord of Frenzied Flame",
+      "description": "Note written by a nomadic merchant succinctly detailing knowledge acquired.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "conspectus-scroll",
+      "term": "conspectus scroll",
+      "title": "Conspectus Scroll",
+      "description": "Give to a learned sorcerer to acquire new sorceries",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "royal-house-scroll",
+      "term": "royal house scroll",
+      "title": "Royal House Scroll",
+      "description": "Sorcery scroll of the Carian royal family, the heads of the Academy of Raya Lucaria.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fire-monks-prayerbook",
+      "term": "fire monks' prayerbook",
+      "title": "Fire Monks' Prayerbook",
+      "description": "Give to a learned cleric to acquire new incantations",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "giant-s-prayerbook",
+      "term": "giant's prayerbook",
+      "title": "Giant's Prayerbook",
+      "description": "Prayerbook that contains the secrets of the Fire Giants.\nKept hidden by the prelates who monitor the Giant's Flame.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "godskin-prayerbook",
+      "term": "godskin prayerbook",
+      "title": "Godskin Prayerbook",
+      "description": "Prayerbook bound in supple skin.\nIncantations of the god-slaying black flame are written within.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "two-fingers-prayerbook",
+      "term": "two fingers' prayerbook",
+      "title": "Two Fingers' Prayerbook",
+      "description": "Prayerbook containing incantations of the Two Fingers.\nAn item once entrusted to Tarnished worthy of lordship.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "assassin-s-prayerbook",
+      "term": "assassin's prayerbook",
+      "title": "Assassin's Prayerbook",
+      "description": "Prayerbook of the Roundtable Hold's assassins.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-prayerbook",
+      "term": "erdtree prayerbook",
+      "title": "Erdtree Prayerbook",
+      "description": "Scroll containing incantations",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-order-principia",
+      "term": "golden order principia",
+      "title": "Golden Order Principia",
+      "description": "Prayerbook of the Golden Order fundamentalists.\nA dense and complex academic treatise that contains the Order's fundamental principles.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dragon-cult-prayerbook",
+      "term": "dragon cult prayerbook",
+      "title": "Dragon Cult Prayerbook",
+      "description": "Prayerbook of the capital's ancient dragon cult.\nA text of the knights' faith that arose after the War of the Ancient Dragons.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-prayerbook",
+      "term": "ancient dragon prayerbook",
+      "title": "Ancient Dragon Prayerbook",
+      "description": "Prayerbook of the capital's ancient dragon cult.\nA lost tome that never reached the Lands Between.\nContains red lightning incantations.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "academy-scroll",
+      "term": "academy scroll",
+      "title": "Academy Scroll",
+      "description": "Scroll of the Academy of Raya Lucaria, the glintstone sorcerers' place of study.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "valkyrie-s-prosthesis",
+      "term": "valkyrie's prosthesis",
+      "title": "Valkyrie's Prosthesis",
+      "description": "Golden prosthesis used by the one-armed Valkyrie",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sellia-s-secret",
+      "term": "sellia's secret",
+      "title": "Sellia's Secret",
+      "description": "A piece of paper given by Sage Gowry\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "beast-eye",
+      "term": "beast eye",
+      "title": "Beast Eye",
+      "description": "Said to tremble when close to Deathroot",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "weathered-dagger",
+      "term": "weathered dagger",
+      "title": "Weathered Dagger",
+      "description": "Dagger received from Fia, Deathbed Companion",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "hoslow-s-oath",
+      "term": "hoslow's oath",
+      "title": "Hoslow's Oath",
+      "description": "A threatening gesture",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-sites-of-grace",
+      "term": "about sites of grace",
+      "title": "About Sites of Grace",
+      "description": "Information about sites of grace\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-sorceries-and-incantations",
+      "term": "about sorceries and incantations",
+      "title": "About Sorceries and Incantations",
+      "description": "Information about sorceries and incantations\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-bows",
+      "term": "about bows",
+      "title": "About Bows",
+      "description": "Information about bows\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-crouching",
+      "term": "about crouching",
+      "title": "About Crouching",
+      "description": "Information about crouching\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-stance-breaking",
+      "term": "about stance-breaking",
+      "title": "About Stance-Breaking",
+      "description": "Information about stance-breaking\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-stakes-of-marika",
+      "term": "about stakes of marika",
+      "title": "About Stakes of Marika",
+      "description": "Information about Stakes of Marika\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-guard-counters",
+      "term": "about guard counters",
+      "title": "About Guard Counters",
+      "description": "Information about guard counters\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-the-map",
+      "term": "about the map",
+      "title": "About the Map",
+      "description": "Information about the map\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-guidance-of-grace",
+      "term": "about guidance of grace",
+      "title": "About Guidance of Grace",
+      "description": "Information about Guidance of Grace\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-horseback-riding",
+      "term": "about horseback riding",
+      "title": "About Horseback Riding",
+      "description": "Information about horseback riding\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-death",
+      "term": "about death",
+      "title": "About Death",
+      "description": "Information about death\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-guarding",
+      "term": "about guarding",
+      "title": "About Guarding",
+      "description": "Information about guarding\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-item-crafting",
+      "term": "about item crafting",
+      "title": "About Item Crafting",
+      "description": "Information about item crafting\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-flask-of-wondrous-physick",
+      "term": "about flask of wondrous physick",
+      "title": "About Flask of Wondrous Physick",
+      "description": "Information about Flask of Wondrous Physick\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-adding-skills",
+      "term": "about adding skills",
+      "title": "About Adding Skills",
+      "description": "Information about adding skills\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-birdseye-telescopes",
+      "term": "about birdseye telescopes",
+      "title": "About Birdseye Telescopes",
+      "description": "Information about birdseye telescopes\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-spiritspring-jumping",
+      "term": "about spiritspring jumping",
+      "title": "About Spiritspring Jumping",
+      "description": "Information about spiritspring jumping\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-vanquishing-enemy-groups",
+      "term": "about vanquishing enemy groups",
+      "title": "About Vanquishing Enemy Groups",
+      "description": "Information about vanquishing enemy groups\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-teardrop-scarabs",
+      "term": "about teardrop scarabs",
+      "title": "About Teardrop Scarabs",
+      "description": "Information about Teardrop Scarabs\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-cooperative-multiplayer",
+      "term": "about cooperative multiplayer",
+      "title": "About Cooperative Multiplayer",
+      "description": "Information about cooperative multiplayer\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-competitive-multiplayer",
+      "term": "about competitive multiplayer",
+      "title": "About Competitive Multiplayer",
+      "description": "Information about competitive multiplayer\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-invasion-multiplayer",
+      "term": "about invasion multiplayer",
+      "title": "About Invasion Multiplayer",
+      "description": "Information about invasion multiplayer\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-hunter-multiplayer",
+      "term": "about hunter multiplayer",
+      "title": "About Hunter Multiplayer",
+      "description": "Information about hunter multiplayer\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-monument-icon",
+      "term": "about monument icon",
+      "title": "About Monument Icon",
+      "description": "Information about Monument Icon\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-requesting-help-from-hunters",
+      "term": "about requesting help from hunters",
+      "title": "About Requesting Help from Hunters",
+      "description": "Information about requesting help from hunters\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-skills",
+      "term": "about skills",
+      "title": "About Skills",
+      "description": "Information about skills\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-fast-travel-to-sites-of-grace",
+      "term": "about fast travel to sites of grace",
+      "title": "About Fast Travel to Sites of Grace",
+      "description": "Information about fast travel to sites of grace\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-strengthening-armaments",
+      "term": "about strengthening armaments",
+      "title": "About Strengthening Armaments",
+      "description": "Information about strengthening armaments\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-roundtable-hold",
+      "term": "about roundtable hold",
+      "title": "About Roundtable Hold",
+      "description": "Information about the Roundtable Hold\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-materials",
+      "term": "about materials",
+      "title": "About Materials",
+      "description": "Information about materials\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-containers",
+      "term": "about containers",
+      "title": "About Containers",
+      "description": "Information about containers\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-adding-affinities",
+      "term": "about adding affinities",
+      "title": "About Adding Affinities",
+      "description": "Information about adding affinities to armaments\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-pouches",
+      "term": "about pouches",
+      "title": "About Pouches",
+      "description": "Information about pouches\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-dodging",
+      "term": "about dodging",
+      "title": "About Dodging",
+      "description": "Information about dodging\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-wielding-armaments",
+      "term": "about wielding armaments",
+      "title": "About Wielding Armaments",
+      "description": "Information about wielding armaments\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "about-multiplayer",
+      "term": "about multiplayer",
+      "title": "About Multiplayer",
+      "description": "Information about multiplayer\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carrier-pigeon-letter-1",
+      "term": "carrier pigeon letter [1]",
+      "title": "Carrier Pigeon Letter [1]",
+      "description": "Letter concerning traces of silvery slime found",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "carrier-pigeon-letter-2",
+      "term": "carrier pigeon letter [2]",
+      "title": "Carrier Pigeon Letter [2]",
+      "description": "Letter addressed to someone:",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fugitive-warrior-s-recipe-5",
+      "term": "fugitive warrior's recipe [5]",
+      "title": "Fugitive Warrior's Recipe [5]",
+      "description": "Fugitive warrior recipe.  Adds craft able items",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cracked-pot",
+      "term": "cracked pot",
+      "title": "Cracked Pot",
+      "description": "Container required for crafting cracked pot items",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ritual-pot",
+      "term": "ritual pot",
+      "title": "Ritual Pot",
+      "description": "Container required for crafting ritual pot items",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "perfume-bottle",
+      "term": "perfume bottle",
+      "title": "Perfume Bottle",
+      "description": "Container required for crafting perfume items",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glass-shard",
+      "term": "glass shard",
+      "title": "Glass Shard",
+      "description": "Shard of filthy glass. Worthless rubbish.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-seed",
+      "term": "golden seed",
+      "title": "Golden Seed",
+      "description": "Increases Sacred Flask's number of uses",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sacred-tear",
+      "term": "sacred tear",
+      "title": "Sacred Tear",
+      "description": "Improves Sacred Flask's potency",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "memory-stone",
+      "term": "memory stone",
+      "title": "Memory Stone",
+      "description": "A black, lightly beguiling stone.\nPrized by the sorcerers who produce them.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "talisman-pouch",
+      "term": "talisman pouch",
+      "title": "Talisman Pouch",
+      "description": "Increases talisman equip slots",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dragon-heart",
+      "term": "dragon heart",
+      "title": "Dragon Heart",
+      "description": "Gain power of the dragon at the Dragon Communion altar",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lost-ashes-of-war",
+      "term": "lost ashes of war",
+      "title": "Lost Ashes of War",
+      "description": "Used to duplicate Ashes of War",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-1",
+      "term": "smithing stone [1]",
+      "title": "Smithing Stone [1]",
+      "description": "Reinforce armaments up to +3",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-2",
+      "term": "smithing stone [2]",
+      "title": "Smithing Stone [2]",
+      "description": "Reinforce armaments up to +6",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-3",
+      "term": "smithing stone [3]",
+      "title": "Smithing Stone [3]",
+      "description": "Reinforce armaments up to +9",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-4",
+      "term": "smithing stone [4]",
+      "title": "Smithing Stone [4]",
+      "description": "Reinforce armaments up to +12",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-5",
+      "term": "smithing stone [5]",
+      "title": "Smithing Stone [5]",
+      "description": "Reinforce armaments up to +15",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-6",
+      "term": "smithing stone [6]",
+      "title": "Smithing Stone [6]",
+      "description": "Reinforce armaments up to +18",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-7",
+      "term": "smithing stone [7]",
+      "title": "Smithing Stone [7]",
+      "description": "Reinforce armaments up to +21",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-8",
+      "term": "smithing stone [8]",
+      "title": "Smithing Stone [8]",
+      "description": "Reinforce armaments up to +24",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-smithing-stone",
+      "term": "ancient dragon smithing stone",
+      "title": "Ancient Dragon Smithing Stone",
+      "description": "Reinforce armaments to +25",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-1",
+      "term": "somber smithing stone [1]",
+      "title": "Somber Smithing Stone [1]",
+      "description": "Reinforce special armaments to +1",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-2",
+      "term": "somber smithing stone [2]",
+      "title": "Somber Smithing Stone [2]",
+      "description": "Reinforce special armaments to +2",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-3",
+      "term": "somber smithing stone [3]",
+      "title": "Somber Smithing Stone [3]",
+      "description": "Reinforce special armaments to +3",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-4",
+      "term": "somber smithing stone [4]",
+      "title": "Somber Smithing Stone [4]",
+      "description": "Reinforce special armaments to +4",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-5",
+      "term": "somber smithing stone [5]",
+      "title": "Somber Smithing Stone [5]",
+      "description": "Reinforce special armaments to +5",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-6",
+      "term": "somber smithing stone [6]",
+      "title": "Somber Smithing Stone [6]",
+      "description": "Reinforce special armaments to +6",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-7",
+      "term": "somber smithing stone [7]",
+      "title": "Somber Smithing Stone [7]",
+      "description": "Reinforce special armaments to +7",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-8",
+      "term": "somber smithing stone [8]",
+      "title": "Somber Smithing Stone [8]",
+      "description": "Reinforce special armaments to +8",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-ancient-dragon-smithing-stone",
+      "term": "somber ancient dragon smithing stone",
+      "title": "Somber Ancient Dragon Smithing Stone",
+      "description": "Reinforce special armaments to +10",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "somber-smithing-stone-9",
+      "term": "somber smithing stone [9]",
+      "title": "Somber Smithing Stone [9]",
+      "description": "Reinforce special armaments to +9",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-1",
+      "term": "grave glovewort [1]",
+      "title": "Grave Glovewort [1]",
+      "description": "Strengthen ashes to +1",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-2",
+      "term": "grave glovewort [2]",
+      "title": "Grave Glovewort [2]",
+      "description": "Strengthen ashes to +2",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-3",
+      "term": "grave glovewort [3]",
+      "title": "Grave Glovewort [3]",
+      "description": "Strengthen ashes to +3",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-4",
+      "term": "grave glovewort [4]",
+      "title": "Grave Glovewort [4]",
+      "description": "Strengthen ashes to +4",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-5",
+      "term": "grave glovewort [5]",
+      "title": "Grave Glovewort [5]",
+      "description": "Strengthen ashes to +5",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-6",
+      "term": "grave glovewort [6]",
+      "title": "Grave Glovewort [6]",
+      "description": "Strengthen ashes to +6",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-7",
+      "term": "grave glovewort [7]",
+      "title": "Grave Glovewort [7]",
+      "description": "Strengthen ashes to +7",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-8",
+      "term": "grave glovewort [8]",
+      "title": "Grave Glovewort [8]",
+      "description": "Strengthen ashes to +8",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-glovewort-9",
+      "term": "grave glovewort [9]",
+      "title": "Grave Glovewort [9]",
+      "description": "Strengthen ashes to +9",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "great-grave-glovewort",
+      "term": "great grave glovewort",
+      "title": "Great Grave Glovewort",
+      "description": "Strengthen ashes to +10",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-1",
+      "term": "ghost glovewort [1]",
+      "title": "Ghost Glovewort [1]",
+      "description": "Strengthen renowned ashes to +1",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-2",
+      "term": "ghost glovewort [2]",
+      "title": "Ghost Glovewort [2]",
+      "description": "Strengthen renowned ashes to +2",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-3",
+      "term": "ghost glovewort [3]",
+      "title": "Ghost Glovewort [3]",
+      "description": "Strengthen renowned ashes to +3",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-4",
+      "term": "ghost glovewort [4]",
+      "title": "Ghost Glovewort [4]",
+      "description": "Strengthen renowned ashes to +4",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-5",
+      "term": "ghost glovewort [5]",
+      "title": "Ghost Glovewort [5]",
+      "description": "Strengthen renowned ashes to +5",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-6",
+      "term": "ghost glovewort [6]",
+      "title": "Ghost Glovewort [6]",
+      "description": "Strengthen renowned ashes to +6",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-7",
+      "term": "ghost glovewort [7]",
+      "title": "Ghost Glovewort [7]",
+      "description": "Strengthen renowned ashes to +7",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-8",
+      "term": "ghost glovewort [8]",
+      "title": "Ghost Glovewort [8]",
+      "description": "Strengthen renowned ashes to +8",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-9",
+      "term": "ghost glovewort [9]",
+      "title": "Ghost Glovewort [9]",
+      "description": "Strengthen renowned ashes to +9",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "great-ghost-glovewort",
+      "term": "great ghost glovewort",
+      "title": "Great Ghost Glovewort",
+      "description": "Strengthen renowned ashes to +10",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "speckled-hardtear",
+      "term": "speckled hardtear",
+      "title": "Speckled Hardtear",
+      "description": "Boosts resistance and heals status in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crimson-bubbletear",
+      "term": "crimson bubbletear",
+      "title": "Crimson Bubbletear",
+      "description": "Restores HP when near death in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "opaline-bubbletear",
+      "term": "opaline bubbletear",
+      "title": "Opaline Bubbletear",
+      "description": "Significantly negates damage in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "opaline-hardtear",
+      "term": "opaline hardtear",
+      "title": "Opaline Hardtear",
+      "description": "Temporarily boosts all damage negation in physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "thorny-cracked-tear",
+      "term": "thorny cracked tear",
+      "title": "Thorny Cracked Tear",
+      "description": "Makes consecutive attacks grow stronger in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "spiked-cracked-tear",
+      "term": "spiked cracked tear",
+      "title": "Spiked Cracked Tear",
+      "description": "Enhances charged attacks for a time in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "leaden-hardtear",
+      "term": "leaden hardtear",
+      "title": "Leaden Hardtear",
+      "description": "Temporarily boosts poise in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crimsonwhorl-bubbletear",
+      "term": "crimsonwhorl bubbletear",
+      "title": "Crimsonwhorl Bubbletear",
+      "description": "Converts damage received into HP in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-hidden-tear",
+      "term": "cerulean hidden tear",
+      "title": "Cerulean Hidden Tear",
+      "description": "Eliminates all FP consumption in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "stonebarb-cracked-tear",
+      "term": "stonebarb cracked tear",
+      "title": "Stonebarb Cracked Tear",
+      "description": "Makes attacks more likely to break enemy stances in a mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flame-shrouding-cracked-tear",
+      "term": "flame-shrouding cracked tear",
+      "title": "Flame-Shrouding Cracked Tear",
+      "description": "Temporarily boosts fire attacks in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "magic-shrouding-cracked-tear",
+      "term": "magic-shrouding cracked tear",
+      "title": "Magic-Shrouding Cracked Tear",
+      "description": "Temporarily boosts magic attacks in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lightning-shrouding-cracked-tear",
+      "term": "lightning-shrouding cracked tear",
+      "title": "Lightning-Shrouding Cracked Tear",
+      "description": "Temporarily boosts lightning attacks in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "holy-shrouding-cracked-tear",
+      "term": "holy-shrouding cracked tear",
+      "title": "Holy-Shrouding Cracked Tear",
+      "description": "Temporarily boosts holy attacks in mixed physick",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sliver-of-meat",
+      "term": "sliver of meat",
+      "title": "Sliver of Meat",
+      "description": "A slice of thinly carved beast flesh.\nMaterial used for crafting items.\nFound by hunting herbivorous beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "beast-liver",
+      "term": "beast liver",
+      "title": "Beast Liver",
+      "description": "The fresh liver of a beast; a luscious fruit of life.\nMaterial used for crafting items.\nFound by hunting herbivorous beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "lump-of-flesh",
+      "term": "lump of flesh",
+      "title": "Lump of Flesh",
+      "description": "A lump of beast flesh filled with rich juices.\nMaterial used for crafting items.\nFound by hunting carnivorous beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "beast-blood",
+      "term": "beast blood",
+      "title": "Beast Blood",
+      "description": "Fresh beast blood, glinting with gold.\nMaterial used for crafting items.\nFound by hunting carnivorous beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "old-fang",
+      "term": "old fang",
+      "title": "Old Fang",
+      "description": "A rarely-seen specimen of beast fang.\nMaterial used for crafting items.\nFound by hunting carnivorous beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "budding-horn",
+      "term": "budding horn",
+      "title": "Budding Horn",
+      "description": "A rarely-seen specimen of a young, budding horn.\nMaterial used for crafting items.\nFound by hunting herbivorous beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "flight-pinion",
+      "term": "flight pinion",
+      "title": "Flight Pinion",
+      "description": "Flight feather of birds.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "hidden-plumage",
+      "term": "hidden plumage",
+      "title": "Hidden Plumage",
+      "description": "Rarely-seen dark plumage found\ninside the wing.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "four-toed-fowl-foot",
+      "term": "four-toed fowl foot",
+      "title": "Four-Toed Fowl Foot",
+      "description": "A four-toed fowl's foot.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "turtle-neck-meat",
+      "term": "turtle neck meat",
+      "title": "Turtle Neck Meat",
+      "description": "A splendid, lengthy cut of turtle neck meat.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "human-bone-shard",
+      "term": "human bone shard",
+      "title": "Human Bone Shard",
+      "description": "Fragment of bone with dun mottling.\nMaterial used for crafting items.\nFound by hunting Those Who Live in Death.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "great-dragonfly-head",
+      "term": "great dragonfly head",
+      "title": "Great Dragonfly Head",
+      "description": "Head of a large dragonfly.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "slumbering-egg",
+      "term": "slumbering egg",
+      "title": "Slumbering Egg",
+      "description": "Owl eggs that will never hatch.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crab-eggs",
+      "term": "crab eggs",
+      "title": "Crab Eggs",
+      "description": "Eggs of large crabs which dwell in the shallows.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "land-octopus-ovary",
+      "term": "land octopus ovary",
+      "title": "Land Octopus Ovary",
+      "description": "Puffy, milky white ovary of a land octopus.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "miranda-powder",
+      "term": "miranda powder",
+      "title": "Miranda Powder",
+      "description": "Pollen from a man-eating miranda flower.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "strip-of-white-flesh",
+      "term": "strip of white flesh",
+      "title": "Strip of White Flesh",
+      "description": "Thin strips of flesh taken from a bloodless creature.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-dung",
+      "term": "golden dung",
+      "title": "Golden Dung",
+      "description": "Someone's excrement. It has a golden tinge.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "thin-beast-bones",
+      "term": "thin beast bones",
+      "title": "Thin Beast Bones",
+      "description": "Thin, hard beast bones.\nMaterial used for crafting items.\nFound by hunting beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "hefty-beast-bone",
+      "term": "hefty beast bone",
+      "title": "Hefty Beast Bone",
+      "description": "Thick, solid beast bones.\nMaterial used for crafting items.\nFound by hunting particularly large beasts.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glinstone-scrap",
+      "term": "glinstone scrap",
+      "title": "Glinstone Scrap",
+      "description": "Unremarkable glintstone, found along roadways everywhere.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "string",
+      "term": "string",
+      "title": "String",
+      "description": "Boasting no special qualities, this is merely a goodly length of string.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "living-jar-shard",
+      "term": "living jar shard",
+      "title": "Living Jar Shard",
+      "description": "A fragment of a living jar,\nhardened after its death.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-bloodclot",
+      "term": "albinauric bloodclot",
+      "title": "Albinauric Bloodclot",
+      "description": "The thick, coagulated blood of the Albinaurics.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "stormhawk-feather",
+      "term": "stormhawk feather",
+      "title": "Stormhawk Feather",
+      "description": "A feather from a hawk that lived as one\nwith the storms.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "poisonbloom",
+      "term": "poisonbloom",
+      "title": "Poisonbloom",
+      "description": "Flower that grows in toxic terrain.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "trina-s-lily",
+      "term": "trina's lily",
+      "title": "Trina's Lily",
+      "description": "A light-purple water lily that is on the verge of wilting.\nMaterial used for crafting items.\nExceedingly rare to find.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fulgurbloom",
+      "term": "fulgurbloom",
+      "title": "Fulgurbloom",
+      "description": "Yellow flower that grows in lightning-struck lands.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "miquella-s-lily",
+      "term": "miquella's lily",
+      "title": "Miquella's Lily",
+      "description": "A delicate water lily of unalloyed gold that has started to fade and wilt.\nMaterial used for crafting items.\nExceedingly rare to find.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "grave-violet",
+      "term": "grave violet",
+      "title": "Grave Violet",
+      "description": "A purple flower than blooms in graveyards.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "faded-erdleaf-flower",
+      "term": "faded erdleaf flower",
+      "title": "Faded Erdleaf Flower",
+      "description": "An Erdleaf flower that has faded to a pale scarlet, found blooming in rotten lands.\nMaterial used in crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "erdleaf-flower",
+      "term": "erdleaf flower",
+      "title": "Erdleaf Flower",
+      "description": "A dusky yellow flower that has started to fade to brown, found throughout the Lands Between.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "altus-bloom",
+      "term": "altus bloom",
+      "title": "Altus Bloom",
+      "description": "A golden-tinged flower from a succulent plant that blooms on the Altus Plateau.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "fire-blossom",
+      "term": "fire blossom",
+      "title": "Fire Blossom",
+      "description": "A half-ashen and smoldering flower that blooms on the Mountaintops of the Giants.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-sunflower",
+      "term": "golden sunflower",
+      "title": "Golden Sunflower",
+      "description": "A golden sunflower that grows facing the Erdtree.\nMaterial used for crafting items.\nFound near Minor Erdtrees.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "tarnished-golden-sunflower",
+      "term": "tarnished golden sunflower",
+      "title": "Tarnished Golden Sunflower",
+      "description": "A large flower that blooms facing the Erdtree.\nMaterial used for crafting items.\nFound near Minor Erdtrees.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "herba",
+      "term": "herba",
+      "title": "Herba",
+      "description": "Evergreen leaves that give off a faint light.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "arteria-leaf",
+      "term": "arteria leaf",
+      "title": "Arteria Leaf",
+      "description": "Dark red leaves with thick, swollen veins.\nMaterial used for crafting items.\nExceedingly rare to find.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "dewkissed-herba",
+      "term": "dewkissed herba",
+      "title": "Dewkissed Herba",
+      "description": "A herb that grows in the false night\nin and around the Eternal City.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rowa-fruit",
+      "term": "rowa fruit",
+      "title": "Rowa Fruit",
+      "description": "Berry-like red fruits that grow in shrubs.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-rowa",
+      "term": "golden rowa",
+      "title": "Golden Rowa",
+      "description": "A Rowa fruit tinted with gold.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rimed-rowa",
+      "term": "rimed rowa",
+      "title": "Rimed Rowa",
+      "description": "A berry-like fruit, thought to be the original strain of Rowa.\nMaterial used for crafting items.\nFound in frigid highlands.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "bloodrose",
+      "term": "bloodrose",
+      "title": "Bloodrose",
+      "description": "Blood-slick roses that bloom in blood-soaked soil.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "eye-of-yelough",
+      "term": "eye of yelough",
+      "title": "Eye of Yelough",
+      "description": "A shrub fruit bursting with ripened pulp.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-bud",
+      "term": "crystal bud",
+      "title": "Crystal Bud",
+      "description": "A young plant, crystalized before it could mature.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "rimed-crystal-bud",
+      "term": "rimed crystal bud",
+      "title": "Rimed Crystal Bud",
+      "description": "A young plant, frozen into a crystal before it could mature. Material used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sacramental-bud",
+      "term": "sacramental bud",
+      "title": "Sacramental Bud",
+      "description": "An immature bud containing fresh blood.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "mushroom",
+      "term": "mushroom",
+      "title": "Mushroom",
+      "description": "A fungal growth that thrives in damp thickets and elsewhere. Material used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "melted-mushroom",
+      "term": "melted mushroom",
+      "title": "Melted Mushroom",
+      "description": "A mushroom that grows in the false night in and around the Eternal City.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "toxic-mushroom",
+      "term": "toxic mushroom",
+      "title": "Toxic Mushroom",
+      "description": "A mushroom covered in toxic mold that grows in rotten lands. Material used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "root-resin",
+      "term": "root resin",
+      "title": "Root Resin",
+      "description": "Resin secreted from the roots of the Greattree.\nCan also be found near trees on the surface.\nMaterial used in crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cracked-crystal",
+      "term": "cracked crystal",
+      "title": "Cracked Crystal",
+      "description": "A cracked, impure, degraded, and altogether\nunremarkable crystal.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "sanctuary-stone",
+      "term": "sanctuary stone",
+      "title": "Sanctuary Stone",
+      "description": "A rare piece of stone fragment found near places where ruins have fallen from the sky.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "nascent-butterfly",
+      "term": "nascent butterfly",
+      "title": "Nascent Butterfly",
+      "description": "An arcane butterfly with translucent wings.\nMaterial used for crafting items.\nExceedingly rare to find.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "aeonian-butterfly",
+      "term": "aeonian butterfly",
+      "title": "Aeonian Butterfly",
+      "description": "A butterfly with withered, scarlet wings\nfound in the Swamp of Aeonia.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "smoldering-butterfly",
+      "term": "smoldering butterfly",
+      "title": "Smoldering Butterfly",
+      "description": "An eternally burning butterfly found near wildfires and elsewhere. Material used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "silver-firefly",
+      "term": "silver firefly",
+      "title": "Silver Firefly",
+      "description": "Firefly that gives off a silvery light.\nMaterial used in crafting items.\nFound near bodies of cold water untouched by sunlight.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gold-firefly",
+      "term": "gold firefly",
+      "title": "Gold Firefly",
+      "description": "Firefly that gives off a golden light.\nMaterial used in crafting items.\nFound near bodies of water close to Minor Erdtrees.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-firefly",
+      "term": "glintstone firefly",
+      "title": "Glintstone Firefly",
+      "description": "A firefly whose glowing tail has hardened into\nglintstone, widely found in Liurnia Lake.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "golden-centipede",
+      "term": "golden centipede",
+      "title": "Golden Centipede",
+      "description": "The golden, desiccated remains of a centipede.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "silver-tear-husk",
+      "term": "silver tear husk",
+      "title": "Silver Tear Husk",
+      "description": "A hardened husk shed by a formless life form known as the Silver Tear, found in and around the Eternal City.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gold-tinged-excrement",
+      "term": "gold-tinged excrement",
+      "title": "Gold-Tinged Excrement",
+      "description": "Someone's excrement. It has a golden tinge.\nMaterial used for crafting items.\nOften hidden in woods and thickets.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "blood-tainted-excrement",
+      "term": "blood-tainted excrement",
+      "title": "Blood-Tainted Excrement",
+      "description": "The bloody excrement of a carnivorous beast.\nMaterial used for crafting items.\nFound in the land of the new dynasty.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "cave-moss",
+      "term": "cave moss",
+      "title": "Cave Moss",
+      "description": "Faintly luminescent moss that grows in dark caves.\nMaterial used in crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "budding-cave-moss",
+      "term": "budding cave moss",
+      "title": "Budding Cave Moss",
+      "description": "Faintly luminescent moss that grows in dark caves,\nspeckled with tiny, yellow flowers.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "crystal-cave-moss",
+      "term": "crystal cave moss",
+      "title": "Crystal Cave Moss",
+      "description": "Faintly luminescent moss that grows in dark caves,\nlaced with fine crystals.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "yellow-ember",
+      "term": "yellow ember",
+      "title": "Yellow Ember",
+      "description": "An ember taken from the eye socket of a corpse.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "volcanic-stone",
+      "term": "volcanic stone",
+      "title": "Volcanic Stone",
+      "description": "A smoldering rock containing hot gas.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "formic-rock",
+      "term": "formic rock",
+      "title": "Formic Rock",
+      "description": "Rock formed from solidified giant ant venom. Highly acidic. Material used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    },
+    {
+      "id": "gravel-stone",
+      "term": "gravel stone",
+      "title": "Gravel Stone",
+      "description": "A small clump of sharp, pointed stones.\nMaterial used for crafting items.",
+      "section": "Elden Ring",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "base"
+    }
+  ]
+}

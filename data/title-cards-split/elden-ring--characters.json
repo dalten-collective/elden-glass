@@ -1,0 +1,1797 @@
+{
+  "section": "Elden Ring",
+  "category": "Characters",
+  "cards": [
+    {
+      "id": "char-melina",
+      "term": "melina",
+      "title": "Melina",
+      "description": "Greetings.\n\nTraveller from beyond the Fog.\n\nI am Melina.\n\nI offer you an accord.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-finger-reader-enia",
+      "term": "finger reader enia",
+      "title": "Finger Reader Enia",
+      "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-the-two-fingers",
+      "term": "the two fingers",
+      "title": "The Two Fingers",
+      "description": "Each coveteth the Elden Ring.\n\nBut their ambitions are yet unmet.\n\nSurely thou hast thine own design?\n\nThen implore the Two Fingers, for guidance.\n\nAcross the Sea of Fog, to the Lands Between.\n\nTo face the Elden Ring.\n\nTo stand before the Elden Ring.\n\nFace the Elden Ring.\n\nAnd reclaim what was thine.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-ranni-the-witch",
+      "term": "ranni the witch",
+      "title": "Ranni the Witch",
+      "description": "Stop, please...\n\nYou think me a bringer of bale as well?\n\nFine. I am Ranni's shadow and it's for her that I fight.\n\nWhatever any of you might call me.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-renna-the-witch",
+      "term": "renna the witch",
+      "title": "Renna the Witch",
+      "description": "Incarnate a full moon and launch it at foes",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Carian Royalty"
+    },
+    {
+      "id": "char-primeval-sorcerer-lusat",
+      "term": "primeval sorcerer lusat",
+      "title": "Primeval Sorcerer Lusat",
+      "description": "Ah, well met.\n\nI hardly expected to see the champion of the festival here of all places.\n\nYou didn't...know Sellen, did you?\n\nWell, whatever the case, she's dead now.\n\nJust put it behind you.\n\nShe was known as the Graven Witch.\n\nObsessed by the primeval current, countless sorcerers fell to her hand.\n\nThe most dangerous mage in the entire history of Raya Lucaria's Academy.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-primeval-sorcerer-azur",
+      "term": "primeval sorcerer azur",
+      "title": "Primeval Sorcerer Azur",
+      "description": "Ah, well met.\n\nI hardly expected to see the champion of the festival here of all places.\n\nYou didn't...know Sellen, did you?\n\nWell, whatever the case, she's dead now.\n\nJust put it behind you.\n\nShe was known as the Graven Witch.\n\nObsessed by the primeval current, countless sorcerers fell to her hand.\n\nThe most dangerous mage in the entire history of Raya Lucaria's Academy.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-the-noble-goldmask",
+      "term": "the noble goldmask",
+      "title": "The Noble Goldmask",
+      "description": "There's something I should mention to you, as well.\n\nI'm thinking of leaving the Roundtable Hold.\n\nDo you know of the noble Goldmask?\n\nThough he was but a Tarnished, living outside the Lands Between,\n\nhe was a great scholar, who foresaw the coming guidance of grace.\n\nAnd now, I hear he has come to the Lands Between alone, to contemplate the Golden Order...\n\nI wish nothing more than to seek his instruction, and perhaps even help him in his research.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-rennala-queen-of-the-full-moon",
+      "term": "rennala, queen of the full moon",
+      "title": "Rennala, Queen of the Full Moon",
+      "description": "Incarnate a full moon and launch it at foes",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Carian Royalty"
+    },
+    {
+      "id": "char-gurranq-beast-clergyman",
+      "term": "gurranq, beast clergyman",
+      "title": "Gurranq, Beast Clergyman",
+      "description": "Hurls a boulder before the caster",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-smithing-master-hewg",
+      "term": "smithing master hewg",
+      "title": "Smithing Master Hewg",
+      "description": "The bell bearing of a miner who once dug for smithing stone.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-blaidd-the-half-wolf",
+      "term": "blaidd the half-wolf",
+      "title": "Blaidd the Half-Wolf",
+      "description": "Armor of Blaidd, Knight of Ranni",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-baleful-shadow",
+      "term": "baleful shadow",
+      "title": "Baleful Shadow",
+      "description": "Let us speak of the past, a while.\n\nI was once an Empyrean.\n\nOf the demigods, only I, Miquella, and Malenia could claim that title.\n\nEach of us was chosen by our own Two Fingers, as a candidate to succeed Queen Marika, to become the new god of the coming age.\n\nBut I would not acquiesce to the Two Fingers.\n\nI stole the Rune of Death, slew mine own Empyrean flesh, casting it away.\n\nI would not be controlled by that thing.\n\nThe Two Fingers and I have been cursing each other ever since...",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-pidia-carian-servant",
+      "term": "pidia, carian servant",
+      "title": "Pidia, Carian Servant",
+      "description": "O-oh!\n\nY-you! I, er, sorry, your worship...\n\nY-you! I, er, sorry, madam...\n\nI-I apologise for any offence given.\n\nI am Pidia. Servant to the Carian royal family.\n\nI am charged with maintaining these g-ghastly dolls.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Carian Royalty"
+    },
+    {
+      "id": "char-asimi-silver-tear",
+      "term": "asimi, silver tear",
+      "title": "Asimi, Silver Tear",
+      "description": "Thank you for listening.\n\nI am Asimi. My true form is that of a silver tear.\n\nI am a simple being who can assume the shapes of other living things.\n\nBut now, I've gained knowledge. I speak, and ponder, and...live in fear of death.\n\nO, mighty Tarnished warrior, I beg of you.\n\nLet me keep the life I've been granted. In exchange, I offer you power.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-asimi-eternal-king",
+      "term": "asimi, eternal king",
+      "title": "Asimi, Eternal King",
+      "description": "Thank you for listening.\n\nI am Asimi. My true form is that of a silver tear.\n\nI am a simple being who can assume the shapes of other living things.\n\nBut now, I've gained knowledge. I speak, and ponder, and...live in fear of death.\n\nO, mighty Tarnished warrior, I beg of you.\n\nLet me keep the life I've been granted. In exchange, I offer you power.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-old-albus",
+      "term": "old albus",
+      "title": "Old Albus",
+      "description": "Oh...do you speak true?\n\nSo old Albus entrusted his medallion to you.\n\n...\n\nThen I've no choice. But to trust that this was his dying will.\n\nLet's try again. I'm Latenna. An Albinauric, the same as Old Albus.\n\nMy apologies for my coarse words earlier.\n\nI presumed the worst, seeing that you were another Tarnished, like that all-hearing brute.\n\nI hope that you will forgive me.\n\nI presumed the worst, seeing that you were another Tarnished, like the bastard before.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-alexander-warrior-jar",
+      "term": "alexander, warrior jar",
+      "title": "Alexander, Warrior Jar",
+      "description": "Oh my stars I'm so happy to see you!\n\nI am Alexander, also known as the Iron Fist. And as you can see, I'm stuck here.\n\nPlease, can you help me out of this?\n\nMy thanks! A thousand thanks!\n\nJust give me a good smack from the rear, with something nice and big.\n\nAnd I'll pop clean out. I'm sure!\n\nDon't dally. No no, there's no need to fret, I'm very well trained.\n\nGive it your all, I say!",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-demi-human-boc",
+      "term": "demi-human boc",
+      "title": "Demi-Human Boc",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-boc-the-seamster",
+      "term": "boc the seamster",
+      "title": "Boc the Seamster",
+      "description": "Boc the seamster, at your service, Master.\n\nReady to make adjustments to your garments.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-smithing-master-iji",
+      "term": "smithing master iji",
+      "title": "Smithing Master Iji",
+      "description": "The bell bearing of a miner who once dug for smithing stone.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-tanith-s-knight",
+      "term": "tanith's knight",
+      "title": "Tanith's Knight",
+      "description": "Hello again. Brave Tarnished.\n\nAs a scout, I am pleased to see you again here at the Volcano Manor.\n\nUnder Lady Tanith's guidance, may you tread the path of valour.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-phillia-towering-little-sister",
+      "term": "phillia, towering little sister",
+      "title": "Phillia, Towering Little Sister",
+      "description": "Ohh...Phillia\n\nTake...the birthing...droplet...",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-tanith-volcano-manor-proprietress",
+      "term": "tanith, volcano manor proprietress",
+      "title": "Tanith, Volcano Manor Proprietress",
+      "description": "Brave Tarnished, welcome to the Volcano Manor.\n\nI am Tanith, the proprietress of this house.\n\nRya spoke well of you.\n\n\"A warrior of promise,\" I believe she said.\n\nPerhaps you are prepared to make a commitment.\n\nWill you join us here at the Volcano Manor, and resist the tide?\n\nWhy accept the burden of their grace, or be fooled by the dogmatic ramblings of the Fingers?\n\nRise with us, against the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-white-mask-varr",
+      "term": "white mask varré",
+      "title": "White Mask Varré",
+      "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-gatekeeper-gostoc",
+      "term": "gatekeeper gostoc",
+      "title": "Gatekeeper Gostoc",
+      "description": "Gatekeeper Gostoc's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-festering-fingerprint-vyke",
+      "term": "festering fingerprint vyke",
+      "title": "Festering Fingerprint Vyke",
+      "description": "Item for online play.\n(Can also be used from the Multiplayer menu.)\nConsumed upon use.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-roundtable-knight-vyke",
+      "term": "roundtable knight vyke",
+      "title": "Roundtable Knight Vyke",
+      "description": "Information about the Roundtable Hold\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-preceptor-seluvis",
+      "term": "preceptor seluvis",
+      "title": "Preceptor Seluvis",
+      "description": "Gown worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Carian Royalty"
+    },
+    {
+      "id": "char-patches",
+      "term": "patches",
+      "title": "Patches",
+      "description": "A true man of reason. Just what I like about you.\n\nA true lady of reason. Just what I like about you.\n\nI'm Patches. Patches the Untethered.\n\nTarnished, like you, only, free-spirited. Nomadic, you might say.\n\nOnly for now, those retired-soldiers-turned-bandits they're paying for my gruel.\n\nIn exchange for my, well, showing them the ropes.\n\nBut honestly... this looting racket is bloody terrifying.\n\nFrankly, I'm ready to wash my hands clean. Maybe set up a legitimate shop.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-irina-of-morne",
+      "term": "irina of morne",
+      "title": "Irina of Morne",
+      "description": "Letter addressed to the commander of Castle Morne",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-finger-maiden-hyetta",
+      "term": "finger maiden hyetta",
+      "title": "Finger Maiden Hyetta",
+      "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-edgar-the-revenger",
+      "term": "edgar the revenger",
+      "title": "Edgar the Revenger",
+      "description": "Ah, there's a face I've not seen before.\n\nI'm Edgar, warden of this castle as ordained by Lord Godrick himself.\n\nBut you can see how things have turned out.\n\nThe menials have all rebelled.\n\nThey gave me good service, or so I thought,\nbut it seems it was all an act.\n\nFoul creatures, as it's said.\nAnd true enough they're foul inside and out.\n\nI'm sorry to disappoint you,\n\nBut whatever you've come here to do,\nI'm afraid Castle Morne won't hold much longer.\n\nTake this, by way of apology.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-zorayas-the-scout",
+      "term": "zorayas the scout",
+      "title": "Zorayas the Scout",
+      "description": "Farewell letter written in an inexpert hand\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-knight-diallos",
+      "term": "knight diallos",
+      "title": "Knight Diallos",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-potentate-diallos",
+      "term": "potentate diallos",
+      "title": "Potentate Diallos",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-sorceress-sellen",
+      "term": "sorceress sellen",
+      "title": "Sorceress Sellen",
+      "description": "Now the festival is over, and General Radahn is defeated...\n\nJerren's duties are finally fulfilled.\n\nThough we served different masters, I could see he was truly adept in his role.\n\nNow the time has come to remind him of an old promise made.\n\nWith the stars of fate set into motion, a certain sorceress is dispossessed of her immortality...\n\nFinally, we can be rid of a longstanding Carian weed...",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-yura-hunter-of-bloody-fingers",
+      "term": "yura, hunter of bloody fingers",
+      "title": "Yura, Hunter of Bloody Fingers",
+      "description": "Just joining the fray, Tarnished?\n\nI am Yura, hunter of Bloody Fingers.\n\nHave you ever faced a Bloody Finger?\n\nThey are Tarnished held in thrall by cessblood. Zealots who stalk their own.\n\nIf you stay the path, you will face this blight, sooner or later.\n\nJust remember. No kinship with their ilk remains. Their madness precludes it.\n\nDon't let your emotions stay your blade.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-shabriri",
+      "term": "shabriri",
+      "title": "Shabriri",
+      "description": "Yellowing, oozing eyeball of the infirm",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-roderika",
+      "term": "roderika",
+      "title": "Roderika",
+      "description": "Greetings. Nice to see you again.\n\nMy name is Roderika. I should have told you sooner.\n\nIsn't this place impressive, though?\n\nThe Roundtable Hold, covert quarters of the Two Fingers, and gathering place of champions who vie to become Elden Lord.\n\nI never knew the guidance bestowed upon us Tarnished had such fantastic roots.\n\nAlthough, it's all a bit much for me, in truth.\n\nI'm still looking for my own purpose.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-roderika-spirit-tuner",
+      "term": "roderika, spirit tuner",
+      "title": "Roderika, Spirit Tuner",
+      "description": "Greetings. Nice to see you again.\n\nMy name is Roderika. I should have told you sooner.\n\nIsn't this place impressive, though?\n\nThe Roundtable Hold, covert quarters of the Two Fingers, and gathering place of champions who vie to become Elden Lord.\n\nI never knew the guidance bestowed upon us Tarnished had such fantastic roots.\n\nAlthough, it's all a bit much for me, in truth.\n\nI'm still looking for my own purpose.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-kenneth-haight-limgrave-heir",
+      "term": "kenneth haight, limgrave heir",
+      "title": "Kenneth Haight, Limgrave Heir",
+      "description": "Blast! You wretched Tarnished!\n\nI am Kenneth Haight, and I have seen quite enough!",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-fia-deathbed-companion",
+      "term": "fia, deathbed companion",
+      "title": "Fia, Deathbed Companion",
+      "description": "Finally, it is returned to its rightful place.\n\nThe stolen hallowbrand, of the exalted noble.\n\nAnd now, I must bid you goodbye as well.\n\nThough I ask you deliver this message to the Roundtable Hold.\n\nI am Fia, Deathbed Companion.\n\nHark, Roundtable. Disturb not the Death of Godwyn, the exalted.\n\nWe, who humbly live in Death...\n\nLive in waiting, to one day welcome our Lord.\n\nWhat right does anyone have to object?\n\nOur Lord will rise. The Lord of the many, and the meek.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-sir-gideon-ofnir-the-all-knowing",
+      "term": "sir gideon ofnir, the all-knowing",
+      "title": "Sir Gideon Ofnir, the All-Knowing",
+      "description": "Arise now, ye Tarnished.\n\nYe dead, who yet live.\n\nThe call of long-lost grace speaks to us all.\n\nHoarah Loux, chieftain of the badlands.\n\nThe ever-brilliant Goldmask.\n\nFia, the Deathbed Companion.\n\nThe loathsome Dung Eater.\n\nAnd Sir Gideon Ofnir, the All-knowing.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-sorcerer-rogier",
+      "term": "sorcerer rogier",
+      "title": "Sorcerer Rogier",
+      "description": "Dull red waistcloth of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-knight-bernahl",
+      "term": "knight bernahl",
+      "title": "Knight Bernahl",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-recusant-bernahl",
+      "term": "recusant bernahl",
+      "title": "Recusant Bernahl",
+      "description": "Item for online play.\n(Can also be used from the Multiplayer menu.)",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-eleonora-violet-bloody-finger",
+      "term": "eleonora, violet bloody finger",
+      "title": "Eleonora, Violet Bloody Finger",
+      "description": "Twinned naginata forged in the Land of Reeds.\nChosen weapon of Eleonora, Violet Bloody Finger.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-lionel-the-lionhearted",
+      "term": "lionel the lionhearted",
+      "title": "Lionel the Lionhearted",
+      "description": "Oddly shaped helm used by foreign knights",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-miriel-pastor-of-vows",
+      "term": "miriel, pastor of vows",
+      "title": "Miriel, Pastor of Vows",
+      "description": "You're Tarnished, aren't you?\n\nI welcome you, to the Church of Vows.\n\nI am Miriel, steward of this sacred chamber.\n\nMy apologies, for the unseemly state of affairs.\n\nDo you know the origin of this place?\n\nHow it came to be known as the Church of Vows?",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-blackguard",
+      "term": "blackguard",
+      "title": "Blackguard",
+      "description": "Iron mask worn by only the most violent offenders",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-sorcerer-thops",
+      "term": "sorcerer thops",
+      "title": "Sorcerer Thops",
+      "description": "Dull red waistcloth of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-nepheli-loux-warrior",
+      "term": "nepheli loux, warrior",
+      "title": "Nepheli Loux, Warrior",
+      "description": "Well, who do we have here?\n\nTarnished, are you? Clearly not one of Godrick's lot.\n\nI am Nepheli Loux. Tarnished and warrior, like you.\n\nI'm here by decree of my father.\n\nHow utterly repellant this is.\n\nThis \"grafting\" of Godrick's ill befits a Lord.\n\nHe's tainted the very winds.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-vyke-s-finger-maiden",
+      "term": "vyke's finger maiden",
+      "title": "Vyke's Finger Maiden",
+      "description": "War spear singed and blistered by fingers, used by Vyke, Knight of the Roundtable Hold.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-finger-maiden",
+      "term": "finger maiden",
+      "title": "Finger Maiden",
+      "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-ensha-of-the-royal-remains",
+      "term": "ensha of the royal remains",
+      "title": "Ensha of the Royal Remains",
+      "description": "Oh, my apologies for that nasty business.\n\nEnsha got rather ahead of himself, it seems.\n\nAs his master, I'd like to express my regret.\n\nBut now, Ensha is slain and gone.\n\nFinished, forever more.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-bloody-finger-ravenmount-assassin",
+      "term": "bloody finger ravenmount assassin",
+      "title": "Bloody Finger Ravenmount Assassin",
+      "description": "Ominous piercing sword with a winding blade.\nCarried by the noble servants of the Lord of Blood.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-bloody-finger-nerijus",
+      "term": "bloody finger nerijus",
+      "title": "Bloody Finger Nerijus",
+      "description": "Ominous piercing sword with a winding blade.\nCarried by the noble servants of the Lord of Blood.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-sanguine-noble",
+      "term": "sanguine noble",
+      "title": "Sanguine Noble",
+      "description": "Hood of dyed black cloth featuring gold embroidery",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-great-horned-tragoth",
+      "term": "great horned tragoth",
+      "title": "Great Horned Tragoth",
+      "description": "Large knife with a broad, curved blade.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-millicent",
+      "term": "millicent",
+      "title": "Millicent",
+      "description": "Boosts dexterity, raises attack power with successive attacks",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-sage-gowry",
+      "term": "sage gowry",
+      "title": "Sage Gowry",
+      "description": "Sage Gowry's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-brother-corhyn",
+      "term": "brother corhyn",
+      "title": "Brother Corhyn",
+      "description": "Your strength, extraordinary...\n\nThe mark...of a true Lord...\n\nO, dear Miquella...\n\nO, dearest Miquella, my brother...\n\nI'm sorry. I finally met my match...",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-scribe-corhyn",
+      "term": "scribe corhyn",
+      "title": "Scribe Corhyn",
+      "description": "The letter describes the task the Volcano Manor desires you enact.\n\nYou will be compensated once the deed is done. Good luck.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Allies & Companions"
+    },
+    {
+      "id": "char-preceptor-miriam",
+      "term": "preceptor miriam",
+      "title": "Preceptor Miriam",
+      "description": "Gown worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-anastasia-tarnished-eater",
+      "term": "anastasia, tarnished-eater",
+      "title": "Anastasia, Tarnished-Eater",
+      "description": "Huge carving knife made to cleanly butcher the human body. Signature weapon of the Ogress Anastasia, known to have eaten countless Tarnished while disguised as a Finger Maiden.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-okina",
+      "term": "okina",
+      "title": "Okina",
+      "description": "Mask adorned with a land of reeds veteran warrior",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-bloody-finger-okina",
+      "term": "bloody finger okina",
+      "title": "Bloody Finger Okina",
+      "description": "Ominous piercing sword with a winding blade.\nCarried by the noble servants of the Lord of Blood.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-vargram-the-raging-wolf",
+      "term": "vargram the raging wolf",
+      "title": "Vargram the Raging Wolf",
+      "description": "Helm of Vargram the Bloody Wolf",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-fia-s-champion",
+      "term": "fia's champion",
+      "title": "Fia's Champion",
+      "description": "Hood worn by Phia, the Deathbed Companion",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-silver-tear",
+      "term": "silver tear",
+      "title": "Silver Tear",
+      "description": "Shield of radiant silver, festooned with amber and carried by Loretta, Knight of the Haligtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-recusant-henricus",
+      "term": "recusant henricus",
+      "title": "Recusant Henricus",
+      "description": "Item for online play.\n(Can also be used from the Multiplayer menu.)",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-knight-of-the-great-jar",
+      "term": "knight of the great jar",
+      "title": "Knight of the Great Jar",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-necromancer-garris",
+      "term": "necromancer garris",
+      "title": "Necromancer Garris",
+      "description": "Three bludgeoning copper heads attached to a handle by chains. Signature weapon of Necromancer Garris, the heretical sage.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-nameless-white-mask",
+      "term": "nameless white mask",
+      "title": "Nameless White Mask",
+      "description": "You were a maidenless upstart to begin with.\n\nYou will die nameless, without ceremony.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Invaders"
+    },
+    {
+      "id": "char-errant-sorcerer-wilhelm",
+      "term": "errant sorcerer wilhelm",
+      "title": "Errant Sorcerer Wilhelm",
+      "description": "Cape worn by a great sorcerer turned hermit",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-chief-guardian-arghanthy",
+      "term": "chief guardian arghanthy",
+      "title": "Chief Guardian Arghanthy",
+      "description": "Arise now, ye Tarnished.\n\nYe dead, who yet live.\n\nThe call of long-lost grace speaks to us all.\n\nHoarah Loux, chieftain of the badlands.\n\nThe ever-brilliant Goldmask.\n\nFia, the Deathbed Companion.\n\nThe loathsome Dung Eater.\n\nAnd Sir Gideon Ofnir, the All-knowing.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-flame-guardian",
+      "term": "flame guardian",
+      "title": "Flame Guardian",
+      "description": "Storied sword and treasure of Caria Manor.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-inquisitor-ghiza",
+      "term": "inquisitor ghiza",
+      "title": "Inquisitor Ghiza",
+      "description": "Instrument of torture used on nobles behind the curtain at the Volcano Manor of Mt. Gelmir.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Volcano Manor"
+    },
+    {
+      "id": "char-twin-maiden-husks",
+      "term": "twin maiden husks",
+      "title": "Twin Maiden Husks",
+      "description": "Offer to Twin Maiden Husks for new item access",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-church-of-dragon-communion",
+      "term": "church of dragon communion",
+      "title": "Church of Dragon Communion",
+      "description": "Dragon slayer...\n\nOhhh, dragon slayer...\n\nYou unfeeling barbarian.\n\nPlanning to feast? On dragon?\n\nAt an abandoned church on that wee isle.\n\nYou would devour the heart of an ancient?\n\nYou wretched, undeserving brute!",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-walking-mausoleum-corpse",
+      "term": "walking mausoleum corpse",
+      "title": "Walking Mausoleum Corpse",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-basin-of-atonement",
+      "term": "basin of atonement",
+      "title": "Basin of Atonement",
+      "description": "To experience the miracle, kneel in the basin at the back, and cleanse yourself with celestial dew.\n\nAbsolution will be yours. Any bond, no matter how strained, or even severed, will be put to rights.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-fractured-marika",
+      "term": "fractured marika",
+      "title": "Fractured Marika",
+      "description": "Long ago, ye Tarnished lost something most dear.\n\nThe Elden Ring. O Elden Ring.\n\nIts gold commanded the very stars,\n\ngiving life its fullest brilliance.\n\nThough shattered, it yet guides thy kin.\n\nThough fractured, it yet guides thy kin.\n\nAcross the Sea of Fog, to the Lands Between.\n\nHoarah Roux, the Gold Mask.\n\nLady Yuliya, the Deathbed Companion.\n\nThe hideous Dung Eater.\n\nAnd Sir Gideon Orphnier, the All-knowing.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Gods & Empyreans"
+    },
+    {
+      "id": "char-clouded-mirror-stand",
+      "term": "clouded mirror stand",
+      "title": "Clouded Mirror Stand",
+      "description": "A weapon made by sharpening a Gravel Stone scale, thought to be the source of ancient dragon immortality, into an unclouded blade.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-sword-of-bernahl",
+      "term": "sword of bernahl",
+      "title": "Sword of Bernahl",
+      "description": "A straight sword with a double-edged blade.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-finger-reader-crone",
+      "term": "finger reader crone",
+      "title": "Finger Reader Crone",
+      "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Roundtable Hold"
+    },
+    {
+      "id": "char-keeper-of-forbidden-lands",
+      "term": "keeper of forbidden lands",
+      "title": "Keeper of Forbidden Lands",
+      "description": "Bronze bracelets adorned with snakes",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-godwyn-s-wet-nurse",
+      "term": "godwyn's wet nurse",
+      "title": "Godwyn's Wet Nurse",
+      "description": "Have you ever seen a hallowbrand?\n\nWhen the first of the demigods died, his flesh was marked with the half-wheel wound of the centipede.\n\nGodwyn's hallowbrand has since been recovered at the Roundtable Hold.\n\nBut there is another hallowbrand out there somewhere.\n\nAnd I must find it.\n\nBefore the time comes we receive our Lord.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Gods & Empyreans"
+    },
+    {
+      "id": "char-merchant-kal",
+      "term": "merchant kalé",
+      "title": "Merchant Kalé",
+      "description": "A nomadic merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Merchants"
+    },
+    {
+      "id": "char-nomadic-merchant",
+      "term": "nomadic merchant",
+      "title": "Nomadic Merchant",
+      "description": "A nomadic merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Merchants"
+    },
+    {
+      "id": "char-isolated-merchant",
+      "term": "isolated merchant",
+      "title": "Isolated Merchant",
+      "description": "An isolated merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Merchants"
+    },
+    {
+      "id": "char-hermit-merchant",
+      "term": "hermit merchant",
+      "title": "Hermit Merchant",
+      "description": "Bell bearing of a hermetic merchant, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Merchants"
+    },
+    {
+      "id": "char-abandoned-merchant",
+      "term": "abandoned merchant",
+      "title": "Abandoned Merchant",
+      "description": "Bell bearing of a merchant left behind, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Merchants"
+    },
+    {
+      "id": "char-imprisoned-merchant",
+      "term": "imprisoned merchant",
+      "title": "Imprisoned Merchant",
+      "description": "An imprisoned merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Merchants"
+    },
+    {
+      "id": "char-someone-yet-unseen",
+      "term": "someone yet unseen",
+      "title": "Someone Yet Unseen",
+      "description": "Elden Ring, O Elden Ring.\n\nIts gold commanded the very stars,\n\ngiving life its fullest brilliance.\n\nShattered, by someone, or something.\n\nFractured, by someone, or something.\n\nGodrick, the feeble.\n\nMalenia, decayed from birth.\n\nGeneral Radahn, slayer of giants.\n\nRykard, the tyrannical serpent.\n\nAnd Morgott, Prince of the Omen.\n\nEach, inheriting their own shard, played a part in the Shattering,",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-black-knife-assassin",
+      "term": "black knife assassin",
+      "title": "Black Knife Assassin",
+      "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-beast-clergyman",
+      "term": "beast clergyman",
+      "title": "Beast Clergyman",
+      "description": "Curved sword forged of dull iron wielded by the beastmen of Farum Azula.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-maliketh-the-black-blade",
+      "term": "maliketh, the black blade",
+      "title": "Maliketh, the Black Blade",
+      "description": "Maliketh's black blade which once harbored the power of the Rune of Death. A sad shadow of its former glory.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-malenia-blade-of-miquella",
+      "term": "malenia, blade of miquella",
+      "title": "Malenia, Blade of Miquella",
+      "description": "I dreamt for so long.\n\nMy flesh was dull gold...and my blood, rotted.\n\nCorpse after corpse, left in my wake...\n\nAs I awaited...his return.\n\n...Heed my words.\n\nI am Malenia.\nBlade of Miquella.\n\nAnd I have never known defeat.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-malenia-goddess-of-rot",
+      "term": "malenia, goddess of rot",
+      "title": "Malenia, Goddess of Rot",
+      "description": "I dreamt for so long.\n\nMy flesh was dull gold...and my blood, rotted.\n\nCorpse after corpse, left in my wake...\n\nAs I awaited...his return.\n\n...Heed my words.\n\nI am Malenia.\nBlade of Miquella.\n\nAnd I have never known defeat.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-margit-the-fell-omen",
+      "term": "margit, the fell omen",
+      "title": "Margit, the Fell Omen",
+      "description": "Briefly binds Margit, once imprisoned, to earth",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-morgott-the-omen-king",
+      "term": "morgott, the omen king",
+      "title": "Morgott, the Omen King",
+      "description": "Warped blade of shifting hue used by Morgott, the Omen King.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-radagon-of-the-golden-order",
+      "term": "radagon of the golden order",
+      "title": "Radagon of the Golden Order",
+      "description": "Creates golden ring of light to attack wide area",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-elden-beast",
+      "term": "elden beast",
+      "title": "Elden Beast",
+      "description": "Crown of Godfrey, the first Elden Lord",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Gods & Empyreans"
+    },
+    {
+      "id": "char-crucible-knight-ordovis",
+      "term": "crucible knight ordovis",
+      "title": "Crucible Knight Ordovis",
+      "description": "Greatshield of red-tinged gold carried by Crucible Knights. Features a great horn.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-crucible-knight",
+      "term": "crucible knight",
+      "title": "Crucible Knight",
+      "description": "Greatshield of red-tinged gold carried by Crucible Knights. Features a great horn.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-crucible-knight-siluria",
+      "term": "crucible knight siluria",
+      "title": "Crucible Knight Siluria",
+      "description": "Greatshield of red-tinged gold carried by Crucible Knights. Features a great horn.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-commander-niall",
+      "term": "commander niall",
+      "title": "Commander Niall",
+      "description": "A beaten red battle standard is furled around this time-worn halberd.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-commander-o-neil",
+      "term": "commander o'neil",
+      "title": "Commander O'Neil",
+      "description": "A beaten red battle standard is furled around this time-worn halberd.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-elemer-of-the-briar",
+      "term": "elemer of the briar",
+      "title": "Elemer of the Briar",
+      "description": "Greatshield from a foreign land, used by Elemer of the Briar. Attacks with this armament utilize the iron thorns that have been wound around its frame.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-bell-bearing-hunter",
+      "term": "bell bearing hunter",
+      "title": "Bell Bearing Hunter",
+      "description": "Bell bearing of an unfortunate bone peddler who was slain by the Bell Bearing Hunter.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-night-s-cavalry",
+      "term": "night's cavalry",
+      "title": "Night's Cavalry",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-night-s-cavalry-glaive",
+      "term": "night's cavalry (glaive)",
+      "title": "Night's Cavalry (Glaive)",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-night-s-cavalry-flail",
+      "term": "night's cavalry (flail)",
+      "title": "Night's Cavalry (Flail)",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-tree-sentinel",
+      "term": "tree sentinel",
+      "title": "Tree Sentinel",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-loretta-knight-of-the-haligtree",
+      "term": "loretta, knight of the haligtree",
+      "title": "Loretta, Knight of the Haligtree",
+      "description": "Intricately crafted silver war sickle wielded by Loretta, Knight of the Haligtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Carian Royalty"
+    },
+    {
+      "id": "char-royal-knight-loretta",
+      "term": "royal knight loretta",
+      "title": "Royal Knight Loretta",
+      "description": "A straight sword with a wide blade.\nEffective for slashing attacks.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Carian Royalty"
+    },
+    {
+      "id": "char-nox-swordstress",
+      "term": "nox swordstress",
+      "title": "Nox Swordstress",
+      "description": "Crown worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-mimic-tear",
+      "term": "mimic tear",
+      "title": "Mimic Tear",
+      "description": "Light shows the path, but without order",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-stray-mimic-tear",
+      "term": "stray mimic tear",
+      "title": "Stray Mimic Tear",
+      "description": "Summons rotten stray spirit",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-crystalian-staff",
+      "term": "crystalian (staff)",
+      "title": "Crystalian (Staff)",
+      "description": "Summons Crystalian spirit",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-crystalian-spear",
+      "term": "crystalian (spear)",
+      "title": "Crystalian (Spear)",
+      "description": "Summons Crystalian spirit",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-putrid-crystalian-ringblade",
+      "term": "putrid crystalian (ringblade)",
+      "title": "Putrid Crystalian (Ringblade)",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-putrid-crystalian-spear",
+      "term": "putrid crystalian (spear)",
+      "title": "Putrid Crystalian (Spear)",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-putrid-crystalian-staff",
+      "term": "putrid crystalian (staff)",
+      "title": "Putrid Crystalian (Staff)",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-crystalian-ringblade",
+      "term": "crystalian (ringblade)",
+      "title": "Crystalian (Ringblade)",
+      "description": "Summons Crystalian spirit",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-grave-warden-duelist",
+      "term": "grave warden duelist",
+      "title": "Grave Warden Duelist",
+      "description": "Greatscythe comprised of a large blade affixed to a crooked stick. Weapon wielded by the aged grave keepers who tend the forgotten graveyards throughout the Lands Between.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-putrid-grave-warden-duelist",
+      "term": "putrid grave warden duelist",
+      "title": "Putrid Grave Warden Duelist",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-frenzied-duelist",
+      "term": "frenzied duelist",
+      "title": "Frenzied Duelist",
+      "description": "Formless sacred seal bestowed by the maiden of the Three Fingers. Enhances incantations of the frenzied flame.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-misbegotten-warrior",
+      "term": "misbegotten warrior",
+      "title": "Misbegotten Warrior",
+      "description": "Shortbow wielded by Winged Misbegotten. Fine fur clings to it.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-misbegotten-crusader",
+      "term": "misbegotten crusader",
+      "title": "Misbegotten Crusader",
+      "description": "Shortbow wielded by Winged Misbegotten. Fine fur clings to it.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-godskin-apostle",
+      "term": "godskin apostle",
+      "title": "Godskin Apostle",
+      "description": "Elegant piercing sword with a celadon colored blade wielded by Godskin Nobles.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-godskin-noble",
+      "term": "godskin noble",
+      "title": "Godskin Noble",
+      "description": "Elegant piercing sword with a celadon colored blade wielded by Godskin Nobles.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-godskin-duo",
+      "term": "godskin duo",
+      "title": "Godskin Duo",
+      "description": "Elegant piercing sword with a celadon colored blade wielded by Godskin Nobles.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-onyx-lord",
+      "term": "onyx lord",
+      "title": "Onyx Lord",
+      "description": "Greatsword forged from golden-hued meteoric ore.\nThe blade conceals gravity-manipulating magic.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-alabaster-lord",
+      "term": "alabaster lord",
+      "title": "Alabaster Lord",
+      "description": "Greatsword forged from a blue-white meteoric ore.\nThe blade conceals gravity-manipulating magic.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-cemetery-shade",
+      "term": "cemetery shade",
+      "title": "Cemetery Shade",
+      "description": "A curved sword with a blade at both ends wielded by the Cemetery Shades, the insect-ridden grave keepers.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-cleanrot-knight",
+      "term": "cleanrot knight",
+      "title": "Cleanrot Knight",
+      "description": "Piercing sword of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-cleanrot-knight-spear",
+      "term": "cleanrot knight (spear)",
+      "title": "Cleanrot Knight (Spear)",
+      "description": "Piercing sword of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-cleanrot-knight-sickle",
+      "term": "cleanrot knight (sickle)",
+      "title": "Cleanrot Knight (Sickle)",
+      "description": "Piercing sword of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-beastman-of-farum-azula",
+      "term": "beastman of farum azula",
+      "title": "Beastman of Farum Azula",
+      "description": "Curved sword forged of dull iron wielded by the beastmen of Farum Azula.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-beastman-of-farum-azula-greatsword",
+      "term": "beastman of farum azula (greatsword)",
+      "title": "Beastman of Farum Azula (Greatsword)",
+      "description": "Curved sword forged of dull iron wielded by the beastmen of Farum Azula.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-beastman-of-farum-azula-throwing-knife",
+      "term": "beastman of farum azula (throwing knife)",
+      "title": "Beastman of Farum Azula (Throwing Knife)",
+      "description": "Curved sword forged of dull iron wielded by the beastmen of Farum Azula.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-royal-revenant",
+      "term": "royal revenant",
+      "title": "Royal Revenant",
+      "description": "A straight sword with a wide blade.\nEffective for slashing attacks.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-demi-human-chief",
+      "term": "demi-human chief",
+      "title": "Demi-Human Chief",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-demi-human-queen-margot",
+      "term": "demi-human queen margot",
+      "title": "Demi-Human Queen Margot",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-demi-human-queen-gilika",
+      "term": "demi-human queen gilika",
+      "title": "Demi-Human Queen Gilika",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-demi-human-queen-maggie",
+      "term": "demi-human queen maggie",
+      "title": "Demi-Human Queen Maggie",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-erdtree-burial-watchdog",
+      "term": "erdtree burial watchdog",
+      "title": "Erdtree Burial Watchdog",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-erdtree-burial-watchdog-sword",
+      "term": "erdtree burial watchdog (sword)",
+      "title": "Erdtree Burial Watchdog (Sword)",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-erdtree-burial-watchdog-scepter",
+      "term": "erdtree burial watchdog (scepter)",
+      "title": "Erdtree Burial Watchdog (Scepter)",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-bloodhound-knight",
+      "term": "bloodhound knight",
+      "title": "Bloodhound Knight",
+      "description": "Curved greatsword with a gently undulating blade wielded by Bloodhound Knights.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-bloodhound-knight-darriwil",
+      "term": "bloodhound knight darriwil",
+      "title": "Bloodhound Knight Darriwil",
+      "description": "Curved greatsword with a gently undulating blade wielded by Bloodhound Knights.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-soldier-of-godrick",
+      "term": "soldier of godrick",
+      "title": "Soldier of Godrick",
+      "description": "A straight sword with a wide blade.\nEffective for slashing attacks.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-abductor-virgin-swinging-sickle",
+      "term": "abductor virgin (swinging sickle)",
+      "title": "Abductor Virgin (Swinging Sickle)",
+      "description": "You know, a holy personage was once abducted from these lands.\n\nThus I am here in search of clues that might unravel the mystery.\n\nThe abductor's bloody footprints are said to have disappeared in the Forest of Ancient Bowers.\n\nHm? That's quite a face you're pulling...\n\nNeed I remind you? Though I am but a humble man of the cloth,\n\neach of us has our secrets, my compeer.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-abductor-virgin-wheel",
+      "term": "abductor virgin (wheel)",
+      "title": "Abductor Virgin (Wheel)",
+      "description": "You know, a holy personage was once abducted from these lands.\n\nThus I am here in search of clues that might unravel the mystery.\n\nThe abductor's bloody footprints are said to have disappeared in the Forest of Ancient Bowers.\n\nHm? That's quite a face you're pulling...\n\nNeed I remind you? Though I am but a humble man of the cloth,\n\neach of us has our secrets, my compeer.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Constructs"
+    },
+    {
+      "id": "char-miranda-the-blighted-bloom",
+      "term": "miranda the blighted bloom",
+      "title": "Miranda the Blighted Bloom",
+      "description": "Uses FP to call down a deluge of light",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-miranda-blossom",
+      "term": "miranda blossom",
+      "title": "Miranda Blossom",
+      "description": "Uses FP to call down a deluge of light",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-flying-dragon-agheel",
+      "term": "flying dragon agheel",
+      "title": "Flying Dragon Agheel",
+      "description": "Very good.\n\nA wise choice, indeed.\n\nYou passed my little test with flying colours.\n\nI was merely gauging your loyalty to Lady Ranni.\n\nWell done, I'm very proud of you.\n\nLet's both do our utmost in service of our Lady.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-flying-dragon-greyll",
+      "term": "flying dragon greyll",
+      "title": "Flying Dragon Greyll",
+      "description": "Very good.\n\nA wise choice, indeed.\n\nYou passed my little test with flying colours.\n\nI was merely gauging your loyalty to Lady Ranni.\n\nWell done, I'm very proud of you.\n\nLet's both do our utmost in service of our Lady.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-glintstone-dragon-smarag",
+      "term": "glintstone dragon smarag",
+      "title": "Glintstone Dragon Smarag",
+      "description": "Ritual blade once presented to Leyndell by the Academy of Raya Lucaria to celebrate their newfound peace. Though the weapon is embedded with precious glintstones and features Erdtree ornamentation, the undulating blade is symbolic of an ancient ritual.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-glintstone-dragon-adula",
+      "term": "glintstone dragon adula",
+      "title": "Glintstone Dragon Adula",
+      "description": "Ritual blade once presented to Leyndell by the Academy of Raya Lucaria to celebrate their newfound peace. Though the weapon is embedded with precious glintstones and features Erdtree ornamentation, the undulating blade is symbolic of an ancient ritual.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-borealis-the-freezing-fog",
+      "term": "borealis the freezing fog",
+      "title": "Borealis the Freezing Fog",
+      "description": "Spews icy breath of Borealis from above",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-lichdragon-fortissax",
+      "term": "lichdragon fortissax",
+      "title": "Lichdragon Fortissax",
+      "description": "Remembrance of Lichdragon Fortissax, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-ancient-dragon-lansseax",
+      "term": "ancient dragon lansseax",
+      "title": "Ancient Dragon Lansseax",
+      "description": "One of the treasures of the ruined forges.\nGreatsword of ancient meteoric ore, ending in a sharp point.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-dragonlord-placidusax",
+      "term": "dragonlord placidusax",
+      "title": "Dragonlord Placidusax",
+      "description": "Remembrance of Dragonlord Placidusax, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-stonedigger-troll",
+      "term": "stonedigger troll",
+      "title": "Stonedigger Troll",
+      "description": "Note sold by a nomadic merchant imparting knowledge in brief.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-astel-naturalborn-of-the-void",
+      "term": "astel, naturalborn of the void",
+      "title": "Astel, Naturalborn of the Void",
+      "description": "Sword fashioned from a delicate wing, suffused with the magic of the stars.\nStrong attack unleashes a wave of enchanted light.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-astel-stars-of-darkness",
+      "term": "astel, stars of darkness",
+      "title": "Astel, Stars of Darkness",
+      "description": "Sword fashioned from a delicate wing, suffused with the magic of the stars.\nStrong attack unleashes a wave of enchanted light.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-putrid-tree-spirit",
+      "term": "putrid tree spirit",
+      "title": "Putrid Tree Spirit",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Creatures"
+    },
+    {
+      "id": "char-guardian-golem",
+      "term": "guardian golem",
+      "title": "Guardian Golem",
+      "description": "Weapon comprising a long handle and broad blade sharpened from the hard wood of old trees.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Soldiers & Knights"
+    },
+    {
+      "id": "char-ancestor-spirit",
+      "term": "ancestor spirit",
+      "title": "Ancestor Spirit",
+      "description": "Remembrance of the Regal Ancestor Spirit, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-regal-ancestor-spirit",
+      "term": "regal ancestor spirit",
+      "title": "Regal Ancestor Spirit",
+      "description": "Treasured sword of Eochaid, a lesser, long-vanished domain.\nThe copper coloration is not to be confused for rust, but is a conduit for its wielder to move it by their will alone.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-fallingstar-beast",
+      "term": "fallingstar beast",
+      "title": "Fallingstar Beast",
+      "description": "Part of a Fallingstar Beast's jaw, hard and shining black, fashioned into a weapon.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-grafted-scion",
+      "term": "grafted scion",
+      "title": "Grafted Scion",
+      "description": "The storied sword of Castle Morne. A revenger's weapon, it is burdened with oceans of anger and regret.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-rykard-lord-of-blasphemy",
+      "term": "rykard, lord of blasphemy",
+      "title": "Rykard, Lord of Blasphemy",
+      "description": "Restores HP upon attacking enemies",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-godfrey-first-elden-lord",
+      "term": "godfrey, first elden lord",
+      "title": "Godfrey, First Elden Lord",
+      "description": "Weapon of Godfrey, Elden Lord. It was broken in a battle fought as leader of the Tarnished during the Long March. This weapon is symbolic of Godfrey's vow to conduct himself as a lord, later becoming an emblem of the golden lineage. In the days of the past, a crown was warranted with strength.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Gods & Empyreans"
+    },
+    {
+      "id": "char-hoarah-loux-warrior",
+      "term": "hoarah loux, warrior",
+      "title": "Hoarah Loux, Warrior",
+      "description": "Remembrance of the warrior Hoarah Loux, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Gods & Empyreans"
+    },
+    {
+      "id": "char-starscourge-radahn",
+      "term": "starscourge radahn",
+      "title": "Starscourge Radahn",
+      "description": "Curved greatswords of black steel wielded by General Radahn.\nA pair of weapons decorated with a lion mane motif.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-godrick-the-grafted",
+      "term": "godrick the grafted",
+      "title": "Godrick the Grafted",
+      "description": "Greataxe wielded by Godrick the Grafted. This golden battleaxe is emblazoned with the figure of a beast, representing the strength of Godfrey, First Elden Lord and patriarch of the golden lineage.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-fire-giant",
+      "term": "fire giant",
+      "title": "Fire Giant",
+      "description": "Remembrance of Fire Giant, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-valiant-gargoyle",
+      "term": "valiant gargoyle",
+      "title": "Valiant Gargoyle",
+      "description": "Bronze greatsword wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-valiant-gargoyle-twinblade",
+      "term": "valiant gargoyle (twinblade)",
+      "title": "Valiant Gargoyle (Twinblade)",
+      "description": "Bronze greatsword wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-black-blade-kindred",
+      "term": "black blade kindred",
+      "title": "Black Blade Kindred",
+      "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    },
+    {
+      "id": "char-mohg-lord-of-blood",
+      "term": "mohg, lord of blood",
+      "title": "Mohg, Lord of Blood",
+      "description": "Trident of Mohg, Lord of Blood. A sacred spear that will come to symbolize his dynasty.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Demigods"
+    },
+    {
+      "id": "char-erdtree-avatar",
+      "term": "erdtree avatar",
+      "title": "Erdtree Avatar",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-putrid-avatar",
+      "term": "putrid avatar",
+      "title": "Putrid Avatar",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-omenkiller",
+      "term": "omenkiller",
+      "title": "Omenkiller",
+      "description": "The blade of this huge, loathsome cleaver comprises a row of amputated Omen horns. Weapon of slaughter wielded by Omenkillers.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-magma-wyrm-makar",
+      "term": "magma wyrm makar",
+      "title": "Magma Wyrm Makar",
+      "description": "Curved sword with a blade fashioned from the lava of Mt. Gelmir.\nAn armament of the man-serpents, impossible for a human to have made.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-magma-wyrm",
+      "term": "magma wyrm",
+      "title": "Magma Wyrm",
+      "description": "Curved sword with a blade fashioned from the lava of Mt. Gelmir.\nAn armament of the man-serpents, impossible for a human to have made.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-great-wyrm-theodorix",
+      "term": "great wyrm theodorix",
+      "title": "Great Wyrm Theodorix",
+      "description": "Large knife with a broad, curved blade.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-tibia-mariner",
+      "term": "tibia mariner",
+      "title": "Tibia Mariner",
+      "description": "Summons Those Who Live in Death",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-death-rite-bird",
+      "term": "death rite bird",
+      "title": "Death Rite Bird",
+      "description": "Barbed rod carried by Deathbirds.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-deathbird",
+      "term": "deathbird",
+      "title": "Deathbird",
+      "description": "Stone armor with a tinge of green. One of a set of armor pieces cast in the image of the Gravebird.\nFeaturing a cape of black Deathbird feathers, it enhances jumping attacks.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-ancient-hero-of-zamor",
+      "term": "ancient hero of zamor",
+      "title": "Ancient Hero of Zamor",
+      "description": "One of the treasures of the ruined forges.\nGreatsword of ancient meteoric ore, ending in a sharp point.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Other NPCs"
+    },
+    {
+      "id": "char-tree-sentinel",
+      "term": "tree sentinel",
+      "title": "Tree Sentinel",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-death-rite-bird",
+      "term": "death rite bird",
+      "title": "Death Rite Bird",
+      "description": "Barbed rod carried by Deathbirds.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Field Bosses"
+    },
+    {
+      "id": "char-fallingstar-beast",
+      "term": "fallingstar beast",
+      "title": "Fallingstar Beast",
+      "description": "Part of a Fallingstar Beast's jaw, hard and shining black, fashioned into a weapon.",
+      "section": "Elden Ring",
+      "category": "Characters",
+      "subcategory": "Dungeon Bosses"
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Equipment",
+  "cards": [
+    {
+      "id": "crimson-amber-medallion-3",
+      "term": "crimson amber medallion +3",
+      "title": "Crimson Amber Medallion +3",
+      "description": "Boosts maximum HP by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "cerulean-amber-medallion-3",
+      "term": "cerulean amber medallion +3",
+      "title": "Cerulean Amber Medallion +3",
+      "description": "Boosts maximum FP by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "viridian-amber-medallion-3",
+      "term": "viridian amber medallion +3",
+      "title": "Viridian Amber Medallion +3",
+      "description": "Boosts maximum stamina by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "two-headed-turtle-talisman",
+      "term": "two-headed turtle talisman",
+      "title": "Two-Headed Turtle Talisman",
+      "description": "Greatly raises stamina recovery speed",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "stalwart-horn-charm-2",
+      "term": "stalwart horn charm +2",
+      "title": "Stalwart Horn Charm +2",
+      "description": "Vastly raises robustness",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "immunizing-horn-charm-2",
+      "term": "immunizing horn charm +2",
+      "title": "Immunizing Horn Charm +2",
+      "description": "Vastly raises immunity",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "clarifying-horn-charm-2",
+      "term": "clarifying horn charm +2",
+      "title": "Clarifying Horn Charm +2",
+      "description": "Vastly raises focus",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "mottled-necklace-2",
+      "term": "mottled necklace +2",
+      "title": "Mottled Necklace +2",
+      "description": "Vastly raises robustness, immunity, and focus",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "spelldrake-talisman-3",
+      "term": "spelldrake talisman +3",
+      "title": "Spelldrake Talisman +3",
+      "description": "Boosts magic damage negation by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "flamedrake-talisman-3",
+      "term": "flamedrake talisman +3",
+      "title": "Flamedrake Talisman +3",
+      "description": "Boosts fire damage negation by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "boltdrake-talisman-3",
+      "term": "boltdrake talisman +3",
+      "title": "Boltdrake Talisman +3",
+      "description": "Boosts lightning damage negation by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "golden-braid",
+      "term": "golden braid",
+      "title": "Golden Braid",
+      "description": "Boosts holy damage negation by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "pearldrake-talisman-3",
+      "term": "pearldrake talisman +3",
+      "title": "Pearldrake Talisman +3",
+      "description": "Boosts non-physical damage negation by the utmost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "crimson-seed-talisman-1",
+      "term": "crimson seed talisman +1",
+      "title": "Crimson Seed Talisman +1",
+      "description": "Greatly boosts HP restoration from Flask of Crimson Tears",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "cerulean-seed-talisman-1",
+      "term": "cerulean seed talisman +1",
+      "title": "Cerulean Seed Talisman +1",
+      "description": "Greatly boosts FP restoration from Flask of Cerulean Tears",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "blessed-blue-dew-talisman",
+      "term": "blessed blue dew talisman",
+      "title": "Blessed Blue Dew Talisman",
+      "description": "Slowly restores FP",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "fine-crucible-feather-talisman",
+      "term": "fine crucible feather talisman",
+      "title": "Fine Crucible Feather Talisman",
+      "description": "Improves backsteps but increases damage taken",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "outer-god-heirloom",
+      "term": "outer god heirloom",
+      "title": "Outer God Heirloom",
+      "description": "Raises arcane",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "shattered-stone-talisman",
+      "term": "shattered stone talisman",
+      "title": "Shattered Stone Talisman",
+      "description": "Raises potency of kicking and stomping skills",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "two-handed-sword-talisman",
+      "term": "two-handed sword talisman",
+      "title": "Two-Handed Sword Talisman",
+      "description": "Enhances attacks with two-handed weapons",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "crusade-insignia",
+      "term": "crusade insignia",
+      "title": "Crusade Insignia",
+      "description": "Raises attack power after defeating an enemy",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "aged-one-s-exultation",
+      "term": "aged one's exultation",
+      "title": "Aged One's Exultation",
+      "description": "Madness in the vicinity increases attack power",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "arrow-s-soaring-sting-talisman",
+      "term": "arrow's soaring sting talisman",
+      "title": "Arrow's Soaring Sting Talisman",
+      "description": "Increases the effective range of bows and raises attack power of arrows and bolts",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "pearl-shield-talisman",
+      "term": "pearl shield talisman",
+      "title": "Pearl Shield Talisman",
+      "description": "Boosts all non-physical damage negation while guarding",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "dried-bouquet",
+      "term": "dried bouquet",
+      "title": "Dried Bouquet",
+      "description": "Raises attack power when summoned spirit dies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "smithing-talisman",
+      "term": "smithing talisman",
+      "title": "Smithing Talisman",
+      "description": "Enhances weapon-throwing attacks",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "ailment-talisman",
+      "term": "ailment talisman",
+      "title": "Ailment Talisman",
+      "description": "Raises resistance to the last ailment suffered",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "retaliatory-crossed-tree",
+      "term": "retaliatory crossed-tree",
+      "title": "Retaliatory Crossed-Tree",
+      "description": "Enhances attacks executed after rolling or backstepping",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "lacerating-crossed-tree",
+      "term": "lacerating crossed-tree",
+      "title": "Lacerating Crossed-Tree",
+      "description": "Enhances dash attacks",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "sharpshot-talisman",
+      "term": "sharpshot talisman",
+      "title": "Sharpshot Talisman",
+      "description": "Boosts attack power of precision-aimed shots",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "st-trina-s-smile",
+      "term": "st. trina's smile",
+      "title": "St. Trina's Smile",
+      "description": "Sleep in the vicinity increases attack power",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "talisman-of-the-dread",
+      "term": "talisman of the dread",
+      "title": "Talisman of the Dread",
+      "description": "Raises potency of magma",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "enraged-divine-beast",
+      "term": "enraged divine beast",
+      "title": "Enraged Divine Beast",
+      "description": "Raises potency of storms",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "beloved-stardust",
+      "term": "beloved stardust",
+      "title": "Beloved Stardust",
+      "description": "Shortens casting speed for sorcery and incantations by the utmost, but increases damage taken",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "talisman-of-lord-s-bestowal",
+      "term": "talisman of lord's bestowal",
+      "title": "Talisman of Lord's Bestowal",
+      "description": "Increases poise after using a flask of tears",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "verdigris-discus",
+      "term": "verdigris discus",
+      "title": "Verdigris Discus",
+      "description": "Raises defense with higher equipment load",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-cameo",
+      "term": "rellana's cameo",
+      "title": "Rellana's Cameo",
+      "description": "Enhances attacks executed after maintaining the same stance for a while",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "blade-of-mercy",
+      "term": "blade of mercy",
+      "title": "Blade of Mercy",
+      "description": "Raises attack power after each critical hit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "talisman-of-all-crucibles",
+      "term": "talisman of all crucibles",
+      "title": "Talisman of All Crucibles",
+      "description": "Grants effects of all crucible talismans",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-wild-boar-rider",
+      "term": "remembrance of the wild boar rider",
+      "title": "Remembrance of the Wild Boar Rider",
+      "description": "Take the power of its namesake via Finger Reader",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-impaler",
+      "term": "remembrance of the impaler",
+      "title": "Remembrance of the Impaler",
+      "description": "Remembrance of Messmer the Impaler, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-shadow-sunflower",
+      "term": "remembrance of the shadow sunflower",
+      "title": "Remembrance of the Shadow Sunflower",
+      "description": "Remembrance of the Scadutree Avatar, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-twin-moon-knight",
+      "term": "remembrance of the twin moon knight",
+      "title": "Remembrance of the Twin Moon Knight",
+      "description": "Remembrance of Rellana, the Twin Moon Knight, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-saint-of-the-bud",
+      "term": "remembrance of the saint of the bud",
+      "title": "Remembrance of the Saint of the Bud",
+      "description": "Remembrance of Romina, Saint of the Bud, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-dancing-lion",
+      "term": "remembrance of the dancing lion",
+      "title": "Remembrance of the Dancing Lion",
+      "description": "Remembrance of the Dancing Lion, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-a-god-and-a-lord",
+      "term": "remembrance of a god and a lord",
+      "title": "Remembrance of a God and a Lord",
+      "description": "Remembrance of Radahn, consort of Miquella, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-lord-of-frenzied-flame",
+      "term": "remembrance of the lord of frenzied flame",
+      "title": "Remembrance of the Lord of Frenzied Flame",
+      "description": "Remembrance of Midra, Lord of Frenzied Flame, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-the-mother-of-fingers",
+      "term": "remembrance of the mother of fingers",
+      "title": "Remembrance of the Mother of Fingers",
+      "description": "Remembrance of Metyr, the Mother of Fingers, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "remembrance-of-putrescence",
+      "term": "remembrance of putrescence",
+      "title": "Remembrance of Putrescence",
+      "description": "Remembrance of the Putrescent Knight, hewn into the Scadutree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "dlc"
+    },
+    {
+      "id": "miquella-s-great-rune",
+      "term": "miquella's great rune",
+      "title": "Miquella's Great Rune",
+      "description": "Retains naught but the power to resist charms",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "glovewort-crystal-tear",
+      "term": "glovewort crystal tear",
+      "title": "Glovewort Crystal Tear",
+      "description": "Enhances attacks of spirits in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "dlc"
+    }
+  ]
+}

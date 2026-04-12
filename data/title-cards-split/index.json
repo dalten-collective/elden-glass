@@ -1,0 +1,130 @@
+{
+  "sections": [
+    {
+      "name": "Elden Ring",
+      "categories": [
+        {
+          "name": "Items",
+          "file": "elden-ring--items.json",
+          "count": 537
+        },
+        {
+          "name": "Armor",
+          "file": "elden-ring--armor.json",
+          "count": 525
+        },
+        {
+          "name": "Weapons",
+          "file": "elden-ring--weapons.json",
+          "count": 463
+        },
+        {
+          "name": "Locations",
+          "file": "elden-ring--locations.json",
+          "count": 384
+        },
+        {
+          "name": "Characters",
+          "file": "elden-ring--characters.json",
+          "count": 199
+        },
+        {
+          "name": "Magic & Ashes",
+          "file": "elden-ring--magic-ashes.json",
+          "count": 188
+        },
+        {
+          "name": "Equipment",
+          "file": "elden-ring--equipment.json",
+          "count": 156
+        },
+        {
+          "name": "Consumables",
+          "file": "elden-ring--consumables.json",
+          "count": 128
+        },
+        {
+          "name": "Miscellaneous",
+          "file": "elden-ring--miscellaneous.json",
+          "count": 58
+        }
+      ],
+      "totalCards": 2638
+    },
+    {
+      "name": "Elden Ring - Shadow of the Erdtree",
+      "categories": [
+        {
+          "name": "Locations",
+          "file": "elden-ring-shadow-of-the-erdtree--locations.json",
+          "count": 159
+        },
+        {
+          "name": "Items",
+          "file": "elden-ring-shadow-of-the-erdtree--items.json",
+          "count": 154
+        },
+        {
+          "name": "Armor",
+          "file": "elden-ring-shadow-of-the-erdtree--armor.json",
+          "count": 145
+        },
+        {
+          "name": "Weapons",
+          "file": "elden-ring-shadow-of-the-erdtree--weapons.json",
+          "count": 107
+        },
+        {
+          "name": "Consumables",
+          "file": "elden-ring-shadow-of-the-erdtree--consumables.json",
+          "count": 76
+        },
+        {
+          "name": "Magic & Ashes",
+          "file": "elden-ring-shadow-of-the-erdtree--magic-ashes.json",
+          "count": 59
+        },
+        {
+          "name": "Characters",
+          "file": "elden-ring-shadow-of-the-erdtree--characters.json",
+          "count": 54
+        },
+        {
+          "name": "Equipment",
+          "file": "elden-ring-shadow-of-the-erdtree--equipment.json",
+          "count": 51
+        },
+        {
+          "name": "Miscellaneous",
+          "file": "elden-ring-shadow-of-the-erdtree--miscellaneous.json",
+          "count": 21
+        }
+      ],
+      "totalCards": 826
+    },
+    {
+      "name": "Marcel Duchamp",
+      "categories": [
+        {
+          "name": "The Large Glass",
+          "file": "marcel-duchamp--the-large-glass.json",
+          "count": 48
+        }
+      ],
+      "totalCards": 48
+    },
+    {
+      "name": "References",
+      "categories": [
+        {
+          "name": "Art & Inspiration",
+          "file": "references--art-inspiration.json",
+          "count": 1
+        }
+      ],
+      "totalCards": 1
+    }
+  ],
+  "totalCards": 3513,
+  "generatedAt": "2025-11-30T10:18:23.046Z"
+}

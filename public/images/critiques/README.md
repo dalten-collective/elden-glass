@@ -1,0 +1,1 @@
+Place critique imagery here. Files sync to public/images/critiques at build time.

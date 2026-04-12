@@ -1,0 +1,1076 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Weapons",
+  "cards": [
+    {
+      "id": "main-gauche",
+      "term": "main-gauche",
+      "title": "Main-gauche",
+      "description": "Dagger with a large hand guard.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-s-shortsword",
+      "term": "fire knight's shortsword",
+      "title": "Fire Knight's Shortsword",
+      "description": "Shortsword used by the Fire Knights.\nA slender blade that undulates like fire.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "velvet-sword-of-st-trina",
+      "term": "velvet sword of st. trina",
+      "title": "Velvet Sword of St. Trina",
+      "description": "Silver sword of St. Trina, now stained the color of velvet.\nInflicts eternal sleep.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "star-lined-sword",
+      "term": "star-lined sword",
+      "title": "Star-Lined Sword",
+      "description": "Sword encrusted with a line of stars fashioned from small pieces of crude glintstone.\nWeapon of the demi-human swordsmen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "carian-sorcery-sword",
+      "term": "carian sorcery sword",
+      "title": "Carian Sorcery Sword",
+      "description": "One of the Carian royal family's glintstone swords.\nA smaller piercing sword with a slender blade.\nFormerly used by the Carian knights of old before the full refinement of their sorcerous combat techniques, this armament functions as a catalyst for glintstone sorcery when executing strong attacks.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "stone-sheathed-sword",
+      "term": "stone-sheathed sword",
+      "title": "Stone-Sheathed Sword",
+      "description": "A sword that none can pull from its scabbard of cracked stone.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "sword-of-light",
+      "term": "sword of light",
+      "title": "Sword of Light",
+      "description": "Sword of light, pulled from its stone scabbard at an altar.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "sword-of-darkness",
+      "term": "sword of darkness",
+      "title": "Sword of Darkness",
+      "description": "Sword of darkness, pulled from its stone scabbard at an altar.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "sword-lance",
+      "term": "sword lance",
+      "title": "Sword Lance",
+      "description": "Weapon once wielded by Commander Gaius.\nA combination of greatsword and lance.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "greatsword-of-damnation",
+      "term": "greatsword of damnation",
+      "title": "Greatsword of Damnation",
+      "description": "Golden greatsword that once pierced the body of Midra, master of the manse. Used by the hornsent in the execution of a damnation like no other.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "lizard-greatsword",
+      "term": "lizard greatsword",
+      "title": "Lizard Greatsword",
+      "description": "A peculiar weapon carried by imps.\nGreatsword smithed in the shape of a fork-tongued lizard.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "greatsword-of-solitude",
+      "term": "greatsword of solitude",
+      "title": "Greatsword of Solitude",
+      "description": "Steel greatsword wielded by the Knights of the Solitary Gaol.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-meteoric-ore-greatsword",
+      "term": "ancient meteoric ore greatsword",
+      "title": "Ancient Meteoric Ore Greatsword",
+      "description": "One of the treasures of the ruined forges.\nGreatsword of ancient meteoric ore, ending in a sharp point.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-s-greatsword",
+      "term": "fire knight's greatsword",
+      "title": "Fire Knight's Greatsword",
+      "description": "Greatsword of the Fire Knights.\nA long, slender blade that undulates like fire.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "greatsword-of-radahn-lord",
+      "term": "greatsword of radahn (lord)",
+      "title": "Greatsword of Radahn (Lord)",
+      "description": "Greatswords of black steel wielded by Radahn in his youth.\nA pair of weapons decorated with a lion mane motif.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "moonrithyll-s-knight-sword",
+      "term": "moonrithyll's knight sword",
+      "title": "Moonrithyll's Knight Sword",
+      "description": "Greatsword embedded with a blue glintstone.\nThe favored weapon of the steadfast Carian knight, Moonrithyll.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "queelign-s-greatsword",
+      "term": "queelign's greatsword",
+      "title": "Queelign's Greatsword",
+      "description": "Greatsword of the Fire Knight Queelign.\nA weighty piercing sword with a blade that undulates like fire.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "spirit-sword",
+      "term": "spirit sword",
+      "title": "Spirit Sword",
+      "description": "Sharp blade sculpted into a twisted shape.\nA sword that has seen many years of use in the gravesite.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "falx",
+      "term": "falx",
+      "title": "Falx",
+      "description": "Curved swords with long, sickle-like blades.\nA pair of weapons made to be wielded in both hands.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "dlc"
+    },
+    {
+      "id": "dancing-blade-of-ranah",
+      "term": "dancing blade of ranah",
+      "title": "Dancing Blade of Ranah",
+      "description": "Decorative swords ablaze with impassioned red.\nA pair of weapons made to be wielded in both hands.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-s-sword",
+      "term": "horned warrior's sword",
+      "title": "Horned Warrior's Sword",
+      "description": "Curved sword of the horned warriors, keepers of the tower.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "dlc"
+    },
+    {
+      "id": "putrescence-cleaver",
+      "term": "putrescence cleaver",
+      "title": "Putrescence Cleaver",
+      "description": "Weapon wielded by the Putrescent Knight.\nA great cleaver of hardened putrescence affixed to an arch fashioned from human bones.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "freyja-s-greatsword",
+      "term": "freyja's greatsword",
+      "title": "Freyja's Greatsword",
+      "description": "Weapon of Freyja, a Redmane.\nGreatsword decorated with a mane, much like the weapons used by her liege.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-s-greatsword",
+      "term": "horned warrior's greatsword",
+      "title": "Horned Warrior's Greatsword",
+      "description": "Curved greatsword of the horned warriors, keepers of the tower.\nA heavy weapon made to bring the deft strength of the warriors to bear.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Curved Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "sword-of-night",
+      "term": "sword of night",
+      "title": "Sword of Night",
+      "description": "Sword of an all-consuming, bottomless black that devours even the light that shines upon it.\nWielded by Jolán, Swordhand of Night.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "euporia",
+      "term": "euporia",
+      "title": "Euporia",
+      "description": "Twinblade symbolizing abundance.\nThe secret treasure of the tower.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "dlc"
+    },
+    {
+      "id": "black-steel-twinblade",
+      "term": "black steel twinblade",
+      "title": "Black Steel Twinblade",
+      "description": "Weapon of the Black Knights, servants of Messmer the Impaler. Twinblade of black steel with decorative embellishments in gold.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "dlc"
+    },
+    {
+      "id": "flowerstone-gavel",
+      "term": "flowerstone gavel",
+      "title": "Flowerstone Gavel",
+      "description": "Weapon of the Dragon Communion priestess.\nA dragonstone hammer resembling an ancient flower.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "dlc"
+    },
+    {
+      "id": "smithscript-greathammer",
+      "term": "smithscript greathammer",
+      "title": "Smithscript Greathammer",
+      "description": "Greathammer engraved with a smithscript.\nA throwing weapon created through the smithing arts.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Hammers",
+      "source": "dlc"
+    },
+    {
+      "id": "anvil-hammer",
+      "term": "anvil hammer",
+      "title": "Anvil Hammer",
+      "description": "One of the treasures of the ruined forges.\nA tremendous hammer that incorporates as its head the red-hot anvil of the forge.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "dlc"
+    },
+    {
+      "id": "black-steel-greathammer",
+      "term": "black steel greathammer",
+      "title": "Black Steel Greathammer",
+      "description": "Weapon of the Black Knights, servants of Messmer the Impaler. Greathammer of black steel with decorative embellishments in gold.\nBlessed with an Erdtree incantation. Further holy imbuement will amplify the effect and greatly increase the armament's power. Guard Counters cause a burst of power.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Hammers",
+      "source": "dlc"
+    },
+    {
+      "id": "bloodfiend-s-arm",
+      "term": "bloodfiend's arm",
+      "title": "Bloodfiend's Arm",
+      "description": "Weapon used by the bloodfiends.\nAn arm pulled from the corpse of one of their kin, and wielded as a makeshift weapon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "serpent-flail",
+      "term": "serpent flail",
+      "title": "Serpent Flail",
+      "description": "A flail with coiled snakes for bludgeoning heads.\nFire roars within the snakes' bodies, inflicting horrible burns.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Flails",
+      "source": "dlc"
+    },
+    {
+      "id": "smithscript-axe",
+      "term": "smithscript axe",
+      "title": "Smithscript Axe",
+      "description": "Axe engraved with a smithscript.\nA throwing weapon created through the smithing arts.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "dlc"
+    },
+    {
+      "id": "death-knight-s-twin-axes",
+      "term": "death knight's twin axes",
+      "title": "Death Knight's Twin Axes",
+      "description": "Golden war axes of the Death Knight.\nA pair of weapons made to be wielded in both hands.\nCrackles with lightning, the power of the capital's ancient dragon cult.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-s-axe",
+      "term": "messmer soldier's axe",
+      "title": "Messmer Soldier's Axe",
+      "description": "Weapon used by the soldiers who serve Messmer the Impaler.\nA steel axe, worn from use.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-s-heavy-axe",
+      "term": "messmer soldier's heavy axe",
+      "title": "Messmer Soldier's Heavy Axe",
+      "description": "Weapon used by the soldiers who serve Messmer the Impaler.\nPaired axes of steel, worn from use.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "dlc"
+    },
+    {
+      "id": "forked-tongue-hatchet",
+      "term": "forked-tongue hatchet",
+      "title": "Forked-Tongue Hatchet",
+      "description": "A peculiar weapon wielded by imps.\nHatchet smithed in the shape of a fork-tongued dragon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "death-knight-s-longhaft-axe",
+      "term": "death knight's longhaft axe",
+      "title": "Death Knight's Longhaft Axe",
+      "description": "A long-hafted golden axe wielded by the Death Knight.\nBears a representation of a decayed golden ring.\nCrackles with lightning, the power of the capital's ancient dragon cult.\nThe knight, once the personal guard of Godwyn, was also the protector of the Prince of Death's cadaver surrogate.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "dlc"
+    },
+    {
+      "id": "bonny-butchering-knife",
+      "term": "bonny butchering knife",
+      "title": "Bonny Butchering Knife",
+      "description": "Weapon of the greater potentates of Bonny Village.\nAn outsize butcher's cleaver used to dismember human bodies in the making of the great jars stored in the gaols.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "dlc"
+    },
+    {
+      "id": "smithscript-spear",
+      "term": "smithscript spear",
+      "title": "Smithscript Spear",
+      "description": "Spear engraved with a smithscript.\nA throwing weapon created through the smithing arts.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "swift-spear",
+      "term": "swift spear",
+      "title": "Swift Spear",
+      "description": "A metal-bodied spear of extremely lightweight make, being the result of a sophisticated molding technique.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "bloodfiend-s-fork",
+      "term": "bloodfiend's fork",
+      "title": "Bloodfiend's Fork",
+      "description": "Weapon used by the bloodfiends.\nThree tines of carved bone spear the victim to provoke blood loss.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "bloodfiend-s-sacred-spear",
+      "term": "bloodfiend's sacred spear",
+      "title": "Bloodfiend's Sacred Spear",
+      "description": "Greatspear of the bloodfiend hexers.\nOne of the most significant implements used in their blood rituals.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "spear-of-the-impaler",
+      "term": "spear of the impaler",
+      "title": "Spear of the Impaler",
+      "description": "Weapon of Messmer the Impaler.\nA greatspear with a warped blade in the shape of undulating flame.\nRemade by the forging arts of the realm of shadow, this weapon can be thrown by executing a strong attack, dashing strong attack, or mounted strong attack. Charge the attack to produce flame on impact.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-s-spear",
+      "term": "messmer soldier's spear",
+      "title": "Messmer Soldier's Spear",
+      "description": "Weapon used by the soldiers who serve Messmer the Impaler.\nA greatspear with a steel blade worn from use.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "barbed-staff-spear",
+      "term": "barbed staff-spear",
+      "title": "Barbed Staff-Spear",
+      "description": "Greatstaff of Jori, elder inquisitor.\nThe tip bristles with golden barbs symbolic of the inquisition's torture, allowing one to wield the staff as a greatspear.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Spears",
+      "source": "dlc"
+    },
+    {
+      "id": "spirit-glaive",
+      "term": "spirit glaive",
+      "title": "Spirit Glaive",
+      "description": "Sharp blade sculpted into a twisted shape.\nA glaive that has seen many years of use in the gravesite.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "dlc"
+    },
+    {
+      "id": "poleblade-of-the-bud",
+      "term": "poleblade of the bud",
+      "title": "Poleblade of the Bud",
+      "description": "Weapon of Romina, Saint of the Bud.\nA scarlet glaive with a dangling bud-like blade.\nAttacks cause buildup of rot.\nOnce, in the crumbling, burning church, Romina held the bud in speechless silence.\nThat bud would become her blade.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "dlc"
+    },
+    {
+      "id": "obsidian-lamina",
+      "term": "obsidian lamina",
+      "title": "Obsidian Lamina",
+      "description": "Signature weapon of the Pureblood Knight Ansbach. A viciously keen and slender scythe made for combat.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Reapers",
+      "source": "dlc"
+    },
+    {
+      "id": "tooth-whip",
+      "term": "tooth whip",
+      "title": "Tooth Whip",
+      "description": "Whip bestrewn with rotting, misshapen teeth. Filthy and seething with disease, the teeth are embedded in the whip and dose the victim with deadly poison upon each strike.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-hidden-needle",
+      "term": "thiollier's hidden needle",
+      "title": "Thiollier's Hidden Needle",
+      "description": "Concealed weapon used by Thiollier, of a design generally favored by poison-wielders for dark and subtle purposes.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "pata",
+      "term": "pata",
+      "title": "Pata",
+      "description": "A weapon comprised of a linear, double-sided blade attached to a substantial guard.\nWielded by the Oathseeker Knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "poisoned-hand",
+      "term": "poisoned hand",
+      "title": "Poisoned Hand",
+      "description": "A glove stitched together from the flayed skin of the victims of a butcherous bloodbath. Afflicts target with deadly poison. Raises attack power when poisoning occurs in the vicinity.\nForged of an unyielding, black impulse toward revenge fostered in those who have had everything burned or stolen from them, these are the weapons of the utterly downtrodden.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "madding-hand",
+      "term": "madding hand",
+      "title": "Madding Hand",
+      "description": "A glove stitched together from the flayed skin of the victims of a butcherous bloodbath. Afflicts target with madness. Raises attack power when madness is triggered in the vicinity.\nForged of an unyielding, black impulse toward revenge fostered in those who were hunted down as heretics by their own brethren, these are the weapons of the utterly downtrodden.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "golem-fist",
+      "term": "golem fist",
+      "title": "Golem Fist",
+      "description": "A giant fist of fractured rock. Taken from the body of a golem of the ruined forges.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Fists",
+      "source": "dlc"
+    },
+    {
+      "id": "shield-of-night",
+      "term": "shield of night",
+      "title": "Shield of Night",
+      "description": "A shield awarded to Swordhands of Night, cast in a bottomless black from which no light can escape.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "claws-of-night",
+      "term": "claws of night",
+      "title": "Claws of Night",
+      "description": "Claws of a bottomless black from which no light can escape. Wielded by Anna, Swordhand of Night.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "dlc"
+    },
+    {
+      "id": "devonia-s-hammer",
+      "term": "devonia's hammer",
+      "title": "Devonia's Hammer",
+      "description": "Great hammer wielded by Devonia, longest-serving of the Crucible Knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Great Hammers",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-sunflower-blossom",
+      "term": "shadow sunflower blossom",
+      "title": "Shadow Sunflower Blossom",
+      "description": "The head of a monstrous shadow sunflower manifestation of the Scadutree. Then again, it might be just a flower, wielded as a weapon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "gazing-finger",
+      "term": "gazing finger",
+      "title": "Gazing Finger",
+      "description": "The head of Metyr, the finger-mother, wielded as a weapon without modification.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "nanaya-s-torch",
+      "term": "nanaya's torch",
+      "title": "Nanaya's Torch",
+      "description": "A torch made by attaching a dying flame of frenzy to a small spinal column.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "dlc"
+    },
+    {
+      "id": "lamenting-visage",
+      "term": "lamenting visage",
+      "title": "Lamenting Visage",
+      "description": "A stone lantern carved to resemble a lamenting human head, the eyes vacantly beaming out light. Can be raised up when equipped in the left hand, illuminating more of the surrounding area.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "dlc"
+    },
+    {
+      "id": "smithscript-shield",
+      "term": "smithscript shield",
+      "title": "Smithscript Shield",
+      "description": "Roundshield engraved with a smithscript.\nA throwing weapon created through the smithing arts.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-shield",
+      "term": "messmer soldier shield",
+      "title": "Messmer Soldier Shield",
+      "description": "Worn roundshield carried by soldiers loyal to Messmer, the Impaler.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "wolf-crest-shield",
+      "term": "wolf crest shield",
+      "title": "Wolf Crest Shield",
+      "description": "A finely-made \"blueshield\" featuring an engraving of a wolf under the moon. Excels at fending off sorceries.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "serpent-crest-shield",
+      "term": "serpent crest shield",
+      "title": "Serpent Crest Shield",
+      "description": "A finely-made \"redshield\" featuring an engraving of a winged serpent. Excels at guarding against fire.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "golden-lion-shield",
+      "term": "golden lion shield",
+      "title": "Golden Lion Shield",
+      "description": "Shield made to resemble a fierce golden lion with a luxuriant mane.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "black-steel-greatshield",
+      "term": "black steel greatshield",
+      "title": "Black Steel Greatshield",
+      "description": "Weighty shields carried by the Black Knights, servants of Messmer the Impaler. Made of black steel with decorative embellishments in gold.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "verdigris-greatshield",
+      "term": "verdigris greatshield",
+      "title": "Verdigris Greatshield",
+      "description": "Greatshield made of the unusual metal known as verdigris.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "staff-of-the-great-beyond",
+      "term": "staff of the great beyond",
+      "title": "Staff of the Great Beyond",
+      "description": "Staff fashioned from the tail-fingers of Metyr, the Mother of Fingers, and the microcosm raised aloft over the crux they form.\nCatalyst for casting both sorceries and incantations.\nThe Mother received signs from the Greater Will from the beyond of the microcosm. Despite being broken and abandoned, she kept waiting for another message to come.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "dlc"
+    },
+    {
+      "id": "maternal-staff",
+      "term": "maternal staff",
+      "title": "Maternal Staff",
+      "description": "Staff of Count Ymir, who made himself a Mother of Fingers.\nCarried for want of tail-fingers of his own.\nEnhances finger sorceries.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "dlc"
+    },
+    {
+      "id": "dryleaf-seal",
+      "term": "dryleaf seal",
+      "title": "Dryleaf Seal",
+      "description": "Sacred seal of the spiritual seekers known as the Dryleaf Sect.\nEnhances incantations of Miquella.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-s-seal",
+      "term": "fire knight's seal",
+      "title": "Fire Knight's Seal",
+      "description": "Sacred seal of the Fire Knights, who answer directly to Messmer the Impaler.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "dlc"
+    },
+    {
+      "id": "spiraltree-seal",
+      "term": "spiraltree seal",
+      "title": "Spiraltree Seal",
+      "description": "Sacred seal of soiled amber engraved with a spiral tree design.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "dlc"
+    },
+    {
+      "id": "bone-bow",
+      "term": "bone bow",
+      "title": "Bone Bow",
+      "description": "A crude shortbow fashioned from sickly bone.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Light Bows",
+      "source": "dlc"
+    },
+    {
+      "id": "ansbach-s-longbow",
+      "term": "ansbach's longbow",
+      "title": "Ansbach's Longbow",
+      "description": "Weapon of Sir Ansbach.\nA longbow consisting of two bow bodies and two strings.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-greatbow",
+      "term": "igon's greatbow",
+      "title": "Igon's Greatbow",
+      "description": "Weapon of Igon, the broken drake warrior.\nA greatbow fashioned from two dragon bones bound with coarse rope.\nCovered in gashes left by claws.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "dlc"
+    },
+    {
+      "id": "repeating-crossbow",
+      "term": "repeating crossbow",
+      "title": "Repeating Crossbow",
+      "description": "A mechanized crossbow that has been fitted with a fan-shaped contraption.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "dlc"
+    },
+    {
+      "id": "spread-crossbow",
+      "term": "spread crossbow",
+      "title": "Spread Crossbow",
+      "description": "A modified crossbow made by combining two crossbows into one.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "dlc"
+    },
+    {
+      "id": "rabbath-s-cannon",
+      "term": "rabbath's cannon",
+      "title": "Rabbath's Cannon",
+      "description": "A type of jar cannon used to fire greatbolts.\nA masterwork of Spellmachinist Rabbath.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "piquebone-arrow-fletched",
+      "term": "piquebone arrow (fletched)",
+      "title": "Piquebone Arrow (Fletched)",
+      "description": "Fletched bone arrow with putrescence-soaked tip",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "piquebone-arrow",
+      "term": "piquebone arrow",
+      "title": "Piquebone Arrow",
+      "description": "Animal bone arrow with putrescence-soaked tip",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-harpoon",
+      "term": "igon's harpoon",
+      "title": "Igon's Harpoon",
+      "description": "Great arrow that bristles with sharp gravel stone pieces.\nHas an anti-dragon effect.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "piquebone-bolt",
+      "term": "piquebone bolt",
+      "title": "Piquebone Bolt",
+      "description": "Animal bone bolt with putrescence-soaked tip",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "rabbath-s-greatbolt",
+      "term": "rabbath's greatbolt",
+      "title": "Rabbath's Greatbolt",
+      "description": "Greatbolt tipped with a clump of glintstone shards. One of Spellmachinist Rabbath's innovative designs.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "dryleaf-arts",
+      "term": "dryleaf arts",
+      "title": "Dryleaf Arts",
+      "description": "A technique for hand-to-hand combat without the aid of a weapon.\nThis martial art combines fist strikes and kicks.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Fists",
+      "source": "dlc"
+    },
+    {
+      "id": "dane-s-footwork",
+      "term": "dane's footwork",
+      "title": "Dane's Footwork",
+      "description": "A technique for hand-to-hand combat without the aid of a weapon. This martial art focuses on kicking techniques.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "firespark-perfume-bottle",
+      "term": "firespark perfume bottle",
+      "title": "Firespark Perfume Bottle",
+      "description": "Perfume bottle remade into a weapon by perfumers of the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "chilling-perfume-bottle",
+      "term": "chilling perfume bottle",
+      "title": "Chilling Perfume Bottle",
+      "description": "Perfume bottle remade into a weapon by perfumers of the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "frenzyflame-perfume-bottle",
+      "term": "frenzyflame perfume bottle",
+      "title": "Frenzyflame Perfume Bottle",
+      "description": "Perfume bottle remade into a weapon by perfumers of the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "lightning-perfume-bottle",
+      "term": "lightning perfume bottle",
+      "title": "Lightning Perfume Bottle",
+      "description": "Perfume bottle remade into a weapon by perfumers of the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "deadly-poison-perfume-bottle",
+      "term": "deadly poison perfume bottle",
+      "title": "Deadly Poison Perfume Bottle",
+      "description": "Perfume bottle customized by Thiollier.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "dueling-shield",
+      "term": "dueling shield",
+      "title": "Dueling Shield",
+      "description": "A \"thrusting shield,\" or combined weapon and shield.\nEnables the wielder to attack and guard simultaneously.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "carian-thrusting-shield",
+      "term": "carian thrusting shield",
+      "title": "Carian Thrusting Shield",
+      "description": "Silver thrusting shield embedded with glintstones.\nEnables the wielder to attack and guard simultaneously.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "dlc"
+    },
+    {
+      "id": "smithscript-dagger",
+      "term": "smithscript dagger",
+      "title": "Smithscript Dagger",
+      "description": "Dagger engraved with a smithscript.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "dlc"
+    },
+    {
+      "id": "backhand-blade",
+      "term": "backhand blade",
+      "title": "Backhand Blade",
+      "description": "Curved blade wielded with a backhand grip.\nA type of weapon wielded by hornsent for generations.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "smithscript-cirque",
+      "term": "smithscript cirque",
+      "title": "Smithscript Cirque",
+      "description": "Circular backhand blade engraved with a smithscript.\nA throwing weapon created through the smithing arts.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "curseblade-s-cirque",
+      "term": "curseblade's cirque",
+      "title": "Curseblade's Cirque",
+      "description": "Weapon of the masked Curseblades.\nCircular backhand blade with wave-like cutting edges, sharpened into points that incite blood loss.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "dlc"
+    },
+    {
+      "id": "great-katana",
+      "term": "great katana",
+      "title": "Great Katana",
+      "description": "Large katana with a long, heavy blade.\nA weapon unique to warriors of the Land of Reeds.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-hunter-s-great-katana",
+      "term": "dragon-hunter's great katana",
+      "title": "Dragon-Hunter's Great Katana",
+      "description": "Great katana with spines of gravel stone along its blade, wielded by the Ancient Dragon-Man of the Dragon's Pit.\nHas an anti-dragon effect.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "dlc"
+    },
+    {
+      "id": "rakshasa-s-great-katana",
+      "term": "rakshasa's great katana",
+      "title": "Rakshasa's Great Katana",
+      "description": "A great katana with the tempering pattern of its blade forever stained red with blood. Weapon of Rakshasa, who cuts down and devours.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "dlc"
+    },
+    {
+      "id": "milady",
+      "term": "milady",
+      "title": "Milady",
+      "description": "A light greatsword; that is, a sword whose blade matches the length of a greatsword, while being constrained to a minimal weight.\nNicknamed after ladies of noble status for its refined appearance.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "leda-s-sword",
+      "term": "leda's sword",
+      "title": "Leda's Sword",
+      "description": "Light greatsword with gold inlaid. \nWeapon of Leda, the Needle Knight.\nDeals holy damage.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-twin-blades",
+      "term": "rellana's twin blades",
+      "title": "Rellana's Twin Blades",
+      "description": "Carian light greatsword embedded with blue glintstone.\nWeapon of Rellana, the Twin Moon Knight.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "dlc"
+    },
+    {
+      "id": "beast-claw",
+      "term": "beast claw",
+      "title": "Beast Claw",
+      "description": "Weapon in the form of a carnivorous beast's vicious claws.\nUsed to perform bestial slashing attacks uncanny to humankind.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "dlc"
+    },
+    {
+      "id": "red-bear-s-claw",
+      "term": "red bear's claw",
+      "title": "Red Bear's Claw",
+      "description": "Claw of a great red bear wielded without modification by Red Bear, whose name is lost to madness.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "dlc"
+    }
+  ]
+}

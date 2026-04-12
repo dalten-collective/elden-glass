@@ -1,0 +1,5256 @@
+{
+  "section": "Elden Ring",
+  "category": "Armor",
+  "cards": [
+    {
+      "id": "head",
+      "term": "head",
+      "title": "Head",
+      "description": "Bare head with no armor equipped.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "body",
+      "term": "body",
+      "title": "Body",
+      "description": "Bare torso with no armor equipped.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "arms",
+      "term": "arms",
+      "title": "Arms",
+      "description": "Bare arms with no armor equipped.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "legs",
+      "term": "legs",
+      "title": "Legs",
+      "description": "Bare legs with no armor equipped.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "iron-helmet",
+      "term": "iron helmet",
+      "title": "Iron Helmet",
+      "description": "An ordinary iron helmet",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "scale-armor",
+      "term": "scale armor",
+      "title": "Scale Armor",
+      "description": "Armor composed of small metal plates",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "iron-gauntlets",
+      "term": "iron gauntlets",
+      "title": "Iron Gauntlets",
+      "description": "Ordinary iron gauntlets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "leather-trousers",
+      "term": "leather trousers",
+      "title": "Leather Trousers",
+      "description": "Well-made leather trousers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "kaiden-helm",
+      "term": "kaiden helm",
+      "title": "Kaiden Helm",
+      "description": "Helm worn by Kaiden sellswords",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "kaiden-armor",
+      "term": "kaiden armor",
+      "title": "Kaiden Armor",
+      "description": "Armor worn by Kaiden sellswords",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "kaiden-gauntlets",
+      "term": "kaiden gauntlets",
+      "title": "Kaiden Gauntlets",
+      "description": "Gauntlets worn by Kaiden sellswords",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "kaiden-trousers",
+      "term": "kaiden trousers",
+      "title": "Kaiden Trousers",
+      "description": "Trousers worn by Kaiden sellswords",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "drake-knight-helm",
+      "term": "drake knight helm",
+      "title": "Drake Knight Helm",
+      "description": "Malformed helm fused with dragon flesh",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "drake-knight-armor",
+      "term": "drake knight armor",
+      "title": "Drake Knight Armor",
+      "description": "Malformed armor fused with dragon flesh",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "drake-knight-gauntlets",
+      "term": "drake knight gauntlets",
+      "title": "Drake Knight Gauntlets",
+      "description": "Malformed gauntlets fused with dragon flesh",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "drake-knight-greaves",
+      "term": "drake knight greaves",
+      "title": "Drake Knight Greaves",
+      "description": "Malformed greaves fused with dragon flesh",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "drake-knight-armor-altered",
+      "term": "drake knight armor (altered)",
+      "title": "Drake Knight Armor (Altered)",
+      "description": "Black iron armor worn by drake knights.\nFeatures the spoils of a dragon catch as an emblem of pride as both dragon hunter and partaker of communion.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "scaled-helm",
+      "term": "scaled helm",
+      "title": "Scaled Helm",
+      "description": "Helm made from layered ancient dragon scales",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "scaled-armor",
+      "term": "scaled armor",
+      "title": "Scaled Armor",
+      "description": "Armor made from layered ancient dragon scales",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "scaled-gauntlets",
+      "term": "scaled gauntlets",
+      "title": "Scaled Gauntlets",
+      "description": "Gauntlets made from layered ancient dragon scales",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "scaled-greaves",
+      "term": "scaled greaves",
+      "title": "Scaled Greaves",
+      "description": "Greaves made from layered ancient dragon scales",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-hood",
+      "term": "perfumer hood",
+      "title": "Perfumer Hood",
+      "description": "Hood of an Erdtree Capital perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-robe",
+      "term": "perfumer robe",
+      "title": "Perfumer Robe",
+      "description": "Robe of an Erdtree Capital perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-gloves",
+      "term": "perfumer gloves",
+      "title": "Perfumer Gloves",
+      "description": "Gloves of an Erdtree Capital perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-sarong",
+      "term": "perfumer sarong",
+      "title": "Perfumer Sarong",
+      "description": "Sarong of an Erdtree Capital perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "traveler-s-hat",
+      "term": "traveler's hat",
+      "title": "Traveler's Hat",
+      "description": "Leather tricorne of an unaffiliated perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-traveling-garb",
+      "term": "perfumer's traveling garb",
+      "title": "Perfumer's Traveling Garb",
+      "description": "Robe of an unaffiliated perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "traveler-s-gloves",
+      "term": "traveler's gloves",
+      "title": "Traveler's Gloves",
+      "description": "Gloves of an unaffiliated perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "traveler-s-slops",
+      "term": "traveler's slops",
+      "title": "Traveler's Slops",
+      "description": "Trousers of an unaffiliated perfumer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "alberich-s-pointed-hat",
+      "term": "alberich's pointed hat",
+      "title": "Alberich's Pointed Hat",
+      "description": "Hat of a defected glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "alberich-s-robe",
+      "term": "alberich's robe",
+      "title": "Alberich's Robe",
+      "description": "Robe of a defected glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "alberich-s-bracers",
+      "term": "alberich's bracers",
+      "title": "Alberich's Bracers",
+      "description": "Gloves of a defected glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "alberich-s-trousers",
+      "term": "alberich's trousers",
+      "title": "Alberich's Trousers",
+      "description": "Boots of a defected glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "alberich-s-robe-altered",
+      "term": "alberich's robe (altered)",
+      "title": "Alberich's Robe (Altered)",
+      "description": "Tunic of a defected glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "spellblade-s-pointed-hat",
+      "term": "spellblade's pointed hat",
+      "title": "Spellblade's Pointed Hat",
+      "description": "Glintstone sorcerer Rogier's hat",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "spellblade-s-traveling-attire",
+      "term": "spellblade's traveling attire",
+      "title": "Spellblade's Traveling Attire",
+      "description": "Glintstone sorcerer Rogier's cape",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "spellblade-s-gloves",
+      "term": "spellblade's gloves",
+      "title": "Spellblade's Gloves",
+      "description": "Glintstone sorcerer Rogier's gloves",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "spellblade-s-trousers",
+      "term": "spellblade's trousers",
+      "title": "Spellblade's Trousers",
+      "description": "Glintstone sorcerer Rogier's Trousers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "bull-goat-helm",
+      "term": "bull-goat helm",
+      "title": "Bull-Goat Helm",
+      "description": "Great Horned Tragoth's helm",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "bull-goat-armor",
+      "term": "bull-goat armor",
+      "title": "Bull-Goat Armor",
+      "description": "Great Horned Tragoth's armor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "bull-goat-gauntlets",
+      "term": "bull-goat gauntlets",
+      "title": "Bull-Goat Gauntlets",
+      "description": "Great Horned Tragoth's gauntlets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "bull-goat-greaves",
+      "term": "bull-goat greaves",
+      "title": "Bull-Goat Greaves",
+      "description": "Great Horned Tragoth's greaves",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "iron-kasa",
+      "term": "iron kasa",
+      "title": "Iron Kasa",
+      "description": "Bloody Finger Hunter Yura's umbrella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "ronin-s-armor",
+      "term": "ronin's armor",
+      "title": "Ronin's Armor",
+      "description": "Bloody Finger Hunter Yura's armor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "ronin-s-gauntlets",
+      "term": "ronin's gauntlets",
+      "title": "Ronin's Gauntlets",
+      "description": "Bloody Finger Hunter Yura's gauntlets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "ronin-s-greaves",
+      "term": "ronin's greaves",
+      "title": "Ronin's Greaves",
+      "description": "Bloody Finger Hunter Yura's greaves",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "guilty-hood",
+      "term": "guilty hood",
+      "title": "Guilty Hood",
+      "description": "Coarse hooded cloak of olive brown",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "cloth-garb",
+      "term": "cloth garb",
+      "title": "Cloth Garb",
+      "description": "Garb made of rough material",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "tarnished-wrap",
+      "term": "tarnished wrap",
+      "title": "Tarnished Wrap",
+      "description": "Arm wraps made of rough material",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "cloth-trousers",
+      "term": "cloth trousers",
+      "title": "Cloth Trousers",
+      "description": "Trousers made of rough material",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "black-wolf-mask",
+      "term": "black wolf mask",
+      "title": "Black Wolf Mask",
+      "description": "Helm made with the head of an old wolf",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "blaidd-s-armor",
+      "term": "blaidd's armor",
+      "title": "Blaidd's Armor",
+      "description": "Armor of Blaidd, Knight of Ranni",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "blaidd-s-gauntlets",
+      "term": "blaidd's gauntlets",
+      "title": "Blaidd's Gauntlets",
+      "description": "Gauntlets of Blaidd, Knight of Ranni",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "blaidd-s-greaves",
+      "term": "blaidd's greaves",
+      "title": "Blaidd's Greaves",
+      "description": "Greaves of Blaidd, Knight of Ranni",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "blaidd-s-armor-altered",
+      "term": "blaidd's armor (altered)",
+      "title": "Blaidd's Armor (Altered)",
+      "description": "Well-worn black armor of the man-wolf Blaidd.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-hood",
+      "term": "black knife hood",
+      "title": "Black Knife Hood",
+      "description": "Hood used by the Black Blade Assassins",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-armor",
+      "term": "black knife armor",
+      "title": "Black Knife Armor",
+      "description": "Armor used by the Black Blade Assassins",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-gauntlets",
+      "term": "black knife gauntlets",
+      "title": "Black Knife Gauntlets",
+      "description": "Gauntlets used by the Black Blade Assassins",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-greaves",
+      "term": "black knife greaves",
+      "title": "Black Knife Greaves",
+      "description": "Greaves used by the Black Blade Assassins",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-armor-altered",
+      "term": "black knife armor (altered)",
+      "title": "Black Knife Armor (Altered)",
+      "description": "Armor used by the Black Knife Assassins.\nCrafted with scale armor that makes no sound.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "exile-hood",
+      "term": "exile hood",
+      "title": "Exile Hood",
+      "description": "Deep red hood that covers the whole head",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "exile-armor",
+      "term": "exile armor",
+      "title": "Exile Armor",
+      "description": "Worn body armor, wrapped in a great cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "exile-gauntlets",
+      "term": "exile gauntlets",
+      "title": "Exile Gauntlets",
+      "description": "Iron gauntlets worn by salt winds and battle",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "exile-greaves",
+      "term": "exile greaves",
+      "title": "Exile Greaves",
+      "description": "Iron greaves worn by salt winds and battle",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-helm",
+      "term": "banished knight helm",
+      "title": "Banished Knight Helm",
+      "description": "Knight's helm covered in a long cloth of deep red",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-armor",
+      "term": "banished knight armor",
+      "title": "Banished Knight Armor",
+      "description": "Knight's armor, worn by salt winds and battle",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-gauntlets",
+      "term": "banished knight gauntlets",
+      "title": "Banished Knight Gauntlets",
+      "description": "Knight's gauntlets, worn by salt winds and battle",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-greaves",
+      "term": "banished knight greaves",
+      "title": "Banished Knight Greaves",
+      "description": "Knight's greaves, worn by salt winds and battle",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-helm-altered",
+      "term": "banished knight helm (altered)",
+      "title": "Banished Knight Helm (Altered)",
+      "description": "Helm of a Stormveil Knight",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "briar-helm",
+      "term": "briar helm",
+      "title": "Briar Helm",
+      "description": "Helm worn by Condor Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "briar-armor",
+      "term": "briar armor",
+      "title": "Briar Armor",
+      "description": "Armor worn by Condor Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "briar-gauntlets",
+      "term": "briar gauntlets",
+      "title": "Briar Gauntlets",
+      "description": "Gauntlets worn by Condor Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "briar-greaves",
+      "term": "briar greaves",
+      "title": "Briar Greaves",
+      "description": "Greaves worn by Condor Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "page-hood",
+      "term": "page hood",
+      "title": "Page Hood",
+      "description": "Hood worn by pages",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "page-garb",
+      "term": "page garb",
+      "title": "Page Garb",
+      "description": "Garb worn by pages",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "page-trousers",
+      "term": "page trousers",
+      "title": "Page Trousers",
+      "description": "Trousers worn by pages",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "night-s-cavalry-helm",
+      "term": "night's cavalry helm",
+      "title": "Night's Cavalry Helm",
+      "description": "Helm covered in blackened bloodstains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "night-s-cavalry-armor",
+      "term": "night's cavalry armor",
+      "title": "Night's Cavalry Armor",
+      "description": "Armor covered in blackened bloodstains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "night-s-cavalry-gauntlets",
+      "term": "night's cavalry gauntlets",
+      "title": "Night's Cavalry Gauntlets",
+      "description": "Gauntlets covered in blackened bloodstains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "night-s-cavalry-greaves",
+      "term": "night's cavalry greaves",
+      "title": "Night's Cavalry Greaves",
+      "description": "Greaves covered in blackened bloodstains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "night-s-cavalry-helm-altered",
+      "term": "night's cavalry helm (altered)",
+      "title": "Night's Cavalry Helm (Altered)",
+      "description": "Light helm covered in blackened bloodstains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "blue-silver-mail-hood",
+      "term": "blue silver mail hood",
+      "title": "Blue Silver Mail Hood",
+      "description": "Chainmail hood made of motherly silver",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "blue-silver-mail-armor",
+      "term": "blue silver mail armor",
+      "title": "Blue Silver Mail Armor",
+      "description": "Chainmail armor made of motherly silver",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "blue-silver-bracelets",
+      "term": "blue silver bracelets",
+      "title": "Blue Silver Bracelets",
+      "description": "Bracelets made of motherly silver",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "blue-silver-mail-skirt",
+      "term": "blue silver mail skirt",
+      "title": "Blue Silver Mail Skirt",
+      "description": "Chainmail skirt made of motherly silver",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-merchant-s-chapeau",
+      "term": "nomadic merchant's chapeau",
+      "title": "Nomadic Merchant's Chapeau",
+      "description": "Peddler Kalé's hat",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-merchant-s-finery",
+      "term": "nomadic merchant's finery",
+      "title": "Nomadic Merchant's Finery",
+      "description": "Peddler Kalé's cloak",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-merchant-s-trousers",
+      "term": "nomadic merchant's trousers",
+      "title": "Nomadic Merchant's Trousers",
+      "description": "Peddler Kalé's trousers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "malformed-dragon-helm",
+      "term": "malformed dragon helm",
+      "title": "Malformed Dragon Helm",
+      "description": "Malformed, golden helm used by Gnarrl",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "malformed-dragon-armor",
+      "term": "malformed dragon armor",
+      "title": "Malformed Dragon Armor",
+      "description": "Malformed, golden armor used by Gnarrl",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "malformed-dragon-gauntlets",
+      "term": "malformed dragon gauntlets",
+      "title": "Malformed Dragon Gauntlets",
+      "description": "Malformed, golden gauntlets used by Gnarrl",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "malformed-dragon-greaves",
+      "term": "malformed dragon greaves",
+      "title": "Malformed Dragon Greaves",
+      "description": "Malformed, golden greaves used by Gnarrl",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "tree-sentinel-helm",
+      "term": "tree sentinel helm",
+      "title": "Tree Sentinel Helm",
+      "description": "Helm of a Tree Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "tree-sentinel-armor",
+      "term": "tree sentinel armor",
+      "title": "Tree Sentinel Armor",
+      "description": "Armor of a Tree Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "tree-sentinel-gauntlets",
+      "term": "tree sentinel gauntlets",
+      "title": "Tree Sentinel Gauntlets",
+      "description": "Gauntlets of a Tree Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "tree-sentinel-greaves",
+      "term": "tree sentinel greaves",
+      "title": "Tree Sentinel Greaves",
+      "description": "Greaves of a Tree Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "tree-sentinel-armor-altered",
+      "term": "tree sentinel armor (altered)",
+      "title": "Tree Sentinel Armor (Altered)",
+      "description": "Golden armor of the heavy cavalry Tree Sentinels who serve the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "royal-knight-helm",
+      "term": "royal knight helm",
+      "title": "Royal Knight Helm",
+      "description": "Helm of an Arbor Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "royal-knight-armor",
+      "term": "royal knight armor",
+      "title": "Royal Knight Armor",
+      "description": "Armor of an Arbor Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "royal-knight-gauntlets",
+      "term": "royal knight gauntlets",
+      "title": "Royal Knight Gauntlets",
+      "description": "Gauntlets of an Arbor Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "royal-knight-greaves",
+      "term": "royal knight greaves",
+      "title": "Royal Knight Greaves",
+      "description": "Greaves of an Arbor Sentinel",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "royal-knight-armor-altered",
+      "term": "royal knight armor (altered)",
+      "title": "Royal Knight Armor (Altered)",
+      "description": "Silver armor of Loretta, a knight who served Miquella's Haligtree.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nox-monk-hood",
+      "term": "nox monk hood",
+      "title": "Nox Monk Hood",
+      "description": "Hood worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "nox-monk-armor",
+      "term": "nox monk armor",
+      "title": "Nox Monk Armor",
+      "description": "Armor worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nox-monk-bracelets",
+      "term": "nox monk bracelets",
+      "title": "Nox Monk Bracelets",
+      "description": "Bracelets worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "nox-monk-greaves",
+      "term": "nox monk greaves",
+      "title": "Nox Monk Greaves",
+      "description": "Waistcloth worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "nox-monk-hood-altered",
+      "term": "nox monk hood (altered)",
+      "title": "Nox Monk Hood (Altered)",
+      "description": "Headband worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "nox-monk-armor-altered",
+      "term": "nox monk armor (altered)",
+      "title": "Nox Monk Armor (Altered)",
+      "description": "Vest worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nox-swordstress-crown",
+      "term": "nox swordstress crown",
+      "title": "Nox Swordstress Crown",
+      "description": "Crown worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "nox-swordstress-armor",
+      "term": "nox swordstress armor",
+      "title": "Nox Swordstress Armor",
+      "description": "Robe worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "night-maiden-twin-crown",
+      "term": "night maiden twin crown",
+      "title": "Night Maiden Twin Crown",
+      "description": "Twin crowns worn by the nightmaidens of the Eternal City.\nIndicates the highest clerical rank, and hides the eyes with silk.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "night-maiden-armor",
+      "term": "night maiden armor",
+      "title": "Night Maiden Armor",
+      "description": "Tunic worn by members of the Empyrean family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "nox-swordstress-crown-altered",
+      "term": "nox swordstress crown (altered)",
+      "title": "Nox Swordstress Crown (Altered)",
+      "description": "Crown worn by swordstresses of the Eternal City.\nThe silk eye covering is removed, flaunting convention.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "nox-swordstress-armor-altered",
+      "term": "nox swordstress armor (altered)",
+      "title": "Nox Swordstress Armor (Altered)",
+      "description": "Armor worn by swordstresses of the Eternal City.\nThese women are the personal guards of the nightmaidens.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "great-horned-headband",
+      "term": "great horned headband",
+      "title": "Great Horned Headband",
+      "description": "Headband worn by worshippers of stag specters",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "fur-raiment",
+      "term": "fur raiment",
+      "title": "Fur Raiment",
+      "description": "Garb worn by worshippers of stag specters",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "fur-leggings",
+      "term": "fur leggings",
+      "title": "Fur Leggings",
+      "description": "Leggings worn by worshippers of stag specters",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "shining-horned-headband",
+      "term": "shining horned headband",
+      "title": "Shining Horned Headband",
+      "description": "Headband decorated by a pair of shining horns.\nWorn by ancestral follower shamans.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "shaman-furs",
+      "term": "shaman furs",
+      "title": "Shaman Furs",
+      "description": "Raiment fashioned from a bristly pelt.\nWorn by ancestral follower shamans.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "shaman-leggings",
+      "term": "shaman leggings",
+      "title": "Shaman Leggings",
+      "description": "Leggings fashioned from bristly pelts.\nWorn by ancestral follower shamans.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "duelist-helm",
+      "term": "duelist helm",
+      "title": "Duelist Helm",
+      "description": "Bronze helm adorned with many snakes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "gravekeeper-cloak",
+      "term": "gravekeeper cloak",
+      "title": "Gravekeeper Cloak",
+      "description": "Robe made from a beast pelt",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "duelist-greaves",
+      "term": "duelist greaves",
+      "title": "Duelist Greaves",
+      "description": "Bronze anklets adorned with snakes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "gravekeeper-cloak-altered",
+      "term": "gravekeeper cloak (altered)",
+      "title": "Gravekeeper Cloak (Altered)",
+      "description": "Bronze bracelets adorned with snakes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "sanguine-noble-hood",
+      "term": "sanguine noble hood",
+      "title": "Sanguine Noble Hood",
+      "description": "Hood of dyed black cloth featuring gold embroidery",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "sanguine-noble-robe",
+      "term": "sanguine noble robe",
+      "title": "Sanguine Noble Robe",
+      "description": "Robe of dyed black cloth featuring gold embroidery",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "sanguine-noble-waistcloth",
+      "term": "sanguine noble waistcloth",
+      "title": "Sanguine Noble Waistcloth",
+      "description": "Waistcloth of dyed black material",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "guardian-mask",
+      "term": "guardian mask",
+      "title": "Guardian Mask",
+      "description": "Mask worn by the people of rotted abundance",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "guardian-garb-full-bloom",
+      "term": "guardian garb (full bloom)",
+      "title": "Guardian Garb (Full Bloom)",
+      "description": "Armor worn by the people of rotted abundance",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "guardian-bracers",
+      "term": "guardian bracers",
+      "title": "Guardian Bracers",
+      "description": "Gauntlets worn by the people of rotted abundance",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "guardian-greaves",
+      "term": "guardian greaves",
+      "title": "Guardian Greaves",
+      "description": "Greaves worn by the people of rotted abundance",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "guardian-garb",
+      "term": "guardian garb",
+      "title": "Guardian Garb",
+      "description": "Vest worn by the people of rotted abundance",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-helm",
+      "term": "cleanrot helm",
+      "title": "Cleanrot Helm",
+      "description": "Helm of a Wing Knight. Somewhat decayed...",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-armor",
+      "term": "cleanrot armor",
+      "title": "Cleanrot Armor",
+      "description": "Armor of a Wing Knight. Somewhat decayed...",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-gauntlets",
+      "term": "cleanrot gauntlets",
+      "title": "Cleanrot Gauntlets",
+      "description": "Gauntlets of a Wing Knight. Somewhat decayed...",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-greaves",
+      "term": "cleanrot greaves",
+      "title": "Cleanrot Greaves",
+      "description": "Greaves of a Wing Knight. Somewhat decayed...",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "fire-monk-hood",
+      "term": "fire monk hood",
+      "title": "Fire Monk Hood",
+      "description": "Mail helm covering a headband engraved with flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "fire-monk-armor",
+      "term": "fire monk armor",
+      "title": "Fire Monk Armor",
+      "description": "Fire Monk armor adorned with a red cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "fire-monk-gauntlets",
+      "term": "fire monk gauntlets",
+      "title": "Fire Monk Gauntlets",
+      "description": "Fire Monk gauntlets which resemble flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "fire-monk-greaves",
+      "term": "fire monk greaves",
+      "title": "Fire Monk Greaves",
+      "description": "Fire Monk greaves which resemble flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "blackflame-monk-hood",
+      "term": "blackflame monk hood",
+      "title": "Blackflame Monk Hood",
+      "description": "Chain helm worn above a fire shaped crown",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "blackflame-monk-armor",
+      "term": "blackflame monk armor",
+      "title": "Blackflame Monk Armor",
+      "description": "Godskin Monk armor adorned with a white cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "blackflame-monk-gauntlets",
+      "term": "blackflame monk gauntlets",
+      "title": "Blackflame Monk Gauntlets",
+      "description": "Godskin Monk gauntlets which resemble flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "blackflame-monk-greaves",
+      "term": "blackflame monk greaves",
+      "title": "Blackflame Monk Greaves",
+      "description": "Godskin Monk greaves which resemble flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "fire-prelate-helm",
+      "term": "fire prelate helm",
+      "title": "Fire Prelate Helm",
+      "description": "Fire Prelate helm sculpted in the image of a sage",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "fire-prelate-armor",
+      "term": "fire prelate armor",
+      "title": "Fire Prelate Armor",
+      "description": "Fire Prelate armor adorned with a red cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "fire-prelate-gauntlets",
+      "term": "fire prelate gauntlets",
+      "title": "Fire Prelate Gauntlets",
+      "description": "Fire Prelate gauntlets which resemble flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "fire-prelate-greaves",
+      "term": "fire prelate greaves",
+      "title": "Fire Prelate Greaves",
+      "description": "Fire Prelate greaves which resemble flames",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "fire-prelate-armor-altered",
+      "term": "fire prelate armor (altered)",
+      "title": "Fire Prelate Armor (Altered)",
+      "description": "Black iron armor.\nAttire of the Fire Prelates, commanders of the Fire Monks.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "aristocrat-headband",
+      "term": "aristocrat headband",
+      "title": "Aristocrat Headband",
+      "description": "Aristocrat headband, decorated with fine goldwork",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "aristocrat-garb",
+      "term": "aristocrat garb",
+      "title": "Aristocrat Garb",
+      "description": "Aristocrat garb featuring fine gold embroidery",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "aristocrat-boots",
+      "term": "aristocrat boots",
+      "title": "Aristocrat Boots",
+      "description": "Aristocrat boots, made of thick leather",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "aristocrat-hat",
+      "term": "aristocrat hat",
+      "title": "Aristocrat Hat",
+      "description": "Aristocrat hat, decorated with a marcescent feather",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "aristocrat-coat",
+      "term": "aristocrat coat",
+      "title": "Aristocrat Coat",
+      "description": "Aristocrat coat featuring fine gold embroidery",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "old-aristocrat-cowl",
+      "term": "old aristocrat cowl",
+      "title": "Old Aristocrat Cowl",
+      "description": "Aristocrat hood, made from superior cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "old-aristocrat-gown",
+      "term": "old aristocrat gown",
+      "title": "Old Aristocrat Gown",
+      "description": "Aristocrat gown featuring fine gold embroidery",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "old-aristocrat-shoes",
+      "term": "old aristocrat shoes",
+      "title": "Old Aristocrat Shoes",
+      "description": "Aristocrat shoes made from sturdy leather",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-helm",
+      "term": "vulgar militia helm",
+      "title": "Vulgar Militia Helm",
+      "description": "Helm worn by wandering soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-armor",
+      "term": "vulgar militia armor",
+      "title": "Vulgar Militia Armor",
+      "description": "Armor worn by wandering soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-gauntlets",
+      "term": "vulgar militia gauntlets",
+      "title": "Vulgar Militia Gauntlets",
+      "description": "Gloves worn by wandering soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-greaves",
+      "term": "vulgar militia greaves",
+      "title": "Vulgar Militia Greaves",
+      "description": "Boots worn by wandering soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "sage-hood",
+      "term": "sage hood",
+      "title": "Sage Hood",
+      "description": "Hood of a travelling musician gripped by death",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "sage-robe",
+      "term": "sage robe",
+      "title": "Sage Robe",
+      "description": "Robe of a travelling musician gripped by death",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "sage-trousers",
+      "term": "sage trousers",
+      "title": "Sage Trousers",
+      "description": "Waistcloth of travelling musician gripped by death",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "pumpkin-helm",
+      "term": "pumpkin helm",
+      "title": "Pumpkin Helm",
+      "description": "Oval helmet large enough to cover any head",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "elden-lord-crown",
+      "term": "elden lord crown",
+      "title": "Elden Lord Crown",
+      "description": "Crown of Godfrey, the first Elden Lord",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "elden-lord-armor",
+      "term": "elden lord armor",
+      "title": "Elden Lord Armor",
+      "description": "Armor of Godfrey, the first Elden Lord",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "elden-lord-bracers",
+      "term": "elden lord bracers",
+      "title": "Elden Lord Bracers",
+      "description": "Gauntlets of Godfrey, the first Elden Lord",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "elden-lord-greaves",
+      "term": "elden lord greaves",
+      "title": "Elden Lord Greaves",
+      "description": "Greaves of Godfrey, the first Elden Lord",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "radahn-s-redmane-helm",
+      "term": "radahn's redmane helm",
+      "title": "Radahn's Redmane Helm",
+      "description": "Helm of Radahn, God of War",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "radahn-s-lion-armor",
+      "term": "radahn's lion armor",
+      "title": "Radahn's Lion Armor",
+      "description": "Armor of Radahn, God of War",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "radahn-s-gauntlets",
+      "term": "radahn's gauntlets",
+      "title": "Radahn's Gauntlets",
+      "description": "Gauntlets of Radahn, God of War",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "radahn-s-greaves",
+      "term": "radahn's greaves",
+      "title": "Radahn's Greaves",
+      "description": "Greaves of Radahn, God of War",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "lord-of-blood-s-robe",
+      "term": "lord of blood's robe",
+      "title": "Lord of Blood's Robe",
+      "description": "Robe of Mohg, Lord of Blood",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "queen-s-crescent-crown",
+      "term": "queen's crescent crown",
+      "title": "Queen's Crescent Crown",
+      "description": "Crown of Rennala, the Full Moon Witch",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "queen-s-robe",
+      "term": "queen's robe",
+      "title": "Queen's Robe",
+      "description": "Robe of Rennala, the Full Moon Witch",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "queen-s-bracelets",
+      "term": "queen's bracelets",
+      "title": "Queen's Bracelets",
+      "description": "Bracelet of Rennala, the Full Moon Witch",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "queen-s-leggings",
+      "term": "queen's leggings",
+      "title": "Queen's Leggings",
+      "description": "Trousers of Rennala, the Full Moon Witch",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "godskin-apostle-hood",
+      "term": "godskin apostle hood",
+      "title": "Godskin Apostle Hood",
+      "description": "Hood made from tanned Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "godskin-apostle-robe",
+      "term": "godskin apostle robe",
+      "title": "Godskin Apostle Robe",
+      "description": "Robe made from tanned Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "godskin-apostle-bracelets",
+      "term": "godskin apostle bracelets",
+      "title": "Godskin Apostle Bracelets",
+      "description": "Bracelets made from tanned Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "godskin-apostle-trousers",
+      "term": "godskin apostle trousers",
+      "title": "Godskin Apostle Trousers",
+      "description": "Boots made from tanned Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "godskin-noble-hood",
+      "term": "godskin noble hood",
+      "title": "Godskin Noble Hood",
+      "description": "Hood made from tanned corpulent Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "godskin-noble-robe",
+      "term": "godskin noble robe",
+      "title": "Godskin Noble Robe",
+      "description": "Robe made from tanned corpulent Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "godskin-noble-bracelets",
+      "term": "godskin noble bracelets",
+      "title": "Godskin Noble Bracelets",
+      "description": "Bracelets made from tanned corpulent Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "godskin-noble-trousers",
+      "term": "godskin noble trousers",
+      "title": "Godskin Noble Trousers",
+      "description": "Boots made from tanned corpulent Demigod skin",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "depraved-perfumer-headscarf",
+      "term": "depraved perfumer headscarf",
+      "title": "Depraved Perfumer Headscarf",
+      "description": "Hood of a depraved perfumer gripped by madness",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "depraved-perfumer-robe",
+      "term": "depraved perfumer robe",
+      "title": "Depraved Perfumer Robe",
+      "description": "Robe of a depraved perfumer gripped by madness",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "depraved-perfumer-gloves",
+      "term": "depraved perfumer gloves",
+      "title": "Depraved Perfumer Gloves",
+      "description": "Gloves of a depraved perfumer gripped by madness",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "depraved-perfumer-trousers",
+      "term": "depraved perfumer trousers",
+      "title": "Depraved Perfumer Trousers",
+      "description": "Boots of a depraved perfumer gripped by madness",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "crucible-axe-helm",
+      "term": "crucible axe helm",
+      "title": "Crucible Axe Helm",
+      "description": "Helm used by Ordovis of the Crucible and his men",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "crucible-axe-armor",
+      "term": "crucible axe armor",
+      "title": "Crucible Axe Armor",
+      "description": "Armor used by Ordovis of the Crucible and his men",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "crucible-gauntlets",
+      "term": "crucible gauntlets",
+      "title": "Crucible Gauntlets",
+      "description": "Gauntlets used by the Crucible Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "crucible-greaves",
+      "term": "crucible greaves",
+      "title": "Crucible Greaves",
+      "description": "Greaves used by the Crucible Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "crucible-tree-helm",
+      "term": "crucible tree helm",
+      "title": "Crucible Tree Helm",
+      "description": "Helm used by Siluria of the Crucible and her men",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "crucible-tree-armor",
+      "term": "crucible tree armor",
+      "title": "Crucible Tree Armor",
+      "description": "Armor used by Siluria of the Crucible and her men",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "lusat-s-glintstone-crown",
+      "term": "lusat's glintstone crown",
+      "title": "Lusat's Glintstone Crown",
+      "description": "Skull-merged Crown of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "lusat-s-robe",
+      "term": "lusat's robe",
+      "title": "Lusat's Robe",
+      "description": "Dull red robe of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "lusat-s-manchettes",
+      "term": "lusat's manchettes",
+      "title": "Lusat's Manchettes",
+      "description": "Dull red  arm wraps of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "old-sorcerer-s-legwraps",
+      "term": "old sorcerer's legwraps",
+      "title": "Old Sorcerer's Legwraps",
+      "description": "Dull red waistcloth of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "azur-s-glintstone-crown",
+      "term": "azur's glintstone crown",
+      "title": "Azur's Glintstone Crown",
+      "description": "Blue transparent crown of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "azur-s-glintstone-robe",
+      "term": "azur's glintstone robe",
+      "title": "Azur's Glintstone Robe",
+      "description": "Blue transparent robe of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "azur-s-manchettes",
+      "term": "azur's manchettes",
+      "title": "Azur's Manchettes",
+      "description": "Blue transparent arm wraps of a Crystal Sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "all-knowing-helm",
+      "term": "all-knowing helm",
+      "title": "All-Knowing Helm",
+      "description": "Helm of Gideon Ofnir, the All-Knowing",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "all-knowing-armor",
+      "term": "all-knowing armor",
+      "title": "All-Knowing Armor",
+      "description": "Armor of Gideon Ofnir, the All-Knowing",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "all-knowing-gauntlets",
+      "term": "all-knowing gauntlets",
+      "title": "All-Knowing Gauntlets",
+      "description": "Gauntlets of Gideon Ofnir, the All-Knowing",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "all-knowing-greaves",
+      "term": "all-knowing greaves",
+      "title": "All-Knowing Greaves",
+      "description": "Greaves of Gideon Ofnir, the All-Knowing",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "twinned-helm",
+      "term": "twinned helm",
+      "title": "Twinned Helm",
+      "description": "Helm worn by D, Knight of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "twinned-armor",
+      "term": "twinned armor",
+      "title": "Twinned Armor",
+      "description": "Armor worn by D, Knight of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "twinned-gauntlets",
+      "term": "twinned gauntlets",
+      "title": "Twinned Gauntlets",
+      "description": "Gauntlets worn by D, Knight of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "twinned-greaves",
+      "term": "twinned greaves",
+      "title": "Twinned Greaves",
+      "description": "Greaves worn by D, Knight of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "ragged-hat",
+      "term": "ragged hat",
+      "title": "Ragged Hat",
+      "description": "Helm pieced together from scavenged metal",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "ragged-armor",
+      "term": "ragged armor",
+      "title": "Ragged Armor",
+      "description": "Armor pieced together from scavenged metal",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "ragged-gloves",
+      "term": "ragged gloves",
+      "title": "Ragged Gloves",
+      "description": "Gauntlets pieced together from scavenged metal",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "ragged-loincloth",
+      "term": "ragged loincloth",
+      "title": "Ragged Loincloth",
+      "description": "Greaves pieced together from scavenged metal",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "prophet-blindfold",
+      "term": "prophet blindfold",
+      "title": "Prophet Blindfold",
+      "description": "Blindfold of the exiled prophets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "corhyn-s-robe",
+      "term": "corhyn's robe",
+      "title": "Corhyn's Robe",
+      "description": "Robe of the exiled prophets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "prophet-trousers",
+      "term": "prophet trousers",
+      "title": "Prophet Trousers",
+      "description": "Trousers of the exiled prophets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "prophet-robe-altered",
+      "term": "prophet robe (altered)",
+      "title": "Prophet Robe (Altered)",
+      "description": "Robe of exiled prophets who foretold misfortune—and were persecuted and driven from their homes as a result.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "prophet-robe",
+      "term": "prophet robe",
+      "title": "Prophet Robe",
+      "description": "Tunic of the exiled prophets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "astrologer-hood",
+      "term": "astrologer hood",
+      "title": "Astrologer Hood",
+      "description": "Hood of the glintstone polishers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "astrologer-robe",
+      "term": "astrologer robe",
+      "title": "Astrologer Robe",
+      "description": "Robe of the glintstone polishers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "astrologer-gloves",
+      "term": "astrologer gloves",
+      "title": "Astrologer Gloves",
+      "description": "Gloves of the glintstone polishers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "astrologer-trousers",
+      "term": "astrologer trousers",
+      "title": "Astrologer Trousers",
+      "description": "Trousers of the glintstone polishers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "lionel-s-helm",
+      "term": "lionel's helm",
+      "title": "Lionel's Helm",
+      "description": "Oddly shaped helm used by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "lionel-s-armor",
+      "term": "lionel's armor",
+      "title": "Lionel's Armor",
+      "description": "Oddly shaped armor used by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "lionel-s-gauntlets",
+      "term": "lionel's gauntlets",
+      "title": "Lionel's Gauntlets",
+      "description": "Oddly shaped gauntlets used by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "lionel-s-greaves",
+      "term": "lionel's greaves",
+      "title": "Lionel's Greaves",
+      "description": "Oddly shaped greaves used by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "lionel-s-armor-altered",
+      "term": "lionel's armor (altered)",
+      "title": "Lionel's Armor (Altered)",
+      "description": "Round iron armor.\nWorn by Lionel the Lionhearted.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "hoslow-s-helm",
+      "term": "hoslow's helm",
+      "title": "Hoslow's Helm",
+      "description": "Heavy helm passed down through the Hoslow family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "hoslow-s-armor",
+      "term": "hoslow's armor",
+      "title": "Hoslow's Armor",
+      "description": "Armor passed down through the Hoslow family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "hoslow-s-gauntlets",
+      "term": "hoslow's gauntlets",
+      "title": "Hoslow's Gauntlets",
+      "description": "Gauntlets passed down through the Hoslow family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "hoslow-s-greaves",
+      "term": "hoslow's greaves",
+      "title": "Hoslow's Greaves",
+      "description": "Greaves passed down through the Hoslow family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "diallos-s-mask",
+      "term": "diallos's mask",
+      "title": "Diallos's Mask",
+      "description": "Helm passed down through the Hoslow family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "vagabond-knight-helm",
+      "term": "vagabond knight helm",
+      "title": "Vagabond Knight Helm",
+      "description": "Helm of a banished knight",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "vagabond-knight-armor",
+      "term": "vagabond knight armor",
+      "title": "Vagabond Knight Armor",
+      "description": "Armor  of a banished knight",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "vagabond-knight-gauntlets",
+      "term": "vagabond knight gauntlets",
+      "title": "Vagabond Knight Gauntlets",
+      "description": "Gauntlets of a banished knight",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "vagabond-knight-greaves",
+      "term": "vagabond knight greaves",
+      "title": "Vagabond Knight Greaves",
+      "description": "Greaves of a banished knight",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "blue-cloth-cowl",
+      "term": "blue cloth cowl",
+      "title": "Blue Cloth Cowl",
+      "description": "Cowl of a nomadic warrior, made of blue cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "blue-cloth-vest",
+      "term": "blue cloth vest",
+      "title": "Blue Cloth Vest",
+      "description": "Vest of a nomadic warrior, made of blue cloth",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "warrior-gauntlets",
+      "term": "warrior gauntlets",
+      "title": "Warrior Gauntlets",
+      "description": "Gauntlets of a nomadic warrior",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "warrior-greaves",
+      "term": "warrior greaves",
+      "title": "Warrior Greaves",
+      "description": "Greaves of a nomadic warrior",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "white-mask",
+      "term": "white mask",
+      "title": "White Mask",
+      "description": "Strange birch mask that hides one's expression",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "war-surgeon-gown",
+      "term": "war surgeon gown",
+      "title": "War Surgeon Gown",
+      "description": "Old white tunic, stained with blood",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "war-surgeon-gloves",
+      "term": "war surgeon gloves",
+      "title": "War Surgeon Gloves",
+      "description": "Physician's gloves made from thick leather",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "war-surgeon-trousers",
+      "term": "war surgeon trousers",
+      "title": "War Surgeon Trousers",
+      "description": "Physician's trousers made from thick leather",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "royal-remains-helm",
+      "term": "royal remains helm",
+      "title": "Royal Remains Helm",
+      "description": "Mask that mediates via body of famed ancestor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "royal-remains-armor",
+      "term": "royal remains armor",
+      "title": "Royal Remains Armor",
+      "description": "Armor that mediates via body of famed ancestor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "royal-remains-gauntlets",
+      "term": "royal remains gauntlets",
+      "title": "Royal Remains Gauntlets",
+      "description": "Gauntlets that mediate via body of famed ancestor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "royal-remains-greaves",
+      "term": "royal remains greaves",
+      "title": "Royal Remains Greaves",
+      "description": "Greaves that mediate via body of famed ancestor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "brave-s-cord-circlet",
+      "term": "brave's cord circlet",
+      "title": "Brave's Cord Circlet",
+      "description": "Headband of a warrior of the frigid uplands",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "brave-s-battlewear",
+      "term": "brave's battlewear",
+      "title": "Brave's Battlewear",
+      "description": "Battlewear of a warrior of the frigid uplands",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "brave-s-bracer",
+      "term": "brave's bracer",
+      "title": "Brave's Bracer",
+      "description": "Gauntlets of a warrior of the frigid uplands",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "brave-s-legwraps",
+      "term": "brave's legwraps",
+      "title": "Brave's Legwraps",
+      "description": "Greaves of a warrior of the frigid uplands",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "brave-s-leather-helm",
+      "term": "brave's leather helm",
+      "title": "Brave's Leather Helm",
+      "description": "Helm of a warrior of the frigid uplands",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "brave-s-battlewear-altered",
+      "term": "brave's battlewear (altered)",
+      "title": "Brave's Battlewear (Altered)",
+      "description": "Helm wrapped in thick leather.\nGarb worn by warriors of the frigid uplands.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "beast-champion-helm",
+      "term": "beast champion helm",
+      "title": "Beast Champion Helm",
+      "description": "Helm of Belnahr the Traitor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "beast-champion-armor",
+      "term": "beast champion armor",
+      "title": "Beast Champion Armor",
+      "description": "Armor of Belnahr the Traitor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "beast-champion-gauntlets",
+      "term": "beast champion gauntlets",
+      "title": "Beast Champion Gauntlets",
+      "description": "Gauntlets of Belnahr the Traitor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "beast-champion-greaves",
+      "term": "beast champion greaves",
+      "title": "Beast Champion Greaves",
+      "description": "Greaves of Belnahr the Traitor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "champion-headband",
+      "term": "champion headband",
+      "title": "Champion Headband",
+      "description": "Headband reserved for the badlands' bravest",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "champion-pauldron",
+      "term": "champion pauldron",
+      "title": "Champion Pauldron",
+      "description": "Pauldron reserved for the badlands' bravest",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "champion-bracers",
+      "term": "champion bracers",
+      "title": "Champion Bracers",
+      "description": "Gauntlets reserved for the badlands' bravest",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "champion-gaiters",
+      "term": "champion gaiters",
+      "title": "Champion Gaiters",
+      "description": "Gaiters formed only of leather straps",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "crimson-hood",
+      "term": "crimson hood",
+      "title": "Crimson Hood",
+      "description": "Hooded cloak of expatriated royalty",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "noble-s-traveling-garb",
+      "term": "noble's traveling garb",
+      "title": "Noble's Traveling Garb",
+      "description": "Armor of expatriated royalty",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "noble-s-gloves",
+      "term": "noble's gloves",
+      "title": "Noble's Gloves",
+      "description": "Gloves of expatriated royalty",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "noble-s-trousers",
+      "term": "noble's trousers",
+      "title": "Noble's Trousers",
+      "description": "Trousers of expatriated royalty",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "navy-hood",
+      "term": "navy hood",
+      "title": "Navy Hood",
+      "description": "A hooded cloak of deep navy.\nWorn by expatriated royalty.\nIncreases mind.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "maliketh-s-helm",
+      "term": "maliketh's helm",
+      "title": "Maliketh's Helm",
+      "description": "Helm of Maliketh the Black Blade",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "maliketh-s-armor",
+      "term": "maliketh's armor",
+      "title": "Maliketh's Armor",
+      "description": "Armor of Maliketh the Black Blade",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "maliketh-s-gauntlets",
+      "term": "maliketh's gauntlets",
+      "title": "Maliketh's Gauntlets",
+      "description": "Gauntlets of Maliketh the Black Blade",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "maliketh-s-greaves",
+      "term": "maliketh's greaves",
+      "title": "Maliketh's Greaves",
+      "description": "Greaves of Maliketh the Black Blade",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "malenia-s-winged-helm",
+      "term": "malenia's winged helm",
+      "title": "Malenia's Winged Helm",
+      "description": "Helm of Arbitress Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "malenia-s-armor",
+      "term": "malenia's armor",
+      "title": "Malenia's Armor",
+      "description": "Armor of Arbitress Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "malenia-s-gauntlet",
+      "term": "malenia's gauntlet",
+      "title": "Malenia's Gauntlet",
+      "description": "Gauntlets of Arbitress Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "malenia-s-greaves",
+      "term": "malenia's greaves",
+      "title": "Malenia's Greaves",
+      "description": "Greaves of Arbitress Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "veteran-s-helm",
+      "term": "veteran's helm",
+      "title": "Veteran's Helm",
+      "description": "Veteran General's old helm",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "veteran-s-armor",
+      "term": "veteran's armor",
+      "title": "Veteran's Armor",
+      "description": "Veteran General's old armor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "veteran-s-gauntlets",
+      "term": "veteran's gauntlets",
+      "title": "Veteran's Gauntlets",
+      "description": "Veteran General's old gauntlets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "veteran-s-greaves",
+      "term": "veteran's greaves",
+      "title": "Veteran's Greaves",
+      "description": "Veteran General's old greaves",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-knight-helm",
+      "term": "bloodhound knight helm",
+      "title": "Bloodhound Knight Helm",
+      "description": "Beast-like helm of the Bloodhound Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-knight-armor",
+      "term": "bloodhound knight armor",
+      "title": "Bloodhound Knight Armor",
+      "description": "Beast-like armor of the Bloodhound Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-knight-gauntlets",
+      "term": "bloodhound knight gauntlets",
+      "title": "Bloodhound Knight Gauntlets",
+      "description": "Beast-like gauntlets of the Bloodhound Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-knight-greaves",
+      "term": "bloodhound knight greaves",
+      "title": "Bloodhound Knight Greaves",
+      "description": "Beast-like greaves of the Bloodhound Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "festive-hood",
+      "term": "festive hood",
+      "title": "Festive Hood",
+      "description": "Hood worn for a humble festival",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "festive-garb",
+      "term": "festive garb",
+      "title": "Festive Garb",
+      "description": "Cloak worn for a humble festival",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "festive-hood-altered",
+      "term": "festive hood (altered)",
+      "title": "Festive Hood (Altered)",
+      "description": "Wreath of flowers worn for a humble festival",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "blue-festive-hood",
+      "term": "blue festive hood",
+      "title": "Blue Festive Hood",
+      "description": "Hood worn by dancers at the festivities in Dominula, the village of windmills.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "blue-festive-garb",
+      "term": "blue festive garb",
+      "title": "Blue Festive Garb",
+      "description": "Ceremonial garb worn by dancers at the festivities in Dominula, the village of windmills.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-headband",
+      "term": "commoner's headband",
+      "title": "Commoner's Headband",
+      "description": "Hood of a rune cursed citizen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-garb",
+      "term": "commoner's garb",
+      "title": "Commoner's Garb",
+      "description": "Garb of a rune cursed citizen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-shoes",
+      "term": "commoner's shoes",
+      "title": "Commoner's Shoes",
+      "description": "Waistcloth of a rune cursed citizen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-headband-altered",
+      "term": "commoner's headband (altered)",
+      "title": "Commoner's Headband (Altered)",
+      "description": "A headband with the cloth removed.\nStandard wear for commoners of the Lands Between.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-garb-altered",
+      "term": "commoner's garb (altered)",
+      "title": "Commoner's Garb (Altered)",
+      "description": "Garb decorated with intricate embroidery.\nStandard wear for commoners of the Lands Between.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-simple-garb",
+      "term": "commoner's simple garb",
+      "title": "Commoner's Simple Garb",
+      "description": "Crown of a rune cursed citizen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "commoner-s-simple-garb-altered",
+      "term": "commoner's simple garb (altered)",
+      "title": "Commoner's Simple Garb (Altered)",
+      "description": "Modest garb made of cloth.\nStandard wear for commoners of the Lands Between.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "envoy-crown",
+      "term": "envoy crown",
+      "title": "Envoy Crown",
+      "description": "Head concealing silver robe",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "twinsage-glintstone-crown",
+      "term": "twinsage glintstone crown",
+      "title": "Twinsage Glintstone Crown",
+      "description": "Stone mask of the Twin Crystal Sage",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucarian-robe",
+      "term": "raya lucarian robe",
+      "title": "Raya Lucarian Robe",
+      "description": "Robe worn by Raya Lucaria's magic scholars",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "sorcerer-manchettes",
+      "term": "sorcerer manchettes",
+      "title": "Sorcerer Manchettes",
+      "description": "Manchettes worn by Raya Lucaria's magic scholars",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "sorcerer-leggings",
+      "term": "sorcerer leggings",
+      "title": "Sorcerer Leggings",
+      "description": "Leggings worn by Raya Lucaria's magic scholars",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "olivinus-glintstone-crown",
+      "term": "olivinus glintstone crown",
+      "title": "Olivinus Glintstone Crown",
+      "description": "Stone mask of a Gold Amber Sage",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "lazuli-glintstone-crown",
+      "term": "lazuli glintstone crown",
+      "title": "Lazuli Glintstone Crown",
+      "description": "Stone mask of a Red Glintstone Sage",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "karolos-glintstone-crown",
+      "term": "karolos glintstone crown",
+      "title": "Karolos Glintstone Crown",
+      "description": "Stone mask depicting the wise Karolos",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "witch-s-glintstone-crown",
+      "term": "witch's glintstone crown",
+      "title": "Witch's Glintstone Crown",
+      "description": "Stone mask of a Green Glintstone Sage",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "marionette-soldier-helm",
+      "term": "marionette soldier helm",
+      "title": "Marionette Soldier Helm",
+      "description": "Cylindrical helm worn by marionette soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "marionette-soldier-armor",
+      "term": "marionette soldier armor",
+      "title": "Marionette Soldier Armor",
+      "description": "Armor of lattice plate worn by marionette soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "marionette-soldier-birdhelm",
+      "term": "marionette soldier birdhelm",
+      "title": "Marionette Soldier Birdhelm",
+      "description": "Iron mask worn by marionette soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "raging-wolf-helm",
+      "term": "raging wolf helm",
+      "title": "Raging Wolf Helm",
+      "description": "Helm of Vargram the Bloody Wolf",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "raging-wolf-armor",
+      "term": "raging wolf armor",
+      "title": "Raging Wolf Armor",
+      "description": "Armor of Vargram the Bloody Wolf",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "raging-wolf-gauntlets",
+      "term": "raging wolf gauntlets",
+      "title": "Raging Wolf Gauntlets",
+      "description": "Gauntlets of Vargram the Bloody Wolf",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "raging-wolf-greaves",
+      "term": "raging wolf greaves",
+      "title": "Raging Wolf Greaves",
+      "description": "Greaves of Vargram the Bloody Wolf",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "land-of-reeds-helm",
+      "term": "land of reeds helm",
+      "title": "Land of Reeds Helm",
+      "description": "Helm of a warrior from the land of reeds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "land-of-reeds-armor",
+      "term": "land of reeds armor",
+      "title": "Land of Reeds Armor",
+      "description": "Chest piece of a warrior from the land of reeds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "land-of-reeds-gauntlets",
+      "term": "land of reeds gauntlets",
+      "title": "Land of Reeds Gauntlets",
+      "description": "Gauntlets of a warrior from the land of reeds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "land-of-reeds-greaves",
+      "term": "land of reeds greaves",
+      "title": "Land of Reeds Greaves",
+      "description": "Greaves of a warrior from the land of reeds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "land-of-reeds-armor-altered",
+      "term": "land of reeds armor (altered)",
+      "title": "Land of Reeds Armor (Altered)",
+      "description": "Armor of a warrior from the land of reeds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "okina-mask",
+      "term": "okina mask",
+      "title": "Okina Mask",
+      "description": "Mask adorned with a land of reeds veteran warrior",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "white-reed-armor",
+      "term": "white reed armor",
+      "title": "White Reed Armor",
+      "description": "Stomach band of a land of reeds veteran warrior",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "white-reed-gauntlets",
+      "term": "white reed gauntlets",
+      "title": "White Reed Gauntlets",
+      "description": "Gauntlets of a land of reeds veteran warrior",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "white-reed-greaves",
+      "term": "white reed greaves",
+      "title": "White Reed Greaves",
+      "description": "Greaves of a land of reeds veteran warrior",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "confessor-hood",
+      "term": "confessor hood",
+      "title": "Confessor Hood",
+      "description": "Black hood of those who kill for a living",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "confessor-armor",
+      "term": "confessor armor",
+      "title": "Confessor Armor",
+      "description": "Black robe of those who kill for a living",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "confessor-gloves",
+      "term": "confessor gloves",
+      "title": "Confessor Gloves",
+      "description": "Gloves of those who kill for a living",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "confessor-boots",
+      "term": "confessor boots",
+      "title": "Confessor Boots",
+      "description": "Boots of those who kill for a living",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "confessor-hood-altered",
+      "term": "confessor hood (altered)",
+      "title": "Confessor Hood (Altered)",
+      "description": "Mask of those who kill for a living",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "prisoner-iron-mask",
+      "term": "prisoner iron mask",
+      "title": "Prisoner Iron Mask",
+      "description": "Iron mask worn by grave offenders",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "prisoner-clothing",
+      "term": "prisoner clothing",
+      "title": "Prisoner Clothing",
+      "description": "Tattered clothing",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "prisoner-trousers",
+      "term": "prisoner trousers",
+      "title": "Prisoner Trousers",
+      "description": "Tattered trousers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "blackguard-s-iron-mask",
+      "term": "blackguard's iron mask",
+      "title": "Blackguard's Iron Mask",
+      "description": "Iron mask worn by only the most violent offenders",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "traveling-maiden-hood",
+      "term": "traveling maiden hood",
+      "title": "Traveling Maiden Hood",
+      "description": "Hood worn by traveling clerics",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "traveling-maiden-robe",
+      "term": "traveling maiden robe",
+      "title": "Traveling Maiden Robe",
+      "description": "Robe worn by traveling clerics",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "traveling-maiden-gloves",
+      "term": "traveling maiden gloves",
+      "title": "Traveling Maiden Gloves",
+      "description": "Gloves worn by traveling clerics",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "traveling-maiden-boots",
+      "term": "traveling maiden boots",
+      "title": "Traveling Maiden Boots",
+      "description": "Skirt worn by traveling clerics",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "traveling-maiden-robe-altered",
+      "term": "traveling maiden robe (altered)",
+      "title": "Traveling Maiden Robe (Altered)",
+      "description": "Tunic worn by traveling clerics",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "finger-maiden-fillet",
+      "term": "finger maiden fillet",
+      "title": "Finger Maiden Fillet",
+      "description": "Crown worn by Saints",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "finger-maiden-robe",
+      "term": "finger maiden robe",
+      "title": "Finger Maiden Robe",
+      "description": "Dress worn by Saints",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "finger-maiden-shoes",
+      "term": "finger maiden shoes",
+      "title": "Finger Maiden Shoes",
+      "description": "Skirt worn by Saints",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "preceptor-s-big-hat",
+      "term": "preceptor's big hat",
+      "title": "Preceptor's Big Hat",
+      "description": "Hat worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "preceptor-s-long-gown",
+      "term": "preceptor's long gown",
+      "title": "Preceptor's Long Gown",
+      "description": "Gown worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "preceptor-s-gloves",
+      "term": "preceptor's gloves",
+      "title": "Preceptor's Gloves",
+      "description": "Gloves worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "preceptor-s-trousers",
+      "term": "preceptor's trousers",
+      "title": "Preceptor's Trousers",
+      "description": "Boots worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "mask-of-confidence",
+      "term": "mask of confidence",
+      "title": "Mask of Confidence",
+      "description": "Hood worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "preceptor-s-long-gown-altered",
+      "term": "preceptor's long gown (altered)",
+      "title": "Preceptor's Long Gown (Altered)",
+      "description": "Vest worn by ruthless Chaplains",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "grass-hair-ornament",
+      "term": "grass hair ornament",
+      "title": "Grass Hair Ornament",
+      "description": "Headdress made from wildflowers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "skeletal-mask",
+      "term": "skeletal mask",
+      "title": "Skeletal Mask",
+      "description": "Hood worn by followers of the deadly birds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "raptor-s-black-feathers",
+      "term": "raptor's black feathers",
+      "title": "Raptor's Black Feathers",
+      "description": "Cloak worn by followers of the deadly birds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "bandit-manchettes",
+      "term": "bandit manchettes",
+      "title": "Bandit Manchettes",
+      "description": "Wraps worn by followers of the deadly birds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "bandit-boots",
+      "term": "bandit boots",
+      "title": "Bandit Boots",
+      "description": "Trousers worn by followers of the deadly birds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "bandit-garb",
+      "term": "bandit garb",
+      "title": "Bandit Garb",
+      "description": "Vest worn by followers of the deadly birds",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "eccentric-s-hood",
+      "term": "eccentric's hood",
+      "title": "Eccentric's Hood",
+      "description": "Deathwatch, Jerren's hood",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "eccentric-s-armor",
+      "term": "eccentric's armor",
+      "title": "Eccentric's Armor",
+      "description": "Deathwatch, Jerren's armor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "eccentric-s-manchettes",
+      "term": "eccentric's manchettes",
+      "title": "Eccentric's Manchettes",
+      "description": "Deathwatch, Jerren's gauntlets",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "eccentric-s-breeches",
+      "term": "eccentric's breeches",
+      "title": "Eccentric's Breeches",
+      "description": "Deathwatch, Jerren's tights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "fingerprint-helm",
+      "term": "fingerprint helm",
+      "title": "Fingerprint Helm",
+      "description": "Deformed helm of a mad knight in despair",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "fingerprint-armor",
+      "term": "fingerprint armor",
+      "title": "Fingerprint Armor",
+      "description": "Deformed armor of a mad knight in despair",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "fingerprint-gauntlets",
+      "term": "fingerprint gauntlets",
+      "title": "Fingerprint Gauntlets",
+      "description": "Deformed gauntlets of a mad knight in despair",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "fingerprint-greaves",
+      "term": "fingerprint greaves",
+      "title": "Fingerprint Greaves",
+      "description": "Deformed greaves of a mad knight in despair",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "consort-s-mask",
+      "term": "consort's mask",
+      "title": "Consort's Mask",
+      "description": "White mask of Tanith, Lady of the Volcano Manor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "consort-s-robe",
+      "term": "consort's robe",
+      "title": "Consort's Robe",
+      "description": "Dress of Tanith, Lady of the Volcano Manor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "consort-s-trousers",
+      "term": "consort's trousers",
+      "title": "Consort's Trousers",
+      "description": "Skirt of Tanith, Lady of the Volcano Manor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "ruler-s-mask",
+      "term": "ruler's mask",
+      "title": "Ruler's Mask",
+      "description": "Stone mask of Rya, servant to the Volcano Manor",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "ruler-s-robe",
+      "term": "ruler's robe",
+      "title": "Ruler's Robe",
+      "description": "Extravagantly embroidered noble's robe",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "upper-class-robe",
+      "term": "upper-class robe",
+      "title": "Upper-Class Robe",
+      "description": "Extravagantly embroidered noble's gown",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "marais-mask",
+      "term": "marais mask",
+      "title": "Marais Mask",
+      "description": "An eerie white haired silver mask",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "marais-robe",
+      "term": "marais robe",
+      "title": "Marais Robe",
+      "description": "Noble's cape woven with sturdy fabric",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "bloodsoaked-manchettes",
+      "term": "bloodsoaked manchettes",
+      "title": "Bloodsoaked Manchettes",
+      "description": "Noble's waistcloth woven with sturdy fabric",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "bloodsoaked-mask",
+      "term": "bloodsoaked mask",
+      "title": "Bloodsoaked Mask",
+      "description": "Bandages dirtied with blood",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "official-s-attire",
+      "term": "official's attire",
+      "title": "Official's Attire",
+      "description": "Noble's gown woven with sturdy fabric",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "omen-helm",
+      "term": "omen helm",
+      "title": "Omen Helm",
+      "description": "Mask of a curse gnawed Omen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "omen-armor",
+      "term": "omen armor",
+      "title": "Omen Armor",
+      "description": "Armor of a curse gnawed Omen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "omen-gauntlets",
+      "term": "omen gauntlets",
+      "title": "Omen Gauntlets",
+      "description": "Gauntlets of a curse gnawed Omen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "omen-greaves",
+      "term": "omen greaves",
+      "title": "Omen Greaves",
+      "description": "Greaves of a curse gnawed Omen",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "carian-knight-helm",
+      "term": "carian knight helm",
+      "title": "Carian Knight Helm",
+      "description": "Helm of enchanted Carian knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "carian-knight-armor",
+      "term": "carian knight armor",
+      "title": "Carian Knight Armor",
+      "description": "Armor of enchanted Carian knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "carian-knight-gauntlets",
+      "term": "carian knight gauntlets",
+      "title": "Carian Knight Gauntlets",
+      "description": "Gauntlets of enchanted Carian knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "carian-knight-greaves",
+      "term": "carian knight greaves",
+      "title": "Carian Knight Greaves",
+      "description": "Greaves of enchanted Carian knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "hierodas-glintstone-crown",
+      "term": "hierodas glintstone crown",
+      "title": "Hierodas Glintstone Crown",
+      "description": "Eyepatch worn by a great sorcerer turned hermit",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "errant-sorcerer-robe",
+      "term": "errant sorcerer robe",
+      "title": "Errant Sorcerer Robe",
+      "description": "Cape worn by a great sorcerer turned hermit",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "errant-sorcerer-manchettes",
+      "term": "errant sorcerer manchettes",
+      "title": "Errant Sorcerer Manchettes",
+      "description": "Arm wraps worn by a great sorcerer turned hermit",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "errant-sorcerer-boots",
+      "term": "errant sorcerer boots",
+      "title": "Errant Sorcerer Boots",
+      "description": "Shoes worn by a great sorcerer turned hermit",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "haima-glintstone-crown",
+      "term": "haima glintstone crown",
+      "title": "Haima Glintstone Crown",
+      "description": "Mask of an unaffiliated glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "battlemage-robe",
+      "term": "battlemage robe",
+      "title": "Battlemage Robe",
+      "description": "Robe of an unaffiliated glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "battlemage-manchettes",
+      "term": "battlemage manchettes",
+      "title": "Battlemage Manchettes",
+      "description": "Arm wraps of an unaffiliated glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "battlemage-legwraps",
+      "term": "battlemage legwraps",
+      "title": "Battlemage Legwraps",
+      "description": "Waistcloth of an unaffiliated glintstone sorcerer",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "snow-witch-hat",
+      "term": "snow witch hat",
+      "title": "Snow Witch Hat",
+      "description": "Hat worn by Enchantress Ranni",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "snow-witch-robe",
+      "term": "snow witch robe",
+      "title": "Snow Witch Robe",
+      "description": "Robe worn by Enchantress Ranni",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "snow-witch-skirt",
+      "term": "snow witch skirt",
+      "title": "Snow Witch Skirt",
+      "description": "Skirt worn by Enchantress Ranni",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "traveler-s-clothes",
+      "term": "traveler's clothes",
+      "title": "Traveler's Clothes",
+      "description": "Robe worn by Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "traveler-s-manchettes",
+      "term": "traveler's manchettes",
+      "title": "Traveler's Manchettes",
+      "description": "Arm wraps worn by Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "traveler-s-boots",
+      "term": "traveler's boots",
+      "title": "Traveler's Boots",
+      "description": "Skirt worn by Malenia",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "juvenile-scholar-cap",
+      "term": "juvenile scholar cap",
+      "title": "Juvenile Scholar Cap",
+      "description": "Cap worn by students of the Raya Lucaria Academy",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "juvenile-scholar-robe",
+      "term": "juvenile scholar robe",
+      "title": "Juvenile Scholar Robe",
+      "description": "Robe worn by students of the Raya Lucaria Academy",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "radiant-gold-mask",
+      "term": "radiant gold mask",
+      "title": "Radiant Gold Mask",
+      "description": "Mask worn by researchers of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "goldmask-s-rags",
+      "term": "goldmask's rags",
+      "title": "Goldmask's Rags",
+      "description": "Robe worn by researchers of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "gold-bracelets",
+      "term": "gold bracelets",
+      "title": "Gold Bracelets",
+      "description": "Arm wraps worn by researchers of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "gold-waistwrap",
+      "term": "gold waistwrap",
+      "title": "Gold Waistwrap",
+      "description": "Waistcloth worn by researchers of the Golden Order",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "fell-omen-cloak",
+      "term": "fell omen cloak",
+      "title": "Fell Omen Cloak",
+      "description": "Robe worn by Morgott, the Elden Lord",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-mask",
+      "term": "albinauric mask",
+      "title": "Albinauric Mask",
+      "description": "Helm modeled after the silent Frog People",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "dirty-chainmail",
+      "term": "dirty chainmail",
+      "title": "Dirty Chainmail",
+      "description": "Chainmail worn by the silent Frog People",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "zamor-mask",
+      "term": "zamor mask",
+      "title": "Zamor Mask",
+      "description": "Mask worn by an ancient hero",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "zamor-armor",
+      "term": "zamor armor",
+      "title": "Zamor Armor",
+      "description": "Armor worn by an ancient hero",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "zamor-bracelets",
+      "term": "zamor bracelets",
+      "title": "Zamor Bracelets",
+      "description": "Arm wraps worn by an ancient hero",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "zamor-legwraps",
+      "term": "zamor legwraps",
+      "title": "Zamor Legwraps",
+      "description": "Waistcloth worn by an ancient hero",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "imp-head-cat",
+      "term": "imp head (cat)",
+      "title": "Imp Head (Cat)",
+      "description": "Ancient mask with an animal motif",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "imp-head-fanged",
+      "term": "imp head (fanged)",
+      "title": "Imp Head (Fanged)",
+      "description": "Head covering made from the largely unaltered head of an impish golem.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "imp-head-long-tongued",
+      "term": "imp head (long-tongued)",
+      "title": "Imp Head (Long-Tongued)",
+      "description": "Head covering made from the largely unaltered head of an impish golem.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "imp-head-corpse",
+      "term": "imp head (corpse)",
+      "title": "Imp Head (Corpse)",
+      "description": "Head covering made from the largely unaltered head of an impish golem.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "imp-head-wolf",
+      "term": "imp head (wolf)",
+      "title": "Imp Head (Wolf)",
+      "description": "Head covering made from the largely unaltered head of an impish golem.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "imp-head-elder",
+      "term": "imp head (elder)",
+      "title": "Imp Head (Elder)",
+      "description": "Head covering made from the largely unaltered head of an impish golem.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "silver-tear-mask",
+      "term": "silver tear mask",
+      "title": "Silver Tear Mask",
+      "description": "Head covering formed from silver tears",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "chain-coif",
+      "term": "chain coif",
+      "title": "Chain Coif",
+      "description": "Helm made of woven chain",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "chain-armor",
+      "term": "chain armor",
+      "title": "Chain Armor",
+      "description": "Chest piece made of woven chain",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "chain-gauntlets",
+      "term": "chain gauntlets",
+      "title": "Chain Gauntlets",
+      "description": "Gauntlets made of woven chain",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "chain-leggings",
+      "term": "chain leggings",
+      "title": "Chain Leggings",
+      "description": "Greaves made of woven chain",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "greathelm",
+      "term": "greathelm",
+      "title": "Greathelm",
+      "description": "Sturdy helm made from iron",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "eye-surcoat",
+      "term": "eye surcoat",
+      "title": "Eye Surcoat",
+      "description": "Iron armor with a surcoat attached",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "tree-surcoat",
+      "term": "tree surcoat",
+      "title": "Tree Surcoat",
+      "description": "Iron armor with a blue surcoat attached",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "octopus-head",
+      "term": "octopus head",
+      "title": "Octopus Head",
+      "description": "Helm modeled after a Land Octopus",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "jar",
+      "term": "jar",
+      "title": "Jar",
+      "description": "This sturdy jar might serve well as a helm",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mushroom-head",
+      "term": "mushroom head",
+      "title": "Mushroom Head",
+      "description": "Helm with slime mold growing on it",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mushroom-body",
+      "term": "mushroom body",
+      "title": "Mushroom Body",
+      "description": "Armor with slime mold growing on it",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mushroom-arms",
+      "term": "mushroom arms",
+      "title": "Mushroom Arms",
+      "description": "Arm wraps with slime mold growing on them",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mushroom-legs",
+      "term": "mushroom legs",
+      "title": "Mushroom Legs",
+      "description": "Leg wraps with slime mold growing on it",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "nox-mirrorhelm",
+      "term": "nox mirrorhelm",
+      "title": "Nox Mirrorhelm",
+      "description": "Shining helm decorated with a mirror",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "iji-s-mirrorhelm",
+      "term": "iji's mirrorhelm",
+      "title": "Iji's Mirrorhelm",
+      "description": "Shining helm decorated on all sides with mirrors",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "black-hood",
+      "term": "black hood",
+      "title": "Black Hood",
+      "description": "Dirty hood worn by bandits",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "leather-armor",
+      "term": "leather armor",
+      "title": "Leather Armor",
+      "description": "Dirty leather armor worn by bandits",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "leather-gloves",
+      "term": "leather gloves",
+      "title": "Leather Gloves",
+      "description": "Dirty gloves worn by bandits",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "leather-boots",
+      "term": "leather boots",
+      "title": "Leather Boots",
+      "description": "Dirty boots worn by bandits",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "bandit-mask",
+      "term": "bandit mask",
+      "title": "Bandit Mask",
+      "description": "Dirty garb worn by bandits",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "knight-helm",
+      "term": "knight helm",
+      "title": "Knight Helm",
+      "description": "Iron helm worn by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "knight-armor",
+      "term": "knight armor",
+      "title": "Knight Armor",
+      "description": "Iron armor worn by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "knight-gauntlets",
+      "term": "knight gauntlets",
+      "title": "Knight Gauntlets",
+      "description": "Iron gauntlets worn by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "knight-greaves",
+      "term": "knight greaves",
+      "title": "Knight Greaves",
+      "description": "Iron greaves worn by foreign knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "greathood",
+      "term": "greathood",
+      "title": "Greathood",
+      "description": "Hood with a mysterious silhouette",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "godrick-soldier-helm",
+      "term": "godrick soldier helm",
+      "title": "Godrick Soldier Helm",
+      "description": "Helm used by Stormveil Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "tree-and-beast-surcoat",
+      "term": "tree-and-beast surcoat",
+      "title": "Tree-and-Beast Surcoat",
+      "description": "Armor used by Stormveil Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "godrick-soldier-gauntlets",
+      "term": "godrick soldier gauntlets",
+      "title": "Godrick Soldier Gauntlets",
+      "description": "Gauntlets used by Stormveil Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "godrick-soldier-greaves",
+      "term": "godrick soldier greaves",
+      "title": "Godrick Soldier Greaves",
+      "description": "Greaves used by Stormveil Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucarian-helm",
+      "term": "raya lucarian helm",
+      "title": "Raya Lucarian Helm",
+      "description": "Helm used by Raya Lucaria Academy Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-surcoat",
+      "term": "cuckoo surcoat",
+      "title": "Cuckoo Surcoat",
+      "description": "Armor used by Raya Lucaria Academy Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucarian-gauntlets",
+      "term": "raya lucarian gauntlets",
+      "title": "Raya Lucarian Gauntlets",
+      "description": "Gauntlets used by Raya Lucaria Academy Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucarian-greaves",
+      "term": "raya lucarian greaves",
+      "title": "Raya Lucarian Greaves",
+      "description": "Greaves used by Raya Lucaria Academy Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-soldier-helm",
+      "term": "leyndell soldier helm",
+      "title": "Leyndell Soldier Helm",
+      "description": "Helm used by Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-surcoat",
+      "term": "erdtree surcoat",
+      "title": "Erdtree Surcoat",
+      "description": "Armor used by Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-soldier-gauntlets",
+      "term": "leyndell soldier gauntlets",
+      "title": "Leyndell Soldier Gauntlets",
+      "description": "Gauntlets used by Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-soldier-greaves",
+      "term": "leyndell soldier greaves",
+      "title": "Leyndell Soldier Greaves",
+      "description": "Greaves used by Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "radahn-soldier-helm",
+      "term": "radahn soldier helm",
+      "title": "Radahn Soldier Helm",
+      "description": "Helm used by Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "redmane-surcoat",
+      "term": "redmane surcoat",
+      "title": "Redmane Surcoat",
+      "description": "Armor used by Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "radahn-soldier-gauntlets",
+      "term": "radahn soldier gauntlets",
+      "title": "Radahn Soldier Gauntlets",
+      "description": "Gauntlets used by Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "radahn-soldier-greaves",
+      "term": "radahn soldier greaves",
+      "title": "Radahn Soldier Greaves",
+      "description": "Greaves used by Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-surcoat",
+      "term": "mausoleum surcoat",
+      "title": "Mausoleum Surcoat",
+      "description": "Armor used by Mausoleum Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-gauntlets",
+      "term": "mausoleum gauntlets",
+      "title": "Mausoleum Gauntlets",
+      "description": "Gauntlets used by Mausoleum Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-greaves",
+      "term": "mausoleum greaves",
+      "title": "Mausoleum Greaves",
+      "description": "Greaves used by Mausoleum Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-helm",
+      "term": "haligtree helm",
+      "title": "Haligtree Helm",
+      "description": "Helm used by Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-crest-surcoat",
+      "term": "haligtree crest surcoat",
+      "title": "Haligtree Crest Surcoat",
+      "description": "Armor used by Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-gauntlets",
+      "term": "haligtree gauntlets",
+      "title": "Haligtree Gauntlets",
+      "description": "Gauntlets used by Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-greaves",
+      "term": "haligtree greaves",
+      "title": "Haligtree Greaves",
+      "description": "Greaves used by Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-knight-helm",
+      "term": "gelmir knight helm",
+      "title": "Gelmir Knight Helm",
+      "description": "Helm worn by knights once loyal to Praetor Rykard.\nIts crest of red feathers symbolizes Rykard's pedigree as Lord Radagon's son.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-knight-armor",
+      "term": "gelmir knight armor",
+      "title": "Gelmir Knight Armor",
+      "description": "Armor worn by knights once loyal to Praetor Rykard.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-knight-gauntlets",
+      "term": "gelmir knight gauntlets",
+      "title": "Gelmir Knight Gauntlets",
+      "description": "Gauntlets worn by knights once loyal to Praetor Rykard.\nTime has yet to dull their luster.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-knight-greaves",
+      "term": "gelmir knight greaves",
+      "title": "Gelmir Knight Greaves",
+      "description": "Greaves worn by knights once loyal to Praetor Rykard.\nTime has yet to dull their luster.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "godrick-knight-helm",
+      "term": "godrick knight helm",
+      "title": "Godrick Knight Helm",
+      "description": "Helm used by Stormveil Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "godrick-knight-armor",
+      "term": "godrick knight armor",
+      "title": "Godrick Knight Armor",
+      "description": "Armor used by Stormveil Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "godrick-knight-gauntlets",
+      "term": "godrick knight gauntlets",
+      "title": "Godrick Knight Gauntlets",
+      "description": "Gauntlets used by Stormveil Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "godrick-knight-greaves",
+      "term": "godrick knight greaves",
+      "title": "Godrick Knight Greaves",
+      "description": "Greaves used by Stormveil Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-knight-helm",
+      "term": "cuckoo knight helm",
+      "title": "Cuckoo Knight Helm",
+      "description": "Helm of Raya Lucaria Academy Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-knight-armor",
+      "term": "cuckoo knight armor",
+      "title": "Cuckoo Knight Armor",
+      "description": "Armor of Raya Lucaria Academy Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-knight-gauntlets",
+      "term": "cuckoo knight gauntlets",
+      "title": "Cuckoo Knight Gauntlets",
+      "description": "Gauntlets of Raya Lucaria Academy Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-knight-greaves",
+      "term": "cuckoo knight greaves",
+      "title": "Cuckoo Knight Greaves",
+      "description": "Greaves of Raya Lucaria Academy Elite Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-knight-helm",
+      "term": "leyndell knight helm",
+      "title": "Leyndell Knight Helm",
+      "description": "Helm used by Elite Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-knight-armor",
+      "term": "leyndell knight armor",
+      "title": "Leyndell Knight Armor",
+      "description": "Armor used by Elite Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-knight-gauntlets",
+      "term": "leyndell knight gauntlets",
+      "title": "Leyndell Knight Gauntlets",
+      "description": "Gauntlets used by Elite Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-knight-greaves",
+      "term": "leyndell knight greaves",
+      "title": "Leyndell Knight Greaves",
+      "description": "Greaves used by Elite Capital Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "redmane-knight-helm",
+      "term": "redmane knight helm",
+      "title": "Redmane Knight Helm",
+      "description": "Helm used by Elite Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "redmane-knight-armor",
+      "term": "redmane knight armor",
+      "title": "Redmane Knight Armor",
+      "description": "Armor used by Elite Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "redmane-knight-gauntlets",
+      "term": "redmane knight gauntlets",
+      "title": "Redmane Knight Gauntlets",
+      "description": "Gauntlets used by Elite Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "redmane-knight-greaves",
+      "term": "redmane knight greaves",
+      "title": "Redmane Knight Greaves",
+      "description": "Greaves used by Elite Caelid Wilds Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-knight-armor",
+      "term": "mausoleum knight armor",
+      "title": "Mausoleum Knight Armor",
+      "description": "Armor used by Elite Mausoleum Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-knight-gauntlets",
+      "term": "mausoleum knight gauntlets",
+      "title": "Mausoleum Knight Gauntlets",
+      "description": "Gauntlets used by Elite Mausoleum Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-knight-greaves",
+      "term": "mausoleum knight greaves",
+      "title": "Mausoleum Knight Greaves",
+      "description": "Greaves used by Elite Mausoleum Knights",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-knight-helm",
+      "term": "haligtree knight helm",
+      "title": "Haligtree Knight Helm",
+      "description": "Helm used by Elite Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-knight-armor",
+      "term": "haligtree knight armor",
+      "title": "Haligtree Knight Armor",
+      "description": "Armor used by Elite Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-knight-gauntlets",
+      "term": "haligtree knight gauntlets",
+      "title": "Haligtree Knight Gauntlets",
+      "description": "Gauntlets used by Elite Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-knight-greaves",
+      "term": "haligtree knight greaves",
+      "title": "Haligtree Knight Greaves",
+      "description": "Greaves used by Elite Knights of Miquella",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "foot-soldier-cap",
+      "term": "foot soldier cap",
+      "title": "Foot Soldier Cap",
+      "description": "Helm used by Stormveil Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "chain-draped-tabard",
+      "term": "chain-draped tabard",
+      "title": "Chain-Draped Tabard",
+      "description": "Armor used by Stormveil Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "foot-soldier-gauntlets",
+      "term": "foot soldier gauntlets",
+      "title": "Foot Soldier Gauntlets",
+      "description": "Gauntlets used by Stormveil Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "foot-soldier-greaves",
+      "term": "foot soldier greaves",
+      "title": "Foot Soldier Greaves",
+      "description": "Greaves used by Stormveil Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "foot-soldier-helmet",
+      "term": "foot soldier helmet",
+      "title": "Foot Soldier Helmet",
+      "description": "Helm used by Raya Lucaria Academy Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "foot-soldier-tabard",
+      "term": "foot soldier tabard",
+      "title": "Foot Soldier Tabard",
+      "description": "Armor used by Raya Lucaria Academy Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "gilded-foot-soldier-cap",
+      "term": "gilded foot soldier cap",
+      "title": "Gilded Foot Soldier Cap",
+      "description": "Helm used by Capital Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "leather-draped-tabard",
+      "term": "leather-draped tabard",
+      "title": "Leather-Draped Tabard",
+      "description": "Armor used by Capital Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "foot-soldier-helm",
+      "term": "foot soldier helm",
+      "title": "Foot Soldier Helm",
+      "description": "Helm used by Caelid Wilds Patrol Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "scarlet-tabard",
+      "term": "scarlet tabard",
+      "title": "Scarlet Tabard",
+      "description": "Armor used by Caelid Wilds Patrol Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "bloodsoaked-tabard",
+      "term": "bloodsoaked tabard",
+      "title": "Bloodsoaked Tabard",
+      "description": "Armor used by Mausoleum Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "sacred-crown-helm",
+      "term": "sacred crown helm",
+      "title": "Sacred Crown Helm",
+      "description": "Helm used by Miquella's Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "ivory-draped-tabard",
+      "term": "ivory-draped tabard",
+      "title": "Ivory-Draped Tabard",
+      "description": "Armor used by Miquella's Soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "omensmirk-mask",
+      "term": "omensmirk mask",
+      "title": "Omensmirk Mask",
+      "description": "Mask worn by Executioners",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "omenkiller-robe",
+      "term": "omenkiller robe",
+      "title": "Omenkiller Robe",
+      "description": "Robe worn by Executioners",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "omenkiller-long-gloves",
+      "term": "omenkiller long gloves",
+      "title": "Omenkiller Long Gloves",
+      "description": "Gloves worn by Executioners",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "omenkiller-boots",
+      "term": "omenkiller boots",
+      "title": "Omenkiller Boots",
+      "description": "Boots worn by Executioners",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-scarab",
+      "term": "ash-of-war scarab",
+      "title": "Ash-of-War Scarab",
+      "description": "Mask made from a large, old white scarab's body",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "incantation-scarab",
+      "term": "incantation scarab",
+      "title": "Incantation Scarab",
+      "description": "Golden scarab worn directly on the head.\nThese scarabs roll clumps of incantations during their labors.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-scarab",
+      "term": "glintstone scarab",
+      "title": "Glintstone Scarab",
+      "description": "Blue-green scarab worn directly on the head.\nThese scarabs roll clumps of sorcery during their labors.",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "crimson-tear-scarab",
+      "term": "crimson tear scarab",
+      "title": "Crimson Tear Scarab",
+      "description": "Mask made from a large, old yellow scarab's body",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-tear-scarab",
+      "term": "cerulean tear scarab",
+      "title": "Cerulean Tear Scarab",
+      "description": "Mask made from a large, old green scarab's body",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "deathbed-dress",
+      "term": "deathbed dress",
+      "title": "Deathbed Dress",
+      "description": "Dress worn by Phia, the Deathbed Companion",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "deathbed-smalls",
+      "term": "deathbed smalls",
+      "title": "Deathbed Smalls",
+      "description": "Skirt worn by Phia, the Deathbed Companion",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "fia-s-hood",
+      "term": "fia's hood",
+      "title": "Fia's Hood",
+      "description": "Hood worn by Phia, the Deathbed Companion",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "fia-s-robe",
+      "term": "fia's robe",
+      "title": "Fia's Robe",
+      "description": "Robe worn by Phia, the Deathbed Companion",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "highwayman-hood",
+      "term": "highwayman hood",
+      "title": "Highwayman Hood",
+      "description": "Hood worn by cave-dwelling foot soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "highwayman-cloth-armor",
+      "term": "highwayman cloth armor",
+      "title": "Highwayman Cloth Armor",
+      "description": "Robe worn by cave-dwelling foot soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "highwayman-gauntlets",
+      "term": "highwayman gauntlets",
+      "title": "Highwayman Gauntlets",
+      "description": "Gloves worn by cave-dwelling foot soldiers",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "base"
+    },
+    {
+      "id": "high-page-hood",
+      "term": "high page hood",
+      "title": "High Page Hood",
+      "description": "Hood of a Page loyal to a certain noble family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "high-page-clothes",
+      "term": "high page clothes",
+      "title": "High Page Clothes",
+      "description": "Garb of a Page loyal to a certain noble family",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "rotten-duelist-helm",
+      "term": "rotten duelist helm",
+      "title": "Rotten Duelist Helm",
+      "description": "Scarlet-bronze helm adorned with many snakes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "rotten-gravekeeper-cloak",
+      "term": "rotten gravekeeper cloak",
+      "title": "Rotten Gravekeeper Cloak",
+      "description": "Robe fashioned from the pelt of a deadly beast",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "rotten-duelist-greaves",
+      "term": "rotten duelist greaves",
+      "title": "Rotten Duelist Greaves",
+      "description": "Scarlet-bronze bracelet depicting coiled snakes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "base"
+    },
+    {
+      "id": "rotten-gravekeeper-cloak-altered",
+      "term": "rotten gravekeeper cloak (altered)",
+      "title": "Rotten Gravekeeper Cloak (Altered)",
+      "description": "Scarlet-bronze anklet depicting coiled snakes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "mushroom-crown",
+      "term": "mushroom crown",
+      "title": "Mushroom Crown",
+      "description": "Garland crown of large flowers rotted by poison",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "base"
+    },
+    {
+      "id": "black-dumpling",
+      "term": "black dumpling",
+      "title": "Black Dumpling",
+      "description": "Red cloth blindfold used to cover prisoners' eyes",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    },
+    {
+      "id": "lazuli-robe",
+      "term": "lazuli robe",
+      "title": "Lazuli Robe",
+      "description": "Sorcerer's robe, dyed in a beautiful cerulean hue",
+      "section": "Elden Ring",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "base"
+    }
+  ]
+}

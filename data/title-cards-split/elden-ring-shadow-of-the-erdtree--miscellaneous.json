@@ -1,0 +1,216 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Miscellaneous",
+  "cards": [
+    {
+      "id": "golden-horn-tender",
+      "term": "golden horn tender",
+      "title": "Golden Horn Tender",
+      "description": "Boosts rune acquisition for a time",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "leda-s-rune",
+      "term": "leda's rune",
+      "title": "Leda's Rune",
+      "description": "Use to gain 40000 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "broken-rune",
+      "term": "broken rune",
+      "title": "Broken Rune",
+      "description": "Use to gain 500 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-1",
+      "term": "shadow realm rune [1]",
+      "title": "Shadow Realm Rune [1]",
+      "description": "Use to gain 7500 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-2",
+      "term": "shadow realm rune [2]",
+      "title": "Shadow Realm Rune [2]",
+      "description": "Use to gain 10000 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-3",
+      "term": "shadow realm rune [3]",
+      "title": "Shadow Realm Rune [3]",
+      "description": "Use to gain 12500 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-4",
+      "term": "shadow realm rune [4]",
+      "title": "Shadow Realm Rune [4]",
+      "description": "Use to gain 15000 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-5",
+      "term": "shadow realm rune [5]",
+      "title": "Shadow Realm Rune [5]",
+      "description": "Use to gain 17500 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-6",
+      "term": "shadow realm rune [6]",
+      "title": "Shadow Realm Rune [6]",
+      "description": "Use to gain 22500 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-realm-rune-7",
+      "term": "shadow realm rune [7]",
+      "title": "Shadow Realm Rune [7]",
+      "description": "Use to gain 30000 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "rune-of-an-unsung-hero",
+      "term": "rune of an unsung hero",
+      "title": "Rune of an Unsung Hero",
+      "description": "Use to gain 50000 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "marika-s-rune",
+      "term": "marika's rune",
+      "title": "Marika's Rune",
+      "description": "Use to gain 80000 runes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "dlc"
+    },
+    {
+      "id": "moore-s-bell-bearing",
+      "term": "moore's bell bearing",
+      "title": "Moore's Bell Bearing",
+      "description": "Offer to Twin Maiden Husks for new item access",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "ymir-s-bell-bearing",
+      "term": "ymir's bell bearing",
+      "title": "Ymir's Bell Bearing",
+      "description": "Bell bearing of Count Ymir, Mother of Fingers, found upon his perished flesh.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "herbalist-s-bell-bearing",
+      "term": "herbalist's bell bearing",
+      "title": "Herbalist's Bell Bearing",
+      "description": "The bell bearing of a hornsent herbalist who did not survive the war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "mushroom-seller-s-bell-bearing-1",
+      "term": "mushroom-seller's bell bearing [1]",
+      "title": "Mushroom-Seller's Bell Bearing [1]",
+      "description": "The bell bearing of a hornsent mushroom-seller who did not survive the war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "mushroom-seller-s-bell-bearing-2",
+      "term": "mushroom-seller's bell bearing [2]",
+      "title": "Mushroom-Seller's Bell Bearing [2]",
+      "description": "The bell bearing of a hornsent mushroom-seller who did not survive the war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "moldmonger-s-bell-bearing",
+      "term": "moldmonger's bell bearing",
+      "title": "Moldmonger's Bell Bearing",
+      "description": "The bell bearing of a hornsent moldmonger who did not survive the war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-bell-bearing",
+      "term": "igon's bell bearing",
+      "title": "Igon's Bell Bearing",
+      "description": "Bell bearing of Igon, drake warrior.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "spellmachinist-s-bell-bearing",
+      "term": "spellmachinist's bell bearing",
+      "title": "Spellmachinist's Bell Bearing",
+      "description": "Bell bearing of Spellmachinist Rabbath.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    },
+    {
+      "id": "string-seller-s-bell-bearing",
+      "term": "string-seller's bell bearing",
+      "title": "String-Seller's Bell Bearing",
+      "description": "The bell bearing of a hornsent string-seller who did not survive the war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "dlc"
+    }
+  ]
+}

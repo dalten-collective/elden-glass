@@ -1,0 +1,3846 @@
+{
+  "section": "Elden Ring",
+  "category": "Locations",
+  "cards": [
+    {
+      "id": "fringefolk-hero-s-grave",
+      "term": "fringefolk hero's grave",
+      "title": "Fringefolk Hero's Grave",
+      "description": "Fringefolk Hero's Grave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tombsward-catacombs",
+      "term": "tombsward catacombs",
+      "title": "Tombsward Catacombs",
+      "description": "Tombsward Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "impaler-s-catacombs",
+      "term": "impaler's catacombs",
+      "title": "Impaler's Catacombs",
+      "description": "Impaler's Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormfoot-catacombs",
+      "term": "stormfoot catacombs",
+      "title": "Stormfoot Catacombs",
+      "description": "Stormfoot Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "road-s-end-catacombs",
+      "term": "road's end catacombs",
+      "title": "Road's End Catacombs",
+      "description": "Road's End Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "murkwater-catacombs",
+      "term": "murkwater catacombs",
+      "title": "Murkwater Catacombs",
+      "description": "Murkwater Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-catacombs",
+      "term": "black knife catacombs",
+      "title": "Black Knife Catacombs",
+      "description": "Black Knife Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cliffbottom-catacombs",
+      "term": "cliffbottom catacombs",
+      "title": "Cliffbottom Catacombs",
+      "description": "Cliffbottom Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "wyndham-catacombs",
+      "term": "wyndham catacombs",
+      "title": "Wyndham Catacombs",
+      "description": "Wyndham Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sainted-hero-s-grave",
+      "term": "sainted hero's grave",
+      "title": "Sainted Hero's Grave",
+      "description": "Sainted Hero's Grave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-hero-s-grave",
+      "term": "gelmir hero's grave",
+      "title": "Gelmir Hero's Grave",
+      "description": "Gelmir Hero's Grave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "auriza-hero-s-grave",
+      "term": "auriza hero's grave",
+      "title": "Auriza Hero's Grave",
+      "description": "Auriza Hero's Grave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "deathtouched-catacombs",
+      "term": "deathtouched catacombs",
+      "title": "Deathtouched Catacombs",
+      "description": "Deathtouched Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "unsightly-catacombs",
+      "term": "unsightly catacombs",
+      "title": "Unsightly Catacombs",
+      "description": "Unsightly Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "auriza-side-tomb",
+      "term": "auriza side tomb",
+      "title": "Auriza Side Tomb",
+      "description": "Auriza Side Tomb",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "minor-erdtree-catacombs",
+      "term": "minor erdtree catacombs",
+      "title": "Minor Erdtree Catacombs",
+      "description": "Minor Erdtree Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "caelid-catacombs",
+      "term": "caelid catacombs",
+      "title": "Caelid Catacombs",
+      "description": "Caelid Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "war-dead-catacombs",
+      "term": "war-dead catacombs",
+      "title": "War-Dead Catacombs",
+      "description": "War-Dead Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "giant-conquering-hero-s-grave",
+      "term": "giant-conquering hero's grave",
+      "title": "Giant-Conquering Hero's Grave",
+      "description": "Giant-Conquering Hero's Grave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "giants-mountaintop-catacombs",
+      "term": "giants' mountaintop catacombs",
+      "title": "Giants' Mountaintop Catacombs",
+      "description": "Giants' Mountaintop Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "consecrated-snowfield-catacombs",
+      "term": "consecrated snowfield catacombs",
+      "title": "Consecrated Snowfield Catacombs",
+      "description": "Consecrated Snowfield Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "hidden-path-to-the-haligtree",
+      "term": "hidden path to the haligtree",
+      "title": "Hidden Path to the Haligtree",
+      "description": "Hidden Path to the Haligtree",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "murkwater-cave",
+      "term": "murkwater cave",
+      "title": "Murkwater Cave",
+      "description": "Murkwater Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "earthbore-cave",
+      "term": "earthbore cave",
+      "title": "Earthbore Cave",
+      "description": "Earthbore Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tombsward-cave",
+      "term": "tombsward cave",
+      "title": "Tombsward Cave",
+      "description": "Tombsward Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "groveside-cave",
+      "term": "groveside cave",
+      "title": "Groveside Cave",
+      "description": "Groveside Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stillwater-cave",
+      "term": "stillwater cave",
+      "title": "Stillwater Cave",
+      "description": "Stillwater Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lakeside-crystal-cave",
+      "term": "lakeside crystal cave",
+      "title": "Lakeside Crystal Cave",
+      "description": "Lakeside Crystal Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "academy-crystal-cave",
+      "term": "academy crystal cave",
+      "title": "Academy Crystal Cave",
+      "description": "Academy Crystal Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "seethewater-cave",
+      "term": "seethewater cave",
+      "title": "Seethewater Cave",
+      "description": "Seethewater Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "volcano-cave",
+      "term": "volcano cave",
+      "title": "Volcano Cave",
+      "description": "Volcano Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragonbarrow-cave",
+      "term": "dragonbarrow cave",
+      "title": "Dragonbarrow Cave",
+      "description": "Dragonbarrow Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-hideaway",
+      "term": "sellia hideaway",
+      "title": "Sellia Hideaway",
+      "description": "Sellia Hideaway",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cave-of-the-forlorn",
+      "term": "cave of the forlorn",
+      "title": "Cave of the Forlorn",
+      "description": "Cave of the Forlorn",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "coastal-cave",
+      "term": "coastal cave",
+      "title": "Coastal Cave",
+      "description": "Coastal Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "highroad-cave",
+      "term": "highroad cave",
+      "title": "Highroad Cave",
+      "description": "Highroad Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-grotto",
+      "term": "perfumer's grotto",
+      "title": "Perfumer's Grotto",
+      "description": "Perfumer's Grotto",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sage-s-cave",
+      "term": "sage's cave",
+      "title": "Sage's Cave",
+      "description": "Sage's Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "abandoned-cave",
+      "term": "abandoned cave",
+      "title": "Abandoned Cave",
+      "description": "Abandoned Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gaol-cave",
+      "term": "gaol cave",
+      "title": "Gaol Cave",
+      "description": "Gaol Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "spiritcaller-s-cave",
+      "term": "spiritcaller's cave",
+      "title": "Spiritcaller's Cave",
+      "description": "Spiritcaller's Cave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "morne-tunnel",
+      "term": "morne tunnel",
+      "title": "Morne Tunnel",
+      "description": "Morne Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "limgrave-tunnels",
+      "term": "limgrave tunnels",
+      "title": "Limgrave Tunnels",
+      "description": "Limgrave Tunnels",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucaria-crystal-tunnel",
+      "term": "raya lucaria crystal tunnel",
+      "title": "Raya Lucaria Crystal Tunnel",
+      "description": "Raya Lucaria Crystal Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "old-altus-tunnel",
+      "term": "old altus tunnel",
+      "title": "Old Altus Tunnel",
+      "description": "Old Altus Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "altus-tunnel",
+      "term": "altus tunnel",
+      "title": "Altus Tunnel",
+      "description": "Altus Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gael-tunnel",
+      "term": "gael tunnel",
+      "title": "Gael Tunnel",
+      "description": "Gael Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-crystal-tunnel",
+      "term": "sellia crystal tunnel",
+      "title": "Sellia Crystal Tunnel",
+      "description": "Sellia Crystal Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "yelough-anix-tunnel",
+      "term": "yelough anix tunnel",
+      "title": "Yelough Anix Tunnel",
+      "description": "Yelough Anix Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-limgrave",
+      "term": "divine tower of limgrave",
+      "title": "Divine Tower of Limgrave",
+      "description": "Divine Tower of Limgrave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "carian-study-hall",
+      "term": "carian study hall",
+      "title": "Carian Study Hall",
+      "description": "Carian Study Hall",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-liurnia",
+      "term": "divine tower of liurnia",
+      "title": "Divine Tower of Liurnia",
+      "description": "Divine Tower of Liurnia",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sealed-tunnel",
+      "term": "sealed tunnel",
+      "title": "Sealed Tunnel",
+      "description": "Sealed Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-west-altus",
+      "term": "divine tower of west altus",
+      "title": "Divine Tower of West Altus",
+      "description": "Divine Tower of West Altus",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-caelid",
+      "term": "divine tower of caelid",
+      "title": "Divine Tower of Caelid",
+      "description": "Divine Tower of Caelid",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-east-altus",
+      "term": "divine tower of east altus",
+      "title": "Divine Tower of East Altus",
+      "description": "Divine Tower of East Altus",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "isolated-divine-tower",
+      "term": "isolated divine tower",
+      "title": "Isolated Divine Tower",
+      "description": "Isolated Divine Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-catacombs",
+      "term": "leyndell catacombs",
+      "title": "Leyndell Catacombs",
+      "description": "Leyndell Catacombs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "capital-outskirts",
+      "term": "capital outskirts",
+      "title": "Capital Outskirts",
+      "description": "Capital Outskirts",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castleward-tunnel",
+      "term": "castleward tunnel",
+      "title": "Castleward Tunnel",
+      "description": "Castleward Tunnel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gateside-chamber",
+      "term": "gateside chamber",
+      "title": "Gateside Chamber",
+      "description": "Gateside Chamber",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormveil-cliffside",
+      "term": "stormveil cliffside",
+      "title": "Stormveil Cliffside",
+      "description": "Stormveil Cliffside",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "rampart-tower",
+      "term": "rampart tower",
+      "title": "Rampart Tower",
+      "description": "Rampart Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "liftside-chamber",
+      "term": "liftside chamber",
+      "title": "Liftside Chamber",
+      "description": "Liftside Chamber",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "secluded-cell",
+      "term": "secluded cell",
+      "title": "Secluded Cell",
+      "description": "Secluded Cell",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormveil-main-gate",
+      "term": "stormveil main gate",
+      "title": "Stormveil Main Gate",
+      "description": "Stormveil Main Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "elden-throne",
+      "term": "elden throne",
+      "title": "Elden Throne",
+      "description": "Elden Throne",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-sanctuary",
+      "term": "erdtree sanctuary",
+      "title": "Erdtree Sanctuary",
+      "description": "Erdtree Sanctuary",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "east-capital-rampart",
+      "term": "east capital rampart",
+      "title": "East Capital Rampart",
+      "description": "East Capital Rampart",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lower-capital-church",
+      "term": "lower capital church",
+      "title": "Lower Capital Church",
+      "description": "Lower Capital Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "avenue-balcony",
+      "term": "avenue balcony",
+      "title": "Avenue Balcony",
+      "description": "Avenue Balcony",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "west-capital-rampart",
+      "term": "west capital rampart",
+      "title": "West Capital Rampart",
+      "description": "West Capital Rampart",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "queen-s-bedchamber",
+      "term": "queen's bedchamber",
+      "title": "Queen's Bedchamber",
+      "description": "Queen's Bedchamber",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fortified-manor-first-floor",
+      "term": "fortified manor, first floor",
+      "title": "Fortified Manor, First Floor",
+      "description": "Fortified Manor, First Floor",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-bridge",
+      "term": "divine bridge",
+      "title": "Divine Bridge",
+      "description": "Divine Bridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "volcano-manor-request-vargram",
+      "term": "volcano manor request: vargram",
+      "title": "Volcano Manor Request: Vargram",
+      "description": "Volcano Manor Request: Vargram",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-capital-of-ash",
+      "term": "leyndell, capital of ash",
+      "title": "Leyndell, Capital of Ash",
+      "description": "Leyndell, Capital of Ash",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "table-of-lost-grace",
+      "term": "table of lost grace",
+      "title": "Table of Lost Grace",
+      "description": "Table of Lost Grace",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ainsel-river-well-depths",
+      "term": "ainsel river well depths",
+      "title": "Ainsel River Well Depths",
+      "description": "Ainsel River Well Depths",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ainsel-river-sluice-gate",
+      "term": "ainsel river sluice gate",
+      "title": "Ainsel River Sluice Gate",
+      "description": "Ainsel River Sluice Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ainsel-river-downstream",
+      "term": "ainsel river downstream",
+      "title": "Ainsel River Downstream",
+      "description": "Ainsel River Downstream",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "nokstella-eternal-city",
+      "term": "nokstella, eternal city",
+      "title": "Nokstella, Eternal City",
+      "description": "Nokstella, Eternal City",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lake-of-rot-shoreside",
+      "term": "lake of rot shoreside",
+      "title": "Lake of Rot Shoreside",
+      "description": "Lake of Rot Shoreside",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "grand-cloister",
+      "term": "grand cloister",
+      "title": "Grand Cloister",
+      "description": "Grand Cloister",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "nokstella-waterfall-basin",
+      "term": "nokstella waterfall basin",
+      "title": "Nokstella Waterfall Basin",
+      "description": "Nokstella Waterfall Basin",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "great-waterfall-basin",
+      "term": "great waterfall basin",
+      "title": "Great Waterfall Basin",
+      "description": "Great Waterfall Basin",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "siofra-river-bank",
+      "term": "siofra river bank",
+      "title": "Siofra River Bank",
+      "description": "Siofra River Bank",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "worshippers-woods",
+      "term": "worshippers' woods",
+      "title": "Worshippers' Woods",
+      "description": "Worshippers' Woods",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ancestral-woods",
+      "term": "ancestral woods",
+      "title": "Ancestral Woods",
+      "description": "Ancestral Woods",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "aqueduct-facing-cliffs",
+      "term": "aqueduct-facing cliffs",
+      "title": "Aqueduct-Facing Cliffs",
+      "description": "Aqueduct-Facing Cliffs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "night-s-sacred-ground",
+      "term": "night's sacred ground",
+      "title": "Night's Sacred Ground",
+      "description": "Night's Sacred Ground",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "below-the-well",
+      "term": "below the well",
+      "title": "Below the Well",
+      "description": "Below the Well",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "prince-of-death-s-throne",
+      "term": "prince of death's throne",
+      "title": "Prince of Death's Throne",
+      "description": "Prince of Death's Throne",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "root-facing-cliffs",
+      "term": "root-facing cliffs",
+      "title": "Root-Facing Cliffs",
+      "description": "Root-Facing Cliffs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "great-waterfall-crest",
+      "term": "great waterfall crest",
+      "title": "Great Waterfall Crest",
+      "description": "Great Waterfall Crest",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "the-nameless-eternal-city",
+      "term": "the nameless eternal city",
+      "title": "The Nameless Eternal City",
+      "description": "The Nameless Eternal City",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "across-the-roots",
+      "term": "across the roots",
+      "title": "Across the Roots",
+      "description": "Across the Roots",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cocoon-of-the-empyrean",
+      "term": "cocoon of the empyrean",
+      "title": "Cocoon of the Empyrean",
+      "description": "Cocoon of the Empyrean",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "palace-approach-ledge-road",
+      "term": "palace approach ledge-road",
+      "title": "Palace Approach Ledge-Road",
+      "description": "Palace Approach Ledge-Road",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dynasty-mausoleum-entrance",
+      "term": "dynasty mausoleum entrance",
+      "title": "Dynasty Mausoleum Entrance",
+      "description": "Dynasty Mausoleum Entrance",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dynasty-mausoleum-midpoint",
+      "term": "dynasty mausoleum midpoint",
+      "title": "Dynasty Mausoleum Midpoint",
+      "description": "Dynasty Mausoleum Midpoint",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "siofra-river-well-depths",
+      "term": "siofra river well depths",
+      "title": "Siofra River Well Depths",
+      "description": "Siofra River Well Depths",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragon-temple-altar",
+      "term": "dragon temple altar",
+      "title": "Dragon Temple Altar",
+      "description": "Dragon Temple Altar",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "crumbling-beast-grave",
+      "term": "crumbling beast grave",
+      "title": "Crumbling Beast Grave",
+      "description": "Crumbling Beast Grave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "crumbling-beast-grave-depths",
+      "term": "crumbling beast grave depths",
+      "title": "Crumbling Beast Grave Depths",
+      "description": "Crumbling Beast Grave Depths",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tempest-facing-balcony",
+      "term": "tempest-facing balcony",
+      "title": "Tempest-Facing Balcony",
+      "description": "Tempest-Facing Balcony",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragon-temple",
+      "term": "dragon temple",
+      "title": "Dragon Temple",
+      "description": "Dragon Temple",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragon-temple-transept",
+      "term": "dragon temple transept",
+      "title": "Dragon Temple Transept",
+      "description": "Dragon Temple Transept",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragon-temple-lift",
+      "term": "dragon temple lift",
+      "title": "Dragon Temple Lift",
+      "description": "Dragon Temple Lift",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragon-temple-rooftop",
+      "term": "dragon temple rooftop",
+      "title": "Dragon Temple Rooftop",
+      "description": "Dragon Temple Rooftop",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "beside-the-great-bridge",
+      "term": "beside the great bridge",
+      "title": "Beside the Great Bridge",
+      "description": "Beside the Great Bridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucaria-grand-library",
+      "term": "raya lucaria grand library",
+      "title": "Raya Lucaria Grand Library",
+      "description": "Raya Lucaria Grand Library",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "debate-parlor",
+      "term": "debate parlor",
+      "title": "Debate Parlor",
+      "description": "Debate Parlor",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-the-cuckoo",
+      "term": "church of the cuckoo",
+      "title": "Church of the Cuckoo",
+      "description": "Church of the Cuckoo",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "schoolhouse-classroom",
+      "term": "schoolhouse classroom",
+      "title": "Schoolhouse Classroom",
+      "description": "Schoolhouse Classroom",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "prayer-room",
+      "term": "prayer room",
+      "title": "Prayer Room",
+      "description": "Prayer Room",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "elphael-inner-wall",
+      "term": "elphael inner wall",
+      "title": "Elphael Inner Wall",
+      "description": "Elphael Inner Wall",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "drainage-channel",
+      "term": "drainage channel",
+      "title": "Drainage Channel",
+      "description": "Drainage Channel",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-roots",
+      "term": "haligtree roots",
+      "title": "Haligtree Roots",
+      "description": "Haligtree Roots",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-promenade",
+      "term": "haligtree promenade",
+      "title": "Haligtree Promenade",
+      "description": "Haligtree Promenade",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-canopy",
+      "term": "haligtree canopy",
+      "title": "Haligtree Canopy",
+      "description": "Haligtree Canopy",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-town",
+      "term": "haligtree town",
+      "title": "Haligtree Town",
+      "description": "Haligtree Town",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-town-plaza",
+      "term": "haligtree town plaza",
+      "title": "Haligtree Town Plaza",
+      "description": "Haligtree Town Plaza",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "temple-of-eiglay",
+      "term": "temple of eiglay",
+      "title": "Temple of Eiglay",
+      "description": "Temple of Eiglay",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "prison-town-church",
+      "term": "prison town church",
+      "title": "Prison Town Church",
+      "description": "Prison Town Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "guest-hall",
+      "term": "guest hall",
+      "title": "Guest Hall",
+      "description": "Guest Hall",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "audience-pathway",
+      "term": "audience pathway",
+      "title": "Audience Pathway",
+      "description": "Audience Pathway",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "abductor-virgin",
+      "term": "abductor virgin",
+      "title": "Abductor Virgin",
+      "description": "Abductor Virgin",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "subterranean-inquisition-chamber",
+      "term": "subterranean inquisition chamber",
+      "title": "Subterranean Inquisition Chamber",
+      "description": "Subterranean Inquisition Chamber",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cave-of-knowledge",
+      "term": "cave of knowledge",
+      "title": "Cave of Knowledge",
+      "description": "Cave of Knowledge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "rear-gael-tunnel-entrance",
+      "term": "rear gael tunnel entrance",
+      "title": "Rear Gael Tunnel Entrance",
+      "description": "Rear Gael Tunnel Entrance",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "limgrave-tower-bridge",
+      "term": "limgrave tower bridge",
+      "title": "Limgrave Tower Bridge",
+      "description": "Limgrave Tower Bridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "study-hall-entrance",
+      "term": "study hall entrance",
+      "title": "Study Hall Entrance",
+      "description": "Study Hall Entrance",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "liurnia-tower-bridge",
+      "term": "liurnia tower bridge",
+      "title": "Liurnia Tower Bridge",
+      "description": "Liurnia Tower Bridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-west-altus-gate",
+      "term": "divine tower of west altus: gate",
+      "title": "Divine Tower of West Altus: Gate",
+      "description": "Divine Tower of West Altus: Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-caelid-basement",
+      "term": "divine tower of caelid: basement",
+      "title": "Divine Tower of Caelid: Basement",
+      "description": "Divine Tower of Caelid: Basement",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-caelid-center",
+      "term": "divine tower of caelid: center",
+      "title": "Divine Tower of Caelid: Center",
+      "description": "Divine Tower of Caelid: Center",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "divine-tower-of-east-altus-gate",
+      "term": "divine tower of east altus: gate",
+      "title": "Divine Tower of East Altus: Gate",
+      "description": "Divine Tower of East Altus: Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cathedral-of-the-forsaken",
+      "term": "cathedral of the forsaken",
+      "title": "Cathedral of the Forsaken",
+      "description": "Cathedral of the Forsaken",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "underground-roadside",
+      "term": "underground roadside",
+      "title": "Underground Roadside",
+      "description": "Underground Roadside",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "forsaken-depths",
+      "term": "forsaken depths",
+      "title": "Forsaken Depths",
+      "description": "Forsaken Depths",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-flame-proscription",
+      "term": "frenzied flame proscription",
+      "title": "Frenzied Flame Proscription",
+      "description": "Frenzied Flame Proscription",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ruin-strewn-precipice-overlook",
+      "term": "ruin-strewn precipice overlook",
+      "title": "Ruin-Strewn Precipice Overlook",
+      "description": "Ruin-Strewn Precipice Overlook",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "volcano-manor-request-tragoth",
+      "term": "volcano manor request: tragoth",
+      "title": "Volcano Manor Request: Tragoth",
+      "description": "Volcano Manor Request: Tragoth",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-elleh",
+      "term": "church of elleh",
+      "title": "Church of Elleh",
+      "description": "Church of Elleh",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormhill-shack",
+      "term": "stormhill shack",
+      "title": "Stormhill Shack",
+      "description": "Stormhill Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "artist-s-shack",
+      "term": "artist's shack",
+      "title": "Artist's Shack",
+      "description": "Artist's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "third-church-of-marika",
+      "term": "third church of marika",
+      "title": "Third Church of Marika",
+      "description": "Third Church of Marika",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fort-haight-west",
+      "term": "fort haight west",
+      "title": "Fort Haight West",
+      "description": "Fort Haight West",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "agheel-lake-south",
+      "term": "agheel lake south",
+      "title": "Agheel Lake South",
+      "description": "Agheel Lake South",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "agheel-lake-north",
+      "term": "agheel lake north",
+      "title": "Agheel Lake North",
+      "description": "Agheel Lake North",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gatefront",
+      "term": "gatefront",
+      "title": "Gatefront",
+      "description": "Gatefront",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "garden-beyond-the-bridge",
+      "term": "garden beyond the bridge",
+      "title": "Garden Beyond the Bridge",
+      "description": "Garden Beyond the Bridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "seaside-ruins",
+      "term": "seaside ruins",
+      "title": "Seaside Ruins",
+      "description": "Seaside Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "mistwood-outskirts",
+      "term": "mistwood outskirts",
+      "title": "Mistwood Outskirts",
+      "description": "Mistwood Outskirts",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "mistwood",
+      "term": "mistwood",
+      "title": "Mistwood",
+      "description": "Mistwood",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "murkwater-coast",
+      "term": "murkwater coast",
+      "title": "Murkwater Coast",
+      "description": "Murkwater Coast",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "saintsbridge",
+      "term": "saintsbridge",
+      "title": "Saintsbridge",
+      "description": "Saintsbridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "summonwater-village-outskirts",
+      "term": "summonwater village outskirts",
+      "title": "Summonwater Village Outskirts",
+      "description": "Summonwater Village Outskirts",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "warmaster-s-shack",
+      "term": "warmaster's shack",
+      "title": "Warmaster's Shack",
+      "description": "Warmaster's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "waypoint-ruins-cellar",
+      "term": "waypoint ruins cellar",
+      "title": "Waypoint Ruins Cellar",
+      "description": "Waypoint Ruins Cellar",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "the-first-step",
+      "term": "the first step",
+      "title": "The First Step",
+      "description": "The First Step",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fourth-church-of-marika",
+      "term": "fourth church of marika",
+      "title": "Fourth Church of Marika",
+      "description": "Fourth Church of Marika",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castle-morne-rampart",
+      "term": "castle morne rampart",
+      "title": "Castle Morne Rampart",
+      "description": "Castle Morne Rampart",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tombsward",
+      "term": "tombsward",
+      "title": "Tombsward",
+      "description": "Tombsward",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "south-of-the-lookout-tower",
+      "term": "south of the lookout tower",
+      "title": "South of the Lookout Tower",
+      "description": "South of the Lookout Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ailing-village-outskirts",
+      "term": "ailing village outskirts",
+      "title": "Ailing Village Outskirts",
+      "description": "Ailing Village Outskirts",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "beside-the-crater-pocked-glade",
+      "term": "beside the crater-pocked glade",
+      "title": "Beside the Crater-Pocked Glade",
+      "description": "Beside the Crater-Pocked Glade",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "isolated-merchant-s-shack",
+      "term": "isolated merchant's shack",
+      "title": "Isolated Merchant's Shack",
+      "description": "Isolated Merchant's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "bridge-of-sacrifice",
+      "term": "bridge of sacrifice",
+      "title": "Bridge of Sacrifice",
+      "description": "Bridge of Sacrifice",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castle-morne-lift",
+      "term": "castle morne lift",
+      "title": "Castle Morne Lift",
+      "description": "Castle Morne Lift",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "behind-the-castle",
+      "term": "behind the castle",
+      "title": "Behind the Castle",
+      "description": "Behind the Castle",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "beside-the-rampart-gaol",
+      "term": "beside the rampart gaol",
+      "title": "Beside the Rampart Gaol",
+      "description": "Beside the Rampart Gaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "morne-moangrave",
+      "term": "morne moangrave",
+      "title": "Morne Moangrave",
+      "description": "Morne Moangrave",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-pilgrimage",
+      "term": "church of pilgrimage",
+      "title": "Church of Pilgrimage",
+      "description": "Church of Pilgrimage",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lake-facing-cliffs",
+      "term": "lake-facing cliffs",
+      "title": "Lake-Facing Cliffs",
+      "description": "Lake-Facing Cliffs",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "liurnia-lake-shore",
+      "term": "liurnia lake shore",
+      "title": "Liurnia Lake Shore",
+      "description": "Liurnia Lake Shore",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "laskyar-ruins",
+      "term": "laskyar ruins",
+      "title": "Laskyar Ruins",
+      "description": "Laskyar Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "scenic-isle",
+      "term": "scenic isle",
+      "title": "Scenic Isle",
+      "description": "Scenic Isle",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "academy-gate-town",
+      "term": "academy gate town",
+      "title": "Academy Gate Town",
+      "description": "Academy Gate Town",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "main-academy-gate",
+      "term": "main academy gate",
+      "title": "Main Academy Gate",
+      "description": "Main Academy Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "east-raya-lucaria-gate",
+      "term": "east raya lucaria gate",
+      "title": "East Raya Lucaria Gate",
+      "description": "East Raya Lucaria Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "bellum-church",
+      "term": "bellum church",
+      "title": "Bellum Church",
+      "description": "Bellum Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "grand-lift-of-dectus",
+      "term": "grand lift of dectus",
+      "title": "Grand Lift of Dectus",
+      "description": "Grand Lift of Dectus",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "foot-of-the-four-belfries",
+      "term": "foot of the four belfries",
+      "title": "Foot of the Four Belfries",
+      "description": "Foot of the Four Belfries",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sorcerer-s-isle",
+      "term": "sorcerer's isle",
+      "title": "Sorcerer's Isle",
+      "description": "Sorcerer's Isle",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "northern-liurnia-lake-shore",
+      "term": "northern liurnia lake shore",
+      "title": "Northern Liurnia Lake Shore",
+      "description": "Northern Liurnia Lake Shore",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "road-to-the-manor",
+      "term": "road to the manor",
+      "title": "Road to the Manor",
+      "description": "Road to the Manor",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "main-caria-manor-gate",
+      "term": "main caria manor gate",
+      "title": "Main Caria Manor Gate",
+      "description": "Main Caria Manor Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "slumbering-wolf-s-shack",
+      "term": "slumbering wolf's shack",
+      "title": "Slumbering Wolf's Shack",
+      "description": "Slumbering Wolf's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "boilprawn-shack",
+      "term": "boilprawn shack",
+      "title": "Boilprawn Shack",
+      "description": "Boilprawn Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "revenger-s-shack",
+      "term": "revenger's shack",
+      "title": "Revenger's Shack",
+      "description": "Revenger's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "folly-on-the-lake",
+      "term": "folly on the lake",
+      "title": "Folly on the Lake",
+      "description": "Folly on the Lake",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "village-of-the-albinaurics",
+      "term": "village of the albinaurics",
+      "title": "Village of the Albinaurics",
+      "description": "Village of the Albinaurics",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "liurnia-highway-north",
+      "term": "liurnia highway north",
+      "title": "Liurnia Highway North",
+      "description": "Liurnia Highway North",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gate-town-bridge",
+      "term": "gate town bridge",
+      "title": "Gate Town Bridge",
+      "description": "Gate Town Bridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "eastern-liurnia-lake-shore",
+      "term": "eastern liurnia lake shore",
+      "title": "Eastern Liurnia Lake Shore",
+      "description": "Eastern Liurnia Lake Shore",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-vows",
+      "term": "church of vows",
+      "title": "Church of Vows",
+      "description": "Church of Vows",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ruined-labyrinth",
+      "term": "ruined labyrinth",
+      "title": "Ruined Labyrinth",
+      "description": "Ruined Labyrinth",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-compound",
+      "term": "mausoleum compound",
+      "title": "Mausoleum Compound",
+      "description": "Mausoleum Compound",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "the-four-belfries",
+      "term": "the four belfries",
+      "title": "The Four Belfries",
+      "description": "The Four Belfries",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ranni-s-rise",
+      "term": "ranni's rise",
+      "title": "Ranni's Rise",
+      "description": "Ranni's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ravine-veiled-village",
+      "term": "ravine-veiled village",
+      "title": "Ravine-Veiled Village",
+      "description": "Ravine-Veiled Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "manor-upper-level",
+      "term": "manor upper level",
+      "title": "Manor Upper Level",
+      "description": "Manor Upper Level",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "manor-lower-level",
+      "term": "manor lower level",
+      "title": "Manor Lower Level",
+      "description": "Manor Lower Level",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "royal-moongazing-grounds",
+      "term": "royal moongazing grounds",
+      "title": "Royal Moongazing Grounds",
+      "description": "Royal Moongazing Grounds",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gate-town-north",
+      "term": "gate town north",
+      "title": "Gate Town North",
+      "description": "Gate Town North",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "eastern-tableland",
+      "term": "eastern tableland",
+      "title": "Eastern Tableland",
+      "description": "Eastern Tableland",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "the-ravine",
+      "term": "the ravine",
+      "title": "The Ravine",
+      "description": "The Ravine",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fallen-ruins-of-the-lake",
+      "term": "fallen ruins of the lake",
+      "title": "Fallen Ruins of the Lake",
+      "description": "Fallen Ruins of the Lake",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "converted-tower",
+      "term": "converted tower",
+      "title": "Converted Tower",
+      "description": "Converted Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "behind-caria-manor",
+      "term": "behind caria manor",
+      "title": "Behind Caria Manor",
+      "description": "Behind Caria Manor",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-flame-village-outskirts",
+      "term": "frenzied flame village outskirts",
+      "title": "Frenzied Flame Village Outskirts",
+      "description": "Frenzied Flame Village Outskirts",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-inhibition",
+      "term": "church of inhibition",
+      "title": "Church of Inhibition",
+      "description": "Church of Inhibition",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "temple-quarter",
+      "term": "temple quarter",
+      "title": "Temple Quarter",
+      "description": "Temple Quarter",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "east-gate-bridge-trestle",
+      "term": "east gate bridge trestle",
+      "title": "East Gate Bridge Trestle",
+      "description": "East Gate Bridge Trestle",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "crystalline-woods",
+      "term": "crystalline woods",
+      "title": "Crystalline Woods",
+      "description": "Crystalline Woods",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "liurnia-highway-south",
+      "term": "liurnia highway south",
+      "title": "Liurnia Highway South",
+      "description": "Liurnia Highway South",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "jarburg",
+      "term": "jarburg",
+      "title": "Jarburg",
+      "description": "Jarburg",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "south-raya-lucaria-gate",
+      "term": "south raya lucaria gate",
+      "title": "South Raya Lucaria Gate",
+      "description": "South Raya Lucaria Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ranni-s-chamber",
+      "term": "ranni's chamber",
+      "title": "Ranni's Chamber",
+      "description": "Ranni's Chamber",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cathedral-of-manus-celes",
+      "term": "cathedral of manus celes",
+      "title": "Cathedral of Manus Celes",
+      "description": "Cathedral of Manus Celes",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "altar-south",
+      "term": "altar south",
+      "title": "Altar South",
+      "description": "Altar South",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-gazing-hill",
+      "term": "erdtree-gazing hill",
+      "title": "Erdtree-Gazing Hill",
+      "description": "Erdtree-Gazing Hill",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "windmill-village",
+      "term": "windmill village",
+      "title": "Windmill Village",
+      "description": "Windmill Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "minor-erdtree-church",
+      "term": "minor erdtree church",
+      "title": "Minor Erdtree Church",
+      "description": "Minor Erdtree Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "altus-highway-junction",
+      "term": "altus highway junction",
+      "title": "Altus Highway Junction",
+      "description": "Altus Highway Junction",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "rampartside-path",
+      "term": "rampartside path",
+      "title": "Rampartside Path",
+      "description": "Rampartside Path",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "hermit-merchant-s-shack",
+      "term": "hermit merchant's shack",
+      "title": "Hermit Merchant's Shack",
+      "description": "Hermit Merchant's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "road-of-iniquity-side-path",
+      "term": "road of iniquity side path",
+      "title": "Road of Iniquity Side Path",
+      "description": "Road of Iniquity Side Path",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "forest-spanning-greatbridge",
+      "term": "forest-spanning greatbridge",
+      "title": "Forest-Spanning Greatbridge",
+      "description": "Forest-Spanning Greatbridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "abandoned-coffin",
+      "term": "abandoned coffin",
+      "title": "Abandoned Coffin",
+      "description": "Abandoned Coffin",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "bower-of-bounty",
+      "term": "bower of bounty",
+      "title": "Bower of Bounty",
+      "description": "Bower of Bounty",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "outer-wall-phantom-tree",
+      "term": "outer wall phantom tree",
+      "title": "Outer Wall Phantom Tree",
+      "description": "Outer Wall Phantom Tree",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "outer-wall-battleground",
+      "term": "outer wall battleground",
+      "title": "Outer Wall Battleground",
+      "description": "Outer Wall Battleground",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "windmill-heights",
+      "term": "windmill heights",
+      "title": "Windmill Heights",
+      "description": "Windmill Heights",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "capital-rampart",
+      "term": "capital rampart",
+      "title": "Capital Rampart",
+      "description": "Capital Rampart",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castellan-s-hall",
+      "term": "castellan's hall",
+      "title": "Castellan's Hall",
+      "description": "Castellan's Hall",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "shaded-castle-ramparts",
+      "term": "shaded castle ramparts",
+      "title": "Shaded Castle Ramparts",
+      "description": "Shaded Castle Ramparts",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "shaded-castle-inner-gate",
+      "term": "shaded castle inner gate",
+      "title": "Shaded Castle Inner Gate",
+      "description": "Shaded Castle Inner Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "bridge-of-iniquity",
+      "term": "bridge of iniquity",
+      "title": "Bridge of Iniquity",
+      "description": "Bridge of Iniquity",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ninth-mt-gelmir-campsite",
+      "term": "ninth mt. gelmir campsite",
+      "title": "Ninth Mt. Gelmir Campsite",
+      "description": "Ninth Mt. Gelmir Campsite",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "first-mt-gelmir-campsite",
+      "term": "first mt. gelmir campsite",
+      "title": "First Mt. Gelmir Campsite",
+      "description": "First Mt. Gelmir Campsite",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "road-of-iniquity",
+      "term": "road of iniquity",
+      "title": "Road of Iniquity",
+      "description": "Road of Iniquity",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "seethewater-river",
+      "term": "seethewater river",
+      "title": "Seethewater River",
+      "description": "Seethewater River",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "seethewater-terminus",
+      "term": "seethewater terminus",
+      "title": "Seethewater Terminus",
+      "description": "Seethewater Terminus",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "craftsman-s-shack",
+      "term": "craftsman's shack",
+      "title": "Craftsman's Shack",
+      "description": "Craftsman's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "smoldering-church",
+      "term": "smoldering church",
+      "title": "Smoldering Church",
+      "description": "Smoldering Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "rotview-balcony",
+      "term": "rotview balcony",
+      "title": "Rotview Balcony",
+      "description": "Rotview Balcony",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "smoldering-wall",
+      "term": "smoldering wall",
+      "title": "Smoldering Wall",
+      "description": "Smoldering Wall",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "deep-siofra-well",
+      "term": "deep siofra well",
+      "title": "Deep Siofra Well",
+      "description": "Deep Siofra Well",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "caelem-ruins",
+      "term": "caelem ruins",
+      "title": "Caelem Ruins",
+      "description": "Caelem Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "heart-of-aeonia",
+      "term": "heart of aeonia",
+      "title": "Heart of Aeonia",
+      "description": "Heart of Aeonia",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "chair-crypt-of-sellia",
+      "term": "chair-crypt of sellia",
+      "title": "Chair-Crypt of Sellia",
+      "description": "Chair-Crypt of Sellia",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "impassable-greatbridge",
+      "term": "impassable greatbridge",
+      "title": "Impassable Greatbridge",
+      "description": "Impassable Greatbridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "redmane-castle-plaza",
+      "term": "redmane castle plaza",
+      "title": "Redmane Castle Plaza",
+      "description": "Redmane Castle Plaza",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "chamber-outside-the-plaza",
+      "term": "chamber outside the plaza",
+      "title": "Chamber Outside the Plaza",
+      "description": "Chamber Outside the Plaza",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fort-gael-north",
+      "term": "fort gael north",
+      "title": "Fort Gael North",
+      "description": "Fort Gael North",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "aeonia-swamp-shore",
+      "term": "aeonia swamp shore",
+      "title": "Aeonia Swamp Shore",
+      "description": "Aeonia Swamp Shore",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "southern-aeonia-swamp-bank",
+      "term": "southern aeonia swamp bank",
+      "title": "Southern Aeonia Swamp Bank",
+      "description": "Southern Aeonia Swamp Bank",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-under-stair",
+      "term": "sellia under-stair",
+      "title": "Sellia Under-Stair",
+      "description": "Sellia Under-Stair",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-the-plague",
+      "term": "church of the plague",
+      "title": "Church of the Plague",
+      "description": "Church of the Plague",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "caelid-highway-south",
+      "term": "caelid highway south",
+      "title": "Caelid Highway South",
+      "description": "Caelid Highway South",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragonbarrow-west",
+      "term": "dragonbarrow west",
+      "title": "Dragonbarrow West",
+      "description": "Dragonbarrow West",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fort-faroth",
+      "term": "fort faroth",
+      "title": "Fort Faroth",
+      "description": "Fort Faroth",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragonbarrow-fork",
+      "term": "dragonbarrow fork",
+      "title": "Dragonbarrow Fork",
+      "description": "Dragonbarrow Fork",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lenne-s-rise",
+      "term": "lenne's rise",
+      "title": "Lenne's Rise",
+      "description": "Lenne's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "farum-greatbridge",
+      "term": "farum greatbridge",
+      "title": "Farum Greatbridge",
+      "description": "Farum Greatbridge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "bestial-sanctum",
+      "term": "bestial sanctum",
+      "title": "Bestial Sanctum",
+      "description": "Bestial Sanctum",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "astray-from-caelid-highway-north",
+      "term": "astray from caelid highway north",
+      "title": "Astray from Caelid Highway North",
+      "description": "Astray from Caelid Highway North",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "inner-aeonia",
+      "term": "inner aeonia",
+      "title": "Inner Aeonia",
+      "description": "Inner Aeonia",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-backstreets",
+      "term": "sellia backstreets",
+      "title": "Sellia Backstreets",
+      "description": "Sellia Backstreets",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "zamor-ruins",
+      "term": "zamor ruins",
+      "title": "Zamor Ruins",
+      "description": "Zamor Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ancient-snow-valley-ruins",
+      "term": "ancient snow valley ruins",
+      "title": "Ancient Snow Valley Ruins",
+      "description": "Ancient Snow Valley Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "freezing-lake",
+      "term": "freezing lake",
+      "title": "Freezing Lake",
+      "description": "Freezing Lake",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "first-church-of-marika",
+      "term": "first church of marika",
+      "title": "First Church of Marika",
+      "description": "First Church of Marika",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "giants-gravepost",
+      "term": "giants' gravepost",
+      "title": "Giants' Gravepost",
+      "description": "Giants' Gravepost",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-repose",
+      "term": "church of repose",
+      "title": "Church of Repose",
+      "description": "Church of Repose",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "foot-of-the-forge",
+      "term": "foot of the forge",
+      "title": "Foot of the Forge",
+      "description": "Foot of the Forge",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "forge-of-the-giants",
+      "term": "forge of the giants",
+      "title": "Forge of the Giants",
+      "description": "Forge of the Giants",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "grand-lift-of-rold",
+      "term": "grand lift of rold",
+      "title": "Grand Lift of Rold",
+      "description": "Grand Lift of Rold",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "whiteridge-road",
+      "term": "whiteridge road",
+      "title": "Whiteridge Road",
+      "description": "Whiteridge Road",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "snow-valley-ruins-overlook",
+      "term": "snow valley ruins overlook",
+      "title": "Snow Valley Ruins Overlook",
+      "description": "Snow Valley Ruins Overlook",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castle-sol-main-gate",
+      "term": "castle sol main gate",
+      "title": "Castle Sol Main Gate",
+      "description": "Castle Sol Main Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-the-eclipse",
+      "term": "church of the eclipse",
+      "title": "Church of the Eclipse",
+      "description": "Church of the Eclipse",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castle-sol-rooftop",
+      "term": "castle sol rooftop",
+      "title": "Castle Sol Rooftop",
+      "description": "Castle Sol Rooftop",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "inner-consecrated-snowfield",
+      "term": "inner consecrated snowfield",
+      "title": "Inner Consecrated Snowfield",
+      "description": "Inner Consecrated Snowfield",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ordina-liturgical-town",
+      "term": "ordina, liturgical town",
+      "title": "Ordina, Liturgical Town",
+      "description": "Ordina, Liturgical Town",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "apostate-derelict",
+      "term": "apostate derelict",
+      "title": "Apostate Derelict",
+      "description": "Apostate Derelict",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "mistwood-ruins",
+      "term": "mistwood ruins",
+      "title": "Mistwood Ruins",
+      "description": "Mistwood Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "waypoint-ruins",
+      "term": "waypoint ruins",
+      "title": "Waypoint Ruins",
+      "description": "Waypoint Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dragon-burnt-ruins",
+      "term": "dragon-burnt ruins",
+      "title": "Dragon-Burnt Ruins",
+      "description": "Dragon-Burnt Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gatefront-ruins",
+      "term": "gatefront ruins",
+      "title": "Gatefront Ruins",
+      "description": "Gatefront Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "summonwater-village",
+      "term": "summonwater village",
+      "title": "Summonwater Village",
+      "description": "Summonwater Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "forlorn-hound-evergaol",
+      "term": "forlorn hound evergaol",
+      "title": "Forlorn Hound Evergaol",
+      "description": "Forlorn Hound Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormhill-evergaol",
+      "term": "stormhill evergaol",
+      "title": "Stormhill Evergaol",
+      "description": "Stormhill Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormgate",
+      "term": "stormgate",
+      "title": "Stormgate",
+      "description": "Stormgate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "siofra-river-well",
+      "term": "siofra river well",
+      "title": "Siofra River Well",
+      "description": "Siofra River Well",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fort-haight",
+      "term": "fort haight",
+      "title": "Fort Haight",
+      "description": "Fort Haight",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "minor-erdtree",
+      "term": "minor erdtree",
+      "title": "Minor Erdtree",
+      "description": "Minor Erdtree",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "agheel-lake",
+      "term": "agheel lake",
+      "title": "Agheel Lake",
+      "description": "Agheel Lake",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sending-gate",
+      "term": "sending gate",
+      "title": "Sending Gate",
+      "description": "Sending Gate",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "volcano-manor-request-istvan",
+      "term": "volcano manor request: istvan",
+      "title": "Volcano Manor Request: Istvan",
+      "description": "Volcano Manor Request: Istvan",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "callu-baptismal-church",
+      "term": "callu baptismal church",
+      "title": "Callu Baptismal Church",
+      "description": "Callu Baptismal Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "witchbane-ruins",
+      "term": "witchbane ruins",
+      "title": "Witchbane Ruins",
+      "description": "Witchbane Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tombsward-ruins",
+      "term": "tombsward ruins",
+      "title": "Tombsward Ruins",
+      "description": "Tombsward Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "demi-human-forest-ruins",
+      "term": "demi-human forest ruins",
+      "title": "Demi-Human Forest Ruins",
+      "description": "Demi-Human Forest Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ailing-village",
+      "term": "ailing village",
+      "title": "Ailing Village",
+      "description": "Ailing Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "forest-lookout-tower",
+      "term": "forest lookout tower",
+      "title": "Forest Lookout Tower",
+      "description": "Forest Lookout Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tower-of-return",
+      "term": "tower of return",
+      "title": "Tower of Return",
+      "description": "Tower of Return",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "weeping-evergaol",
+      "term": "weeping evergaol",
+      "title": "Weeping Evergaol",
+      "description": "Weeping Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "oridys-s-rise",
+      "term": "oridys's rise",
+      "title": "Oridys's Rise",
+      "description": "Oridys's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castle-morne",
+      "term": "castle morne",
+      "title": "Castle Morne",
+      "description": "Castle Morne",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "uld-palace-ruins",
+      "term": "uld palace ruins",
+      "title": "Uld Palace Ruins",
+      "description": "Uld Palace Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "three-sisters",
+      "term": "three sisters",
+      "title": "Three Sisters",
+      "description": "Three Sisters",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "church-of-irith",
+      "term": "church of irith",
+      "title": "Church of Irith",
+      "description": "Church of Irith",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "rose-church",
+      "term": "rose church",
+      "title": "Rose Church",
+      "description": "Rose Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "purified-ruins",
+      "term": "purified ruins",
+      "title": "Purified Ruins",
+      "description": "Purified Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "kingsrealm-ruins",
+      "term": "kingsrealm ruins",
+      "title": "Kingsrealm Ruins",
+      "description": "Kingsrealm Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-flame-village",
+      "term": "frenzied flame village",
+      "title": "Frenzied Flame Village",
+      "description": "Frenzied Flame Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "highway-lookout-tower",
+      "term": "highway lookout tower",
+      "title": "Highway Lookout Tower",
+      "description": "Highway Lookout Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "frenzy-flaming-tower",
+      "term": "frenzy-flaming tower",
+      "title": "Frenzy-Flaming Tower",
+      "description": "Frenzy-Flaming Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "malefactor-s-evergaol",
+      "term": "malefactor's evergaol",
+      "title": "Malefactor's Evergaol",
+      "description": "Malefactor's Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-s-evergaol",
+      "term": "cuckoo's evergaol",
+      "title": "Cuckoo's Evergaol",
+      "description": "Cuckoo's Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "royal-grave-evergaol",
+      "term": "royal grave evergaol",
+      "title": "Royal Grave Evergaol",
+      "description": "Royal Grave Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ainsel-river-well",
+      "term": "ainsel river well",
+      "title": "Ainsel River Well",
+      "description": "Ainsel River Well",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "testu-s-rise",
+      "term": "testu's rise",
+      "title": "Testu's Rise",
+      "description": "Testu's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "seluvis-s-rise",
+      "term": "seluvis's rise",
+      "title": "Seluvis's Rise",
+      "description": "Seluvis's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "renna-s-rise",
+      "term": "renna's rise",
+      "title": "Renna's Rise",
+      "description": "Renna's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "converted-fringe-tower",
+      "term": "converted fringe tower",
+      "title": "Converted Fringe Tower",
+      "description": "Converted Fringe Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "caria-manor",
+      "term": "caria manor",
+      "title": "Caria Manor",
+      "description": "Caria Manor",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "moonfolk-ruins",
+      "term": "moonfolk ruins",
+      "title": "Moonfolk Ruins",
+      "description": "Moonfolk Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lunar-estate-ruins",
+      "term": "lunar estate ruins",
+      "title": "Lunar Estate Ruins",
+      "description": "Lunar Estate Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "ringleader-s-evergaol",
+      "term": "ringleader's evergaol",
+      "title": "Ringleader's Evergaol",
+      "description": "Ringleader's Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "deep-ainsel-well",
+      "term": "deep ainsel well",
+      "title": "Deep Ainsel Well",
+      "description": "Deep Ainsel Well",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "chelona-s-rise",
+      "term": "chelona's rise",
+      "title": "Chelona's Rise",
+      "description": "Chelona's Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stormcaller-church",
+      "term": "stormcaller church",
+      "title": "Stormcaller Church",
+      "description": "Stormcaller Church",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "second-church-of-marika",
+      "term": "second church of marika",
+      "title": "Second Church of Marika",
+      "description": "Second Church of Marika",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "woodfolk-ruins",
+      "term": "woodfolk ruins",
+      "title": "Woodfolk Ruins",
+      "description": "Woodfolk Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lux-ruins",
+      "term": "lux ruins",
+      "title": "Lux Ruins",
+      "description": "Lux Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-ruins",
+      "term": "perfumer's ruins",
+      "title": "Perfumer's Ruins",
+      "description": "Perfumer's Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "writheblood-ruins",
+      "term": "writheblood ruins",
+      "title": "Writheblood Ruins",
+      "description": "Writheblood Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "st-trina-s-hideaway",
+      "term": "st. trina's hideaway",
+      "title": "St. Trina's Hideaway",
+      "description": "St. Trina's Hideaway",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dominula-windmill-village",
+      "term": "dominula, windmill village",
+      "title": "Dominula, Windmill Village",
+      "description": "Dominula, Windmill Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "golden-lineage-evergaol",
+      "term": "golden lineage evergaol",
+      "title": "Golden Lineage Evergaol",
+      "description": "Golden Lineage Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "mirage-rise",
+      "term": "mirage rise",
+      "title": "Mirage Rise",
+      "description": "Mirage Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "west-windmill-pasture",
+      "term": "west windmill pasture",
+      "title": "West Windmill Pasture",
+      "description": "West Windmill Pasture",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "east-windmill-pasture",
+      "term": "east windmill pasture",
+      "title": "East Windmill Pasture",
+      "description": "East Windmill Pasture",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "village-windmill-pasture",
+      "term": "village windmill pasture",
+      "title": "Village Windmill Pasture",
+      "description": "Village Windmill Pasture",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "dominula-checkpoint",
+      "term": "dominula checkpoint",
+      "title": "Dominula Checkpoint",
+      "description": "Dominula Checkpoint",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "the-shaded-castle",
+      "term": "the shaded castle",
+      "title": "The Shaded Castle",
+      "description": "The Shaded Castle",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "volcano-manor-request-rileigh",
+      "term": "volcano manor request: rileigh",
+      "title": "Volcano Manor Request: Rileigh",
+      "description": "Volcano Manor Request: Rileigh",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "wyndham-ruins",
+      "term": "wyndham ruins",
+      "title": "Wyndham Ruins",
+      "description": "Wyndham Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "corpse-stench-shack",
+      "term": "corpse-stench shack",
+      "title": "Corpse-Stench Shack",
+      "description": "Corpse-Stench Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "hermit-s-shack",
+      "term": "hermit's shack",
+      "title": "Hermit's Shack",
+      "description": "Hermit's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "hermit-village",
+      "term": "hermit village",
+      "title": "Hermit Village",
+      "description": "Hermit Village",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fort-laiedd",
+      "term": "fort laiedd",
+      "title": "Fort Laiedd",
+      "description": "Fort Laiedd",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "wailing-dunes",
+      "term": "wailing dunes",
+      "title": "Wailing Dunes",
+      "description": "Wailing Dunes",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "forsaken-ruins",
+      "term": "forsaken ruins",
+      "title": "Forsaken Ruins",
+      "description": "Forsaken Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "caelid-waypoint-ruins",
+      "term": "caelid waypoint ruins",
+      "title": "Caelid Waypoint Ruins",
+      "description": "Caelid Waypoint Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "street-of-sages-ruins",
+      "term": "street of sages ruins",
+      "title": "Street of Sages Ruins",
+      "description": "Street of Sages Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "shack-of-the-rotting",
+      "term": "shack of the rotting",
+      "title": "Shack of the Rotting",
+      "description": "Shack of the Rotting",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "gowry-s-shack",
+      "term": "gowry's shack",
+      "title": "Gowry's Shack",
+      "description": "Gowry's Shack",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "swamp-lookout-tower",
+      "term": "swamp lookout tower",
+      "title": "Swamp Lookout Tower",
+      "description": "Swamp Lookout Tower",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-gateway",
+      "term": "sellia gateway",
+      "title": "Sellia Gateway",
+      "description": "Sellia Gateway",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "fort-gael",
+      "term": "fort gael",
+      "title": "Fort Gael",
+      "description": "Fort Gael",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "redmane-castle",
+      "term": "redmane castle",
+      "title": "Redmane Castle",
+      "description": "Redmane Castle",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-town-of-sorcery",
+      "term": "sellia, town of sorcery",
+      "title": "Sellia, Town of Sorcery",
+      "description": "Sellia, Town of Sorcery",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "sellia-evergaol",
+      "term": "sellia evergaol",
+      "title": "Sellia Evergaol",
+      "description": "Sellia Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "stargazers-ruins",
+      "term": "stargazers' ruins",
+      "title": "Stargazers' Ruins",
+      "description": "Stargazers' Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "shack-of-the-lofty",
+      "term": "shack of the lofty",
+      "title": "Shack of the Lofty",
+      "description": "Shack of the Lofty",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "lord-contender-s-evergaol",
+      "term": "lord contender's evergaol",
+      "title": "Lord Contender's Evergaol",
+      "description": "Lord Contender's Evergaol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "heretical-rise",
+      "term": "heretical rise",
+      "title": "Heretical Rise",
+      "description": "Heretical Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "guardians-garrison",
+      "term": "guardians' garrison",
+      "title": "Guardians' Garrison",
+      "description": "Guardians' Garrison",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "castle-sol",
+      "term": "castle sol",
+      "title": "Castle Sol",
+      "description": "Castle Sol",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "volcano-manor-request-juno-hoslow",
+      "term": "volcano manor request: juno hoslow",
+      "title": "Volcano Manor Request: Juno Hoslow",
+      "description": "Volcano Manor Request: Juno Hoslow",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "yelough-anix-ruins",
+      "term": "yelough anix ruins",
+      "title": "Yelough Anix Ruins",
+      "description": "Yelough Anix Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-rise",
+      "term": "albinauric rise",
+      "title": "Albinauric Rise",
+      "description": "Albinauric Rise",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "uhl-palace-ruins",
+      "term": "uhl palace ruins",
+      "title": "Uhl Palace Ruins",
+      "description": "Uhl Palace Ruins",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "siofra-aqueduct",
+      "term": "siofra aqueduct",
+      "title": "Siofra Aqueduct",
+      "description": "Siofra Aqueduct",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "hallowhorn-grounds",
+      "term": "hallowhorn grounds",
+      "title": "Hallowhorn Grounds",
+      "description": "Hallowhorn Grounds",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "mohgwyn-dynasty-mausoleum",
+      "term": "mohgwyn dynasty mausoleum",
+      "title": "Mohgwyn Dynasty Mausoleum",
+      "description": "Mohgwyn Dynasty Mausoleum",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "liurnia",
+      "term": "liurnia",
+      "title": "Liurnia",
+      "description": "Liurnia",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    },
+    {
+      "id": "tenebrae-demesne",
+      "term": "tenebrae demesne",
+      "title": "Tenebrae Demesne",
+      "description": "Tenebrae Demesne",
+      "section": "Elden Ring",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "base"
+    }
+  ]
+}

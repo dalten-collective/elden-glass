@@ -1,0 +1,766 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Consumables",
+  "cards": [
+    {
+      "id": "hefty-fire-pot",
+      "term": "hefty fire pot",
+      "title": "Hefty Fire Pot",
+      "description": "Throw at enemies to inflict severe fire damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-rock-pot",
+      "term": "hefty rock pot",
+      "title": "Hefty Rock Pot",
+      "description": "Throw at enemies to inflict heavy damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-lightning-pot",
+      "term": "hefty lightning pot",
+      "title": "Hefty Lightning Pot",
+      "description": "Throw at enemies to inflict severe lightning damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-fetid-pot",
+      "term": "hefty fetid pot",
+      "title": "Hefty Fetid Pot",
+      "description": "Throw at enemies to cause a large buildup of deadly poison",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-fly-pot",
+      "term": "hefty fly pot",
+      "title": "Hefty Fly Pot",
+      "description": "Throw at enemies to release a large swarm of bloodflies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-freezing-pot",
+      "term": "hefty freezing pot",
+      "title": "Hefty Freezing Pot",
+      "description": "Throw at enemies to cause a large buildup of frost",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-poison-pot",
+      "term": "hefty poison pot",
+      "title": "Hefty Poison Pot",
+      "description": "Throw at enemies to cause a large buildup of poison",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-oil-pot",
+      "term": "hefty oil pot",
+      "title": "Hefty Oil Pot",
+      "description": "Throw at enemies to soak them in a heavy coat of oil",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-frenzied-flame-pot",
+      "term": "hefty frenzied flame pot",
+      "title": "Hefty Frenzied Flame Pot",
+      "description": "Throw at enemies to cause a large buildup of madness",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-rancor-pot",
+      "term": "hefty rancor pot",
+      "title": "Hefty Rancor Pot",
+      "description": "Uses FP. Throw to spawn a throng of vengeful spirits.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-magic-pot",
+      "term": "hefty magic pot",
+      "title": "Hefty Magic Pot",
+      "description": "Throw to inflict severe magic damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-rot-pot",
+      "term": "hefty rot pot",
+      "title": "Hefty Rot Pot",
+      "description": "Throw at enemies to cause a large buildup of scarlet rot",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-furnace-pot",
+      "term": "hefty furnace pot",
+      "title": "Hefty Furnace Pot",
+      "description": "Throw at enemies to create a whirlwind of flame",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "frenzied-flame-pot",
+      "term": "frenzied flame pot",
+      "title": "Frenzied Flame Pot",
+      "description": "Throw at enemies to cause buildup of madness",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "eternal-sleep-pot",
+      "term": "eternal sleep pot",
+      "title": "Eternal Sleep Pot",
+      "description": "Uses FP. Throw to cause buildup of eternal sleep.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "roped-frenzied-flame-pot",
+      "term": "roped frenzied flame pot",
+      "title": "Roped Frenzied Flame Pot",
+      "description": "Throw behind to cause buildup of madness",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "dlc"
+    },
+    {
+      "id": "messmerfire-grease",
+      "term": "messmerfire grease",
+      "title": "Messmerfire Grease",
+      "description": "Coats armament, inflicting heavy fire damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "dragonbolt-grease",
+      "term": "dragonbolt grease",
+      "title": "Dragonbolt Grease",
+      "description": "Coats armament, inflicting heavy lightning damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "royal-magic-grease",
+      "term": "royal magic grease",
+      "title": "Royal Magic Grease",
+      "description": "Coats armament, inflicting heavy magic damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "golden-grease",
+      "term": "golden grease",
+      "title": "Golden Grease",
+      "description": "Coats armament, inflicting heavy holy damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "eternal-sleep-grease",
+      "term": "eternal sleep grease",
+      "title": "Eternal Sleep Grease",
+      "description": "Coats armament, inflicting eternal sleep",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-communion-grease",
+      "term": "dragon communion grease",
+      "title": "Dragon Communion Grease",
+      "description": "Coats armament, granting potent anti-dragon effect",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "drawstring-messmerfire-grease",
+      "term": "drawstring messmerfire grease",
+      "title": "Drawstring Messmerfire Grease",
+      "description": "Quickly coats armament, inflicting heavy fire damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "drawstring-dragonbolt-grease",
+      "term": "drawstring dragonbolt grease",
+      "title": "Drawstring Dragonbolt Grease",
+      "description": "Quickly coats armament, inflicting heavy lightning damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "drawstring-royal-magic-grease",
+      "term": "drawstring royal magic grease",
+      "title": "Drawstring Royal Magic Grease",
+      "description": "Quickly coats armament, inflicting heavy magic damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "drawstring-golden-grease",
+      "term": "drawstring golden grease",
+      "title": "Drawstring Golden Grease",
+      "description": "Quickly coats armament, inflicting heavy holy damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "drawstring-eternal-sleep-grease",
+      "term": "drawstring eternal sleep grease",
+      "title": "Drawstring Eternal Sleep Grease",
+      "description": "Quickly coats armament, inflicting eternal sleep",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "festive-grease",
+      "term": "festive grease",
+      "title": "Festive Grease",
+      "description": "Coats armament, granting wielder trace amount of runes on landing attacks",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "gravitational-missile",
+      "term": "gravitational missile",
+      "title": "Gravitational Missile",
+      "description": "Fires a bolt of gravity that pulls in enemies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "dlc"
+    },
+    {
+      "id": "dragonbolt-of-florissax",
+      "term": "dragonbolt of florissax",
+      "title": "Dragonbolt of Florissax",
+      "description": "Calls down red lightning to bolster self and nearby allies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "dlc"
+    },
+    {
+      "id": "greasemonger-s-bell-bearing",
+      "term": "greasemonger's bell bearing",
+      "title": "Greasemonger's Bell Bearing",
+      "description": "The bell bearing of a hornsent greasemonger who did not survive the war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-6",
+      "term": "forager brood cookbook [6]",
+      "title": "Forager Brood Cookbook [6]",
+      "description": "Expands crafting repertoire",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-1",
+      "term": "forager brood cookbook [1]",
+      "title": "Forager Brood Cookbook [1]",
+      "description": "A record of crafting techniques left by the non-human forager brood.\nShared out of kindness toward Moore and his kin.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-2",
+      "term": "forager brood cookbook [2]",
+      "title": "Forager Brood Cookbook [2]",
+      "description": "A record of crafting techniques left by the non-human forager brood.\nShared out of kindness toward Moore and his kin.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-3",
+      "term": "forager brood cookbook [3]",
+      "title": "Forager Brood Cookbook [3]",
+      "description": "A record of crafting techniques left by the non-human forager brood.\nShared out of kindness toward Moore and his kin.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-4",
+      "term": "forager brood cookbook [4]",
+      "title": "Forager Brood Cookbook [4]",
+      "description": "A record of crafting techniques left by the non-human forager brood.\nShared out of kindness toward Moore and his kin.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-5",
+      "term": "forager brood cookbook [5]",
+      "title": "Forager Brood Cookbook [5]",
+      "description": "A record of crafting techniques left by the non-human forager brood.\nShared out of kindness toward Moore and his kin.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-cookbook-2",
+      "term": "igon's cookbook [2]",
+      "title": "Igon's Cookbook [2]",
+      "description": "A record of crafting techniques left by a warrior who challenged the vile dragon Bayle, only to be grievously injured and broken by fear.\nContains details on how a mere mortal can fell a mighty dragon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-weaver-s-cookbook-2",
+      "term": "finger-weaver's cookbook [2]",
+      "title": "Finger-Weaver's Cookbook [2]",
+      "description": "A record of crafting techniques left by a determined student of the finger ruins. His brush with the sublime all but shattered his mind, though he was left capable enough to leave these few precious words.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-1",
+      "term": "greater potentate's cookbook [1]",
+      "title": "Greater Potentate's Cookbook [1]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-4",
+      "term": "greater potentate's cookbook [4]",
+      "title": "Greater Potentate's Cookbook [4]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-5",
+      "term": "greater potentate's cookbook [5]",
+      "title": "Greater Potentate's Cookbook [5]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-12",
+      "term": "greater potentate's cookbook [12]",
+      "title": "Greater Potentate's Cookbook [12]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-7",
+      "term": "greater potentate's cookbook [7]",
+      "title": "Greater Potentate's Cookbook [7]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-9",
+      "term": "greater potentate's cookbook [9]",
+      "title": "Greater Potentate's Cookbook [9]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-10",
+      "term": "greater potentate's cookbook [10]",
+      "title": "Greater Potentate's Cookbook [10]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-11",
+      "term": "greater potentate's cookbook [11]",
+      "title": "Greater Potentate's Cookbook [11]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "mad-craftsman-s-cookbook-2",
+      "term": "mad craftsman's cookbook [2]",
+      "title": "Mad Craftsman's Cookbook [2]",
+      "description": "A record of crafting techniques left by a craftsman who served Midra, master of the manse, and Nanaya, its lady. His eyes were burned by the Flame of Frenzy.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-8",
+      "term": "greater potentate's cookbook [8]",
+      "title": "Greater Potentate's Cookbook [8]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-3",
+      "term": "greater potentate's cookbook [3]",
+      "title": "Greater Potentate's Cookbook [3]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-13",
+      "term": "greater potentate's cookbook [13]",
+      "title": "Greater Potentate's Cookbook [13]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-14",
+      "term": "greater potentate's cookbook [14]",
+      "title": "Greater Potentate's Cookbook [14]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-6",
+      "term": "greater potentate's cookbook [6]",
+      "title": "Greater Potentate's Cookbook [6]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "greater-potentate-s-cookbook-2",
+      "term": "greater potentate's cookbook [2]",
+      "title": "Greater Potentate's Cookbook [2]",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-dragon-knight-s-cookbook-1",
+      "term": "ancient dragon knight's cookbook [1]",
+      "title": "Ancient Dragon Knight's Cookbook [1]",
+      "description": "A record of crafting techniques of the ancient dragon knight who followed Godwyn's golden knights into the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "mad-craftsman-s-cookbook-1",
+      "term": "mad craftsman's cookbook [1]",
+      "title": "Mad Craftsman's Cookbook [1]",
+      "description": "A record of crafting techniques left by a craftsman who served Midra, master of the manse, and Nanaya, its lady. His eyes were burned by the Flame of Frenzy.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "st-trina-disciple-s-cookbook-1",
+      "term": "st. trina disciple's cookbook [1]",
+      "title": "St. Trina Disciple's Cookbook [1]",
+      "description": "A record of crafting techniques left by a disciple who pursued the teachings of the saint of sleep—yet what seemed a gentle sleep at first ripened into velvet.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-s-cookbook-1",
+      "term": "fire knight's cookbook [1]",
+      "title": "Fire Knight's Cookbook [1]",
+      "description": "A record of crafting techniques left by the Fire Knights, who served Messmer the Impaler.\nDetails the art of wielding fire for the benefit of soldiers setting out to join the crusade.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-dragon-knight-s-cookbook-2",
+      "term": "ancient dragon knight's cookbook [2]",
+      "title": "Ancient Dragon Knight's Cookbook [2]",
+      "description": "A record of crafting techniques of the ancient dragon knight who followed Godwyn's golden knights into the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "loyal-knight-s-cookbook",
+      "term": "loyal knight's cookbook",
+      "title": "Loyal Knight's Cookbook",
+      "description": "A record of crafting techniques of the Royal Carian Knights.\nDetails the arts of the old enchanted knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "battlefield-priest-s-cookbook-1",
+      "term": "battlefield priest's cookbook [1]",
+      "title": "Battlefield Priest's Cookbook [1]",
+      "description": "A record of crafting techniques left by the devout battlefield priests. These keepers of the faith fought bitterly to spread their gospel in the realm of shadow, where there was no Erdtree to gaze upon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-cookbook-1",
+      "term": "igon's cookbook [1]",
+      "title": "Igon's Cookbook [1]",
+      "description": "A record of crafting techniques left by a warrior who challenged the vile dragon Bayle, only to be grievously injured and broken by fear.\nContains details on how a mere mortal can fell a mighty dragon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "battlefield-priest-s-cookbook-2",
+      "term": "battlefield priest's cookbook [2]",
+      "title": "Battlefield Priest's Cookbook [2]",
+      "description": "A record of crafting techniques left by the devout battlefield priests. These keepers of the faith fought bitterly to spread their gospel in the realm of shadow, where there was no Erdtree to gaze upon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "forager-brood-cookbook-7",
+      "term": "forager brood cookbook [7]",
+      "title": "Forager Brood Cookbook [7]",
+      "description": "A record of crafting techniques left by the non-human forager brood.\nShared out of kindness toward their savior, whose name was unknown.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "st-trina-disciple-s-cookbook-3",
+      "term": "st. trina disciple's cookbook [3]",
+      "title": "St. Trina Disciple's Cookbook [3]",
+      "description": "A record of crafting techniques left by a disciple who pursued the teachings of the saint of sleep—yet what seemed a gentle sleep at first ripened into velvet.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "grave-keeper-s-cookbook-2",
+      "term": "grave keeper's cookbook [2]",
+      "title": "Grave Keeper's Cookbook [2]",
+      "description": "A record of crafting techniques of the grave keepers who watch over those who rest in the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "antiquity-scholar-s-cookbook-2",
+      "term": "antiquity scholar's cookbook [2]",
+      "title": "Antiquity Scholar's Cookbook [2]",
+      "description": "A record of crafting techniques left by the hornsent academics who studied the ancient ruins of Rauh.\nDetails techniques for working with sprites thought lost to antiquity.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "tibia-s-cookbook",
+      "term": "tibia's cookbook",
+      "title": "Tibia's Cookbook",
+      "description": "A record of crafting techniques of the mariners, the oldest of grave keepers.\nDetails an ancient means of summoning the dead.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "mad-craftsman-s-cookbook-3",
+      "term": "mad craftsman's cookbook [3]",
+      "title": "Mad Craftsman's Cookbook [3]",
+      "description": "A record of crafting techniques left by a craftsman who served Midra, master of the manse, and Nanaya, its lady. His eyes were burned by the Flame of Frenzy.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "battlefield-priest-s-cookbook-3",
+      "term": "battlefield priest's cookbook [3]",
+      "title": "Battlefield Priest's Cookbook [3]",
+      "description": "A record of crafting techniques left by the devout battlefield priests. These keepers of the faith fought bitterly to spread their gospel in the realm of shadow, where there was no Erdtree to gaze upon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-s-cookbook-2",
+      "term": "fire knight's cookbook [2]",
+      "title": "Fire Knight's Cookbook [2]",
+      "description": "A record of crafting techniques left by the Fire Knights, who served Messmer the Impaler.\nDetails the art of wielding fire for the benefit of soldiers setting out to join the crusade.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "antiquity-scholar-s-cookbook-1",
+      "term": "antiquity scholar's cookbook [1]",
+      "title": "Antiquity Scholar's Cookbook [1]",
+      "description": "A record of crafting techniques left by the hornsent academics who studied the ancient ruins of Rauh.\nDetails techniques for working with sprites thought lost to antiquity.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-weaver-s-cookbook-1",
+      "term": "finger-weaver's cookbook [1]",
+      "title": "Finger-Weaver's Cookbook [1]",
+      "description": "A record of crafting techniques left by a determined student of the finger ruins. His brush with the sublime all but shattered his mind, though he was left capable enough to leave these few precious words.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "battlefield-priest-s-cookbook-4",
+      "term": "battlefield priest's cookbook [4]",
+      "title": "Battlefield Priest's Cookbook [4]",
+      "description": "A record of crafting techniques left by the devout battlefield priests. These keepers of the faith fought bitterly to spread their gospel in the realm of shadow, where there was no Erdtree to gaze upon.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "grave-keeper-s-cookbook-1",
+      "term": "grave keeper's cookbook [1]",
+      "title": "Grave Keeper's Cookbook [1]",
+      "description": "A record of crafting techniques of the grave keepers who watch over those who rest in the realm of shadow.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    },
+    {
+      "id": "st-trina-disciple-s-cookbook-2",
+      "term": "st. trina disciple's cookbook [2]",
+      "title": "St. Trina Disciple's Cookbook [2]",
+      "description": "A record of crafting techniques left by a disciple who pursued the teachings of the saint of sleep—yet what seemed a gentle sleep at first ripened into velvet.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "dlc"
+    }
+  ]
+}

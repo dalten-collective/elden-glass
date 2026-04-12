@@ -1,0 +1,492 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Characters",
+  "cards": [
+    {
+      "id": "char-hornsent-grandam",
+      "term": "hornsent grandam",
+      "title": "Hornsent Grandam",
+      "description": "My brood is no more.\n\nNo one comes to visit.\n\nNot Lady Leda. Not Father Dane. Not Sir Ansbach.\n\nNot Freyja. Not Thiollier. Not the hornsent.\n\nWhere have they all gone?",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-igon",
+      "term": "igon",
+      "title": "Igon",
+      "description": "Weapon of Igon, the broken drake warrior.\nA greatbow fashioned from two dragon bones bound with coarse rope.\nCovered in gashes left by claws.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-drake-warrior-igon",
+      "term": "drake warrior igon",
+      "title": "Drake Warrior Igon",
+      "description": "Malformed helm fused with dragon flesh",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-st-trina",
+      "term": "st. trina",
+      "title": "St. Trina",
+      "description": "Silver sword carried by clerics of St. Trina.\nInflicts sleep ailment upon foes.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-dragon-communion-priestess",
+      "term": "dragon communion priestess",
+      "title": "Dragon Communion Priestess",
+      "description": "Piercing Gravel Stone sword containing primeval lightning.\nA portion of the Dragonlord's power, gained from a remembrance.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-ancient-dragon-man",
+      "term": "ancient dragon-man",
+      "title": "Ancient Dragon-Man",
+      "description": "One of the treasures of the ruined forges.\nGreatsword of ancient meteoric ore, ending in a sharp point.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-swordhand-of-night-anna",
+      "term": "swordhand of night anna",
+      "title": "Swordhand of Night Anna",
+      "description": "Summons spirit of Swordhand of Night Jolán",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-hornsent",
+      "term": "hornsent",
+      "title": "Hornsent",
+      "description": "My brood is no more.\n\nNo one comes to visit.\n\nNot Lady Leda. Not Father Dane. Not Sir Ansbach.\n\nNot Freyja. Not Thiollier. Not the hornsent.\n\nWhere have they all gone?",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-moore",
+      "term": "moore",
+      "title": "Moore",
+      "description": "Offer to Twin Maiden Husks for new item access",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-forager-brood",
+      "term": "forager brood",
+      "title": "Forager Brood",
+      "description": "Expands crafting repertoire",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-sir-ansbach",
+      "term": "sir ansbach",
+      "title": "Sir Ansbach",
+      "description": "My brood is no more.\n\nNo one comes to visit.\n\nNot Lady Leda. Not Father Dane. Not Sir Ansbach.\n\nNot Freyja. Not Thiollier. Not the hornsent.\n\nWhere have they all gone?",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-pureblood-knight-ansbach",
+      "term": "pureblood knight ansbach",
+      "title": "Pureblood Knight Ansbach",
+      "description": "Audience with Mohg will be granted, one day",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-redmane-freyja",
+      "term": "redmane freyja",
+      "title": "Redmane Freyja",
+      "description": "Greatshield shaped like a fang, featuring the crest of red-maned lion. Carried by the Redmane Knights who fought alongside Radahn.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-needle-knight-leda",
+      "term": "needle knight leda",
+      "title": "Needle Knight Leda",
+      "description": "A razor-thin piercing blade of ice.\nForged by Iji, the Carian Royal Blacksmith.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-thiollier",
+      "term": "thiollier",
+      "title": "Thiollier",
+      "description": "Concealed weapon used by Thiollier, of a design generally favored by poison-wielders for dark and subtle purposes.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-count-ymir-high-priest",
+      "term": "count ymir, high priest",
+      "title": "Count Ymir, High Priest",
+      "description": "Information about guard counters\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-count-ymir-mother-of-fingers",
+      "term": "count ymir, mother of fingers",
+      "title": "Count Ymir, Mother of Fingers",
+      "description": "Information about guard counters\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-red-bear",
+      "term": "red bear",
+      "title": "Red Bear",
+      "description": "Claw of a great red bear wielded without modification by Red Bear, whose name is lost to madness.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-dancer-of-ranah",
+      "term": "dancer of ranah",
+      "title": "Dancer of Ranah",
+      "description": "Bright-red hood of the Ranah dancers.\nEnhances the power of dancing attacks.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-rakshasa",
+      "term": "rakshasa",
+      "title": "Rakshasa",
+      "description": "A great katana with the tempering pattern of its blade forever stained red with blood. Weapon of Rakshasa, who cuts down and devours.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-knight-of-the-solitary-gaol",
+      "term": "knight of the solitary gaol",
+      "title": "Knight of the Solitary Gaol",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-dryleaf-dane",
+      "term": "dryleaf dane",
+      "title": "Dryleaf Dane",
+      "description": "Sacred seal of the spiritual seekers known as the Dryleaf Sect.\nEnhances incantations of Miquella.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Followers of Miquella"
+    },
+    {
+      "id": "char-sanguine-noble-nataan",
+      "term": "sanguine noble nataan",
+      "title": "Sanguine Noble Nataan",
+      "description": "Hood of dyed black cloth featuring gold embroidery",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-lamenter",
+      "term": "lamenter",
+      "title": "Lamenter",
+      "description": "Transforms wearer into a lamenter and causes head to swell in size",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-greater-potentate",
+      "term": "greater potentate",
+      "title": "Greater Potentate",
+      "description": "A record of crafting techniques of the greater potentate who roamed lands near and far.\nHaunted by the grotesque practice of his village of birth, he stuffed great pots with all manner of things.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-madding-hand",
+      "term": "madding hand",
+      "title": "Madding Hand",
+      "description": "A glove stitched together from the flayed skin of the victims of a butcherous bloodbath. Afflicts target with madness. Raises attack power when madness is triggered in the vicinity.\nForged of an unyielding, black impulse toward revenge fostered in those who were hunted down as heretics by their own brethren, these are the weapons of the utterly downtrodden.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-moonrithyll-carian-knight",
+      "term": "moonrithyll, carian knight",
+      "title": "Moonrithyll, Carian Knight",
+      "description": "Greatsword embedded with a blue glintstone.\nThe favored weapon of the steadfast Carian knight, Moonrithyll.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-grand-altar-of-dragon-communion",
+      "term": "grand altar of dragon communion",
+      "title": "Grand Altar of Dragon Communion",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "NPCs"
+    },
+    {
+      "id": "char-commander-gaius",
+      "term": "commander gaius",
+      "title": "Commander Gaius",
+      "description": "A beaten red battle standard is furled around this time-worn halberd.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-golden-hippopotamus",
+      "term": "golden hippopotamus",
+      "title": "Golden Hippopotamus",
+      "description": "A sword made to commemorate the death of Godwyn the Golden, first of the demigods to die.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-putrescent-knight",
+      "term": "putrescent knight",
+      "title": "Putrescent Knight",
+      "description": "Weapon wielded by the Putrescent Knight.\nA great cleaver of hardened putrescence affixed to an arch fashioned from human bones.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-romina-saint-of-the-bud",
+      "term": "romina, saint of the bud",
+      "title": "Romina, Saint of the Bud",
+      "description": "Weapon of Romina, Saint of the Bud.\nA scarlet glaive with a dangling bud-like blade.\nAttacks cause buildup of rot.\nOnce, in the crumbling, burning church, Romina held the bud in speechless silence.\nThat bud would become her blade.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-curseblade-labirith",
+      "term": "curseblade labirith",
+      "title": "Curseblade Labirith",
+      "description": "Weapon of the masked Curseblades.\nCircular backhand blade with wave-like cutting edges, sharpened into points that incite blood loss.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-midra-lord-of-frenzied-flame",
+      "term": "midra, lord of frenzied flame",
+      "title": "Midra, Lord of Frenzied Flame",
+      "description": "Summons Lord of Frenzied Flame's head to spew frenzied flame",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-death-knight",
+      "term": "death knight",
+      "title": "Death Knight",
+      "description": "Barbed rod carried by Deathbirds.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-chief-bloodfiend",
+      "term": "chief bloodfiend",
+      "title": "Chief Bloodfiend",
+      "description": "Arise now, ye Tarnished.\n\nYe dead, who yet live.\n\nThe call of long-lost grace speaks to us all.\n\nHoarah Loux, chieftain of the badlands.\n\nThe ever-brilliant Goldmask.\n\nFia, the Deathbed Companion.\n\nThe loathsome Dung Eater.\n\nAnd Sir Gideon Ofnir, the All-knowing.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-bayle-the-dread",
+      "term": "bayle the dread",
+      "title": "Bayle the Dread",
+      "description": "Channels dread dragon to roar with a heatwave blast",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-messmer-the-impaler",
+      "term": "messmer the impaler",
+      "title": "Messmer the Impaler",
+      "description": "Weapon used by the soldiers who serve Messmer the Impaler.\nA steel axe, worn from use.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-metyr-mother-of-fingers",
+      "term": "metyr, mother of fingers",
+      "title": "Metyr, Mother of Fingers",
+      "description": "Well. We don't often receive visitors.\n\nI am Ymir. Welcome, to Manus Metyr.\n\nIt is a pleasure to have you.\n\nIn lands so forsaken as these, chance encounters are precious indeed.\n\nSeeing that we have convened here on this day,\n\nallow me to mark the occasion with a modest offering.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-divine-beast-dancing-lion",
+      "term": "divine beast dancing lion",
+      "title": "Divine Beast Dancing Lion",
+      "description": "A helm of tangled horn attached to a divine beast mask, allowing the wearer to invoke divinity. Worn by divine beast warriors; the chosen of the horned warriors.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-promised-consort-radahn",
+      "term": "promised consort radahn",
+      "title": "Promised Consort Radahn",
+      "description": "Sister... Where did you go?\n\nYou promised me. When we turned 14, we'd go to see the stars...\n\nI've been waiting ever so long. Forever and ever, it seems.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-radahn-consort-of-miquella",
+      "term": "radahn, consort of miquella",
+      "title": "Radahn, Consort of Miquella",
+      "description": "I am Radahn.\n\nBorn of red-maned Radagon, and Rennala of the Full Moon.\n\nA lion bred for battle.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-scadutree-avatar",
+      "term": "scadutree avatar",
+      "title": "Scadutree Avatar",
+      "description": "Information about the Scadutree Blessing\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-rellana-twin-moon-knight",
+      "term": "rellana, twin moon knight",
+      "title": "Rellana, Twin Moon Knight",
+      "description": "Carian light greatsword embedded with blue glintstone.\nWeapon of Rellana, the Twin Moon Knight.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Major Bosses"
+    },
+    {
+      "id": "char-jori-elder-inquisitor",
+      "term": "jori, elder inquisitor",
+      "title": "Jori, Elder Inquisitor",
+      "description": "Greatstaff of Jori, elder inquisitor.\nThe tip bristles with golden barbs symbolic of the inquisition's torture, allowing one to wield the staff as a greatspear.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-ancient-dragon-senessax",
+      "term": "ancient dragon senessax",
+      "title": "Ancient Dragon Senessax",
+      "description": "One of the treasures of the ruined forges.\nGreatsword of ancient meteoric ore, ending in a sharp point.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-jagged-peak-drake",
+      "term": "jagged peak drake",
+      "title": "Jagged Peak Drake",
+      "description": "Ahh, drake warrior, dear friend.\n\nGrant me this one wish.\n\nTake this finger. My finger.\n\nScale the jagged peak. Face Bayle the Dread. And when you do...\n\nSummon me. Summon my soul.\n\nMy limbs are limbs no more. My heart is twice-over filled with fear.\n\nBut a drake warrior I remain.\n\nAnd my soul yet lies on the mountain.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    },
+    {
+      "id": "char-demi-human-queen-marigga",
+      "term": "demi-human queen marigga",
+      "title": "Demi-Human Queen Marigga",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-demi-human-swordmaster-onze",
+      "term": "demi-human swordmaster onze",
+      "title": "Demi-Human Swordmaster Onze",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-rugalea-the-great-red-bear",
+      "term": "rugalea the great red bear",
+      "title": "Rugalea the Great Red Bear",
+      "description": "Channels great red bear to emit a furious roar",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-ralva-the-great-red-bear",
+      "term": "ralva the great red bear",
+      "title": "Ralva the Great Red Bear",
+      "description": "The pelt of Ralva the Great Red Bear, worn upon the head without modification.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-black-knight-edredd",
+      "term": "black knight edredd",
+      "title": "Black Knight Edredd",
+      "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-black-knight-garrew",
+      "term": "black knight garrew",
+      "title": "Black Knight Garrew",
+      "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Bosses & Enemies"
+    },
+    {
+      "id": "char-ghostflame-dragon",
+      "term": "ghostflame dragon",
+      "title": "Ghostflame Dragon",
+      "description": "Metal torch that burns with cold ghostflame. Tool of the Fallen Hawks who prowl the underground rivers. When the band's last embers were used up in their long search, they began to burn the bones of their fellows, acquiring the cold ghostflame, but sealing their fate as dwellers of the underground for all eternity.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Characters",
+      "subcategory": "Dragons"
+    }
+  ]
+}

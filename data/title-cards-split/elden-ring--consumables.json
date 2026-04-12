@@ -1,0 +1,1286 @@
+{
+  "section": "Elden Ring",
+  "category": "Consumables",
+  "cards": [
+    {
+      "id": "fire-pot",
+      "term": "fire pot",
+      "title": "Fire Pot",
+      "description": "Throw at enemies to inflict fire damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "redmane-fire-pot",
+      "term": "redmane fire pot",
+      "title": "Redmane Fire Pot",
+      "description": "Throw at enemies to inflict heavy fire damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "giantsflame-fire-pot",
+      "term": "giantsflame fire pot",
+      "title": "Giantsflame Fire Pot",
+      "description": "Uses FP. Throw at enemies to inflict heavy fire damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "lightning-pot",
+      "term": "lightning pot",
+      "title": "Lightning Pot",
+      "description": "Throw at enemies to inflict lightning damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragonbolt-pot",
+      "term": "ancient dragonbolt pot",
+      "title": "Ancient Dragonbolt Pot",
+      "description": "Throw at enemies to inflict heavy lightning damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "fetid-pot",
+      "term": "fetid pot",
+      "title": "Fetid Pot",
+      "description": "Throw at enemies to cause buildup of deadly poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "swarm-pot",
+      "term": "swarm pot",
+      "title": "Swarm Pot",
+      "description": "Throw at enemies to release a swarm of flies",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "holy-water-pot",
+      "term": "holy water pot",
+      "title": "Holy Water Pot",
+      "description": "Uses FP. Throw at enemies to inflict holy damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "sacred-order-pot",
+      "term": "sacred order pot",
+      "title": "Sacred Order Pot",
+      "description": "Uses FP. Throw at enemies to inflict heavy holy damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "freezing-pot",
+      "term": "freezing pot",
+      "title": "Freezing Pot",
+      "description": "Throw at enemies to cause buildup of frost",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "poison-pot",
+      "term": "poison pot",
+      "title": "Poison Pot",
+      "description": "Throw at enemies to cause buildup of poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "oil-pot",
+      "term": "oil pot",
+      "title": "Oil Pot",
+      "description": "Throw at enemies to soak them in oil",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "alluring-pot",
+      "term": "alluring pot",
+      "title": "Alluring Pot",
+      "description": "Uses FP. Throw to lure foes of human build only.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-fire-pot",
+      "term": "roped fire pot",
+      "title": "Roped Fire Pot",
+      "description": "Throw behind to inflict fire damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-lightning-pot",
+      "term": "roped lightning pot",
+      "title": "Roped Lightning Pot",
+      "description": "Throw behind to inflict lightning damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-fetid-pot",
+      "term": "roped fetid pot",
+      "title": "Roped Fetid Pot",
+      "description": "Throw behind to cause buildup of deadly poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-poison-pot",
+      "term": "roped poison pot",
+      "title": "Roped Poison Pot",
+      "description": "Throw behind to cause buildup of poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-oil-pot",
+      "term": "roped oil pot",
+      "title": "Roped Oil Pot",
+      "description": "Throw behind to douse enemies in oil",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-magic-pot",
+      "term": "roped magic pot",
+      "title": "Roped Magic Pot",
+      "description": "Uses FP. Throw behind to inflict magic damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-fly-pot",
+      "term": "roped fly pot",
+      "title": "Roped Fly Pot",
+      "description": "Throw behind to release a swarm of flies",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-freezing-pot",
+      "term": "roped freezing pot",
+      "title": "Roped Freezing Pot",
+      "description": "Throw behind to cause frostbite build-up",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "roped-holy-water-pot",
+      "term": "roped holy water pot",
+      "title": "Roped Holy Water Pot",
+      "description": "Uses FP. Throw behind to inflict holy damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-pot",
+      "term": "albinauric pot",
+      "title": "Albinauric Pot",
+      "description": "Uses FP. Throw to impede healing using a flask of tears.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "cursed-blood-pot",
+      "term": "cursed-blood pot",
+      "title": "Cursed-Blood Pot",
+      "description": "Throw to douse enemy with accursed blood",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "sleep-pot",
+      "term": "sleep pot",
+      "title": "Sleep Pot",
+      "description": "Uses FP. Throw to cause buildup of sleep.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "rancor-pot",
+      "term": "rancor pot",
+      "title": "Rancor Pot",
+      "description": "Uses FP. Throw to spawn vengeful spirits.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "magic-pot",
+      "term": "magic pot",
+      "title": "Magic Pot",
+      "description": "Uses FP. Throw to inflict magic damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "academy-magic-pot",
+      "term": "academy magic pot",
+      "title": "Academy Magic Pot",
+      "description": "Uses FP. Throw to inflict heavy magic damage.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "rot-pot",
+      "term": "rot pot",
+      "title": "Rot Pot",
+      "description": "Throw at enemies to cause buildup of scarlet rot",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Pots",
+      "source": "base"
+    },
+    {
+      "id": "neutralizing-boluses",
+      "term": "neutralizing boluses",
+      "title": "Neutralizing Boluses",
+      "description": "Alleviates poison buildup and cures poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "stanching-boluses",
+      "term": "stanching boluses",
+      "title": "Stanching Boluses",
+      "description": "Alleviates impending blood loss",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "thawfrost-boluses",
+      "term": "thawfrost boluses",
+      "title": "Thawfrost Boluses",
+      "description": "Alleviates buildup of frost",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "stimulating-boluses",
+      "term": "stimulating boluses",
+      "title": "Stimulating Boluses",
+      "description": "Alleviates buildup of sleep",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "preserving-boluses",
+      "term": "preserving boluses",
+      "title": "Preserving Boluses",
+      "description": "Alleviates scarlet rot buildup and cures rot",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "rejuvenating-boluses",
+      "term": "rejuvenating boluses",
+      "title": "Rejuvenating Boluses",
+      "description": "Alleviates death blight buildup",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "clarifying-boluses",
+      "term": "clarifying boluses",
+      "title": "Clarifying Boluses",
+      "description": "Alleviates madness buildup",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Boluses",
+      "source": "base"
+    },
+    {
+      "id": "fire-grease",
+      "term": "fire grease",
+      "title": "Fire Grease",
+      "description": "Coats armament, inflicting fire damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "lightning-grease",
+      "term": "lightning grease",
+      "title": "Lightning Grease",
+      "description": "Coats armament, inflicting lightning damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "magic-grease",
+      "term": "magic grease",
+      "title": "Magic Grease",
+      "description": "Coats armament, inflicting magic damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "holy-grease",
+      "term": "holy grease",
+      "title": "Holy Grease",
+      "description": "Coats armament, inflicting holy damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "blood-grease",
+      "term": "blood grease",
+      "title": "Blood Grease",
+      "description": "Coats armament, inflicting blood loss",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "soporific-grease",
+      "term": "soporific grease",
+      "title": "Soporific Grease",
+      "description": "Coats armament, inflicting sleep",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "poison-grease",
+      "term": "poison grease",
+      "title": "Poison Grease",
+      "description": "Coats armament, inflicting poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "freezing-grease",
+      "term": "freezing grease",
+      "title": "Freezing Grease",
+      "description": "Coats armament, inflicting frost",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "dragonwound-grease",
+      "term": "dragonwound grease",
+      "title": "Dragonwound Grease",
+      "description": "Coats armament, granting special dragon attacks",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "rot-grease",
+      "term": "rot grease",
+      "title": "Rot Grease",
+      "description": "Coats armament, inflicting scarlet rot",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-fire-grease",
+      "term": "drawstring fire grease",
+      "title": "Drawstring Fire Grease",
+      "description": "Quickly coats armament, inflicting fire damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-lightning-grease",
+      "term": "drawstring lightning grease",
+      "title": "Drawstring Lightning Grease",
+      "description": "Quickly coats armament, inflicting lightning damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-magic-grease",
+      "term": "drawstring magic grease",
+      "title": "Drawstring Magic Grease",
+      "description": "Quickly coats armament, inflicting magic damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-holy-grease",
+      "term": "drawstring holy grease",
+      "title": "Drawstring Holy Grease",
+      "description": "Quickly coats armament, inflicting holy damage",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-blood-grease",
+      "term": "drawstring blood grease",
+      "title": "Drawstring Blood Grease",
+      "description": "Quickly coats armament, inflicting blood loss",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-soporific-grease",
+      "term": "drawstring soporific grease",
+      "title": "Drawstring Soporific Grease",
+      "description": "Quickly coats armament, inflicting sleep",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-poison-grease",
+      "term": "drawstring poison grease",
+      "title": "Drawstring Poison Grease",
+      "description": "Quickly coats armament, inflicting poison",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-freezing-grease",
+      "term": "drawstring freezing grease",
+      "title": "Drawstring Freezing Grease",
+      "description": "Quickly coats weapon, inflicting frostbite",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "drawstring-rot-grease",
+      "term": "drawstring rot grease",
+      "title": "Drawstring Rot Grease",
+      "description": "Quickly coats armament, inflicting scarlet rot",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "shield-grease",
+      "term": "shield grease",
+      "title": "Shield Grease",
+      "description": "Boosts guarding ability and all damage negation",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-glintstone",
+      "term": "cuckoo glintstone",
+      "title": "Cuckoo Glintstone",
+      "description": "Uses FP to produce a magic bolt",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-scrap",
+      "term": "glintstone scrap",
+      "title": "Glintstone Scrap",
+      "description": "Break gem and use FP to produce a magic bolt",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "large-glintstone-scrap",
+      "term": "large glintstone scrap",
+      "title": "Large Glintstone Scrap",
+      "description": "Break gem and use FP to produce many magic bolts",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "holy-water-grease",
+      "term": "holy water grease",
+      "title": "Holy Water Grease",
+      "description": "Consumes FP, allowing weapon to purify undead foes",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Greases",
+      "source": "base"
+    },
+    {
+      "id": "loretta-s-greatbow",
+      "term": "loretta's greatbow",
+      "title": "Loretta's Greatbow",
+      "description": "Fires great arrow from a magic greatbow",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "loretta-s-mastery",
+      "term": "loretta's mastery",
+      "title": "Loretta's Mastery",
+      "description": "Fires four great arrows from magic greatbow at once",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "lightning-strike",
+      "term": "lightning strike",
+      "title": "Lightning Strike",
+      "description": "Summons lightning bolt that spreads from impact",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "honed-bolt",
+      "term": "honed bolt",
+      "title": "Honed Bolt",
+      "description": "Strikes foe with lightning bolt from above",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "vyke-s-dragonbolt",
+      "term": "vyke's dragonbolt",
+      "title": "Vyke's Dragonbolt",
+      "description": "Bolsters right-hand armament & body with red lightning",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "dragonbolt-blessing",
+      "term": "dragonbolt blessing",
+      "title": "Dragonbolt Blessing",
+      "description": "Bolsters caster's body with lightning",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "map-dragonbarrow",
+      "term": "map: dragonbarrow",
+      "title": "Map: Dragonbarrow",
+      "description": "Map of Dragonbarrow and environs",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-1",
+      "term": "nomadic warrior's cookbook [1]",
+      "title": "Nomadic Warrior's Cookbook [1]",
+      "description": "Expands crafting repertoire",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-3",
+      "term": "nomadic warrior's cookbook [3]",
+      "title": "Nomadic Warrior's Cookbook [3]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-6",
+      "term": "nomadic warrior's cookbook [6]",
+      "title": "Nomadic Warrior's Cookbook [6]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-10",
+      "term": "nomadic warrior's cookbook [10]",
+      "title": "Nomadic Warrior's Cookbook [10]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-7",
+      "term": "nomadic warrior's cookbook [7]",
+      "title": "Nomadic Warrior's Cookbook [7]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-12",
+      "term": "nomadic warrior's cookbook [12]",
+      "title": "Nomadic Warrior's Cookbook [12]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-19",
+      "term": "nomadic warrior's cookbook [19]",
+      "title": "Nomadic Warrior's Cookbook [19]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-13",
+      "term": "nomadic warrior's cookbook [13]",
+      "title": "Nomadic Warrior's Cookbook [13]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-23",
+      "term": "nomadic warrior's cookbook [23]",
+      "title": "Nomadic Warrior's Cookbook [23]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-17",
+      "term": "nomadic warrior's cookbook [17]",
+      "title": "Nomadic Warrior's Cookbook [17]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-2",
+      "term": "nomadic warrior's cookbook [2]",
+      "title": "Nomadic Warrior's Cookbook [2]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-21",
+      "term": "nomadic warrior's cookbook [21]",
+      "title": "Nomadic Warrior's Cookbook [21]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-6",
+      "term": "missionary's cookbook [6]",
+      "title": "Missionary's Cookbook [6]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-1",
+      "term": "armorer's cookbook [1]",
+      "title": "Armorer's Cookbook [1]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-2",
+      "term": "armorer's cookbook [2]",
+      "title": "Armorer's Cookbook [2]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-11",
+      "term": "nomadic warrior's cookbook [11]",
+      "title": "Nomadic Warrior's Cookbook [11]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-20",
+      "term": "nomadic warrior's cookbook [20]",
+      "title": "Nomadic Warrior's Cookbook [20]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-7",
+      "term": "armorer's cookbook [7]",
+      "title": "Armorer's Cookbook [7]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-4",
+      "term": "armorer's cookbook [4]",
+      "title": "Armorer's Cookbook [4]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-18",
+      "term": "nomadic warrior's cookbook [18]",
+      "title": "Nomadic Warrior's Cookbook [18]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-3",
+      "term": "armorer's cookbook [3]",
+      "title": "Armorer's Cookbook [3]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-16",
+      "term": "nomadic warrior's cookbook [16]",
+      "title": "Nomadic Warrior's Cookbook [16]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-6",
+      "term": "armorer's cookbook [6]",
+      "title": "Armorer's Cookbook [6]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "armorer-s-cookbook-5",
+      "term": "armorer's cookbook [5]",
+      "title": "Armorer's Cookbook [5]",
+      "description": "A record of crafting techniques left by an armorer who served the great general Radahn.\nContains knowledge of dealing with rot; the application of fire in particular.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-4",
+      "term": "glintstone craftsman's cookbook [4]",
+      "title": "Glintstone Craftsman's Cookbook [4]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-1",
+      "term": "glintstone craftsman's cookbook [1]",
+      "title": "Glintstone Craftsman's Cookbook [1]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-5",
+      "term": "glintstone craftsman's cookbook [5]",
+      "title": "Glintstone Craftsman's Cookbook [5]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-9",
+      "term": "nomadic warrior's cookbook [9]",
+      "title": "Nomadic Warrior's Cookbook [9]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-8",
+      "term": "glintstone craftsman's cookbook [8]",
+      "title": "Glintstone Craftsman's Cookbook [8]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the Academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-2",
+      "term": "glintstone craftsman's cookbook [2]",
+      "title": "Glintstone Craftsman's Cookbook [2]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the Academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-6",
+      "term": "glintstone craftsman's cookbook [6]",
+      "title": "Glintstone Craftsman's Cookbook [6]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the Academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-7",
+      "term": "glintstone craftsman's cookbook [7]",
+      "title": "Glintstone Craftsman's Cookbook [7]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the Academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-craftsman-s-cookbook-3",
+      "term": "glintstone craftsman's cookbook [3]",
+      "title": "Glintstone Craftsman's Cookbook [3]",
+      "description": "A record of crafting techniques left by a glintstone craftsman who served the Academy.\nContains information on \"faux sorceries,\" such as they were called.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-2",
+      "term": "missionary's cookbook [2]",
+      "title": "Missionary's Cookbook [2]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-1",
+      "term": "missionary's cookbook [1]",
+      "title": "Missionary's Cookbook [1]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-5",
+      "term": "missionary's cookbook [5]",
+      "title": "Missionary's Cookbook [5]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-4",
+      "term": "missionary's cookbook [4]",
+      "title": "Missionary's Cookbook [4]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-3",
+      "term": "missionary's cookbook [3]",
+      "title": "Missionary's Cookbook [3]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-4",
+      "term": "nomadic warrior's cookbook [4]",
+      "title": "Nomadic Warrior's Cookbook [4]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-5",
+      "term": "nomadic warrior's cookbook [5]",
+      "title": "Nomadic Warrior's Cookbook [5]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-cookbook-1",
+      "term": "perfumer's cookbook [1]",
+      "title": "Perfumer's Cookbook [1]",
+      "description": "A record of crafting techniques left by a military perfumer.\nContains martial techniques beyond the repertoire of an ordinary physician.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-cookbook-2",
+      "term": "perfumer's cookbook [2]",
+      "title": "Perfumer's Cookbook [2]",
+      "description": "A record of crafting techniques left by a depraved perfumer.\nContains perilous techniques no ordinary physician would attempt.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-cookbook-3",
+      "term": "perfumer's cookbook [3]",
+      "title": "Perfumer's Cookbook [3]",
+      "description": "A record of crafting techniques left by a depraved perfumer.\nContains perilous techniques no ordinary physician would attempt.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-14",
+      "term": "nomadic warrior's cookbook [14]",
+      "title": "Nomadic Warrior's Cookbook [14]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-8",
+      "term": "nomadic warrior's cookbook [8]",
+      "title": "Nomadic Warrior's Cookbook [8]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-22",
+      "term": "nomadic warrior's cookbook [22]",
+      "title": "Nomadic Warrior's Cookbook [22]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-15",
+      "term": "nomadic warrior's cookbook [15]",
+      "title": "Nomadic Warrior's Cookbook [15]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-warrior-s-cookbook-24",
+      "term": "nomadic warrior's cookbook [24]",
+      "title": "Nomadic Warrior's Cookbook [24]",
+      "description": "A record of crafting techniques left by roaming nomad warriors.\nContains knowledge for surviving in the face of utter scarcity.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-cookbook-4",
+      "term": "perfumer's cookbook [4]",
+      "title": "Perfumer's Cookbook [4]",
+      "description": "A record of crafting techniques left by a depraved perfumer.\nContains perilous techniques no ordinary physician would attempt.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-cookbook-13",
+      "term": "perfumer's cookbook (13)",
+      "title": "Perfumer's Cookbook (13)",
+      "description": "A record of crafting techniques left by a\ntravelling perfumer who served in the Shattering.\nExpands crafting repertoire.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-apostle-s-cookbook-1",
+      "term": "ancient dragon apostle's cookbook [1]",
+      "title": "Ancient Dragon Apostle's Cookbook [1]",
+      "description": "A record of crafting techniques taught by the capital's ancient dragon cult.\nDetails techniques that harness lightning, the weapon of the ancient dragons.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-apostle-s-cookbook-2",
+      "term": "ancient dragon apostle's cookbook [2]",
+      "title": "Ancient Dragon Apostle's Cookbook [2]",
+      "description": "A record of crafting techniques taught by the capital's ancient dragon cult.\nDetails techniques that harness lightning, the weapon of the ancient dragons.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-apostle-s-cookbook-4",
+      "term": "ancient dragon apostle's cookbook [4]",
+      "title": "Ancient Dragon Apostle's Cookbook [4]",
+      "description": "A record of crafting techniques taught by the capital's ancient dragon cult.\nDetails techniques that harness lightning, the weapon of the ancient dragons.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-apostle-s-cookbook-3",
+      "term": "ancient dragon apostle's cookbook [3]",
+      "title": "Ancient Dragon Apostle's Cookbook [3]",
+      "description": "A record of crafting techniques taught by the capital's ancient dragon cult.\nDetails techniques that harness lightning, the weapon of the ancient dragons.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "fevor-s-cookbook-1",
+      "term": "fevor's cookbook [1]",
+      "title": "Fevor's Cookbook [1]",
+      "description": "A record of crafting techniques left by a man who was utterly captivated by St. Trina. He continued the search for her in his slumber.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "fevor-s-cookbook-3",
+      "term": "fevor's cookbook [3]",
+      "title": "Fevor's Cookbook [3]",
+      "description": "A record of crafting techniques left by a man who was utterly captivated by St. Trina. He continued the search for her in his slumber.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "fevor-s-cookbook-2",
+      "term": "fevor's cookbook [2]",
+      "title": "Fevor's Cookbook [2]",
+      "description": "A record of crafting techniques left by a man who was utterly captivated by St. Trina. He continued the search for her in his slumber.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "missionary-s-cookbook-7",
+      "term": "missionary's cookbook [7]",
+      "title": "Missionary's Cookbook [7]",
+      "description": "A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-s-cookbook-1",
+      "term": "frenzied's cookbook [1]",
+      "title": "Frenzied's Cookbook [1]",
+      "description": "A record of crafting techniques left by those afflicted by the madness of the flame of frenzy.\nContains techniques discovered in desperation.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-s-cookbook-2",
+      "term": "frenzied's cookbook [2]",
+      "title": "Frenzied's Cookbook [2]",
+      "description": "A record of crafting techniques left by those afflicted by the madness of the flame of frenzy.\nContains techniques discovered in desperation.",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Cookbooks",
+      "source": "base"
+    },
+    {
+      "id": "dolores-the-sleeping-arrow-puppet",
+      "term": "dolores the sleeping arrow puppet",
+      "title": "Dolores the Sleeping Arrow Puppet",
+      "description": "Summons spirit of Dolores the Sleeping Arrow",
+      "section": "Elden Ring",
+      "category": "Consumables",
+      "subcategory": "Arrows & Bolts",
+      "source": "base"
+    }
+  ]
+}

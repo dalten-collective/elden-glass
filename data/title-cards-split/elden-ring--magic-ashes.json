@@ -1,0 +1,1886 @@
+{
+  "section": "Elden Ring",
+  "category": "Magic & Ashes",
+  "cards": [
+    {
+      "id": "ash-of-war-lion-s-claw",
+      "term": "ash of war: lion's claw",
+      "title": "Ash of War: Lion's Claw",
+      "description": "Grants affinities and skills to an armament",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-impaling-thrust",
+      "term": "ash of war: impaling thrust",
+      "title": "Ash of War: Impaling Thrust",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-piercing-fang",
+      "term": "ash of war: piercing fang",
+      "title": "Ash of War: Piercing Fang",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-spinning-slash",
+      "term": "ash of war: spinning slash",
+      "title": "Ash of War: Spinning Slash",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-charge-forth",
+      "term": "ash of war: charge forth",
+      "title": "Ash of War: Charge Forth",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-stamp-upward-cut",
+      "term": "ash of war: stamp (upward cut)",
+      "title": "Ash of War: Stamp (Upward Cut)",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-stamp-sweep",
+      "term": "ash of war: stamp (sweep)",
+      "title": "Ash of War: Stamp (Sweep)",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-blood-tax",
+      "term": "ash of war: blood tax",
+      "title": "Ash of War: Blood Tax",
+      "description": "This Ash of War grants an armament the Blood affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-repeating-thrust",
+      "term": "ash of war: repeating thrust",
+      "title": "Ash of War: Repeating Thrust",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-wild-strikes",
+      "term": "ash of war: wild strikes",
+      "title": "Ash of War: Wild Strikes",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-spinning-strikes",
+      "term": "ash of war: spinning strikes",
+      "title": "Ash of War: Spinning Strikes",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-double-slash",
+      "term": "ash of war: double slash",
+      "title": "Ash of War: Double Slash",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-prelate-s-charge",
+      "term": "ash of war: prelate's charge",
+      "title": "Ash of War: Prelate's Charge",
+      "description": "This Ash of War grants an armament the Flame Art affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-unsheathe",
+      "term": "ash of war: unsheathe",
+      "title": "Ash of War: Unsheathe",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-square-off",
+      "term": "ash of war: square off",
+      "title": "Ash of War: Square Off",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-giant-hunt",
+      "term": "ash of war: giant hunt",
+      "title": "Ash of War: Giant Hunt",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-torch-attack",
+      "term": "ash of war: torch attack",
+      "title": "Ash of War: Torch Attack",
+      "description": "Grants affinities and Skills to an armament",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-loretta-s-slash",
+      "term": "ash of war: loretta's slash",
+      "title": "Ash of War: Loretta's Slash",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-poison-moth-flight",
+      "term": "ash of war: poison moth flight",
+      "title": "Ash of War: Poison Moth Flight",
+      "description": "This Ash of War grants an armament the Poison affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-spinning-weapon",
+      "term": "ash of war: spinning weapon",
+      "title": "Ash of War: Spinning Weapon",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ashes-of-war-wicked-stance",
+      "term": "ashes of war: wicked stance",
+      "title": "Ashes of War: Wicked Stance",
+      "description": "Assign attack type and skill to weapon",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-storm-assault",
+      "term": "ash of war: storm assault",
+      "title": "Ash of War: Storm Assault",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-stormcaller",
+      "term": "ash of war: stormcaller",
+      "title": "Ash of War: Stormcaller",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-sword-dance",
+      "term": "ash of war: sword dance",
+      "title": "Ash of War: Sword Dance",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-spinning-chain",
+      "term": "ash of war: spinning chain",
+      "title": "Ash of War: Spinning Chain",
+      "description": "This Ash of War grants an armament\nthe Skill: Pulverize.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-glintblade-phalanx",
+      "term": "ash of war: glintblade phalanx",
+      "title": "Ash of War: Glintblade Phalanx",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-sacred-blade",
+      "term": "ash of war: sacred blade",
+      "title": "Ash of War: Sacred Blade",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-ice-spear",
+      "term": "ash of war: ice spear",
+      "title": "Ash of War: Ice Spear",
+      "description": "This Ash of War grants an armament the Cold affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-glintstone-pebble",
+      "term": "ash of war: glintstone pebble",
+      "title": "Ash of War: Glintstone Pebble",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-bloody-slash",
+      "term": "ash of war: bloody slash",
+      "title": "Ash of War: Bloody Slash",
+      "description": "This Ash of War grants an armament the Blood affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-lifesteal-fist",
+      "term": "ash of war: lifesteal fist",
+      "title": "Ash of War: Lifesteal Fist",
+      "description": "This Ash of War grants an armament the Occult affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-eruption",
+      "term": "ash of war: eruption",
+      "title": "Ash of War: Eruption",
+      "description": "This Ash of War grants an armament the Fire affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-prayerful-strike",
+      "term": "ash of war: prayerful strike",
+      "title": "Ash of War: Prayerful Strike",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-gravitas",
+      "term": "ash of war: gravitas",
+      "title": "Ash of War: Gravitas",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-storm-blade",
+      "term": "ash of war: storm blade",
+      "title": "Ash of War: Storm Blade",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-earthshaker",
+      "term": "ash of war: earthshaker",
+      "title": "Ash of War: Earthshaker",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-golden-land",
+      "term": "ash of war: golden land",
+      "title": "Ash of War: Golden Land",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-flaming-strike",
+      "term": "ash of war: flaming strike",
+      "title": "Ash of War: Flaming Strike",
+      "description": "This Ash of War grants an armament the Fire affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-thunderbolt",
+      "term": "ash of war: thunderbolt",
+      "title": "Ash of War: Thunderbolt",
+      "description": "This Ash of War grants an armament the Lightning affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-lightning-slash",
+      "term": "ash of war: lightning slash",
+      "title": "Ash of War: Lightning Slash",
+      "description": "This Ash of War grants an armament the Lightning affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-carian-grandeur",
+      "term": "ash of war: carian grandeur",
+      "title": "Ash of War: Carian Grandeur",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-carian-greatsword",
+      "term": "ash of war: carian greatsword",
+      "title": "Ash of War: Carian Greatsword",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-vacuum-slice",
+      "term": "ash of war: vacuum slice",
+      "title": "Ash of War: Vacuum Slice",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-black-flame-tornado",
+      "term": "ash of war: black flame tornado",
+      "title": "Ash of War: Black Flame Tornado",
+      "description": "This Ash of War grants an armament the Flame Art affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-sacred-ring-of-light",
+      "term": "ash of war: sacred ring of light",
+      "title": "Ash of War: Sacred Ring of Light",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-firebreather",
+      "term": "ash of war: firebreather",
+      "title": "Ash of War: Firebreather",
+      "description": "This Ash of War grants an armament\nthe Skill: Fire Breath.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-blood-blade",
+      "term": "ash of war: blood blade",
+      "title": "Ash of War: Blood Blade",
+      "description": "This Ash of War grants an armament the Blood affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-phantom-slash",
+      "term": "ash of war: phantom slash",
+      "title": "Ash of War: Phantom Slash",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-spectral-lance",
+      "term": "ash of war: spectral lance",
+      "title": "Ash of War: Spectral Lance",
+      "description": "This Ash of War grants an armament the Occult affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-chilling-mist",
+      "term": "ash of war: chilling mist",
+      "title": "Ash of War: Chilling Mist",
+      "description": "This Ash of War grants an armament the Cold affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-poisonous-mist",
+      "term": "ash of war: poisonous mist",
+      "title": "Ash of War: Poisonous Mist",
+      "description": "This Ash of War grants an armament the Poison affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-shield-bash",
+      "term": "ash of war: shield bash",
+      "title": "Ash of War: Shield Bash",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-barricade-shield",
+      "term": "ash of war: barricade shield",
+      "title": "Ash of War: Barricade Shield",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-parry",
+      "term": "ash of war: parry",
+      "title": "Ash of War: Parry",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-buckler-parry",
+      "term": "ash of war: buckler parry",
+      "title": "Ash of War: Buckler Parry",
+      "description": "This Ash of War grants an armament\nthe Skill: Buckler Parry.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-carian-retaliation",
+      "term": "ash of war: carian retaliation",
+      "title": "Ash of War: Carian Retaliation",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-storm-wall",
+      "term": "ash of war: storm wall",
+      "title": "Ash of War: Storm Wall",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-golden-parry",
+      "term": "ash of war: golden parry",
+      "title": "Ash of War: Golden Parry",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-shield-crash",
+      "term": "ash of war: shield crash",
+      "title": "Ash of War: Shield Crash",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-no-skill",
+      "term": "ash of war: no skill",
+      "title": "Ash of War: No Skill",
+      "description": "This Ash of War grants no affinity to an armament and replaces any skill present with the following:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-thops-s-barrier",
+      "term": "ash of war: thops's barrier",
+      "title": "Ash of War: Thops's Barrier",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-through-and-through",
+      "term": "ash of war: through and through",
+      "title": "Ash of War: Through and Through",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-barrage",
+      "term": "ash of war: barrage",
+      "title": "Ash of War: Barrage",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-mighty-shot",
+      "term": "ash of war: mighty shot",
+      "title": "Ash of War: Mighty Shot",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-enchanted-shot",
+      "term": "ash of war: enchanted shot",
+      "title": "Ash of War: Enchanted Shot",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-sky-shot",
+      "term": "ash of war: sky shot",
+      "title": "Ash of War: Sky Shot",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-rain-of-arrows",
+      "term": "ash of war: rain of arrows",
+      "title": "Ash of War: Rain of Arrows",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ashes-of-war-invisible-arrow",
+      "term": "ashes of war: invisible arrow",
+      "title": "Ashes of War: Invisible Arrow",
+      "description": "Affix to weapon to enable use\nof the Skill: Invisible Arrow",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-hoarfrost-stomp",
+      "term": "ash of war: hoarfrost stomp",
+      "title": "Ash of War: Hoarfrost Stomp",
+      "description": "This Ash of War grants an armament the Cold affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-storm-stomp",
+      "term": "ash of war: storm stomp",
+      "title": "Ash of War: Storm Stomp",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-kick",
+      "term": "ash of war: kick",
+      "title": "Ash of War: Kick",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-lightning-ram",
+      "term": "ash of war: lightning ram",
+      "title": "Ash of War: Lightning Ram",
+      "description": "This Ash of War grants an armament the Lightning affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-flame-of-the-redmanes",
+      "term": "ash of war: flame of the redmanes",
+      "title": "Ash of War: Flame of the Redmanes",
+      "description": "This Ash of War grants an armament the Fire affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-ground-slam",
+      "term": "ash of war: ground slam",
+      "title": "Ash of War: Ground Slam",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-golden-slam",
+      "term": "ash of war: golden slam",
+      "title": "Ash of War: Golden Slam",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-waves-of-darkness",
+      "term": "ash of war: waves of darkness",
+      "title": "Ash of War: Waves of Darkness",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-hoarah-loux-s-earthshaker",
+      "term": "ash of war: hoarah loux's earthshaker",
+      "title": "Ash of War: Hoarah Loux's Earthshaker",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-determination",
+      "term": "ash of war: determination",
+      "title": "Ash of War: Determination",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-royal-knight-s-resolve",
+      "term": "ash of war: royal knight's resolve",
+      "title": "Ash of War: Royal Knight's Resolve",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-assassin-s-gambit",
+      "term": "ash of war: assassin's gambit",
+      "title": "Ash of War: Assassin's Gambit",
+      "description": "This Ash of War grants an armament the Occult affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-golden-vow",
+      "term": "ash of war: golden vow",
+      "title": "Ash of War: Golden Vow",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-sacred-order",
+      "term": "ash of war: sacred order",
+      "title": "Ash of War: Sacred Order",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-shared-order",
+      "term": "ash of war: shared order",
+      "title": "Ash of War: Shared Order",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-seppuku",
+      "term": "ash of war: seppuku",
+      "title": "Ash of War: Seppuku",
+      "description": "This Ash of War grants an armament the Blood affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-cragblade",
+      "term": "ash of war: cragblade",
+      "title": "Ash of War: Cragblade",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-barbaric-roar",
+      "term": "ash of war: barbaric roar",
+      "title": "Ash of War: Barbaric Roar",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-war-cry",
+      "term": "ash of war: war cry",
+      "title": "Ash of War: War Cry",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-beast-s-roar",
+      "term": "ash of war: beast's roar",
+      "title": "Ash of War: Beast's Roar",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-troll-s-roar",
+      "term": "ash of war: troll's roar",
+      "title": "Ash of War: Troll's Roar",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-braggart-s-roar",
+      "term": "ash of war: braggart's roar",
+      "title": "Ash of War: Braggart's Roar",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-endure",
+      "term": "ash of war: endure",
+      "title": "Ash of War: Endure",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-vow-of-the-indomitable",
+      "term": "ash of war: vow of the indomitable",
+      "title": "Ash of War: Vow of the Indomitable",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-holy-ground",
+      "term": "ash of war: holy ground",
+      "title": "Ash of War: Holy Ground",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-quickstep",
+      "term": "ash of war: quickstep",
+      "title": "Ash of War: Quickstep",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-bloodhound-s-step",
+      "term": "ash of war: bloodhound's step",
+      "title": "Ash of War: Bloodhound's Step",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-raptor-of-the-mists",
+      "term": "ash of war: raptor of the mists",
+      "title": "Ash of War: Raptor of the Mists",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "ash-of-war-white-shadow-s-lure",
+      "term": "ash of war: white shadow's lure",
+      "title": "Ash of War: White Shadow's Lure",
+      "description": "This Ash of War grants an armament the Occult affinity and the following skill:",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "base"
+    },
+    {
+      "id": "tarnished-s-furled-finger",
+      "term": "tarnished's furled finger",
+      "title": "Tarnished's Furled Finger",
+      "description": "Creates a summon sign for cooperative multiplayer",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "duelist-s-furled-finger",
+      "term": "duelist's furled finger",
+      "title": "Duelist's Furled Finger",
+      "description": "Creates a summon sign for competitive multiplayer",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "blue-cipher-ring",
+      "term": "blue cipher ring",
+      "title": "Blue Cipher Ring",
+      "description": "Answers requests for summoning from hunters",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "small-golden-effigy",
+      "term": "small golden effigy",
+      "title": "Small Golden Effigy",
+      "description": "Sends a co-op sign to summoning pools",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "small-red-effigy",
+      "term": "small red effigy",
+      "title": "Small Red Effigy",
+      "description": "Sends a hostile sign to summoning pools",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "spectral-steed-whistle",
+      "term": "spectral steed whistle",
+      "title": "Spectral Steed Whistle",
+      "description": "Summon and ride Torrent, the spectral steed",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "furlcalling-finger-remedy",
+      "term": "furlcalling finger remedy",
+      "title": "Furlcalling Finger Remedy",
+      "description": "Reveals co-op and hostile summoning signs",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "magic-downpour",
+      "term": "magic downpour",
+      "title": "Magic Downpour",
+      "description": "Summon a magic mass that sprays projectiles over area",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "rock-sling",
+      "term": "rock sling",
+      "title": "Rock Sling",
+      "description": "Summons rocks from the earth and sends it flying",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "briars-of-sin",
+      "term": "briars of sin",
+      "title": "Briars of Sin",
+      "description": "Summons thorns from a whorl of own blood",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "rancorcall",
+      "term": "rancorcall",
+      "title": "Rancorcall",
+      "description": "Summons vengeful spirits that chase down foes",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "ancient-death-rancor",
+      "term": "ancient death rancor",
+      "title": "Ancient Death Rancor",
+      "description": "Summons horde of vengeful spirits that chase down foes",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "tibia-s-summons",
+      "term": "tibia's summons",
+      "title": "Tibia's Summons",
+      "description": "Summons Those Who Live in Death",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "flame-of-the-fell-god",
+      "term": "flame of the fell god",
+      "title": "Flame of the Fell God",
+      "description": "Summons raging fireball that explodes and sets the area ablaze",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "black-flame-ritual",
+      "term": "black flame ritual",
+      "title": "Black Flame Ritual",
+      "description": "Summons circle of black flame pillars around caster",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragons-lightning-strike",
+      "term": "ancient dragons' lightning strike",
+      "title": "Ancient Dragons' Lightning Strike",
+      "description": "Summons red lightning that spreads from impact",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "spirit-calling-bell",
+      "term": "spirit calling bell",
+      "title": "Spirit Calling Bell",
+      "description": "Bell that summons various spirits from ashen items",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "the-stormhawk-king",
+      "term": "the stormhawk king",
+      "title": "The Stormhawk King",
+      "description": "Ashes of a hawk which heeds no summons",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "about-summoning-spirits",
+      "term": "about summoning spirits",
+      "title": "About Summoning Spirits",
+      "description": "Information about summoning spirits\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "about-summoning-other-players",
+      "term": "about summoning other players",
+      "title": "About Summoning Other Players",
+      "description": "Information about summoning other players\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "about-summoning-pools",
+      "term": "about summoning pools",
+      "title": "About Summoning Pools",
+      "description": "Information about the summoning pools\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "black-knife-tiche",
+      "term": "black knife tiche",
+      "title": "Black Knife Tiche",
+      "description": "Summons spirit of Black Knife Tiche",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-oleg",
+      "term": "banished knight oleg",
+      "title": "Banished Knight Oleg",
+      "description": "Summons spirit of Banished Knight Oleg",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-oleg-1",
+      "term": "banished knight oleg +1",
+      "title": "Banished Knight Oleg +1",
+      "description": "Ashen remains in which spirits yet dwell.\nUse to summon the spirit of Oleg, the Banished Knight.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-engvall",
+      "term": "banished knight engvall",
+      "title": "Banished Knight Engvall",
+      "description": "Summons spirit of Banished Knight Engvall",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "fanged-imp-ashes",
+      "term": "fanged imp ashes",
+      "title": "Fanged Imp Ashes",
+      "description": "Summons two fanged imp spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "latenna-the-albinauric",
+      "term": "latenna the albinauric",
+      "title": "Latenna the Albinauric",
+      "description": "Summons spirit of Latenna the Albinauric",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "nomad-ashes",
+      "term": "nomad ashes",
+      "title": "Nomad Ashes",
+      "description": "Summons nomad spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "nightmaiden-amp-swordstress-puppets",
+      "term": "nightmaiden &amp; swordstress puppets",
+      "title": "Nightmaiden &amp; Swordstress Puppets",
+      "description": "Summons nightmaiden & swordstress spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "mimic-tear-ashes",
+      "term": "mimic tear ashes",
+      "title": "Mimic Tear Ashes",
+      "description": "Summons mimic tear spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "crystalian-ashes",
+      "term": "crystalian ashes",
+      "title": "Crystalian Ashes",
+      "description": "Summons Crystalian spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "crystalian-ashes-1",
+      "term": "crystalian ashes +1",
+      "title": "Crystalian Ashes +1",
+      "description": "Ashen remains in which spirits yet dwell.\nUse to summon the spirit of a Crystalian.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "ancestral-follower-ashes",
+      "term": "ancestral follower ashes",
+      "title": "Ancestral Follower Ashes",
+      "description": "Summons ancestral follower spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "winged-misbegotten-ashes",
+      "term": "winged misbegotten ashes",
+      "title": "Winged Misbegotten Ashes",
+      "description": "Summons winged misbegotten spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-ashes",
+      "term": "albinauric ashes",
+      "title": "Albinauric Ashes",
+      "description": "Summons two Albinauric spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "skeletal-militiaman-ashes",
+      "term": "skeletal militiaman ashes",
+      "title": "Skeletal Militiaman Ashes",
+      "description": "Summons two skeletal militiaman spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "skeletal-bandit-ashes",
+      "term": "skeletal bandit ashes",
+      "title": "Skeletal Bandit Ashes",
+      "description": "Summons skeletal bandit spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "oracle-envoy-ashes",
+      "term": "oracle envoy ashes",
+      "title": "Oracle Envoy Ashes",
+      "description": "Summons four Oracle Envoy spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "putrid-corpse-ashes",
+      "term": "putrid corpse ashes",
+      "title": "Putrid Corpse Ashes",
+      "description": "Summons four putrid corpse spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "depraved-perfumer-carmaan",
+      "term": "depraved perfumer carmaan",
+      "title": "Depraved Perfumer Carmaan",
+      "description": "Summons spirit of Depraved Perfumer Carmaan",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-tricia",
+      "term": "perfumer tricia",
+      "title": "Perfumer Tricia",
+      "description": "Summons spirit of Perfumer Tricia",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-sorcerer-ashes",
+      "term": "glintstone sorcerer ashes",
+      "title": "Glintstone Sorcerer Ashes",
+      "description": "Summons glintstone sorcerer spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "twinsage-sorcerer-ashes",
+      "term": "twinsage sorcerer ashes",
+      "title": "Twinsage Sorcerer Ashes",
+      "description": "Summons Twinsage sorcerer spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "page-ashes",
+      "term": "page ashes",
+      "title": "Page Ashes",
+      "description": "Summons page spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "battlemage-hugues",
+      "term": "battlemage hugues",
+      "title": "Battlemage Hugues",
+      "description": "Summons spirit of Battlemage Hugues",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "clayman-ashes",
+      "term": "clayman ashes",
+      "title": "Clayman Ashes",
+      "description": "Summons two clayman spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-knight-finlay",
+      "term": "cleanrot knight finlay",
+      "title": "Cleanrot Knight Finlay",
+      "description": "Summons spirit of Cleanrot Knight Finlay",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "kindred-of-rot-ashes",
+      "term": "kindred of rot ashes",
+      "title": "Kindred of Rot Ashes",
+      "description": "Summons Kindred of Rot spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "marionette-soldier-ashes",
+      "term": "marionette soldier ashes",
+      "title": "Marionette Soldier Ashes",
+      "description": "Summons two marionette soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "avionette-soldier-ashes",
+      "term": "avionette soldier ashes",
+      "title": "Avionette Soldier Ashes",
+      "description": "Summons two avionette soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "fire-monk-ashes",
+      "term": "fire monk ashes",
+      "title": "Fire Monk Ashes",
+      "description": "Summons Fire Monk spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "blackflame-monk-amon",
+      "term": "blackflame monk amon",
+      "title": "Blackflame Monk Amon",
+      "description": "Summons spirit of Blackflame Monk Amon",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "man-serpent-ashes",
+      "term": "man-serpent ashes",
+      "title": "Man-Serpent Ashes",
+      "description": "Summons man-serpent spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "azula-beastman-ashes",
+      "term": "azula beastman ashes",
+      "title": "Azula Beastman Ashes",
+      "description": "Summons two Azula beastman spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "kaiden-sellsword-ashes",
+      "term": "kaiden sellsword ashes",
+      "title": "Kaiden Sellsword Ashes",
+      "description": "Summons Kaiden sellsword spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "lone-wolf-ashes",
+      "term": "lone wolf ashes",
+      "title": "Lone Wolf Ashes",
+      "description": "Summons three lone wolf spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "giant-rat-ashes",
+      "term": "giant rat ashes",
+      "title": "Giant Rat Ashes",
+      "description": "Summons three giant rat spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "giant-rat-ashes-5",
+      "term": "giant rat ashes +5",
+      "title": "Giant Rat Ashes +5",
+      "description": "Summons four giant rat spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "giant-rat-ashes-10",
+      "term": "giant rat ashes +10",
+      "title": "Giant Rat Ashes +10",
+      "description": "Summons five giant rat spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "demi-human-ashes",
+      "term": "demi-human ashes",
+      "title": "Demi-Human Ashes",
+      "description": "Summons five demi-human spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "demi-human-ashes-1",
+      "term": "demi-human ashes +1",
+      "title": "Demi-Human Ashes +1",
+      "description": "Ashen remains in which spirits yet dwell.\nUse to summon the spirits of five demi-humans.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "rotten-stray-ashes",
+      "term": "rotten stray ashes",
+      "title": "Rotten Stray Ashes",
+      "description": "Summons rotten stray spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "spirit-jellyfish-ashes",
+      "term": "spirit jellyfish ashes",
+      "title": "Spirit Jellyfish Ashes",
+      "description": "Summons spirit jellyfish",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "warhawk-ashes",
+      "term": "warhawk ashes",
+      "title": "Warhawk Ashes",
+      "description": "Summons warhawk spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "warhawk-ashes-1",
+      "term": "warhawk ashes +1",
+      "title": "Warhawk Ashes +1",
+      "description": "Ashen remains in which spirits yet dwell.\nUse to summon the spirit of a warhawk.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "stormhawk-deenh",
+      "term": "stormhawk deenh",
+      "title": "Stormhawk Deenh",
+      "description": "Summons spirit of Stormhawk Deenh",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-knight-floh",
+      "term": "bloodhound knight floh",
+      "title": "Bloodhound Knight Floh",
+      "description": "Summons spirit of Bloodhound Knight Floh",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "wandering-noble-ashes",
+      "term": "wandering noble ashes",
+      "title": "Wandering Noble Ashes",
+      "description": "Summons five wandering noble spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "noble-sorcerer-ashes",
+      "term": "noble sorcerer ashes",
+      "title": "Noble Sorcerer Ashes",
+      "description": "Summons noble sorcerer spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-ashes",
+      "term": "vulgar militia ashes",
+      "title": "Vulgar Militia Ashes",
+      "description": "Summons three vulgar militia spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "mad-pumpkin-head-ashes",
+      "term": "mad pumpkin head ashes",
+      "title": "Mad Pumpkin Head Ashes",
+      "description": "Summons mad pumpkin head spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "land-squirt-ashes",
+      "term": "land squirt ashes",
+      "title": "Land Squirt Ashes",
+      "description": "Summons three land squirt spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "miranda-sprout-ashes",
+      "term": "miranda sprout ashes",
+      "title": "Miranda Sprout Ashes",
+      "description": "Summons five miranda sprout spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "soldjars-of-fortune-ashes",
+      "term": "soldjars of fortune ashes",
+      "title": "Soldjars of Fortune Ashes",
+      "description": "Summons three little living jar spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "omenkiller-rollo",
+      "term": "omenkiller rollo",
+      "title": "Omenkiller Rollo",
+      "description": "Summons spirit of Omenkiller Rollo",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "greatshield-soldier-ashes",
+      "term": "greatshield soldier ashes",
+      "title": "Greatshield Soldier Ashes",
+      "description": "Summons five greatshield soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "archer-ashes",
+      "term": "archer ashes",
+      "title": "Archer Ashes",
+      "description": "Summons three archer spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "godrick-soldier-ashes",
+      "term": "godrick soldier ashes",
+      "title": "Godrick Soldier Ashes",
+      "description": "Summons two Godrick soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "godrick-soldier-ashes-1",
+      "term": "godrick soldier ashes +1",
+      "title": "Godrick Soldier Ashes +1",
+      "description": "Ashen remains in which spirits yet dwell.\nUse to summon the spirits of two of Godrick's soldiers.",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "raya-lucaria-soldier-ashes",
+      "term": "raya lucaria soldier ashes",
+      "title": "Raya Lucaria Soldier Ashes",
+      "description": "Summons three Raya Lucaria soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "leyndell-soldier-ashes",
+      "term": "leyndell soldier ashes",
+      "title": "Leyndell Soldier Ashes",
+      "description": "Summons two Leyndell soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "radahn-soldier-ashes",
+      "term": "radahn soldier ashes",
+      "title": "Radahn Soldier Ashes",
+      "description": "Summons two Radahn soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "mausoleum-soldier-ashes",
+      "term": "mausoleum soldier ashes",
+      "title": "Mausoleum Soldier Ashes",
+      "description": "Summons five mausoleum soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-soldier-ashes",
+      "term": "haligtree soldier ashes",
+      "title": "Haligtree Soldier Ashes",
+      "description": "Summons four Haligtree soldier spirits",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "ancient-dragon-knight-kristoff",
+      "term": "ancient dragon knight kristoff",
+      "title": "Ancient Dragon Knight Kristoff",
+      "description": "Summons spirit of Ancient Dragon Knight Kristoff",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "redmane-knight-ogha",
+      "term": "redmane knight ogha",
+      "title": "Redmane Knight Ogha",
+      "description": "Summons spirit of Redmane Knight Ogha",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "lhutel-the-headless",
+      "term": "lhutel the headless",
+      "title": "Lhutel the Headless",
+      "description": "Summons spirit of Lhutel the Headless",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "nepheli-loux-puppet",
+      "term": "nepheli loux puppet",
+      "title": "Nepheli Loux Puppet",
+      "description": "Summons spirit of Nepheli Loux",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "dung-eater-puppet",
+      "term": "dung eater puppet",
+      "title": "Dung Eater Puppet",
+      "description": "Summons spirit of the Dung Eater",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "finger-maiden-therolina-puppet",
+      "term": "finger maiden therolina puppet",
+      "title": "Finger Maiden Therolina Puppet",
+      "description": "Summons spirit of Finger Maiden Therolina",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    },
+    {
+      "id": "jarwight-puppet",
+      "term": "jarwight puppet",
+      "title": "Jarwight Puppet",
+      "description": "Summons Jarwight spirit",
+      "section": "Elden Ring",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "base"
+    }
+  ]
+}

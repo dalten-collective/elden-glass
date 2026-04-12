@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.contentlayer/
+*.log
+
+# Private keys and sensitive data
+*.key
+*.pem
+wallet.json
+credentials.json
+secrets/
+
+# Blockchain sensitive info (keep template, not actual values)
+config/blockchain-config.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Website deployment
+website/node_modules/
+website/dist/
+website/.next/
+
+# Research documents (keep local, not in repo)
+*.pdf
+Grant Us Eyes.pdf
+le-macchine-celibi-the-bachelor-machines-0847800199_compress.pdf
+903311153-The-Xenotext-Book-1-Christian-Bok-2025-easy-download copy.txt
+Alexander20Galloway20-20Gaming20Essays20On20Algorithmic20Culture copy.txt
+_OceanofPDF.com_The_Xenotext_-_Christian_Bok copy.txt
+a-ball-of-twine.txt
+
+# Keep templates
+!config/blockchain-config.template.json
+Grant Us Eyes.pdf
+*.tsbuildinfo

@@ -1,0 +1,1456 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Armor",
+  "cards": [
+    {
+      "id": "dane-s-hat",
+      "term": "dane's hat",
+      "title": "Dane's Hat",
+      "description": "The sun-faded and lightly soiled hat of Dryleaf Dane. Worn low over the eyes, it obscures the wearer's vision.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "dryleaf-robe",
+      "term": "dryleaf robe",
+      "title": "Dryleaf Robe",
+      "description": "Sun-faded and lightly soiled travel attire worn by clergymen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "dryleaf-arm-wraps",
+      "term": "dryleaf arm wraps",
+      "title": "Dryleaf Arm Wraps",
+      "description": "Sun-faded and lightly soiled arm wraps.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "dryleaf-cuissardes",
+      "term": "dryleaf cuissardes",
+      "title": "Dryleaf Cuissardes",
+      "description": "Sun-faded and lightly soiled travel attire worn by clergymen.\nBoots made of sturdy leather.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "dryleaf-robe-altered",
+      "term": "dryleaf robe (altered)",
+      "title": "Dryleaf Robe (Altered)",
+      "description": "Sun-faded and lightly soiled travel attire worn by clergymen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "gaius-s-helm",
+      "term": "gaius's helm",
+      "title": "Gaius's Helm",
+      "description": "The black iron helm of Commander Gaius.\nPart of an armor set patterned after fallen seeds.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "gaius-s-armor",
+      "term": "gaius's armor",
+      "title": "Gaius's Armor",
+      "description": "The black iron chest armor of Commander Gaius.\nPart of an armor set patterned after fallen seeds.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "gaius-s-gauntlets",
+      "term": "gaius's gauntlets",
+      "title": "Gaius's Gauntlets",
+      "description": "The black iron gauntlets of Commander Gaius.\nPart of an armor set patterned after fallen seeds.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "gaius-s-greaves",
+      "term": "gaius's greaves",
+      "title": "Gaius's Greaves",
+      "description": "Black iron greaves made for Commander Gaius.\nA cruel joke, for he could not wear them.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "oathseeker-knight-helm",
+      "term": "oathseeker knight helm",
+      "title": "Oathseeker Knight Helm",
+      "description": "An Oathseeker Knight helm.\nBlack with gold ornamentation.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "leda-s-armor",
+      "term": "leda's armor",
+      "title": "Leda's Armor",
+      "description": "Chest armor of Needle Knight Leda.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "oathseeker-knight-gauntlets",
+      "term": "oathseeker knight gauntlets",
+      "title": "Oathseeker Knight Gauntlets",
+      "description": "Oathseeker Knight gauntlets.\nBlack with gold ornamentation.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "oathseeker-knight-greaves",
+      "term": "oathseeker knight greaves",
+      "title": "Oathseeker Knight Greaves",
+      "description": "Oathseeker Knight greaves.\nBlack with gold ornamentation.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "oathseeker-knight-armor",
+      "term": "oathseeker knight armor",
+      "title": "Oathseeker Knight Armor",
+      "description": "Oathseeker Knight chest armor.\nBlack with gold ornamentation.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "verdigris-helm",
+      "term": "verdigris helm",
+      "title": "Verdigris Helm",
+      "description": "Helm made from an unusual metal known as verdigris.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "verdigris-armor",
+      "term": "verdigris armor",
+      "title": "Verdigris Armor",
+      "description": "Chest armor made from an unusual metal known as verdigris.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "verdigris-gauntlets",
+      "term": "verdigris gauntlets",
+      "title": "Verdigris Gauntlets",
+      "description": "Gauntlets made from an unusual metal known as verdigris.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "verdigris-greaves",
+      "term": "verdigris greaves",
+      "title": "Verdigris Greaves",
+      "description": "Greaves made from an unusual metal known as verdigris.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "pelt-of-ralva",
+      "term": "pelt of ralva",
+      "title": "Pelt of Ralva",
+      "description": "The pelt of Ralva the Great Red Bear, worn upon the head without modification.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "iron-rivet-armor",
+      "term": "iron rivet armor",
+      "title": "Iron Rivet Armor",
+      "description": "Chest armor of Red Bear, whose name is lost to madness.\nA vest reinforced with iron rivets.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "iron-rivet-gauntlets",
+      "term": "iron rivet gauntlets",
+      "title": "Iron Rivet Gauntlets",
+      "description": "Gauntlets of Red Bear, whose name is lost to madness.\nReinforced with iron rivets.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "iron-rivet-greaves",
+      "term": "iron rivet greaves",
+      "title": "Iron Rivet Greaves",
+      "description": "Greaves of Red Bear, whose name is lost to madness.\nReinforced with iron rivets.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "fang-helm",
+      "term": "fang helm",
+      "title": "Fang Helm",
+      "description": "Helm of Red Bear, whose name is lost to madness.\nThe cheek guards are shaped after lion fangs.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-mask",
+      "term": "thiollier's mask",
+      "title": "Thiollier's Mask",
+      "description": "A mask upon which is carved a tranquil sleeping face.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-garb",
+      "term": "thiollier's garb",
+      "title": "Thiollier's Garb",
+      "description": "The dark attire of those who wield poison in secret.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-gloves",
+      "term": "thiollier's gloves",
+      "title": "Thiollier's Gloves",
+      "description": "The dark gloves of those who wield poison in secret, ever scorned and loathed.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-trousers",
+      "term": "thiollier's trousers",
+      "title": "Thiollier's Trousers",
+      "description": "The dark trousers of those who wield poison in secret, ever scorned and loathed.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-garb-altered",
+      "term": "thiollier's garb (altered)",
+      "title": "Thiollier's Garb (Altered)",
+      "description": "The dark attire of those who wield poison in secret.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "high-priest-hat",
+      "term": "high priest hat",
+      "title": "High Priest Hat",
+      "description": "The hat of Count Ymir, High Priest.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "high-priest-robe",
+      "term": "high priest robe",
+      "title": "High Priest Robe",
+      "description": "Robe of Count Ymir, High Priest.\nConceals the abundance of squirming beneath.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "high-priest-gloves",
+      "term": "high priest gloves",
+      "title": "High Priest Gloves",
+      "description": "Gloves of Count Ymir, High Priest.\nSoft and well-tailored.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "high-priest-undergarments",
+      "term": "high priest undergarments",
+      "title": "High Priest Undergarments",
+      "description": "Undergarments of Count Ymir, High Priest.\nSoft and well-tailored.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-robe",
+      "term": "finger robe",
+      "title": "Finger Robe",
+      "description": "Robe of Count Ymir, High Priest.\nThe front is open, exposing the squirming fingers beneath.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "caterpillar-mask",
+      "term": "caterpillar mask",
+      "title": "Caterpillar Mask",
+      "description": "Grotesque mask constructed from countless solidified caterpillars. A ritual implement of the greater potentates of Bonny Village.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "braided-cord-robe",
+      "term": "braided cord robe",
+      "title": "Braided Cord Robe",
+      "description": "Ragged black cloth overlaid with braided cord. Attire of a vengeance-seeking hornsent.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "braided-arm-wraps",
+      "term": "braided arm wraps",
+      "title": "Braided Arm Wraps",
+      "description": "Ragged black cloth tied with braided cord. Attire of a vengeance-seeking hornsent.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "soiled-loincloth",
+      "term": "soiled loincloth",
+      "title": "Soiled Loincloth",
+      "description": "This lightly soiled loincloth of ragged cloth does little more than conceal one's nether regions.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "dancer-s-hood",
+      "term": "dancer's hood",
+      "title": "Dancer's Hood",
+      "description": "Bright-red hood of the Ranah dancers.\nEnhances the power of dancing attacks.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "dancer-s-dress",
+      "term": "dancer's dress",
+      "title": "Dancer's Dress",
+      "description": "Bright-red dress of the Ranah dancers.\nEnhances the power of dancing attacks.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "dancer-s-bracer",
+      "term": "dancer's bracer",
+      "title": "Dancer's Bracer",
+      "description": "Metal bracer of the Ranah dancers.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "dancer-s-trousers",
+      "term": "dancer's trousers",
+      "title": "Dancer's Trousers",
+      "description": "Long, black trousers worn underneath the deep crimson dress of the Ranah dancers.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "dancer-s-dress-altered",
+      "term": "dancer's dress (altered)",
+      "title": "Dancer's Dress (Altered)",
+      "description": "Altered form of the deep crimson dress of the Ranah dancers.\nThese are the black undergarments worn beneath.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "helm-of-night",
+      "term": "helm of night",
+      "title": "Helm of Night",
+      "description": "Bottomless black helm, cool to the touch.\nFlowing lines in the seeming shape of a fingerprint adorn the surface. Imprisons the wearer in utterly lightless dark.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "armor-of-night",
+      "term": "armor of night",
+      "title": "Armor of Night",
+      "description": "Bottomless black chest armor, cool to the touch.\nFlowing lines in the seeming shape of a fingerprint adorn the surface. Imprisons the wearer in utterly lightless dark.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "gauntlets-of-night",
+      "term": "gauntlets of night",
+      "title": "Gauntlets of Night",
+      "description": "Bottomless black gauntlets, cool to the touch.\nFlowing lines in the seeming shape of a fingerprint adorn the surface. Imprisons the wearer in utterly lightless dark.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "greaves-of-night",
+      "term": "greaves of night",
+      "title": "Greaves of Night",
+      "description": "Bottomless greaves, cool to the touch.\nFlowing lines in the seeming shape of a fingerprint adorn the surface. Imprisons the wearer in utterly lightless dark.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-helm",
+      "term": "igon's helm",
+      "title": "Igon's Helm",
+      "description": "Helm of the broken drake warrior Igon, from a set of armor comprised of a miscellany of parts. This tattered protective-wear is shaped like a bugle.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-armor",
+      "term": "igon's armor",
+      "title": "Igon's Armor",
+      "description": "Armor of the broken drake warrior Igon, from a set comprised of a miscellany of parts. Filthy belongings are attached to this tattered piece of protective-wear.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-gauntlets",
+      "term": "igon's gauntlets",
+      "title": "Igon's Gauntlets",
+      "description": "Gauntlets of the broken drake warrior Igon. \nNo more than a mish-mash of tatters and remnants stripped from a corpse found in the aftermath of a battle.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-loincloth",
+      "term": "igon's loincloth",
+      "title": "Igon's Loincloth",
+      "description": "Loincloth of the broken drake warrior Igon. Stripped from a corpse found in the aftermath of a battle, this scrap of cloth smells utterly foul.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-helm-altered",
+      "term": "igon's helm (altered)",
+      "title": "Igon's Helm (Altered)",
+      "description": "Helm of the broken drake warrior Igon, from a set of armor comprised of a miscellany of parts. Patched with scraps of cloth.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-armor-altered",
+      "term": "igon's armor (altered)",
+      "title": "Igon's Armor (Altered)",
+      "description": "Armor of the broken drake warrior Igon, from a set comprised of a miscellany of parts. Patched with scraps of cloth.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "wise-man-s-mask",
+      "term": "wise man's mask",
+      "title": "Wise Man's Mask",
+      "description": "The iron mask of Sir Ansbach, giving the appearance of a quiet, wise, old bearded man.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "ansbach-s-attire",
+      "term": "ansbach's attire",
+      "title": "Ansbach's Attire",
+      "description": "Attire of Sir Ansbach. The embroidered crest of the Pureblood Knights has now all but faded away.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "ansbach-s-manchettes",
+      "term": "ansbach's manchettes",
+      "title": "Ansbach's Manchettes",
+      "description": "Manchettes of Sir Ansbach. Black leather adorned with gold embroidery.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "ansbach-s-boots",
+      "term": "ansbach's boots",
+      "title": "Ansbach's Boots",
+      "description": "Boots of Sir Ansbach. Black leather adorned with gold embroidery.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "ansbach-s-attire-altered",
+      "term": "ansbach's attire (altered)",
+      "title": "Ansbach's Attire (Altered)",
+      "description": "Attire of Sir Ansbach. Black cloth adorned with gold embroidery.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "freyja-s-helm",
+      "term": "freyja's helm",
+      "title": "Freyja's Helm",
+      "description": "Golden helm of Redmane Freyja, member of General Radahn's most distinguished knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "freyja-s-armor",
+      "term": "freyja's armor",
+      "title": "Freyja's Armor",
+      "description": "Golden armor of Redmane Freyja, member of General Radahn's most distinguished knights. Affixed with a black woolen mantle.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "freyja-s-gauntlets",
+      "term": "freyja's gauntlets",
+      "title": "Freyja's Gauntlets",
+      "description": "Golden gauntlets of Redmane Freyja, member of General Radahn's most distinguished knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "freyja-s-greaves",
+      "term": "freyja's greaves",
+      "title": "Freyja's Greaves",
+      "description": "Greaves of Redmane Freyja, member of General Radahn's most distinguished knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "freyja-s-armor-altered",
+      "term": "freyja's armor (altered)",
+      "title": "Freyja's Armor (Altered)",
+      "description": "Golden armor of Redmane Freyja, member of General Radahn's most distinguished knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "helm-of-solitude",
+      "term": "helm of solitude",
+      "title": "Helm of Solitude",
+      "description": "Steel helm of the Knights of the Solitary Gaol.\nPart of a heavy armor set that covers the whole body in overlapping plates of steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "armor-of-solitude",
+      "term": "armor of solitude",
+      "title": "Armor of Solitude",
+      "description": "Steel chest armor of the Knights of the Solitary Gaol.\nPart of a heavy armor set that covers the whole body in overlapping plates of steel, and bedecked with a black cloak.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "gauntlets-of-solitude",
+      "term": "gauntlets of solitude",
+      "title": "Gauntlets of Solitude",
+      "description": "Steel gauntlets of the Knights of the Solitary Gaol.\nPart of a heavy armor set that covers the whole body in overlapping plates of steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "greaves-of-solitude",
+      "term": "greaves of solitude",
+      "title": "Greaves of Solitude",
+      "description": "Steel greaves of the Knights of the Solitary Gaol.\nPart of a heavy armor set that covers the whole body in overlapping plates of steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "armor-of-solitude-altered",
+      "term": "armor of solitude (altered)",
+      "title": "Armor of Solitude (Altered)",
+      "description": "Steel chest armor of the Knights of the Solitary Gaol.\nPart of a heavy armor set that covers the whole body in overlapping plates of steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-helm",
+      "term": "messmer soldier helm",
+      "title": "Messmer Soldier Helm",
+      "description": "Helm worn by soldiers who serve Messmer the Impaler. The iron helm features a visor.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-armor",
+      "term": "messmer soldier armor",
+      "title": "Messmer Soldier Armor",
+      "description": "Armor worn by soldiers who serve Messmer the Impaler. A ragged cloak is draped over rusted mail.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-gauntlets",
+      "term": "messmer soldier gauntlets",
+      "title": "Messmer Soldier Gauntlets",
+      "description": "Gauntlets worn by soldiers who serve Messmer the Impaler, rusted and crusted in filth from fighting in unending war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-greaves",
+      "term": "messmer soldier greaves",
+      "title": "Messmer Soldier Greaves",
+      "description": "Greaves worn by soldiers who serve Messmer the Impaler, rusted and crusted in filth from fighting in unending war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-armor-altered",
+      "term": "messmer soldier armor (altered)",
+      "title": "Messmer Soldier Armor (Altered)",
+      "description": "Armor worn by soldiers who serve Messmer the Impaler. The mail has rusted while fighting in unending war.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "black-knight-helm",
+      "term": "black knight helm",
+      "title": "Black Knight Helm",
+      "description": "Helm worn by the Black Knights, servants of Messmer the Impaler. Black iron ornamented with gold. A rotten odor stubbornly clings to it.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "black-knight-armor",
+      "term": "black knight armor",
+      "title": "Black Knight Armor",
+      "description": "Armor worn by the Black Knights, servants of Messmer the Impaler.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "black-knight-gauntlets",
+      "term": "black knight gauntlets",
+      "title": "Black Knight Gauntlets",
+      "description": "Gauntlets worn by the Black Knights, servants of Messmer the Impaler. Black iron ornamented with gold. A rotten odor stubbornly clings to it.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "black-knight-greaves",
+      "term": "black knight greaves",
+      "title": "Black Knight Greaves",
+      "description": "Greaves worn by the Black Knights, servants of Messmer the Impaler. Black iron ornamented with gold. A rotten odor stubbornly clings to it.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "rakshasa-helm",
+      "term": "rakshasa helm",
+      "title": "Rakshasa Helm",
+      "description": "Helm of Rakshasa, soaked in the spurting blood of her victims. Tatters of ragged cloth jut out haphazardly, as if her lust for carnage threatens to break free.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "rakshasa-armor",
+      "term": "rakshasa armor",
+      "title": "Rakshasa Armor",
+      "description": "Armor of Rakshasa, soaked in the spurting blood of her victims. Tatters of ragged cloth jut out haphazardly, as if her lust for carnage threatens to break free.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "rakshasa-gauntlets",
+      "term": "rakshasa gauntlets",
+      "title": "Rakshasa Gauntlets",
+      "description": "Gauntlets of Rakshasa, soaked in the spurting blood of her victims. Tatters of ragged cloth jut out haphazardly, as if her lust for carnage threatens to break free.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "rakshasa-greaves",
+      "term": "rakshasa greaves",
+      "title": "Rakshasa Greaves",
+      "description": "Greaves of Rakshasa, soaked the spurting blood of her victims. Tatters of ragged cloth jut out haphazardly, as if her lust for carnage threatens to break free.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-helm",
+      "term": "fire knight helm",
+      "title": "Fire Knight Helm",
+      "description": "Pointed helm of the Fire Knights under Messmer the Impaler's personal command.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-armor",
+      "term": "fire knight armor",
+      "title": "Fire Knight Armor",
+      "description": "Armor of the Fire Knights under Messmer the Impaler's personal command.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-gauntlets",
+      "term": "fire knight gauntlets",
+      "title": "Fire Knight Gauntlets",
+      "description": "Gauntlets of the Fire Knights under Messmer the Impaler's personal command.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-greaves",
+      "term": "fire knight greaves",
+      "title": "Fire Knight Greaves",
+      "description": "Greaves of the Fire Knights under Messmer the Impaler's personal command.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-armor-altered",
+      "term": "fire knight armor (altered)",
+      "title": "Fire Knight Armor (Altered)",
+      "description": "Armor of the Fire Knights under Messmer the Impaler's personal command.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "death-mask-helm",
+      "term": "death mask helm",
+      "title": "Death Mask Helm",
+      "description": "Helm of Wego, elder among the Fire Knights. Two warped death masks stacked one atop the other.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "winged-serpent-helm",
+      "term": "winged serpent helm",
+      "title": "Winged Serpent Helm",
+      "description": "Helm of Kood, captain of the Fire Knights. A winged serpent perches atop it.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "salza-s-hood",
+      "term": "salza's hood",
+      "title": "Salza's Hood",
+      "description": "Hood of Salza, sage of the Fire Knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "leather-headband",
+      "term": "leather headband",
+      "title": "Leather Headband",
+      "description": "Headband worn by highland warriors, made of woven leather. The white favor represents their home settlement.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "gloried-attire",
+      "term": "gloried attire",
+      "title": "Gloried Attire",
+      "description": "Traditional garb of highland warriors, made from woven fabric and finished with fur. This garment is made from fabrics with both blue and red patterns.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "leather-arm-wraps",
+      "term": "leather arm wraps",
+      "title": "Leather Arm Wraps",
+      "description": "Arm wraps worn by highland warriors, made of sturdy leather and fastened with winding straps.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "leather-leg-wraps",
+      "term": "leather leg wraps",
+      "title": "Leather Leg Wraps",
+      "description": "Leg wraps worn by highland warriors, made of sturdy leather and fastened with winding straps. The addition of animal pelt keeps the wearer warm.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "leather-crown",
+      "term": "leather crown",
+      "title": "Leather Crown",
+      "description": "Helm worn by highland warriors, pieced together using leather. The white favor represents their home settlement.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "highland-attire",
+      "term": "highland attire",
+      "title": "Highland Attire",
+      "description": "Traditional garb of highland warriors, made from woven fabric and finished with a blue patterned cloth.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "death-knight-helm",
+      "term": "death knight helm",
+      "title": "Death Knight Helm",
+      "description": "Golden helm of the Death Knights, whose own death masks served as the visards of their armor.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "death-knight-armor",
+      "term": "death knight armor",
+      "title": "Death Knight Armor",
+      "description": "Golden armor of the Death Knights, adorned with an antiquated depiction of the Erdtree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "death-knight-gauntlets",
+      "term": "death knight gauntlets",
+      "title": "Death Knight Gauntlets",
+      "description": "Golden gauntlets of the Death Knights, adorned with an antiquated depiction of the Erdtree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "death-knight-greaves",
+      "term": "death knight greaves",
+      "title": "Death Knight Greaves",
+      "description": "Golden greaves of the Death Knights, adorned with an antiquated depiction of the Erdtree.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "curseblade-mask",
+      "term": "curseblade mask",
+      "title": "Curseblade Mask",
+      "description": "A mask affixed with a crown of tangled horns, worn by those who would invoke divinity.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "ascetic-s-loincloth",
+      "term": "ascetic's loincloth",
+      "title": "Ascetic's Loincloth",
+      "description": "Attire of the tower's ascetics, embodying their commitment to an austere existence of strict self-control.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "ascetic-s-wrist-guards",
+      "term": "ascetic's wrist guards",
+      "title": "Ascetic's Wrist Guards",
+      "description": "Wrist guards of the tower's ascetics which embody their commitment to an austere existence of strict self-control.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "ascetic-s-ankle-guards",
+      "term": "ascetic's ankle guards",
+      "title": "Ascetic's Ankle Guards",
+      "description": "Ankle guards of the tower's ascetics which embody their commitment to an austere existence of strict self-control.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-helm",
+      "term": "messmer's helm",
+      "title": "Messmer's Helm",
+      "description": "Black helm of Messmer the Impaler, crowned with two intertwined winged serpents.\nSlightly enhances incantations of Messmer's flame as well as Fire Knight skills.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-armor",
+      "term": "messmer's armor",
+      "title": "Messmer's Armor",
+      "description": "Black armor of Messmer the Impaler.\nDraped with a red cloak bearing his crest embroidered.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-gauntlets",
+      "term": "messmer's gauntlets",
+      "title": "Messmer's Gauntlets",
+      "description": "Black gauntlets of Messmer the Impaler.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-greaves",
+      "term": "messmer's greaves",
+      "title": "Messmer's Greaves",
+      "description": "Black greaves of Messmer the Impaler.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-helm-altered",
+      "term": "messmer's helm (altered)",
+      "title": "Messmer's Helm (Altered)",
+      "description": "Black helm of Messmer the Impaler, crowned with two intertwined winged serpents. Slightly enhances incantations of Messmer's fire as well as Fire Knight skills.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "gravebird-helm",
+      "term": "gravebird helm",
+      "title": "Gravebird Helm",
+      "description": "Stone helm with a tinge of green. One of a set of armor pieces cast in the image of the Gravebird.\nEmpowers spells which summon rings of spectral light.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "gravebird-s-blackquill-armor",
+      "term": "gravebird's blackquill armor",
+      "title": "Gravebird's Blackquill Armor",
+      "description": "Stone armor with a tinge of green. One of a set of armor pieces cast in the image of the Gravebird.\nFeaturing a cape of black Deathbird feathers, it enhances jumping attacks.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "gravebird-bracelets",
+      "term": "gravebird bracelets",
+      "title": "Gravebird Bracelets",
+      "description": "Stone bracelets with a tinge of green. One of a set of armor pieces cast in the image of the Gravebird.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "gravebird-anklets",
+      "term": "gravebird anklets",
+      "title": "Gravebird Anklets",
+      "description": "Stone anklets with a tinge of green. One of a set of armor pieces cast in the image of the Gravebird.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "gravebird-armor",
+      "term": "gravebird armor",
+      "title": "Gravebird Armor",
+      "description": "Stone armor with a tinge of green. One of a set of armor pieces cast in the image of the Gravebird.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "common-soldier-helm",
+      "term": "common soldier helm",
+      "title": "Common Soldier Helm",
+      "description": "Helm of the rank-and-file soldiers of Messmer's army.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "common-soldier-cloth-armor",
+      "term": "common soldier cloth armor",
+      "title": "Common Soldier Cloth Armor",
+      "description": "Cloth armor of the rank-and-file soldiers of Messmer's army.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "common-soldier-gauntlets",
+      "term": "common soldier gauntlets",
+      "title": "Common Soldier Gauntlets",
+      "description": "Gauntlets of the rank-and-file soldiers of Messmer's army.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "common-soldier-greaves",
+      "term": "common soldier greaves",
+      "title": "Common Soldier Greaves",
+      "description": "Greaves of the rank-and-file soldiers of Messmer's army.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-helm",
+      "term": "horned warrior helm",
+      "title": "Horned Warrior Helm",
+      "description": "Helm featuring a crown of sturdy tangled horns, allowing the wearer to invoke divinity. Attire of the horned warriors, keepers of the tower.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-armor",
+      "term": "horned warrior armor",
+      "title": "Horned Warrior Armor",
+      "description": "Armor of the horned warriors, keepers of the tower.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-gauntlets",
+      "term": "horned warrior gauntlets",
+      "title": "Horned Warrior Gauntlets",
+      "description": "Gauntlets of the horned warriors, keepers of the tower, made from a thick metal.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-greaves",
+      "term": "horned warrior greaves",
+      "title": "Horned Warrior Greaves",
+      "description": "Greaves of the horned warriors, keepers of the tower. Shaped to resemble the unclothed form of a hero from older times.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-beast-helm",
+      "term": "divine beast helm",
+      "title": "Divine Beast Helm",
+      "description": "A helm of tangled horn attached to a divine beast mask, allowing the wearer to invoke divinity. Worn by divine beast warriors; the chosen of the horned warriors.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-beast-warrior-armor",
+      "term": "divine beast warrior armor",
+      "title": "Divine Beast Warrior Armor",
+      "description": "Armor of feted horned warriors chosen to become divine beast warriors, adorned with a lion's pelt.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-bird-helm",
+      "term": "divine bird helm",
+      "title": "Divine Bird Helm",
+      "description": "A helm of tangled horn attached to a divine bird mask, allowing the wearer to invoke divinity. Worn by divine bird warriors; the very first of all horned warriors.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-bird-warrior-armor",
+      "term": "divine bird warrior armor",
+      "title": "Divine Bird Warrior Armor",
+      "description": "Armor of divine bird warriors, the very first of all horned warriors, made from a golden metal.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-bird-warrior-gauntlets",
+      "term": "divine bird warrior gauntlets",
+      "title": "Divine Bird Warrior Gauntlets",
+      "description": "Gauntlets of divine bird warriors, the very first of all horned warriors, made from a golden metal.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-bird-warrior-greaves",
+      "term": "divine bird warrior greaves",
+      "title": "Divine Bird Warrior Greaves",
+      "description": "Greaves of divine bird warriors, the very first of all horned warriors, made from a golden metal.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-helm",
+      "term": "rellana's helm",
+      "title": "Rellana's Helm",
+      "description": "Ornate helm of Rellana, the Twin Moon Knight, fashioned from silver steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-armor",
+      "term": "rellana's armor",
+      "title": "Rellana's Armor",
+      "description": "Ornate armor of Rellana, the Twin Moon Knight, fashioned from silver steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-gloves",
+      "term": "rellana's gloves",
+      "title": "Rellana's Gloves",
+      "description": "Gloves of Rellana, the Twin Moon Knight, fashioned from quality leather.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-greaves",
+      "term": "rellana's greaves",
+      "title": "Rellana's Greaves",
+      "description": "Ornate greaves of Rellana, the Twin Moon Knight, fashioned from silver steel.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "young-lion-s-helm",
+      "term": "young lion's helm",
+      "title": "Young Lion's Helm",
+      "description": "The golden helm worn by Radahn in his younger years. Proudly displaying his heroic red hair, it is fitting attire for a lion.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "young-lion-s-armor",
+      "term": "young lion's armor",
+      "title": "Young Lion's Armor",
+      "description": "The golden armor worn by Radahn in his younger years. Proudly adorned with heroic red accents, it is fitting attire for a lion.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "young-lion-s-gauntlets",
+      "term": "young lion's gauntlets",
+      "title": "Young Lion's Gauntlets",
+      "description": "The golden gauntlets worn by Radahn in his younger years.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "young-lion-s-greaves",
+      "term": "young lion's greaves",
+      "title": "Young Lion's Greaves",
+      "description": "The golden greaves worn by Radahn in his younger years. Worn by a fierce lion.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "young-lion-s-armor-altered",
+      "term": "young lion's armor (altered)",
+      "title": "Young Lion's Armor (Altered)",
+      "description": "The golden armor worn by Radahn in his younger years. Worn by a fierce lion.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "circlet-of-light",
+      "term": "circlet of light",
+      "title": "Circlet of Light",
+      "description": "The circlet of light which adorned Miquella's head as he returned in divine aspect. It has begun to fade into nothingness.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-militiaman-helm",
+      "term": "shadow militiaman helm",
+      "title": "Shadow Militiaman Helm",
+      "description": "Helm as dark as shadow, worn by vulgar militiamen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-militiaman-armor",
+      "term": "shadow militiaman armor",
+      "title": "Shadow Militiaman Armor",
+      "description": "Armor as dark as shadow, worn by vulgar militiamen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-militiaman-gauntlets",
+      "term": "shadow militiaman gauntlets",
+      "title": "Shadow Militiaman Gauntlets",
+      "description": "Gauntlets as dark as shadow, worn by vulgar militiamen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Arms",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-militiaman-greaves",
+      "term": "shadow militiaman greaves",
+      "title": "Shadow Militiaman Greaves",
+      "description": "Greaves as dark as shadow, worn by vulgar militiamen.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Legs",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-beast-head",
+      "term": "divine beast head",
+      "title": "Divine Beast Head",
+      "description": "Ritual headwear in the form of a divine beast's head, used to perform the lion dance. Worn by the very finest of the sculpted keepers. Alas, it no longer responds to the old woman's earnest prayer.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "st-trina-s-blossom",
+      "term": "st. trina's blossom",
+      "title": "St. Trina's Blossom",
+      "description": "St. Trina's life withered and fell, as fleeting as the seasons. At her last, she left a single water lily.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "crucible-hammer-helm",
+      "term": "crucible hammer-helm",
+      "title": "Crucible Hammer-Helm",
+      "description": "Helm worn by Devonia, longest-serving of the Crucible Knights.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Head",
+      "source": "dlc"
+    },
+    {
+      "id": "greatjar",
+      "term": "greatjar",
+      "title": "Greatjar",
+      "description": "A greatjar which fits comfortably over the head when upturned. Attire of the shamans who perform their worship at gaols.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    },
+    {
+      "id": "imp-head-lion",
+      "term": "imp head (lion)",
+      "title": "Imp Head (Lion)",
+      "description": "Head covering made from the largely unaltered head of an impish golem.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Armor",
+      "subcategory": "Chest",
+      "source": "dlc"
+    }
+  ]
+}

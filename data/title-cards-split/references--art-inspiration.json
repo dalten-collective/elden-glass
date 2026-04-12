@@ -1,0 +1,25 @@
+{
+  "section": "References",
+  "category": "Art & Inspiration",
+  "cards": [
+    {
+      "id": "ba0b89f7d712e1d1",
+      "term": "a new game of rings",
+      "scope": "global",
+      "title": "A New Game Of Rings",
+      "description": "Charles Vernier, December 9, 1848. Colored lithograph published in Le Charivari.",
+      "section": "References",
+      "category": "Art & Inspiration",
+      "subcategory": "General",
+      "image": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b53017331r/f1/full/full/0/native.jpg",
+      "links": [
+        {
+          "label": "View on Gallica (BnF)",
+          "url": "https://gallica.bnf.fr/ark:/12148/btv1b53017331r.item"
+        }
+      ],
+      "createdAt": "2025-11-29T15:04:19.386Z",
+      "updatedAt": "2025-11-29T15:04:19.386Z"
+    }
+  ]
+}

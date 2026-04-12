@@ -1,0 +1,533 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Font stacks with system fallbacks (no network required) */
+  --font-crimson: 'Crimson Pro', 'Crimson Text', Georgia, 'Times New Roman', serif;
+  --font-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --bg-elevated: #242424;
+  --text-primary: #e8e6e3;
+  --text-secondary: #a8a5a0;
+  --text-tertiary: #6b6860;
+  --accent-gold: #c9a961;
+  --accent-blue: #6193c9;
+  --accent-purple: #8b61c9;
+  --accent-muted: #8a7c5c;
+  --border-subtle: #2a2a2a;
+  --border-emphasis: #3a3a3a;
+  --success-green: #5c8a5a;
+  --accent-red: #8B4513;
+  --bg-primary-rgb: 13 13 13;
+  --bg-secondary-rgb: 26 26 26;
+  --accent-gold-rgb: 201 169 97;
+  --accent-blue-rgb: 97 147 201;
+  --accent-purple-rgb: 139 97 201;
+  --success-green-rgb: 92 138 90;
+}
+
+html {
+  height: 100%;
+}
+
+/* Safe area support for sidebars and fixed elements */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html,
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Firefox — thin rail, subtle grey thumb that turns gold on interaction. */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-emphasis) transparent;
+}
+
+html:hover,
+body:hover {
+  scrollbar-color: var(--accent-gold) transparent;
+}
+
+/* WebKit (Chrome, Safari, Edge) — mirror the sidebar's scrollbar-thin style. */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: var(--border-emphasis);
+  border-radius: 3px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+.prose {
+  @apply text-[1.05rem] leading-relaxed font-serif text-[var(--text-secondary)];
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-serif text-[var(--text-primary)] tracking-tight;
+  position: relative;
+}
+
+/* Anchor links appended to every heading by rehype-autolink-headings. Hidden
+ * by default, revealed when the user hovers the heading. Click target is the
+ * '#' glyph. */
+.prose .heading-anchor {
+  @apply text-[var(--text-tertiary)] no-underline;
+  margin-left: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+  font-weight: 400;
+}
+
+.prose h1:hover .heading-anchor,
+.prose h2:hover .heading-anchor,
+.prose h3:hover .heading-anchor,
+.prose h4:hover .heading-anchor,
+.prose .heading-anchor:hover,
+.prose .heading-anchor:focus {
+  opacity: 1;
+}
+
+.prose .heading-anchor:hover,
+.prose .heading-anchor:focus {
+  @apply text-[var(--accent-gold)];
+}
+
+.prose h2 {
+  @apply border-l-4 pl-4 border-[var(--accent-gold)] mt-12 mb-6;
+}
+
+.prose h3 {
+  @apply text-[var(--text-secondary)] mt-8 mb-4;
+}
+
+.prose a {
+  @apply text-[var(--accent-gold)] underline underline-offset-4;
+}
+
+.prose strong {
+  @apply text-[var(--text-primary)];
+}
+
+.prose blockquote {
+  @apply border-l-4 border-[var(--accent-muted)] px-6 py-3 italic rounded-r bg-[rgb(var(--bg-secondary-rgb)/0.8)];
+}
+
+.prose img {
+  @apply rounded-md shadow-xl;
+}
+
+.prose pre {
+  @apply bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] text-sm rounded-lg p-4 overflow-x-auto;
+}
+
+.prose code {
+  @apply text-[var(--accent-gold)];
+}
+
+.scrollbar-thin {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-emphasis) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--border-emphasis);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+.scrollbar-thin:hover {
+  scrollbar-color: var(--accent-gold) transparent;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-xl shadow-panel;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-2 rounded-md px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors;
+  }
+
+  .sidebar-link-active {
+    @apply sidebar-link bg-[var(--bg-elevated)] text-[var(--text-primary)] border-l-4 border-[var(--accent-gold)];
+  }
+
+  /* Elden Ring Item Card Styles */
+  .elden-card {
+    @apply relative overflow-hidden rounded-sm;
+    background: linear-gradient(135deg, #1a1410 0%, #1f1a15 50%, #1a1410 100%);
+    border: 1px solid rgba(201, 169, 97, 0.15);
+    box-shadow:
+      0 0 30px rgba(0, 0, 0, 0.9),
+      inset 0 1px 1px rgba(201, 169, 97, 0.1),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .elden-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(201, 169, 97, 0.3) 20%,
+      rgba(201, 169, 97, 0.5) 50%,
+      rgba(201, 169, 97, 0.3) 80%,
+      transparent 100%
+    );
+  }
+
+  .elden-card-header {
+    @apply px-5 pt-4 pb-2;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.1);
+  }
+
+  .elden-card-title-section {
+    @apply flex items-start gap-4 px-5 pt-4 pb-3;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.15);
+    background: linear-gradient(180deg,
+      rgba(201, 169, 97, 0.03) 0%,
+      transparent 100%
+    );
+  }
+
+  .elden-card-icon-wrapper {
+    @apply flex-shrink-0;
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    border: 1px solid rgba(201, 169, 97, 0.2);
+    border-radius: 4px;
+    padding: 6px;
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.6),
+      0 0 12px rgba(201, 169, 97, 0.1);
+  }
+
+  .elden-card-icon-inner {
+    @apply relative w-full h-full;
+    background: radial-gradient(circle at 30% 30%,
+      rgba(201, 169, 97, 0.08) 0%,
+      transparent 60%
+    );
+    border-radius: 2px;
+  }
+
+  .elden-card-title {
+    @apply text-xl font-serif tracking-wide leading-tight;
+    color: #f4e4c1;
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.8),
+      0 0 8px rgba(201, 169, 97, 0.3);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  .elden-card-description {
+    @apply px-5 py-4;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.08);
+  }
+
+  .elden-card-stats {
+    @apply px-5 py-3;
+    background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+  }
+
+  .elden-card-footer {
+    @apply h-1;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(201, 169, 97, 0.2) 10%,
+      rgba(201, 169, 97, 0.4) 50%,
+      rgba(201, 169, 97, 0.2) 90%,
+      transparent 100%
+    );
+    box-shadow: 0 0 8px rgba(201, 169, 97, 0.3);
+  }
+}
+
+.float-image::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Loading states and animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-fade-in-slow {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--bg-secondary) 25%,
+    rgba(201, 169, 97, 0.1) 50%,
+    var(--bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .prose {
+    @apply text-base;
+  }
+
+  .glass-card {
+    @apply rounded-lg;
+  }
+
+  /* Improve mobile navigation */
+  .sidebar-link {
+    @apply py-3;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 95%;
+  }
+
+  /* Stack cards on mobile */
+  .grid {
+    @apply gap-4;
+  }
+
+  /* Reduce padding on mobile */
+  .glass-card {
+    @apply p-4;
+  }
+
+  /* Improve touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus styles for better keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply bg-[var(--bg-secondary)] rounded animate-pulse;
+}
+
+.skeleton-text {
+  @apply h-4 bg-[var(--bg-secondary)] rounded w-full animate-pulse;
+}
+
+.skeleton-card {
+  @apply h-32 bg-[var(--bg-secondary)] rounded-xl animate-pulse;
+}
+
+/* Print styles */
+@media print {
+  /* Reset colors for printing */
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-tertiary: #666666;
+    --accent-gold: #8B7355;
+    --border-subtle: #cccccc;
+    --border-emphasis: #999999;
+  }
+
+  /* Hide non-essential elements */
+  nav,
+  .sidebar,
+  .mobile-sidebar,
+  .admin-toolbar,
+  .share-buttons,
+  button:not(.print-visible),
+  .no-print,
+  footer {
+    display: none !important;
+  }
+
+  /* Ensure content is full width */
+  main,
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+
+  /* Remove backgrounds and shadows */
+  .glass-card,
+  .elden-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+
+  /* Ensure text is readable */
+  body {
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  /* Handle page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  p, blockquote, ul, ol {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Show URLs for links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Don't show URL for internal links */
+  a[href^="/"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Card grid becomes single column */
+  .grid {
+    display: block !important;
+  }
+
+  .grid > * {
+    margin-bottom: 1rem;
+    page-break-inside: avoid;
+  }
+
+  /* Title card specific */
+  .title-card {
+    page-break-inside: avoid;
+    border: 1px solid #999;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

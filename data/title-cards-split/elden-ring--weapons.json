@@ -1,0 +1,4636 @@
+{
+  "section": "Elden Ring",
+  "category": "Weapons",
+  "cards": [
+    {
+      "id": "unarmed",
+      "term": "unarmed",
+      "title": "Unarmed",
+      "description": "No armament equipped.\nBare fists will be used to attack.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Fists",
+      "source": "base"
+    },
+    {
+      "id": "dagger",
+      "term": "dagger",
+      "title": "Dagger",
+      "description": "A standard dagger with a straight blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "black-knife",
+      "term": "black knife",
+      "title": "Black Knife",
+      "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "parrying-dagger",
+      "term": "parrying dagger",
+      "title": "Parrying Dagger",
+      "description": "A knife with curved handguards.\nDesigned to parry, turning foes' attacks against them.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "mis-ricorde",
+      "term": "miséricorde",
+      "title": "Miséricorde",
+      "description": "Dagger favored by military physicians in white.\nThe pointed blade is hard and sharp, making critical hits especially potent.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "reduvia",
+      "term": "reduvia",
+      "title": "Reduvia",
+      "description": "Jagged dagger with a distinctive curved blade.\nUsed by the noble servants of the Lord of Blood.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "crystal-knife",
+      "term": "crystal knife",
+      "title": "Crystal Knife",
+      "description": "A knife made by sharpening hard crystal.\nSignature weapon of glintstone miners.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "celebrant-s-sickle",
+      "term": "celebrant's sickle",
+      "title": "Celebrant's Sickle",
+      "description": "Sickle decorated with flowers and many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula. Its attacks can slip through an enemy's guard.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-kris",
+      "term": "glintstone kris",
+      "title": "Glintstone Kris",
+      "description": "Ritual blade once presented to Leyndell by the Academy of Raya Lucaria to celebrate their newfound peace. Though the weapon is embedded with precious glintstones and features Erdtree ornamentation, the undulating blade is symbolic of an ancient ritual.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "scorpion-s-stinger",
+      "term": "scorpion's stinger",
+      "title": "Scorpion's Stinger",
+      "description": "Dagger fashioned from a great scorpion's tail, glistening with scarlet rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "great-knife",
+      "term": "great knife",
+      "title": "Great Knife",
+      "description": "Large knife with a broad, curved blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "wakizashi",
+      "term": "wakizashi",
+      "title": "Wakizashi",
+      "description": "Short sword with a tempering pattern on the blade.\nA weapon unique to warriors of the Land of Reeds.\nAfflicts targets with blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "cinquedea",
+      "term": "cinquedea",
+      "title": "Cinquedea",
+      "description": "Short sword given to high ranking clergymen of Farum Azula.\nRaises potency of bestial incantations.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "ivory-sickle",
+      "term": "ivory sickle",
+      "title": "Ivory Sickle",
+      "description": "Sickle fashioned from ivory.\nWeapon carried by aged Albinaurics.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bloodstained-dagger",
+      "term": "bloodstained dagger",
+      "title": "Bloodstained Dagger",
+      "description": "Dagger with a bloodstained blade.\nAfflicts targets with blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "erdsteel-dagger",
+      "term": "erdsteel dagger",
+      "title": "Erdsteel Dagger",
+      "description": "An erdsteel dagger with a grass crest engraved upon its blade. Carried by the Erdtree royalty for self-defense in times of peace.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "blade-of-calling",
+      "term": "blade of calling",
+      "title": "Blade of Calling",
+      "description": "Dagger given to one who set out on a journey to fulfill her duty long ago. The power of its former owner, the kindling maiden, is still apparent.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "longsword",
+      "term": "longsword",
+      "title": "Longsword",
+      "description": "A straight sword with a double-edged blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "short-sword",
+      "term": "short sword",
+      "title": "Short Sword",
+      "description": "A short straight sword with a short blade.\nIn addition to its reliable standard damage, this weapon also boasts powerful piercing attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "broadsword",
+      "term": "broadsword",
+      "title": "Broadsword",
+      "description": "A straight sword with a wide blade, suited to slashing attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "royal-soldier-straight-sword",
+      "term": "royal soldier straight sword",
+      "title": "Royal Soldier Straight Sword",
+      "description": "A straight sword with a wide blade.\nEffective for slashing attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "lordsworn-s-straight-sword",
+      "term": "lordsworn's straight sword",
+      "title": "Lordsworn's Straight Sword",
+      "description": "Well-crafted straight sword with an illustrious\ndesign, wielded by regulars of a lord's army.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "weathered-straight-sword",
+      "term": "weathered straight sword",
+      "title": "Weathered Straight Sword",
+      "description": "Straight sword with a rather short but wide blade.\nSimple to wield, it was known as the sword of the people.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "ornamental-straight-sword",
+      "term": "ornamental straight sword",
+      "title": "Ornamental Straight Sword",
+      "description": "Slender straight sword patterned after an antique ornament.\nSuperior swordsmen prefer to wield one in each hand.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "golden-epitaph",
+      "term": "golden epitaph",
+      "title": "Golden Epitaph",
+      "description": "A sword made to commemorate the death of Godwyn the Golden, first of the demigods to die.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "nox-flowing-sword",
+      "term": "nox flowing sword",
+      "title": "Nox Flowing Sword",
+      "description": "A grim weapon wielded by swordsmen of the Eternal City, this shotel has a blade as fine as a needle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "inseparable-sword",
+      "term": "inseparable sword",
+      "title": "Inseparable Sword",
+      "description": "Sword forged by compounding silver and gold.\nA sacred weapon to hunt Those Who Live in Death.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "heavy-inseparable-sword",
+      "term": "heavy inseparable sword",
+      "title": "Heavy Inseparable Sword",
+      "description": "Sharp sword used by D, Knight of the Golden Order.\nThe blade was forged with a mix of silver and brass.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "coded-sword",
+      "term": "coded sword",
+      "title": "Coded Sword",
+      "description": "Hidden sword once granted to the Tarnished of the Roundtable by the Two Fingers. A formless cipher comprises its blade, which deals holy damage no shield can repel. Champions would gather at the Roundtable Hold in days long past, when the Two Fingers were masters of oration, their flesh yet full of vigor.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "sword-of-night-and-flame",
+      "term": "sword of night and flame",
+      "title": "Sword of Night and Flame",
+      "description": "Storied sword and treasure of Caria Manor.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "crystal-sword",
+      "term": "crystal sword",
+      "title": "Crystal Sword",
+      "description": "Sword fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "carian-knight-s-sword",
+      "term": "carian knight's sword",
+      "title": "Carian Knight's Sword",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Straight Swords",
+      "source": "base"
+    },
+    {
+      "id": "sword-of-st-trina",
+      "term": "sword of st. trina",
+      "title": "Sword of St. Trina",
+      "description": "Silver sword carried by clerics of St. Trina.\nInflicts sleep ailment upon foes.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "miquellan-knight-s-sword",
+      "term": "miquellan knight's sword",
+      "title": "Miquellan Knight's Sword",
+      "description": "Sword forged by servants of Miquella of the Haligtree, with a design modeled after those carried by Carian knights. Instead of glintstone however, amber from the Haligtree is embedded in the blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "cane-sword",
+      "term": "cane sword",
+      "title": "Cane Sword",
+      "description": "Beloved sword of an aged knight whose last quest was long behind him, repurposed into a walking stick. The tip is rather worn.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "regalia-of-eochaid",
+      "term": "regalia of eochaid",
+      "title": "Regalia of Eochaid",
+      "description": "Treasured sword of Eochaid, a lesser, long-vanished domain.\nThe copper coloration is not to be confused for rust, but is a conduit for its wielder to move it by their will alone.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "noble-s-slender-sword",
+      "term": "noble's slender sword",
+      "title": "Noble's Slender Sword",
+      "description": "Narrow blade carried by wandering nobles.\nMade to be easy to wield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "warhawk-s-talon",
+      "term": "warhawk's talon",
+      "title": "Warhawk's Talon",
+      "description": "Talon-swords are affixed to the legs of Stormveil's warhawks, but this one has been repurposed for human use.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "lazuli-glintstone-sword",
+      "term": "lazuli glintstone sword",
+      "title": "Lazuli Glintstone Sword",
+      "description": "A sword with a glintstone in its handguards. Wielded by scholars of the Lazuli Conspectus who seek to master Carian sorcery.\nDeals magic damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rotten-crystal-sword",
+      "term": "rotten crystal sword",
+      "title": "Rotten Crystal Sword",
+      "description": "Sword fashioned from pure crystal; a deed impossible for a human.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bastard-sword",
+      "term": "bastard sword",
+      "title": "Bastard Sword",
+      "description": "A large sword with a straight blade. This heavy sword is usually wielded with two hands, but for those with enough strength, one is sufficient.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "forked-greatsword",
+      "term": "forked greatsword",
+      "title": "Forked Greatsword",
+      "description": "Oddly shaped greatsword wielded by imps.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "iron-greatsword",
+      "term": "iron greatsword",
+      "title": "Iron Greatsword",
+      "description": "Greatsword with a blade of unusually thick steel.\nA coarse weapon to which polishing is a foreign concept.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "lordsworn-s-greatsword",
+      "term": "lordsworn's greatsword",
+      "title": "Lordsworn's Greatsword",
+      "description": "Well-crafted straight sword with an illustrious\ndesign, wielded by regulars of a lord's army.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "knight-s-greatsword",
+      "term": "knight's greatsword",
+      "title": "Knight's Greatsword",
+      "description": "Greatsword bestowed upon skilled swordsmen in the demigods' service, and yet had no rank or title.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "flamberge",
+      "term": "flamberge",
+      "title": "Flamberge",
+      "description": "Greatsword featuring a flame-like undulation.\nShreds enemy flesh, inducing blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "ordovis-s-greatsword",
+      "term": "ordovis's greatsword",
+      "title": "Ordovis's Greatsword",
+      "description": "Greatsword of Ordovis, one of the two honored as foremost among the Crucible Knights.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "alabaster-lord-s-sword",
+      "term": "alabaster lord's sword",
+      "title": "Alabaster Lord's Sword",
+      "description": "Greatsword forged from a blue-white meteoric ore.\nThe blade conceals gravity-manipulating magic.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-s-greatsword",
+      "term": "banished knight's greatsword",
+      "title": "Banished Knight's Greatsword",
+      "description": "A finely-crafted greatsword intricately engraved with an ancient motif.\nGiven to knights who, whether by misfortune or misdeed, were forced to abandon their homes.\nMost of these knights were sent to the fringes, where they were forced to start anew with only despair for company.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "dark-moon-greatsword",
+      "term": "dark moon greatsword",
+      "title": "Dark Moon Greatsword",
+      "description": "A Moon Greatsword, bestowed by a Carian queen upon her spouse to honor long-standing tradition.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "sacred-relic-sword",
+      "term": "sacred relic sword",
+      "title": "Sacred Relic Sword",
+      "description": "Sword wrought from the remains of a god who should have lived a life eternal.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "helphen-s-steeple",
+      "term": "helphen's steeple",
+      "title": "Helphen's Steeple",
+      "description": "Greatsword patterned after the black steeple of the Helphen, the lampwood which guides the dead of the spirit world.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "blasphemous-blade",
+      "term": "blasphemous blade",
+      "title": "Blasphemous Blade",
+      "description": "Sacred sword of Rykard, Lord of Blasphemy.\nRemains of the countless heroes he has devoured writhe upon the surface of this blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "marais-executioner-s-sword",
+      "term": "marais executioner's sword",
+      "title": "Marais Executioner's Sword",
+      "description": "Storied sword of House Marais, the family of executioners who presided over the Shaded Castle.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "sword-of-milos",
+      "term": "sword of milos",
+      "title": "Sword of Milos",
+      "description": "Sinister greatsword fashioned from a giant's backbone. The spines along each side of the blade have been tapered to a fine point and mete out wounds like a lopsided saw-blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "heavy-sword-of-milos",
+      "term": "heavy sword of milos",
+      "title": "Heavy Sword of Milos",
+      "description": "Greatsword fashioned from the strong spine of\na dragon. The fine, serrated blade lacerates\nits prey, causing severe hemorrhaging.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "golden-order-greatsword",
+      "term": "golden order greatsword",
+      "title": "Golden Order Greatsword",
+      "description": "Greatsword made of light, modeled after the Elden Ring itself. Forged by King Consort Radagon to proudly\nsymbolize the tenets of the Golden Order.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "claymore",
+      "term": "claymore",
+      "title": "Claymore",
+      "description": "A large sword with a long, straight blade. This heavy sword is usually wielded with two hands, but for those with enough strength, one is sufficient.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-greatsword",
+      "term": "gargoyle's greatsword",
+      "title": "Gargoyle's Greatsword",
+      "description": "Bronze greatsword wielded by Valiant Gargoyle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "death-s-poker",
+      "term": "death's poker",
+      "title": "Death's Poker",
+      "description": "Barbed rod carried by Deathbirds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-blackblade",
+      "term": "gargoyle's blackblade",
+      "title": "Gargoyle's Blackblade",
+      "description": "Bronze greatsword wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "heavy-gargoyle-s-blackblade",
+      "term": "heavy gargoyle's blackblade",
+      "title": "Heavy Gargoyle's Blackblade",
+      "description": "Greatsword wielded by the gargoyles\nserving under Maliketh.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "greatsword",
+      "term": "greatsword",
+      "title": "Greatsword",
+      "description": "A coarse iron lump of an ultra greatsword.\nMows down foes by utilizing its incredible weight.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "watchdog-s-greatsword",
+      "term": "watchdog's greatsword",
+      "title": "Watchdog's Greatsword",
+      "description": "Stone greatsword wielded by Erdtree Burial Watchdogs.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "maliketh-s-black-blade",
+      "term": "maliketh's black blade",
+      "title": "Maliketh's Black Blade",
+      "description": "Maliketh's black blade which once harbored the power of the Rune of Death. A sad shadow of its former glory.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "troll-s-golden-sword",
+      "term": "troll's golden sword",
+      "title": "Troll's Golden Sword",
+      "description": "Sword given to the giants who fought for the Erdtree during the War against the Giants long ago.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "zweihander",
+      "term": "zweihander",
+      "title": "Zweihander",
+      "description": "Just about the largest sword a mere man is capable of swinging.\nTrue to its name, it is designed to be wielded in both hands, but those of merely ordinary strength will still struggle to do so.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "starscourge-greatsword",
+      "term": "starscourge greatsword",
+      "title": "Starscourge Greatsword",
+      "description": "Curved greatswords of black steel wielded by General Radahn.\nA pair of weapons decorated with a lion mane motif.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "royal-greatsword",
+      "term": "royal greatsword",
+      "title": "Royal Greatsword",
+      "description": "Greatsword decorated in royal Carian style.\nFavored weapon of Blaidd the Half-Wolf.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "godslayer-s-greatsword",
+      "term": "godslayer's greatsword",
+      "title": "Godslayer's Greatsword",
+      "description": "Sacred sword of the Dusk-Eyed Queen who controlled the Godskin Apostles before her defeat at the hands of Maliketh.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "ruins-greatsword",
+      "term": "ruins greatsword",
+      "title": "Ruins Greatsword",
+      "description": "Originally rubble from a ruin which fell from the sky, this surviving fragment was honed into a weapon.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "grafted-blade-greatsword",
+      "term": "grafted blade greatsword",
+      "title": "Grafted Blade Greatsword",
+      "description": "The storied sword of Castle Morne. A revenger's weapon, it is burdened with oceans of anger and regret.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "troll-knight-s-sword",
+      "term": "troll knight's sword",
+      "title": "Troll Knight's Sword",
+      "description": "Greatsword embedded with a blue glintstone.\nWeapon of the trolls in service to the royal family of Caria. Called into service when the Queen invoked an oath they swore, the trolls are treated as true knights of Caria, and fight arm in arm with their human comrades.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "estoc",
+      "term": "estoc",
+      "title": "Estoc",
+      "description": "Large piercing sword with a long, hard bladed edge which is also capable of slashing attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-knight-s-sword",
+      "term": "cleanrot knight's sword",
+      "title": "Cleanrot Knight's Sword",
+      "description": "Piercing sword of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rapier",
+      "term": "rapier",
+      "title": "Rapier",
+      "description": "A piercing sword with a sharp, slender blade.\nIn addition to this weapon's thrusting attack prowess, it also boasts the ability to be used while guarding with a shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "rogier-s-rapier",
+      "term": "rogier's rapier",
+      "title": "Rogier's Rapier",
+      "description": "Piercing sword of superior quality, featuring intricate ornamentation.\nSignature weapon of the sorcerer Rogier.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "antspur-rapier",
+      "term": "antspur rapier",
+      "title": "Antspur Rapier",
+      "description": "Spur of a giant ant which has been fashioned into a rapier. The blade drips with scarlet rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "frozen-needle",
+      "term": "frozen needle",
+      "title": "Frozen Needle",
+      "description": "A razor-thin piercing blade of ice.\nForged by Iji, the Carian Royal Blacksmith.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "noble-s-estoc",
+      "term": "noble's estoc",
+      "title": "Noble's Estoc",
+      "description": "Estoc carried by wandering nobles.\nMade to be easy to wield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bloody-helice",
+      "term": "bloody helice",
+      "title": "Bloody Helice",
+      "description": "Ominous piercing sword with a winding blade.\nCarried by the noble servants of the Lord of Blood.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "godskin-stitcher",
+      "term": "godskin stitcher",
+      "title": "Godskin Stitcher",
+      "description": "Elegant piercing sword with a celadon colored blade wielded by Godskin Nobles.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "great-p-e",
+      "term": "great épée",
+      "title": "Great Épée",
+      "description": "Large rapier featuring a thin, sharp blade.\nCommonly used in life or death duels.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "dragon-king-s-cragblade",
+      "term": "dragon king's cragblade",
+      "title": "Dragon King's Cragblade",
+      "description": "Piercing Gravel Stone sword containing primeval lightning.\nA portion of the Dragonlord's power, gained from a remembrance.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "falchion",
+      "term": "falchion",
+      "title": "Falchion",
+      "description": "A curved sword with a single-sided blade.\nDelivers slashing attacks with its sharp blade, but is ineffective against thick armor and hides covered in tough scales.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "beastman-s-curved-sword",
+      "term": "beastman's curved sword",
+      "title": "Beastman's Curved Sword",
+      "description": "Curved sword forged of dull iron wielded by the beastmen of Farum Azula.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "shotel",
+      "term": "shotel",
+      "title": "Shotel",
+      "description": "Curved sword with a severely hooked blade. Its attacks can slip through an enemy's guard.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "shamshir",
+      "term": "shamshir",
+      "title": "Shamshir",
+      "description": "Curved sword with a thin blade of ample length.\nLight of weight despite its larger size, its slicing attacks come in rapid succession.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "bandit-s-curved-sword",
+      "term": "bandit's curved sword",
+      "title": "Bandit's Curved Sword",
+      "description": "Curved sword with a light, crescent-shaped blade.\nUsed by the bandits who ran rampant in the wake of the Shattering.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "magma-blade",
+      "term": "magma blade",
+      "title": "Magma Blade",
+      "description": "Curved sword with a blade fashioned from the lava of Mt. Gelmir.\nAn armament of the man-serpents, impossible for a human to have made.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "flowing-curved-sword",
+      "term": "flowing curved sword",
+      "title": "Flowing Curved Sword",
+      "description": "Legends speak of a master of the sword garbed in blue, and his curved blade that was patterned after flowing water.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "wing-of-astel",
+      "term": "wing of astel",
+      "title": "Wing of Astel",
+      "description": "Sword fashioned from a delicate wing, suffused with the magic of the stars.\nStrong attack unleashes a wave of enchanted light.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "scavenger-s-curved-sword",
+      "term": "scavenger's curved sword",
+      "title": "Scavenger's Curved Sword",
+      "description": "Unique curved sword, notched like shark's teeth.\nWeapon carried by corpse pillagers who prowl the sites of old battles.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "sharktooth-curved-sword",
+      "term": "sharktooth curved sword",
+      "title": "Sharktooth Curved Sword",
+      "description": "Unique curved sword, notched like a shark's tooth.\nStubborn bloodstains cling to the blade, which was\nonce used to cut the horns from countless Omen.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "eclipse-shotel",
+      "term": "eclipse shotel",
+      "title": "Eclipse Shotel",
+      "description": "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "serpent-god-s-curved-sword",
+      "term": "serpent-god's curved sword",
+      "title": "Serpent-God's Curved Sword",
+      "description": "Curved sword fashioned in the image of an ancient serpent deity and tool of a forgotten religion practiced on Mt. Gelmir.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "mantis-blade",
+      "term": "mantis blade",
+      "title": "Mantis Blade",
+      "description": "A curved sword with a blade at both ends wielded by the Cemetery Shades, the insect-ridden grave keepers.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "scimitar",
+      "term": "scimitar",
+      "title": "Scimitar",
+      "description": "A curved sword with a single-sided blade.\nDelivers slashing attacks with its sharp blade, but is ineffective against thick armor and hides covered in tough scales.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "grossmesser",
+      "term": "grossmesser",
+      "title": "Grossmesser",
+      "description": "Curved sword boasting a large blade.\nThis weapon is designed to make use of its weight in combination with its sharp cutting edge.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "onyx-lord-s-greatsword",
+      "term": "onyx lord's greatsword",
+      "title": "Onyx Lord's Greatsword",
+      "description": "Greatsword forged from golden-hued meteoric ore.\nThe blade conceals gravity-manipulating magic.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "dismounter",
+      "term": "dismounter",
+      "title": "Dismounter",
+      "description": "This curved greatsword wielded by the brawny sellswords of Kaiden combines the blade of a scimitar with the heft of a hatchet.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-s-fang",
+      "term": "bloodhound's fang",
+      "title": "Bloodhound's Fang",
+      "description": "Curved greatsword with a gently undulating blade wielded by Bloodhound Knights.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "magma-wyrm-s-scalesword",
+      "term": "magma wyrm's scalesword",
+      "title": "Magma Wyrm's Scalesword",
+      "description": "Curved greatsword wielded by Magma Wyrms. The shape resembles a dragon's jaw and is covered in hard scales.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "zamor-curved-sword",
+      "term": "zamor curved sword",
+      "title": "Zamor Curved Sword",
+      "description": "Weapon wielded by the knights of Zamor who earned great renown during the War against the Giants.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "omen-cleaver",
+      "term": "omen cleaver",
+      "title": "Omen Cleaver",
+      "description": "Heavy-bladed curved sword of colossal size awarded to Omen as a tool of war. This weapon is made to take advantage of brute strength.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "monk-s-flameblade",
+      "term": "monk's flameblade",
+      "title": "Monk's Flameblade",
+      "description": "Curved sword with a flickering flame motif.\nWielded by the Fire Monks who came from the Mountaintops of the Giants.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Swords",
+      "source": "base"
+    },
+    {
+      "id": "beastman-s-cleaver",
+      "term": "beastman's cleaver",
+      "title": "Beastman's Cleaver",
+      "description": "Curved greatsword of colossal size forged of dull iron and wielded by the beastmen of Farum Azula.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Curved Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "morgott-s-cursed-sword",
+      "term": "morgott's cursed sword",
+      "title": "Morgott's Cursed Sword",
+      "description": "Warped blade of shifting hue used by Morgott, the Omen King.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "holy-inferno-greatsword",
+      "term": "holy inferno greatsword",
+      "title": "Holy Inferno Greatsword",
+      "description": "Large katana used by Monks of the Giants' Flame.\nThe characteristic blade has the motif\nof flickering flames.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "uchigatana",
+      "term": "uchigatana",
+      "title": "Uchigatana",
+      "description": "A katana with a long single-edged curved blade.\nA unique weapon wielded by the samurai from the Land of Reeds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "nagakiba",
+      "term": "nagakiba",
+      "title": "Nagakiba",
+      "description": "Katana with a ferociously long blade.\nSignature weapon of Yura, hunter of Bloody Fingers.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "hand-of-malenia",
+      "term": "hand of malenia",
+      "title": "Hand of Malenia",
+      "description": "Blade built into Malenia's prosthetic arm.\nThrough consecration it is resistant to rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "meteoric-ore-blade",
+      "term": "meteoric ore blade",
+      "title": "Meteoric Ore Blade",
+      "description": "Katana forged from meteoric ore to dispatch lifeforms born of falling stars.\nDeals magic damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "rivers-of-blood",
+      "term": "rivers of blood",
+      "title": "Rivers of Blood",
+      "description": "Weapon of Okina, swordsman from the Land of Reeds.\nA cursed weapon that has felled countless men.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "moonveil",
+      "term": "moonveil",
+      "title": "Moonveil",
+      "description": "Katana forged of glintstone.\nMasterpiece of a Sellian swordsmith.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "dragonscale-blade",
+      "term": "dragonscale blade",
+      "title": "Dragonscale Blade",
+      "description": "A weapon made by sharpening a Gravel Stone scale, thought to be the source of ancient dragon immortality, into an unclouded blade.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "serpentbone-blade",
+      "term": "serpentbone blade",
+      "title": "Serpentbone Blade",
+      "description": "Sinister katana modeled after a serpent bone.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "twinblade",
+      "term": "twinblade",
+      "title": "Twinblade",
+      "description": "A sword with blades on both sides of the hilt.\nThis weapon is difficult to wield and demands high dexterity.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "godskin-peeler",
+      "term": "godskin peeler",
+      "title": "Godskin Peeler",
+      "description": "Unique twinblade wielded by Godskin Apostles characterized by its disturbing design. One end features a sickle for slicing attacks while the other boasts a winding spike for boring into flesh.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "twinned-knight-swords",
+      "term": "twinned knight swords",
+      "title": "Twinned Knight Swords",
+      "description": "An attractive twinblade of fine make that prizes the chivalric way.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "eleonora-s-poleblade",
+      "term": "eleonora's poleblade",
+      "title": "Eleonora's Poleblade",
+      "description": "Twinned naginata forged in the Land of Reeds.\nChosen weapon of Eleonora, Violet Bloody Finger.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "abundance-and-decay-twinblade",
+      "term": "abundance and decay twinblade",
+      "title": "Abundance and Decay Twinblade",
+      "description": "Twinblade symbolizing twins Miquella and Malenia.\nMiquella and his sister were born from an\ninseparable fate.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "abundance-twinblade",
+      "term": "abundance twinblade",
+      "title": "Abundance Twinblade",
+      "description": "Twinblade that contain the power of the\nRune of Abundance.\nThe holy power within the blade can\ncall upon part of Miquella's own strength.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-twinblade",
+      "term": "gargoyle's twinblade",
+      "title": "Gargoyle's Twinblade",
+      "description": "Bronze twinblade wielded by Valiant Gargoyle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-black-blades",
+      "term": "gargoyle's black blades",
+      "title": "Gargoyle's Black Blades",
+      "description": "Bronze twinblade wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Twinblades",
+      "source": "base"
+    },
+    {
+      "id": "mace",
+      "term": "mace",
+      "title": "Mace",
+      "description": "An iron bludgeon with sharp protrusions.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "club",
+      "term": "club",
+      "title": "Club",
+      "description": "A thick, solid lump of wood.\nWielding this striking weapon requires no skill.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "curved-club",
+      "term": "curved club",
+      "title": "Curved Club",
+      "description": "Hard, curved club, shaped like a crescent moon.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "warpick",
+      "term": "warpick",
+      "title": "Warpick",
+      "description": "Warhammer with a hard protruding beak.\nA pickaxe designed for combat, in essence.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "morning-star",
+      "term": "morning star",
+      "title": "Morning Star",
+      "description": "Warhammer comprised of a globe attached to a handle. Though a bludgeon dealing strike damage, the appellative star is covered in spikes which cause blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "varr-s-bouquet",
+      "term": "varré's bouquet",
+      "title": "Varré's Bouquet",
+      "description": "A steel mace resembling a charming bouquet of roses. Each petal has a sharpened edge, leaving the roses perpetually colored with blood.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "heavy-varr-s-bouquet",
+      "term": "heavy varré's bouquet",
+      "title": "Heavy Varré's Bouquet",
+      "description": "A steel mace resembling a bouquet of roses.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "spiked-club",
+      "term": "spiked club",
+      "title": "Spiked Club",
+      "description": "A club with beast fangs wrapped around the striking end. The uneven spread of fangs causes blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "hammer",
+      "term": "hammer",
+      "title": "Hammer",
+      "description": "Hammer comprised of a large stone affixed to a metal handle. Originally a blacksmith's tool.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "monk-s-flamemace",
+      "term": "monk's flamemace",
+      "title": "Monk's Flamemace",
+      "description": "Warhammer made to resemble flickering flames. Signature weapon of the Fire Monks, who hail from the Mountaintops of the Giants.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "envoy-s-horn",
+      "term": "envoy's horn",
+      "title": "Envoy's Horn",
+      "description": "Golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "scepter-of-the-all-knowing",
+      "term": "scepter of the all-knowing",
+      "title": "Scepter of the All-Knowing",
+      "description": "Scepter in the form of a hand grasping a pearl. Signature weapon of Sir Gideon Ofnir, the All-Knowing. The pearl stands for the world, the heavens, and an eye, representing the many forms of knowledge, never fully attainable. Even knowing that, the All-Knowing's hand grasps for it.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "nox-flowing-hammer",
+      "term": "nox flowing hammer",
+      "title": "Nox Flowing Hammer",
+      "description": "Mace shaped like a suspended metal droplet wielded by monks of the Eternal City.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "ringed-finger",
+      "term": "ringed finger",
+      "title": "Ringed Finger",
+      "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "stone-club",
+      "term": "stone club",
+      "title": "Stone Club",
+      "description": "Signature weapon of battlemages, hewn from hard glintstone. This club is much heavier than its size suggests, but has no magic power.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "marika-s-hammer",
+      "term": "marika's hammer",
+      "title": "Marika's Hammer",
+      "description": "Stone hammer made in the lands of the Numen, outside the Lands Between. The tool with which Queen Marika shattered the Elden Ring and Radagon attempted to repair it.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "father-marika-s-hammer",
+      "term": "father marika's hammer",
+      "title": "Father Marika's Hammer",
+      "description": "Club of simple design, made by fitting\nstone to a piece of lumber.\nIts small size compared to most clubs\nmake it easier to wield in close-quarters.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "occult-marika-s-hammer",
+      "term": "occult marika's hammer",
+      "title": "Occult Marika's Hammer",
+      "description": "Warhammer wielded by Radagon.\nForged in the age of gods, it harbors\ncolossal magic power.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "large-club",
+      "term": "large club",
+      "title": "Large Club",
+      "description": "A thick, solid lump of wood.\nWielding this striking weapon requires no skill.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "greathorn-hammer",
+      "term": "greathorn hammer",
+      "title": "Greathorn Hammer",
+      "description": "Huge thick horn carved with tree ring-like markings adapted into a bludgeoning weapon. Wielded by ancestral follower warriors.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "battle-hammer",
+      "term": "battle hammer",
+      "title": "Battle Hammer",
+      "description": "Large iron warhammer designed for gladiatorial combat. Used by duelists who were exiled from the colosseum.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "great-mace",
+      "term": "great mace",
+      "title": "Great Mace",
+      "description": "Huge bludgeon with sharp protrusions. An enlarged version of its smaller cousin.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "curved-great-club",
+      "term": "curved great club",
+      "title": "Curved Great Club",
+      "description": "Large curved club of hard wood, shaped like a crescent moon.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "celebrant-s-skull",
+      "term": "celebrant's skull",
+      "title": "Celebrant's Skull",
+      "description": "Large bludgeon decorated with flowers and many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula, Windmill Village.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "pickaxe",
+      "term": "pickaxe",
+      "title": "Pickaxe",
+      "description": "Large pickaxe designed to crack thick bedrock. Tool of sturdy miners.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "beastclaw-greathammer",
+      "term": "beastclaw greathammer",
+      "title": "Beastclaw Greathammer",
+      "description": "Greathammer with a striking end modelled to resemble five beastly claws.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Great Hammers",
+      "source": "base"
+    },
+    {
+      "id": "envoy-s-long-horn",
+      "term": "envoy's long horn",
+      "title": "Envoy's Long Horn",
+      "description": "Long golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "cranial-vessel-candlestand",
+      "term": "cranial vessel candlestand",
+      "title": "Cranial Vessel Candlestand",
+      "description": "Candlestand used in worship of Birac, the most hallowed Monk Prelate of the Giants' Flame. Concerned over the lazy arrogance with which the monks treated the Flame, Birac severed his own head as a lesson to the others, intending it be used as a candlestand. His faith yet smolders from within the cranial vessel.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "great-stars",
+      "term": "great stars",
+      "title": "Great Stars",
+      "description": "Huge bludgeon with three stars at the striking end. Though primarily a striking weapon, the stars' spikes cause blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "brick-hammer",
+      "term": "brick hammer",
+      "title": "Brick Hammer",
+      "description": "Weapon made from an ordinary stone brick. Wielded by a laborer who lead a rebellion, and later become a champion himself.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "devourer-s-scepter",
+      "term": "devourer's scepter",
+      "title": "Devourer's Scepter",
+      "description": "Scepter in the shape of a serpent devouring the world. This weapon will one day become the very symbol of the Lord of Blasphemy.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rotten-battle-hammer",
+      "term": "rotten battle hammer",
+      "title": "Rotten Battle Hammer",
+      "description": "Large iron warhammer designed for gladiatorial combat, now festering with scarlet rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "nightrider-flail",
+      "term": "nightrider flail",
+      "title": "Nightrider Flail",
+      "description": "A flail with two additional bludgeoning heads.\nWeapon of the Night's Cavalry who ride funeral steeds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Flails",
+      "source": "base"
+    },
+    {
+      "id": "flail",
+      "term": "flail",
+      "title": "Flail",
+      "description": "Weapon consisting of a bludgeoning head attached to a handle by a chain. The iron ball is spiked and induces blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Flails",
+      "source": "base"
+    },
+    {
+      "id": "family-heads",
+      "term": "family heads",
+      "title": "Family Heads",
+      "description": "Three bludgeoning copper heads attached to a handle by chains. Signature weapon of Necromancer Garris, the heretical sage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bastard-s-stars",
+      "term": "bastard's stars",
+      "title": "Bastard's Stars",
+      "description": "Flail which deals magic damage, having been imbued with power by the remembrance of Astel.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Flails",
+      "source": "base"
+    },
+    {
+      "id": "chainlink-flail",
+      "term": "chainlink flail",
+      "title": "Chainlink Flail",
+      "description": "A spiked iron tube attached by a chain wielded by Mad Pumpkin Heads.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Flails",
+      "source": "base"
+    },
+    {
+      "id": "battle-axe",
+      "term": "battle axe",
+      "title": "Battle Axe",
+      "description": "A thick, heavy blade attached to a handle. A versatile, standard weapon",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "forked-hatchet",
+      "term": "forked hatchet",
+      "title": "Forked Hatchet",
+      "description": "Peculiar hatchet wielded by imps.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "hand-axe",
+      "term": "hand axe",
+      "title": "Hand Axe",
+      "description": "Commonly known as a hatchet, this smaller variety of axe is an everyday work tool.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "jawbone-axe",
+      "term": "jawbone axe",
+      "title": "Jawbone Axe",
+      "description": "Axe made from a herbivore's skull. Weapon of the ancestral followers who disdain metal.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "iron-cleaver",
+      "term": "iron cleaver",
+      "title": "Iron Cleaver",
+      "description": "Fairly large iron cleaver, commonly used by the maltreated Misbegotten.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "ripple-blade",
+      "term": "ripple blade",
+      "title": "Ripple Blade",
+      "description": "Unique weapon wielded by young Albinaurics, this sword is modelled after the ripples that are thought to be the origin of their species.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "celebrant-s-cleaver",
+      "term": "celebrant's cleaver",
+      "title": "Celebrant's Cleaver",
+      "description": "Cleaver decorated with many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula, Windmill Village.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "icerind-hatchet",
+      "term": "icerind hatchet",
+      "title": "Icerind Hatchet",
+      "description": "A hatchet with a frost-coated blade. One of several gifts given by Castle Sol in the distant north.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "highland-axe",
+      "term": "highland axe",
+      "title": "Highland Axe",
+      "description": "Single-sided axe used by the warriors of the highlands.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "sacrificial-axe",
+      "term": "sacrificial axe",
+      "title": "Sacrificial Axe",
+      "description": "Hatchet used in ancient sacrificial rite. A Deathbird is depicted as a malevolent deity.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "rosus-axe",
+      "term": "rosus' axe",
+      "title": "Rosus' Axe",
+      "description": "Usher of Death, Rosus, who shows the path to the catacombs throughout the Lands Between, is depicted on this ritual axe.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "burial-axe",
+      "term": "burial axe",
+      "title": "Burial Axe",
+      "description": "Axe of rotted bronze.\nA burial gift devoted to the deaths of heroes.\nPieces of meat clinging to the blade have\nbegun to form into mortuary wax.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "stormhawk-axe",
+      "term": "stormhawk axe",
+      "title": "Stormhawk Axe",
+      "description": "Battle axe designed to resemble a hawk, with its wings comprising the blade. Signature weapon of warriors who strive to remain one with the storm, despite being so far from their place of birth.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "greataxe",
+      "term": "greataxe",
+      "title": "Greataxe",
+      "description": "Greataxe akin to a huge lump of iron. Recognized as the weapon of choice of badland chieftains.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "warped-axe",
+      "term": "warped axe",
+      "title": "Warped Axe",
+      "description": "Oversized double-headed axe with a bizarre, almost melted appearance.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "great-omenkiller-cleaver",
+      "term": "great omenkiller cleaver",
+      "title": "Great Omenkiller Cleaver",
+      "description": "The blade of this huge, loathsome cleaver comprises a row of amputated Omen horns. Weapon of slaughter wielded by Omenkillers.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "crescent-moon-axe",
+      "term": "crescent moon axe",
+      "title": "Crescent Moon Axe",
+      "description": "Greataxe with a large, arcing blade and long handle. The \"Crescent Moon\" of its name is said to have been spurred by nostalgia.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "axe-of-godrick",
+      "term": "axe of godrick",
+      "title": "Axe of Godrick",
+      "description": "Greataxe wielded by Godrick the Grafted. This golden battleaxe is emblazoned with the figure of a beast, representing the strength of Godfrey, First Elden Lord and patriarch of the golden lineage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "longhaft-axe",
+      "term": "longhaft axe",
+      "title": "Longhaft Axe",
+      "description": "Large iron axe with a long handle. Weapon of the maltreated Misbegotten.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "rusted-anchor",
+      "term": "rusted anchor",
+      "title": "Rusted Anchor",
+      "description": "A rusty anchor wielded as a weapon. Each of its four flukes is thick and sharp, enabling piercing attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "executioner-s-greataxe",
+      "term": "executioner's greataxe",
+      "title": "Executioner's Greataxe",
+      "description": "Bulky cleaver welded to a long haft. Said to have been used to dispatch the remnants of defeated armies, felling them like timber.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "winged-greathorn",
+      "term": "winged greathorn",
+      "title": "Winged Greathorn",
+      "description": "A unique horn in which the power of ancestral spirits fiercely dwells, this large, wing-shaped specimen is wielded as a weapon of spirit worship.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "butchering-knife",
+      "term": "butchering knife",
+      "title": "Butchering Knife",
+      "description": "Huge carving knife made to cleanly butcher the human body. Signature weapon of the Ogress Anastasia, known to have eaten countless Tarnished while disguised as a Finger Maiden.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-great-axe",
+      "term": "gargoyle's great axe",
+      "title": "Gargoyle's Great Axe",
+      "description": "Bronze greataxe wielded by Valiant Gargoyle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-black-axe",
+      "term": "gargoyle's black axe",
+      "title": "Gargoyle's Black Axe",
+      "description": "Bronze greataxe wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "heavy-gargoyle-s-black-axe",
+      "term": "heavy gargoyle's black axe",
+      "title": "Heavy Gargoyle's Black Axe",
+      "description": "Greataxe wielded by the gargoyles\nserving under Maliketh.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "short-spear",
+      "term": "short spear",
+      "title": "Short Spear",
+      "description": "A exceedingly plain spear of modest weight.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "spear",
+      "term": "spear",
+      "title": "Spear",
+      "description": "Weapon comprised of a blade attached to a long haft.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "crystal-spear",
+      "term": "crystal spear",
+      "title": "Crystal Spear",
+      "description": "Spear fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "clayman-s-harpoon",
+      "term": "clayman's harpoon",
+      "title": "Clayman's Harpoon",
+      "description": "Harpoon with a tip made from a sharpened meteorite shard. Wielded by the claymen who infest dynastic remains.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "cleanrot-spear",
+      "term": "cleanrot spear",
+      "title": "Cleanrot Spear",
+      "description": "Spear of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "heavy-cleanrot-knight-s-spear",
+      "term": "heavy cleanrot knight's spear",
+      "title": "Heavy Cleanrot Knight's Spear",
+      "description": "Spear used by knights in service of Malenia,\nthe twin sister who possessed the Rune of Decay.\nWith its sharp tip, the weapon specializes in\nrunning opponents through.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "partisan",
+      "term": "partisan",
+      "title": "Partisan",
+      "description": "Spear with a wide tip.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "celebrant-s-rib-rake",
+      "term": "celebrant's rib-rake",
+      "title": "Celebrant's Rib-Rake",
+      "description": "Rake decorated with many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula, Windmill Village.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "pike",
+      "term": "pike",
+      "title": "Pike",
+      "description": "A longspear featuring an especially lengthy handle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "torchpole",
+      "term": "torchpole",
+      "title": "Torchpole",
+      "description": "Torch fastened to a long pole. Lights up dark areas, but cannot be raised overhead.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "bolt-of-gransax",
+      "term": "bolt of gransax",
+      "title": "Bolt of Gransax",
+      "description": "Spear whittled from the weapon wielded by Gransax.\nOne of the legendary armaments.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "cross-naginata",
+      "term": "cross-naginata",
+      "title": "Cross-Naginata",
+      "description": "Weapon consisting of a three-pronged blade affixed to a long pole. The long central blade closely resembles a katana.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Katanas",
+      "source": "base"
+    },
+    {
+      "id": "death-ritual-spear",
+      "term": "death ritual spear",
+      "title": "Death Ritual Spear",
+      "description": "Ritual spear used by priests of old who were permitted to come among the Deathbirds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "inquisitor-s-girandole",
+      "term": "inquisitor's girandole",
+      "title": "Inquisitor's Girandole",
+      "description": "Instrument of torture used on nobles behind the curtain at the Volcano Manor of Mt. Gelmir.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "spiked-spear",
+      "term": "spiked spear",
+      "title": "Spiked Spear",
+      "description": "Weapon comprised of a spiked cylinder attached to a long pole. Capable of dealing strike damage when swung. The spikes induce blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "iron-spear",
+      "term": "iron spear",
+      "title": "Iron Spear",
+      "description": "Commonly used iron spear with no notable traits.\nThe blade is severely rusted.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "rotten-crystal-spear",
+      "term": "rotten crystal spear",
+      "title": "Rotten Crystal Spear",
+      "description": "Spear fashioned from pure crystal; a deed impossible for a human.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "mohgwyn-s-sacred-spear",
+      "term": "mohgwyn's sacred spear",
+      "title": "Mohgwyn's Sacred Spear",
+      "description": "Trident of Mohg, Lord of Blood. A sacred spear that will come to symbolize his dynasty.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "siluria-s-tree",
+      "term": "siluria's tree",
+      "title": "Siluria's Tree",
+      "description": "Siluria's Tree, weapon of one of the two honored as foremost among the Crucible Knights.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "serpent-hunter",
+      "term": "serpent-hunter",
+      "title": "Serpent-Hunter",
+      "description": "Weapon that serves as both greatsword and spear. Thought to have been used to hunt an immortal great serpent in the distant past, it manifests a long blade of light when facing such a creature. When their master's heroic aspirations degenerated into mere greed, his men searched for a weapon with which they might halt their lord.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatswords",
+      "source": "base"
+    },
+    {
+      "id": "vyke-s-war-spear",
+      "term": "vyke's war spear",
+      "title": "Vyke's War Spear",
+      "description": "War spear singed and blistered by fingers, used by Vyke, Knight of the Roundtable Hold.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "lance",
+      "term": "lance",
+      "title": "Lance",
+      "description": "Considered a type of greatspear, this weapon has no blade, but instead features a long, conical body designed to pierce.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Great Spears",
+      "source": "base"
+    },
+    {
+      "id": "treespear",
+      "term": "treespear",
+      "title": "Treespear",
+      "description": "Golden spear with tree-like design. Wielded by knights employed as palace guards in the Royal Capital of Leyndell.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "halberd",
+      "term": "halberd",
+      "title": "Halberd",
+      "description": "A long-handled polearm that combines the functions of both axe and spear.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "pest-s-glaive",
+      "term": "pest's glaive",
+      "title": "Pest's Glaive",
+      "description": "Glaive made from a hard, sharpened shell. Wielded by the pests who emerged from the Swamp of Aeonia.\nSlightly increases non-physical damage negation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "lucerne",
+      "term": "lucerne",
+      "title": "Lucerne",
+      "description": "This polearm features a hard, sharpened beak-like spike attached to its head, designed to pierce armor.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-s-halberd",
+      "term": "banished knight's halberd",
+      "title": "Banished Knight's Halberd",
+      "description": "A finely-crafted halberd intricately engraved with an ancient motif.\nGiven to knights who, whether by misfortune or misdeed, were forced to abandon their homes.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "commander-s-standard",
+      "term": "commander's standard",
+      "title": "Commander's Standard",
+      "description": "A beaten red battle standard is furled around this time-worn halberd.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "nightrider-glaive",
+      "term": "nightrider glaive",
+      "title": "Nightrider Glaive",
+      "description": "A jet-black glaive with a blade as weighty as a bludgeon. Weapon of the Night's Cavalry who ride funeral steeds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "ripple-crescent-halberd",
+      "term": "ripple crescent halberd",
+      "title": "Ripple Crescent Halberd",
+      "description": "Weapon wielded by young Albinaurics.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-saw",
+      "term": "vulgar militia saw",
+      "title": "Vulgar Militia Saw",
+      "description": "A weapon comprised of a saw blade attached to a long grip. Brandished by the vulgar militia, its serrated edge is very effective at inflicting blood loss. The saw is said to also be used to cut up bodies to feed the militia, but there are no firsthand witnesses to confirm the dire rumor.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "golden-halberd",
+      "term": "golden halberd",
+      "title": "Golden Halberd",
+      "description": "Weighty halberd forged of gold. Wielded by the Order of Tree Sentinels, heavily equipped knights.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "glaive",
+      "term": "glaive",
+      "title": "Glaive",
+      "description": "Weapon comprised of a sharp blade affixed to a long grip. It is in fact a sickle repurposed to be a tool of war.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "loretta-s-war-sickle",
+      "term": "loretta's war sickle",
+      "title": "Loretta's War Sickle",
+      "description": "Intricately crafted silver war sickle wielded by Loretta, Knight of the Haligtree.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "guardian-s-swordspear",
+      "term": "guardian's swordspear",
+      "title": "Guardian's Swordspear",
+      "description": "Weapon comprising a long handle and broad blade sharpened from the hard wood of old trees.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "vulgar-militia-shotel",
+      "term": "vulgar militia shotel",
+      "title": "Vulgar Militia Shotel",
+      "description": "A hooked blade attached to a long handle. Wielded by the vulgar militia, its attacks can slip through an enemy's guard.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "dragon-halberd",
+      "term": "dragon halberd",
+      "title": "Dragon Halberd",
+      "description": "Halberd shaped like a dragon, enwreathed with both ice and lightning.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "heavy-dragon-halberd",
+      "term": "heavy dragon halberd",
+      "title": "Heavy Dragon Halberd",
+      "description": "Relatively large halberd with a striking point\nmodeled on a dragon.\nA one-of-a-kind masterwork made by\na weaponsmith who was enamored with\ndragons and their strength.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-halberd",
+      "term": "gargoyle's halberd",
+      "title": "Gargoyle's Halberd",
+      "description": "Bronze halberd wielded by Valiant Gargoyle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "gargoyle-s-black-halberd",
+      "term": "gargoyle's black halberd",
+      "title": "Gargoyle's Black Halberd",
+      "description": "Bronze halberd wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "heavy-gargoyle-s-black-halberd",
+      "term": "heavy gargoyle's black halberd",
+      "title": "Heavy Gargoyle's Black Halberd",
+      "description": "Halberd wielded by the gargoyles\nserving under Maliketh.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "scythe",
+      "term": "scythe",
+      "title": "Scythe",
+      "description": "Large scythe featuring a long, slender blade. Designed to reap, this weapon is capable of rapidly inflicting blood loss while also slipping through an enemy's guard.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Reapers",
+      "source": "base"
+    },
+    {
+      "id": "grave-scythe",
+      "term": "grave scythe",
+      "title": "Grave Scythe",
+      "description": "Greatscythe comprised of a large blade affixed to a crooked stick. Weapon wielded by the aged grave keepers who tend the forgotten graveyards throughout the Lands Between.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Reapers",
+      "source": "base"
+    },
+    {
+      "id": "halo-scythe",
+      "term": "halo scythe",
+      "title": "Halo Scythe",
+      "description": "War scythe of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Reapers",
+      "source": "base"
+    },
+    {
+      "id": "heretic-s-hook",
+      "term": "heretic's hook",
+      "title": "Heretic's Hook",
+      "description": "Scythe used both for collecting\nand offering up the dead.\nThe blade itself seems to be\na tortured, maddened thing.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Reapers",
+      "source": "base"
+    },
+    {
+      "id": "winged-scythe",
+      "term": "winged scythe",
+      "title": "Winged Scythe",
+      "description": "Sacred scythe resembling a pair of white wings. Deals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Reapers",
+      "source": "base"
+    },
+    {
+      "id": "whip",
+      "term": "whip",
+      "title": "Whip",
+      "description": "A leather whip. Not originally used for combat, but as an instrument of pain.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "thorned-whip",
+      "term": "thorned whip",
+      "title": "Thorned Whip",
+      "description": "Hefty whip covered in crimson thorns. Weapon of the Prelates who lead the Fire Monks. A device of fearsome religious encouragement, it is fashioned in the image of the briars of sin.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "magma-whip-candlestick",
+      "term": "magma whip candlestick",
+      "title": "Magma Whip Candlestick",
+      "description": "This ritual implement is a three pronged candlestick with solid flames formed of the magma of Mt. Gelmir.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "heavy-lava-whip",
+      "term": "heavy lava whip",
+      "title": "Heavy Lava Whip",
+      "description": "Whip with a unique three-headed shape.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "hoslow-s-petal-whip",
+      "term": "hoslow's petal whip",
+      "title": "Hoslow's Petal Whip",
+      "description": "Metal whip formed of razor-sharp chain-link blades that have the appearance of flower petals. This work of art is handed down through the generations of the illustrious House Hoslow.\nHigh dexterity is required to wield this weapon, but it excels at inflicting devastating blood loss.\n\"The tale of House Hoslow is told in blood.\"",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "giant-s-red-braid",
+      "term": "giant's red braid",
+      "title": "Giant's Red Braid",
+      "description": "Hefty whip woven from the flame-red hair of a Fire Giant.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "urumi",
+      "term": "urumi",
+      "title": "Urumi",
+      "description": "This weapon made of extremely thin, flexible blades of metal is wielded like a whip by Nightfolk warriors.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Whips",
+      "source": "base"
+    },
+    {
+      "id": "caestus",
+      "term": "caestus",
+      "title": "Caestus",
+      "description": "A weapon built for striking with the fists, made of tough leather inlaid with iron rivets.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Fists",
+      "source": "base"
+    },
+    {
+      "id": "spiked-caestus",
+      "term": "spiked caestus",
+      "title": "Spiked Caestus",
+      "description": "A caestus with the rivets replaced by blood loss-inducing spikes.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "grafted-dragon",
+      "term": "grafted dragon",
+      "title": "Grafted Dragon",
+      "description": "The embodiment of the power that still remained in the dragon's head that was grafted to Godrick's left arm.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "iron-ball",
+      "term": "iron ball",
+      "title": "Iron Ball",
+      "description": "Iron manifer of spherical shape. Big Boggart the blackguard's weapon of choice.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "star-fist",
+      "term": "star fist",
+      "title": "Star Fist",
+      "description": "Spherical iron manifer covered in spikes which induce blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "katar",
+      "term": "katar",
+      "title": "Katar",
+      "description": "Imported dagger design with a rather unique handle. The blade can be swung about as the extension of one's fist.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Daggers",
+      "source": "base"
+    },
+    {
+      "id": "clinging-bone",
+      "term": "clinging bone",
+      "title": "Clinging Bone",
+      "description": "Horrific weapon made of a hardened skeletal arm. Wielded by Ensha of the Royal Remains.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "veteran-s-prosthesis",
+      "term": "veteran's prosthesis",
+      "title": "Veteran's Prosthesis",
+      "description": "Bladed prosthetic leg enwreathed with the power of lightning, instead attached to the fist. Commander Niall, veteran of Castle Sol, offered this prosthesis in exchange for the lives of defeated knights held prisoner. He went on to lead these men as an army of no nation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Fists",
+      "source": "base"
+    },
+    {
+      "id": "cipher-pata",
+      "term": "cipher pata",
+      "title": "Cipher Pata",
+      "description": "One of the weapons originating from the Two Fingers. A formless sequence of ciphers comprise its blade, and as such no shield can repel it. Deals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "hookclaws",
+      "term": "hookclaws",
+      "title": "Hookclaws",
+      "description": "Weapon worn on the fist comprised of sharp parallel blades favored by those who lurk in the dark. Lacerations cause blood loss with great effect.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Fists",
+      "source": "base"
+    },
+    {
+      "id": "venomous-fang",
+      "term": "venomous fang",
+      "title": "Venomous Fang",
+      "description": "One of the weapons designed for gladiatorial combat. Used by duelists who were exiled from the colosseum.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bloodhound-claws",
+      "term": "bloodhound claws",
+      "title": "Bloodhound Claws",
+      "description": "Large curved claws used by Bloodhound Knights.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "base"
+    },
+    {
+      "id": "raptor-talons",
+      "term": "raptor talons",
+      "title": "Raptor Talons",
+      "description": "Claw comprised of two sharp, thin blades. Wielded by the assassins of ravenmount, this weapon allows them to imitate the attacks of Deathbirds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "base"
+    },
+    {
+      "id": "prelate-s-inferno-crozier",
+      "term": "prelate's inferno crozier",
+      "title": "Prelate's Inferno Crozier",
+      "description": "Colossal hammer with the appearance of roiling flames. Weapon of the Prelates who lead the Fire Monks. Its heft represents the weight of their guardianship.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "watchdog-s-staff",
+      "term": "watchdog's staff",
+      "title": "Watchdog's Staff",
+      "description": "Large stone staff embedded with glintstone. Wielded by Erdtree Burial Watchdogs who protect catacombs.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "heavy-watchdog-s-crosier",
+      "term": "heavy watchdog's crosier",
+      "title": "Heavy Watchdog's Crosier",
+      "description": "Great hammer wielded by golems\nprotecting the Undercapital Labyrinth.\nExtraordinary strength is required\nto wield something so heavy.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Great Hammers",
+      "source": "base"
+    },
+    {
+      "id": "great-club",
+      "term": "great club",
+      "title": "Great Club",
+      "description": "An enormous club of hard wood. Wildly hammering foes with this striking weapon requires no dexterity; only brute force. While it may seem sacrilegious, this weapon is said to be a withered branch of the Erdtree. Imbued with holy power, this weapon will never snap.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "envoy-s-greathorn",
+      "term": "envoy's greathorn",
+      "title": "Envoy's Greathorn",
+      "description": "Fanned golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "duelist-greataxe",
+      "term": "duelist greataxe",
+      "title": "Duelist Greataxe",
+      "description": "Greataxe designed for gladiatorial combat. Used by duelists who were exiled from the colosseum.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "axe-of-godfrey",
+      "term": "axe of godfrey",
+      "title": "Axe of Godfrey",
+      "description": "Weapon of Godfrey, Elden Lord. It was broken in a battle fought as leader of the Tarnished during the Long March. This weapon is symbolic of Godfrey's vow to conduct himself as a lord, later becoming an emblem of the golden lineage. In the days of the past, a crown was warranted with strength.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Axes",
+      "source": "base"
+    },
+    {
+      "id": "dragon-greatclaw",
+      "term": "dragon greatclaw",
+      "title": "Dragon Greatclaw",
+      "description": "Weapon said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "base"
+    },
+    {
+      "id": "staff-of-the-avatar",
+      "term": "staff of the avatar",
+      "title": "Staff of the Avatar",
+      "description": "Ceremonial staff depicting the Erdtree in its historic radiance. Wielded by the avatars who protect the Minor Erdtrees.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "fallingstar-beast-jaw",
+      "term": "fallingstar beast jaw",
+      "title": "Fallingstar Beast Jaw",
+      "description": "Part of a Fallingstar Beast's jaw, hard and shining black, fashioned into a weapon.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "ghiza-s-wheel",
+      "term": "ghiza's wheel",
+      "title": "Ghiza's Wheel",
+      "description": "Great iron wheel lined with flesh-flaying blades. Device of torture used by Inquisitor Ghiza. As the wheel spins it causes severe pain and blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "giant-crusher",
+      "term": "giant-crusher",
+      "title": "Giant-Crusher",
+      "description": "A hammer made from a boulder, used in the War against the Giants. One of the heftiest weapons in the entire Lands Between. After the giants were quelled, and man turned against man in violence, this weapon was all but forgotten. Man has grown feeble in comparison to his forebears.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "golem-s-halberd",
+      "term": "golem's halberd",
+      "title": "Golem's Halberd",
+      "description": "A great halberd of black stone crafted by a civilization now gone to ruin. Wielded by the Guardian Golem.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Halberds",
+      "source": "base"
+    },
+    {
+      "id": "troll-s-hammer",
+      "term": "troll's hammer",
+      "title": "Troll's Hammer",
+      "description": "Mining tool of stonedigger trolls used to crack bedrock.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Hammers",
+      "source": "base"
+    },
+    {
+      "id": "rotten-staff",
+      "term": "rotten staff",
+      "title": "Rotten Staff",
+      "description": "Ceremonial staff depicting the Erdtree in its historic radiance. It festers with scarlet rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "rotten-greataxe",
+      "term": "rotten greataxe",
+      "title": "Rotten Greataxe",
+      "description": "Greataxe designed for gladiatorial combat, now festering with scarlet rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greataxes",
+      "source": "base"
+    },
+    {
+      "id": "torch",
+      "term": "torch",
+      "title": "Torch",
+      "description": "This torch's tip is wrapped in oil-soaked rags and set on fire.\nThe flame can illuminate dark locales, or be used to attack enemies.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "steel-wire-torch",
+      "term": "steel-wire torch",
+      "title": "Steel-Wire Torch",
+      "description": "Torch wound with metal wire. The flame can illuminate dark locales, or be used to attack enemies.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "st-trina-s-torch",
+      "term": "st. trina's torch",
+      "title": "St. Trina's Torch",
+      "description": "Candlestand torch that burns with a light-purple flame. The carvings depict St. Trina, but in adult form, somewhat unnervingly.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "ghostflame-torch",
+      "term": "ghostflame torch",
+      "title": "Ghostflame Torch",
+      "description": "Metal torch that burns with cold ghostflame. Tool of the Fallen Hawks who prowl the underground rivers. When the band's last embers were used up in their long search, they began to burn the bones of their fellows, acquiring the cold ghostflame, but sealing their fate as dwellers of the underground for all eternity.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "beast-repellent-torch",
+      "term": "beast-repellent torch",
+      "title": "Beast-Repellent Torch",
+      "description": "A torch which burns oil infused with a special incense. The aroma pacifies wild beasts.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "sentry-s-torch",
+      "term": "sentry's torch",
+      "title": "Sentry's Torch",
+      "description": "Torch given to protectors of the Erdtree. Its flames are bestowed with a special incantation which allows the bearer to see assassins cloaked in veils. Furnished on behalf of the Erdtree and the Grace-Given Lord such that a Night of Black Knives will never come again.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Torches",
+      "source": "base"
+    },
+    {
+      "id": "buckler",
+      "term": "buckler",
+      "title": "Buckler",
+      "description": "A small metal roundshield. The bump in the center is designed to parry.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-shield",
+      "term": "perfumer's shield",
+      "title": "Perfumer's Shield",
+      "description": "Golden shield used by the perfumers of Leyndell during military service.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "man-serpent-s-shield",
+      "term": "man-serpent's shield",
+      "title": "Man-Serpent's Shield",
+      "description": "Small copper dome-shaped roundshield carried by the man-serpents of Mt. Gelmir.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "rickety-shield",
+      "term": "rickety shield",
+      "title": "Rickety Shield",
+      "description": "A creaky old wooden shield, circular in shape. Roughly reinforced with vines.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "pillory-shield",
+      "term": "pillory shield",
+      "title": "Pillory Shield",
+      "description": "Pillory made to punish serious felons, used as a shield. Though made of good, sturdy wood, it is only a makeshift tool and performs as such.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "beastman-s-jar-shield",
+      "term": "beastman's jar-shield",
+      "title": "Beastman's Jar-Shield",
+      "description": "Shield fashioned from a tall broken jar carried by the beastmen of Farum Azula. There is a particular knack to wielding it.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "red-thorn-roundshield",
+      "term": "red thorn roundshield",
+      "title": "Red Thorn Roundshield",
+      "description": "A small, wooden roundshield. It is light and easy to handle, but cannot offer the damage negation of a metal shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "scripture-wooden-shield",
+      "term": "scripture wooden shield",
+      "title": "Scripture Wooden Shield",
+      "description": "A small, wooden roundshield. It is light and easy to handle, but cannot offer the damage negation of a metal shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "riveted-wooden-shield",
+      "term": "riveted wooden shield",
+      "title": "Riveted Wooden Shield",
+      "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "blue-white-wooden-shield",
+      "term": "blue-white wooden shield",
+      "title": "Blue-White Wooden Shield",
+      "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "rift-shield",
+      "term": "rift shield",
+      "title": "Rift Shield",
+      "description": "Small metal roundshield depicting a sinister rift.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "iron-roundshield",
+      "term": "iron roundshield",
+      "title": "Iron Roundshield",
+      "description": "An ordinary small roundshield made of metal. Heavier than a wooden shield, but boasts higher damage negation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "gilded-iron-shield",
+      "term": "gilded iron shield",
+      "title": "Gilded Iron Shield",
+      "description": "Small metal roundshield. Heavier than a wooden shield, but boasts higher damage negation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "ice-crest-shield",
+      "term": "ice crest shield",
+      "title": "Ice Crest Shield",
+      "description": "Small metal roundshield. Heavier than a wooden shield, but boasts higher damage negation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "smoldering-shield",
+      "term": "smoldering shield",
+      "title": "Smoldering Shield",
+      "description": "Small shield made upon Mt. Gelmir forged from uncooling lava.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "spiralhorn-shield",
+      "term": "spiralhorn shield",
+      "title": "Spiralhorn Shield",
+      "description": "Small shield of antlers arranged in an eddy-like pattern. If used to attack a foe, the shield's antlers inflict blood loss. Once given to a Tarnished warrior who cultivated close ties to the ancestral followers. Though the effect is only slight, it boosts immunity, robustness, and focus.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "coil-shield",
+      "term": "coil shield",
+      "title": "Coil Shield",
+      "description": "Armament designed for gladiatorial combat. Rises above its peers as a particularly showy specimen.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "kite-shield",
+      "term": "kite shield",
+      "title": "Kite Shield",
+      "description": "A standard medium-sized metal shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "marred-leather-shield",
+      "term": "marred leather shield",
+      "title": "Marred Leather Shield",
+      "description": "Leather shield of Stormveil soldiers. Much like the castle, it is marred by mottling and thorns.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "marred-wooden-shield",
+      "term": "marred wooden shield",
+      "title": "Marred Wooden Shield",
+      "description": "Wooden shield of Stormveil soldiers. Much like the castle, it is marred by mottling and thorns.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "banished-knight-s-shield",
+      "term": "banished knight's shield",
+      "title": "Banished Knight's Shield",
+      "description": "A tall medium-sized metal shield. Given to knights who, whether by misfortune or misdeed, were forced to abandon their homes.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-shield",
+      "term": "albinauric shield",
+      "title": "Albinauric Shield",
+      "description": "Tall oval shield made of metal carried by young Albinaurics. The ornamentation represents the primordial drop of dew from which they are said to have been created.\nBoasts exceptional magic damage negation. The Albinaurics' most formidable foes were sorcerers, after all.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "sun-realm-shield",
+      "term": "sun realm shield",
+      "title": "Sun Realm Shield",
+      "description": "Shield of honor depicting a city crowned by the sun. It has seen better days.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "silver-mirrorshield",
+      "term": "silver mirrorshield",
+      "title": "Silver Mirrorshield",
+      "description": "Shield of radiant silver, festooned with amber and carried by Loretta, Knight of the Haligtree.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "round-shield",
+      "term": "round shield",
+      "title": "Round Shield",
+      "description": "A wooden roundshield that has been reinforced with metal.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "scorpion-kite-shield",
+      "term": "scorpion kite shield",
+      "title": "Scorpion Kite Shield",
+      "description": "A standard medium-sized metal shield. Highly reputed for its solid build and reliability.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "twinbird-kite-shield",
+      "term": "twinbird kite shield",
+      "title": "Twinbird Kite Shield",
+      "description": "Shield featuring a vividly painted twinbird.\nThe twinbird is said to be the envoy of an outer god, and mother of the Deathbirds.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "blue-gold-kite-shield",
+      "term": "blue-gold kite shield",
+      "title": "Blue-Gold Kite Shield",
+      "description": "A standard medium-sized metal shield. Highly reputed for its solid build and reliability.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "brass-shield",
+      "term": "brass shield",
+      "title": "Brass Shield",
+      "description": "On the larger side for a medium-sized shield, the face has been covered in brass.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "great-turtle-shell",
+      "term": "great turtle shell",
+      "title": "Great Turtle Shell",
+      "description": "Shield fashioned from a great turtle shell. The natural curve helps it contend with foes' attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "shield-of-the-guilty",
+      "term": "shield of the guilty",
+      "title": "Shield of the Guilty",
+      "description": "Shield made to venerate a maiden whose eyes were crushed by Briars of Sin before being reborn in these lands.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "carian-knight-s-shield",
+      "term": "carian knight's shield",
+      "title": "Carian Knight's Shield",
+      "description": "A teardrop-shaped, medium-sized shield embedded with blue glintstones.\nCarried by knights who served the Carian royal family.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "large-leather-shield",
+      "term": "large leather shield",
+      "title": "Large Leather Shield",
+      "description": "A roundshield covered in leather. On the larger side for a medium-sized shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "horse-crest-wooden-shield",
+      "term": "horse crest wooden shield",
+      "title": "Horse Crest Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "candletree-wooden-shield",
+      "term": "candletree wooden shield",
+      "title": "Candletree Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "flame-crest-wooden-shield",
+      "term": "flame crest wooden shield",
+      "title": "Flame Crest Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle. Carried by soldiers of the village that is afflicted by frenzy.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "hawk-crest-wooden-shield",
+      "term": "hawk crest wooden shield",
+      "title": "Hawk Crest Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "beast-crest-heater-shield",
+      "term": "beast crest heater shield",
+      "title": "Beast Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "red-crest-heater-shield",
+      "term": "red crest heater shield",
+      "title": "Red Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "blue-crest-heater-shield",
+      "term": "blue crest heater shield",
+      "title": "Blue Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "eclipse-crest-heater-shield",
+      "term": "eclipse crest heater shield",
+      "title": "Eclipse Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "inverted-hawk-heater-shield",
+      "term": "inverted hawk heater shield",
+      "title": "Inverted Hawk Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "heater-shield",
+      "term": "heater shield",
+      "title": "Heater Shield",
+      "description": "A medium-sized metal shield, comparatively easy to handle.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "black-leather-shield",
+      "term": "black leather shield",
+      "title": "Black Leather Shield",
+      "description": "Roundshield covered in black leather. On the larger side for a medium-sized shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "dragon-towershield",
+      "term": "dragon towershield",
+      "title": "Dragon Towershield",
+      "description": "Tower shield engraved with a dragon, symbol of protection. Heavy even among greatshields, it possesses exceptional guarding ability.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "distinguished-greatshield",
+      "term": "distinguished greatshield",
+      "title": "Distinguished Greatshield",
+      "description": "Greatshield featuring sumptuous ornamentation used by the scions of great families.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "crucible-hornshield",
+      "term": "crucible hornshield",
+      "title": "Crucible Hornshield",
+      "description": "Greatshield of red-tinged gold carried by Crucible Knights. Features a great horn.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "dragonclaw-shield",
+      "term": "dragonclaw shield",
+      "title": "Dragonclaw Shield",
+      "description": "Greatshield said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "base"
+    },
+    {
+      "id": "briar-greatshield",
+      "term": "briar greatshield",
+      "title": "Briar Greatshield",
+      "description": "Greatshield from a foreign land, used by Elemer of the Briar. Attacks with this armament utilize the iron thorns that have been wound around its frame.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-greatshield",
+      "term": "erdtree greatshield",
+      "title": "Erdtree Greatshield",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "heavy-erdtree-greatshield",
+      "term": "heavy erdtree greatshield",
+      "title": "Heavy Erdtree Greatshield",
+      "description": "Shield used by Tree Sentinels.\nTreated with gold, featuring a delicate design.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "golden-beast-crest-shield",
+      "term": "golden beast crest shield",
+      "title": "Golden Beast Crest Shield",
+      "description": "Shield of dull gold with a beast engraved as its crest. Lighter than most greatshields, and subsequently easier to wield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "jellyfish-shield",
+      "term": "jellyfish shield",
+      "title": "Jellyfish Shield",
+      "description": "The head of a spirit jellyfish, commonly found floating above sacred ground throughout the Lands Between, wielded without modification as a shield.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "fingerprint-stone-shield",
+      "term": "fingerprint stone shield",
+      "title": "Fingerprint Stone Shield",
+      "description": "A great stone shield with an intricately carved fingerprint design. One of the heaviest of all greatshields. Part of the tomb of an ancient god, the Readerless Fingers relayed their message through these imprints, said to be the very seeds from which frenzy first sprouted.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "icon-shield",
+      "term": "icon shield",
+      "title": "Icon Shield",
+      "description": "Greatshield painted with a divine scene; the recipience of a blessed tear from the Erdtree. An item that looks back fondly on the age of plenty.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "one-eyed-shield",
+      "term": "one-eyed shield",
+      "title": "One-Eyed Shield",
+      "description": "Tricksome shield made from white stone depicting a malformed one-eyed god. The barrel of a firearm pokes through the open mouth.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "visage-shield",
+      "term": "visage shield",
+      "title": "Visage Shield",
+      "description": "Tricksome bronze shield depicting the face of a Fire Giant. Several tongues leap from its open mouth.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "spiked-palisade-shield",
+      "term": "spiked palisade shield",
+      "title": "Spiked Palisade Shield",
+      "description": "A large wooden shield covered with spikes. Though relatively light, it lacks in damage negation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "manor-towershield",
+      "term": "manor towershield",
+      "title": "Manor Towershield",
+      "description": "An iron greatshield large enough to cover the entire body. Depicts the Roundtable Hold, gathering place of champions.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "crossed-tree-towershield",
+      "term": "crossed-tree towershield",
+      "title": "Crossed-Tree Towershield",
+      "description": "An iron greatshield large enough to cover the entire body. Emblazoned with an old, interleaving tree.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "inverted-hawk-towershield",
+      "term": "inverted hawk towershield",
+      "title": "Inverted Hawk Towershield",
+      "description": "An iron greatshield large enough to cover the entire body. Features an inverted hawk crest.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "ant-s-skull-plate",
+      "term": "ant's skull plate",
+      "title": "Ant's Skull Plate",
+      "description": "Huge head of one of the giant ants which inhabit the two underground rivers, used without modification as a shield. Excels at repelling enemy attacks.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "redmane-greatshield",
+      "term": "redmane greatshield",
+      "title": "Redmane Greatshield",
+      "description": "Greatshield shaped like a fang, featuring the crest of red-maned lion. Carried by the Redmane Knights who fought alongside Radahn.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "eclipse-crest-greatshield",
+      "term": "eclipse crest greatshield",
+      "title": "Eclipse Crest Greatshield",
+      "description": "Metal greatshield painted with a sun in eclipse. Carried by the headless mausoleum knights.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "cuckoo-greatshield",
+      "term": "cuckoo greatshield",
+      "title": "Cuckoo Greatshield",
+      "description": "Metal greatshield painted with a peering cuckoo. Carried by the enchanted knights sworn to the academy.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "golden-greatshield",
+      "term": "golden greatshield",
+      "title": "Golden Greatshield",
+      "description": "Oval greatshield made of gold, carried by knights who protect the Royal Capital of Leyndell.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "gilded-greatshield",
+      "term": "gilded greatshield",
+      "title": "Gilded Greatshield",
+      "description": "Metal greatshield coated with gold. Carried by knights loyal to Godrick.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "haligtree-crest-greatshield",
+      "term": "haligtree crest greatshield",
+      "title": "Haligtree Crest Greatshield",
+      "description": "Metal greatshield depicting the Haligtree with unalloyed gold. Carried by knights who have vowed to serve Miquella's Haligtree. Possesses high holy damage negation. Yet now, with the Haligtree misshapen, this wondrous rendition is a fleeting fantasy.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "wooden-greatshield",
+      "term": "wooden greatshield",
+      "title": "Wooden Greatshield",
+      "description": "Wooden greatshield reinforced with a metal ornamentation.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "lordsworn-s-shield",
+      "term": "lordsworn's shield",
+      "title": "Lordsworn's Shield",
+      "description": "Wooden tower shield. Lightweight for a greatshield and easy to handle.\nCommonly used in the Shattering.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Shields",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-staff",
+      "term": "glintstone staff",
+      "title": "Glintstone Staff",
+      "description": "Staff with a glintstone embedded at the tip. A catalyst for casting sorceries.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "crystal-staff",
+      "term": "crystal staff",
+      "title": "Crystal Staff",
+      "description": "Staff fashioned from pure crystal; a deed impossible for a human. Enhances Crystalian sorceries.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "gelmir-glintstone-staff",
+      "term": "gelmir glintstone staff",
+      "title": "Gelmir Glintstone Staff",
+      "description": "Staff with a forked tip, embedded with red glintstones. Enhances lava sorceries.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "demi-human-queen-s-staff",
+      "term": "demi-human queen's staff",
+      "title": "Demi-Human Queen's Staff",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "carian-regal-scepter",
+      "term": "carian regal scepter",
+      "title": "Carian Regal Scepter",
+      "description": "Magic scepter of Rennala, Queen of the Full Moon. The glintstone is known as a Carian Blue, enhancing full moon sorceries.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "digger-s-staff",
+      "term": "digger's staff",
+      "title": "Digger's Staff",
+      "description": "Staff of a sorcerer-miner who extracts glintstone from crystal tunnels. The staff itself is a tool used to mine, and the ferrule is also embedded with a glintstone.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "astrologer-s-staff",
+      "term": "astrologer's staff",
+      "title": "Astrologer's Staff",
+      "description": "Staff of the astrologers. A glintstone is embedded in the tip, enabling it to be used a catalyst for sorceries.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "carian-glintblade-staff",
+      "term": "carian glintblade staff",
+      "title": "Carian Glintblade Staff",
+      "description": "Staff embedded with a blue glintstone. One of two types of Carian staff.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "prince-of-death-s-staff",
+      "term": "prince of death's staff",
+      "title": "Prince of Death's Staff",
+      "description": "Staff embedded with sullied amber, said to be a very part of the Prince of Death. Enhances death sorceries.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-staff",
+      "term": "albinauric staff",
+      "title": "Albinauric Staff",
+      "description": "Short staff with a blue glintstone embedded. Wielded by the Albinaurics of old.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "academy-glintstone-staff",
+      "term": "academy glintstone staff",
+      "title": "Academy Glintstone Staff",
+      "description": "Staff of the Academy of Raya Lucaria, embedded with a turquoise glintstone.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "carian-glintstone-staff",
+      "term": "carian glintstone staff",
+      "title": "Carian Glintstone Staff",
+      "description": "Staff embedded with a blue glintstone. One of two types of Carian staff.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "azur-s-glintstone-staff",
+      "term": "azur's glintstone staff",
+      "title": "Azur's Glintstone Staff",
+      "description": "Staff of the primeval glintstone sorcerer Azur. Only those who have glimpsed what lies beyond the wisdom of stone may wield it.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "lusat-s-glintstone-staff",
+      "term": "lusat's glintstone staff",
+      "title": "Lusat's Glintstone Staff",
+      "description": "Staff of the primeval glintstone sorcerer Lusat. Only those who have glimpsed what lies beyond the wisdom of stone may wield it.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "meteorite-staff",
+      "term": "meteorite staff",
+      "title": "Meteorite Staff",
+      "description": "Staff embedded with a dark purple glintstone, said to be the fragment of a meteorite. Boasts high sorcery scaling and boosts gravity sorceries as well.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "staff-of-the-guilty",
+      "term": "staff of the guilty",
+      "title": "Staff of the Guilty",
+      "description": "A heretical staff fashioned from a smoldering, withered sapling that turns the blood of sacrifices pierced by it into glintstone. Similar to hex magic.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "rotten-crystal-staff",
+      "term": "rotten crystal staff",
+      "title": "Rotten Crystal Staff",
+      "description": "Staff fashioned from pure crystal; a deed impossible for a human. It festers with scarlet rot.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "staff-of-loss",
+      "term": "staff of loss",
+      "title": "Staff of Loss",
+      "description": "Staff missing its glintstone. Wielded by sorcerers who believe that discovery comes through acts of asceticism.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "finger-seal",
+      "term": "finger seal",
+      "title": "Finger Seal",
+      "description": "A sacred seal bestowed by Finger Maiden which serves as a catalyst for casting sacred incantations.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "godslayer-s-seal",
+      "term": "godslayer's seal",
+      "title": "Godslayer's Seal",
+      "description": "Sacred seal of the Godskin Apostles, inlaid with obsidian.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "giant-s-seal",
+      "term": "giant's seal",
+      "title": "Giant's Seal",
+      "description": "Sacred seal depicting the one-eyed god of the Fire Giants, adorned with braids of red hair.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "gravel-stone-seal",
+      "term": "gravel stone seal",
+      "title": "Gravel Stone Seal",
+      "description": "Sacred seal made from Gravel Stone thought to be an ancient dragon scale. Enhances Dragon Cult incantations of the Royal Capital.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "clawmark-seal",
+      "term": "clawmark seal",
+      "title": "Clawmark Seal",
+      "description": "Sacred seal granted by Gurranq, the Beast Clergyman. A rare trinket which allows incantations to be scaled with strength.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Claws",
+      "source": "base"
+    },
+    {
+      "id": "golden-order-seal",
+      "term": "golden order seal",
+      "title": "Golden Order Seal",
+      "description": "A formless sacred seal depicting the ceremonial observation of Order. Enhances Golden Order Fundamentalist incantations.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-seal",
+      "term": "erdtree seal",
+      "title": "Erdtree Seal",
+      "description": "A formless sacred seal decorated with an Erdtree crest, once the focus of religion in the Lands Between.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "dragon-communion-seal",
+      "term": "dragon communion seal",
+      "title": "Dragon Communion Seal",
+      "description": "Formless drakeblood seal with a dragon communion crest. Enhances Dragon Communion incantations.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "frenzied-flame-seal",
+      "term": "frenzied flame seal",
+      "title": "Frenzied Flame Seal",
+      "description": "Formless sacred seal bestowed by the maiden of the Three Fingers. Enhances incantations of the frenzied flame.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Catalysts",
+      "source": "base"
+    },
+    {
+      "id": "shortbow",
+      "term": "shortbow",
+      "title": "Shortbow",
+      "description": "Small bow made to fire arrows over great distances. Other than its ability to fire off arrows in rapid succession, it is also well-suited for use on horseback.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Light Bows",
+      "source": "base"
+    },
+    {
+      "id": "misbegotten-shortbow",
+      "term": "misbegotten shortbow",
+      "title": "Misbegotten Shortbow",
+      "description": "Shortbow wielded by Winged Misbegotten. Fine fur clings to it.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Light Bows",
+      "source": "base"
+    },
+    {
+      "id": "red-branch-shortbow",
+      "term": "red branch shortbow",
+      "title": "Red Branch Shortbow",
+      "description": "Shortbow of polished red wood. Fashioned by a master craftsman and wielded by pages.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Light Bows",
+      "source": "base"
+    },
+    {
+      "id": "harp-bow",
+      "term": "harp bow",
+      "title": "Harp Bow",
+      "description": "Bow fashioned from a minstrel's harp. Sonorous tones still resound when firing arrows.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "composite-bow",
+      "term": "composite bow",
+      "title": "Composite Bow",
+      "description": "Bow composited from a mix of materials.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "longbow",
+      "term": "longbow",
+      "title": "Longbow",
+      "description": "Longbow made to fire arrows over great distances. Compared to a shortbow, arrows fired reach further and deal more damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Light Bows",
+      "source": "base"
+    },
+    {
+      "id": "albinauric-bow",
+      "term": "albinauric bow",
+      "title": "Albinauric Bow",
+      "description": "Longbow featuring delicate silverwork. Wielded by Albinauric wolfback archers.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "horn-bow",
+      "term": "horn bow",
+      "title": "Horn Bow",
+      "description": "Longbow made from animal horn. Wielded by the master hunters of the ancestral followers.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-bow",
+      "term": "erdtree bow",
+      "title": "Erdtree Bow",
+      "description": "Longbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Arrow.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "serpent-bow",
+      "term": "serpent bow",
+      "title": "Serpent Bow",
+      "description": "Malformed bow in the shape of a pair of poisonous snakes. Imbues arrows with poison through pagan magic, revealing its true worth when used with poison-infused arrows.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "pulley-bow",
+      "term": "pulley bow",
+      "title": "Pulley Bow",
+      "description": "Longbow which utilizes a series of pulleys and springs. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order fundamentalism.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "black-bow",
+      "term": "black bow",
+      "title": "Black Bow",
+      "description": "Longbow carved from black wood to resemble a blade. One of the most difficult bows to master.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "lion-greatbow",
+      "term": "lion greatbow",
+      "title": "Lion Greatbow",
+      "description": "Greatbow of black iron wielded by General Radahn. Decorated with a lion mane motif.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatbows",
+      "source": "base"
+    },
+    {
+      "id": "golem-greatbow",
+      "term": "golem greatbow",
+      "title": "Golem Greatbow",
+      "description": "Greatbow of black stone crafted by a civilization now gone to ruin. Weapon of the Guardian Golem.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatbows",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-greatbow",
+      "term": "erdtree greatbow",
+      "title": "Erdtree Greatbow",
+      "description": "Greatbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Great Arrow.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatbows",
+      "source": "base"
+    },
+    {
+      "id": "greatbow",
+      "term": "greatbow",
+      "title": "Greatbow",
+      "description": "Enormous greatbow larger than any man. Can not be drawn with any ordinary level of strength, but the force of its shots is extraordinary.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatbows",
+      "source": "base"
+    },
+    {
+      "id": "soldier-s-crossbow",
+      "term": "soldier's crossbow",
+      "title": "Soldier's Crossbow",
+      "description": "A crossbow of simple make, usable by anyone, but lacking in both power and accuracy.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "light-crossbow",
+      "term": "light crossbow",
+      "title": "Light Crossbow",
+      "description": "Ranged weapon made from a bow fixed to a stock. Deals good damage and is simple to use, but requires reloading after firing.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "heavy-crossbow",
+      "term": "heavy crossbow",
+      "title": "Heavy Crossbow",
+      "description": "Heavy crossbow with iron limbs, increasing damage dealt.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "pulley-crossbow",
+      "term": "pulley crossbow",
+      "title": "Pulley Crossbow",
+      "description": "Crossbow made with pulleys and power springs. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order fundamentalism.\nOne touch fires a volley of bolts. Be warned; large stores of bolts can be quickly spent.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "full-moon-crossbow",
+      "term": "full moon crossbow",
+      "title": "Full Moon Crossbow",
+      "description": "One-of-a-kind enchanted crossbow of exquisitely detailed craftsmanship. Made to celebrate the matrimonial union, and reconciliation, between the houses of the Erdtree and the Full Moon, Leyndell and Raya Lucaria. The two rings dance when reloading the weapon. Reveals true worth when used with holy-infused bolts.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "arbalest",
+      "term": "arbalest",
+      "title": "Arbalest",
+      "description": "Large crossbow made from composite materials. One of the largest of all bolt-firing devices.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "buckshot-crossbow",
+      "term": "buckshot crossbow",
+      "title": "Buckshot Crossbow",
+      "description": "A weapon that combines two crossbows to scatter bolts in a wide arc.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "crepus-s-black-key-crossbow",
+      "term": "crepus's black-key crossbow",
+      "title": "Crepus's Black-Key Crossbow",
+      "description": "Black crossbow featuring a long stock. Used for sniping, it has a very long range.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "hand-ballista",
+      "term": "hand ballista",
+      "title": "Hand Ballista",
+      "description": "An unconventional ballistic device modelled on a weapon used to besiege castles. Only capable of firing greatbolts.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "jar-cannon",
+      "term": "jar cannon",
+      "title": "Jar Cannon",
+      "description": "Jar cannon which uses explosives to fire greatbolts. Deals great damage but is slow to reload.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "arrow",
+      "term": "arrow",
+      "title": "Arrow",
+      "description": "Arrows used with small and long bows.\nUnremarkable in any way, shape or form.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "fire-arrow",
+      "term": "fire arrow",
+      "title": "Fire Arrow",
+      "description": "Arrow with the tip set alight.\nDeals fire damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "serpent-arrow",
+      "term": "serpent arrow",
+      "title": "Serpent Arrow",
+      "description": "Arrow carved to resemble a flying snake. Used in tandem with the Serpent Bow.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "bone-arrow-fletched",
+      "term": "bone arrow (fletched)",
+      "title": "Bone Arrow (Fletched)",
+      "description": "Thin, whittled animal bone with feather fletchings",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "st-trina-s-arrow",
+      "term": "st. trina's arrow",
+      "title": "St. Trina's Arrow",
+      "description": "Arrow carved to resemble a withered water lily. Afflicts targets with a powerful sleep effect.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "shattershard-arrow-fletched",
+      "term": "shattershard arrow (fletched)",
+      "title": "Shattershard Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones tipped with a shard of crystal. Creates a resonating noise at the point of impact.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rainbow-stone-arrow-fletched",
+      "term": "rainbow stone arrow (fletched)",
+      "title": "Rainbow Stone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones tipped with chips of Rainbow Stone. Colored light shines at the point of impact.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "golden-arrow",
+      "term": "golden arrow",
+      "title": "Golden Arrow",
+      "description": "Carved arrows made in tandem with the Erdtree Bow. Deals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "dwelling-arrow",
+      "term": "dwelling arrow",
+      "title": "Dwelling Arrow",
+      "description": "Arrow in which the spirits of small animals are thought to dwell. \nDeals magic damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bone-arrow",
+      "term": "bone arrow",
+      "title": "Bone Arrow",
+      "description": "Arrow whittled from thin animal bone",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "firebone-arrow-fletched",
+      "term": "firebone arrow (fletched)",
+      "title": "Firebone Arrow (Fletched)",
+      "description": "Fletched animal bone arrow set alight when shot",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "firebone-arrow",
+      "term": "firebone arrow",
+      "title": "Firebone Arrow",
+      "description": "Animal bone arrow set alight when shot",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "poisonbone-arrow-fletched",
+      "term": "poisonbone arrow (fletched)",
+      "title": "Poisonbone Arrow (Fletched)",
+      "description": "Fletched animal bone arrow with poison-daubed tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "poisonbone-arrow",
+      "term": "poisonbone arrow",
+      "title": "Poisonbone Arrow",
+      "description": "Animal bone arrow with poison-daubed tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "sleepbone-arrow-fletched",
+      "term": "sleepbone arrow (fletched)",
+      "title": "Sleepbone Arrow (Fletched)",
+      "description": "Fletched animal bone arrow with waterlily tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "sleepbone-arrow",
+      "term": "sleepbone arrow",
+      "title": "Sleepbone Arrow",
+      "description": "Animal bone arrow with waterlily tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "stormwing-bone-arrow",
+      "term": "stormwing bone arrow",
+      "title": "Stormwing Bone Arrow",
+      "description": "Bone arrow fletched with stormhawk feathers",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "lightningbone-arrow-fletched",
+      "term": "lightningbone arrow (fletched)",
+      "title": "Lightningbone Arrow (Fletched)",
+      "description": "Fletched animal bone arrow charged with lightning",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "lightningbone-arrow",
+      "term": "lightningbone arrow",
+      "title": "Lightningbone Arrow",
+      "description": "Animal bone arrow charged with lightning",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rainbow-stone-arrow",
+      "term": "rainbow stone arrow",
+      "title": "Rainbow Stone Arrow",
+      "description": "Animal bone arrow tipped with Rainbow Stone shard",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Bows",
+      "source": "base"
+    },
+    {
+      "id": "shattershard-arrow",
+      "term": "shattershard arrow",
+      "title": "Shattershard Arrow",
+      "description": "Animal bone arrow tipped with crystal shard",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "spiritflame-arrow",
+      "term": "spiritflame arrow",
+      "title": "Spiritflame Arrow",
+      "description": "Arrow set alight with ghostflame before firing. Deals magic damage while also afflicting foes with frost.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "storm-arrow",
+      "term": "storm arrow",
+      "title": "Storm Arrow",
+      "description": "Animal bone arrow, gust knocks enemies away",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "magicbone-arrow-fletched",
+      "term": "magicbone arrow (fletched)",
+      "title": "Magicbone Arrow (Fletched)",
+      "description": "Fletched bone arrow with glintstone tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "magicbone-arrow",
+      "term": "magicbone arrow",
+      "title": "Magicbone Arrow",
+      "description": "Animal bone arrow with glintstone tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "haligbone-arrow-fletched",
+      "term": "haligbone arrow (fletched)",
+      "title": "Haligbone Arrow (Fletched)",
+      "description": "Fletched bone arrow with gold tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "haligbone-arrow",
+      "term": "haligbone arrow",
+      "title": "Haligbone Arrow",
+      "description": "Animal bone arrow with gold tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bloodbone-arrow-fletched",
+      "term": "bloodbone arrow (fletched)",
+      "title": "Bloodbone Arrow (Fletched)",
+      "description": "Fletched bone arrow with blood tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bloodbone-arrow",
+      "term": "bloodbone arrow",
+      "title": "Bloodbone Arrow",
+      "description": "Animal bone arrow with blood tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "coldbone-arrow-fletched",
+      "term": "coldbone arrow (fletched)",
+      "title": "Coldbone Arrow (Fletched)",
+      "description": "Fletched bone arrow with frozen tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "coldbone-arrow",
+      "term": "coldbone arrow",
+      "title": "Coldbone Arrow",
+      "description": "Animal bone arrow with frozen tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rotbone-arrow-fletched",
+      "term": "rotbone arrow (fletched)",
+      "title": "Rotbone Arrow (Fletched)",
+      "description": "Fletched bone arrow with rot-coated tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rotbone-arrow",
+      "term": "rotbone arrow",
+      "title": "Rotbone Arrow",
+      "description": "Animal bone arrow with rot-coated tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "great-arrow",
+      "term": "great arrow",
+      "title": "Great Arrow",
+      "description": "A greatarrow as large as a spear for use with greatbows. Used by archers of monstrous strength employed by a lord's army.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "golem-s-great-arrow",
+      "term": "golem's great arrow",
+      "title": "Golem's Great Arrow",
+      "description": "Greatarrow of black stone crafted by a civilization now gone to ruin. Used by the Guardian Golem.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "golden-great-arrow",
+      "term": "golden great arrow",
+      "title": "Golden Great Arrow",
+      "description": "Carved greatarrows made together with the Erdtree Greatbow. Deals holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Greatbows",
+      "source": "base"
+    },
+    {
+      "id": "golem-s-magic-arrow",
+      "term": "golem's magic arrow",
+      "title": "Golem's Magic Arrow",
+      "description": "Greatarrow of black stone crafted by a civilization now gone to ruin. Imbued with its ancient magic.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "radahn-s-spear",
+      "term": "radahn's spear",
+      "title": "Radahn's Spear",
+      "description": "Greatarrows used by General Radahn during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "bone-great-arrow-fletched",
+      "term": "bone great arrow (fletched)",
+      "title": "Bone Great Arrow (Fletched)",
+      "description": "Thick, whittled bone arrow with feather fletchings",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bone-great-arrow",
+      "term": "bone great arrow",
+      "title": "Bone Great Arrow",
+      "description": "Thick, whittled animal bone arrow, large as a spear",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "bolt",
+      "term": "bolt",
+      "title": "Bolt",
+      "description": "Ammunition used for crossbows.\nA widespread, common type of bolt.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "lightning-bolt",
+      "term": "lightning bolt",
+      "title": "Lightning Bolt",
+      "description": "Bolt tipped with a shard of Gravel Stone. Deals powerful lightning damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-bolt",
+      "term": "perfumer's bolt",
+      "title": "Perfumer's Bolt",
+      "description": "Bolt created with perfumer techniques. Used by nobles' guards and the like.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "black-key-bolt",
+      "term": "black-key bolt",
+      "title": "Black-Key Bolt",
+      "description": "Bolts used in Crepus' Black-Key Crossbow, an assassin's tool of exquisite craftsmanship.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "burred-bolt",
+      "term": "burred bolt",
+      "title": "Burred Bolt",
+      "description": "Bolt covered in thorns. One of the most horrific weapons used in the Shattering. Afflicts target with blood loss.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "meteor-bolt",
+      "term": "meteor bolt",
+      "title": "Meteor Bolt",
+      "description": "Enchanted work of craft made in tandem with the Full Moon Crossbow. The tip is embedded with glintstone.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Crossbows",
+      "source": "base"
+    },
+    {
+      "id": "explosive-bolt",
+      "term": "explosive bolt",
+      "title": "Explosive Bolt",
+      "description": "Bolt tipped with a shard of Explosive Stone. Explodes on impact, dealing fire damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "golden-bolt",
+      "term": "golden bolt",
+      "title": "Golden Bolt",
+      "description": "Bolt blessed with an incantation of the Erdtree. Deals powerful holy damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "lordsworn-s-bolt",
+      "term": "lordsworn's bolt",
+      "title": "Lordsworn's Bolt",
+      "description": "Well-crafted bolt with an illustrious design, wielded by regulars of a lord's army.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bone-bolt",
+      "term": "bone bolt",
+      "title": "Bone Bolt",
+      "description": "Thin, whittled animal bone bolt",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "firebone-bolt",
+      "term": "firebone bolt",
+      "title": "Firebone Bolt",
+      "description": "Animal bone bolt set alight when shot",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "lightningbone-bolt",
+      "term": "lightningbone bolt",
+      "title": "Lightningbone Bolt",
+      "description": "Animal bone bolt with lightning-imbued tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "magicbone-bolt",
+      "term": "magicbone bolt",
+      "title": "Magicbone Bolt",
+      "description": "Animal bone bolt with glintstone tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "haligbone-bolt",
+      "term": "haligbone bolt",
+      "title": "Haligbone Bolt",
+      "description": "Animal bone bolt with gold tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "poisonbone-bolt",
+      "term": "poisonbone bolt",
+      "title": "Poisonbone Bolt",
+      "description": "Animal bone bolt with poison-coated tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bloodbone-bolt",
+      "term": "bloodbone bolt",
+      "title": "Bloodbone Bolt",
+      "description": "Animal bone bolt with blood tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "coldbone-bolt",
+      "term": "coldbone bolt",
+      "title": "Coldbone Bolt",
+      "description": "Animal bone bolt with frozen tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "rotbone-bolt",
+      "term": "rotbone bolt",
+      "title": "Rotbone Bolt",
+      "description": "Animal bone bolt with rot-coated tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "sleepbone-bolt",
+      "term": "sleepbone bolt",
+      "title": "Sleepbone Bolt",
+      "description": "Animal bone bolt with waterlily tincture tip",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "flaming-bolt",
+      "term": "flaming bolt",
+      "title": "Flaming Bolt",
+      "description": "Bolt with a fiercely burned tip. Deals powerful fire damage.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "ballista-bolt",
+      "term": "ballista bolt",
+      "title": "Ballista Bolt",
+      "description": "Greatbolt as large as a spear for use with Hand Ballista.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    },
+    {
+      "id": "lightning-greatbolt",
+      "term": "lightning greatbolt",
+      "title": "Lightning Greatbolt",
+      "description": "Greatbolt tipped with a clump of Gravel Stone shards.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "explosive-greatbolt",
+      "term": "explosive greatbolt",
+      "title": "Explosive Greatbolt",
+      "description": "Greatbolt tipped with a clump of Explosive Stone shards.",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Weapons",
+      "source": "base"
+    },
+    {
+      "id": "bone-ballista-bolt",
+      "term": "bone ballista bolt",
+      "title": "Bone Ballista Bolt",
+      "description": "Thick, whittled bone bolt, large as a spear",
+      "section": "Elden Ring",
+      "category": "Weapons",
+      "subcategory": "Spears",
+      "source": "base"
+    }
+  ]
+}

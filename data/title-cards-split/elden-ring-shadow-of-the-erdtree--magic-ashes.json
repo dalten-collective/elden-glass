@@ -1,0 +1,596 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Magic & Ashes",
+  "cards": [
+    {
+      "id": "ash-of-war-dryleaf-whirlwind",
+      "term": "ash of war: dryleaf whirlwind",
+      "title": "Ash of War: Dryleaf Whirlwind",
+      "description": "Grants affinities and skills to an armament",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-aspects-of-the-crucible-wings",
+      "term": "ash of war: aspects of the crucible: wings",
+      "title": "Ash of War: Aspects of the Crucible: Wings",
+      "description": "This Ash of War grants an armament the Sacred affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-spinning-gravity-thrust",
+      "term": "ash of war: spinning gravity thrust",
+      "title": "Ash of War: Spinning Gravity Thrust",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-palm-blast",
+      "term": "ash of war: palm blast",
+      "title": "Ash of War: Palm Blast",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-piercing-throw",
+      "term": "ash of war: piercing throw",
+      "title": "Ash of War: Piercing Throw",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-scattershot-throw",
+      "term": "ash of war: scattershot throw",
+      "title": "Ash of War: Scattershot Throw",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-wall-of-sparks",
+      "term": "ash of war: wall of sparks",
+      "title": "Ash of War: Wall of Sparks",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-rolling-sparks",
+      "term": "ash of war: rolling sparks",
+      "title": "Ash of War: Rolling Sparks",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-raging-beast",
+      "term": "ash of war: raging beast",
+      "title": "Ash of War: Raging Beast",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-savage-claws",
+      "term": "ash of war: savage claws",
+      "title": "Ash of War: Savage Claws",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-blind-spot",
+      "term": "ash of war: blind spot",
+      "title": "Ash of War: Blind Spot",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-swift-slash",
+      "term": "ash of war: swift slash",
+      "title": "Ash of War: Swift Slash",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-overhead-stance",
+      "term": "ash of war: overhead stance",
+      "title": "Ash of War: Overhead Stance",
+      "description": "This Ash of War grants an armament the Keen affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-wing-stance",
+      "term": "ash of war: wing stance",
+      "title": "Ash of War: Wing Stance",
+      "description": "This Ash of War grants an armament the Quality affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-blinkbolt",
+      "term": "ash of war: blinkbolt",
+      "title": "Ash of War: Blinkbolt",
+      "description": "This Ash of War grants an armament the Lightning affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-flame-skewer",
+      "term": "ash of war: flame skewer",
+      "title": "Ash of War: Flame Skewer",
+      "description": "This Ash of War grants an armament the Flame Art affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-savage-lion-s-claw",
+      "term": "ash of war: savage lion's claw",
+      "title": "Ash of War: Savage Lion's Claw",
+      "description": "This Ash of War grants an armament the Heavy affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-divine-beast-frost-stomp",
+      "term": "ash of war: divine beast frost stomp",
+      "title": "Ash of War: Divine Beast Frost Stomp",
+      "description": "This Ash of War grants an armament the Cold affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-flame-spear",
+      "term": "ash of war: flame spear",
+      "title": "Ash of War: Flame Spear",
+      "description": "This Ash of War grants an armament the Flame Art affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-carian-sovereignty",
+      "term": "ash of war: carian sovereignty",
+      "title": "Ash of War: Carian Sovereignty",
+      "description": "This Ash of War grants an armament the Magic affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-shriek-of-sorrow",
+      "term": "ash of war: shriek of sorrow",
+      "title": "Ash of War: Shriek of Sorrow",
+      "description": "This Ash of War grants an armament the Occult affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-ghostflame-call",
+      "term": "ash of war: ghostflame call",
+      "title": "Ash of War: Ghostflame Call",
+      "description": "This Ash of War grants an armament the Cold affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-the-poison-flower-blooms-twice",
+      "term": "ash of war: the poison flower blooms twice",
+      "title": "Ash of War: The Poison Flower Blooms Twice",
+      "description": "This Ash of War grants an armament the Poison affinity and the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-igon-s-drake-hunt",
+      "term": "ash of war: igon's drake hunt",
+      "title": "Ash of War: Igon's Drake Hunt",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "ash-of-war-shield-strike",
+      "term": "ash of war: shield strike",
+      "title": "Ash of War: Shield Strike",
+      "description": "This Ash of War grants no affinity to an armament, but imparts the following skill:",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Ashes of War",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-bairn",
+      "term": "horned bairn",
+      "title": "Horned Bairn",
+      "description": "Uses FP to summon vengeful spirits surrounding caster",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "call-of-tibia",
+      "term": "call of tibia",
+      "title": "Call of Tibia",
+      "description": "Uses FP to summon one lost in death",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "blades-of-stone",
+      "term": "blades of stone",
+      "title": "Blades of Stone",
+      "description": "Summons rock blades from the earth",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "impenetrable-thorns",
+      "term": "impenetrable thorns",
+      "title": "Impenetrable Thorns",
+      "description": "Summons the Scadutree's impenetrable thorns from the earth",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "furious-blade-of-ansbach",
+      "term": "furious blade of ansbach",
+      "title": "Furious Blade of Ansbach",
+      "description": "Cleaves through enemies with bloodflame blade summoned from side of the hand",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "aspects-of-the-crucible-bloom",
+      "term": "aspects of the crucible: bloom",
+      "title": "Aspects of the Crucible: Bloom",
+      "description": "Creates a miranda flower on chest to summon rain of light",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "rotten-butterflies",
+      "term": "rotten butterflies",
+      "title": "Rotten Butterflies",
+      "description": "Summons countless butterflies to scatter rot",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "midra-s-flame-of-frenzy",
+      "term": "midra's flame of frenzy",
+      "title": "Midra's Flame of Frenzy",
+      "description": "Summons Lord of Frenzied Flame's head to spew frenzied flame",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "watchful-spirit",
+      "term": "watchful spirit",
+      "title": "Watchful Spirit",
+      "description": "Summons a guardian spirit above the caster's head",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "spira",
+      "term": "spira",
+      "title": "Spira",
+      "description": "Summons a spiral of light that erupts at the enemy's feet",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-beast-tornado",
+      "term": "divine beast tornado",
+      "title": "Divine Beast Tornado",
+      "description": "Summons a storm that launches a tornado forward",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "igon-s-furled-finger",
+      "term": "igon's furled finger",
+      "title": "Igon's Furled Finger",
+      "description": "Summons Drake Warrior Igon from his sign",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "about-the-revered-spirit-ash-blessing",
+      "term": "about the revered spirit ash blessing",
+      "title": "About the Revered Spirit Ash Blessing",
+      "description": "Information about the Revered Spirit Ash Blessing\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "revered-spirit-ash",
+      "term": "revered spirit ash",
+      "title": "Revered Spirit Ash",
+      "description": "Bolsters Revered Spirit Ash Blessing",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "curseblade-meera",
+      "term": "curseblade meera",
+      "title": "Curseblade Meera",
+      "description": "Summons spirit of Curseblade Meera",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "bloodfiend-hexer-s-ashes",
+      "term": "bloodfiend hexer's ashes",
+      "title": "Bloodfiend Hexer's Ashes",
+      "description": "Summons bloodfiend hexer spirit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "gravebird-ashes",
+      "term": "gravebird ashes",
+      "title": "Gravebird Ashes",
+      "description": "Summons Gravebird spirit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-hilde",
+      "term": "fire knight hilde",
+      "title": "Fire Knight Hilde",
+      "description": "Summons spirit of Fire Knight Hilde",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "spider-scorpion-ashes",
+      "term": "spider scorpion ashes",
+      "title": "Spider Scorpion Ashes",
+      "description": "Summons spider scorpion spirit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "inquisitor-ashes",
+      "term": "inquisitor ashes",
+      "title": "Inquisitor Ashes",
+      "description": "Summons two inquisitor spirits",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "demi-human-swordsman-yosh",
+      "term": "demi-human swordsman yosh",
+      "title": "Demi-Human Swordsman Yosh",
+      "description": "Summons spirit of Demi-Human Swordsman Yosh",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-soldier-ashes",
+      "term": "messmer soldier ashes",
+      "title": "Messmer Soldier Ashes",
+      "description": "Summons two Messmer soldier spirits",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "black-knight-commander-andreas",
+      "term": "black knight commander andreas",
+      "title": "Black Knight Commander Andreas",
+      "description": "Summons spirit of Black Knight Commander Andreas",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "black-knight-captain-huw",
+      "term": "black knight captain huw",
+      "title": "Black Knight Captain Huw",
+      "description": "Summons spirit of Black Knight Captain Huw",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "bigmouth-imp-ashes",
+      "term": "bigmouth imp ashes",
+      "title": "Bigmouth Imp Ashes",
+      "description": "Summons bigmouth imp spirit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "man-fly-ashes",
+      "term": "man-fly ashes",
+      "title": "Man-Fly Ashes",
+      "description": "Summons three man-fly spirits",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "taylew-the-golem-smith",
+      "term": "taylew the golem smith",
+      "title": "Taylew the Golem Smith",
+      "description": "Summons spirit of Taylew the Golem Smith",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-bird-warrior-ornis",
+      "term": "divine bird warrior ornis",
+      "title": "Divine Bird Warrior Ornis",
+      "description": "Summons spirit of Divine Bird Warrior Ornis",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "horned-warrior-ashes",
+      "term": "horned warrior ashes",
+      "title": "Horned Warrior Ashes",
+      "description": "Summons horned warrior spirit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-dragon-florissax",
+      "term": "ancient dragon florissax",
+      "title": "Ancient Dragon Florissax",
+      "description": "Summons spirit of Ancient Dragon Florissax",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "fingercreeper-ashes",
+      "term": "fingercreeper ashes",
+      "title": "Fingercreeper Ashes",
+      "description": "Summons Fingercreeper spirit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-knight-queelign",
+      "term": "fire knight queelign",
+      "title": "Fire Knight Queelign",
+      "description": "Summons spirit of Fire Knight Queelign",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "swordhand-of-night-jol-n",
+      "term": "swordhand of night jolán",
+      "title": "Swordhand of Night Jolán",
+      "description": "Summons spirit of Swordhand of Night Jolán",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    },
+    {
+      "id": "jol-n-and-anna",
+      "term": "jolán and anna",
+      "title": "Jolán and Anna",
+      "description": "Summons spirits of Jolán and Anna",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Magic & Ashes",
+      "subcategory": "Spirit Ashes",
+      "source": "dlc"
+    }
+  ]
+}

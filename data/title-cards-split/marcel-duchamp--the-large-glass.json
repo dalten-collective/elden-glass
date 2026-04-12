@@ -1,0 +1,693 @@
+{
+  "section": "Marcel Duchamp",
+  "category": "The Large Glass",
+  "cards": [
+    {
+      "id": "18a0fca71f6f2b3f",
+      "term": "chariot",
+      "scope": "global",
+      "title": "Chariot/Sleigh",
+      "description": "Component 1 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.147Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "44f5ca3bcd8f401d",
+      "term": "sleigh",
+      "scope": "global",
+      "title": "Chariot/Sleigh",
+      "description": "Component 1 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "92f064b5a4d48911",
+      "term": "piston",
+      "scope": "global",
+      "title": "Piston",
+      "description": "Component 1b of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "1c929860af35f468",
+      "term": "tree-door",
+      "scope": "global",
+      "title": "Tree-door or basement",
+      "description": "Component 1c of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "d4515b57d9d7a76a",
+      "term": "basement",
+      "scope": "global",
+      "title": "Tree-door or basement",
+      "description": "Component 1c of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "9193b09f29e35670",
+      "term": "readymades",
+      "scope": "global",
+      "title": "Readymades",
+      "description": "Component 1d of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "a2686d933c6a7eac",
+      "term": "revolution of the bottle of benedictine",
+      "scope": "global",
+      "title": "Revolution of the bottle of Benedictine",
+      "description": "Component 1e of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "86ad16ba9579a76e",
+      "term": "bottle of benedictine",
+      "scope": "global",
+      "title": "Revolution of the bottle of Benedictine",
+      "description": "Component 1e of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "95197928a23f11e7",
+      "term": "sandow",
+      "scope": "global",
+      "title": "Sandow",
+      "description": "Component 1f of The Large Glass - Part of Chariot",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.149Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "f26b610ef3ed049a",
+      "term": "nine malic moulds",
+      "scope": "global",
+      "title": "Nine Malic Moulds/Cemetery of Uniforms and Liveries",
+      "description": "Component 2 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T14:21:59.452Z",
+      "category": "The Large Glass",
+      "subcategory": "Components",
+      "image": "https://images.nortonsimon.org/iipsrv/iipsrv.fcgi?QLT=100&IIIF=P196338.jpf/full/!668,1002/0/default.jpg",
+      "links": [
+        {
+          "label": "View at Norton Simon Museum",
+          "url": "https://www.nortonsimon.org/art/detail/P.1963.38"
+        }
+      ]
+    },
+    {
+      "id": "1d34b748b0eb8e14",
+      "term": "capillary tubes",
+      "scope": "global",
+      "title": "Capillary Tubes",
+      "description": "Component 3 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T15:36:31.117Z",
+      "category": "The Large Glass",
+      "subcategory": "Components",
+      "image": "https://uploads7.wikiart.org/images/marcel-duchamp/network-of-stoppages-1914.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "Network of Stoppages - MoMA",
+          "url": "https://www.moma.org/collection/works/79600"
+        },
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/network-of-stoppages-1914"
+        }
+      ]
+    },
+    {
+      "id": "fb311be6736a88f5",
+      "term": "chocolate grinder",
+      "scope": "global",
+      "title": "Chocolate Grinder",
+      "description": "Component 4 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T14:21:10.369Z",
+      "category": "The Large Glass",
+      "subcategory": "Components",
+      "image": "https://uploads1.wikiart.org/images/marcel-duchamp/chocolate-grinder-1914-1.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/chocolate-grinder-1914-1"
+        }
+      ]
+    },
+    {
+      "id": "90c4f4f9736bd278",
+      "term": "louis xv chassis",
+      "scope": "global",
+      "title": "Louis XV chassis",
+      "description": "Component 4a of The Large Glass - Part of Chocolate Grinder",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "46bd3956a8137115",
+      "term": "rollers",
+      "scope": "global",
+      "title": "Rollers",
+      "description": "Component 4b of The Large Glass - Part of Chocolate Grinder",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "f8cf2e956fc50504",
+      "term": "necktie",
+      "scope": "global",
+      "title": "Necktie",
+      "description": "Component 4c of The Large Glass - Part of Chocolate Grinder",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "9b2be44f5942ee9e",
+      "term": "bayonet",
+      "scope": "global",
+      "title": "Bayonet",
+      "description": "Component 4d of The Large Glass - Part of Chocolate Grinder",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "b81e60bb900085af",
+      "term": "sieves",
+      "scope": "global",
+      "title": "Sieves",
+      "description": "Component 5 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "6d34aaa0f3356318",
+      "term": "parasol",
+      "scope": "global",
+      "title": "Sieves (Parasol)",
+      "description": "Component 5 of The Large Glass - Part of Sieves",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "58682617b3272b61",
+      "term": "the bride",
+      "scope": "global",
+      "title": "The Bride/Pendu femelle",
+      "description": "Component 6 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T15:39:57.065Z",
+      "category": "The Large Glass",
+      "subcategory": "Components",
+      "image": "https://uploads2.wikiart.org/images/marcel-duchamp/bride-1912.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/bride-1912"
+        },
+        {
+          "label": "Philadelphia Museum of Art",
+          "url": "https://www.philamuseum.org/collection/object/51474"
+        }
+      ]
+    },
+    {
+      "id": "4b5ddd46a88cafae",
+      "term": "suspension ring",
+      "scope": "global",
+      "title": "Suspension ring",
+      "description": "Component 6a of The Large Glass - Part of The Bride",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "cdb7fb7286ae9c53",
+      "term": "ventilator pivot",
+      "scope": "global",
+      "title": "Ventilator pivot",
+      "description": "Component 6b of The Large Glass - Part of The Bride",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "749ff595f07651ca",
+      "term": "iron",
+      "scope": "global",
+      "title": "Iron",
+      "description": "Component 6c of The Large Glass - Part of The Bride",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "c68a522fb521f16e",
+      "term": "wasp",
+      "scope": "global",
+      "title": "Wasp",
+      "description": "Component 6d of The Large Glass - Part of The Bride",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "78b518ad5c99405a",
+      "term": "sex cylinder",
+      "scope": "global",
+      "title": "Sex cylinder",
+      "description": "Component 7 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "62efa9ddb968b50b",
+      "term": "desire gears",
+      "scope": "global",
+      "title": "Desire gears",
+      "description": "Component 8 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "f64ede7301b1bb97",
+      "term": "draught piston",
+      "scope": "global",
+      "title": "Draught Piston",
+      "description": "Component 9 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "3d43f309a5b3f117",
+      "term": "butterfly pump",
+      "scope": "global",
+      "title": "Region of Butterfly Pump",
+      "description": "Component 10 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "8790aa0652ca5d5c",
+      "term": "toboggan",
+      "scope": "global",
+      "title": "Toboggan or Plastic/Slopes of flow",
+      "description": "Component 11 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "99428bfa80f59762",
+      "term": "plastic",
+      "scope": "global",
+      "title": "Toboggan or Plastic/Slopes of flow",
+      "description": "Component 11 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "b61585755731854a",
+      "term": "slopes of flow",
+      "scope": "global",
+      "title": "Toboggan or Plastic/Slopes of flow",
+      "description": "Component 11 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "f85fd630587e8d18",
+      "term": "splashes",
+      "scope": "global",
+      "title": "Cradle or Splashes",
+      "description": "Component 12 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "1423741689e36eb1",
+      "term": "oculist witnesses",
+      "scope": "global",
+      "title": "Oculist Witnesses",
+      "description": "Component 13 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "d5ac2afbcae17fe0",
+      "term": "vanishing point of perspective",
+      "scope": "global",
+      "title": "Vanishing point of perspective",
+      "description": "Component 13a of The Large Glass - Part of Oculist Witnesses",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "f6cc369a69d88691",
+      "term": "wilson-lincoln",
+      "scope": "global",
+      "title": "Region of Wilson-Lincoln",
+      "description": "Component 13b of The Large Glass - Part of Oculist Witnesses",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "215edca407e5984c",
+      "term": "boxing match",
+      "scope": "global",
+      "title": "Boxing Match",
+      "description": "Component 14 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "1dd07d37bfde897b",
+      "term": "tender of gravity",
+      "scope": "global",
+      "title": "Tender of Gravity",
+      "description": "Component 16 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "d66ecdc06d6b47a9",
+      "term": "nine shots",
+      "scope": "global",
+      "title": "Nine Shots",
+      "description": "Component 17 of The Large Glass",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "77d51f43af2a0475",
+      "term": "rod",
+      "scope": "global",
+      "title": "Rod",
+      "description": "Component 18a of The Large Glass - Part of Handler of Gravity",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "de5cd8548537e591",
+      "term": "weight",
+      "scope": "global",
+      "title": "Weight",
+      "description": "Component 18b of The Large Glass - Part of Handler of Gravity",
+      "section": "Marcel Duchamp",
+      "createdAt": "2025-11-29T01:44:49.521Z",
+      "updatedAt": "2025-11-29T06:51:31.150Z",
+      "category": "The Large Glass",
+      "subcategory": "Components"
+    },
+    {
+      "id": "spring-necktie-split-card",
+      "term": "spring necktie",
+      "scope": "global",
+      "title": "Spring / Necktie",
+      "description": "The circular necktie from Duchamp's Chocolate Grinder connects to his 1911 painting 'Young Man and Girl in Spring.' The necktie's circular form appears in both works, linking the mechanical bachelor apparatus to the pastoral romance - an early cipher in Duchamp's systematic exploration of desire, mechanics, and the bride-bachelor relationship.",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Components",
+      "isSplit": true,
+      "images": [
+        "http://www.toutfait.com/images/articles/godwin/image001.jpg",
+        "https://iiif.duchamparchives.org/image/iiif/2/1950-134-69-pma/square/!240,240/0/default.jpg"
+      ],
+      "links": [
+        {
+          "label": "Spring, 1911 - Toutfait Analysis",
+          "url": "https://www.toutfait.com/marcel-duchamp-spring-1911-where-it-all-begins/"
+        },
+        {
+          "label": "Chocolate Grinder (No. 1) - Duchamp Archives",
+          "url": "https://www.duchamparchives.org/pma/object/51518/"
+        }
+      ],
+      "createdAt": "2025-11-29T08:00:00.000Z",
+      "updatedAt": "2025-11-29T08:48:52.173Z",
+      "connections": [
+        {
+          "cardId": "omen-twins-split-card",
+          "label": ""
+        },
+        {
+          "cardId": "8b1a6b49a9fe78f7",
+          "label": ""
+        },
+        {
+          "cardId": "25fd70e2d7c824ca",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "4823387740dbe06c",
+      "term": "the bride",
+      "scope": "global",
+      "title": "The Bride (Mariée)",
+      "description": "1912",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads2.wikiart.org/images/marcel-duchamp/bride-1912.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/bride-1912"
+        }
+      ],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "cf873756e51b2eb7",
+      "term": "passage from virgin to bride",
+      "scope": "global",
+      "title": "The Passage from Virgin to Bride",
+      "description": "July-August 1912, MoMA New York",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads8.wikiart.org/images/marcel-duchamp/transition-of-virgin-into-a-bride-1912.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/transition-of-virgin-into-a-bride-1912"
+        }
+      ],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "a843a3900f36eb4f",
+      "term": "virgin no. 1",
+      "scope": "global",
+      "title": "Virgin (No. 1)",
+      "description": "July 1912, Philadelphia Museum of Art",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads7.wikiart.org/images/marcel-duchamp/virgin-no-1-1912.jpg!Large.jpg",
+      "links": [],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "f13d69a4abf546c3",
+      "term": "virgin no. 2",
+      "scope": "global",
+      "title": "Virgin (No. 2)",
+      "description": "July 1912, Philadelphia Museum of Art",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads0.wikiart.org/images/marcel-duchamp/virgin-no-2-1912.jpg!Large.jpg",
+      "links": [],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "27541b727718d549",
+      "term": "chocolate grinder no. 2",
+      "scope": "global",
+      "title": "Chocolate Grinder (No. 2)",
+      "description": "1914",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads1.wikiart.org/images/marcel-duchamp/chocolate-grinder-no-2-1914.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/chocolate-grinder-no-2-1914"
+        }
+      ],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "9735a1127ea8d36e",
+      "term": "king and queen surrounded by swift nudes",
+      "scope": "global",
+      "title": "King and Queen Surrounded by Swift Nudes",
+      "description": "1912",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads4.wikiart.org/images/marcel-duchamp/king-and-queen-surrounded-by-swift-nudes-1912.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/king-and-queen-surrounded-by-swift-nudes-1912"
+        }
+      ],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "e66db687a968fd8a",
+      "term": "nude descending a staircase",
+      "scope": "global",
+      "title": "Nude Descending a Staircase, No. 2",
+      "description": "1912, Philadelphia Museum of Art",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads7.wikiart.org/images/marcel-duchamp/nude-descending-a-staircase-no-2-1912.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/nude-descending-a-staircase-no-2-1912"
+        }
+      ],
+      "createdAt": "2025-11-29T14:16:29.345Z",
+      "updatedAt": "2025-11-29T14:16:29.345Z"
+    },
+    {
+      "id": "9adc633bec91768b",
+      "term": "chocolate grinder no. 1",
+      "scope": "global",
+      "title": "Chocolate Grinder (No. 1)",
+      "description": "1913, oil and pencil on canvas",
+      "section": "Marcel Duchamp",
+      "category": "The Large Glass",
+      "subcategory": "Preparatory Works for The Large Glass",
+      "image": "https://uploads5.wikiart.org/images/marcel-duchamp/chocolate-grinder-no-1-1913.jpg!Large.jpg",
+      "links": [
+        {
+          "label": "View on WikiArt",
+          "url": "https://www.wikiart.org/en/marcel-duchamp/chocolate-grinder-no-1-1913"
+        }
+      ],
+      "createdAt": "2025-11-29T15:39:57.065Z",
+      "updatedAt": "2025-11-29T15:39:57.065Z"
+    }
+  ]
+}

@@ -1,0 +1,1566 @@
+{
+  "section": "Elden Ring",
+  "category": "Equipment",
+  "cards": [
+    {
+      "id": "petition-for-help",
+      "term": "petition for help",
+      "title": "Petition for Help",
+      "description": "Summons Stalker to face invading Broken Finger",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "broken-finger-stalker-contract",
+      "term": "broken finger stalker contract",
+      "title": "Broken Finger Stalker Contract",
+      "description": "Be summoned to worlds invaded by Broken Fingers",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crimson-amber-medallion",
+      "term": "crimson amber medallion",
+      "title": "Crimson Amber Medallion",
+      "description": "Raises maximum HP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crimson-amber-medallion-1",
+      "term": "crimson amber medallion +1",
+      "title": "Crimson Amber Medallion +1",
+      "description": "Greatly raises maximum HP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crimson-amber-medallion-2",
+      "term": "crimson amber medallion +2",
+      "title": "Crimson Amber Medallion +2",
+      "description": "Vastly raises maximum HP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-amber-medallion",
+      "term": "cerulean amber medallion",
+      "title": "Cerulean Amber Medallion",
+      "description": "Raises maximum FP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-amber-medallion-1",
+      "term": "cerulean amber medallion +1",
+      "title": "Cerulean Amber Medallion +1",
+      "description": "Greatly raises maximum FP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-amber-medallion-2",
+      "term": "cerulean amber medallion +2",
+      "title": "Cerulean Amber Medallion +2",
+      "description": "Vastly raises maximum FP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "viridian-amber-medallion",
+      "term": "viridian amber medallion",
+      "title": "Viridian Amber Medallion",
+      "description": "Raises maximum stamina",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "viridian-amber-medallion-1",
+      "term": "viridian amber medallion +1",
+      "title": "Viridian Amber Medallion +1",
+      "description": "Greatly raises maximum stamina",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "viridian-amber-medallion-2",
+      "term": "viridian amber medallion +2",
+      "title": "Viridian Amber Medallion +2",
+      "description": "Vastly raises maximum stamina",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "arsenal-charm",
+      "term": "arsenal charm",
+      "title": "Arsenal Charm",
+      "description": "Raises maximum equipment load",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "arsenal-charm-1",
+      "term": "arsenal charm +1",
+      "title": "Arsenal Charm +1",
+      "description": "Greatly raises maximum equip load",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "great-jar-s-arsenal",
+      "term": "great-jar's arsenal",
+      "title": "Great-Jar's Arsenal",
+      "description": "Vastly raises maximum equip load",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-s-favor",
+      "term": "erdtree's favor",
+      "title": "Erdtree's Favor",
+      "description": "Raises maximum HP, stamina and equip load",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-s-favor-1",
+      "term": "erdtree's favor +1",
+      "title": "Erdtree's Favor +1",
+      "description": "A talisman depicting a special blessing of the Erdtree.\nRaises maximum HP, stamina, and equip load.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "erdtree-s-favor-2",
+      "term": "erdtree's favor +2",
+      "title": "Erdtree's Favor +2",
+      "description": "A legendary talisman depicting a special blessing of the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "radagon-s-scarseal",
+      "term": "radagon's scarseal",
+      "title": "Radagon's Scarseal",
+      "description": "Raises attributes, but also increases damage taken",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "radagon-s-soreseal",
+      "term": "radagon's soreseal",
+      "title": "Radagon's Soreseal",
+      "description": "Greatly raises attributes, but also increases damage taken",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "starscourge-heirloom",
+      "term": "starscourge heirloom",
+      "title": "Starscourge Heirloom",
+      "description": "Raises strength",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "prosthesis-wearer-heirloom",
+      "term": "prosthesis-wearer heirloom",
+      "title": "Prosthesis-Wearer Heirloom",
+      "description": "Raises dexterity",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "stargazer-heirloom",
+      "term": "stargazer heirloom",
+      "title": "Stargazer Heirloom",
+      "description": "Raises intelligence",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "two-fingers-heirloom",
+      "term": "two fingers heirloom",
+      "title": "Two Fingers Heirloom",
+      "description": "Raises faith",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "silver-scarab",
+      "term": "silver scarab",
+      "title": "Silver Scarab",
+      "description": "Raises item discovery",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "gold-scarab",
+      "term": "gold scarab",
+      "title": "Gold Scarab",
+      "description": "Increases runes obtained from defeated enemies",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "moon-of-nokstella",
+      "term": "moon of nokstella",
+      "title": "Moon of Nokstella",
+      "description": "Increases memory slots",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "green-turtle-talisman",
+      "term": "green turtle talisman",
+      "title": "Green Turtle Talisman",
+      "description": "Raises stamina recovery speed",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "stalwart-horn-charm",
+      "term": "stalwart horn charm",
+      "title": "Stalwart Horn Charm",
+      "description": "Raises robustness",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "stalwart-horn-charm-1",
+      "term": "stalwart horn charm +1",
+      "title": "Stalwart Horn Charm +1",
+      "description": "Greatly raises robustness",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "immunizing-horn-charm",
+      "term": "immunizing horn charm",
+      "title": "Immunizing Horn Charm",
+      "description": "Raises immunity",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "immunizing-horn-charm-1",
+      "term": "immunizing horn charm +1",
+      "title": "Immunizing Horn Charm +1",
+      "description": "Greatly raises immunity",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "clarifying-horn-charm",
+      "term": "clarifying horn charm",
+      "title": "Clarifying Horn Charm",
+      "description": "Raises focus",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "clarifying-horn-charm-1",
+      "term": "clarifying horn charm +1",
+      "title": "Clarifying Horn Charm +1",
+      "description": "Greatly raises focus",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "prince-of-death-s-pustule",
+      "term": "prince of death's pustule",
+      "title": "Prince of Death's Pustule",
+      "description": "Raises vitality",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "prince-of-death-s-cyst",
+      "term": "prince of death's cyst",
+      "title": "Prince of Death's Cyst",
+      "description": "Greatly raises vitality",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "mottled-necklace",
+      "term": "mottled necklace",
+      "title": "Mottled Necklace",
+      "description": "Raises robustness, immunity, and focus",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "mottled-necklace-1",
+      "term": "mottled necklace +1",
+      "title": "Mottled Necklace +1",
+      "description": "Greatly raises robustness, immunity, and focus",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "bull-goat-s-talisman",
+      "term": "bull-goat's talisman",
+      "title": "Bull-Goat's Talisman",
+      "description": "Raises poise",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "marika-s-scarseal",
+      "term": "marika's scarseal",
+      "title": "Marika's Scarseal",
+      "description": "An eye engraved with an Elden Rune.\nSaid to be the seal of Queen Marika.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "marika-s-soreseal",
+      "term": "marika's soreseal",
+      "title": "Marika's Soreseal",
+      "description": "This legendary talisman is an eye engraved with an Elden Rune, said to be the seal of Queen Marika.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "warrior-jar-shard",
+      "term": "warrior jar shard",
+      "title": "Warrior Jar Shard",
+      "description": "Boosts the attack power of skills",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "shard-of-alexander",
+      "term": "shard of alexander",
+      "title": "Shard of Alexander",
+      "description": "Greatly boosts the attack power of skills",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "millicent-s-prosthesis",
+      "term": "millicent's prosthesis",
+      "title": "Millicent's Prosthesis",
+      "description": "Boosts dexterity, raises attack power with successive attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "magic-scorpion-charm",
+      "term": "magic scorpion charm",
+      "title": "Magic Scorpion Charm",
+      "description": "Raises magic attack, but lowers damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "lightning-scorpion-charm",
+      "term": "lightning scorpion charm",
+      "title": "Lightning Scorpion Charm",
+      "description": "Raises lightning attack, but lowers damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "fire-scorpion-charm",
+      "term": "fire scorpion charm",
+      "title": "Fire Scorpion Charm",
+      "description": "Raises fire attack, but lowers damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "sacred-scorpion-charm",
+      "term": "sacred scorpion charm",
+      "title": "Sacred Scorpion Charm",
+      "description": "Raises holy attack, but lowers damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "red-feathered-branchsword",
+      "term": "red-feathered branchsword",
+      "title": "Red-Feathered Branchsword",
+      "description": "Raises attack power when HP is low",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "ritual-sword-talisman",
+      "term": "ritual sword talisman",
+      "title": "Ritual Sword Talisman",
+      "description": "Raises attack power when HP is at maximum",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "spear-talisman",
+      "term": "spear talisman",
+      "title": "Spear Talisman",
+      "description": "Enhances counterattacks unique to thrusting weapons",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "hammer-talisman",
+      "term": "hammer talisman",
+      "title": "Hammer Talisman",
+      "description": "Enhances stamina-reducing attacks against blockers",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "winged-sword-insignia",
+      "term": "winged sword insignia",
+      "title": "Winged Sword Insignia",
+      "description": "Raises attack power with successive attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "rotten-winged-sword-insignia",
+      "term": "rotten winged sword insignia",
+      "title": "Rotten Winged Sword Insignia",
+      "description": "Greatly raises attack power with successive attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "dagger-talisman",
+      "term": "dagger talisman",
+      "title": "Dagger Talisman",
+      "description": "Enhances critical hits",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "arrow-s-reach-talisman",
+      "term": "arrow's reach talisman",
+      "title": "Arrow's Reach Talisman",
+      "description": "Increases bow effective range",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "blue-dancer-charm",
+      "term": "blue dancer charm",
+      "title": "Blue Dancer Charm",
+      "description": "Raises attack power with lower equipment load",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "twinblade-talisman",
+      "term": "twinblade talisman",
+      "title": "Twinblade Talisman",
+      "description": "Enhances final hit of chain attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "axe-talisman",
+      "term": "axe talisman",
+      "title": "Axe Talisman",
+      "description": "Enhances charge attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "lance-talisman",
+      "term": "lance talisman",
+      "title": "Lance Talisman",
+      "description": "Enhances attacks on horseback",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "arrow-s-sting-talisman",
+      "term": "arrow's sting talisman",
+      "title": "Arrow's Sting Talisman",
+      "description": "Raises attack power of arrows and bolts",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "lord-of-blood-s-exultation",
+      "term": "lord of blood's exultation",
+      "title": "Lord of Blood's Exultation",
+      "description": "Blood loss in vicinity increases attack power",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "kindred-of-rot-s-exultation",
+      "term": "kindred of rot's exultation",
+      "title": "Kindred of Rot's Exultation",
+      "description": "Poisoning or rot in vicinity increases attack power",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "claw-talisman",
+      "term": "claw talisman",
+      "title": "Claw Talisman",
+      "description": "Enhances jump attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "roar-medallion",
+      "term": "roar medallion",
+      "title": "Roar Medallion",
+      "description": "Enhances roars and breath attacks",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "curved-sword-talisman",
+      "term": "curved sword talisman",
+      "title": "Curved Sword Talisman",
+      "description": "Enhances guard counters",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "companion-jar",
+      "term": "companion jar",
+      "title": "Companion Jar",
+      "description": "Raises potency of throwing pots",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "perfumer-s-talisman",
+      "term": "perfumer's talisman",
+      "title": "Perfumer's Talisman",
+      "description": "Raises potency of arts employing perfume",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "graven-school-talisman",
+      "term": "graven-school talisman",
+      "title": "Graven-School Talisman",
+      "description": "Raises potency of sorceries",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "graven-mass-talisman",
+      "term": "graven-mass talisman",
+      "title": "Graven-Mass Talisman",
+      "description": "Greatly raises potency of sorceries",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "faithful-s-canvas-talisman",
+      "term": "faithful's canvas talisman",
+      "title": "Faithful's Canvas Talisman",
+      "description": "Raises potency of incantations",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "flock-s-canvas-talisman",
+      "term": "flock's canvas talisman",
+      "title": "Flock's Canvas Talisman",
+      "description": "Greatly raises potency of incantations",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "old-lord-s-talisman",
+      "term": "old lord's talisman",
+      "title": "Old Lord's Talisman",
+      "description": "Extends spell effect duration",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "radagon-icon",
+      "term": "radagon icon",
+      "title": "Radagon Icon",
+      "description": "Shortens spell casting time",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "primal-glintstone-blade",
+      "term": "primal glintstone blade",
+      "title": "Primal Glintstone Blade",
+      "description": "Spells consume less FP, but maximum HP is reduced",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "godfrey-icon",
+      "term": "godfrey icon",
+      "title": "Godfrey Icon",
+      "description": "Enhances charged spells and skills",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "dragoncrest-shield-talisman",
+      "term": "dragoncrest shield talisman",
+      "title": "Dragoncrest Shield Talisman",
+      "description": "Boosts physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "dragoncrest-shield-talisman-1",
+      "term": "dragoncrest shield talisman +1",
+      "title": "Dragoncrest Shield Talisman +1",
+      "description": "Greatly boosts physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "dragoncrest-shield-talisman-2",
+      "term": "dragoncrest shield talisman +2",
+      "title": "Dragoncrest Shield Talisman +2",
+      "description": "Vastly boosts physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "dragoncrest-greatshield-talisman",
+      "term": "dragoncrest greatshield talisman",
+      "title": "Dragoncrest Greatshield Talisman",
+      "description": "Enormously boosts physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "spelldrake-talisman",
+      "term": "spelldrake talisman",
+      "title": "Spelldrake Talisman",
+      "description": "Boosts magical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "spelldrake-talisman-1",
+      "term": "spelldrake talisman +1",
+      "title": "Spelldrake Talisman +1",
+      "description": "Greatly boosts magical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "spelldrake-talisman-2",
+      "term": "spelldrake talisman +2",
+      "title": "Spelldrake Talisman +2",
+      "description": "Vastly boosts magical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "flamedrake-talisman",
+      "term": "flamedrake talisman",
+      "title": "Flamedrake Talisman",
+      "description": "Boosts fire damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "flamedrake-talisman-1",
+      "term": "flamedrake talisman +1",
+      "title": "Flamedrake Talisman +1",
+      "description": "Greatly boosts fire damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "flamedrake-talisman-2",
+      "term": "flamedrake talisman +2",
+      "title": "Flamedrake Talisman +2",
+      "description": "Vastly boosts fire damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "boltdrake-talisman",
+      "term": "boltdrake talisman",
+      "title": "Boltdrake Talisman",
+      "description": "Boosts lightning damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "boltdrake-talisman-1",
+      "term": "boltdrake talisman +1",
+      "title": "Boltdrake Talisman +1",
+      "description": "Greatly boosts lightning damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "boltdrake-talisman-2",
+      "term": "boltdrake talisman +2",
+      "title": "Boltdrake Talisman +2",
+      "description": "Vastly boosts lightning damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "haligdrake-talisman",
+      "term": "haligdrake talisman",
+      "title": "Haligdrake Talisman",
+      "description": "Boosts holy damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "haligdrake-talisman-1",
+      "term": "haligdrake talisman +1",
+      "title": "Haligdrake Talisman +1",
+      "description": "Greatly boosts holy damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "haligdrake-talisman-2",
+      "term": "haligdrake talisman +2",
+      "title": "Haligdrake Talisman +2",
+      "description": "Vastly boosts holy damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "pearldrake-talisman",
+      "term": "pearldrake talisman",
+      "title": "Pearldrake Talisman",
+      "description": "Boosts non-physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "pearldrake-talisman-1",
+      "term": "pearldrake talisman +1",
+      "title": "Pearldrake Talisman +1",
+      "description": "Greatly boosts non-physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "pearldrake-talisman-2",
+      "term": "pearldrake talisman +2",
+      "title": "Pearldrake Talisman +2",
+      "description": "Vastly boosts non-physical damage negation",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crucible-scale-talisman",
+      "term": "crucible scale talisman",
+      "title": "Crucible Scale Talisman",
+      "description": "Reduces damage taken from critical hits",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crucible-feather-talisman",
+      "term": "crucible feather talisman",
+      "title": "Crucible Feather Talisman",
+      "description": "Improves dodge rolling but increases damage taken",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "blue-feathered-branchsword",
+      "term": "blue-feathered branchsword",
+      "title": "Blue-Feathered Branchsword",
+      "description": "Raises defense when HP is low",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "ritual-shield-talisman",
+      "term": "ritual shield talisman",
+      "title": "Ritual Shield Talisman",
+      "description": "Raises defense when HP is at maximum",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "greatshield-talisman",
+      "term": "greatshield talisman",
+      "title": "Greatshield Talisman",
+      "description": "Boosts guarding ability",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crucible-knot-talisman",
+      "term": "crucible knot talisman",
+      "title": "Crucible Knot Talisman",
+      "description": "Reduces damage and impact of headshots",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crimson-seed-talisman",
+      "term": "crimson seed talisman",
+      "title": "Crimson Seed Talisman",
+      "description": "Boosts HP restoration from Flask of Crimson Tears",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-seed-talisman",
+      "term": "cerulean seed talisman",
+      "title": "Cerulean Seed Talisman",
+      "description": "Boosts FP restoration from Flask of Cerulean Tears",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "blessed-dew-talisman",
+      "term": "blessed dew talisman",
+      "title": "Blessed Dew Talisman",
+      "description": "Slowly restores HP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "taker-s-cameo",
+      "term": "taker's cameo",
+      "title": "Taker's Cameo",
+      "description": "Restores HP upon defeating enemies",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "godskin-swaddling-cloth",
+      "term": "godskin swaddling cloth",
+      "title": "Godskin Swaddling Cloth",
+      "description": "Successive attacks restore HP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "assassin-s-crimson-dagger",
+      "term": "assassin's crimson dagger",
+      "title": "Assassin's Crimson Dagger",
+      "description": "Critical hits restore HP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "assassin-s-cerulean-dagger",
+      "term": "assassin's cerulean dagger",
+      "title": "Assassin's Cerulean Dagger",
+      "description": "Critical hits restore FP",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "crepus-s-vial",
+      "term": "crepus's vial",
+      "title": "Crepus's Vial",
+      "description": "Eliminates all sound made by the wearer during movement",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "concealing-veil",
+      "term": "concealing veil",
+      "title": "Concealing Veil",
+      "description": "Conceals wearer while crouching away from foes",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "carian-filigreed-crest",
+      "term": "carian filigreed crest",
+      "title": "Carian Filigreed Crest",
+      "description": "Lowers FP consumed by skills",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "longtail-cat-talisman",
+      "term": "longtail cat talisman",
+      "title": "Longtail Cat Talisman",
+      "description": "Renders the wearer immune to fall damage",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "shabriri-s-woe",
+      "term": "shabriri's woe",
+      "title": "Shabriri's Woe",
+      "description": "Constantly attracts enemies' aggression",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "daedicar-s-woe",
+      "term": "daedicar's woe",
+      "title": "Daedicar's Woe",
+      "description": "Increases damage taken",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "sacrificial-twig",
+      "term": "sacrificial twig",
+      "title": "Sacrificial Twig",
+      "description": "Will be lost on death in place of runes",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "furled-finger-s-trick-mirror",
+      "term": "furled finger's trick-mirror",
+      "title": "Furled Finger's Trick-Mirror",
+      "description": "Take on appearance of a Host of Fingers",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "host-s-trick-mirror",
+      "term": "host's trick-mirror",
+      "title": "Host's Trick-Mirror",
+      "description": "Take on appearance of a cooperator",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "entwining-umbilical-cord",
+      "term": "entwining umbilical cord",
+      "title": "Entwining Umbilical Cord",
+      "description": "Changes demeanour of wearer's actions",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "ancestral-spirit-s-horn",
+      "term": "ancestral spirit's horn",
+      "title": "Ancestral Spirit's Horn",
+      "description": "Restores FP upon defeating enemies",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Talismans",
+      "source": "base"
+    },
+    {
+      "id": "phantom-great-rune",
+      "term": "phantom great rune",
+      "title": "Phantom Great Rune",
+      "description": "Give blessing of blood to enemies in invaded world",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "rune-arc",
+      "term": "rune arc",
+      "title": "Rune Arc",
+      "description": "Grants the blessing of an equipped Great Rune upon use",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "godrick-s-great-rune",
+      "term": "godrick's great rune",
+      "title": "Godrick's Great Rune",
+      "description": "Raises all attributes",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "radahn-s-great-rune",
+      "term": "radahn's great rune",
+      "title": "Radahn's Great Rune",
+      "description": "Raises maximum HP, FP and stamina",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "morgott-s-great-rune",
+      "term": "morgott's great rune",
+      "title": "Morgott's Great Rune",
+      "description": "A Great Rune of the shardbearer Morgott.\nIts blessing greatly raises maximum HP.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "rykard-s-great-rune",
+      "term": "rykard's great rune",
+      "title": "Rykard's Great Rune",
+      "description": "Restores HP upon attacking enemies",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "mohg-s-great-rune",
+      "term": "mohg's great rune",
+      "title": "Mohg's Great Rune",
+      "description": "Grants a blessing of blood to phantoms",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "malenia-s-great-rune",
+      "term": "malenia's great rune",
+      "title": "Malenia's Great Rune",
+      "description": "Attacks recover HP after damage is taken",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-grafted",
+      "term": "remembrance of the grafted",
+      "title": "Remembrance of the Grafted",
+      "description": "Take the power of its namesake via Finger Reader",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-starscourge",
+      "term": "remembrance of the starscourge",
+      "title": "Remembrance of the Starscourge",
+      "description": "Remembrance of Starscourge Radahn, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-omen-king",
+      "term": "remembrance of the omen king",
+      "title": "Remembrance of the Omen King",
+      "description": "Remembrance of Morgott, the Omen King, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-blasphemous",
+      "term": "remembrance of the blasphemous",
+      "title": "Remembrance of the Blasphemous",
+      "description": "Remembrance of Rykard, Lord of Blasphemy, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-rot-goddess",
+      "term": "remembrance of the rot goddess",
+      "title": "Remembrance of the Rot Goddess",
+      "description": "Remembrance of Malenia, Goddess of Rot, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-blood-lord",
+      "term": "remembrance of the blood lord",
+      "title": "Remembrance of the Blood Lord",
+      "description": "Remembrance of Mohg, Lord of Blood, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-black-blade",
+      "term": "remembrance of the black blade",
+      "title": "Remembrance of the Black Blade",
+      "description": "Remembrance of Maliketh, the Black Blade, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-hoarah-loux",
+      "term": "remembrance of hoarah loux",
+      "title": "Remembrance of Hoarah Loux",
+      "description": "Remembrance of the warrior Hoarah Loux, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-dragonlord",
+      "term": "remembrance of the dragonlord",
+      "title": "Remembrance of the Dragonlord",
+      "description": "Remembrance of Dragonlord Placidusax, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-full-moon-queen",
+      "term": "remembrance of the full moon queen",
+      "title": "Remembrance of the Full Moon Queen",
+      "description": "Remembrance of Rennala, Queen of the Full Moon, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-lichdragon",
+      "term": "remembrance of the lichdragon",
+      "title": "Remembrance of the Lichdragon",
+      "description": "Remembrance of Lichdragon Fortissax, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-fire-giant",
+      "term": "remembrance of the fire giant",
+      "title": "Remembrance of the Fire Giant",
+      "description": "Remembrance of Fire Giant, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-regal-ancestor",
+      "term": "remembrance of the regal ancestor",
+      "title": "Remembrance of the Regal Ancestor",
+      "description": "Remembrance of the Regal Ancestor Spirit, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "elden-remembrance",
+      "term": "elden remembrance",
+      "title": "Elden Remembrance",
+      "description": "Remembrance of the Elden Beast, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "remembrance-of-the-naturalborn",
+      "term": "remembrance of the naturalborn",
+      "title": "Remembrance of the Naturalborn",
+      "description": "Remembrance of Astel, Naturalborn of the Void, hewn into the Erdtree.",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Remembrances",
+      "source": "base"
+    },
+    {
+      "id": "great-rune-of-the-unborn",
+      "term": "great rune of the unborn",
+      "title": "Great Rune of the Unborn",
+      "description": "Used to perfect rebirth",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Great Runes",
+      "source": "base"
+    },
+    {
+      "id": "crimsonspill-crystal-tear",
+      "term": "crimsonspill crystal tear",
+      "title": "Crimsonspill Crystal Tear",
+      "description": "Temporarily boosts max HP in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "greenspill-crystal-tear",
+      "term": "greenspill crystal tear",
+      "title": "Greenspill Crystal Tear",
+      "description": "Temporarily boosts stamina in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "crimson-crystal-tear",
+      "term": "crimson crystal tear",
+      "title": "Crimson Crystal Tear",
+      "description": "Restores half of total HP in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "cerulean-crystal-tear",
+      "term": "cerulean crystal tear",
+      "title": "Cerulean Crystal Tear",
+      "description": "Restores half of total FP in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "crimsonburst-crystal-tear",
+      "term": "crimsonburst crystal tear",
+      "title": "Crimsonburst Crystal Tear",
+      "description": "Steadily restores HP for a time in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "greenburst-crystal-tear",
+      "term": "greenburst crystal tear",
+      "title": "Greenburst Crystal Tear",
+      "description": "Temporarily boosts stamina recovery speed in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "winged-crystal-tear",
+      "term": "winged crystal tear",
+      "title": "Winged Crystal Tear",
+      "description": "Temporarily reduces equip load in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "windy-crystal-tear",
+      "term": "windy crystal tear",
+      "title": "Windy Crystal Tear",
+      "description": "Enhances dodge rolls for a time in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "ruptured-crystal-tear",
+      "term": "ruptured crystal tear",
+      "title": "Ruptured Crystal Tear",
+      "description": "Causes concoction to explode in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "strength-knot-crystal-tear",
+      "term": "strength-knot crystal tear",
+      "title": "Strength-knot Crystal Tear",
+      "description": "Temporarily boosts strength in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "dexterity-knot-crystal-tear",
+      "term": "dexterity-knot crystal tear",
+      "title": "Dexterity-knot Crystal Tear",
+      "description": "Temporarily boosts dexterity in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "intelligence-knot-crystal-tear",
+      "term": "intelligence-knot crystal tear",
+      "title": "Intelligence-knot Crystal Tear",
+      "description": "Temporarily boosts intelligence in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "faith-knot-crystal-tear",
+      "term": "faith-knot crystal tear",
+      "title": "Faith-knot Crystal Tear",
+      "description": "Temporarily boosts faith in mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    },
+    {
+      "id": "purifying-crystal-tear",
+      "term": "purifying crystal tear",
+      "title": "Purifying Crystal Tear",
+      "description": "Purifies the Lord of Blood's curse in a mixed physick",
+      "section": "Elden Ring",
+      "category": "Equipment",
+      "subcategory": "Crystal Tears",
+      "source": "base"
+    }
+  ]
+}

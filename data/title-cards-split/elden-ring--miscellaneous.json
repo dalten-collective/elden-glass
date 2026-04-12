@@ -1,0 +1,586 @@
+{
+  "section": "Elden Ring",
+  "category": "Miscellaneous",
+  "cards": [
+    {
+      "id": "memory-of-grace",
+      "term": "memory of grace",
+      "title": "Memory of Grace",
+      "description": "Lose all runes, return to last site of lost grace visited",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "gold-pickled-fowl-foot",
+      "term": "gold-pickled fowl foot",
+      "title": "Gold-Pickled Fowl Foot",
+      "description": "Boosts rune acquisition for a time",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "golden-rune-1",
+      "term": "golden rune [1]",
+      "title": "Golden Rune [1]",
+      "description": "Use to gain a small number of runes",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "golden-rune-3",
+      "term": "golden rune [3]",
+      "title": "Golden Rune [3]",
+      "description": "Use to gain runes",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "golden-rune-6",
+      "term": "golden rune [6]",
+      "title": "Golden Rune [6]",
+      "description": "Grace that dwells within the inhabitants of the Lands Between; the lingering residue of gold.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "golden-rune-10",
+      "term": "golden rune [10]",
+      "title": "Golden Rune [10]",
+      "description": "Use to gain a great many runes",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "numen-s-rune",
+      "term": "numen's rune",
+      "title": "Numen's Rune",
+      "description": "Use to gain a multitude of runes",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "hero-s-rune-1",
+      "term": "hero's rune [1]",
+      "title": "Hero's Rune [1]",
+      "description": "Use to gain an abundance of runes",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "lord-s-rune",
+      "term": "lord's rune",
+      "title": "Lord's Rune",
+      "description": "Use to gain an enormous abundance of runes",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "lands-between-rune",
+      "term": "lands between rune",
+      "title": "Lands Between Rune",
+      "description": "Grace said to have once dwelled in the eyes of the inhabitants of the Lands Between; the lingering residue of gold.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "mending-rune-of-perfect-order",
+      "term": "mending rune of perfect order",
+      "title": "Mending Rune of Perfect Order",
+      "description": "Can be used to mend the shattered Elden Ring",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "mending-rune-of-the-death-prince",
+      "term": "mending rune of the death-prince",
+      "title": "Mending Rune of the Death-Prince",
+      "description": "Rune gestated by Fia, the Deathbed Companion.\nUsed to restore the fractured Elden Ring when brandished by the Elden Lord.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "mending-rune-of-the-fell-curse",
+      "term": "mending rune of the fell curse",
+      "title": "Mending Rune of the Fell Curse",
+      "description": "Loathsome rune gestated by the Dung Eater.\nUsed to restore the fractured Elden Ring when brandished by the Elden Lord.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    },
+    {
+      "id": "pidia-s-bell-bearing",
+      "term": "pidia's bell bearing",
+      "title": "Pidia's Bell Bearing",
+      "description": "Offer to Twin Maiden Husks for new item access",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "seluvis-s-bell-bearing",
+      "term": "seluvis's bell bearing",
+      "title": "Seluvis's Bell Bearing",
+      "description": "Preceptor Seluvis's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "patches-bell-bearing",
+      "term": "patches' bell bearing",
+      "title": "Patches' Bell Bearing",
+      "description": "Patches' bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "sellen-s-bell-bearing",
+      "term": "sellen's bell bearing",
+      "title": "Sellen's Bell Bearing",
+      "description": "Sorceress Sellen's bell bearing, found upon her perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "d-s-bell-bearing",
+      "term": "d's bell bearing",
+      "title": "D's Bell Bearing",
+      "description": "D's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "bernahl-s-bell-bearing",
+      "term": "bernahl's bell bearing",
+      "title": "Bernahl's Bell Bearing",
+      "description": "Knight Bernahl's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "miriel-s-bell-bearing",
+      "term": "miriel's bell bearing",
+      "title": "Miriel's Bell Bearing",
+      "description": "Miriel, Pastor of Vows' bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "gostoc-s-bell-bearing",
+      "term": "gostoc's bell bearing",
+      "title": "Gostoc's Bell Bearing",
+      "description": "Gatekeeper Gostoc's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "thops-s-bell-bearing",
+      "term": "thops's bell bearing",
+      "title": "Thops's Bell Bearing",
+      "description": "Sorcerer Thops's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "kal-s-bell-bearing",
+      "term": "kalé's bell bearing",
+      "title": "Kalé's Bell Bearing",
+      "description": "Merchant Kalé's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "nomadic-merchant-s-bell-bearing-1",
+      "term": "nomadic merchant's bell bearing [1]",
+      "title": "Nomadic Merchant's Bell Bearing [1]",
+      "description": "A nomadic merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "isolated-merchant-s-bell-bearing-1",
+      "term": "isolated merchant's bell bearing [1]",
+      "title": "Isolated Merchant's Bell Bearing [1]",
+      "description": "An isolated merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "hermit-merchant-s-bell-bearing-1",
+      "term": "hermit merchant's bell bearing [1]",
+      "title": "Hermit Merchant's Bell Bearing [1]",
+      "description": "Bell bearing of a hermetic merchant, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "abandoned-merchant-s-bell-bearing",
+      "term": "abandoned merchant's bell bearing",
+      "title": "Abandoned Merchant's Bell Bearing",
+      "description": "Bell bearing of a merchant left behind, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "imprisoned-merchant-s-bell-bearing",
+      "term": "imprisoned merchant's bell bearing",
+      "title": "Imprisoned Merchant's Bell Bearing",
+      "description": "An imprisoned merchant's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "iji-s-bell-bearing",
+      "term": "iji's bell bearing",
+      "title": "Iji's Bell Bearing",
+      "description": "Iji the Smithing Master's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "rogier-s-bell-bearing",
+      "term": "rogier's bell bearing",
+      "title": "Rogier's Bell Bearing",
+      "description": "Rogier the Sorcerer's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "blackguard-s-bell-bearing",
+      "term": "blackguard's bell bearing",
+      "title": "Blackguard's Bell Bearing",
+      "description": "The Blackguard's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "corhyn-s-bell-bearing",
+      "term": "corhyn's bell bearing",
+      "title": "Corhyn's Bell Bearing",
+      "description": "Brother Corhyn's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "gowry-s-bell-bearing",
+      "term": "gowry's bell bearing",
+      "title": "Gowry's Bell Bearing",
+      "description": "Sage Gowry's bell bearing, found upon his perished flesh.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "bone-peddler-s-bell-bearing",
+      "term": "bone peddler's bell bearing",
+      "title": "Bone Peddler's Bell Bearing",
+      "description": "Bell bearing of an unfortunate bone peddler who was slain by the Bell Bearing Hunter.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "meat-peddler-s-bell-bearing",
+      "term": "meat peddler's bell bearing",
+      "title": "Meat Peddler's Bell Bearing",
+      "description": "Bell bearing of an unfortunate meat peddler who was slain by the Bell Bearing Hunter.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "medicine-peddler-s-bell-bearing",
+      "term": "medicine peddler's bell bearing",
+      "title": "Medicine Peddler's Bell Bearing",
+      "description": "Bell bearing of an unfortunate medicine peddler who was slain by the Bell Bearing Hunter.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "gravity-stone-peddler-s-bell-bearing",
+      "term": "gravity stone peddler's bell bearing",
+      "title": "Gravity Stone Peddler's Bell Bearing",
+      "description": "Bell bearing of an unfortunate gravity stone peddler who was slain by the Bell Bearing Hunter.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-miner-s-bell-bearing-1",
+      "term": "smithing-stone miner's bell bearing [1]",
+      "title": "Smithing-Stone Miner's Bell Bearing [1]",
+      "description": "The bell bearing of a miner who once dug for smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-miner-s-bell-bearing-2",
+      "term": "smithing-stone miner's bell bearing [2]",
+      "title": "Smithing-Stone Miner's Bell Bearing [2]",
+      "description": "The bell bearing of a miner who once dug for smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-miner-s-bell-bearing-3",
+      "term": "smithing-stone miner's bell bearing [3]",
+      "title": "Smithing-Stone Miner's Bell Bearing [3]",
+      "description": "The bell bearing of a miner who once dug for smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "smithing-stone-miner-s-bell-bearing-4",
+      "term": "smithing-stone miner's bell bearing [4]",
+      "title": "Smithing-Stone Miner's Bell Bearing [4]",
+      "description": "The bell bearing of a miner who once dug for smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "somberstone-miner-s-bell-bearing-1",
+      "term": "somberstone miner's bell bearing [1]",
+      "title": "Somberstone Miner's Bell Bearing [1]",
+      "description": "The bell bearing of a miner who once dug for somber smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "somberstone-miner-s-bell-bearing-2",
+      "term": "somberstone miner's bell bearing [2]",
+      "title": "Somberstone Miner's Bell Bearing [2]",
+      "description": "The bell bearing of a miner who once dug for somber smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "somberstone-miner-s-bell-bearing-3",
+      "term": "somberstone miner's bell bearing [3]",
+      "title": "Somberstone Miner's Bell Bearing [3]",
+      "description": "The bell bearing of a miner who once dug for somber smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "somberstone-miner-s-bell-bearing-4",
+      "term": "somberstone miner's bell bearing [4]",
+      "title": "Somberstone Miner's Bell Bearing [4]",
+      "description": "The bell bearing of a miner who once dug for somber smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "somberstone-miner-s-bell-bearing-5",
+      "term": "somberstone miner's bell bearing [5]",
+      "title": "Somberstone Miner's Bell Bearing [5]",
+      "description": "The bell bearing of a miner who once dug for somber smithing stone.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "glovewort-picker-s-bell-bearing-1",
+      "term": "glovewort picker's bell bearing [1]",
+      "title": "Glovewort Picker's Bell Bearing [1]",
+      "description": "The bell bearing of a forager who once picked grave glovewort flowers.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "glovewort-picker-s-bell-bearing-2",
+      "term": "glovewort picker's bell bearing [2]",
+      "title": "Glovewort Picker's Bell Bearing [2]",
+      "description": "The bell bearing of a forager who once picked grave glovewort flowers.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "glovewort-picker-s-bell-bearing-3",
+      "term": "glovewort picker's bell bearing [3]",
+      "title": "Glovewort Picker's Bell Bearing [3]",
+      "description": "The bell bearing of a forager who once picked grave glovewort flowers.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-picker-s-bell-bearing-1",
+      "term": "ghost-glovewort picker's bell bearing [1]",
+      "title": "Ghost-Glovewort Picker's Bell Bearing [1]",
+      "description": "The bell bearing of a forager who once picked ghost glovewort flowers.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-picker-s-bell-bearing-2",
+      "term": "ghost-glovewort picker's bell bearing [2]",
+      "title": "Ghost-Glovewort Picker's Bell Bearing [2]",
+      "description": "The bell bearing of a forager who once picked ghost glovewort flowers.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "ghost-glovewort-picker-s-bell-bearing-3",
+      "term": "ghost-glovewort picker's bell bearing [3]",
+      "title": "Ghost-Glovewort Picker's Bell Bearing [3]",
+      "description": "The bell bearing of a forager who once picked ghost glovewort flowers.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Bell Bearings",
+      "source": "base"
+    },
+    {
+      "id": "iron-whetblade",
+      "term": "iron whetblade",
+      "title": "Iron Whetblade",
+      "description": "Grants choice of affinity upgrade to weapon",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Whetblades",
+      "source": "base"
+    },
+    {
+      "id": "red-hot-whetblade",
+      "term": "red-hot whetblade",
+      "title": "Red-Hot Whetblade",
+      "description": "Red-hot whetblade with a cipher engraved. Can be used as a whetstone knife.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Whetblades",
+      "source": "base"
+    },
+    {
+      "id": "sanctified-whetblade",
+      "term": "sanctified whetblade",
+      "title": "Sanctified Whetblade",
+      "description": "Sanctified whetblade with a cipher engraved. Can be used as a whetstone knife.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Whetblades",
+      "source": "base"
+    },
+    {
+      "id": "glintstone-whetblade",
+      "term": "glintstone whetblade",
+      "title": "Glintstone Whetblade",
+      "description": "Glintstone whetblade with a cipher engraved. Can be used as a whetstone knife.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Whetblades",
+      "source": "base"
+    },
+    {
+      "id": "black-whetblade",
+      "term": "black whetblade",
+      "title": "Black Whetblade",
+      "description": "Black whetblade with a cipher engraved. Can be used as a whetstone knife.",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Whetblades",
+      "source": "base"
+    },
+    {
+      "id": "twiggy-cracked-tear",
+      "term": "twiggy cracked tear",
+      "title": "Twiggy Cracked Tear",
+      "description": "Briefly stop rune loss on death in mixed physick",
+      "section": "Elden Ring",
+      "category": "Miscellaneous",
+      "subcategory": "Runes",
+      "source": "base"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Elden Glass - The Large Glass Discovery",
+  "short_name": "Elden Glass",
+  "description": "Elden Ring is a digital reimagining of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#c9a961",
+  "icons": [
+    {
+      "src": "/images/dashusnavnulsigil.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/dashusnavnulsigil.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

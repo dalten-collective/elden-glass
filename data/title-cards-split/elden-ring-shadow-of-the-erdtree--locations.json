@@ -1,0 +1,1596 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Locations",
+  "cards": [
+    {
+      "id": "fog-rift-catacombs",
+      "term": "fog rift catacombs",
+      "title": "Fog Rift Catacombs",
+      "description": "Fog Rift Catacombs",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "scorpion-river-catacombs",
+      "term": "scorpion river catacombs",
+      "title": "Scorpion River Catacombs",
+      "description": "Scorpion River Catacombs",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "darklight-catacombs",
+      "term": "darklight catacombs",
+      "title": "Darklight Catacombs",
+      "description": "Darklight Catacombs",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "belurat-gaol",
+      "term": "belurat gaol",
+      "title": "Belurat Gaol",
+      "description": "Belurat Gaol",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "bonny-gaol",
+      "term": "bonny gaol",
+      "title": "Bonny Gaol",
+      "description": "Bonny Gaol",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "lamenter-s-gaol",
+      "term": "lamenter's gaol",
+      "title": "Lamenter's Gaol",
+      "description": "Lamenter's Gaol",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ruined-forge-lava-intake",
+      "term": "ruined forge lava intake",
+      "title": "Ruined Forge Lava Intake",
+      "description": "Ruined Forge Lava Intake",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ruined-forge-of-starfall-past",
+      "term": "ruined forge of starfall past",
+      "title": "Ruined Forge of Starfall Past",
+      "description": "Ruined Forge of Starfall Past",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "taylew-s-ruined-forge",
+      "term": "taylew's ruined forge",
+      "title": "Taylew's Ruined Forge",
+      "description": "Taylew's Ruined Forge",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "rivermouth-cave",
+      "term": "rivermouth cave",
+      "title": "Rivermouth Cave",
+      "description": "Rivermouth Cave",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-s-pit",
+      "term": "dragon's pit",
+      "title": "Dragon's Pit",
+      "description": "Dragon's Pit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "theatre-of-the-divine-beast",
+      "term": "theatre of the divine beast",
+      "title": "Theatre of the Divine Beast",
+      "description": "Theatre of the Divine Beast",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "small-private-altar",
+      "term": "small private altar",
+      "title": "Small Private Altar",
+      "description": "Small Private Altar",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "stagefront",
+      "term": "stagefront",
+      "title": "Stagefront",
+      "description": "Stagefront",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "gate-of-divinity",
+      "term": "gate of divinity",
+      "title": "Gate of Divinity",
+      "description": "Gate of Divinity",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "enir-ilim-outer-wall",
+      "term": "enir-ilim: outer wall",
+      "title": "Enir-Ilim: Outer Wall",
+      "description": "Enir-Ilim: Outer Wall",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "first-rise",
+      "term": "first rise",
+      "title": "First Rise",
+      "description": "First Rise",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "spiral-rise",
+      "term": "spiral rise",
+      "title": "Spiral Rise",
+      "description": "Spiral Rise",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "cleansing-chamber-anteroom",
+      "term": "cleansing chamber anteroom",
+      "title": "Cleansing Chamber Anteroom",
+      "description": "Cleansing Chamber Anteroom",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-gate-front-staircase",
+      "term": "divine gate front staircase",
+      "title": "Divine Gate Front Staircase",
+      "description": "Divine Gate Front Staircase",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "main-gate-plaza",
+      "term": "main gate plaza",
+      "title": "Main Gate Plaza",
+      "description": "Main Gate Plaza",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-keep-main-gate",
+      "term": "shadow keep main gate",
+      "title": "Shadow Keep Main Gate",
+      "description": "Shadow Keep Main Gate",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-district-entrance",
+      "term": "church district entrance",
+      "title": "Church District Entrance",
+      "description": "Church District Entrance",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "sunken-chapel",
+      "term": "sunken chapel",
+      "title": "Sunken Chapel",
+      "description": "Sunken Chapel",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "tree-worship-passage",
+      "term": "tree-worship passage",
+      "title": "Tree-Worship Passage",
+      "description": "Tree-Worship Passage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "tree-worship-sanctum",
+      "term": "tree-worship sanctum",
+      "title": "Tree-Worship Sanctum",
+      "description": "Tree-Worship Sanctum",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-dark-chamber",
+      "term": "messmer's dark chamber",
+      "title": "Messmer's Dark Chamber",
+      "description": "Messmer's Dark Chamber",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "storehouse-first-floor",
+      "term": "storehouse, first floor",
+      "title": "Storehouse, First Floor",
+      "description": "Storehouse, First Floor",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "storehouse-fourth-floor",
+      "term": "storehouse, fourth floor",
+      "title": "Storehouse, Fourth Floor",
+      "description": "Storehouse, Fourth Floor",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "storehouse-seventh-floor",
+      "term": "storehouse, seventh floor",
+      "title": "Storehouse, Seventh Floor",
+      "description": "Storehouse, Seventh Floor",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "dark-chamber-entrance",
+      "term": "dark chamber entrance",
+      "title": "Dark Chamber Entrance",
+      "description": "Dark Chamber Entrance",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "storehouse-back-section",
+      "term": "storehouse, back section",
+      "title": "Storehouse, Back Section",
+      "description": "Storehouse, Back Section",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "storehouse-loft",
+      "term": "storehouse, loft",
+      "title": "Storehouse, Loft",
+      "description": "Storehouse, Loft",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "west-rampart",
+      "term": "west rampart",
+      "title": "West Rampart",
+      "description": "West Rampart",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "garden-of-deep-purple",
+      "term": "garden of deep purple",
+      "title": "Garden of Deep Purple",
+      "description": "Garden of Deep Purple",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fissure-cross",
+      "term": "fissure cross",
+      "title": "Fissure Cross",
+      "description": "Fissure Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fissure-waypoint",
+      "term": "fissure waypoint",
+      "title": "Fissure Waypoint",
+      "description": "Fissure Waypoint",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fissure-depths",
+      "term": "fissure depths",
+      "title": "Fissure Depths",
+      "description": "Fissure Depths",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-birthing-grounds",
+      "term": "finger birthing grounds",
+      "title": "Finger Birthing Grounds",
+      "description": "Finger Birthing Grounds",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "discussion-chamber",
+      "term": "discussion chamber",
+      "title": "Discussion Chamber",
+      "description": "Discussion Chamber",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "manse-hall",
+      "term": "manse hall",
+      "title": "Manse Hall",
+      "description": "Manse Hall",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "midra-s-library",
+      "term": "midra's library",
+      "title": "Midra's Library",
+      "description": "Midra's Library",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "second-floor-chamber",
+      "term": "second floor chamber",
+      "title": "Second Floor Chamber",
+      "description": "Second Floor Chamber",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-s-pit-terminus",
+      "term": "dragon's pit terminus",
+      "title": "Dragon's Pit Terminus",
+      "description": "Dragon's Pit Terminus",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "scorched-ruins",
+      "term": "scorched ruins",
+      "title": "Scorched Ruins",
+      "description": "Scorched Ruins",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "three-path-cross",
+      "term": "three-path cross",
+      "title": "Three-Path Cross",
+      "description": "Three-Path Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "main-gate-cross",
+      "term": "main gate cross",
+      "title": "Main Gate Cross",
+      "description": "Main Gate Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "cliffroad-terminus",
+      "term": "cliffroad terminus",
+      "title": "Cliffroad Terminus",
+      "description": "Cliffroad Terminus",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "greatbridge-north",
+      "term": "greatbridge, north",
+      "title": "Greatbridge, North",
+      "description": "Greatbridge, North",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ellac-river-cave",
+      "term": "ellac river cave",
+      "title": "Ellac River Cave",
+      "description": "Ellac River Cave",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "pillar-path-cross",
+      "term": "pillar path cross",
+      "title": "Pillar Path Cross",
+      "description": "Pillar Path Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "pillar-path-waypoint",
+      "term": "pillar path waypoint",
+      "title": "Pillar Path Waypoint",
+      "description": "Pillar Path Waypoint",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "castle-front",
+      "term": "castle front",
+      "title": "Castle Front",
+      "description": "Castle Front",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "castle-ensis-checkpoint",
+      "term": "castle ensis checkpoint",
+      "title": "Castle Ensis Checkpoint",
+      "description": "Castle Ensis Checkpoint",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "castle-lord-s-chamber",
+      "term": "castle-lord's chamber",
+      "title": "Castle-Lord's Chamber",
+      "description": "Castle-Lord's Chamber",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ensis-moongazing-grounds",
+      "term": "ensis moongazing grounds",
+      "title": "Ensis Moongazing Grounds",
+      "description": "Ensis Moongazing Grounds",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ellac-river-downstream",
+      "term": "ellac river downstream",
+      "title": "Ellac River Downstream",
+      "description": "Ellac River Downstream",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "cerulean-coast-west",
+      "term": "cerulean coast west",
+      "title": "Cerulean Coast West",
+      "description": "Cerulean Coast West",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "the-fissure",
+      "term": "the fissure",
+      "title": "The Fissure",
+      "description": "The Fissure",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-ruins-of-rhia",
+      "term": "finger ruins of rhia",
+      "title": "Finger Ruins of Rhia",
+      "description": "Finger Ruins of Rhia",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "cerulean-coast-cross",
+      "term": "cerulean coast cross",
+      "title": "Cerulean Coast Cross",
+      "description": "Cerulean Coast Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "jagged-peak-mountainside",
+      "term": "jagged peak mountainside",
+      "title": "Jagged Peak Mountainside",
+      "description": "Jagged Peak Mountainside",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "jagged-peak-summit",
+      "term": "jagged peak summit",
+      "title": "Jagged Peak Summit",
+      "description": "Jagged Peak Summit",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "rest-of-the-dread-dragon",
+      "term": "rest of the dread dragon",
+      "title": "Rest of the Dread Dragon",
+      "description": "Rest of the Dread Dragon",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "divided-falls",
+      "term": "divided falls",
+      "title": "Divided Falls",
+      "description": "Divided Falls",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "forsaken-graveyard",
+      "term": "forsaken graveyard",
+      "title": "Forsaken Graveyard",
+      "description": "Forsaken Graveyard",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "woodland-trail",
+      "term": "woodland trail",
+      "title": "Woodland Trail",
+      "description": "Woodland Trail",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-ruins",
+      "term": "church ruins",
+      "title": "Church Ruins",
+      "description": "Church Ruins",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "highroad-cross",
+      "term": "highroad cross",
+      "title": "Highroad Cross",
+      "description": "Highroad Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "moorth-ruins",
+      "term": "moorth ruins",
+      "title": "Moorth Ruins",
+      "description": "Moorth Ruins",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "bonny-village",
+      "term": "bonny village",
+      "title": "Bonny Village",
+      "description": "Bonny Village",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "bridge-leading-to-the-village",
+      "term": "bridge leading to the village",
+      "title": "Bridge Leading to the Village",
+      "description": "Bridge Leading to the Village",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-district-highroad",
+      "term": "church district highroad",
+      "title": "Church District Highroad",
+      "description": "Church District Highroad",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "cathedral-of-manus-metyr",
+      "term": "cathedral of manus metyr",
+      "title": "Cathedral of Manus Metyr",
+      "description": "Cathedral of Manus Metyr",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "scadu-altus-west",
+      "term": "scadu altus, west",
+      "title": "Scadu Altus, West",
+      "description": "Scadu Altus, West",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "moorth-highway-south",
+      "term": "moorth highway, south",
+      "title": "Moorth Highway, South",
+      "description": "Moorth Highway, South",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fort-of-reprimand",
+      "term": "fort of reprimand",
+      "title": "Fort of Reprimand",
+      "description": "Fort of Reprimand",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "behind-the-fort-of-reprimand",
+      "term": "behind the fort of reprimand",
+      "title": "Behind the Fort of Reprimand",
+      "description": "Behind the Fort of Reprimand",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "scaduview-cross",
+      "term": "scaduview cross",
+      "title": "Scaduview Cross",
+      "description": "Scaduview Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-ruins-base",
+      "term": "ancient ruins base",
+      "title": "Ancient Ruins Base",
+      "description": "Ancient Ruins Base",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "temple-town-ruins",
+      "term": "temple town ruins",
+      "title": "Temple Town Ruins",
+      "description": "Temple Town Ruins",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ravine-north",
+      "term": "ravine north",
+      "title": "Ravine North",
+      "description": "Ravine North",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "castle-watering-hole",
+      "term": "castle watering hole",
+      "title": "Castle Watering Hole",
+      "description": "Castle Watering Hole",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "recluses-river-upstream",
+      "term": "recluses' river upstream",
+      "title": "Recluses' River Upstream",
+      "description": "Recluses' River Upstream",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "recluses-river-downstream",
+      "term": "recluses' river downstream",
+      "title": "Recluses' River Downstream",
+      "description": "Recluses' River Downstream",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-keep-back-gate",
+      "term": "shadow keep, back gate",
+      "title": "Shadow Keep, Back Gate",
+      "description": "Shadow Keep, Back Gate",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "hinterland",
+      "term": "hinterland",
+      "title": "Hinterland",
+      "description": "Hinterland",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fingerstone-hill",
+      "term": "fingerstone hill",
+      "title": "Fingerstone Hill",
+      "description": "Fingerstone Hill",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "hinterland-bridge",
+      "term": "hinterland bridge",
+      "title": "Hinterland Bridge",
+      "description": "Hinterland Bridge",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "viaduct-minor-tower",
+      "term": "viaduct minor tower",
+      "title": "Viaduct Minor Tower",
+      "description": "Viaduct Minor Tower",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "rauh-ancient-ruins-east",
+      "term": "rauh ancient ruins, east",
+      "title": "Rauh Ancient Ruins, East",
+      "description": "Rauh Ancient Ruins, East",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "rauh-ancient-ruins-west",
+      "term": "rauh ancient ruins, west",
+      "title": "Rauh Ancient Ruins, West",
+      "description": "Rauh Ancient Ruins, West",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-of-the-bud-main-entrance",
+      "term": "church of the bud, main entrance",
+      "title": "Church of the Bud, Main Entrance",
+      "description": "Church of the Bud, Main Entrance",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-ruins-grand-stairway",
+      "term": "ancient ruins, grand stairway",
+      "title": "Ancient Ruins, Grand Stairway",
+      "description": "Ancient Ruins, Grand Stairway",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-of-the-bud",
+      "term": "church of the bud",
+      "title": "Church of the Bud",
+      "description": "Church of the Bud",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "scadutree-base",
+      "term": "scadutree base",
+      "title": "Scadutree Base",
+      "description": "Scadutree Base",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "miquella-s-cross",
+      "term": "miquella's cross",
+      "title": "Miquella's Cross",
+      "description": "Miquella's Cross",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "abandoned-ailing-village",
+      "term": "abandoned ailing village",
+      "title": "Abandoned Ailing Village",
+      "description": "Abandoned Ailing Village",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-of-consolation",
+      "term": "church of consolation",
+      "title": "Church of Consolation",
+      "description": "Church of Consolation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-of-benediction",
+      "term": "church of benediction",
+      "title": "Church of Benediction",
+      "description": "Church of Benediction",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "prospect-town",
+      "term": "prospect town",
+      "title": "Prospect Town",
+      "description": "Prospect Town",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "western-nameless-mausoleum",
+      "term": "western nameless mausoleum",
+      "title": "Western Nameless Mausoleum",
+      "description": "Western Nameless Mausoleum",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "run-down-traveler-s-rest",
+      "term": "run-down traveler's rest",
+      "title": "Run-Down Traveler's Rest",
+      "description": "Run-Down Traveler's Rest",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ellac-greatbridge",
+      "term": "ellac greatbridge",
+      "title": "Ellac Greatbridge",
+      "description": "Ellac Greatbridge",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "suppressing-pillar",
+      "term": "suppressing pillar",
+      "title": "Suppressing Pillar",
+      "description": "Suppressing Pillar",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "elder-s-hovel",
+      "term": "elder's hovel",
+      "title": "Elder's Hovel",
+      "description": "Elder's Hovel",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "southern-nameless-mausoleum",
+      "term": "southern nameless mausoleum",
+      "title": "Southern Nameless Mausoleum",
+      "description": "Southern Nameless Mausoleum",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-weaver-s-hovel",
+      "term": "finger-weaver's hovel",
+      "title": "Finger-Weaver's Hovel",
+      "description": "Finger-Weaver's Hovel",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "abandoned-church",
+      "term": "abandoned church",
+      "title": "Abandoned Church",
+      "description": "Abandoned Church",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-ruins-of-miyr",
+      "term": "finger ruins of miyr",
+      "title": "Finger Ruins of Miyr",
+      "description": "Finger Ruins of Miyr",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fog-rift-fort",
+      "term": "fog rift fort",
+      "title": "Fog Rift Fort",
+      "description": "Fog Rift Fort",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "church-of-the-crusade",
+      "term": "church of the crusade",
+      "title": "Church of the Crusade",
+      "description": "Church of the Crusade",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ruins-of-unte",
+      "term": "ruins of unte",
+      "title": "Ruins of Unte",
+      "description": "Ruins of Unte",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "northern-nameless-mausoleum",
+      "term": "northern nameless mausoleum",
+      "title": "Northern Nameless Mausoleum",
+      "description": "Northern Nameless Mausoleum",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "eastern-nameless-mausoleum",
+      "term": "eastern nameless mausoleum",
+      "title": "Eastern Nameless Mausoleum",
+      "description": "Eastern Nameless Mausoleum",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "rabbath-s-rise",
+      "term": "rabbath's rise",
+      "title": "Rabbath's Rise",
+      "description": "Rabbath's Rise",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "whipping-hut",
+      "term": "whipping hut",
+      "title": "Whipping Hut",
+      "description": "Whipping Hut",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "village-of-flies",
+      "term": "village of flies",
+      "title": "Village of Flies",
+      "description": "Village of Flies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "scadutree-chalice",
+      "term": "scadutree chalice",
+      "title": "Scadutree Chalice",
+      "description": "Scadutree Chalice",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "albinauric-s-shack",
+      "term": "albinauric's shack",
+      "title": "Albinauric's Shack",
+      "description": "Albinauric's Shack",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-ruins-of-dheo",
+      "term": "finger ruins of dheo",
+      "title": "Finger Ruins of Dheo",
+      "description": "Finger Ruins of Dheo",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "shaman-village",
+      "term": "shaman village",
+      "title": "Shaman Village",
+      "description": "Shaman Village",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "realm-of-shadow",
+      "term": "realm of shadow",
+      "title": "Realm of Shadow",
+      "description": "Realm of Shadow",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "peninsula-minor-erdtree",
+      "term": "peninsula minor erdtree",
+      "title": "Peninsula Minor Erdtree",
+      "description": "Peninsula Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "lake-minor-erdtree",
+      "term": "lake minor erdtree",
+      "title": "Lake Minor Erdtree",
+      "description": "Lake Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "uld-minor-erdtree",
+      "term": "uld minor erdtree",
+      "title": "Uld Minor Erdtree",
+      "description": "Uld Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ruin-strewn-precipice",
+      "term": "ruin-strewn precipice",
+      "title": "Ruin-Strewn Precipice",
+      "description": "Ruin-Strewn Precipice",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "fort-laiedd-south",
+      "term": "fort laiedd south",
+      "title": "Fort Laiedd South",
+      "description": "Fort Laiedd South",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "hermit-village-cliff-road",
+      "term": "hermit village cliff road",
+      "title": "Hermit Village Cliff Road",
+      "description": "Hermit Village Cliff Road",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "outer-wall-minor-erdtree",
+      "term": "outer wall minor erdtree",
+      "title": "Outer Wall Minor Erdtree",
+      "description": "Outer Wall Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "outer-wall-east",
+      "term": "outer wall east",
+      "title": "Outer Wall East",
+      "description": "Outer Wall East",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "caelid-minor-erdtree",
+      "term": "caelid minor erdtree",
+      "title": "Caelid Minor Erdtree",
+      "description": "Caelid Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "swamp-of-aeonia",
+      "term": "swamp of aeonia",
+      "title": "Swamp of Aeonia",
+      "description": "Swamp of Aeonia",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "greyoll-s-dragonbarrow",
+      "term": "greyoll's dragonbarrow",
+      "title": "Greyoll's Dragonbarrow",
+      "description": "Greyoll's Dragonbarrow",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "wailing-dunes-south",
+      "term": "wailing dunes south",
+      "title": "Wailing Dunes South",
+      "description": "Wailing Dunes South",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "dragonbarrow-minor-erdtree",
+      "term": "dragonbarrow minor erdtree",
+      "title": "Dragonbarrow Minor Erdtree",
+      "description": "Dragonbarrow Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "forbidden-lands",
+      "term": "forbidden lands",
+      "title": "Forbidden Lands",
+      "description": "Forbidden Lands",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "mountaintop-minor-erdtree",
+      "term": "mountaintop minor erdtree",
+      "title": "Mountaintop Minor Erdtree",
+      "description": "Mountaintop Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-valley-ruins",
+      "term": "ancient valley ruins",
+      "title": "Ancient Valley Ruins",
+      "description": "Ancient Valley Ruins",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "freezing-river",
+      "term": "freezing river",
+      "title": "Freezing River",
+      "description": "Freezing River",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "snowfield-minor-erdtree",
+      "term": "snowfield minor erdtree",
+      "title": "Snowfield Minor Erdtree",
+      "description": "Snowfield Minor Erdtree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "spiritcaller-cave",
+      "term": "spiritcaller cave",
+      "title": "Spiritcaller Cave",
+      "description": "Spiritcaller Cave",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ainsel-river-main",
+      "term": "ainsel river main",
+      "title": "Ainsel River Main",
+      "description": "Ainsel River Main",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "mimic-tear",
+      "term": "mimic tear",
+      "title": "Mimic Tear",
+      "description": "Mimic Tear",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "deeproot-depths",
+      "term": "deeproot depths",
+      "title": "Deeproot Depths",
+      "description": "Deeproot Depths",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "nokron-eternal-city",
+      "term": "nokron, eternal city",
+      "title": "Nokron, Eternal City",
+      "description": "Nokron, Eternal City",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "lake-north-of-the-greatbridge",
+      "term": "lake north of the greatbridge",
+      "title": "Lake North of the Greatbridge",
+      "description": "Lake North of the Greatbridge",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "demi-human-valley",
+      "term": "demi-human valley",
+      "title": "Demi-Human Valley",
+      "description": "Demi-Human Valley",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "drake-graveyard",
+      "term": "drake graveyard",
+      "title": "Drake Graveyard",
+      "description": "Drake Graveyard",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "hidden-grave-south",
+      "term": "hidden grave south",
+      "title": "Hidden Grave South",
+      "description": "Hidden Grave South",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "hidden-grave-north",
+      "term": "hidden grave north",
+      "title": "Hidden Grave North",
+      "description": "Hidden Grave North",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "jagged-peak-cavern",
+      "term": "jagged peak cavern",
+      "title": "Jagged Peak Cavern",
+      "description": "Jagged Peak Cavern",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "darklight-catacombs-lower-level",
+      "term": "darklight catacombs, lower level",
+      "title": "Darklight Catacombs, Lower Level",
+      "description": "Darklight Catacombs, Lower Level",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "darkroad-sanctuary",
+      "term": "darkroad sanctuary",
+      "title": "Darkroad Sanctuary",
+      "description": "Darkroad Sanctuary",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "moorth-highway",
+      "term": "moorth highway",
+      "title": "Moorth Highway",
+      "description": "Moorth Highway",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "rauh-base-bear-woods",
+      "term": "rauh base, bear woods",
+      "title": "Rauh Base, Bear Woods",
+      "description": "Rauh Base, Bear Woods",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-ruins-under-stair",
+      "term": "ancient ruins, under-stair",
+      "title": "Ancient Ruins, Under-Stair",
+      "description": "Ancient Ruins, Under-Stair",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "altus-bear-woods",
+      "term": "altus, bear woods",
+      "title": "Altus, Bear Woods",
+      "description": "Altus, Bear Woods",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    },
+    {
+      "id": "miyr-hanging-bell",
+      "term": "miyr hanging bell",
+      "title": "Miyr Hanging Bell",
+      "description": "Miyr Hanging Bell",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Locations",
+      "subcategory": "Places",
+      "source": "dlc"
+    }
+  ]
+}

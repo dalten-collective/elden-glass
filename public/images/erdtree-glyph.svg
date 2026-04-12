@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f3e9c2" />
+      <stop offset="100%" stop-color="#c9a961" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#0d0d0d" />
+  <circle cx="400" cy="300" r="220" fill="url(#grad)" opacity="0.35" />
+  <path d="M400 80 C420 200 360 260 380 360 C400 460 360 520 360 520" stroke="#fef5da" stroke-width="8" fill="none" stroke-linecap="round" />
+  <path d="M400 80 C380 200 440 260 420 360 C400 460 440 520 440 520" stroke="#fef5da" stroke-width="8" fill="none" stroke-linecap="round" />
+  <text x="400" y="560" fill="#fef5da" font-family="'Crimson Pro', serif" font-size="32" text-anchor="middle">Elden Analysis</text>
+</svg>

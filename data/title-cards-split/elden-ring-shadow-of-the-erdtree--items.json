@@ -1,0 +1,1546 @@
+{
+  "section": "Elden Ring - Shadow of the Erdtree",
+  "category": "Items",
+  "cards": [
+    {
+      "id": "hefty-volcano-pot",
+      "term": "hefty volcano pot",
+      "title": "Hefty Volcano Pot",
+      "description": "Creates heat cloud, causing continuous heavy fire damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-red-lightning-pot",
+      "term": "hefty red lightning pot",
+      "title": "Hefty Red Lightning Pot",
+      "description": "Inflict heavy lightning damage that links to nearby enemies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "red-lightning-pot",
+      "term": "red lightning pot",
+      "title": "Red Lightning Pot",
+      "description": "Inflict lightning damage that links to nearby enemies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "spirit-raisin",
+      "term": "spirit raisin",
+      "title": "Spirit Raisin",
+      "description": "Spectral steed pushes back enemies when breaking into gallop",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "blessing-of-marika",
+      "term": "blessing of marika",
+      "title": "Blessing of Marika",
+      "description": "Completely restores HP and heals all ailments",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "lulling-branch",
+      "term": "lulling branch",
+      "title": "Lulling Branch",
+      "description": "Slowly builds up sleep while gradually restoring FP",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-communion-flesh",
+      "term": "dragon communion flesh",
+      "title": "Dragon Communion Flesh",
+      "description": "Boosts vigor, stamina, strength, and dexterity at the cost of gradual HP loss",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "dragonscale-flesh",
+      "term": "dragonscale flesh",
+      "title": "Dragonscale Flesh",
+      "description": "A lump of hot flesh carved from beneath the inverted scales said to grow on aged dragons.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fingerprint-nostrum",
+      "term": "fingerprint nostrum",
+      "title": "Fingerprint Nostrum",
+      "description": "Boosts mind, intelligence, faith, and arcane at cost of gradual HP loss",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "spellproof-pickled-liver",
+      "term": "spellproof pickled liver",
+      "title": "Spellproof Pickled Liver",
+      "description": "Temporarily grants large boost to magic damage negation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fireproof-pickled-liver",
+      "term": "fireproof pickled liver",
+      "title": "Fireproof Pickled Liver",
+      "description": "Temporarily grants large boost to fire damage negation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "lightningproof-pickled-liver",
+      "term": "lightningproof pickled liver",
+      "title": "Lightningproof Pickled Liver",
+      "description": "Temporarily grants large boost to lightning damage negation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "holyproof-pickled-liver",
+      "term": "holyproof pickled liver",
+      "title": "Holyproof Pickled Liver",
+      "description": "Temporarily grants large boost to holy damage negation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "opaline-pickled-liver",
+      "term": "opaline pickled liver",
+      "title": "Opaline Pickled Liver",
+      "description": "Temporarily grants large boost to non-physical damage negation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "well-pickled-turtle-neck",
+      "term": "well-pickled turtle neck",
+      "title": "Well-Pickled Turtle Neck",
+      "description": "Temporarily grants large boost to stamina recovery speed",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "scorpion-stew",
+      "term": "scorpion stew",
+      "title": "Scorpion Stew",
+      "description": "Boosts physical damage negation temporarily and gradually restores HP",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "gourmet-scorpion-stew",
+      "term": "gourmet scorpion stew",
+      "title": "Gourmet Scorpion Stew",
+      "description": "Boosts physical damage negation temporarily and gradually restores a great amount of HP",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "sacred-bloody-flesh",
+      "term": "sacred bloody flesh",
+      "title": "Sacred Bloody Flesh",
+      "description": "Boosts physical attack power and arcane once. Attack power boosted further when blood loss occurs.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "silver-horn-tender",
+      "term": "silver horn tender",
+      "title": "Silver Horn Tender",
+      "description": "Temporarily boosts item discovery",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "innard-meat",
+      "term": "innard meat",
+      "title": "Innard Meat",
+      "description": "Throw at enemies to inflict damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-communion-harpoon",
+      "term": "dragon communion harpoon",
+      "title": "Dragon Communion Harpoon",
+      "description": "Throw to inflict damage with anti-dragon effect",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "polter-stone",
+      "term": "polter stone",
+      "title": "Polter Stone",
+      "description": "Makes a noise imitative of human presence",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "rock-heart",
+      "term": "rock heart",
+      "title": "Rock Heart",
+      "description": "Turns human frame into ancient dragon and boosts Dragon Communion incantations",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "priestess-heart",
+      "term": "priestess heart",
+      "title": "Priestess Heart",
+      "description": "Turns human frame into ancient dragon and boosts Dragon Cult incantations",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "lamenter-s-mask",
+      "term": "lamenter's mask",
+      "title": "Lamenter's Mask",
+      "description": "Transforms wearer into a lamenter and causes head to swell in size",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-dragon-s-blessing",
+      "term": "ancient dragon's blessing",
+      "title": "Ancient Dragon's Blessing",
+      "description": "Uses FP to increase all damage negation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "iris-of-grace",
+      "term": "iris of grace",
+      "title": "Iris of Grace",
+      "description": "Place on the eye of another to grant the light of grace as a fleeing blessing",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "iris-of-occultation",
+      "term": "iris of occultation",
+      "title": "Iris of Occultation",
+      "description": "Place on the eye of another to deny light in all its forms",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "thiollier-s-concoction",
+      "term": "thiollier's concoction",
+      "title": "Thiollier's Concoction",
+      "description": "Causes immediate death if imbibed by an ordinary human",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "prattling-pate-lamentation",
+      "term": "prattling pate \"lamentation\"",
+      "title": "Prattling Pate \"Lamentation\"",
+      "description": "Emits a blissful lamentation",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "bondstone",
+      "term": "bondstone",
+      "title": "Bondstone",
+      "description": "Causes a spiritual explosion, consuming sprite dwelling within spritestone",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "spritestone",
+      "term": "spritestone",
+      "title": "Spritestone",
+      "description": "Uses FP to release a sprite that slowly homes in on enemies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "perfumed-oil-of-ranah",
+      "term": "perfumed oil of ranah",
+      "title": "Perfumed Oil of Ranah",
+      "description": "Uses FP to spout flames forward",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "surging-frenzied-flame",
+      "term": "surging frenzied flame",
+      "title": "Surging Frenzied Flame",
+      "description": "Uses FP to spew frenzied flame",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-coil",
+      "term": "fire coil",
+      "title": "Fire Coil",
+      "description": "Uses FP to conjure a tiny fire snake",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-spritestone",
+      "term": "fire spritestone",
+      "title": "Fire Spritestone",
+      "description": "Uses FP to release a fire sprite that bounces along the ground",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "glinting-nail",
+      "term": "glinting nail",
+      "title": "Glinting Nail",
+      "description": "Uses FP to fire a shattering magic nail",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "sunwarmth-stone",
+      "term": "sunwarmth stone",
+      "title": "Sunwarmth Stone",
+      "description": "Uses FP to continuously heal nearby allies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "charming-branch",
+      "term": "charming branch",
+      "title": "Charming Branch",
+      "description": "Uses FP to charm stabbed enemy and surrounding enemies",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "miriam-s-vanishing",
+      "term": "miriam's vanishing",
+      "title": "Miriam's Vanishing",
+      "description": "Conceals self in a glintstone haze",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "glintblade-trio",
+      "term": "glintblade trio",
+      "title": "Glintblade Trio",
+      "description": "Creates sigil that forms three projectile glintblades after delay",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "rellana-s-twin-moons",
+      "term": "rellana's twin moons",
+      "title": "Rellana's Twin Moons",
+      "description": "Incarnate twin moons and repeatedly strike the ground",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "glintstone-nail",
+      "term": "glintstone nail",
+      "title": "Glintstone Nail",
+      "description": "Fires a shattering magic nail",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "glintstone-nails",
+      "term": "glintstone nails",
+      "title": "Glintstone Nails",
+      "description": "Fires multiple shattering magic nails",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "mantle-of-thorns",
+      "term": "mantle of thorns",
+      "title": "Mantle of Thorns",
+      "description": "Covers self with the Scadutree's impenetrable thorns",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "rings-of-spectral-light",
+      "term": "rings of spectral light",
+      "title": "Rings of Spectral Light",
+      "description": "Creates rings of spectral light that fire in unison",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "vortex-of-putrescence",
+      "term": "vortex of putrescence",
+      "title": "Vortex of Putrescence",
+      "description": "Launches a whirl of putrescent jets",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "mass-of-putrescence",
+      "term": "mass of putrescence",
+      "title": "Mass of Putrescence",
+      "description": "Flings a great mass of putrescence",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "heal-from-afar",
+      "term": "heal from afar",
+      "title": "Heal from Afar",
+      "description": "Greatly heals HP for distant allies the spell reaches",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "aspects-of-the-crucible-thorns",
+      "term": "aspects of the crucible: thorns",
+      "title": "Aspects of the Crucible: Thorns",
+      "description": "Creates a mass of bristling thorns on back to scour the area",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "land-of-shadow",
+      "term": "land of shadow",
+      "title": "Land of Shadow",
+      "description": "Fires a hail of golden projectiles toward foes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "wrath-from-afar",
+      "term": "wrath from afar",
+      "title": "Wrath from Afar",
+      "description": "Fires a golden shockwave that knocks back foes",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "light-of-miquella",
+      "term": "light of miquella",
+      "title": "Light of Miquella",
+      "description": "Annihilates foes with a pillar of light",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "multilayered-ring-of-light",
+      "term": "multilayered ring of light",
+      "title": "Multilayered Ring of Light",
+      "description": "Fires a multilayered golden ring of light that continuously inflicts damage",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "roar-of-rugalea",
+      "term": "roar of rugalea",
+      "title": "Roar of Rugalea",
+      "description": "Channels great red bear to emit a furious roar",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "knight-s-lightning-spear",
+      "term": "knight's lightning spear",
+      "title": "Knight's Lightning Spear",
+      "description": "Hurls lightning spear while firing additional spears from ancient dragon crests",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "electrocharge",
+      "term": "electrocharge",
+      "title": "Electrocharge",
+      "description": "Calls down lightning to charge body with electricity",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "bayle-s-tyranny",
+      "term": "bayle's tyranny",
+      "title": "Bayle's Tyranny",
+      "description": "Channels dread dragon to roar with a heatwave blast",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "bayle-s-flame-lightning",
+      "term": "bayle's flame lightning",
+      "title": "Bayle's Flame Lightning",
+      "description": "Channels dread dragon to strike with flame-lightning-infused talon bone",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ghostflame-breath",
+      "term": "ghostflame breath",
+      "title": "Ghostflame Breath",
+      "description": "Channels dragon to spew ghostflame breath",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "pest-thread-spears",
+      "term": "pest-thread spears",
+      "title": "Pest-Thread Spears",
+      "description": "Secrete sticky threads and twist them into two frontward flying spears",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fleeting-microcosm",
+      "term": "fleeting microcosm",
+      "title": "Fleeting Microcosm",
+      "description": "Conjures a microcosm that pulses with a single wave, disappearing in a burst",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "cherishing-fingers",
+      "term": "cherishing fingers",
+      "title": "Cherishing Fingers",
+      "description": "Surrounds the caster with a mesh of hefty fingers",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "golden-arcs",
+      "term": "golden arcs",
+      "title": "Golden Arcs",
+      "description": "Releases a procession of golden arcs with a swing of the arm",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "giant-golden-arc",
+      "term": "giant golden arc",
+      "title": "Giant Golden Arc",
+      "description": "Releases a giant golden arc with a swing of the arm",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "divine-bird-feathers",
+      "term": "divine bird feathers",
+      "title": "Divine Bird Feathers",
+      "description": "Spreads arms like wings and releases a flurry of feathers",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fire-serpent",
+      "term": "fire serpent",
+      "title": "Fire Serpent",
+      "description": "Launches a threaded serpentine flame",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "rain-of-fire",
+      "term": "rain of fire",
+      "title": "Rain of Fire",
+      "description": "Rains fire for a short duration",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-orb",
+      "term": "messmer's orb",
+      "title": "Messmer's Orb",
+      "description": "Shapes Messmer's flame into a giant orb that soars at foe",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "well-depths-key",
+      "term": "well depths key",
+      "title": "Well Depths Key",
+      "description": "Opens the iron grating at the bottom of the well in Belurat",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "gaol-upper-level-key",
+      "term": "gaol upper level key",
+      "title": "Gaol Upper Level Key",
+      "description": "Opens the iron grating on the upper level of the Lamenter's Gaol",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "gaol-lower-level-key",
+      "term": "gaol lower level key",
+      "title": "Gaol Lower Level Key",
+      "description": "Opens the iron grating on the lower level of the Lamenter's Gaol",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "cross-map",
+      "term": "cross map",
+      "title": "Cross Map",
+      "description": "Map marked with the locations of golden crosses\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "hole-laden-necklace",
+      "term": "hole-laden necklace",
+      "title": "Hole-Laden Necklace",
+      "description": "Use at a hallowed ruin to sound a hanging bell",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "heart-of-bayle",
+      "term": "heart of bayle",
+      "title": "Heart of Bayle",
+      "description": "Gain power of Bayle at the Grand Altar of Dragon Communion",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "new-cross-map",
+      "term": "new cross map",
+      "title": "New Cross Map",
+      "description": "Map showing new locations of golden crosses\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "storeroom-key",
+      "term": "storeroom key",
+      "title": "Storeroom Key",
+      "description": "Use to open the storeroom on the second floor of Belurat",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "secret-rite-scroll",
+      "term": "secret rite scroll",
+      "title": "Secret Rite Scroll",
+      "description": "Learn about the secret rite of the divine gateway",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "letter-for-freyja",
+      "term": "letter for freyja",
+      "title": "Letter for Freyja",
+      "description": "A piece of paper, folded over so that the contents cannot be read",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ruins-map",
+      "term": "ruins map",
+      "title": "Ruins Map",
+      "description": "Map indicating the location of a hallowed ruin\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ruins-map-2nd",
+      "term": "ruins map (2nd)",
+      "title": "Ruins Map (2nd)",
+      "description": "A simple old map, faded and dirty.\nAcquired from Count Ymir, High Priest.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ruins-map-3rd",
+      "term": "ruins map (3rd)",
+      "title": "Ruins Map (3rd)",
+      "description": "A simple old map, faded and dirty.\nAcquired from Count Ymir, High Priest.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "black-syrup",
+      "term": "black syrup",
+      "title": "Black Syrup",
+      "description": "Something Moore asked to be delivered to Thiollier",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "messmer-s-kindling",
+      "term": "messmer's kindling",
+      "title": "Messmer's Kindling",
+      "description": "Burns the sealing tree",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "keep-wall-key",
+      "term": "keep wall key",
+      "title": "Keep Wall Key",
+      "description": "Opens the wooden door on the west wall of the keep",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "furnace-keeper-s-note",
+      "term": "furnace keeper's note",
+      "title": "Furnace Keeper's Note",
+      "description": "Note left by a furnace keeper\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "castle-cross-message",
+      "term": "castle cross message",
+      "title": "Castle Cross Message",
+      "description": "Message left for the author's compatriots\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ancient-ruins-cross-message",
+      "term": "ancient ruins cross message",
+      "title": "Ancient Ruins Cross Message",
+      "description": "Message left by Dryleaf Dane, addressed to kindred spirits who also pursue Miquella's trail.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "monk-s-missive",
+      "term": "monk's missive",
+      "title": "Monk's Missive",
+      "description": "Letter with terse message and an illustration of a monk\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "storehouse-cross-message",
+      "term": "storehouse cross message",
+      "title": "Storehouse Cross Message",
+      "description": "Message left by Sir Ansbach, addressed to kindred spirits who also pursue Miquella's trail.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "note-sealed-spiritsprings",
+      "term": "note: sealed spiritsprings",
+      "title": "Note: Sealed Spiritsprings",
+      "description": "Note imparting knowledge in brief\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "torn-diary-page",
+      "term": "torn diary page",
+      "title": "Torn Diary Page",
+      "description": "Discarded page ripped from a diary\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "message-from-leda",
+      "term": "message from leda",
+      "title": "Message from Leda",
+      "description": "Message left by Needle Knight Leda, addressed to kindred spirits who also pursue Miquella's trail.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "prayer-room-key",
+      "term": "prayer room key",
+      "title": "Prayer Room Key",
+      "description": "Opens prayer room door in the house of worship found in the church district",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "tower-of-shadow-message",
+      "term": "tower of shadow message",
+      "title": "Tower of Shadow Message",
+      "description": "Message left by Needle Knight Leda, addressed to kindred spirits who also pursue Miquella's trail.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "incursion-painting",
+      "term": "\"incursion\" painting",
+      "title": "\"Incursion\" Painting",
+      "description": "Reminiscence of the painting \"Incursion\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "the-sacred-tower-painting",
+      "term": "\"the sacred tower\" painting",
+      "title": "\"The Sacred Tower\" Painting",
+      "description": "Reminiscence of the painting \"The Sacred Tower\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "domain-of-dragons-painting",
+      "term": "\"domain of dragons\" painting",
+      "title": "\"Domain of Dragons\" Painting",
+      "description": "Reminiscence of the painting \"Domain of Dragons\"\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "map-gravesite-plain",
+      "term": "map: gravesite plain",
+      "title": "Map: Gravesite Plain",
+      "description": "Map of Gravesite Plain",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "map-scadu-altus",
+      "term": "map: scadu altus",
+      "title": "Map: Scadu Altus",
+      "description": "Map of Scadu Altus",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "map-southern-shore",
+      "term": "map: southern shore",
+      "title": "Map: Southern Shore",
+      "description": "Map of the southern shore of Gravesite Plain",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "map-rauh-ruins",
+      "term": "map: rauh ruins",
+      "title": "Map: Rauh Ruins",
+      "description": "Map of the Rauh Ruins",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "map-abyss",
+      "term": "map: abyss",
+      "title": "Map: Abyss",
+      "description": "Map of the Abyss to the east of Gravesite Plain",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "about-the-scadutree-blessing",
+      "term": "about the scadutree blessing",
+      "title": "About the Scadutree Blessing",
+      "description": "Information about the Scadutree Blessing\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "about-new-inventory-features",
+      "term": "about new inventory features",
+      "title": "About New Inventory Features",
+      "description": "Information about new inventory features\nExamine using &#63;&#107;&#101;&#121;&#105;&#99;&#111;&#110;&#64;&#51;&#49;&#63;",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "hefty-cracked-pot",
+      "term": "hefty cracked pot",
+      "title": "Hefty Cracked Pot",
+      "description": "Container required for crafting hefty cracked pot items",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "scadutree-fragment",
+      "term": "scadutree fragment",
+      "title": "Scadutree Fragment",
+      "description": "Bolsters Scadutree Blessing",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "viridian-hidden-tear",
+      "term": "viridian hidden tear",
+      "title": "Viridian Hidden Tear",
+      "description": "Eliminates all stamina consumption in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "crimsonburst-dried-tear",
+      "term": "crimsonburst dried tear",
+      "title": "Crimsonburst Dried Tear",
+      "description": "Steadily restores HP of nearby allies for a time in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "crimson-sapping-cracked-tear",
+      "term": "crimson-sapping cracked tear",
+      "title": "Crimson-Sapping Cracked Tear",
+      "description": "Grants attacks HP-restoring effect in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "cerulean-sapping-cracked-tear",
+      "term": "cerulean-sapping cracked tear",
+      "title": "Cerulean-Sapping Cracked Tear",
+      "description": "Grants attacks FP-restoring effect in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "oil-soaked-tear",
+      "term": "oil-soaked tear",
+      "title": "Oil-Soaked Tear",
+      "description": "Coats nearby enemies with oil in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "bloodsucking-cracked-tear",
+      "term": "bloodsucking cracked tear",
+      "title": "Bloodsucking Cracked Tear",
+      "description": "Enhances attacks at the cost of HP in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "deflecting-hardtear",
+      "term": "deflecting hardtear",
+      "title": "Deflecting Hardtear",
+      "description": "Enhances spontaneous guard in mixed physick",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "beast-horn",
+      "term": "beast horn",
+      "title": "Beast Horn",
+      "description": "Material used for crafting items",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "spirit-calculus",
+      "term": "spirit calculus",
+      "title": "Spirit Calculus",
+      "description": "An exceedingly rare to find calculus, suffused with spirituality.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "pearlescent-scale",
+      "term": "pearlescent scale",
+      "title": "Pearlescent Scale",
+      "description": "A glassy and glistening fragment of pearlescent hue.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "scorpion-liver",
+      "term": "scorpion liver",
+      "title": "Scorpion Liver",
+      "description": "Fresh organ of a spider-scorpion. It is referred to as 'liver,' but no one is quite sure of its purpose.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "fly-mold",
+      "term": "fly mold",
+      "title": "Fly Mold",
+      "description": "A species of fungus known for its deathly sweet stench.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "rada-fruit",
+      "term": "rada fruit",
+      "title": "Rada Fruit",
+      "description": "Berry-like fruit that grows into spiritgrave grass.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "redflesh-mushroom",
+      "term": "redflesh mushroom",
+      "title": "Redflesh Mushroom",
+      "description": "Red mushroom that grows in sullen lands.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "whiteflesh-mushroom",
+      "term": "whiteflesh mushroom",
+      "title": "Whiteflesh Mushroom",
+      "description": "Milky-white mushroom that grows in sullen lands.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "knot-resin",
+      "term": "knot resin",
+      "title": "Knot Resin",
+      "description": "Knot-shaped lump of resin that exuded from the roots of trees.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "dewgem",
+      "term": "dewgem",
+      "title": "Dewgem",
+      "description": "Succulent plant that has supped on night-tinged dew.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "black-pyrefly",
+      "term": "black pyrefly",
+      "title": "Black Pyrefly",
+      "description": "Fiery butterfly with black cinder wings.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "glintslab-firefly",
+      "term": "glintslab firefly",
+      "title": "Glintslab Firefly",
+      "description": "Glintstone firefly improved by selective breeding.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "yellow-fulgurbloom",
+      "term": "yellow fulgurbloom",
+      "title": "Yellow Fulgurbloom",
+      "description": "Yellow flower that crackles with lightning.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "shadow-sunflower",
+      "term": "shadow sunflower",
+      "title": "Shadow Sunflower",
+      "description": "A large flower that blooms facing the Scadutree.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "toxic-mossling",
+      "term": "toxic mossling",
+      "title": "Toxic Mossling",
+      "description": "A large moss animal glutted with poison.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "scarlet-bud",
+      "term": "scarlet bud",
+      "title": "Scarlet Bud",
+      "description": "A large, rotten bud that will never come into bloom.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "sanguine-amaryllis",
+      "term": "sanguine amaryllis",
+      "title": "Sanguine Amaryllis",
+      "description": "A bloodflower with meaty petals.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "frozen-maggot",
+      "term": "frozen maggot",
+      "title": "Frozen Maggot",
+      "description": "Frozen maggots that somehow continue to wriggle.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "deep-purple-lily",
+      "term": "deep-purple lily",
+      "title": "Deep-Purple Lily",
+      "description": "A deep-purple water lily that is on the verge of wilting.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "nectarblood-burgeon",
+      "term": "nectarblood burgeon",
+      "title": "Nectarblood Burgeon",
+      "description": "A young shoot, heavy with velvety purple nectar.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "winter-lantern-fly",
+      "term": "winter-lantern fly",
+      "title": "Winter-Lantern Fly",
+      "description": "Winged insect carrying a dangling frenzied flame grape.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "swollen-grape",
+      "term": "swollen grape",
+      "title": "Swollen Grape",
+      "description": "An eyeball of the frenzied flame that has swollen from within.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "grave-keeper-s-brainpan",
+      "term": "grave keeper's brainpan",
+      "title": "Grave Keeper's Brainpan",
+      "description": "Skull bone of an old grave keeper.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "horn-strewn-excrement",
+      "term": "horn-strewn excrement",
+      "title": "Horn-Strewn Excrement",
+      "description": "Excrement of a large carnivorous beast containing fragments of horns.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "gas-stone",
+      "term": "gas stone",
+      "title": "Gas Stone",
+      "description": "Block of stone infused with hot gas.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ghostflame-bloom",
+      "term": "ghostflame bloom",
+      "title": "Ghostflame Bloom",
+      "description": "Ghostflame flower that grows in gravesites.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "grave-cricket",
+      "term": "grave cricket",
+      "title": "Grave Cricket",
+      "description": "Cricket that produces a raspy cry.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "dragon-s-calorbloom",
+      "term": "dragon's calorbloom",
+      "title": "Dragon's Calorbloom",
+      "description": "Flower with an uncanny shape, coursing with hot blood.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "finger-mimic",
+      "term": "finger mimic",
+      "title": "Finger Mimic",
+      "description": "Light-pink mushroom resembling a wizened finger.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "empyrean-blood-burgeon",
+      "term": "empyrean-blood burgeon",
+      "title": "Empyrean-Blood Burgeon",
+      "description": "A young shoot, heavy with Empyrean blood.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "congealed-putrescence",
+      "term": "congealed putrescence",
+      "title": "Congealed Putrescence",
+      "description": "Bruise-colored putrescence that oozes from stone coffins, congealed into a large viscous lump.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "roundrock",
+      "term": "roundrock",
+      "title": "Roundrock",
+      "description": "Round piece of rock shaped by the water's current.\nCan be used for crafting, or simply for throwing at enemies.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "spiritgrave-stone",
+      "term": "spiritgrave stone",
+      "title": "Spiritgrave Stone",
+      "description": "A piece of a gravestone that has started to turn into a spirit.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "rauh-burrow",
+      "term": "rauh burrow",
+      "title": "Rauh Burrow",
+      "description": "Oval-shaped stone bearing an engraving.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "ember-of-messmer",
+      "term": "ember of messmer",
+      "title": "Ember of Messmer",
+      "description": "Serpentine, cord-like ember.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "blessed-bone-shard",
+      "term": "blessed bone shard",
+      "title": "Blessed Bone Shard",
+      "description": "Shard of bone with a golden shine.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "red-fulgurbloom",
+      "term": "red fulgurbloom",
+      "title": "Red Fulgurbloom",
+      "description": "Flower that crackles with red lightning.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "nailstone",
+      "term": "nailstone",
+      "title": "Nailstone",
+      "description": "Flake-like stone shard with a faint fingerprint engraving.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "sharp-gravel-stone",
+      "term": "sharp gravel stone",
+      "title": "Sharp Gravel Stone",
+      "description": "A particularly sharp piece of gravel stone.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    },
+    {
+      "id": "furnace-visage",
+      "term": "furnace visage",
+      "title": "Furnace Visage",
+      "description": "A smaller imitation of the furnace golem's visage.\nMaterial used for crafting items.",
+      "section": "Elden Ring - Shadow of the Erdtree",
+      "category": "Items",
+      "subcategory": "Key Items",
+      "source": "dlc"
+    }
+  ]
+}
