@@ -17,10 +17,10 @@ export default function LaChoseEnSoiePage() {
             <BookOpen className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">External Source</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             La Chose en Soie
           </h1>
-          <p className="text-lg text-[var(--text-secondary)] mb-4">
+          <p className="page-hero-description mb-4">
             <em>The Thing in Silk</em> — An analysis of Duchamp&apos;s ready-made philosophy, tracing
             the logical development from the <em>Grand Verre</em> to &quot;the chance encounter on the
             dissection table.&quot;

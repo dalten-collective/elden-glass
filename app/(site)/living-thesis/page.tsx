@@ -22,10 +22,10 @@ export default function LivingThesisPage() {
             <Eye className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">The Living Thesis</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             {doc.title}
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             The current, evolving statement of the discovery. Where the claim from the initial thesis has been expanded, cited, and pressure-tested.
           </p>
         </div>

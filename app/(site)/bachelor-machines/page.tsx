@@ -18,10 +18,10 @@ export default function BachelorMachinesPage() {
             <Cog className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Theoretical Concept</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Understanding Bachelor Machines
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             The bachelor machine is a closed, self-sufficient system that produces nothing but its own functioning.
             A key concept linking Duchamp&apos;s Large Glass to Elden Ring&apos;s cyclical world.
           </p>

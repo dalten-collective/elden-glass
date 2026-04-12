@@ -18,10 +18,10 @@ export default function ChessPage() {
             <Crown className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Strategic Dimension</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Duchamp and Chess
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             Duchamp famously abandoned art for chess in the 1920s. But was chess itself
             a continuation of his artistic practice by other means?
           </p>

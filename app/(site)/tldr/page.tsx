@@ -26,8 +26,8 @@ export default function TldrPage() {
               <Zap className="h-4 w-4 text-[var(--accent-gold)]" />
               <p className="text-sm uppercase tracking-[0.35em] text-[var(--accent-gold)]">TL;DR</p>
             </div>
-            <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)]">{doc.title}</h1>
-            {doc.subtitle && <p className="mt-4 text-lg lg:text-xl text-[var(--text-secondary)]">{doc.subtitle}</p>}
+            <h1 className="page-hero-title">{doc.title}</h1>
+            {doc.subtitle && <p className="mt-4 page-hero-description">{doc.subtitle}</p>}
           </div>
           <Button asChild variant="outline" size="sm">
             <a href={`/proofs/${doc.hashableFile}`} download>

@@ -175,10 +175,10 @@ export default function ReadymadesResearchPage() {
             <BookOpen className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Research Archive</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Readymades Research
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             Scholarly articles about Duchamp&apos;s readymades from Toutfait: The Marcel Duchamp Studies Online Journal
           </p>
         </div>

@@ -18,10 +18,10 @@ export default function LargeGlassBreakdownPage() {
             <Quote className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Duchamp in His Own Words</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Selected Quotes on the Large Glass
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             Direct quotes from Duchamp&apos;s notes describing the components and geometry of <em>The Bride Stripped Bare by Her Bachelors, Even</em>.
           </p>
         </div>

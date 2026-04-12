@@ -13,10 +13,10 @@ export default function AstrologyPage() {
             <Star className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">Celestial Mechanics</p>
           </div>
-          <h1 className="font-serif text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
+          <h1 className="page-hero-title">
             Elden Ring&apos;s Astrology
           </h1>
-          <p className="text-lg text-[var(--text-secondary)]">
+          <p className="page-hero-description">
             As above, so below. The celestial structure of the Lands Between mirrors
             the cosmic relationships between stars, planets, and the forces that bind them.
           </p>
