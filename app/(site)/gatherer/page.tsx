@@ -20,6 +20,26 @@ interface ApiResponse {
   subcategories: string[];
 }
 
+const SHOW_LOCAL_FEDWIKI_LINK = process.env.NODE_ENV === 'development';
+
+function isApiResponse(value: unknown): value is ApiResponse {
+  if (!value || typeof value !== 'object') {
+    return false;
+  }
+
+  const candidate = value as Partial<ApiResponse>;
+  return (
+    Array.isArray(candidate.cards) &&
+    typeof candidate.total === 'number' &&
+    typeof candidate.page === 'number' &&
+    typeof candidate.limit === 'number' &&
+    typeof candidate.totalPages === 'number' &&
+    Array.isArray(candidate.sections) &&
+    Array.isArray(candidate.categories) &&
+    Array.isArray(candidate.subcategories)
+  );
+}
+
 // Wrap in Suspense for useSearchParams
 export default function GathererPage() {
   return (
@@ -114,7 +134,11 @@ function GathererContent() {
         const response = await fetch(`/api/title-cards?${params.toString()}`);
         if (!response.ok) throw new Error('Failed to fetch cards');
 
-        const result: ApiResponse = await response.json();
+        const result = await response.json();
+        if (!isApiResponse(result)) {
+          throw new Error('Title card API returned an unexpected response shape');
+        }
+
         setData(result);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error');
@@ -168,15 +192,17 @@ function GathererContent() {
           <p className="text-[var(--text-secondary)]">
             Browse and search {data?.total?.toLocaleString() || '...'} title cards in the database
           </p>
-          <a
-            href="http://localhost:3000/assets/gatherer.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-3 text-sm text-[var(--accent-gold)] hover:underline"
-          >
-            <Globe className="h-4 w-4" />
-            Open in Federated Wiki
-          </a>
+          {SHOW_LOCAL_FEDWIKI_LINK && (
+            <a
+              href="http://localhost:3000/assets/gatherer.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-3 text-sm text-[var(--accent-gold)] hover:underline"
+            >
+              <Globe className="h-4 w-4" />
+              Open local Federated Wiki export
+            </a>
+          )}
         </div>
       </div>
 
