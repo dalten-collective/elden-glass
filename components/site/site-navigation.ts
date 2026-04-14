@@ -152,6 +152,7 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
             type: 'group',
             children: [
               { type: 'link', href: '/readymades-research', label: 'Readymades Research' },
+              { type: 'link', href: '/la-chose-en-soie', label: 'La Chose en Soie' },
             ],
           },
           { type: 'link', href: '/chess', label: 'Chess' },
@@ -168,7 +169,6 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
             ],
           },
           { type: 'link', href: '/duchamp-works', label: 'Duchamp Works' },
-          { type: 'link', href: '/la-chose-en-soie', label: 'La Chose en Soie' },
         ],
       },
       {
