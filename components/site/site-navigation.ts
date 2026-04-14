@@ -77,7 +77,6 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
         id: 'pataphysics',
         label: 'Pataphysics',
         children: [
-          { type: 'link', href: '/bachelor-machines', label: 'Understanding Bachelor Machines' },
           { type: 'link', href: '/pataphysics', label: 'Understand Pataphysics' },
           { type: 'link', href: '/pataphysics/pataphysics-engine', label: "A 'Pataphysics Engine" },
           { type: 'link', href: '/what-is-pataphysics', label: 'What is Pataphysics?' },
