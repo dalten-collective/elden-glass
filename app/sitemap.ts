@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/living-thesis',
     '/about',
     '/search',
-    '/card-database',
     '/bibliography',
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
@@ -42,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/belevan',
     '/rhonda-shearer-archive',
     '/chess-research',
+    '/duchamp-works',
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,

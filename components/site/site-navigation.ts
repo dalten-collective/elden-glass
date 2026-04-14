@@ -142,10 +142,23 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
           { type: 'link', href: '/rhonda-shearer', label: 'Rhonda Shearer' },
           {
             type: 'group',
-            children: [{ type: 'link', href: '/impossible-bed', label: 'The Impossible Bed' }],
+            children: [
+              { type: 'link', href: '/impossible-bed', label: 'The Impossible Bed' },
+              { type: 'link', href: '/rhonda-shearer-archive', label: 'Rhonda Shearer Archive' },
+            ],
           },
           { type: 'link', href: '/readymades', label: 'The Readymades' },
+          {
+            type: 'group',
+            children: [
+              { type: 'link', href: '/readymades-research', label: 'Readymades Research' },
+            ],
+          },
           { type: 'link', href: '/chess', label: 'Chess' },
+          {
+            type: 'group',
+            children: [{ type: 'link', href: '/chess-research', label: 'Chess Research' }],
+          },
           { type: 'link', href: '/the-boxes', label: 'The Boxes' },
           {
             type: 'group',
@@ -154,17 +167,22 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
               { type: 'link', href: '/the-boxes#white-box', label: 'The White Box (1967)' },
             ],
           },
+          { type: 'link', href: '/duchamp-works', label: 'Duchamp Works' },
+          { type: 'link', href: '/la-chose-en-soie', label: 'La Chose en Soie' },
         ],
       },
       {
         type: 'section',
         id: 'critiques',
         label: 'Critiques',
-        children: data.critiques.map((critique) => ({
-          type: 'link' as const,
-          href: `/critiques/${critique.slug}`,
-          label: critique.title,
-        })),
+        children: [
+          { type: 'link' as const, href: '/critiques', label: 'Critiques Index' },
+          ...data.critiques.map((critique) => ({
+            type: 'link' as const,
+            href: `/critiques/${critique.slug}`,
+            label: critique.title,
+          })),
+        ],
         emptyLabel: 'No critiques yet.',
       },
       {
@@ -172,28 +190,6 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
         id: 'author',
         label: 'Author',
         children: [{ type: 'link', href: '/about', label: data.about.title }],
-      },
-      // Temporary audit section. Surfaces routes that exist under
-      // app/(site)/ but are not otherwise linked in the sidebar, so each
-      // page can be inspected 1-by-1 during the MDX cleanup. Remove this
-      // section once every orphan is either migrated to MDX, wired into
-      // the real nav, or deleted.
-      {
-        type: 'section',
-        id: 'orphaned-audit',
-        label: 'Orphaned (audit)',
-        children: [
-          { type: 'link', href: '/card-database', label: 'Card Database' },
-          { type: 'link', href: '/chess-research', label: 'Chess Research' },
-          { type: 'link', href: '/critiques', label: 'Critiques Index' },
-          { type: 'link', href: '/duchamp-works', label: 'Duchamp Works' },
-          { type: 'link', href: '/japanpicture', label: 'Japan Picture' },
-          { type: 'link', href: '/la-chose-en-soie', label: 'La Chose en Soie' },
-          { type: 'link', href: '/press', label: 'Press' },
-          { type: 'link', href: '/readymades-research', label: 'Readymades Research' },
-          { type: 'link', href: '/rhonda-shearer-archive', label: 'Rhonda Shearer Archive' },
-          { type: 'link', href: '/search', label: 'Search (top-bar)' },
-        ],
       },
     ],
   };
