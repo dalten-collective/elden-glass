@@ -173,6 +173,28 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
         label: 'Author',
         children: [{ type: 'link', href: '/about', label: data.about.title }],
       },
+      // Temporary audit section. Surfaces routes that exist under
+      // app/(site)/ but are not otherwise linked in the sidebar, so each
+      // page can be inspected 1-by-1 during the MDX cleanup. Remove this
+      // section once every orphan is either migrated to MDX, wired into
+      // the real nav, or deleted.
+      {
+        type: 'section',
+        id: 'orphaned-audit',
+        label: 'Orphaned (audit)',
+        children: [
+          { type: 'link', href: '/card-database', label: 'Card Database' },
+          { type: 'link', href: '/chess-research', label: 'Chess Research' },
+          { type: 'link', href: '/critiques', label: 'Critiques Index' },
+          { type: 'link', href: '/duchamp-works', label: 'Duchamp Works' },
+          { type: 'link', href: '/japanpicture', label: 'Japan Picture' },
+          { type: 'link', href: '/la-chose-en-soie', label: 'La Chose en Soie' },
+          { type: 'link', href: '/press', label: 'Press' },
+          { type: 'link', href: '/readymades-research', label: 'Readymades Research' },
+          { type: 'link', href: '/rhonda-shearer-archive', label: 'Rhonda Shearer Archive' },
+          { type: 'link', href: '/search', label: 'Search (top-bar)' },
+        ],
+      },
     ],
   };
 }
