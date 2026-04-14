@@ -60,3 +60,4 @@ a-ball-of-twine.txt
 !config/blockchain-config.template.json
 Grant Us Eyes.pdf
 *.tsbuildinfo
+.worktrees
