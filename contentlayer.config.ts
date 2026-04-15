@@ -1,8 +1,20 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+import GithubSlugger from 'github-slugger';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import { remarkFloatImages } from './lib/remark-float-image';
+
+export function extractHeadings(raw: string): Array<{ level: 2 | 3; text: string; id: string }> {
+  const slugger = new GithubSlugger();
+  const matches = Array.from(raw.matchAll(/^(#{2,3})\s+(.+)$/gm));
+
+  return matches.map((m) => ({
+    level: m[1].length as 2 | 3,
+    text: m[2].trim(),
+    id: slugger.slug(m[2].trim()),
+  }));
+}
 
 const computedDateField = {
   type: 'date' as const,
@@ -155,6 +167,10 @@ export const ContentPage = defineDocumentType(() => ({
     url: {
       type: 'string',
       resolve: (doc) => `/${doc._raw.flattenedPath.replace(/^pages\//, '')}`,
+    },
+    headings: {
+      type: 'json',
+      resolve: (doc) => extractHeadings(doc.body.raw),
     },
     date: computedDateField,
   },

@@ -20,8 +20,15 @@ import {
 
 const WORDS_PER_MINUTE = 220;
 
+type ContentPageHeading = {
+  level: 2 | 3;
+  text: string;
+  id: string;
+};
+
 export type ContentPage = {
   body: { raw: string };
+  headings: ContentPageHeading[];
   readingMinutes?: number;
   slug: string;
   url: string;
