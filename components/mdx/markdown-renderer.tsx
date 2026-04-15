@@ -16,6 +16,7 @@ import { Callout } from './callout';
 import { CalloutRow } from './callout-row';
 import { Quote } from './quote';
 import { ConceptCard } from './concept-card';
+import { EldenOrrery } from '@/components/astrology/elden-orrery';
 
 const components = {
   FloatImage,
@@ -32,6 +33,7 @@ const components = {
   CalloutRow,
   Quote,
   ConceptCard,
+  EldenOrrery,
 };
 
 interface MarkdownRendererProps {
