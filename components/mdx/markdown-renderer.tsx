@@ -15,6 +15,7 @@ import { EvidenceGroup } from './evidence-group';
 import { Callout } from './callout';
 import { CalloutRow } from './callout-row';
 import { Quote } from './quote';
+import { ConceptCard } from './concept-card';
 
 const components = {
   FloatImage,
@@ -30,6 +31,7 @@ const components = {
   Callout,
   CalloutRow,
   Quote,
+  ConceptCard,
 };
 
 interface MarkdownRendererProps {

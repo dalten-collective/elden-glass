@@ -106,10 +106,12 @@ export function getLivingThesisDocument(): LivingThesisDoc & { readingMinutes: n
 }
 
 /**
- * Returns a content page by its filesystem-derived slug.
+ * Returns a content page by its filesystem-derived slug, with reading time
+ * computed from the body when the author did not specify it in frontmatter.
  */
 export function getContentPageBySlug(slug: string): ContentPage | null {
-  return allContentPages.find((page) => page.slug === slug) ?? null;
+  const doc = allContentPages.find((page) => page.slug === slug);
+  return doc ? withComputedReadingTime(doc) : null;
 }
 
 /**
@@ -120,10 +122,13 @@ export function allContentPagesSorted(): ContentPage[] {
 }
 
 /**
- * Returns a staging content page by its filesystem-derived slug.
+ * Returns a staging content page by its filesystem-derived slug, with
+ * reading time computed from the body when the author did not specify it
+ * in frontmatter.
  */
 export function getStagingContentPageBySlug(slug: string): StagingContentPage | null {
-  return allStagingContentPages.find((page) => page.slug === slug) ?? null;
+  const doc = allStagingContentPages.find((page) => page.slug === slug);
+  return doc ? withComputedReadingTime(doc) : null;
 }
 
 /**
