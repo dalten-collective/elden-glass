@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Impossible Bed | Elden Glass',
+  title: 'The Impossible Bed, Part II - Elden Ring Is The Large Glass',
   description:
-    "Rhonda Roland Shearer's groundbreaking essay on Duchamp's readymades and Poincaré's discovery theory",
+    "Rhonda Roland Shearer's essay on Duchamp's readymades and Poincaré's discovery theory, Part II — key definitions and concepts.",
 };
 
 function DefinitionItem({
@@ -33,10 +33,10 @@ export default function ImpossibleBedPage() {
   return (
     <div className="mx-auto max-w-4xl">
       <h1 className="font-serif text-3xl lg:text-4xl text-[var(--accent-gold)] mb-4">
-        Marcel Duchamp&apos;s Impossible Bed
+        The Impossible Bed, Part II
       </h1>
       <p className="text-[var(--text-secondary)] mb-2 text-lg">
-        Part II: A Possible Route of Influence From Art To Science
+        A Possible Route of Influence From Art To Science
       </p>
       <p className="text-[var(--text-tertiary)] mb-8 text-sm italic">
         From Rhonda Roland Shearer&apos;s essay, originally published in Art &amp; Academe (ISSN:

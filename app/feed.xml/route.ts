@@ -92,11 +92,11 @@ export async function GET() {
     },
     {
       title: "Rhonda Shearer and Duchamp's Secret",
-      link: `${BASE_URL}/rhonda-shearer-archive`,
+      link: `${BASE_URL}/impossible-bed-i`,
       description:
         "Rhonda Roland Shearer discovered that Duchamp's readymades were not found objects but carefully constructed artworks. Her research validates the depth of Duchamp's conceptual games.",
       pubDate: new Date('2024-12-01'),
-      guid: `${BASE_URL}/rhonda-shearer-archive`,
+      guid: `${BASE_URL}/impossible-bed-i`,
     },
   ];
 

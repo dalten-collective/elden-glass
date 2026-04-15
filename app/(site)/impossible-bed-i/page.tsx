@@ -5,8 +5,9 @@ import { HeroMeta } from '@/components/site/hero-meta';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Rhonda Shearer Archive - Elden Ring Is The Large Glass',
-  description: 'Archive: The Impossible Bed Part I with original illustrations',
+  title: 'The Impossible Bed, Part I - Elden Ring Is The Large Glass',
+  description:
+    "Rhonda Roland Shearer's full archival essay on Duchamp's Impossible Bed, Part I, with original illustrations from marcelduchamp.org.",
 };
 
 export default function RhondaShearerArchivePage() {
@@ -18,14 +19,14 @@ export default function RhondaShearerArchivePage() {
           <div className="flex items-center gap-2 mb-4">
             <User className="h-5 w-5 text-[var(--accent-gold)]" />
             <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">
-              Key Scholar
+              Shearer Essay — Part I
             </p>
           </div>
-          <h1 className="page-hero-title">Rhonda Shearer</h1>
+          <h1 className="page-hero-title">The Impossible Bed, Part I</h1>
           <p className="page-hero-description">
-            The researcher whose groundbreaking work revealed that Duchamp&apos;s
-            &quot;readymades&quot; were often carefully crafted fakes - transforming our
-            understanding of his entire project.
+            Rhonda Roland Shearer&apos;s full archival essay on Marcel Duchamp&apos;s
+            &quot;Impossible Bed&quot; and its relationship to Poincaré&apos;s influence, reproduced
+            with the original illustrations from marcelduchamp.org.
           </p>
         </div>
         <HeroMeta
@@ -4834,7 +4835,7 @@ export default function RhondaShearerArchivePage() {
           verification toolkit, and the Large Glass as a 4-D creativity machine.
         </p>
         <Link
-          href="/impossible-bed"
+          href="/impossible-bed-ii"
           className="inline-flex items-center gap-2 text-[var(--accent-gold)] hover:underline font-medium"
         >
           Read Part II: A Possible Route of Influence From Art To Science →

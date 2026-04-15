@@ -132,7 +132,7 @@ export default function RhondaShearerPage() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <Link
-            href="/rhonda-shearer-archive"
+            href="/impossible-bed-i"
             className="group p-6 border border-[var(--border-subtle)] rounded-lg hover:border-[var(--accent-gold)]/50 transition-colors"
           >
             <h3 className="font-medium text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent-gold)]">
@@ -144,7 +144,7 @@ export default function RhondaShearerPage() {
             </p>
           </Link>
           <Link
-            href="/impossible-bed"
+            href="/impossible-bed-ii"
             className="group p-6 border border-[var(--border-subtle)] rounded-lg hover:border-[var(--accent-gold)]/50 transition-colors"
           >
             <h3 className="font-medium text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent-gold)]">

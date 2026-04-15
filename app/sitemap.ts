@@ -37,9 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/golden-bough',
     '/xenotext',
     '/la-chose-en-soie',
-    '/impossible-bed',
+    '/impossible-bed-i',
+    '/impossible-bed-ii',
     '/belevan',
-    '/rhonda-shearer-archive',
     '/chess-research',
     '/duchamp-works',
   ].map((path) => ({

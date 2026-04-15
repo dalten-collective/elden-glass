@@ -142,8 +142,8 @@ export function getSiteNavigation(data: SidebarData): SiteNavigation {
           {
             type: 'group',
             children: [
-              { type: 'link', href: '/impossible-bed', label: 'The Impossible Bed' },
-              { type: 'link', href: '/rhonda-shearer-archive', label: 'Rhonda Shearer Archive' },
+              { type: 'link', href: '/impossible-bed-ii', label: 'The Impossible Bed, Part II' },
+              { type: 'link', href: '/impossible-bed-i', label: 'The Impossible Bed, Part I' },
             ],
           },
           { type: 'link', href: '/readymades', label: 'The Readymades' },

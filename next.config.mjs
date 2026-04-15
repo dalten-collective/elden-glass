@@ -17,6 +17,20 @@ const nextConfig = {
     }
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/rhonda-shearer-archive',
+        destination: '/impossible-bed-i',
+        permanent: true,
+      },
+      {
+        source: '/impossible-bed',
+        destination: '/impossible-bed-ii',
+        permanent: true,
+      },
+    ];
+  },
   images: {
     domains: [
       'eldenring.wiki.fextralife.com',
