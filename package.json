@@ -17,7 +17,7 @@
     "sync:from-wiki": "node scripts/sync-from-fedwiki.js",
     "sync:to-wiki": "node scripts/export-to-fedwiki.js",
     "sync:gatherer": "node scripts/generate-fedwiki-gatherer.js",
-    "predev": "npm run sync:critique-assets",
+    "predev": "npm run sync:critique-assets && npm run sync:manuscripts",
     "prebuild": "npm run sync:critique-assets && npm run sync:manuscripts"
   },
   "dependencies": {

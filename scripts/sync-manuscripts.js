@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('node:fs');
 const path = require('node:path');
-const { pathToFileURL } = require('node:url');
+const { parseManuscript } = require('../lib/manuscript-core.js');
 
 const PROOFS_DIR = path.join(process.cwd(), 'public', 'proofs');
 const OUTPUT_PATH = path.join(process.cwd(), 'data', 'manuscripts.json');
@@ -28,14 +28,11 @@ function isEligibleProofFile(entry) {
   return ELIGIBLE_EXTENSIONS.has(extension) && !isHexDigestFilename(entry.name);
 }
 
-async function main() {
+function main() {
   if (!fs.existsSync(PROOFS_DIR)) {
     log('No public/proofs directory found, skipping.');
     process.exit(0);
   }
-
-  const manuscriptModuleUrl = pathToFileURL(path.join(process.cwd(), 'lib', 'manuscript.ts')).href;
-  const { loadManuscriptFromDisk } = await import(manuscriptModuleUrl);
 
   const entries = fs
     .readdirSync(PROOFS_DIR, { withFileTypes: true })
@@ -46,7 +43,8 @@ async function main() {
   const manifest = {};
 
   for (const filename of entries) {
-    manifest[filename] = loadManuscriptFromDisk(filename);
+    const raw = fs.readFileSync(path.join(PROOFS_DIR, filename), 'utf8');
+    manifest[filename] = parseManuscript(raw);
   }
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
@@ -54,7 +52,9 @@ async function main() {
   log(`Synced ${entries.length} manuscript entries into data/manuscripts.json.`);
 }
 
-main().catch((error) => {
+try {
+  main();
+} catch (error) {
   console.error(error);
   process.exit(1);
-});
+}

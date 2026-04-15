@@ -1,33 +1,22 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import manuscriptCore from './manuscript-core.js';
 
 export interface ParsedManuscript {
   header: string | null;
   body: string;
 }
 
-const EMAIL_MASK_PATTERN = / *<[^>\s]+@[^>\s]+>/g;
-const HEADER_PATTERN = /^-{5,}[^\n]*\n(?:(?:From|Date|Subject|To):[^\n]*\n?)+/;
+const { parseManuscript: parseManuscriptCore } = manuscriptCore as {
+  parseManuscript(raw: string): ParsedManuscript;
+};
 
 /**
  * Masks private email addresses and splits a manuscript into header/body
  * sections when it starts with a forwarded-email block.
  */
 export function parseManuscript(raw: string): ParsedManuscript {
-  const masked = raw.replace(EMAIL_MASK_PATTERN, '').trim();
-  const match = masked.match(HEADER_PATTERN);
-
-  if (!match) {
-    return {
-      header: null,
-      body: masked,
-    };
-  }
-
-  return {
-    header: match[0].trim(),
-    body: masked.slice(match[0].length).trim(),
-  };
+  return parseManuscriptCore(raw);
 }
 
 /**
