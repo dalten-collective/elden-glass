@@ -11,6 +11,10 @@ import { DefinitionItem } from './definition-item';
 import { HashVerification } from '@/components/verification/hash-verification';
 import { ManuscriptDisplay } from './manuscript-display';
 import { EvidencePoint } from './evidence-point';
+import { EvidenceGroup } from './evidence-group';
+import { Callout } from './callout';
+import { CalloutRow } from './callout-row';
+import { Quote } from './quote';
 
 const components = {
   FloatImage,
@@ -22,6 +26,10 @@ const components = {
   HashVerification,
   ManuscriptDisplay,
   EvidencePoint,
+  EvidenceGroup,
+  Callout,
+  CalloutRow,
+  Quote,
 };
 
 interface MarkdownRendererProps {
