@@ -13,11 +13,12 @@
     "check": "npm run lint && npm run format:check && npm run typecheck && NEXT_TELEMETRY_DISABLED=1 npm run build",
     "content": "contentlayer",
     "sync:critique-assets": "node scripts/sync-critique-assets.js",
+    "sync:manuscripts": "node scripts/sync-manuscripts.js",
     "sync:from-wiki": "node scripts/sync-from-fedwiki.js",
     "sync:to-wiki": "node scripts/export-to-fedwiki.js",
     "sync:gatherer": "node scripts/generate-fedwiki-gatherer.js",
     "predev": "npm run sync:critique-assets",
-    "prebuild": "npm run sync:critique-assets"
+    "prebuild": "npm run sync:critique-assets && npm run sync:manuscripts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0",

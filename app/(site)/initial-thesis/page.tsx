@@ -3,9 +3,9 @@ import { CalendarDays, Clock, ShieldCheck, Lock, FileText } from 'lucide-react';
 import Link from 'next/link';
 
 import { MarkdownRenderer } from '@/components/mdx/markdown-renderer';
+import { ManuscriptDisplay } from '@/components/mdx/manuscript-display';
 import { HeroMeta } from '@/components/site/hero-meta';
 import { HashVerification } from '@/components/verification/hash-verification';
-import { ManuscriptDisplay } from '@/components/initial-thesis/manuscript-display';
 import { Button } from '@/components/ui/button';
 import { getInitialThesisDocument } from '@/lib/content';
 

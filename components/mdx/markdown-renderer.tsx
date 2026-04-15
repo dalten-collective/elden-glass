@@ -8,6 +8,9 @@ import { ArtworkCard } from '@/components/artworks/artwork-card';
 import { LinkPreview } from './link-preview';
 import { MagnifierImage } from './magnifier-image';
 import { DefinitionItem } from './definition-item';
+import { HashVerification } from '@/components/verification/hash-verification';
+import { ManuscriptDisplay } from './manuscript-display';
+import { EvidencePoint } from './evidence-point';
 
 const components = {
   FloatImage,
@@ -16,6 +19,9 @@ const components = {
   LinkPreview,
   MagnifierImage,
   DefinitionItem,
+  HashVerification,
+  ManuscriptDisplay,
+  EvidencePoint,
 };
 
 interface MarkdownRendererProps {
@@ -26,7 +32,7 @@ interface MarkdownRendererProps {
 export function MarkdownRenderer({ code, className }: MarkdownRendererProps) {
   const Component = useMDXComponent(code);
   return (
-    <div className={cn('prose prose-invert max-w-none', className)}>
+    <div className={cn('prose prose-lg prose-invert max-w-none', className)}>
       <Component components={components} />
     </div>
   );
