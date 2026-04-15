@@ -168,11 +168,11 @@ export const ContentPage = defineDocumentType(() => ({
       type: 'string',
       resolve: (doc) => `/${doc._raw.flattenedPath.replace(/^pages\//, '')}`,
     },
+    date: computedDateField,
     headings: {
       type: 'json',
       resolve: (doc) => extractHeadings(doc.body.raw),
     },
-    date: computedDateField,
   },
 }));
 

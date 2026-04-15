@@ -1,3 +1,5 @@
+import { ChevronDown } from 'lucide-react';
+
 interface TocHeading {
   level: 2 | 3;
   text: string;
@@ -10,7 +12,7 @@ interface PageTocProps {
 
 function linkClassName(level: TocHeading['level']) {
   if (level === 3) {
-    return 'ml-4 text-sm text-[var(--text-secondary)]';
+    return 'ml-4 text-xs text-[var(--text-secondary)]';
   }
 
   return 'text-sm text-[var(--text-primary)]';
@@ -48,9 +50,7 @@ export function PageToc({ headings }: PageTocProps) {
           <summary className="cursor-pointer list-none px-4 py-3 text-sm font-medium text-[var(--text-primary)]">
             <span className="flex items-center justify-between gap-4">
               <span>On this page ({headings.length})</span>
-              <span className="text-xs uppercase tracking-[0.24em] text-[var(--accent-gold)] transition-transform group-open:rotate-180">
-                v
-              </span>
+              <ChevronDown className="h-4 w-4 text-[var(--accent-gold)] transition-transform group-open:rotate-180" />
             </span>
           </summary>
           <div className="border-t border-[var(--border-subtle)] px-4 py-4">
