@@ -176,6 +176,41 @@ export const ContentPage = defineDocumentType(() => ({
   },
 }));
 
+export const StagingContentPage = defineDocumentType(() => ({
+  name: 'StagingContentPage',
+  filePathPattern: 'pages-staging/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    summary: { type: 'string', required: true },
+    updated: { type: 'date', required: true },
+    subtitle: { type: 'string', required: false },
+    eyebrow: { type: 'string', required: false },
+    readingMinutes: { type: 'number', required: false },
+    navMeta: { type: 'string', required: false },
+    documentHash: { type: 'string', required: false },
+    hashableFile: { type: 'string', required: false },
+    sealedDate: { type: 'string', required: false },
+    ethereumAttestation: { type: 'string', required: false },
+    bitcoinOts: { type: 'string', required: false },
+  },
+  computedFields: {
+    slug: {
+      type: 'string',
+      resolve: (doc) => doc._raw.flattenedPath.replace(/^pages-staging\//, ''),
+    },
+    url: {
+      type: 'string',
+      resolve: (doc) => `/preview/${doc._raw.flattenedPath.replace(/^pages-staging\//, '')}`,
+    },
+    date: computedDateField,
+    headings: {
+      type: 'json',
+      resolve: (doc) => extractHeadings(doc.body.raw),
+    },
+  },
+}));
+
 export const VocabDoc = defineDocumentType(() => ({
   name: 'VocabDoc',
   filePathPattern: 'vocab/*.mdx',
@@ -218,6 +253,7 @@ export default makeSource({
     BibliographyDoc,
     MasterListDoc,
     ContentPage,
+    StagingContentPage,
     VocabDoc,
   ],
   mdx: {

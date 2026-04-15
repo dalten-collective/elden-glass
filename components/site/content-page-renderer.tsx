@@ -4,9 +4,9 @@ import { MarkdownRenderer } from '@/components/mdx/markdown-renderer';
 import { HeroMeta } from '@/components/site/hero-meta';
 import { PageToc } from '@/components/site/page-toc';
 import { Button } from '@/components/ui/button';
-import type { ContentPage } from '@/lib/content';
+import type { ContentPage, StagingContentPage } from '@/lib/content';
 
-function getSealStatus(doc: ContentPage) {
+function getSealStatus(doc: ContentPage | StagingContentPage) {
   if (doc.ethereumAttestation && doc.bitcoinOts) {
     return 'Sealed on Bitcoin and Ethereum';
   }
@@ -25,7 +25,7 @@ function getSealStatus(doc: ContentPage) {
 /**
  * Renders the shared hero, body, and table-of-contents layout for ContentPage documents.
  */
-export function ContentPageRenderer({ doc }: { doc: ContentPage }) {
+export function ContentPageRenderer({ doc }: { doc: ContentPage | StagingContentPage }) {
   const sealStatus = getSealStatus(doc);
   const heroMetaItems = [
     {

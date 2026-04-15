@@ -45,12 +45,38 @@ export type ContentPage = {
   bitcoinOts?: string;
 };
 
+export type StagingContentPage = {
+  body: { raw: string; code: string };
+  headings: ContentPageHeading[];
+  readingMinutes?: number;
+  slug: string;
+  url: string;
+  title: string;
+  summary: string;
+  updated: string;
+  subtitle?: string;
+  eyebrow?: string;
+  navMeta?: string;
+  documentHash?: string;
+  hashableFile?: string;
+  sealedDate?: string;
+  ethereumAttestation?: string;
+  bitcoinOts?: string;
+};
+
 const allContentPages =
   (
     contentlayerGenerated as typeof contentlayerGenerated & {
       allContentPages?: ContentPage[];
     }
   ).allContentPages ?? [];
+
+const allStagingContentPages =
+  (
+    contentlayerGenerated as typeof contentlayerGenerated & {
+      allStagingContentPages?: StagingContentPage[];
+    }
+  ).allStagingContentPages ?? [];
 
 function minutesFromBody(raw: string, fallback = 6) {
   const words = raw.split(/\s+/).filter(Boolean).length;
@@ -108,6 +134,20 @@ export function getContentPageBySlug(slug: string): ContentPage | null {
  */
 export function allContentPagesSorted(): ContentPage[] {
   return allContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
+}
+
+/**
+ * Returns a staging content page by its filesystem-derived slug.
+ */
+export function getStagingContentPageBySlug(slug: string): StagingContentPage | null {
+  return allStagingContentPages.find((page) => page.slug === slug) ?? null;
+}
+
+/**
+ * Returns staging content pages in deterministic slug order.
+ */
+export function allStagingContentPagesSorted(): StagingContentPage[] {
+  return allStagingContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
 /**
