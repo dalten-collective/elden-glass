@@ -1,3 +1,4 @@
+import * as contentlayerGenerated from 'contentlayer/generated';
 import {
   allInitialThesisDocs,
   allTldrDocs,
@@ -19,16 +20,49 @@ import {
 
 const WORDS_PER_MINUTE = 220;
 
+export type ContentPage = {
+  body: { raw: string };
+  readingMinutes?: number;
+  slug: string;
+  url: string;
+  title: string;
+  summary: string;
+  updated: string;
+  subtitle?: string;
+  eyebrow?: string;
+  navMeta?: string;
+  documentHash?: string;
+  hashableFile?: string;
+  sealedDate?: string;
+  ethereumAttestation?: string;
+  bitcoinOts?: string;
+};
+
+const allContentPages =
+  (
+    contentlayerGenerated as typeof contentlayerGenerated & {
+      allContentPages?: ContentPage[];
+    }
+  ).allContentPages ?? [];
+
 function minutesFromBody(raw: string, fallback = 6) {
   const words = raw.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / WORDS_PER_MINUTE)) || fallback;
 }
 
-function withReadingTime<T extends { body: { raw: string }; readingMinutes?: number }>(doc: T) {
+function withComputedReadingTime<T extends { body: { raw: string }; readingMinutes?: number }>(doc: T) {
   return {
     ...doc,
     readingMinutes: doc.readingMinutes ?? minutesFromBody(doc.body.raw),
   };
+}
+
+/**
+ * Adds a computed reading time to a ContentPage when frontmatter does not
+ * already provide one.
+ */
+export function withReadingTime(doc: ContentPage): ContentPage & { readingMinutes: number } {
+  return withComputedReadingTime(doc);
 }
 
 export function getInitialThesisDocument(): InitialThesisDoc & { readingMinutes: number } {
@@ -36,7 +70,7 @@ export function getInitialThesisDocument(): InitialThesisDoc & { readingMinutes:
   if (!doc) {
     throw new Error('Initial Thesis document is missing. Add content/initial-thesis.mdx');
   }
-  return withReadingTime(doc);
+  return withComputedReadingTime(doc);
 }
 
 export function getTldrDocument(): TldrDoc & { readingMinutes: number } {
@@ -44,7 +78,7 @@ export function getTldrDocument(): TldrDoc & { readingMinutes: number } {
   if (!doc) {
     throw new Error('TL;DR document is missing. Add content/tldr.mdx');
   }
-  return withReadingTime(doc);
+  return withComputedReadingTime(doc);
 }
 
 export function getLivingThesisDocument(): LivingThesisDoc & { readingMinutes: number } {
@@ -52,7 +86,21 @@ export function getLivingThesisDocument(): LivingThesisDoc & { readingMinutes: n
   if (!doc) {
     throw new Error('Living Thesis document is missing. Add content/living-thesis.mdx');
   }
-  return withReadingTime(doc);
+  return withComputedReadingTime(doc);
+}
+
+/**
+ * Returns a content page by its filesystem-derived slug.
+ */
+export function getContentPageBySlug(slug: string): ContentPage | null {
+  return allContentPages.find((page) => page.slug === slug) ?? null;
+}
+
+/**
+ * Returns content pages in deterministic slug order.
+ */
+export function allContentPagesSorted(): ContentPage[] {
+  return allContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
 /**
@@ -129,12 +177,12 @@ export function getCritiques(): Array<Critique & { readingMinutes: number }> {
     .sort(
       (a: Critique, b: Critique) => new Date(b.updated).getTime() - new Date(a.updated).getTime()
     )
-    .map((critique) => withReadingTime(critique));
+    .map((critique) => withComputedReadingTime(critique));
 }
 
 export function getCritiqueBySlug(slug: string) {
   const match = allCritiques.find((critique: Critique) => critique.slug === slug);
-  return match ? withReadingTime(match) : null;
+  return match ? withComputedReadingTime(match) : null;
 }
 
 export type SidebarData = {

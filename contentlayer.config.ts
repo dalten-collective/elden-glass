@@ -129,6 +129,37 @@ export const MasterListDoc = defineDocumentType(() => ({
   },
 }));
 
+export const ContentPage = defineDocumentType(() => ({
+  name: 'ContentPage',
+  filePathPattern: 'pages/**/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    summary: { type: 'string', required: true },
+    updated: { type: 'date', required: true },
+    subtitle: { type: 'string', required: false },
+    eyebrow: { type: 'string', required: false },
+    readingMinutes: { type: 'number', required: false },
+    navMeta: { type: 'string', required: false },
+    documentHash: { type: 'string', required: false },
+    hashableFile: { type: 'string', required: false },
+    sealedDate: { type: 'string', required: false },
+    ethereumAttestation: { type: 'string', required: false },
+    bitcoinOts: { type: 'string', required: false },
+  },
+  computedFields: {
+    slug: {
+      type: 'string',
+      resolve: (doc) => doc._raw.flattenedPath.replace(/^pages\//, ''),
+    },
+    url: {
+      type: 'string',
+      resolve: (doc) => `/${doc._raw.flattenedPath.replace(/^pages\//, '')}`,
+    },
+    date: computedDateField,
+  },
+}));
+
 export const VocabDoc = defineDocumentType(() => ({
   name: 'VocabDoc',
   filePathPattern: 'vocab/*.mdx',
@@ -161,6 +192,7 @@ export default makeSource({
   // document type; without this, contentlayer logs a "couldn't determine
   // the document type" warning on every dev-server boot.
   contentDirExclude: ['README.md', 'critique-images'],
+  onMissingOrIncompatibleData: 'fail',
   documentTypes: [
     InitialThesisDoc,
     TldrDoc,
@@ -169,6 +201,7 @@ export default makeSource({
     AboutDoc,
     BibliographyDoc,
     MasterListDoc,
+    ContentPage,
     VocabDoc,
   ],
   mdx: {
