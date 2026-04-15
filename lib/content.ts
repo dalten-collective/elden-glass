@@ -27,7 +27,7 @@ type ContentPageHeading = {
 };
 
 export type ContentPage = {
-  body: { raw: string };
+  body: { raw: string; code: string };
   headings: ContentPageHeading[];
   readingMinutes?: number;
   slug: string;
