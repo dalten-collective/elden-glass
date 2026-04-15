@@ -45,24 +45,7 @@ export type ContentPage = {
   bitcoinOts?: string;
 };
 
-export type StagingContentPage = {
-  body: { raw: string; code: string };
-  headings: ContentPageHeading[];
-  readingMinutes?: number;
-  slug: string;
-  url: string;
-  title: string;
-  summary: string;
-  updated: string;
-  subtitle?: string;
-  eyebrow?: string;
-  navMeta?: string;
-  documentHash?: string;
-  hashableFile?: string;
-  sealedDate?: string;
-  ethereumAttestation?: string;
-  bitcoinOts?: string;
-};
+export type StagingContentPage = ContentPage;
 
 const allContentPages =
   (
