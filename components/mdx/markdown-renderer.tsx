@@ -16,6 +16,7 @@ import { Callout } from './callout';
 import { CalloutRow } from './callout-row';
 import { Quote } from './quote';
 import { ConceptCard } from './concept-card';
+import { GoldText } from './gold-text';
 import { EldenOrrery } from '@/components/astrology/elden-orrery';
 
 const components = {
@@ -34,6 +35,7 @@ const components = {
   Quote,
   ConceptCard,
   EldenOrrery,
+  GoldText,
 };
 
 interface MarkdownRendererProps {

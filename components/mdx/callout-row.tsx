@@ -15,7 +15,7 @@ export function CalloutRow({ cols = 2, children }: CalloutRowProps) {
   const colsClass = cols === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2';
 
   return (
-    <div className={`my-6 grid grid-cols-1 gap-6 ${colsClass} not-prose [&>*]:!my-0`}>
+    <div className={`my-6 grid grid-cols-1 items-start gap-6 ${colsClass} not-prose [&>*]:!my-0`}>
       {children}
     </div>
   );
