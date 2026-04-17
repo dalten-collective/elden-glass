@@ -58,34 +58,6 @@ export const AboutDoc = defineDocumentType(() => ({
   },
 }));
 
-export const BibliographyDoc = defineDocumentType(() => ({
-  name: 'BibliographyDoc',
-  filePathPattern: 'bibliography.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'bibliography' },
-    date: computedDateField,
-  },
-}));
-
-export const MasterListDoc = defineDocumentType(() => ({
-  name: 'MasterListDoc',
-  filePathPattern: 'master-list.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'master-list' },
-    date: computedDateField,
-  },
-}));
-
 export const ContentPage = defineDocumentType(() => ({
   name: 'ContentPage',
   filePathPattern: 'pages/**/*.mdx',
@@ -194,8 +166,6 @@ export default makeSource({
   documentTypes: [
     Critique,
     AboutDoc,
-    BibliographyDoc,
-    MasterListDoc,
     ContentPage,
     StagingContentPage,
     VocabDoc,

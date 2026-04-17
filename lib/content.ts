@@ -2,13 +2,9 @@ import * as contentlayerGenerated from 'contentlayer/generated';
 import {
   allCritiques,
   allAboutDocs,
-  allBibliographyDocs,
-  allMasterListDocs,
   allVocabDocs,
   type Critique,
   type AboutDoc,
-  type BibliographyDoc,
-  type MasterListDoc,
   type VocabDoc,
 } from 'contentlayer/generated';
 
@@ -109,20 +105,6 @@ export function allStagingContentPagesSorted(): StagingContentPage[] {
   return allStagingContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
-/**
- * Counts the top-level bullet points in the master list. Each correspondence
- * is written as `- **<label>**: ...` so the count matches lines that start
- * with the exact `- **` pattern. This is the single source of truth for
- * how many correspondences exist; it is exposed through SidebarData so
- * the sidebar label and the page header always agree.
- */
-export function getMasterListCount(): number {
-  const doc = allMasterListDocs[0];
-  if (!doc) return 0;
-  const matches = doc.body.raw.match(/^- \*\*/gm);
-  return matches ? matches.length : 0;
-}
-
 export function getAboutDocument(): AboutDoc {
   const doc = allAboutDocs[0];
   if (!doc) {
@@ -131,48 +113,14 @@ export function getAboutDocument(): AboutDoc {
   return doc;
 }
 
-export function getBibliographyDocument(): BibliographyDoc {
-  const doc = allBibliographyDocs[0];
-  if (!doc) {
-    throw new Error('Bibliography document is missing. Add content/bibliography.mdx');
-  }
-  return doc;
-}
-
-export function getMasterListDocument(): MasterListDoc {
-  const doc = allMasterListDocs[0];
-  if (!doc) {
-    throw new Error('Master List document is missing. Add content/master-list.mdx');
-  }
-  return doc;
-}
-
 /**
  * Returns the bachelor machine catalog document — the MDX source behind
- * the /bachelor-machines/terms page. This page used to be hardcoded JSX;
- * it is now rendered from content/vocab/bachelor-machines.mdx so Luke
- * can edit the full catalog (machine tables + critical vocabulary +
- * expanded definitions) without touching React code.
+ * the /bachelor-machines/terms page.
  */
 export function getBachelorMachinesCatalog(): VocabDoc {
   const doc = allVocabDocs.find((d) => d.slug === 'bachelor-machines');
   if (!doc) {
     throw new Error('Bachelor machine catalog is missing. Add content/vocab/bachelor-machines.mdx');
-  }
-  return doc;
-}
-
-/**
- * Returns the 'Pataphysics Vocabulary document — the MDX source behind
- * the /vocab page. Same migration story as getBachelorMachinesCatalog:
- * what used to be ~2,000 lines of hardcoded JSX with inline DefinitionItem
- * components is now content/vocab/pataphysics.mdx, which uses the
- * DefinitionItem MDX component registered in markdown-renderer.tsx.
- */
-export function getPataphysicsVocabulary(): VocabDoc {
-  const doc = allVocabDocs.find((d) => d.slug === 'pataphysics');
-  if (!doc) {
-    throw new Error("'Pataphysics Vocabulary is missing. Add content/vocab/pataphysics.mdx");
   }
   return doc;
 }
@@ -223,15 +171,15 @@ export function getSidebarData(): SidebarData {
   const tldr = getContentPageBySlug('tldr');
   const initialThesis = getContentPageBySlug('initial-thesis');
   const livingThesis = getContentPageBySlug('living-thesis');
-  if (!tldr || !initialThesis || !livingThesis) {
+  const masterList = getContentPageBySlug('master-list');
+  const bibliography = getContentPageBySlug('bibliography');
+  if (!tldr || !initialThesis || !livingThesis || !masterList || !bibliography) {
     throw new Error(
-      'Missing one or more thesis content pages (tldr, initial-thesis, living-thesis) under content/pages/.'
+      'Missing one or more required content pages (tldr, initial-thesis, living-thesis, master-list, bibliography) under content/pages/.'
     );
   }
-  const masterList = getMasterListDocument();
-  const masterListCount = getMasterListCount();
+  const masterListCount = masterList.body.raw.match(/^- /gm)?.length ?? 0;
   const about = getAboutDocument();
-  const bibliography = getBibliographyDocument();
   const critiques = getCritiques();
 
   return {
