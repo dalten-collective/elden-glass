@@ -3,15 +3,16 @@ import { BookOpen, CalendarDays, Clock, ShieldCheck } from 'lucide-react';
 import { MarkdownRenderer } from '@/components/mdx/markdown-renderer';
 import { HeroMeta } from '@/components/site/hero-meta';
 import { PageToc } from '@/components/site/page-toc';
+import { VocabSearch } from '@/components/site/vocab-search';
 import { Button } from '@/components/ui/button';
 import { HashVerification } from '@/components/verification/hash-verification';
-import type { ContentPage, StagingContentPage } from '@/lib/content';
+import type { ContentPage } from '@/lib/content';
 
 function stripLeadingThe(value: string) {
   return value.replace(/^The\s+/i, '').toLowerCase();
 }
 
-function getSealStatus(doc: ContentPage | StagingContentPage) {
+function getSealStatus(doc: ContentPage) {
   if (doc.ethereumAttestation && doc.bitcoinOts) {
     return 'Sealed on Bitcoin and Ethereum';
   }
@@ -30,7 +31,7 @@ function getSealStatus(doc: ContentPage | StagingContentPage) {
 /**
  * Renders the shared hero, body, and table-of-contents layout for ContentPage documents.
  */
-export function ContentPageRenderer({ doc }: { doc: ContentPage | StagingContentPage }) {
+export function ContentPageRenderer({ doc }: { doc: ContentPage }) {
   const sealStatus = getSealStatus(doc);
   const heroMetaItems = [
     {
@@ -85,6 +86,12 @@ export function ContentPageRenderer({ doc }: { doc: ContentPage | StagingContent
         </div>
 
         <HeroMeta items={heroMetaItems} />
+
+        {doc.vocabSearch && (
+          <div className="mt-6">
+            <VocabSearch placeholder="Search machines and vocabulary..." />
+          </div>
+        )}
       </section>
 
       {doc.documentHash && doc.hashableFile && (

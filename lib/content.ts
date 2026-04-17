@@ -1,10 +1,5 @@
 import * as contentlayerGenerated from 'contentlayer/generated';
-import {
-  allCritiques,
-  allVocabDocs,
-  type Critique,
-  type VocabDoc,
-} from 'contentlayer/generated';
+import { allCritiques, type Critique } from 'contentlayer/generated';
 
 const WORDS_PER_MINUTE = 220;
 
@@ -32,9 +27,8 @@ export type ContentPage = {
   ethereumAttestation?: string;
   bitcoinOts?: string;
   verificationSubject?: string;
+  vocabSearch?: boolean;
 };
-
-export type StagingContentPage = ContentPage;
 
 const allContentPages =
   (
@@ -42,13 +36,6 @@ const allContentPages =
       allContentPages?: ContentPage[];
     }
   ).allContentPages ?? [];
-
-const allStagingContentPages =
-  (
-    contentlayerGenerated as typeof contentlayerGenerated & {
-      allStagingContentPages?: StagingContentPage[];
-    }
-  ).allStagingContentPages ?? [];
 
 function minutesFromBody(raw: string, fallback = 6) {
   const words = raw.split(/\s+/).filter(Boolean).length;
@@ -84,35 +71,6 @@ export function getContentPageBySlug(slug: string): ContentPage | null {
  */
 export function allContentPagesSorted(): ContentPage[] {
   return allContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
-}
-
-/**
- * Returns a staging content page by its filesystem-derived slug, with
- * reading time computed from the body when the author did not specify it
- * in frontmatter.
- */
-export function getStagingContentPageBySlug(slug: string): StagingContentPage | null {
-  const doc = allStagingContentPages.find((page) => page.slug === slug);
-  return doc ? withComputedReadingTime(doc) : null;
-}
-
-/**
- * Returns staging content pages in deterministic slug order.
- */
-export function allStagingContentPagesSorted(): StagingContentPage[] {
-  return allStagingContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
-}
-
-/**
- * Returns the bachelor machine catalog document — the MDX source behind
- * the /bachelor-machines/terms page.
- */
-export function getBachelorMachinesCatalog(): VocabDoc {
-  const doc = allVocabDocs.find((d) => d.slug === 'bachelor-machines');
-  if (!doc) {
-    throw new Error('Bachelor machine catalog is missing. Add content/vocab/bachelor-machines.mdx');
-  }
-  return doc;
 }
 
 export function getCritiques(): Array<Critique & { readingMinutes: number }> {

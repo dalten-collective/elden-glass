@@ -60,6 +60,7 @@ export const ContentPage = defineDocumentType(() => ({
     ethereumAttestation: { type: 'string', required: false },
     bitcoinOts: { type: 'string', required: false },
     verificationSubject: { type: 'string', required: false },
+    vocabSearch: { type: 'boolean', required: false },
   },
   computedFields: {
     slug: {
@@ -78,68 +79,6 @@ export const ContentPage = defineDocumentType(() => ({
   },
 }));
 
-export const StagingContentPage = defineDocumentType(() => ({
-  name: 'StagingContentPage',
-  filePathPattern: 'pages-staging/**/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    summary: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-    subtitle: { type: 'string', required: false },
-    eyebrow: { type: 'string', required: false },
-    readingMinutes: { type: 'number', required: false },
-    navMeta: { type: 'string', required: false },
-    documentHash: { type: 'string', required: false },
-    hashableFile: { type: 'string', required: false },
-    sealedDate: { type: 'string', required: false },
-    ethereumAttestation: { type: 'string', required: false },
-    bitcoinOts: { type: 'string', required: false },
-    verificationSubject: { type: 'string', required: false },
-  },
-  computedFields: {
-    slug: {
-      type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.replace(/^pages-staging\//, ''),
-    },
-    url: {
-      type: 'string',
-      resolve: (doc) => `/preview/${doc._raw.flattenedPath.replace(/^pages-staging\//, '')}`,
-    },
-    date: computedDateField,
-    headings: {
-      type: 'json',
-      resolve: (doc) => extractHeadings(doc.body.raw),
-    },
-  },
-}));
-
-export const VocabDoc = defineDocumentType(() => ({
-  name: 'VocabDoc',
-  filePathPattern: 'vocab/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    section: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-    // Optional hero-meta fields so pages that render a vocab doc can pull
-    // their hero labels from frontmatter instead of hardcoding them. Used
-    // by /bachelor-machines/terms for its Source / Machines / Vocabulary
-    // tiles; other vocab files can leave them unset.
-    subtitle: { type: 'string', required: false },
-    source: { type: 'string', required: false },
-    machineCount: { type: 'string', required: false },
-    vocabularyCount: { type: 'string', required: false },
-  },
-  computedFields: {
-    slug: {
-      type: 'string',
-      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx?$/, ''),
-    },
-    date: computedDateField,
-  },
-}));
-
 export default makeSource({
   contentDirPath: 'content',
   // Exclude author-facing docs and helper READMEs that don't match any
@@ -150,8 +89,6 @@ export default makeSource({
   documentTypes: [
     Critique,
     ContentPage,
-    StagingContentPage,
-    VocabDoc,
   ],
   mdx: {
     remarkPlugins: [remarkGfm],

@@ -1,5 +1,4 @@
 import * as contentlayerGenerated from 'contentlayer/generated';
-import { allVocabDocs } from 'contentlayer/generated';
 import type { ContentPage } from './content';
 import titleCardsData from '../data/title-cards.json';
 
@@ -31,18 +30,11 @@ function buildSearchIndex(): SearchResult[] {
   const index: SearchResult[] = [];
   let idCounter = 0;
 
-  const allDocs = [
-    ...allContentPages.map((doc) => ({
-      ...doc,
-      page: doc.url,
-      pageTitle: doc.title,
-    })),
-    ...allVocabDocs.map((doc) => ({
-      ...doc,
-      page: `/bachelor-machines/terms`,
-      pageTitle: doc.title,
-    })),
-  ];
+  const allDocs = allContentPages.map((doc) => ({
+    ...doc,
+    page: doc.url,
+    pageTitle: doc.title,
+  }));
 
   for (const doc of allDocs) {
     // Extract plain text from markdown (remove markdown syntax)
