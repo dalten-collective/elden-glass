@@ -8,6 +8,16 @@ import { ArtworkCard } from '@/components/artworks/artwork-card';
 import { LinkPreview } from './link-preview';
 import { MagnifierImage } from './magnifier-image';
 import { DefinitionItem } from './definition-item';
+import { HashVerification } from '@/components/verification/hash-verification';
+import { ManuscriptDisplay } from './manuscript-display';
+import { EvidencePoint } from './evidence-point';
+import { EvidenceGroup } from './evidence-group';
+import { Callout } from './callout';
+import { CalloutRow } from './callout-row';
+import { Quote } from './quote';
+import { ConceptCard } from './concept-card';
+import { GoldText } from './gold-text';
+import { EldenOrrery } from '@/components/astrology/elden-orrery';
 
 const components = {
   FloatImage,
@@ -16,6 +26,16 @@ const components = {
   LinkPreview,
   MagnifierImage,
   DefinitionItem,
+  HashVerification,
+  ManuscriptDisplay,
+  EvidencePoint,
+  EvidenceGroup,
+  Callout,
+  CalloutRow,
+  Quote,
+  ConceptCard,
+  EldenOrrery,
+  GoldText,
 };
 
 interface MarkdownRendererProps {
@@ -26,7 +46,7 @@ interface MarkdownRendererProps {
 export function MarkdownRenderer({ code, className }: MarkdownRendererProps) {
   const Component = useMDXComponent(code);
   return (
-    <div className={cn('prose prose-invert max-w-none', className)}>
+    <div className={cn('prose prose-lg prose-invert max-w-none', className)}>
       <Component components={components} />
     </div>
   );

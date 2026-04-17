@@ -4,9 +4,9 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
+import type { NavGroupItem, NavItem, NavSectionItem, SiteNavigation } from '@/lib/sidebar';
 import { cn } from '@/lib/utils';
 import { SidebarLink } from './sidebar-link';
-import type { NavGroupItem, NavItem, NavSectionItem, SiteNavigation } from './site-navigation';
 
 interface NavigationMenuProps {
   navigation: SiteNavigation;

@@ -1,3 +1,6 @@
+// classified as TOOL by pb-695.6; not migrated to MDX. This page is
+// an interactive cipher/transformation engine with client-side state,
+// genetic-code lookup, and animation — not prose content. Stays bespoke.
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';

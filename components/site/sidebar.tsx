@@ -2,20 +2,16 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useMemo } from 'react';
 
-import type { SidebarData } from '@/lib/content';
+import type { SiteNavigation } from '@/lib/sidebar';
 import { GlobalSearch } from './global-search';
 import { NavigationMenu } from './navigation-menu';
-import { getSiteNavigation } from './site-navigation';
 
 interface SidebarProps {
-  data: SidebarData;
+  navigation: SiteNavigation;
 }
 
-export function Sidebar({ data }: SidebarProps) {
-  const navigation = useMemo(() => getSiteNavigation(data), [data]);
-
+export function Sidebar({ navigation }: SidebarProps) {
   return (
     <aside className="fixed bottom-0 left-0 top-0 z-[70] hidden w-[280px] flex-col overflow-hidden border-r border-[var(--border-subtle)] bg-[var(--bg-secondary)] pt-safe lg:flex">
       <div className="sticky top-0 flex-shrink-0 bg-[var(--bg-secondary)]">
