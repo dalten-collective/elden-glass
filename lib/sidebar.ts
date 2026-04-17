@@ -7,6 +7,7 @@ import {
   getOrderedContentEntries,
   readLayoutConfig,
   type ContentEntry,
+  type LayoutConfig,
   type LayoutLink,
 } from '@/lib/content-tree';
 
@@ -47,6 +48,7 @@ export function buildSidebar(): SiteNavigation {
   const rootLayout = readLayoutConfig(CONTENT_PAGES_DIR);
   const rootEntries = getOrderedContentEntries(CONTENT_PAGES_DIR);
   const rootEntryMap = new Map(rootEntries.map((entry) => [entry.name, entry] as const));
+  const primaryRootNames = getPrimaryRootNames(rootLayout, rootEntries);
   const primary: NavLinkItem[] = [];
   const secondary: NavItem[] = [];
   const consumed = new Set<string>();
@@ -61,7 +63,7 @@ export function buildSidebar(): SiteNavigation {
 
     consumed.add(name);
 
-    if (isPrimaryRootItem(name, item)) {
+    if (isPrimaryRootItem(name, item, primaryRootNames)) {
       primary.push(item);
       continue;
     }
@@ -82,7 +84,7 @@ export function buildSidebar(): SiteNavigation {
 
     consumed.add(entry.name);
 
-    if (isPrimaryRootItem(entry.name, item)) {
+    if (isPrimaryRootItem(entry.name, item, primaryRootNames)) {
       primary.push(item);
       continue;
     }
@@ -105,7 +107,7 @@ export function buildSidebar(): SiteNavigation {
 
     consumed.add(name);
 
-    if (isPrimaryRootItem(name, item)) {
+    if (isPrimaryRootItem(name, item, primaryRootNames)) {
       primary.push(item);
       continue;
     }
@@ -284,12 +286,24 @@ function getRootOrder(explicitOrder: string[]): string[] {
   return ['home', ...explicitOrder];
 }
 
-function isPrimaryRootItem(name: string, item: NavItem): item is NavLinkItem {
-  if (name === 'home') {
-    return item.type === 'link';
+function getPrimaryRootNames(layout: LayoutConfig, entries: ContentEntry[]): Set<string> {
+  if (layout.primary.length) {
+    return new Set(layout.primary);
   }
 
-  return item.type === 'link';
+  const primaryNames = ['home'];
+
+  for (const entry of entries) {
+    if (entry.kind === 'page') {
+      primaryNames.push(entry.name);
+    }
+  }
+
+  return new Set(primaryNames);
+}
+
+function isPrimaryRootItem(name: string, item: NavItem, primaryRootNames: Set<string>): item is NavLinkItem {
+  return item.type === 'link' && primaryRootNames.has(name);
 }
 
 function getPrimaryMeta(doc: ContentPage): string | undefined {

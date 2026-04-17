@@ -16,6 +16,7 @@ export type LayoutLink = {
 };
 
 export type LayoutConfig = {
+  primary: string[];
   order: string[];
   hidden: string[];
   links: Record<string, LayoutLink>;
@@ -104,12 +105,12 @@ export function readLayoutConfig(directoryPath: string): LayoutConfig {
   const layoutPath = path.join(directoryPath, 'layout.yaml');
 
   if (!existsSync(layoutPath)) {
-    return { order: [], hidden: [], links: {} };
+    return { primary: [], order: [], hidden: [], links: {} };
   }
 
   const lines = readFileSync(layoutPath, 'utf8').split('\n');
-  const config: LayoutConfig = { order: [], hidden: [], links: {} };
-  let section: 'order' | 'hidden' | 'links' | null = null;
+  const config: LayoutConfig = { primary: [], order: [], hidden: [], links: {} };
+  let section: 'primary' | 'order' | 'hidden' | 'links' | null = null;
   let currentLink: string | null = null;
 
   for (const line of lines) {
@@ -129,6 +130,11 @@ export function readLayoutConfig(directoryPath: string): LayoutConfig {
         continue;
       }
 
+      if (/^primary:\s*$/.test(trimmed)) {
+        section = 'primary';
+        continue;
+      }
+
       if (/^hidden:\s*$/.test(trimmed)) {
         section = 'hidden';
         continue;
@@ -143,11 +149,12 @@ export function readLayoutConfig(directoryPath: string): LayoutConfig {
       continue;
     }
 
-    if (section === 'order' || section === 'hidden') {
+    if (section === 'primary' || section === 'order' || section === 'hidden') {
       const itemMatch = trimmed.match(/^-\s+(.+?)\s*$/);
 
       if (itemMatch) {
-        const target = section === 'order' ? config.order : config.hidden;
+        const target =
+          section === 'primary' ? config.primary : section === 'order' ? config.order : config.hidden;
         target.push(stripYamlValue(itemMatch[1]));
       }
 

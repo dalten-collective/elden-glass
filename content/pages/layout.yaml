@@ -1,3 +1,9 @@
+primary:
+  - home
+  - living-thesis
+  - master-list
+  - tldr
+  - initial-thesis
 order:
   - home
   - living-thesis
