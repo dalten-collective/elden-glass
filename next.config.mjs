@@ -136,6 +136,23 @@ const nextConfig = {
       },
     ];
   },
+  async headers() {
+    return [
+      {
+        source: '/',
+        headers: [
+          {
+            key: 'Link',
+            value: '</llms.txt>; rel="llms-txt"',
+          },
+          {
+            key: 'X-Llms-Txt',
+            value: '/llms.txt',
+          },
+        ],
+      },
+    ];
+  },
   images: {
     domains: [
       'eldenring.wiki.fextralife.com',
