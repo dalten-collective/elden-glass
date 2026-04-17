@@ -1,6 +1,7 @@
 import * as contentlayerGenerated from 'contentlayer/generated';
 import type { ContentPage } from './content';
 import titleCardsData from '../data/title-cards.json';
+import { extractSearchableBlocks } from './search-blocks';
 
 const allContentPages =
   (
@@ -15,7 +16,7 @@ export interface SearchResult {
   context: string; // Surrounding text for preview
   page: string;
   pageTitle: string;
-  textToFind: string; // The exact text to search for on the page
+  targetId?: string; // The block anchor to navigate to on the page
   type?: 'content' | 'titlecard'; // Type of result
   cardId?: string; // For title cards, the card ID
 }
@@ -37,36 +38,34 @@ function buildSearchIndex(): SearchResult[] {
   }));
 
   for (const doc of allDocs) {
-    // Extract plain text from markdown (remove markdown syntax)
-    const plainText = doc.body.raw
-      .replace(/```[\s\S]*?```/g, '') // Remove code blocks
-      .replace(/`[^`]+`/g, '') // Remove inline code
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Remove links, keep text
-      .replace(/[#*_~]/g, '') // Remove markdown formatting
-      .replace(/<[^>]+>/g, '') // Remove HTML tags
-      .replace(/\n\n+/g, ' ') // Replace multiple newlines with space
-      .trim();
+    const blocks = extractSearchableBlocks(doc.body.raw);
 
-    const sentences = extractSentences(plainText);
+    for (const block of blocks) {
+      const sentences = extractSentences(block.text);
+      const searchableSentences = sentences.length ? sentences : [block.text].filter((text) => text.length > 20);
 
-    for (const sentence of sentences) {
-      // Get some context (previous and next sentence if available)
-      const sentenceIndex = sentences.indexOf(sentence);
-      const contextParts = [];
-      if (sentenceIndex > 0) contextParts.push(sentences[sentenceIndex - 1]);
-      contextParts.push(sentence);
-      if (sentenceIndex < sentences.length - 1) contextParts.push(sentences[sentenceIndex + 1]);
+      for (let sentenceIndex = 0; sentenceIndex < searchableSentences.length; sentenceIndex++) {
+        const sentence = searchableSentences[sentenceIndex];
 
-      const context = contextParts.join(' ').slice(0, 200) + '...';
+        // Get some context (previous and next sentence if available)
+        const contextParts = [];
+        if (sentenceIndex > 0) contextParts.push(searchableSentences[sentenceIndex - 1]);
+        contextParts.push(sentence);
+        if (sentenceIndex < searchableSentences.length - 1) {
+          contextParts.push(searchableSentences[sentenceIndex + 1]);
+        }
 
-      index.push({
-        id: `${doc.page}-${idCounter++}`,
-        sentence,
-        context,
-        page: doc.page,
-        pageTitle: doc.pageTitle,
-        textToFind: sentence.slice(0, 50), // First 50 chars for finding
-      });
+        const context = contextParts.join(' ').slice(0, 200) + '...';
+
+        index.push({
+          id: `${doc.page}-${block.id}-${idCounter++}`,
+          sentence,
+          context,
+          page: doc.page,
+          pageTitle: doc.pageTitle,
+          targetId: block.id,
+        });
+      }
     }
   }
 
@@ -114,7 +113,6 @@ function searchTitleCards(query: string): SearchResult[] {
         context: card.description.slice(0, 150) + '...',
         page: '', // Title cards don't navigate to a page directly
         pageTitle: card.section || 'Vocabulary',
-        textToFind: card.term,
         type: 'titlecard',
         cardId: card.id,
       });
