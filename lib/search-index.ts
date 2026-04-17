@@ -42,7 +42,9 @@ function buildSearchIndex(): SearchResult[] {
 
     for (const block of blocks) {
       const sentences = extractSentences(block.text);
-      const searchableSentences = sentences.length ? sentences : [block.text].filter((text) => text.length > 20);
+      const searchableSentences = sentences.length
+        ? sentences
+        : [block.text].filter((text) => text.length > 20);
 
       for (let sentenceIndex = 0; sentenceIndex < searchableSentences.length; sentenceIndex++) {
         const sentence = searchableSentences[sentenceIndex];
