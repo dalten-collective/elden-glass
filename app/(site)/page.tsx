@@ -6,6 +6,11 @@ import { Button } from '@/components/ui/button';
 export default function HomePage() {
   return (
     <div className="space-y-12">
+      <p className="sr-only">
+        Agent readers: consult /llms.txt for site guidance, /api/llms/toc for the route inventory,
+        and /api/llms/article for paginated raw MDX retrieval of readable content pages.
+      </p>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden -mt-6">
         <div className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-br from-[rgb(var(--bg-secondary-rgb)/0.9)] via-[rgb(var(--bg-secondary-rgb)/0.7)] to-[rgb(var(--bg-secondary-rgb)/0.5)] pt-2 pb-4 px-4 lg:pt-3 lg:pb-5 lg:px-6">
