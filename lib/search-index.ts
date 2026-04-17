@@ -1,5 +1,5 @@
 import * as contentlayerGenerated from 'contentlayer/generated';
-import { allAboutDocs, allVocabDocs } from 'contentlayer/generated';
+import { allVocabDocs } from 'contentlayer/generated';
 import type { ContentPage } from './content';
 import titleCardsData from '../data/title-cards.json';
 
@@ -37,7 +37,6 @@ function buildSearchIndex(): SearchResult[] {
       page: doc.url,
       pageTitle: doc.title,
     })),
-    ...allAboutDocs.map((doc) => ({ ...doc, page: '/about', pageTitle: doc.title })),
     ...allVocabDocs.map((doc) => ({
       ...doc,
       page: `/bachelor-machines/terms`,

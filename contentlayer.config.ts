@@ -42,22 +42,6 @@ export const Critique = defineDocumentType(() => ({
   },
 }));
 
-export const AboutDoc = defineDocumentType(() => ({
-  name: 'AboutDoc',
-  filePathPattern: 'about.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    role: { type: 'string', required: false },
-    location: { type: 'string', required: false },
-    updated: { type: 'date', required: true },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'about' },
-    date: computedDateField,
-  },
-}));
-
 export const ContentPage = defineDocumentType(() => ({
   name: 'ContentPage',
   filePathPattern: 'pages/**/*.mdx',
@@ -165,7 +149,6 @@ export default makeSource({
   onMissingOrIncompatibleData: 'fail',
   documentTypes: [
     Critique,
-    AboutDoc,
     ContentPage,
     StagingContentPage,
     VocabDoc,

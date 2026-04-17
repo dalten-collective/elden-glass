@@ -1,10 +1,8 @@
 import * as contentlayerGenerated from 'contentlayer/generated';
 import {
   allCritiques,
-  allAboutDocs,
   allVocabDocs,
   type Critique,
-  type AboutDoc,
   type VocabDoc,
 } from 'contentlayer/generated';
 
@@ -105,14 +103,6 @@ export function allStagingContentPagesSorted(): StagingContentPage[] {
   return allStagingContentPages.slice().sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
-export function getAboutDocument(): AboutDoc {
-  const doc = allAboutDocs[0];
-  if (!doc) {
-    throw new Error('About document is missing. Add content/about.mdx');
-  }
-  return doc;
-}
-
 /**
  * Returns the bachelor machine catalog document — the MDX source behind
  * the /bachelor-machines/terms page.
@@ -173,13 +163,13 @@ export function getSidebarData(): SidebarData {
   const livingThesis = getContentPageBySlug('living-thesis');
   const masterList = getContentPageBySlug('master-list');
   const bibliography = getContentPageBySlug('bibliography');
-  if (!tldr || !initialThesis || !livingThesis || !masterList || !bibliography) {
+  const about = getContentPageBySlug('about');
+  if (!tldr || !initialThesis || !livingThesis || !masterList || !bibliography || !about) {
     throw new Error(
-      'Missing one or more required content pages (tldr, initial-thesis, living-thesis, master-list, bibliography) under content/pages/.'
+      'Missing one or more required content pages (tldr, initial-thesis, living-thesis, master-list, bibliography, about) under content/pages/.'
     );
   }
   const masterListCount = masterList.body.raw.match(/^- /gm)?.length ?? 0;
-  const about = getAboutDocument();
   const critiques = getCritiques();
 
   return {
