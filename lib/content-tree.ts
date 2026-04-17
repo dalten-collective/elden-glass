@@ -154,7 +154,11 @@ export function readLayoutConfig(directoryPath: string): LayoutConfig {
 
       if (itemMatch) {
         const target =
-          section === 'primary' ? config.primary : section === 'order' ? config.order : config.hidden;
+          section === 'primary'
+            ? config.primary
+            : section === 'order'
+              ? config.order
+              : config.hidden;
         target.push(stripYamlValue(itemMatch[1]));
       }
 

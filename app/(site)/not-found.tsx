@@ -7,8 +7,8 @@ export default function NotFound() {
           The Illuminating Gas Has Dispersed
         </h2>
         <p className="max-w-md text-[var(--text-secondary)]">
-          Like the Bachelors forever separated from the Bride, this page exists only in the realm
-          of possibility.
+          Like the Bachelors forever separated from the Bride, this page exists only in the realm of
+          possibility.
         </p>
         <p className="pt-6 text-xs text-[var(--text-tertiary)]">
           &quot;The bachelor grinds his chocolate himself.&quot; — Marcel Duchamp

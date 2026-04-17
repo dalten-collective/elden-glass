@@ -5,7 +5,14 @@ import { allContentPagesSorted, getCritiques } from '@/lib/content';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenglass.com';
 const now = new Date();
 
-const staticRoutes = ['/', '/gatherer', '/search', '/critiques', '/duchamp/duchamp-works', '/xenotext'];
+const staticRoutes = [
+  '/',
+  '/gatherer',
+  '/search',
+  '/critiques',
+  '/duchamp/duchamp-works',
+  '/xenotext',
+];
 
 /**
  * Generates the sitemap from the current content tree plus the handful of

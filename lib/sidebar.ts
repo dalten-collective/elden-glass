@@ -223,7 +223,11 @@ function buildSection(folderSlug: string): NavSectionItem {
  * Resolves either a real filesystem child or an injected YAML link into a nav
  * item.
  */
-function buildSectionChild(folderSlug: string, entry?: ContentEntry, link?: LayoutLink): NavItem | null {
+function buildSectionChild(
+  folderSlug: string,
+  entry?: ContentEntry,
+  link?: LayoutLink
+): NavItem | null {
   if (link && !link.hidden) {
     return {
       type: 'link',
@@ -302,7 +306,11 @@ function getPrimaryRootNames(layout: LayoutConfig, entries: ContentEntry[]): Set
   return new Set(primaryNames);
 }
 
-function isPrimaryRootItem(name: string, item: NavItem, primaryRootNames: Set<string>): item is NavLinkItem {
+function isPrimaryRootItem(
+  name: string,
+  item: NavItem,
+  primaryRootNames: Set<string>
+): item is NavLinkItem {
   return item.type === 'link' && primaryRootNames.has(name);
 }
 

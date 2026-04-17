@@ -36,7 +36,10 @@ export function DefinitionItem({
   children?: ReactNode;
 }) {
   return (
-    <div data-definition-item className="pl-4 border-l-2 border-[var(--accent-gold)]/30 my-6 not-prose">
+    <div
+      data-definition-item
+      className="pl-4 border-l-2 border-[var(--accent-gold)]/30 my-6 not-prose"
+    >
       <dt className="text-[var(--accent-gold)] font-medium text-lg mb-1">{term}</dt>
       <dd className="text-[var(--text-secondary)] leading-relaxed">
         <span className="italic text-[var(--text-tertiary)]">&quot;{definition}&quot;</span>

@@ -20,9 +20,9 @@ export default function DuchampWorksPreviewPage() {
           Duchamp&apos;s Works
         </h1>
         <p className="max-w-2xl font-serif text-base leading-relaxed text-[var(--text-secondary)] sm:text-lg">
-          A chronological gallery of Marcel Duchamp&apos;s production — from the early
-          Blainville paintings through the readymades, the Large Glass, and the late
-          objects. Click any work for its full record.
+          A chronological gallery of Marcel Duchamp&apos;s production — from the early Blainville
+          paintings through the readymades, the Large Glass, and the late objects. Click any work
+          for its full record.
         </p>
       </header>
 

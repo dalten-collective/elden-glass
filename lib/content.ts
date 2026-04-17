@@ -43,7 +43,9 @@ function minutesFromBody(raw: string, fallback = 6) {
   return Math.max(1, Math.round(words / WORDS_PER_MINUTE)) || fallback;
 }
 
-function withComputedReadingTime<T extends { body: { raw: string }; readingMinutes?: number }>(doc: T) {
+function withComputedReadingTime<T extends { body: { raw: string }; readingMinutes?: number }>(
+  doc: T
+) {
   return {
     ...doc,
     readingMinutes: doc.readingMinutes ?? minutesFromBody(doc.body.raw),

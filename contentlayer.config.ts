@@ -87,10 +87,7 @@ export default makeSource({
   // the document type" warning on every dev-server boot.
   contentDirExclude: ['README.md', 'critique-images', 'pages/layout.yaml', 'pages/**/layout.yaml'],
   onMissingOrIncompatibleData: 'fail',
-  documentTypes: [
-    Critique,
-    ContentPage,
-  ],
+  documentTypes: [Critique, ContentPage],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

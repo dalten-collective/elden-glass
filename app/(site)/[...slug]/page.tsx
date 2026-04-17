@@ -16,9 +16,9 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   const requestedSlug = params.slug.join('/');
   const folderFallbackSlug = getFirstContentPageSlugInFolder(requestedSlug);
-  const doc = getContentPageBySlug(requestedSlug) ?? (
-    folderFallbackSlug ? getContentPageBySlug(folderFallbackSlug) : null
-  );
+  const doc =
+    getContentPageBySlug(requestedSlug) ??
+    (folderFallbackSlug ? getContentPageBySlug(folderFallbackSlug) : null);
 
   if (!doc) {
     return {};

@@ -24,9 +24,7 @@ function MetaPair({ label, children }: MetaPairProps) {
       <dt className="text-[0.6rem] font-medium uppercase tracking-[0.22em] text-[var(--accent-gold)]">
         {label}
       </dt>
-      <dd className="font-serif text-sm leading-relaxed text-[var(--text-primary)]">
-        {children}
-      </dd>
+      <dd className="font-serif text-sm leading-relaxed text-[var(--text-primary)]">{children}</dd>
     </div>
   );
 }
@@ -104,12 +102,8 @@ export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModal
             {hasMeta && (
               <dl className="space-y-4 border-b border-[rgb(201_169_97/0.12)] px-6 py-5">
                 {artwork.medium && <MetaPair label="Medium">{artwork.medium}</MetaPair>}
-                {artwork.dimensions && (
-                  <MetaPair label="Dimensions">{artwork.dimensions}</MetaPair>
-                )}
-                {artwork.collection && (
-                  <MetaPair label="Collection">{artwork.collection}</MetaPair>
-                )}
+                {artwork.dimensions && <MetaPair label="Dimensions">{artwork.dimensions}</MetaPair>}
+                {artwork.collection && <MetaPair label="Collection">{artwork.collection}</MetaPair>}
                 {artwork.currentLocation && (
                   <MetaPair label="Location">{artwork.currentLocation}</MetaPair>
                 )}
