@@ -43,6 +43,7 @@ export type ContentPage = {
   sealedDate?: string;
   ethereumAttestation?: string;
   bitcoinOts?: string;
+  verificationSubject?: string;
 };
 
 export type StagingContentPage = ContentPage;

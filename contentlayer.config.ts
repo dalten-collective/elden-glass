@@ -158,6 +158,7 @@ export const ContentPage = defineDocumentType(() => ({
     sealedDate: { type: 'string', required: false },
     ethereumAttestation: { type: 'string', required: false },
     bitcoinOts: { type: 'string', required: false },
+    verificationSubject: { type: 'string', required: false },
   },
   computedFields: {
     slug: {
@@ -193,6 +194,7 @@ export const StagingContentPage = defineDocumentType(() => ({
     sealedDate: { type: 'string', required: false },
     ethereumAttestation: { type: 'string', required: false },
     bitcoinOts: { type: 'string', required: false },
+    verificationSubject: { type: 'string', required: false },
   },
   computedFields: {
     slug: {

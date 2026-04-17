@@ -4,7 +4,12 @@ import { MarkdownRenderer } from '@/components/mdx/markdown-renderer';
 import { HeroMeta } from '@/components/site/hero-meta';
 import { PageToc } from '@/components/site/page-toc';
 import { Button } from '@/components/ui/button';
+import { HashVerification } from '@/components/verification/hash-verification';
 import type { ContentPage, StagingContentPage } from '@/lib/content';
+
+function stripLeadingThe(value: string) {
+  return value.replace(/^The\s+/i, '').toLowerCase();
+}
 
 function getSealStatus(doc: ContentPage | StagingContentPage) {
   if (doc.ethereumAttestation && doc.bitcoinOts) {
@@ -81,6 +86,17 @@ export function ContentPageRenderer({ doc }: { doc: ContentPage | StagingContent
 
         <HeroMeta items={heroMetaItems} />
       </section>
+
+      {doc.documentHash && doc.hashableFile && (
+        <HashVerification
+          documentHash={doc.documentHash}
+          hashableFile={doc.hashableFile}
+          sealedDate={doc.sealedDate}
+          bitcoinOts={doc.bitcoinOts}
+          ethereumAttestation={doc.ethereumAttestation}
+          subject={doc.verificationSubject ?? stripLeadingThe(doc.title)}
+        />
+      )}
 
       <PageToc headings={doc.headings} />
 
