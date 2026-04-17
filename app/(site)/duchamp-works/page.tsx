@@ -1,90 +1,77 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+
+import { DuchampWorkTile } from '@/components/duchamp-works/duchamp-work-tile';
+import { WorkDetailModal } from '@/components/duchamp-works/work-detail-modal';
 import { duchampArtworks } from '@/lib/duchamp-artworks';
+import type { DuchampArtwork } from '@/types/duchamp-artworks';
 
-export default function DuchampWorksPage() {
-  const [hoveredWork, setHoveredWork] = useState<{
-    title: string;
-    year?: string;
-    imagePath: string;
-  } | null>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    setMousePosition({ x: e.clientX, y: e.clientY });
-  };
+export default function DuchampWorksPreviewPage() {
+  const [selectedArtwork, setSelectedArtwork] = useState<DuchampArtwork | null>(null);
 
   return (
-    <div className="container mx-auto px-6 py-12 max-w-5xl">
-      <div className="mb-12">
-        <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-4">Duchamp&apos;s Works</h1>
-        <p className="text-[var(--text-secondary)] leading-relaxed">
-          A comprehensive collection of Marcel Duchamp&apos;s artworks from 1901 to 1968, organized
-          chronologically by period. Hover over any title to preview the artwork.
+    <>
+      <header className="mb-12 border-b border-[rgb(201_169_97/0.2)] pb-8">
+        <p className="mb-3 text-[0.65rem] uppercase tracking-[0.35em] text-[var(--accent-gold)] sm:text-xs">
+          Catalogue raisonné
         </p>
-      </div>
+        <h1 className="mb-4 font-serif text-3xl leading-[1.08] text-[var(--text-primary)] sm:text-4xl lg:text-[2.75rem]">
+          Duchamp&apos;s Works
+        </h1>
+        <p className="max-w-2xl font-serif text-base leading-relaxed text-[var(--text-secondary)] sm:text-lg">
+          A chronological gallery of Marcel Duchamp&apos;s production — from the early
+          Blainville paintings through the readymades, the Large Glass, and the late
+          objects. Click any work for its full record.
+        </p>
+      </header>
 
-      <div className="space-y-12">
+      <div className="space-y-16 sm:space-y-20">
         {duchampArtworks.map((period) => (
-          <div key={period.title} className="space-y-4">
-            <h2 className="text-2xl font-serif text-[var(--accent-gold)] border-b border-[var(--border-subtle)] pb-2">
-              {period.title}{' '}
+          <section key={period.title} aria-labelledby={slugify(period.title)}>
+            <header className="mb-6 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[rgb(201_169_97/0.18)] pb-4">
+              <h2
+                id={slugify(period.title)}
+                className="font-serif text-xl leading-tight text-[var(--text-primary)] sm:text-2xl"
+              >
+                {period.title}
+              </h2>
               {period.years && (
-                <span className="text-lg text-[var(--text-tertiary)]">({period.years})</span>
+                <p className="font-serif text-xs uppercase tracking-[0.3em] text-[var(--accent-gold)] sm:text-sm">
+                  {period.years}
+                </p>
               )}
-            </h2>
+            </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {period.works.map((work) => (
-                <div
-                  key={work.filename}
-                  className="p-4 border border-[var(--border-subtle)] rounded-lg hover:border-[var(--accent-gold)] transition-colors cursor-default bg-[var(--bg-secondary)]"
-                  onMouseEnter={() =>
-                    setHoveredWork({
-                      title: work.title,
-                      year: work.year,
-                      imagePath: `/images/duchamp/paintings/${work.filename}`,
-                    })
-                  }
-                  onMouseLeave={() => setHoveredWork(null)}
-                  onMouseMove={handleMouseMove}
-                >
-                  <h3 className="font-medium text-[var(--text-primary)] mb-1">{work.title}</h3>
-                  {work.year && <p className="text-sm text-[var(--text-tertiary)]">{work.year}</p>}
-                </div>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-10">
+              {period.works.map((artwork) => (
+                <DuchampWorkTile
+                  key={artwork.filename}
+                  artwork={artwork}
+                  onSelect={setSelectedArtwork}
+                />
               ))}
             </div>
-          </div>
+          </section>
         ))}
       </div>
 
-      {/* Floating image preview */}
-      {hoveredWork && (
-        <div
-          className="fixed z-[9999] pointer-events-none"
-          style={{
-            left: `${mousePosition.x + 20}px`,
-            top: `${mousePosition.y - 150}px`,
-          }}
-        >
-          <div className="bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg shadow-2xl p-2 max-w-[350px]">
-            <div className="relative w-full h-[300px]">
-              <Image
-                src={hoveredWork.imagePath}
-                alt={hoveredWork.title}
-                fill
-                className="object-contain"
-                unoptimized
-              />
-            </div>
-            <p className="text-[0.7rem] text-[var(--text-tertiary)] mt-2 text-center">
-              {hoveredWork.title} {hoveredWork.year && `(${hoveredWork.year})`}
-            </p>
-          </div>
-        </div>
-      )}
-    </div>
+      <WorkDetailModal
+        artwork={selectedArtwork}
+        open={selectedArtwork !== null}
+        onOpenChange={(open) => {
+          if (!open) {
+            setSelectedArtwork(null);
+          }
+        }}
+      />
+    </>
   );
+}
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 }
