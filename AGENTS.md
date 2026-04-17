@@ -1,66 +1,70 @@
-# Elden Glass Agent Guide
+# Elden Glass System Guide
 
-This file is for agents and collaborators working in this repository.
+This document defines the operating model for agents and collaborators working
+in this repository.
 
-Read it before making changes.
+`AGENTS.md` and `CLAUDE.md` should stay identical.
 
 ## Non-Negotiables
 
-### We Do Not Commit Directly To `main`
+### Do Not Commit Directly To `main`
 
 Do not commit directly to `main`.
 
 Do not push directly to `main`.
 
-Do not "just make a quick fix on production."
+All work happens on a branch. Changes flow through:
 
-All work happens on a branch. That branch opens a PR into `dev`. After `dev` is reviewed and validated online, we open a second PR from `dev` into `main`.
-
-This is the required flow:
-
-1. Branch off `dev`
+1. Branch from current `origin/dev`
 2. Make the change
 3. Run local verification
-4. Push the branch
-5. Open a PR to `dev`
-6. Request review
-7. Merge to `dev`
-8. Validate the deployed `dev` build online
-9. Open a PR from `dev` to `main`
-10. Request review
-11. Merge `dev` to `main`
+4. Open a PR into `dev`
+5. Request review
+6. Merge to `dev`
+7. Validate the deployed `dev` build online when behavior changed
+8. Open a second PR from `dev` to `main`
+9. Request review
+10. Merge only after review
 
-If you are tempted to skip this flow, do not.
+Do not treat "small" changes as exempt from this flow.
 
 ### Request Review
 
-Every meaningful change should go through a pull request and review.
+Every meaningful change should go through review.
 
-Do not self-authorize a direct production change because it "looks small." The mobile nav fix, Gatherer route fix, and similar changes all look small until deployment behavior proves otherwise.
+Docs changes are not exempt. Routing, content, and operational docs all affect
+how the repo is run.
 
-Do not treat docs-only changes as exempt from review. Docs can encode the operating procedure for the repository, so they also need PRs and review.
+## Core Rule
 
-### Content Belongs In MDX, Not Hardcoded JSX
+### MDX First, Except For Explicitly Bespoke Routes
 
-This site has a content pipeline. Use it.
+Authored content belongs in MDX under `content/pages/**`.
 
-If the user wants to change article copy, section headings, thesis text, bibliography text, vocabulary entries, critique copy, or other authored content, edit the `.mdx` files in `content/`.
+Do not hardcode prose into TypeScript or JSX when the content is editorial,
+structural, or document-like.
 
-Do not hardcode prose into TypeScript just because it is faster in the moment.
+Use TypeScript for:
 
-Do not move content out of MDX and into JSX unless the user explicitly asks for that architectural change.
-
-If a page already reads from Contentlayer and `MarkdownRenderer`, keep using that path.
-
-TypeScript should define:
-
-- layout
-- shell/chrome
+- layout and shell chrome
 - rendering components
 - interactive behavior
-- content interpretation
+- data loading and transformation
+- APIs
+- bespoke application-style routes
 
-TypeScript should not become a dumping ground for editorial content.
+Current examples of intentionally bespoke routes include:
+
+- `/xenotext`
+- `/duchamp/duchamp-works`
+- `/gatherer`
+- `/search`
+
+These are not content pages. Do not migrate them into MDX unless explicitly
+requested.
+
+If a page already reads from Contentlayer and `MarkdownRenderer`, keep using
+that path.
 
 ## Site Structure
 
@@ -68,59 +72,117 @@ TypeScript should not become a dumping ground for editorial content.
 
 This is a Next.js App Router site.
 
-- `app/layout.tsx` defines root metadata, global CSS, and root document structure.
-- `app/(site)/layout.tsx` wraps site pages with the shared shell and title-card provider.
-- `app/(site)/**/page.tsx` contains route entrypoints for site pages.
-- `app/api/**/route.ts` contains API endpoints used by search, title cards, and related features.
+- `app/layout.tsx` defines root metadata, global CSS, and root document structure
+- `app/(site)/layout.tsx` wraps the site shell
+- `app/(site)/[...slug]/page.tsx` is the catch-all content route
+- `app/(site)/**/page.tsx` also contains bespoke non-content routes
+- `app/api/**/route.ts` contains APIs for search, sense data, title cards, and related features
 
-### Shared Site Chrome
+### Content Tree
 
-The shared shell lives in `components/site/`.
+The primary content system lives under `content/pages/`.
+
+Examples:
+
+- `content/pages/living-thesis.mdx`
+- `content/pages/tldr.mdx`
+- `content/pages/duchamp/chess/overview.mdx`
+- `content/pages/xenotext-theory/theory.mdx`
+- `content/pages/duchamp/layout.yaml`
+- `content/pages/xenotext-theory/layout.yaml`
+
+The content tree is interpreted by:
+
+- `contentlayer.config.ts`
+- `lib/content.ts`
+- `lib/content-tree.ts`
+- `components/mdx/markdown-renderer.tsx`
+- `components/site/content-page-renderer.tsx`
+
+### YAML Layout Model
+
+Each `content/pages/**/layout.yaml` can control navigation and folder behavior.
+
+Supported keys:
+
+- `primary`: marks top-level entries that should appear in primary navigation
+- `order`: orders sibling pages and sections
+- `hidden`: hides filesystem entries from generated navigation
+- `links`: injects internal or external links that are not backed by an MDX file
+
+Use `links` for bespoke routes that should appear inside the content-driven nav.
+
+Current examples:
+
+- `content/pages/xenotext-theory/layout.yaml` links to `/xenotext`
+- `content/pages/duchamp/layout.yaml` links to `/duchamp/duchamp-works`
+
+### Routing Model
+
+`app/(site)/[...slug]/page.tsx` serves MDX-backed content pages from
+`content/pages/**`.
+
+If a requested slug names a folder instead of a concrete page, the catch-all
+route redirects to the first reachable page in that folder using
+`lib/content-tree.ts` and that folder's `layout.yaml` ordering.
+
+This means:
+
+- content routes are filesystem and YAML driven
+- folder URLs can resolve by redirecting to an ordered child page
+- bespoke routes outside the content tree must be linked explicitly when they
+  should appear in navigation
+
+## Navigation
+
+The shared navigation system is generated in `lib/sidebar.ts`.
+
+Do not edit separate desktop and mobile navigation definitions. Both chrome
+surfaces should consume the same generated navigation tree.
 
 Important files:
 
-- `components/site/site-shell.tsx` composes the main site layout
-- `components/site/sidebar.tsx` renders the desktop sidebar
-- `components/site/mobile-sidebar.tsx` renders the mobile navigation drawer
-- `components/site/top-bar.tsx` renders the top header
-- `components/site/site-navigation.ts` defines the shared navigation tree
-- `components/site/navigation-menu.tsx` renders the shared nav structure
+- `lib/sidebar.ts`
+- `lib/content-tree.ts`
+- `components/site/site-shell.tsx`
+- `components/site/sidebar.tsx`
+- `components/site/mobile-sidebar.tsx`
+- `components/site/navigation-menu.tsx`
+- `components/site/top-bar.tsx`
 
-If you need to change navigation, do it in the shared navigation system. Do not create separate desktop/mobile nav trees again.
+If navigation needs to change, update the content tree, the relevant
+`layout.yaml`, or the shared sidebar builder. Do not recreate the old
+hand-authored nav tree.
 
-### Content Pipeline
+## Content Authoring Rules
 
-The site content is primarily driven by `content/` plus Contentlayer.
+Edit MDX first for:
 
-Important files:
+- thesis text
+- essays and research pages
+- bibliography and resource pages
+- vocabulary pages
+- critique pages
+- headings and section structure
+- summary text and other frontmatter-driven metadata
 
-- `contentlayer.config.ts` defines the document types and MDX pipeline
-- `lib/content.ts` is the content access layer used by route pages
-- `components/mdx/markdown-renderer.tsx` renders MDX using the registered custom components
-- `content/*.mdx` contains the longform authored documents
-- `content/vocab/*.mdx` contains vocabulary/catalog content
-- `content/critiques/*.mdx` contains critique pages
+If you find yourself typing large paragraphs into `.tsx`, stop and reconsider.
 
-Typical pattern:
+Use `MarkdownRenderer` and the registered MDX components rather than bypassing
+the interpreter for convenience.
 
-1. A route page in `app/(site)/.../page.tsx` loads a document from `lib/content.ts`
-2. The page renders hero chrome and metadata
-3. The main body is rendered through `MarkdownRenderer`
+## Data-Driven Features
 
-If a user asks to edit a document page, your first instinct should be to inspect the corresponding MDX file in `content/`.
+Not everything is MDX. Structured data lives in `data/`.
 
-### Data-Driven Features
-
-Not everything in the site is MDX. Structured datasets live in `data/`.
-
-Important files:
+Important examples:
 
 - `data/title-cards.json`
 - `data/title-cards-split/*.json`
 - `data/sense-index.json`
 - `data/xenotext-theories.json`
 
-Relevant APIs:
+Important related APIs:
 
 - `app/api/title-cards/route.ts`
 - `app/api/title-cards/all/route.ts`
@@ -128,205 +190,70 @@ Relevant APIs:
 - `app/api/title-cards/category/route.ts`
 - `app/api/search/route.ts`
 - `app/api/related-by-sense/route.ts`
+- `app/api/sense-index/route.ts`
 
-If the user is changing Gatherer/title-card data, update the data source or the scripts that generate/manage it. Do not fake data changes in the UI layer.
+If the user is changing Gatherer or title-card data, update the source data or
+the scripts that produce it. Do not fake data changes in the UI layer.
 
-### Scripts
+## Scripts
 
 Repository scripts live in `scripts/`.
 
-Notable examples:
+Use an existing script when a workflow already exists there instead of
+reimplementing the logic ad hoc inside a component.
+
+Examples:
 
 - `scripts/sync-critique-assets.js`
+- `scripts/sync-manuscripts.js`
 - `scripts/generate-fedwiki-gatherer.js`
 - `scripts/export-to-fedwiki.js`
 - `scripts/sync-from-fedwiki.js`
 
-If a workflow already exists as a script, use or update the script rather than reproducing the logic ad hoc in a component.
+## Agentation
 
-## Authoring Rules
+When working on copy, structure, or presentation, prefer using Agentation on
+the running site so feedback is anchored to exact content on the page.
 
-### Prefer MDX Edits For Content Changes
+Agentation is a collaboration aid. The source of truth remains:
 
-For these categories, edit MDX first:
-
-- thesis text
-- article text
-- bibliography text
-- vocabulary text
-- critique text
-- static explanatory sections
-- frontmatter-driven hero metadata
-
-Examples:
-
-- `/living-thesis` comes from `content/living-thesis.mdx`
-- `/tldr` comes from `content/tldr.mdx`
-- `/initial-thesis` comes from `content/initial-thesis.mdx`
-- `/about` comes from `content/about.mdx`
-- `/bibliography` comes from `content/bibliography.mdx`
-- `/master-list` comes from `content/master-list.mdx`
-- `/bachelor-machines/terms` comes from `content/vocab/bachelor-machines.mdx`
-- `/vocab` comes from `content/vocab/pataphysics.mdx`
-
-If you find yourself typing large paragraphs into a `.tsx` file, stop and reconsider.
-
-### Use The Interpreter We Already Have
-
-This repo already has an MDX interpreter/rendering path:
-
-- Contentlayer parses the documents
-- `lib/content.ts` loads them
-- `MarkdownRenderer` renders them
-- MDX components provide richer embedded elements when needed
-
-Use that system.
-
-Do not bypass it by hardcoding content into React components unless the work is genuinely presentational or interactive.
-
-### Use Agentation For Content Collaboration
-
-When working with an LLM on content changes, use Agentation on the running site whenever possible.
-
-Agentation is installed in this repo and is wired in development through `components/agentation-dev.tsx` and `app/layout.tsx`.
-
-Use it for:
-
-- reviewing editorial changes in context
-- selecting specific headings, paragraphs, hero text, and callouts
-- capturing page-level feedback from the user
-- iterating on MDX-backed content with visible, anchored annotations instead of vague prose instructions
-
-Preferred workflow for content work:
-
-1. Run the site locally
-2. Open the relevant page in the browser
-3. Use Agentation to annotate the exact content that should change
-4. Apply the edits in the underlying MDX or data source
-5. Re-check the page with the annotations in view
-
-If the requested work is primarily about copy, structure, or editorial presentation, do not rely only on abstract chat descriptions when Agentation can anchor the requested change directly on-page.
-
-Agentation is a collaboration aid, not the source of truth. The source of truth remains:
-
-- MDX in `content/`
-- structured data in `data/`
+- MDX in `content/pages/**`
+- structured data in `data/**`
 - rendering logic in components and route files
 
-### When TypeScript Changes Are Appropriate
+## Verification
 
-Use TypeScript edits for:
+Before pushing a PR, run the strongest local verification available for the
+change.
 
-- new UI components
-- navigation/layout changes
-- interactive client behavior
-- API behavior
-- data loading and transformation
-- MDX component support
-- styling and responsive fixes
+Common commands:
 
-Use MDX edits for:
+- `npm run typecheck`
+- `npm run build`
 
-- copy
-- headings
-- lists
-- citations
-- editorial structure
-- vocabulary entries
-- article body content
+Run `npm run build` before pushing changes that affect routing, layout, content
+rendering, APIs, or deployment behavior.
 
-## Deployment Strategy
+## Deployment
 
-### Branching And Promotion
+Vercel deploys branches and PRs to preview URLs.
 
-The deployment model is:
+Use preview deployments to validate behavior before merge.
 
-- feature/fix branch -> PR to `dev`
-- `dev` validated online
-- PR from `dev` -> `main`
-- `main` becomes production
+Production promotion is still:
 
-`dev` is the integration branch.
-
-`main` is the production branch.
-
-Do not branch from stale local history. Fetch first, and branch from current `origin/dev`.
-
-### Vercel
-
-Vercel auto-deploys branches and pull requests to unique preview URLs.
-
-That means every pushed branch/PR can be reviewed online at its own Vercel deployment URL before merge.
-
-After merging to `dev`, Vercel deploys the updated `dev` state so it can be tested online as the staging/integration environment.
-
-After merging `dev` into `main`, Vercel deploys production.
-
-Production lives at:
-
-- `https://eldenringisthelargeglass.com`
-
-There is also a Vercel production alias:
-
-- `https://elden-glass.vercel.app`
-
-When someone says "test it online," that means:
-
-1. Use the PR preview URL for branch validation
-2. Use the deployed `dev` build after merge-to-`dev`
-3. Use the production domain only after `dev -> main` is merged
-
-### Deployment Discipline
-
-Do not merge to `main` because local build passed.
-
-Do not merge to `main` because the PR preview "basically looks right."
-
-Do not merge to `main` until the `dev` deployment has been checked online when the change affects runtime behavior, routing, responsive behavior, API behavior, or content rendering.
-
-## Practical Workflow
-
-Before changing files:
-
-1. Check `git status`
-2. Check the current branch
-3. Fetch `origin`
-4. Start from current `origin/dev`
-5. Create a branch for the change
-
-Before opening a PR:
-
-1. Run the strongest local verification available
-2. Make sure the working tree is clean
-3. Push the branch
-4. Open a PR to `dev`
-5. Write a clear PR body
-6. Request review
-
-Before promoting `dev` to `main`:
-
-1. Confirm the merged change works in the online `dev` deployment
-2. Open a dedicated `dev -> main` PR
-3. Request review
-4. Merge only after that review/validation step
-
-## Avoid These Mistakes
-
-- Do not commit directly to `main`
-- Do not push directly to `main`
-- Do not hardcode document content into `.tsx` files when an MDX source exists
-- Do not fork mobile and desktop navigation/content definitions unnecessarily
-- Do not patch production behavior without a PR because "it is only one line"
-- Do not assume deployment behavior matches local behavior without checking Vercel
+feature branch -> `dev` -> validated deployed `dev` -> `main`
 
 ## If You Are Unsure
 
-If a requested change feels like content, inspect `content/` first.
+If a requested change feels editorial, inspect `content/pages/**` first.
 
-If a requested change feels like data, inspect `data/` and `app/api/` first.
+If it feels like navigation or route discoverability, inspect:
 
-If a requested change feels like layout/navigation, inspect `components/site/` first.
+- `content/pages/**/layout.yaml`
+- `lib/content-tree.ts`
+- `lib/sidebar.ts`
+- `app/(site)/[...slug]/page.tsx`
 
-If a requested change affects production, assume the correct path is:
-
-branch -> PR -> `dev` -> online validation -> PR -> `main`
+If it feels like a tool or application experience, inspect the bespoke route in
+`app/(site)/**/page.tsx` before assuming it belongs in MDX.

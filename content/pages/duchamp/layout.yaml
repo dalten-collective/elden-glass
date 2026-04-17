@@ -6,5 +6,5 @@ order:
   - duchamp-works
 links:
   duchamp-works:
-    href: /duchamp-works
+    href: /duchamp/duchamp-works
     label: Duchamp Works

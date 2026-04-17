@@ -1,6 +1,6 @@
 # Duchamp Works Data README
 
-This file documents the JSON data that powers the `/duchamp-works` gallery. It is written for authors and editors who want to update the catalog without touching TypeScript or React.
+This file documents the JSON data that powers the `/duchamp/duchamp-works` gallery. It is written for authors and editors who want to update the catalog without touching TypeScript or React.
 
 ## Where data lives
 
