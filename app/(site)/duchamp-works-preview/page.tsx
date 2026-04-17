@@ -1,115 +1,60 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 import { DuchampWorkTile } from '@/components/duchamp-works/duchamp-work-tile';
 import { WorkDetailModal } from '@/components/duchamp-works/work-detail-modal';
 import { duchampArtworks } from '@/lib/duchamp-artworks';
 import type { DuchampArtwork } from '@/types/duchamp-artworks';
 
-interface HoveredWork {
-  title: string;
-  year?: string;
-  imagePath: string;
-}
-
-/**
- * Preview-only gallery implementation for Duchamp works.
- */
 export default function DuchampWorksPreviewPage() {
-  const [hoveredWork, setHoveredWork] = useState<HoveredWork | null>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [selectedArtwork, setSelectedArtwork] = useState<DuchampArtwork | null>(null);
-
-  const handleHoverStart = (artwork: DuchampArtwork) => {
-    setHoveredWork({
-      title: artwork.title,
-      year: artwork.year,
-      imagePath: `/images/duchamp/paintings/${artwork.filename}`,
-    });
-  };
-
-  const handleHoverMove = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setMousePosition({ x: event.clientX, y: event.clientY });
-  };
-
-  const handleHoverEnd = () => {
-    setHoveredWork(null);
-  };
-
-  const handleSelect = (artwork: DuchampArtwork) => {
-    setHoveredWork(null);
-    setSelectedArtwork(artwork);
-  };
 
   return (
     <>
-      <div className="container mx-auto max-w-7xl px-6 py-12">
-        <div className="mb-12 max-w-3xl">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[var(--text-tertiary)]">
-            Preview Path
-          </p>
-          <h1 className="mb-4 font-serif text-4xl text-[var(--accent-gold)]">
-            Duchamp&apos;s Works
-          </h1>
-          <p className="leading-relaxed text-[var(--text-secondary)]">
-            A gallery-first preview of Marcel Duchamp&apos;s works. Hover a tile to inspect the
-            floating image preview, then click through for the full record.
-          </p>
-        </div>
+      <header className="mb-12 border-b border-[rgb(201_169_97/0.2)] pb-8">
+        <p className="mb-3 text-[0.65rem] uppercase tracking-[0.35em] text-[var(--accent-gold)] sm:text-xs">
+          Catalogue raisonné
+        </p>
+        <h1 className="mb-4 font-serif text-3xl leading-[1.08] text-[var(--text-primary)] sm:text-4xl lg:text-[2.75rem]">
+          Duchamp&apos;s Works
+        </h1>
+        <p className="max-w-2xl font-serif text-base leading-relaxed text-[var(--text-secondary)] sm:text-lg">
+          A chronological gallery of Marcel Duchamp&apos;s production — from the early
+          Blainville paintings through the readymades, the Large Glass, and the late
+          objects. Click any work for its full record.
+        </p>
+      </header>
 
-        <div className="space-y-14">
-          {duchampArtworks.map((period) => (
-            <section key={period.title} className="space-y-5">
-              <div className="border-b border-[var(--border-subtle)] pb-3">
-                <h2 className="font-serif text-2xl text-[var(--accent-gold)]">
-                  {period.title}{' '}
-                  <span className="text-lg text-[var(--text-tertiary)]">({period.years})</span>
-                </h2>
-              </div>
+      <div className="space-y-16 sm:space-y-20">
+        {duchampArtworks.map((period) => (
+          <section key={period.title} aria-labelledby={slugify(period.title)}>
+            <header className="mb-6 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[rgb(201_169_97/0.18)] pb-4">
+              <h2
+                id={slugify(period.title)}
+                className="font-serif text-xl leading-tight text-[var(--text-primary)] sm:text-2xl"
+              >
+                {period.title}
+              </h2>
+              {period.years && (
+                <p className="font-serif text-xs uppercase tracking-[0.3em] text-[var(--accent-gold)] sm:text-sm">
+                  {period.years}
+                </p>
+              )}
+            </header>
 
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {period.works.map((artwork) => (
-                  <DuchampWorkTile
-                    key={artwork.filename}
-                    artwork={artwork}
-                    onHoverStart={handleHoverStart}
-                    onHoverEnd={handleHoverEnd}
-                    onHoverMove={handleHoverMove}
-                    onSelect={handleSelect}
-                  />
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      </div>
-
-      {hoveredWork && (
-        <div
-          className="pointer-events-none fixed z-[9999]"
-          style={{
-            left: `${mousePosition.x + 20}px`,
-            top: `${mousePosition.y - 150}px`,
-          }}
-        >
-          <div className="max-w-[350px] rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-elevated)] p-2 shadow-2xl">
-            <div className="relative h-[300px] w-full">
-              <Image
-                src={hoveredWork.imagePath}
-                alt={hoveredWork.title}
-                fill
-                className="object-contain"
-                unoptimized
-              />
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-10">
+              {period.works.map((artwork) => (
+                <DuchampWorkTile
+                  key={artwork.filename}
+                  artwork={artwork}
+                  onSelect={setSelectedArtwork}
+                />
+              ))}
             </div>
-            <p className="mt-2 text-center text-[0.7rem] text-[var(--text-tertiary)]">
-              {hoveredWork.title} {hoveredWork.year && `(${hoveredWork.year})`}
-            </p>
-          </div>
-        </div>
-      )}
+          </section>
+        ))}
+      </div>
 
       <WorkDetailModal
         artwork={selectedArtwork}
@@ -122,4 +67,11 @@ export default function DuchampWorksPreviewPage() {
       />
     </>
   );
+}
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 }

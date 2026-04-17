@@ -3,7 +3,7 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ExternalLink, X } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, X } from 'lucide-react';
 
 import type { DuchampArtwork } from '@/types/duchamp-artworks';
 
@@ -13,28 +13,24 @@ interface WorkDetailModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
-interface MetadataRowProps {
+interface MetaPairProps {
   label: string;
   children: React.ReactNode;
 }
 
-/**
- * Renders a single metadata row when an artwork field is present.
- */
-function MetadataRow({ label, children }: MetadataRowProps) {
+function MetaPair({ label, children }: MetaPairProps) {
   return (
-    <div className="grid gap-2 border-b border-[var(--border-subtle)] py-3 sm:grid-cols-[9rem,1fr] sm:gap-4">
-      <dt className="text-sm font-medium uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
+    <div className="space-y-1">
+      <dt className="text-[0.6rem] font-medium uppercase tracking-[0.22em] text-[var(--accent-gold)]">
         {label}
       </dt>
-      <dd className="text-sm leading-relaxed text-[var(--text-secondary)]">{children}</dd>
+      <dd className="font-serif text-sm leading-relaxed text-[var(--text-primary)]">
+        {children}
+      </dd>
     </div>
   );
 }
 
-/**
- * Displays a focus-trapped modal with the available metadata for one artwork.
- */
 export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModalProps) {
   if (!artwork) {
     return null;
@@ -42,93 +38,121 @@ export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModal
 
   const imagePath = `/images/duchamp/paintings/${artwork.filename}`;
 
+  const hasMeta =
+    artwork.medium ||
+    artwork.dimensions ||
+    artwork.collection ||
+    artwork.currentLocation ||
+    artwork.sourceUrl;
+
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
       <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="fixed inset-0 z-[90] bg-[rgba(0,0,0,0.78)] backdrop-blur-sm" />
+        <DialogPrimitive.Overlay className="fixed inset-0 z-[90] bg-[rgba(0,0,0,0.82)] backdrop-blur-md" />
 
-        <DialogPrimitive.Content className="fixed left-1/2 top-1/2 z-[100] flex max-h-[90vh] w-[min(92vw,60rem)] -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-2xl border border-[var(--border-emphasis)] bg-[var(--bg-secondary)] shadow-2xl outline-none">
-          <div className="flex items-start justify-between gap-4 border-b border-[var(--border-subtle)] px-6 py-5">
-            <div className="space-y-1">
-              <DialogPrimitive.Title className="font-serif text-2xl text-[var(--accent-gold)]">
-                {artwork.title}
-              </DialogPrimitive.Title>
-              <DialogPrimitive.Description className="text-sm text-[var(--text-tertiary)]">
-                {artwork.year
-                  ? `Artwork detail view for ${artwork.title} (${artwork.year}).`
-                  : `Artwork detail view for ${artwork.title}.`}
-              </DialogPrimitive.Description>
-              {artwork.year && <p className="text-sm text-[var(--text-secondary)]">{artwork.year}</p>}
+        <DialogPrimitive.Content
+          aria-describedby={undefined}
+          className="fixed left-1/2 top-1/2 z-[100] grid h-[min(85vh,44rem)] w-[min(96vw,64rem)] -translate-x-1/2 -translate-y-1/2 grid-rows-[minmax(0,1fr)_auto] overflow-hidden rounded-sm border border-[rgb(201_169_97/0.2)] outline-none md:grid-cols-[minmax(0,1.35fr)_minmax(20rem,1fr)] md:grid-rows-1"
+          style={{
+            background: 'linear-gradient(135deg, #15120e 0%, #1c1813 50%, #15120e 100%)',
+            boxShadow:
+              '0 30px 80px rgba(0,0,0,0.85), 0 0 0 1px rgba(201,169,97,0.08), inset 0 1px 1px rgba(201,169,97,0.08)',
+          }}
+        >
+          <DialogPrimitive.Close
+            aria-label="Close artwork details"
+            className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full border border-[rgb(201_169_97/0.25)] bg-[rgba(10,8,6,0.75)] text-[var(--text-secondary)] backdrop-blur-sm transition-colors hover:border-[var(--accent-gold)] hover:text-[var(--accent-gold)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)]"
+          >
+            <X className="h-4 w-4" strokeWidth={2.25} />
+          </DialogPrimitive.Close>
+
+          <div
+            className="relative flex min-h-0 items-center justify-center p-4 sm:p-6 md:p-8"
+            style={{
+              background:
+                'radial-gradient(ellipse at center, #0d0b09 0%, #05040400 70%), linear-gradient(135deg, #0a0807 0%, #0f0c09 100%)',
+              boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)',
+            }}
+          >
+            <div className="relative h-full w-full">
+              <Image
+                src={imagePath}
+                alt={artwork.title}
+                fill
+                sizes="(max-width: 768px) 96vw, 55vw"
+                className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
+                unoptimized
+              />
             </div>
-
-            <DialogPrimitive.Close className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors hover:border-[var(--accent-gold)] hover:text-[var(--accent-gold)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-secondary)]">
-              <X className="h-5 w-5" />
-              <span className="sr-only">Close artwork details</span>
-            </DialogPrimitive.Close>
           </div>
 
-          <div className="overflow-y-auto px-6 py-6">
-            <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)]">
-              <div className="relative min-h-[20rem] overflow-hidden rounded-xl bg-[var(--bg-primary)]">
-                <Image
-                  src={imagePath}
-                  alt={artwork.title}
-                  fill
-                  className="object-contain"
-                  unoptimized
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <dl>
-                  {artwork.medium && <MetadataRow label="Medium">{artwork.medium}</MetadataRow>}
-                  {artwork.dimensions && (
-                    <MetadataRow label="Dimensions">{artwork.dimensions}</MetadataRow>
-                  )}
-                  {artwork.collection && (
-                    <MetadataRow label="Collection">{artwork.collection}</MetadataRow>
-                  )}
-                  {artwork.currentLocation && (
-                    <MetadataRow label="Location">{artwork.currentLocation}</MetadataRow>
-                  )}
-                  {artwork.sourceUrl && (
-                    <MetadataRow label="Source">
-                      <a
-                        href={artwork.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-[var(--accent-gold)] transition-colors hover:text-[var(--text-primary)] hover:underline"
-                      >
-                        View source
-                        <ExternalLink className="h-4 w-4" />
-                      </a>
-                    </MetadataRow>
-                  )}
-                </dl>
-
-                {artwork.note && (
-                  <div className="mt-5 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-primary)] p-4">
-                    <p className="mb-2 text-sm font-medium uppercase tracking-[0.12em] text-[var(--text-tertiary)]">
-                      Note
-                    </p>
-                    <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
-                      {artwork.note}
-                    </p>
-                  </div>
-                )}
-
-                {artwork.articleSlug && (
-                  <div className="mt-6">
-                    <Link
-                      href={`/${artwork.articleSlug}`}
-                      className="inline-flex items-center gap-2 text-base font-medium text-[var(--accent-gold)] transition-colors hover:text-[var(--text-primary)] hover:underline"
-                    >
-                      Read full article →
-                    </Link>
-                  </div>
-                )}
-              </div>
+          <div className="flex min-h-0 flex-col overflow-y-auto border-t border-[rgb(201_169_97/0.12)] md:border-l md:border-t-0">
+            <div className="space-y-1.5 border-b border-[rgb(201_169_97/0.12)] px-6 pb-5 pt-6">
+              <p className="text-[0.6rem] uppercase tracking-[0.3em] text-[var(--accent-gold)]">
+                Marcel Duchamp
+              </p>
+              <DialogPrimitive.Title className="font-serif text-xl leading-tight text-[var(--text-primary)] sm:text-[1.45rem]">
+                {artwork.title}
+              </DialogPrimitive.Title>
+              {artwork.year && (
+                <p className="font-serif text-sm italic text-[var(--text-tertiary)]">
+                  {artwork.year}
+                </p>
+              )}
             </div>
+
+            {hasMeta && (
+              <dl className="space-y-4 border-b border-[rgb(201_169_97/0.12)] px-6 py-5">
+                {artwork.medium && <MetaPair label="Medium">{artwork.medium}</MetaPair>}
+                {artwork.dimensions && (
+                  <MetaPair label="Dimensions">{artwork.dimensions}</MetaPair>
+                )}
+                {artwork.collection && (
+                  <MetaPair label="Collection">{artwork.collection}</MetaPair>
+                )}
+                {artwork.currentLocation && (
+                  <MetaPair label="Location">{artwork.currentLocation}</MetaPair>
+                )}
+                {artwork.sourceUrl && (
+                  <MetaPair label="Source">
+                    <a
+                      href={artwork.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-[var(--accent-gold)] transition-colors hover:text-[var(--text-primary)]"
+                    >
+                      External record
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  </MetaPair>
+                )}
+              </dl>
+            )}
+
+            {artwork.note && (
+              <blockquote className="relative border-b border-[rgb(201_169_97/0.12)] px-6 py-5">
+                <span
+                  aria-hidden
+                  className="absolute left-6 top-5 h-[calc(100%-2.5rem)] w-0.5 bg-[var(--accent-gold)] opacity-60"
+                />
+                <p className="pl-4 font-serif text-sm italic leading-relaxed text-[var(--text-secondary)]">
+                  {artwork.note}
+                </p>
+              </blockquote>
+            )}
+
+            {artwork.articleSlug && (
+              <div className="mt-auto px-6 py-5">
+                <Link
+                  href={`/${artwork.articleSlug}` as never}
+                  onClick={() => onOpenChange(false)}
+                  className="group inline-flex w-full items-center justify-between gap-3 rounded-sm border border-[rgb(201_169_97/0.35)] bg-[rgba(201,169,97,0.04)] px-4 py-3 font-serif text-sm text-[var(--accent-gold)] transition-all hover:border-[var(--accent-gold)] hover:bg-[rgba(201,169,97,0.1)] hover:text-[var(--text-primary)]"
+                >
+                  <span>Read full article</span>
+                  <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </Link>
+              </div>
+            )}
           </div>
         </DialogPrimitive.Content>
       </DialogPrimitive.Portal>
