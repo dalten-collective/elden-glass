@@ -1,17 +1,11 @@
 import * as contentlayerGenerated from 'contentlayer/generated';
 import {
-  allInitialThesisDocs,
-  allTldrDocs,
-  allLivingThesisDocs,
   allCritiques,
   allAboutDocs,
   allBibliographyDocs,
   allMasterListDocs,
   allVocabDocs,
   type Critique,
-  type InitialThesisDoc,
-  type TldrDoc,
-  type LivingThesisDoc,
   type AboutDoc,
   type BibliographyDoc,
   type MasterListDoc,
@@ -79,30 +73,6 @@ function withComputedReadingTime<T extends { body: { raw: string }; readingMinut
  * already provide one.
  */
 export function withReadingTime(doc: ContentPage): ContentPage & { readingMinutes: number } {
-  return withComputedReadingTime(doc);
-}
-
-export function getInitialThesisDocument(): InitialThesisDoc & { readingMinutes: number } {
-  const doc = allInitialThesisDocs[0];
-  if (!doc) {
-    throw new Error('Initial Thesis document is missing. Add content/initial-thesis.mdx');
-  }
-  return withComputedReadingTime(doc);
-}
-
-export function getTldrDocument(): TldrDoc & { readingMinutes: number } {
-  const doc = allTldrDocs[0];
-  if (!doc) {
-    throw new Error('TL;DR document is missing. Add content/tldr.mdx');
-  }
-  return withComputedReadingTime(doc);
-}
-
-export function getLivingThesisDocument(): LivingThesisDoc & { readingMinutes: number } {
-  const doc = allLivingThesisDocs[0];
-  if (!doc) {
-    throw new Error('Living Thesis document is missing. Add content/living-thesis.mdx');
-  }
   return withComputedReadingTime(doc);
 }
 
@@ -250,9 +220,14 @@ export type SidebarData = {
 };
 
 export function getSidebarData(): SidebarData {
-  const tldr = getTldrDocument();
-  const initialThesis = getInitialThesisDocument();
-  const livingThesis = getLivingThesisDocument();
+  const tldr = getContentPageBySlug('tldr');
+  const initialThesis = getContentPageBySlug('initial-thesis');
+  const livingThesis = getContentPageBySlug('living-thesis');
+  if (!tldr || !initialThesis || !livingThesis) {
+    throw new Error(
+      'Missing one or more thesis content pages (tldr, initial-thesis, living-thesis) under content/pages/.'
+    );
+  }
   const masterList = getMasterListDocument();
   const masterListCount = getMasterListCount();
   const about = getAboutDocument();
@@ -263,12 +238,12 @@ export function getSidebarData(): SidebarData {
     tldr: {
       title: tldr.title,
       updated: tldr.updated,
-      hash: tldr.documentHash,
+      hash: tldr.documentHash ?? '',
     },
     initialThesis: {
       title: initialThesis.title,
       updated: initialThesis.updated,
-      hash: initialThesis.documentHash,
+      hash: initialThesis.documentHash ?? '',
     },
     livingThesis: {
       title: livingThesis.title,

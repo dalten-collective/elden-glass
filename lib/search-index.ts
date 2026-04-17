@@ -1,12 +1,18 @@
+import * as contentlayerGenerated from 'contentlayer/generated';
 import {
-  allInitialThesisDocs,
-  allTldrDocs,
-  allLivingThesisDocs,
   allBibliographyDocs,
   allAboutDocs,
   allVocabDocs,
 } from 'contentlayer/generated';
+import type { ContentPage } from './content';
 import titleCardsData from '../data/title-cards.json';
+
+const allContentPages =
+  (
+    contentlayerGenerated as typeof contentlayerGenerated & {
+      allContentPages?: ContentPage[];
+    }
+  ).allContentPages ?? [];
 
 export interface SearchResult {
   id: string;
@@ -30,13 +36,11 @@ function buildSearchIndex(): SearchResult[] {
   let idCounter = 0;
 
   const allDocs = [
-    ...allInitialThesisDocs.map((doc) => ({
+    ...allContentPages.map((doc) => ({
       ...doc,
-      page: '/initial-thesis',
+      page: doc.url,
       pageTitle: doc.title,
     })),
-    ...allTldrDocs.map((doc) => ({ ...doc, page: '/tldr', pageTitle: doc.title })),
-    ...allLivingThesisDocs.map((doc) => ({ ...doc, page: '/living-thesis', pageTitle: doc.title })),
     ...allBibliographyDocs.map((doc) => ({ ...doc, page: '/bibliography', pageTitle: doc.title })),
     ...allAboutDocs.map((doc) => ({ ...doc, page: '/about', pageTitle: doc.title })),
     ...allVocabDocs.map((doc) => ({

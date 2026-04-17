@@ -21,61 +21,6 @@ const computedDateField = {
   resolve: (doc: any) => doc.updated || doc.published || null,
 };
 
-export const InitialThesisDoc = defineDocumentType(() => ({
-  name: 'InitialThesisDoc',
-  filePathPattern: 'initial-thesis.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    subtitle: { type: 'string', required: false },
-    updated: { type: 'date', required: true },
-    documentHash: { type: 'string', required: true },
-    ethereumAttestation: { type: 'string', required: true },
-    hashableFile: { type: 'string', required: true },
-    sealedDate: { type: 'string', required: false },
-    readingMinutes: { type: 'number', required: false },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'initial-thesis' },
-    date: computedDateField,
-  },
-}));
-
-export const TldrDoc = defineDocumentType(() => ({
-  name: 'TldrDoc',
-  filePathPattern: 'tldr.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    subtitle: { type: 'string', required: false },
-    updated: { type: 'date', required: true },
-    documentHash: { type: 'string', required: true },
-    bitcoinOts: { type: 'string', required: true },
-    hashableFile: { type: 'string', required: true },
-    sealedDate: { type: 'string', required: false },
-    readingMinutes: { type: 'number', required: false },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'tldr' },
-    date: computedDateField,
-  },
-}));
-
-export const LivingThesisDoc = defineDocumentType(() => ({
-  name: 'LivingThesisDoc',
-  filePathPattern: 'living-thesis.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-    readingMinutes: { type: 'number', required: false },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'living-thesis' },
-    date: computedDateField,
-  },
-}));
-
 export const Critique = defineDocumentType(() => ({
   name: 'Critique',
   filePathPattern: 'critiques/*.mdx',
@@ -247,9 +192,6 @@ export default makeSource({
   contentDirExclude: ['README.md', 'critique-images'],
   onMissingOrIncompatibleData: 'fail',
   documentTypes: [
-    InitialThesisDoc,
-    TldrDoc,
-    LivingThesisDoc,
     Critique,
     AboutDoc,
     BibliographyDoc,
