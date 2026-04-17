@@ -20,13 +20,118 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/about',
+        destination: '/author/about',
+        permanent: true,
+      },
+      {
+        source: '/bibliography',
+        destination: '/scratch-writings/bibliography',
+        permanent: true,
+      },
+      {
+        source: '/belevan',
+        destination: '/scratch-writings/belevan',
+        permanent: true,
+      },
+      {
+        source: '/large-glass-breakdown',
+        destination: '/scratch-writings/large-glass-breakdown',
+        permanent: true,
+      },
+      {
+        source: '/duchamp-biography',
+        destination: '/scratch-writings/duchamp-biography',
+        permanent: true,
+      },
+      {
+        source: '/endings',
+        destination: '/scratch-writings/endings',
+        permanent: true,
+      },
+      {
+        source: '/golden-bough',
+        destination: '/scratch-writings/golden-bough',
+        permanent: true,
+      },
+      {
+        source: '/what-is-pataphysics',
+        destination: '/pataphysics/what-is-pataphysics',
+        permanent: true,
+      },
+      {
+        source: '/vocab',
+        destination: '/pataphysics/vocabulary',
+        permanent: true,
+      },
+      {
+        source: '/daisugi-cosmology',
+        destination: '/cosmology/daisugi-cosmology',
+        permanent: true,
+      },
+      {
+        source: '/astrology',
+        destination: '/cosmology/astrology',
+        permanent: true,
+      },
+      {
+        source: '/chocolate-grinder',
+        destination: '/bachelor-machines/chocolate-grinder',
+        permanent: true,
+      },
+      {
+        source: '/rhonda-shearer',
+        destination: '/duchamp/rhonda-shearer/profile',
+        permanent: true,
+      },
+      {
         source: '/rhonda-shearer-archive',
-        destination: '/impossible-bed-i',
+        destination: '/duchamp/rhonda-shearer/impossible-bed-ii',
         permanent: true,
       },
       {
         source: '/impossible-bed',
-        destination: '/impossible-bed-ii',
+        destination: '/duchamp/rhonda-shearer/impossible-bed-i',
+        permanent: true,
+      },
+      {
+        source: '/impossible-bed-i',
+        destination: '/duchamp/rhonda-shearer/impossible-bed-i',
+        permanent: true,
+      },
+      {
+        source: '/impossible-bed-ii',
+        destination: '/duchamp/rhonda-shearer/impossible-bed-ii',
+        permanent: true,
+      },
+      {
+        source: '/readymades',
+        destination: '/duchamp/readymades/overview',
+        permanent: true,
+      },
+      {
+        source: '/readymades-research',
+        destination: '/duchamp/readymades/research',
+        permanent: true,
+      },
+      {
+        source: '/la-chose-en-soie',
+        destination: '/duchamp/readymades/la-chose-en-soie',
+        permanent: true,
+      },
+      {
+        source: '/chess',
+        destination: '/duchamp/chess/overview',
+        permanent: true,
+      },
+      {
+        source: '/chess-research',
+        destination: '/duchamp/chess/research',
+        permanent: true,
+      },
+      {
+        source: '/the-boxes',
+        destination: '/duchamp/the-boxes',
         permanent: true,
       },
     ];

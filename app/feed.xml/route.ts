@@ -60,19 +60,19 @@ export async function GET() {
     },
     {
       title: 'Understanding Bachelor Machines',
-      link: `${BASE_URL}/bachelor-machines`,
+      link: `${BASE_URL}/bachelor-machines/understanding-bachelor-machines`,
       description:
         'The bachelor machine is a closed circuit of desire and frustration. In Elden Ring, the Tarnished operates as the chocolate grinder - dying endlessly, grinding their own chocolate.',
       pubDate: new Date('2024-10-15'),
-      guid: `${BASE_URL}/bachelor-machines`,
+      guid: `${BASE_URL}/bachelor-machines/understanding-bachelor-machines`,
     },
     {
       title: 'What Is Pataphysics?',
-      link: `${BASE_URL}/what-is-pataphysics`,
+      link: `${BASE_URL}/pataphysics/what-is-pataphysics`,
       description:
         "The science of imaginary solutions. Alfred Jarry's discipline extends beyond metaphysics as far as metaphysics extends beyond physics. FromSoftware built the first true 'pataphysical video game.",
       pubDate: new Date('2024-10-20'),
-      guid: `${BASE_URL}/what-is-pataphysics`,
+      guid: `${BASE_URL}/pataphysics/what-is-pataphysics`,
     },
     {
       title: 'The Prime Document',
@@ -92,11 +92,11 @@ export async function GET() {
     },
     {
       title: "Rhonda Shearer and Duchamp's Secret",
-      link: `${BASE_URL}/impossible-bed-i`,
+      link: `${BASE_URL}/duchamp/rhonda-shearer/impossible-bed-i`,
       description:
         "Rhonda Roland Shearer discovered that Duchamp's readymades were not found objects but carefully constructed artworks. Her research validates the depth of Duchamp's conceptual games.",
       pubDate: new Date('2024-12-01'),
-      guid: `${BASE_URL}/impossible-bed-i`,
+      guid: `${BASE_URL}/duchamp/rhonda-shearer/impossible-bed-i`,
     },
   ];
 

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
 import { ContentPageRenderer } from '@/components/site/content-page-renderer';
 import { allContentPagesSorted, getContentPageBySlug } from '@/lib/content';
+import { getFirstContentPageSlugInFolder } from '@/lib/content-tree';
 
 interface PageProps {
   params: { slug: string[] };
@@ -13,7 +14,11 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const doc = getContentPageBySlug(params.slug.join('/'));
+  const requestedSlug = params.slug.join('/');
+  const folderFallbackSlug = getFirstContentPageSlugInFolder(requestedSlug);
+  const doc = getContentPageBySlug(requestedSlug) ?? (
+    folderFallbackSlug ? getContentPageBySlug(folderFallbackSlug) : null
+  );
 
   if (!doc) {
     return {};
@@ -26,11 +31,18 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default function ContentPageRoute({ params }: PageProps) {
-  const doc = getContentPageBySlug(params.slug.join('/'));
+  const requestedSlug = params.slug.join('/');
+  const doc = getContentPageBySlug(requestedSlug);
 
-  if (!doc) {
-    notFound();
+  if (doc) {
+    return <ContentPageRenderer doc={doc} />;
   }
 
-  return <ContentPageRenderer doc={doc} />;
+  const folderFallbackSlug = getFirstContentPageSlugInFolder(requestedSlug);
+
+  if (folderFallbackSlug) {
+    redirect(`/${folderFallbackSlug}`);
+  }
+
+  notFound();
 }

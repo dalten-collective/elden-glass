@@ -85,7 +85,7 @@ export default makeSource({
   // Exclude author-facing docs and helper READMEs that don't match any
   // document type; without this, contentlayer logs a "couldn't determine
   // the document type" warning on every dev-server boot.
-  contentDirExclude: ['README.md', 'critique-images'],
+  contentDirExclude: ['README.md', 'critique-images', 'pages/layout.yaml', 'pages/**/layout.yaml'],
   onMissingOrIncompatibleData: 'fail',
   documentTypes: [
     Critique,

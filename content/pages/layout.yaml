@@ -1,0 +1,19 @@
+order:
+  - home
+  - living-thesis
+  - master-list
+  - tldr
+  - initial-thesis
+  - gatherer
+  - scratch-writings
+  - pataphysics
+  - xenotext-theory
+  - cosmology
+  - bachelor-machines
+  - duchamp
+  - critiques
+  - author
+links:
+  gatherer:
+    href: /gatherer
+    label: Elden Ring Item Cards

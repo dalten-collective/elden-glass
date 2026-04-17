@@ -1,0 +1,10 @@
+order:
+  - rhonda-shearer
+  - readymades
+  - chess
+  - the-boxes
+  - duchamp-works
+links:
+  duchamp-works:
+    href: /duchamp-works
+    label: Duchamp Works

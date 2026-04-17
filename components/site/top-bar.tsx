@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 
+import type { SiteNavigation } from '@/lib/sidebar';
 import { MobileSidebar } from './mobile-sidebar';
 import { TopBarActions } from './top-bar-actions';
-import type { SidebarData } from '@/lib/content';
 
 interface TopBarProps {
-  data: SidebarData;
+  navigation: SiteNavigation;
+  livingThesisUpdatedIso: string;
 }
 
-export function TopBar({ data }: TopBarProps) {
+export function TopBar({ navigation, livingThesisUpdatedIso }: TopBarProps) {
   return (
     <header className="relative z-[40] border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-4 py-4 lg:py-6">
       {/* Desktop: Title with actions */}
@@ -21,7 +22,7 @@ export function TopBar({ data }: TopBarProps) {
               Elden Ring is Marcel Duchamp&apos;s The Bride Stripped Bare by her Bachelors, Even
             </span>
           </Link>
-          <TopBarActions updatedIso={data.livingThesis.updated} />
+          <TopBarActions updatedIso={livingThesisUpdatedIso} />
         </div>
       </div>
 
@@ -30,7 +31,7 @@ export function TopBar({ data }: TopBarProps) {
         {/* Top row: Menu, name and search */}
         <div className="flex items-stretch gap-2">
           <div className="border border-[var(--border-subtle)] rounded-lg p-0.5 flex items-center">
-            <MobileSidebar data={data} />
+            <MobileSidebar navigation={navigation} />
           </div>
           <div className="flex-1 flex flex-col justify-end gap-1">
             <div className="font-mono font-bold text-white text-xl leading-none whitespace-nowrap">

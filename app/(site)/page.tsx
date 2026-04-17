@@ -132,7 +132,7 @@ export default function HomePage() {
               aren&apos;t bugs or difficulty—they&apos;re features of the artistic machine.
             </p>
             <Link
-              href="/pataphysics"
+              href="/pataphysics/understanding-pataphysics"
               className="inline-flex items-center gap-1 text-sm text-[var(--accent-blue)] hover:gap-2 transition-all"
             >
               Understand &apos;pataphysics

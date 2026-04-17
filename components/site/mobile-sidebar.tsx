@@ -2,20 +2,18 @@
 
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 
-import type { SidebarData } from '@/lib/content';
+import type { SiteNavigation } from '@/lib/sidebar';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { NavigationMenu } from './navigation-menu';
-import { getSiteNavigation } from './site-navigation';
 
 interface MobileSidebarProps {
-  data: SidebarData;
+  navigation: SiteNavigation;
 }
 
-export function MobileSidebar({ data }: MobileSidebarProps) {
+export function MobileSidebar({ navigation }: MobileSidebarProps) {
   const [open, setOpen] = useState(false);
-  const navigation = useMemo(() => getSiteNavigation(data), [data]);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>

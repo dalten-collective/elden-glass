@@ -1,61 +1,41 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
+
+import { allContentPagesSorted, getCritiques } from '@/lib/content';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenglass.com';
+const now = new Date();
 
+const staticRoutes = ['/', '/gatherer', '/search', '/critiques', '/duchamp-works', '/xenotext'];
+
+/**
+ * Generates the sitemap from the current content tree plus the handful of
+ * bespoke routes that do not originate from Contentlayer.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
-  // Core pages
-  const corePages = [
-    '',
-    '/tldr',
-    '/initial-thesis',
-    '/living-thesis',
-    '/about',
-    '/search',
-    '/bibliography',
-  ].map((path) => ({
-    url: `${BASE_URL}${path}`,
+  const staticEntries = staticRoutes.map((route) => ({
+    url: `${BASE_URL}${route}`,
     lastModified: now,
-    changeFrequency: 'weekly' as const,
-    priority: path === '' || path === '/living-thesis' ? 1 : 0.8,
+    changeFrequency: 'monthly' as const,
+    priority: route === '/' ? 1 : 0.5,
   }));
 
-  // Evidence pages
-  const evidencePages = [
-    '/bachelor-machines',
-    '/bachelor-machines/terms',
-    '/pataphysics',
-    '/pataphysics/pataphysics-engine',
-    '/what-is-pataphysics',
-    '/readymades',
-    '/readymades-research',
-    '/the-boxes',
-    '/duchamp-biography',
-    '/endings',
-    '/xenotext-theory',
-    '/golden-bough',
-    '/xenotext',
-    '/la-chose-en-soie',
-    '/impossible-bed-i',
-    '/impossible-bed-ii',
-    '/belevan',
-    '/chess-research',
-    '/duchamp-works',
-  ].map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: now,
+  const contentEntries = allContentPagesSorted().map((doc) => ({
+    url: `${BASE_URL}${doc.url}`,
+    lastModified: doc.updated ? new Date(doc.updated) : now,
+    changeFrequency: 'monthly' as const,
+    priority: isPrimaryContentSlug(doc.slug) ? 1 : 0.7,
+  }));
+
+  const critiqueEntries = getCritiques().map((critique) => ({
+    url: `${BASE_URL}/critiques/${critique.slug}`,
+    lastModified: new Date(critique.updated),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
-  // Tool pages
-  const toolPages = ['/gatherer', '/vocab'].map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.5,
-  }));
+  return [...staticEntries, ...contentEntries, ...critiqueEntries];
+}
 
-  return [...corePages, ...evidencePages, ...toolPages];
+function isPrimaryContentSlug(slug: string): boolean {
+  return ['living-thesis', 'master-list', 'tldr', 'initial-thesis'].includes(slug);
 }
