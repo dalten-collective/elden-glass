@@ -1,22 +1,22 @@
 primary:
   - home
   - living-thesis
-  - master-list
   - tldr
   - initial-thesis
+  - master-list
 order:
   - home
   - living-thesis
-  - master-list
   - tldr
   - initial-thesis
+  - master-list
   - gatherer
   - scratch-writings
+  - duchamp
   - pataphysics
+  - bachelor-machines
   - xenotext-theory
   - cosmology
-  - bachelor-machines
-  - duchamp
   - critiques
   - author
 links:
