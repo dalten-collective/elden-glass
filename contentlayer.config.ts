@@ -61,6 +61,7 @@ export const ContentPage = defineDocumentType(() => ({
     bitcoinOts: { type: 'string', required: false },
     verificationSubject: { type: 'string', required: false },
     vocabSearch: { type: 'boolean', required: false },
+    vocabSearchPlaceholder: { type: 'string', required: false },
   },
   computedFields: {
     slug: {

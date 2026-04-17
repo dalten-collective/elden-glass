@@ -89,7 +89,7 @@ export function ContentPageRenderer({ doc }: { doc: ContentPage }) {
 
         {doc.vocabSearch && (
           <div className="mt-6">
-            <VocabSearch placeholder="Search machines and vocabulary..." />
+            <VocabSearch placeholder={doc.vocabSearchPlaceholder} />
           </div>
         )}
       </section>

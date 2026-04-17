@@ -28,6 +28,7 @@ export type ContentPage = {
   bitcoinOts?: string;
   verificationSubject?: string;
   vocabSearch?: boolean;
+  vocabSearchPlaceholder?: string;
 };
 
 const allContentPages =
