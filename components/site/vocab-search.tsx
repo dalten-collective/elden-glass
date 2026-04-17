@@ -48,6 +48,18 @@ export function VocabSearch({ placeholder = 'Filter vocabulary...' }: VocabSearc
         (section as HTMLElement).style.opacity = '1';
       }
     });
+
+    // Filter DefinitionItem cards (for pages like /vocab that render
+    // definitions as DefinitionItem components rather than markdown tables).
+    const definitionItems = document.querySelectorAll('[data-definition-item]');
+    definitionItems.forEach((item) => {
+      const text = item.textContent?.toLowerCase() || '';
+      if (lowerQuery === '' || text.includes(lowerQuery)) {
+        (item as HTMLElement).style.display = '';
+      } else {
+        (item as HTMLElement).style.display = 'none';
+      }
+    });
   }, [query]);
 
   const handleClear = () => {

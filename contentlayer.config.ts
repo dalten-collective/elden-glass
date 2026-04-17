@@ -1,68 +1,25 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+import GithubSlugger from 'github-slugger';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import { remarkFloatImages } from './lib/remark-float-image';
 
+export function extractHeadings(raw: string): Array<{ level: 2 | 3; text: string; id: string }> {
+  const slugger = new GithubSlugger();
+  const matches = Array.from(raw.matchAll(/^(#{2,3})\s+(.+)$/gm));
+
+  return matches.map((m) => ({
+    level: m[1].length as 2 | 3,
+    text: m[2].trim(),
+    id: slugger.slug(m[2].trim()),
+  }));
+}
+
 const computedDateField = {
   type: 'date' as const,
   resolve: (doc: any) => doc.updated || doc.published || null,
 };
-
-export const InitialThesisDoc = defineDocumentType(() => ({
-  name: 'InitialThesisDoc',
-  filePathPattern: 'initial-thesis.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    subtitle: { type: 'string', required: false },
-    updated: { type: 'date', required: true },
-    documentHash: { type: 'string', required: true },
-    ethereumAttestation: { type: 'string', required: true },
-    hashableFile: { type: 'string', required: true },
-    sealedDate: { type: 'string', required: false },
-    readingMinutes: { type: 'number', required: false },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'initial-thesis' },
-    date: computedDateField,
-  },
-}));
-
-export const TldrDoc = defineDocumentType(() => ({
-  name: 'TldrDoc',
-  filePathPattern: 'tldr.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    subtitle: { type: 'string', required: false },
-    updated: { type: 'date', required: true },
-    documentHash: { type: 'string', required: true },
-    bitcoinOts: { type: 'string', required: true },
-    hashableFile: { type: 'string', required: true },
-    sealedDate: { type: 'string', required: false },
-    readingMinutes: { type: 'number', required: false },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'tldr' },
-    date: computedDateField,
-  },
-}));
-
-export const LivingThesisDoc = defineDocumentType(() => ({
-  name: 'LivingThesisDoc',
-  filePathPattern: 'living-thesis.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-    readingMinutes: { type: 'number', required: false },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'living-thesis' },
-    date: computedDateField,
-  },
-}));
 
 export const Critique = defineDocumentType(() => ({
   name: 'Critique',
@@ -85,73 +42,41 @@ export const Critique = defineDocumentType(() => ({
   },
 }));
 
-export const AboutDoc = defineDocumentType(() => ({
-  name: 'AboutDoc',
-  filePathPattern: 'about.mdx',
+export const ContentPage = defineDocumentType(() => ({
+  name: 'ContentPage',
+  filePathPattern: 'pages/**/*.mdx',
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
-    role: { type: 'string', required: false },
-    location: { type: 'string', required: false },
+    summary: { type: 'string', required: true },
     updated: { type: 'date', required: true },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'about' },
-    date: computedDateField,
-  },
-}));
-
-export const BibliographyDoc = defineDocumentType(() => ({
-  name: 'BibliographyDoc',
-  filePathPattern: 'bibliography.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'bibliography' },
-    date: computedDateField,
-  },
-}));
-
-export const MasterListDoc = defineDocumentType(() => ({
-  name: 'MasterListDoc',
-  filePathPattern: 'master-list.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-  },
-  computedFields: {
-    slug: { type: 'string', resolve: () => 'master-list' },
-    date: computedDateField,
-  },
-}));
-
-export const VocabDoc = defineDocumentType(() => ({
-  name: 'VocabDoc',
-  filePathPattern: 'vocab/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    section: { type: 'string', required: true },
-    updated: { type: 'date', required: true },
-    // Optional hero-meta fields so pages that render a vocab doc can pull
-    // their hero labels from frontmatter instead of hardcoding them. Used
-    // by /bachelor-machines/terms for its Source / Machines / Vocabulary
-    // tiles; other vocab files can leave them unset.
     subtitle: { type: 'string', required: false },
-    source: { type: 'string', required: false },
-    machineCount: { type: 'string', required: false },
-    vocabularyCount: { type: 'string', required: false },
+    eyebrow: { type: 'string', required: false },
+    readingMinutes: { type: 'number', required: false },
+    navMeta: { type: 'string', required: false },
+    documentHash: { type: 'string', required: false },
+    hashableFile: { type: 'string', required: false },
+    sealedDate: { type: 'string', required: false },
+    ethereumAttestation: { type: 'string', required: false },
+    bitcoinOts: { type: 'string', required: false },
+    verificationSubject: { type: 'string', required: false },
+    vocabSearch: { type: 'boolean', required: false },
+    vocabSearchPlaceholder: { type: 'string', required: false },
   },
   computedFields: {
     slug: {
       type: 'string',
-      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx?$/, ''),
+      resolve: (doc) => doc._raw.flattenedPath.replace(/^pages\//, ''),
+    },
+    url: {
+      type: 'string',
+      resolve: (doc) => `/${doc._raw.flattenedPath.replace(/^pages\//, '')}`,
     },
     date: computedDateField,
+    headings: {
+      type: 'json',
+      resolve: (doc) => extractHeadings(doc.body.raw),
+    },
   },
 }));
 
@@ -160,17 +85,9 @@ export default makeSource({
   // Exclude author-facing docs and helper READMEs that don't match any
   // document type; without this, contentlayer logs a "couldn't determine
   // the document type" warning on every dev-server boot.
-  contentDirExclude: ['README.md', 'critique-images'],
-  documentTypes: [
-    InitialThesisDoc,
-    TldrDoc,
-    LivingThesisDoc,
-    Critique,
-    AboutDoc,
-    BibliographyDoc,
-    MasterListDoc,
-    VocabDoc,
-  ],
+  contentDirExclude: ['README.md', 'critique-images', 'pages/layout.yaml', 'pages/**/layout.yaml'],
+  onMissingOrIncompatibleData: 'fail',
+  documentTypes: [Critique, ContentPage],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

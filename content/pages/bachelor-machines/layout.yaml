@@ -1,0 +1,10 @@
+order:
+  - understanding-bachelor-machines
+  - chocolate-grinder
+  - terms
+  - eternally-dying-land
+links:
+  eternally-dying-land:
+    href: https://www.eurogamer.net/an-obituary-for-the-architecture-of-dark-souls-eternally-dying-land
+    label: Eternally Dying Land
+    external: true

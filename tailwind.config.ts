@@ -29,6 +29,14 @@ const config: Config = {
       boxShadow: {
         panel: '0 20px 50px rgba(0, 0, 0, 0.35)',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:last-of-type::after': { content: 'none' },
+          },
+        },
+      },
     },
   },
   plugins: [typography],

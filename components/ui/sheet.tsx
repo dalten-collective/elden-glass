@@ -39,8 +39,8 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {/* Keep the close affordance inside the safe area so it stays tappable on mobile browsers. */}
-      <DialogPrimitive.Close className="absolute right-4 top-[max(1rem,env(safe-area-inset-top,0px))] z-10 rounded-full bg-[rgb(var(--bg-primary-rgb)/0.55)] p-1.5 text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]">
-        <X className="h-4 w-4" />
+      <DialogPrimitive.Close className="absolute right-4 top-[max(1rem,env(safe-area-inset-top,0px))] z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.85)] text-[var(--text-primary)] shadow-sm transition-colors hover:bg-[rgb(var(--bg-primary-rgb)/1)] hover:text-[var(--accent-gold)]">
+        <X className="h-5 w-5" strokeWidth={2.25} />
         <span className="sr-only">Close</span>
       </DialogPrimitive.Close>
       <div className="flex-1 overflow-y-auto overscroll-contain px-4 pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] pt-[max(1.25rem,env(safe-area-inset-top,0px)+1.25rem)]">
