@@ -172,6 +172,10 @@ body {
   animation: search-target-flash 4s ease-out;
 }
 
+.prose [data-search-block].search-target-flash {
+  animation: search-target-flash 4s ease-out;
+}
+
 @keyframes search-target-flash {
   0% {
     background-color: rgba(var(--accent-gold-rgb) / 0.34);
