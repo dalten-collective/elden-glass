@@ -11,7 +11,7 @@ interface SearchResult {
   context: string;
   page: string;
   pageTitle: string;
-  textToFind: string;
+  targetId?: string;
   type?: 'content' | 'titlecard';
   cardId?: string;
 }
@@ -126,9 +126,8 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
       return;
     }
 
-    // Navigate to page with text fragment
-    const textFragment = encodeURIComponent(result.textToFind);
-    router.push(`${result.page}#:~:text=${textFragment}`);
+    const destination = result.targetId ? `${result.page}#${result.targetId}` : result.page;
+    router.push(destination as any);
   };
 
   const handleClear = () => {

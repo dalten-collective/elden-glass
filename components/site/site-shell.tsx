@@ -4,7 +4,6 @@ import { getContentPageBySlug } from '@/lib/content';
 import { buildSidebar } from '@/lib/sidebar';
 import { Sidebar } from './sidebar';
 import { TopBar } from './top-bar';
-import { ScrollToText } from './scroll-to-text';
 
 export async function SiteShell({ children }: { children: ReactNode }) {
   const navigation = buildSidebar();
@@ -16,7 +15,6 @@ export async function SiteShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)]">
-      <ScrollToText />
       <Sidebar navigation={navigation} />
       <div className="flex min-h-screen flex-1 flex-col lg:ml-[280px]">
         <TopBar navigation={navigation} livingThesisUpdatedIso={livingThesis.updated} />

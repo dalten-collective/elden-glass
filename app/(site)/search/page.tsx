@@ -11,7 +11,7 @@ interface SearchResult {
   context: string;
   page: string;
   pageTitle: string;
-  textToFind: string;
+  targetId?: string;
 }
 
 interface SearchResponse {
@@ -225,8 +225,7 @@ const SearchResultItem = memo(function SearchResultItem({
   result: SearchResult;
   query: string;
 }) {
-  const textFragment = encodeURIComponent(result.textToFind);
-  const href = `${result.page}#:~:text=${textFragment}`;
+  const href = result.targetId ? `${result.page}#${result.targetId}` : result.page;
 
   return (
     <Link
