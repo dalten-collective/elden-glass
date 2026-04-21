@@ -324,8 +324,10 @@ function getPrimaryMeta(doc: ContentPage): string | undefined {
   }
 
   if (doc.slug === 'master-list') {
+    // A correspondence is a Glass↔Ring pair — "pairs" fits the stair meta
+    // width where "correspondences" truncates ("135 correspon…").
     const count = doc.body.raw.match(/^- /gm)?.length ?? 0;
-    return `${count} correspondences`;
+    return `${count} pairs`;
   }
 
   if (doc.slug === 'tldr' && doc.bitcoinOts) {
