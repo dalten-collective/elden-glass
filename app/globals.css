@@ -2,38 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Font stacks with system fallbacks (no network required) */
-  --font-crimson: 'Crimson Pro', 'Crimson Text', Georgia, 'Times New Roman', serif;
-  --font-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+/* ═══════════════════════════════════════════════════════════════
+   DELAY IN GLASS — a design system for the Elden Glass thesis
+   ───────────────────────────────────────────────────────────────
+   The tokens live twice:
+     • on :root, so the entire document (including bespoke routes
+       that predate this system) inherits the new palette/fonts
+       with minimal churn.
+     • on .delay, scoped to the body, so the named component
+       selectors (.pane, .quote, .attest, .stair, .seal-strip…)
+       only paint where the system is applied.
+   ═══════════════════════════════════════════════════════════════ */
 
-  --bg-primary: #0d0d0d;
-  --bg-secondary: #1a1a1a;
-  --bg-elevated: #242424;
-  --text-primary: #e8e6e3;
-  --text-secondary: #a8a5a0;
-  --text-tertiary: #6b6860;
-  --accent-gold: #c9a961;
-  --accent-blue: #6193c9;
+:root {
+  /* ── font stacks (populated by next/font in app/layout.tsx) ── */
+  --font-serif: 'EB Garamond', 'Garamond', 'Sorts Mill Goudy', Georgia, 'Times New Roman', serif;
+  --font-sans:
+    'Inter Tight', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Legacy aliases — pre-Delay-in-Glass code referenced --font-crimson /
+   * --font-inter directly. Keep them pointing at the new faces so any
+   * lingering consumer keeps rendering. */
+  --font-crimson: var(--font-serif);
+  --font-inter: var(--font-sans);
+
+  /* ── ground — the lamp-black panes ── */
+  --ink: #0a0908;
+  --ink-2: #13110f;
+  --ink-3: #1b1814;
+  --pane: #1f1b17;
+  --pane-edge: #2a251e;
+
+  /* ── glass (the crack-line, the delay itself) ── */
+  --crack: rgba(232, 226, 210, 0.14);
+  --crack-strong: rgba(232, 226, 210, 0.32);
+  --glass: rgba(232, 226, 210, 0.04);
+  --glass-edge: rgba(232, 226, 210, 0.09);
+
+  /* ── paper (Duchamp's "world of yellow," faded) ── */
+  --paper: #e8e2d0;
+  --paper-dim: #b5ae9a;
+  --paper-dimmer: #867f6d;
+  --paper-dimmest: #564f3f;
+
+  /* ── gold (oxidized matchstick-red faded across 80 years) ── */
+  --gold: #c9a961;
+  --gold-dim: #8a7448;
+  --gold-bright: #e6c57e;
+
+  /* ── rust (ferrous underpainting before oxidation) ── */
+  --rust: #a65a3c;
+  --rust-dim: #6d3a26;
+
+  /* ── glass-blue (blueprints, attestation, cold half) ── */
+  --glass-blue: #6b8fa8;
+  --glass-blue-dim: #3e5668;
+
+  /* ── verdigris (water-mill green; verified/sealed) ── */
+  --verdigris: #5c8a76;
+
+  /* ── type scale ── */
+  --fs-micro: 10px;
+  --fs-cap: 11px;
+  --fs-spec: 13px;
+  --fs-body: 18px;
+  --fs-lead: 21px;
+  --fs-h4: 22px;
+  --fs-h3: 28px;
+  --fs-h2: 40px;
+  --fs-h1: 64px;
+  --fs-display: 96px;
+
+  /* ── rhythm ── */
+  --rule: 1px solid var(--crack);
+  --rule-strong: 1px solid var(--crack-strong);
+  --rule-gold: 1px solid var(--gold-dim);
+
+  /* ────────────────────────────────────────────────────────────
+     Legacy token aliases — keep existing components painting the
+     new palette without rewriting every consumer in this PR.
+     (Same variable names as the pre-overhaul system; they now
+     resolve to delay-in-glass values.)
+     ──────────────────────────────────────────────────────────── */
+  --bg-primary: var(--ink);
+  --bg-secondary: var(--ink-2);
+  --bg-elevated: var(--pane);
+  --text-primary: var(--paper);
+  --text-secondary: var(--paper-dim);
+  --text-tertiary: var(--paper-dimmer);
+  --accent-gold: var(--gold);
+  --accent-blue: var(--glass-blue);
   --accent-purple: #8b61c9;
-  --accent-muted: #8a7c5c;
-  --border-subtle: #2a2a2a;
-  --border-emphasis: #3a3a3a;
-  --success-green: #5c8a5a;
-  --accent-red: #8b4513;
-  --bg-primary-rgb: 13 13 13;
-  --bg-secondary-rgb: 26 26 26;
+  --accent-muted: var(--gold-dim);
+  --border-subtle: var(--pane-edge);
+  --border-emphasis: #3a332a;
+  --success-green: var(--verdigris);
+  --accent-red: var(--rust);
+
+  /* RGB tuples for rgba() consumers */
+  --bg-primary-rgb: 10 9 8;
+  --bg-secondary-rgb: 19 17 15;
   --accent-gold-rgb: 201 169 97;
-  --accent-blue-rgb: 97 147 201;
+  --accent-blue-rgb: 107 143 168;
   --accent-purple-rgb: 139 97 201;
-  --success-green-rgb: 92 138 90;
+  --success-green-rgb: 92 138 118;
 }
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
-/* Safe area support for sidebars and fixed elements */
+/* Safe-area support for notched devices (stair seal + seal-strip). */
 .pt-safe {
   padding-top: env(safe-area-inset-top, 0px);
 }
@@ -44,28 +126,20 @@ html {
 
 html,
 body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  font-family:
-    var(--font-inter),
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    sans-serif;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-sans);
   margin: 0;
   padding: 0;
-  /* Firefox — thin rail, subtle grey thumb that turns gold on interaction. */
   scrollbar-width: thin;
-  scrollbar-color: var(--border-emphasis) transparent;
+  scrollbar-color: var(--pane-edge) transparent;
 }
 
 html:hover,
 body:hover {
-  scrollbar-color: var(--accent-gold) transparent;
+  scrollbar-color: var(--gold) transparent;
 }
 
-/* WebKit (Chrome, Safari, Edge) — mirror the sidebar's scrollbar-thin style. */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 6px;
@@ -79,13 +153,13 @@ body::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background: var(--border-emphasis);
+  background: var(--pane-edge);
   border-radius: 3px;
 }
 
 html::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-gold);
+  background: var(--gold);
 }
 
 body {
@@ -93,23 +167,47 @@ body {
   height: 100%;
 }
 
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pane-edge) transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--pane-edge);
+  border-radius: 3px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+.scrollbar-thin:hover {
+  scrollbar-color: var(--gold) transparent;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PROSE — the long-read voice (applies to MDX-rendered content)
+   ═══════════════════════════════════════════════════════════════ */
+
 .prose {
-  @apply text-[1.05rem] leading-relaxed font-serif text-[var(--text-secondary)];
+  @apply text-[1.05rem] leading-relaxed font-serif text-[var(--paper-dim)];
 }
 
 .prose h1,
 .prose h2,
 .prose h3,
 .prose h4 {
-  @apply font-serif text-[var(--text-primary)] tracking-tight;
+  @apply font-serif text-[var(--paper)] tracking-tight;
   position: relative;
 }
 
-/* Anchor links appended to every heading by rehype-autolink-headings. Hidden
- * by default, revealed when the user hovers the heading. Click target is the
- * '#' glyph. */
+/* Anchor links appended by rehype-autolink-headings. */
 .prose .heading-anchor {
-  @apply text-[var(--text-tertiary)] no-underline;
+  @apply text-[var(--paper-dimmer)] no-underline;
   margin-left: 0.5rem;
   opacity: 0;
   transition:
@@ -129,27 +227,36 @@ body {
 
 .prose .heading-anchor:hover,
 .prose .heading-anchor:focus {
-  @apply text-[var(--accent-gold)];
+  @apply text-[var(--gold)];
 }
 
 .prose h2 {
-  @apply border-l-4 pl-4 border-[var(--accent-gold)] mt-12 mb-6;
+  @apply border-l-4 pl-4 border-[var(--gold)] mt-12 mb-6;
 }
 
 .prose h3 {
-  @apply text-[var(--text-secondary)] mt-8 mb-4;
+  @apply text-[var(--paper)] mt-8 mb-4;
+}
+
+.prose h4 {
+  font-style: italic;
+  color: var(--paper-dim);
 }
 
 .prose a {
-  @apply text-[var(--accent-gold)] underline underline-offset-4;
+  @apply text-[var(--gold)] underline underline-offset-4;
+}
+
+.prose a:hover {
+  color: var(--gold-bright);
 }
 
 .prose strong {
-  @apply text-[var(--text-primary)];
+  @apply text-[var(--paper)];
 }
 
 .prose blockquote {
-  @apply border-l-4 border-[var(--accent-muted)] px-6 py-3 italic rounded-r bg-[rgb(var(--bg-secondary-rgb)/0.8)];
+  @apply border-l-4 border-[var(--gold-dim)] px-6 py-3 italic rounded-r bg-[rgb(var(--bg-secondary-rgb)/0.8)];
 }
 
 .prose img {
@@ -157,13 +264,17 @@ body {
 }
 
 .prose pre {
-  @apply bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] text-sm rounded-lg p-4 overflow-x-auto;
+  @apply border text-sm rounded-lg p-4 overflow-x-auto;
+  background: var(--ink-2);
+  border-color: var(--pane-edge);
 }
 
 .prose code {
-  @apply text-[var(--accent-gold)];
+  @apply text-[var(--gold)];
+  font-family: var(--font-mono);
 }
 
+/* Search-block flash — preserved from pre-overhaul behaviour. */
 .prose [data-search-block] {
   scroll-margin-top: 1.5rem;
 }
@@ -180,156 +291,1078 @@ body {
   0% {
     background-color: rgba(var(--accent-gold-rgb) / 0.34);
   }
-
   100% {
     background-color: transparent;
   }
 }
 
-.scrollbar-thin {
-  /* Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: var(--border-emphasis) transparent;
+/* ═══════════════════════════════════════════════════════════════
+   DELAY — the named component system, scoped under .delay
+   (applied to <body> in app/layout.tsx)
+   ═══════════════════════════════════════════════════════════════ */
+
+.delay {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-serif);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  font-feature-settings: 'kern', 'liga', 'onum', 'pnum';
 }
 
-.scrollbar-thin::-webkit-scrollbar {
+/* ── type voices ─────────────────────────────────────────────── */
+
+.delay .h1,
+.delay .delay-h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-h1);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--paper);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.delay .h2,
+.delay .delay-h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--fs-h2);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--paper);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.delay .h3,
+.delay .delay-h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  line-height: 1.2;
+  color: var(--paper);
+  margin: 0;
+}
+
+.delay .h4,
+.delay .delay-h4 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--fs-h4);
+  line-height: 1.3;
+  color: var(--paper-dim);
+  margin: 0;
+}
+
+.delay .display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-display);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  color: var(--paper);
+}
+
+.delay .delay-prose p {
+  margin: 0 0 1.2em;
+  text-wrap: pretty;
+  hyphens: auto;
+}
+.delay .delay-prose p + p {
+  text-indent: 1.6em;
+  margin-top: -0.9em;
+}
+.delay .delay-prose p.flush,
+.delay .delay-prose p.lead {
+  text-indent: 0;
+}
+
+.delay .lead {
+  font-size: var(--fs-lead);
+  line-height: 1.5;
+  color: var(--paper);
+}
+
+.delay .lead::first-letter {
+  font-size: 3.3em;
+  line-height: 0.85;
+  float: left;
+  margin: 0.08em 0.12em -0.1em -0.02em;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+/* When a DropCap SVG opens the lead, suppress the CSS first-letter
+ * so we don't overlay two glyphs. */
+.delay p.lead.has-dropcap::first-letter {
+  font-size: inherit;
+  float: none;
+  margin: 0;
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* ── apparatus labels ───────────────────────────────────────── */
+
+.delay .eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-cap);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--paper-dimmer);
+}
+.delay .eyebrow--gold {
+  color: var(--gold);
+}
+.delay .eyebrow--rust {
+  color: var(--rust);
+}
+.delay .eyebrow--blue {
+  color: var(--glass-blue);
+}
+
+.delay .spec {
+  font-family: var(--font-mono);
+  font-size: var(--fs-spec);
+  color: var(--paper-dimmer);
+  letter-spacing: 0;
+}
+
+.delay .cap {
+  font-family: var(--font-sans);
+  font-size: var(--fs-cap);
+  color: var(--paper-dimmer);
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.delay sup.ref {
+  font-family: var(--font-mono);
+  font-size: 0.62em;
+  color: var(--gold);
+  letter-spacing: 0;
+  vertical-align: super;
+  padding-left: 0.15em;
+}
+
+/* ── panes, plates, rules ──────────────────────────────────── */
+
+.delay .pane {
+  position: relative;
+  background: var(--glass);
+  border: 1px solid var(--glass-edge);
+  backdrop-filter: blur(0.5px);
+}
+
+.delay .pane--solid {
+  background: var(--ink-2);
+  border: 1px solid var(--pane-edge);
+}
+
+/* Simple CSS crackline — the ornamental rule. The SVG component
+ * (<Crackline>) is preferred for page-top flourishes; this class
+ * is the utility fallback for inline dividers. */
+.delay .crackline {
+  position: relative;
+  height: 1px;
+  background: var(--crack);
+  overflow: visible;
+}
+.delay .crackline::before {
+  content: '';
+  position: absolute;
+  left: 38%;
+  top: -3px;
+  width: 14%;
+  height: 7px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--ink) 22%,
+    var(--ink) 78%,
+    transparent 100%
+  );
+}
+.delay .crackline::after {
+  content: '';
+  position: absolute;
+  left: 44%;
+  top: -5px;
+  width: 1px;
+  height: 12px;
+  background: var(--crack);
+  transform: rotate(15deg);
+  transform-origin: top;
+}
+.delay .crackline--gold {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-dim) 20%,
+    var(--gold) 50%,
+    var(--gold-dim) 80%,
+    transparent
+  );
+}
+
+/* SVG crackline sits flat on a host pane. */
+.delay .crackline-svg {
+  display: block;
+  margin: 0;
+}
+
+.delay .plate {
+  background: var(--ink-3);
+  border: 1px solid var(--pane-edge);
+  padding: 18px;
+  position: relative;
+}
+.delay .plate > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.delay .plate .plate-no {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.2em;
+  color: var(--paper-dimmer);
+}
+.delay .plate .plate-cap {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--paper-dim);
+  margin-top: 12px;
+}
+
+.delay .margin-note {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--paper-dim);
+  border-left: 1px solid var(--crack-strong);
+  padding: 2px 0 2px 14px;
+}
+.delay .margin-note .spec {
+  color: var(--gold);
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ── pull-quote / epigraph ─────────────────────────────────── */
+
+.delay .quote {
+  position: relative;
+  padding: 36px 42px 32px;
+  margin: 0;
+  background: linear-gradient(180deg, rgba(201, 169, 97, 0.035), transparent 60%);
+  border-top: 1px solid var(--gold-dim);
+  border-bottom: 1px solid var(--gold-dim);
+}
+.delay .quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -6px;
+  left: 18px;
+  font-family: var(--font-serif);
+  font-size: 110px;
+  line-height: 1;
+  color: var(--gold-dim);
+  font-style: italic;
+  pointer-events: none;
+}
+.delay .quote .quote-body {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.32;
+  color: var(--paper);
+  text-wrap: balance;
+}
+.delay .quote .quote-body::first-line {
+  letter-spacing: 0.002em;
+}
+.delay .quote .quote-attr {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-top: 22px;
+  font-family: var(--font-sans);
+  flex-wrap: wrap;
+}
+.delay .quote .quote-attr .em-dash {
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+.delay .quote .quote-attr .name {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--paper);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.delay .quote .quote-attr .src {
+  font-size: 13px;
+  color: var(--paper-dimmer);
+  font-style: italic;
+}
+
+.delay .quote--epi {
+  border: none;
+  background: none;
+  padding: 0 0 24px;
+  border-bottom: 1px solid var(--crack);
+  margin-bottom: 32px;
+}
+.delay .quote--epi::before {
+  display: none;
+}
+.delay .quote--epi .quote-body {
+  font-size: 21px;
+  line-height: 1.4;
+  color: var(--paper-dim);
+}
+
+/* ── attestation card (the sealed-document machine) ─────────── */
+
+.delay .attest {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0;
+  background: var(--ink-2);
+  border: 1px solid var(--pane-edge);
+  font-family: var(--font-mono);
+  font-size: var(--fs-spec);
+  overflow: hidden;
+}
+
+.delay .attest .seal {
+  position: relative;
+  width: 96px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-right: 1px solid var(--pane-edge);
+  background: radial-gradient(circle at 50% 50%, rgba(201, 169, 97, 0.08), transparent 70%);
+}
+.delay .attest .seal svg {
+  display: block;
+}
+.delay .attest .seal-label {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.delay .attest .att-body {
+  padding: 14px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.delay .attest .att-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--paper-dimmer);
+}
+.delay .attest .att-head .chain {
+  color: var(--gold);
+}
+.delay .attest .att-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--paper);
+  line-height: 1.3;
+}
+.delay .attest .att-hash {
+  display: block;
+  color: var(--paper-dim);
+  font-size: 11.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  line-height: 1.5;
+}
+.delay .attest .att-hash b {
+  color: var(--gold);
+  font-weight: 500;
+}
+.delay .attest .att-meta {
+  display: flex;
+  gap: 18px;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--paper-dimmer);
+}
+.delay .attest .att-meta .k {
+  color: var(--paper-dimmest);
+  margin-right: 4px;
+}
+
+.delay .attest .att-tick {
+  padding: 16px 18px;
+  border-left: 1px solid var(--pane-edge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 72px;
+  background: rgba(92, 138, 118, 0.04);
+}
+.delay .attest .att-tick .status {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--verdigris);
+}
+
+/* Perforation between the seal and the body. */
+.delay .attest::before {
+  content: '';
+  position: absolute;
+  left: 96px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: repeating-linear-gradient(180deg, var(--pane-edge) 0 6px, transparent 6px 10px);
+}
+
+/* ── swatch (spec sheet only) ─────────────────────────────── */
+
+.delay .swatch {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  border: 1px solid var(--pane-edge);
+  background: var(--ink-2);
+}
+.delay .swatch .chip {
+  width: 60px;
+  align-self: stretch;
+}
+.delay .swatch .meta {
+  padding: 10px 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.delay .swatch .meta .name {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--paper);
+  letter-spacing: 0.04em;
+}
+.delay .swatch .meta .val {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--paper-dimmer);
+}
+
+/* ── utilities ─────────────────────────────────────────────── */
+
+.delay .rule {
+  height: 1px;
+  background: var(--crack);
+}
+.delay .rule-gold {
+  height: 1px;
+  background: var(--gold-dim);
+}
+.delay .text-paper {
+  color: var(--paper);
+}
+.delay .text-dim {
+  color: var(--paper-dim);
+}
+.delay .text-gold {
+  color: var(--gold);
+}
+.delay .text-rust {
+  color: var(--rust);
+}
+.delay .text-blue {
+  color: var(--glass-blue);
+}
+
+.delay .mark {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* DropCap host — the SVG glyph floats left, prose shape-outsides it. */
+.delay .dropcap-wrap {
+  float: left;
+  margin: 2px 14px -4px -6px;
+  shape-outside: margin-box;
+}
+.delay .dropcap-svg {
+  display: block;
+  width: 110px;
+  height: 120px;
+}
+
+.delay ::selection {
+  background: rgba(201, 169, 97, 0.32);
+  color: var(--paper);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STAIR NAV — the desktop sidebar as pataphysical staircase
+   ═══════════════════════════════════════════════════════════════ */
+
+.delay .stair {
+  width: 100%;
+  padding: 36px 28px 48px 36px;
+  position: relative;
+  background: var(--ink);
+}
+.delay .stair-brand {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--paper);
+  margin-bottom: 6px;
+}
+.delay .stair-sub {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--paper-dimmer);
+  margin-bottom: 36px;
+}
+.delay .stair-sub b {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* A rung is any navigable row on the stair. Single symbol ( § ), two
+   states: inactive = paper-dimmer, active = gold + bold. No nodes, no
+   squares — the voice is "serif apparatus" across the rail. */
+.delay .stair-rung {
+  position: relative;
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  gap: 6px;
+  padding: 8px 0;
+  cursor: pointer;
+  color: var(--paper-dimmer);
+  transition: color 0.15s;
+  text-decoration: none;
+}
+.delay .stair-rung:hover {
+  color: var(--paper);
+}
+.delay .stair-rung .num {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--paper-dimmer);
+  padding-top: 1px;
+  transition:
+    color 0.15s,
+    font-weight 0.15s;
+}
+.delay .stair-rung:hover .num {
+  color: var(--paper);
+}
+.delay .stair-rung .body {
+  min-width: 0;
+}
+
+/* The title and its optional meta share one line: title left-flush
+   (ellipsis on overflow), meta right-justified as a mono apparatus
+   label. No more multi-lining for "Apr 11" / "Bitcoin" / etc. */
+.delay .stair-rung .title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+.delay .stair-rung .title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.delay .stair-rung .meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--paper-dimmer);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.delay .stair-rung .kind {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--paper-dimmer);
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+.delay .stair-rung.active {
+  color: var(--paper);
+}
+.delay .stair-rung.active .num {
+  color: var(--gold);
+  font-weight: 700;
+}
+.delay .stair-rung.active .kind {
+  color: var(--gold);
+}
+.delay .stair-rung.active .meta {
+  color: var(--gold-dim);
+}
+
+/* Section header — a collapsible group like "Pataphysics" or "Duchamp".
+   Visually matches a rung but includes a chevron on the right that
+   rotates with `aria-expanded`. */
+.delay .stair-group-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  display: grid;
+  grid-template-columns: 14px 1fr auto;
+  gap: 6px;
+  padding: 8px 0;
+  color: var(--paper-dimmer);
+  transition: color 0.15s;
+}
+.delay .stair-group-header:hover {
+  color: var(--paper);
+}
+.delay .stair-group-header .num {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--paper-dimmer);
+  padding-top: 1px;
+  transition: color 0.15s;
+}
+.delay .stair-group-header:hover .num {
+  color: var(--paper);
+}
+.delay .stair-group-header .title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+}
+.delay .stair-group-header .chevron {
+  width: 14px;
+  height: 14px;
+  color: var(--paper-dimmest);
+  transform: rotate(-90deg);
+  transition:
+    transform 0.18s ease,
+    color 0.15s;
+  margin-right: 8px;
+  align-self: center;
+}
+.delay .stair-group-header[aria-expanded='true'] .chevron {
+  transform: rotate(0deg);
+  color: var(--paper-dimmer);
+}
+.delay .stair-group-header.has-active {
+  color: var(--paper);
+}
+.delay .stair-group-header.has-active .num {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* Children of an open group. Indented a single § column in so the
+   hierarchy reads even when several sections are open. */
+.delay .stair-group-children {
+  margin: 0 0 6px 20px;
+  padding: 2px 0 2px 10px;
+  border-left: 1px solid var(--crack);
+  list-style: none;
+}
+.delay .stair-group-children .stair-rung {
+  grid-template-columns: 12px 1fr;
+  gap: 5px;
+  padding: 6px 0;
+}
+.delay .stair-group-children .stair-rung .num {
+  font-size: 14px;
+  color: var(--paper-dimmest);
+}
+.delay .stair-group-children .stair-rung .title {
+  font-size: 14px;
+}
+.delay .stair-group-children .stair-empty {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--paper-dimmer);
+  padding: 4px 0;
+}
+
+/* Errata label that opens the secondary cluster. */
+.delay .stair-section-label {
+  margin: 22px 0 6px;
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-top: 1px solid var(--crack);
+  padding-top: 16px;
+}
+.delay .stair-section-label:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.delay .stair-seal {
+  margin-top: 40px;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--crack);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--paper-dimmer);
+  align-items: center;
+}
+.delay .stair-seal .sealed-kv {
+  display: grid;
+  gap: 3px;
+}
+.delay .stair-seal .sealed-kv .k {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  font-size: 9px;
+}
+.delay .stair-seal .sealed-kv .v {
+  color: var(--paper);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SEAL STRIP — the mobile top bar that replaces the stair
+   ═══════════════════════════════════════════════════════════════ */
+
+.delay .seal-strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--ink);
+  border-bottom: 1px solid var(--gold-dim);
+}
+.delay .seal-strip::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background: var(--crack);
+}
+.delay .seal-strip .ss-seal {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.delay .seal-strip .ss-seal::before {
+  content: '';
   width: 6px;
   height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
 }
-
-.scrollbar-thin::-webkit-scrollbar-track {
+.delay .seal-strip .ss-where {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.delay .seal-strip .ss-where .ss-section {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.delay .seal-strip .ss-where .ss-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--paper);
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.delay .seal-strip .ss-menu {
+  padding: 8px 10px;
+  border: 1px solid var(--pane-edge);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--paper-dim);
   background: transparent;
+  cursor: pointer;
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background: var(--border-emphasis);
-  border-radius: 3px;
+.delay .seal-progress {
+  height: 2px;
+  background: var(--crack);
+  position: relative;
+}
+.delay .seal-progress .fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold));
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-gold);
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE — the apparatus recomposed as a single column
+   ═══════════════════════════════════════════════════════════════ */
+
+.delay.mobile,
+.delay .mobile-zone {
+  font-size: 16px;
+}
+.delay.mobile h1,
+.delay .mobile-zone h1 {
+  font-size: 40px;
+  line-height: 1.02;
+}
+.delay.mobile h2,
+.delay .mobile-zone h2 {
+  font-size: 28px;
+}
+.delay.mobile h3,
+.delay .mobile-zone h3 {
+  font-size: 20px;
+}
+.delay.mobile .lead,
+.delay .mobile-zone .lead {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.delay.mobile .lead::first-letter,
+.delay .mobile-zone .lead::first-letter {
+  font-size: 3em;
 }
 
-.scrollbar-thin:hover {
-  scrollbar-color: var(--accent-gold) transparent;
+@media (max-width: 640px) {
+  .delay .plate {
+    margin-left: -18px;
+    margin-right: -18px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-top: 1px solid var(--crack);
+    border-bottom: 1px solid var(--crack);
+  }
+  .delay .plate > img {
+    padding: 0;
+  }
+  .delay .plate .plate-cap {
+    padding: 12px 18px 14px;
+    font-size: 13px;
+  }
+  .delay .plate .plate-no {
+    top: 10px;
+    right: 18px;
+    background: var(--ink);
+    padding: 2px 6px;
+  }
+  .delay .margin-note {
+    margin: 20px 0 20px 14px;
+    padding-left: 14px;
+    font-size: 13px;
+    border-left: 1px solid var(--gold-dim);
+  }
+  .delay .quote {
+    padding: 20px 0 18px;
+    margin: 28px -4px;
+    border-top: 1px solid var(--gold-dim);
+    border-bottom: 1px solid var(--gold-dim);
+    background: none;
+  }
+  .delay .quote::before {
+    display: none;
+  }
+  .delay .quote .quote-body {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .delay .attest {
+    grid-template-columns: 1fr;
+  }
+  .delay .attest .seal {
+    width: 100%;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid var(--pane-edge);
+    padding: 10px 14px;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .delay .attest .seal-label {
+    font-size: 10px;
+  }
+  .delay .attest::before {
+    display: none;
+  }
+  .delay .attest .att-tick {
+    border-left: none;
+    border-top: 1px solid var(--pane-edge);
+    flex-direction: row;
+    padding: 10px 14px;
+    justify-content: center;
+    gap: 8px;
+  }
 }
+
+/* Inline aside — single-col marginalia on mobile / narrow columns. */
+.delay .aside-inline {
+  margin: 16px 0 18px;
+  padding: 12px 14px;
+  background: var(--ink-2);
+  border-left: 2px solid var(--gold-dim);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--paper-dim);
+}
+.delay .aside-inline .spec {
+  display: block;
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* Scanlines — implies the glass; applied selectively. */
+.delay .scanlines {
+  position: relative;
+}
+.delay .scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0 3px,
+    rgba(255, 255, 255, 0.012) 3px 4px
+  );
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGACY COMPONENT CLASSES — repainted in delay-in-glass values
+   so pre-overhaul consumers keep rendering without rewriting
+   every call site in this PR.
+   ═══════════════════════════════════════════════════════════════ */
 
 @layer components {
+  /* Page-hero styling (home, content pages) */
   .page-hero-title {
-    @apply mb-4 font-serif leading-tight text-[var(--text-primary)] text-3xl lg:text-5xl;
+    @apply mb-4 font-serif leading-tight text-[var(--paper)] text-3xl lg:text-5xl;
+    letter-spacing: -0.01em;
   }
-
   .page-hero-description {
-    @apply text-base text-[var(--text-secondary)] lg:text-lg;
+    @apply text-base text-[var(--paper-dim)] lg:text-lg;
   }
 
+  /* Glass-card — now a plain delay pane instead of rounded shadow */
   .glass-card {
-    @apply bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-xl shadow-panel;
-  }
-
-  .sidebar-link {
-    @apply flex items-center gap-2 rounded-md px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors;
-  }
-
-  .sidebar-link:hover {
-    @apply bg-[var(--bg-elevated)] text-[var(--text-primary)];
-    border-left-color: rgb(var(--accent-gold-rgb) / 0.4);
-  }
-
-  .sidebar-link-active {
-    @apply sidebar-link bg-[var(--bg-elevated)] text-[var(--text-primary)] border-l-4 border-[var(--accent-gold)];
-  }
-
-  /* Elden Ring Item Card Styles */
-  .elden-card {
-    @apply relative overflow-hidden rounded-sm;
-    background: linear-gradient(135deg, #1a1410 0%, #1f1a15 50%, #1a1410 100%);
-    border: 1px solid rgba(201, 169, 97, 0.15);
-    box-shadow:
-      0 0 30px rgba(0, 0, 0, 0.9),
-      inset 0 1px 1px rgba(201, 169, 97, 0.1),
-      inset 0 -1px 1px rgba(0, 0, 0, 0.5);
-  }
-
-  .elden-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(201, 169, 97, 0.3) 20%,
-      rgba(201, 169, 97, 0.5) 50%,
-      rgba(201, 169, 97, 0.3) 80%,
-      transparent 100%
-    );
-  }
-
-  .elden-card-header {
-    @apply px-5 pt-4 pb-2;
-    border-bottom: 1px solid rgba(201, 169, 97, 0.1);
-  }
-
-  .elden-card-title-section {
-    @apply flex items-start gap-4 px-5 pt-4 pb-3;
-    border-bottom: 1px solid rgba(201, 169, 97, 0.15);
-    background: linear-gradient(180deg, rgba(201, 169, 97, 0.03) 0%, transparent 100%);
-  }
-
-  .elden-card-icon-wrapper {
-    @apply flex-shrink-0;
-    width: 72px;
-    height: 72px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-    border: 1px solid rgba(201, 169, 97, 0.2);
-    border-radius: 4px;
-    padding: 6px;
-    box-shadow:
-      inset 0 2px 4px rgba(0, 0, 0, 0.6),
-      0 0 12px rgba(201, 169, 97, 0.1);
-  }
-
-  .elden-card-icon-inner {
-    @apply relative w-full h-full;
-    background: radial-gradient(circle at 30% 30%, rgba(201, 169, 97, 0.08) 0%, transparent 60%);
+    background: var(--ink-2);
+    border: 1px solid var(--pane-edge);
     border-radius: 2px;
+    box-shadow: none;
   }
 
-  .elden-card-title {
-    @apply text-xl font-serif tracking-wide leading-tight;
-    color: #f4e4c1;
-    text-shadow:
-      0 1px 2px rgba(0, 0, 0, 0.8),
-      0 0 8px rgba(201, 169, 97, 0.3);
-    font-weight: 300;
-    letter-spacing: 0.02em;
+  /* Sidebar links — kept as hooks for any residual consumer; the
+     Stair component (components/delay/stair.tsx) supplies the new
+     look directly. */
+  .sidebar-link {
+    @apply flex items-center gap-2 rounded-none px-3 py-2 text-sm text-[var(--paper-dim)] transition-colors;
   }
-
-  .elden-card-description {
-    @apply px-5 py-4;
-    background: rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(201, 169, 97, 0.08);
+  .sidebar-link:hover {
+    @apply text-[var(--paper)];
+    background: var(--ink-2);
   }
-
-  .elden-card-stats {
-    @apply px-5 py-3;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
-  }
-
-  .elden-card-footer {
-    @apply h-1;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(201, 169, 97, 0.2) 10%,
-      rgba(201, 169, 97, 0.4) 50%,
-      rgba(201, 169, 97, 0.2) 90%,
-      transparent 100%
-    );
-    box-shadow: 0 0 8px rgba(201, 169, 97, 0.3);
+  .sidebar-link-active {
+    @apply sidebar-link text-[var(--paper)];
+    background: var(--ink-2);
+    border-left: 2px solid var(--gold);
   }
 }
 
@@ -339,7 +1372,7 @@ body {
   clear: both;
 }
 
-/* Loading states and animations */
+/* ── legacy animations (still referenced by a few components) ── */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -373,7 +1406,6 @@ body {
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out;
 }
-
 .animate-fade-in-slow {
   animation: fadeIn 0.8s ease-out;
 }
@@ -381,9 +1413,9 @@ body {
 .loading-shimmer {
   background: linear-gradient(
     90deg,
-    var(--bg-secondary) 25%,
+    var(--ink-2) 25%,
     rgba(201, 169, 97, 0.1) 50%,
-    var(--bg-secondary) 75%
+    var(--ink-2) 75%
   );
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
@@ -393,7 +1425,7 @@ body {
   animation: pulse-gold 2s ease-in-out infinite;
 }
 
-/* Smooth transitions for interactive elements */
+/* Smooth transitions for interactive elements. */
 * {
   transition-property:
     color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
@@ -402,17 +1434,11 @@ body {
   transition-duration: 150ms;
 }
 
-/* Responsive improvements */
+/* Responsive type trims on narrow viewports. */
 @media (max-width: 768px) {
   .prose {
     @apply text-base;
   }
-
-  .glass-card {
-    @apply rounded-lg;
-  }
-
-  /* Improve mobile navigation */
   .sidebar-link {
     @apply py-3;
   }
@@ -422,26 +1448,8 @@ body {
   :root {
     font-size: 95%;
   }
-
-  /* Stack cards on mobile */
-  .grid {
-    @apply gap-4;
-  }
-
-  /* Reduce padding on mobile */
-  .glass-card {
-    @apply p-4;
-  }
-
-  /* Improve touch targets */
-  button,
-  a {
-    min-height: 44px;
-    min-width: 44px;
-  }
 }
 
-/* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -453,35 +1461,58 @@ body {
   }
 }
 
-/* Focus styles for better keyboard navigation */
 *:focus-visible {
-  outline: 2px solid var(--accent-gold);
+  outline: 2px solid var(--gold);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Loading skeleton */
+/* Loading skeleton (rare consumer). */
 .skeleton {
-  @apply bg-[var(--bg-secondary)] rounded animate-pulse;
+  @apply rounded;
+  background: var(--ink-2);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
 .skeleton-text {
-  @apply h-4 bg-[var(--bg-secondary)] rounded w-full animate-pulse;
+  @apply h-4 rounded w-full;
+  background: var(--ink-2);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
 .skeleton-card {
-  @apply h-32 bg-[var(--bg-secondary)] rounded-xl animate-pulse;
+  @apply h-32 rounded-xl;
+  background: var(--ink-2);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Print styles */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PRINT — preserve the scholarly-document voice on paper
+   ═══════════════════════════════════════════════════════════════ */
 @media print {
-  /* Reset colors for printing */
   :root {
+    --ink: #ffffff;
+    --ink-2: #f5f5f5;
+    --ink-3: #fafafa;
+    --pane: #ffffff;
+    --pane-edge: #cccccc;
+    --paper: #000000;
+    --paper-dim: #333333;
+    --paper-dimmer: #666666;
+    --paper-dimmest: #888888;
+    --gold: #8b7355;
+    --gold-dim: #a08b67;
+    --gold-bright: #6f5c43;
+    --crack: #cccccc;
+    --crack-strong: #999999;
     --bg-primary: #ffffff;
     --bg-secondary: #f5f5f5;
     --text-primary: #000000;
@@ -492,10 +1523,12 @@ html {
     --border-emphasis: #999999;
   }
 
-  /* Hide non-essential elements */
   nav,
   .sidebar,
   .mobile-sidebar,
+  .stair,
+  .seal-strip,
+  .seal-progress,
   .admin-toolbar,
   .share-buttons,
   button:not(.print-visible),
@@ -504,7 +1537,6 @@ html {
     display: none !important;
   }
 
-  /* Ensure content is full width */
   main,
   .main-content {
     width: 100% !important;
@@ -513,15 +1545,17 @@ html {
     padding: 20px !important;
   }
 
-  /* Remove backgrounds and shadows */
   .glass-card,
-  .elden-card {
+  .pane,
+  .pane--solid,
+  .attest,
+  .plate,
+  .quote {
     background: transparent !important;
     box-shadow: none !important;
     border: 1px solid #ccc !important;
   }
 
-  /* Ensure text is readable */
   body {
     font-size: 12pt !important;
     line-height: 1.5 !important;
@@ -529,7 +1563,6 @@ html {
     background: #fff !important;
   }
 
-  /* Handle page breaks */
   h1,
   h2,
   h3 {
@@ -545,30 +1578,23 @@ html {
     widows: 3;
   }
 
-  /* Show URLs for links */
   a[href^='http']:after {
     content: ' (' attr(href) ')';
     font-size: 0.8em;
     color: #666;
   }
-
-  /* Don't show URL for internal links */
   a[href^='/']:after,
   a[href^='#']:after {
     content: '';
   }
 
-  /* Card grid becomes single column */
   .grid {
     display: block !important;
   }
-
   .grid > * {
     margin-bottom: 1rem;
     page-break-inside: avoid;
   }
-
-  /* Title card specific */
   .title-card {
     page-break-inside: avoid;
     border: 1px solid #999;

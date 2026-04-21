@@ -1,9 +1,36 @@
 import type { Metadata } from 'next';
+import { EB_Garamond, Inter_Tight, JetBrains_Mono } from 'next/font/google';
 
 import './globals.css';
 
-// Use CSS variables with system font fallbacks (no network required)
-// When online, Google Fonts can be loaded via globals.css @import if desired
+// Delay in Glass typography:
+//   • EB Garamond — the voice (body, headings)
+//   • Inter Tight — the apparatus (eyebrows, labels, captions)
+//   • JetBrains Mono — the machine (hashes, spec, plate numbers)
+// All three are self-hosted via next/font and exposed as CSS variables so
+// the delay-in-glass token system (globals.css) can reference them without
+// a runtime Google Fonts fetch.
+const ebGaramond = EB_Garamond({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+});
+
+const interTight = Inter_Tight({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-sans',
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600'],
+  variable: '--font-mono',
+});
 
 /**
  * Canonical site URL. In production this should be set via NEXT_PUBLIC_BASE_URL
@@ -71,9 +98,13 @@ export const metadata: Metadata = {
 import { AgentationDev } from '@/components/agentation-dev';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // `delay` scopes the entire site under the Delay-in-Glass token system
+  // (see app/globals.css). The three font-variable classes expose each face
+  // as a CSS variable consumed by the tokens.
+  const fontVars = `${ebGaramond.variable} ${interTight.variable} ${jetBrainsMono.variable}`;
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={fontVars}>
+      <body className="delay">
         {children}
         {process.env.NODE_ENV === 'development' && <AgentationDev />}
       </body>
