@@ -25,6 +25,22 @@ import { Quote } from './quote';
 import { ConceptCard } from './concept-card';
 import { GoldText } from './gold-text';
 import { EldenOrrery } from '@/components/astrology/elden-orrery';
+import {
+  AsideInline,
+  AttestCard,
+  Cap,
+  Correspondence,
+  Crackline,
+  DropCap,
+  Eyebrow,
+  Lead,
+  MarginNote,
+  Pane,
+  Plate,
+  PullQuote,
+  Ref,
+  Spec,
+} from '@/components/delay';
 import { getNextSearchBlockId, normalizeSearchBlockText } from '@/lib/search-blocks';
 
 type SearchBlockContextValue = {
@@ -51,6 +67,23 @@ const components = {
   ConceptCard,
   EldenOrrery,
   GoldText,
+  // Delay-in-Glass primitives available to MDX authors. Named components
+  // coexist with the older set above; authors can mix freely while content
+  // migrates to the new voice.
+  AsideInline,
+  AttestCard,
+  Cap,
+  Correspondence,
+  Crackline,
+  DropCap,
+  Eyebrow,
+  Lead,
+  MarginNote,
+  Pane,
+  Plate,
+  PullQuote,
+  Ref,
+  Spec,
   p: AddressableParagraph,
   li: AddressableListItem,
 };

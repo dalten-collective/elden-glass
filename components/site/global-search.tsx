@@ -173,7 +173,7 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
         <div
           className={
             variant === 'sidebar'
-              ? 'fixed left-[280px] top-[120px] w-[500px] bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-[100] max-h-[70vh] overflow-y-auto'
+              ? 'fixed left-[300px] top-[120px] w-[500px] bg-[var(--ink-2)] border border-[var(--pane-edge)] shadow-2xl overflow-hidden z-[100] max-h-[70vh] overflow-y-auto'
               : 'absolute top-full mt-2 w-full bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-50 max-h-[70vh] overflow-y-auto'
           }
         >
