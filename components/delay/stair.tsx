@@ -1,26 +1,27 @@
 'use client';
 
 /**
- * Stair — the desktop sidebar as a pataphysical staircase.
+ * Stair — the site's pataphysical staircase.
  *
- * Each primary thesis page is a numbered rung on a hairline rail. The
- * reader's position is a gold node; pages whose href sits before the
- * active page render in the `done` state (dimmed rail node). Secondary
- * sections stack below, each under a small gold label.
+ * Every row on the stair carries a single § marker. Inactive rows render
+ * in paper-dimmer; the row that matches the reader's path renders the §
+ * in bold gold. No numbered rungs, no mixed glyphs, no square nodes —
+ * the voice is scholarly-serif apparatus end to end.
  *
- * Data source is the existing `SiteNavigation` produced by buildSidebar().
- * No kinds in this first pass — adding a `navKind` frontmatter field to
- * ContentPage is a natural follow-up that would slot into this component
- * without structural change.
+ * Secondary sections ("Pataphysics", "Duchamp", etc.) are collapsible.
+ * A section auto-opens when the reader's path is inside it, and can be
+ * toggled manually via its chevron. Nested sections recurse with the
+ * same rules.
  */
 
+import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { type ReactNode, useMemo } from 'react';
+import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
-import type { NavItem, NavLinkItem, SiteNavigation } from '@/lib/sidebar';
 import { GlobalSearch } from '@/components/site/global-search';
+import type { NavItem, NavLinkItem, NavSectionItem, SiteNavigation } from '@/lib/sidebar';
 import { EthSeal } from './seal';
 
 type StairSealCopy = {
@@ -35,21 +36,15 @@ type StairNavProps = {
   seal?: StairSealCopy;
 };
 
+// Single marker for every rung and section header. Changing the glyph
+// in one place ripples through the whole stair.
+const RUNG_MARKER = '§';
+
 export function StairNav({ navigation, seal }: StairNavProps) {
   const pathname = usePathname() ?? '/';
 
-  // Which primary rung is active — rungs before it render `done`.
-  const activePrimaryIndex = useMemo(
-    () =>
-      navigation.primary.findIndex((item) => !item.external && matchesPath(item.href, pathname)),
-    [navigation.primary, pathname]
-  );
-
   return (
     <div className="stair">
-      {/* rail runs the full height of the stair */}
-      <div className="stair-rail" aria-hidden="true" />
-
       <Link
         href="/"
         style={{
@@ -82,21 +77,15 @@ export function StairNav({ navigation, seal }: StairNavProps) {
         <GlobalSearch variant="sidebar" />
       </div>
 
-      {navigation.primary.map((item, index) => (
-        <PrimaryRung
-          key={item.href}
-          item={item}
-          index={index}
-          activeIndex={activePrimaryIndex}
-          currentPath={pathname}
-        />
+      {navigation.primary.map((item) => (
+        <LinkRung key={item.href} link={item} currentPath={pathname} />
       ))}
 
       {navigation.secondary.length > 0 && (
         <>
           <div className="stair-section-label">{navigation.secondaryLabel}</div>
           {navigation.secondary.map((item) => (
-            <SecondaryItem key={keyForItem(item)} item={item} currentPath={pathname} />
+            <SecondaryEntry key={keyForItem(item)} item={item} currentPath={pathname} />
           ))}
         </>
       )}
@@ -119,88 +108,11 @@ export function StairNav({ navigation, seal }: StairNavProps) {
   );
 }
 
-function PrimaryRung({
-  item,
-  index,
-  activeIndex,
-  currentPath,
-}: {
-  item: NavLinkItem;
-  index: number;
-  activeIndex: number;
-  currentPath: string;
-}) {
-  const isActive = activeIndex === index;
-  const isDone = activeIndex > -1 && index < activeIndex;
-  const cls = ['stair-rung', isActive && 'active', isDone && 'done'].filter(Boolean).join(' ');
+// ─────────────────────────────────────────────────────────────
+// Rungs — plain navigation links
+// ─────────────────────────────────────────────────────────────
 
-  const num = String(index).padStart(2, '0');
-
-  return (
-    <Link
-      href={item.href as never}
-      className={cls}
-      target={item.external ? '_blank' : undefined}
-      rel={item.external ? 'noopener noreferrer' : undefined}
-      // `aria-current` uses "page" for the single active rung so screen
-      // readers announce the stair's notion of "where you are."
-      aria-current={isActive ? 'page' : undefined}
-      data-path={currentPath}
-    >
-      <span className="num">{num}</span>
-      <div className="body">
-        <div className="title">{item.label}</div>
-        {item.meta && (
-          <div className="kind" style={{ fontStyle: 'normal', fontSize: 11 }}>
-            {item.meta}
-          </div>
-        )}
-      </div>
-    </Link>
-  );
-}
-
-function SecondaryItem({ item, currentPath }: { item: NavItem; currentPath: string }) {
-  if (item.type === 'link') {
-    return <SecondaryLink link={item} currentPath={currentPath} />;
-  }
-
-  if (item.type === 'group') {
-    return (
-      <>
-        {item.children.map((child) => (
-          <SecondaryItem key={keyForItem(child)} item={child} currentPath={currentPath} />
-        ))}
-      </>
-    );
-  }
-
-  // section: label + recursive children
-  const isSectionActive = item.children.some((child) => itemMatchesPath(child, currentPath));
-  const cls = ['stair-rung', isSectionActive && 'active'].filter(Boolean).join(' ');
-
-  return (
-    <div className={cls} role="group" aria-label={item.label}>
-      <span className="num" aria-hidden="true">
-        §
-      </span>
-      <div className="body">
-        <div className="title">{item.label}</div>
-        <ul className="stair-sub-list">
-          {item.children.length > 0 ? (
-            item.children.map((child) => (
-              <SectionSubItem key={keyForItem(child)} item={child} currentPath={currentPath} />
-            ))
-          ) : (
-            <li style={{ fontStyle: 'italic' }}>{item.emptyLabel ?? 'Nothing here yet.'}</li>
-          )}
-        </ul>
-      </div>
-    </div>
-  );
-}
-
-function SecondaryLink({ link, currentPath }: { link: NavLinkItem; currentPath: string }) {
+function LinkRung({ link, currentPath }: { link: NavLinkItem; currentPath: string }) {
   const isActive = !link.external && matchesPath(link.href, currentPath);
   const cls = ['stair-rung', isActive && 'active'].filter(Boolean).join(' ');
 
@@ -213,67 +125,92 @@ function SecondaryLink({ link, currentPath }: { link: NavLinkItem; currentPath: 
       aria-current={isActive ? 'page' : undefined}
     >
       <span className="num" aria-hidden="true">
-        —
+        {RUNG_MARKER}
       </span>
       <div className="body">
         <div className="title">{link.label}</div>
+        {link.meta && <div className="kind">{link.meta}</div>}
       </div>
     </Link>
   );
 }
 
-function SectionSubItem({ item, currentPath }: { item: NavItem; currentPath: string }): ReactNode {
-  if (item.type === 'link') {
-    const isActive = !item.external && matchesPath(item.href, currentPath);
-    const cls = isActive ? 'active' : undefined;
-    return (
-      <li className={cls}>
-        <Link
-          href={item.href as never}
-          target={item.external ? '_blank' : undefined}
-          rel={item.external ? 'noopener noreferrer' : undefined}
-          aria-current={isActive ? 'page' : undefined}
-        >
-          {item.label}
-        </Link>
-      </li>
-    );
-  }
+// ─────────────────────────────────────────────────────────────
+// Secondary entries — links delegate to LinkRung; sections render as
+// collapsible groups; groups (a non-visible wrapper from lib/sidebar)
+// flatten through.
+// ─────────────────────────────────────────────────────────────
 
+function SecondaryEntry({ item, currentPath }: { item: NavItem; currentPath: string }) {
+  if (item.type === 'link') {
+    return <LinkRung link={item} currentPath={currentPath} />;
+  }
   if (item.type === 'group') {
     return (
       <>
         {item.children.map((child) => (
-          <SectionSubItem key={keyForItem(child)} item={child} currentPath={currentPath} />
+          <SecondaryEntry key={keyForItem(child)} item={child} currentPath={currentPath} />
         ))}
       </>
     );
   }
+  return <SectionGroup section={item} currentPath={currentPath} />;
+}
 
-  // Nested section — render label + nested list.
+function SectionGroup({ section, currentPath }: { section: NavSectionItem; currentPath: string }) {
+  // A section auto-opens when any of its descendants matches the active
+  // path. If the reader navigates into or out of the section, we re-sync
+  // with the auto state — but we never stomp a user's manual toggle
+  // while they stay inside the section.
+  const hasActive = useMemo(
+    () => section.children.some((child) => itemMatchesPath(child, currentPath)),
+    [section.children, currentPath]
+  );
+  const [open, setOpen] = useState(hasActive);
+
+  useEffect(() => {
+    if (hasActive) setOpen(true);
+  }, [hasActive]);
+
+  const headerCls = ['stair-group-header', hasActive && 'has-active'].filter(Boolean).join(' ');
+
   return (
-    <li>
-      <span
-        className="spec"
-        style={{ display: 'block', color: 'var(--paper-dimmer)', marginTop: 6 }}
+    <div>
+      <button
+        type="button"
+        className={headerCls}
+        onClick={() => setOpen((value) => !value)}
+        aria-expanded={open}
       >
-        {item.label}
-      </span>
-      <ul className="stair-sub-list" style={{ marginTop: 4 }}>
-        {item.children.map((child) => (
-          <SectionSubItem key={keyForItem(child)} item={child} currentPath={currentPath} />
-        ))}
-      </ul>
-    </li>
+        <span className="num" aria-hidden="true">
+          {RUNG_MARKER}
+        </span>
+        <span className="title">{section.label}</span>
+        <ChevronDown className="chevron" aria-hidden="true" />
+      </button>
+      {open && (
+        <div className="stair-group-children">
+          {section.children.length === 0 ? (
+            <div className="stair-empty">{section.emptyLabel ?? 'Nothing here yet.'}</div>
+          ) : (
+            section.children.map((child) => (
+              <SecondaryEntry key={keyForItem(child)} item={child} currentPath={currentPath} />
+            ))
+          )}
+        </div>
+      )}
+    </div>
   );
 }
 
+// ─────────────────────────────────────────────────────────────
+// Helpers
+// ─────────────────────────────────────────────────────────────
+
 function matchesPath(href: string, pathname: string): boolean {
-  const normalizedHref = href.split('#')[0].split('?')[0];
-  if (normalizedHref === '/') return pathname === '/';
-  // Exact match is the stair's default semantic; subpages belonging to a
-  // primary page would count as that primary rung being active.
-  return pathname === normalizedHref || pathname.startsWith(`${normalizedHref}/`);
+  const normalized = href.split('#')[0].split('?')[0];
+  if (normalized === '/') return pathname === '/';
+  return pathname === normalized || pathname.startsWith(`${normalized}/`);
 }
 
 function itemMatchesPath(item: NavItem, pathname: string): boolean {

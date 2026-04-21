@@ -879,12 +879,15 @@ body {
   font-weight: 500;
 }
 
+/* A rung is any navigable row on the stair. Single symbol ( § ), two
+   states: inactive = paper-dimmer, active = gold + bold. No nodes, no
+   squares — the voice is "serif apparatus" across the rail. */
 .delay .stair-rung {
   position: relative;
   display: grid;
-  grid-template-columns: 38px 1fr;
-  gap: 0;
-  padding: 9px 0;
+  grid-template-columns: 26px 1fr;
+  gap: 10px;
+  padding: 8px 0;
   cursor: pointer;
   color: var(--paper-dimmer);
   transition: color 0.15s;
@@ -894,11 +897,17 @@ body {
   color: var(--paper);
 }
 .delay .stair-rung .num {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  color: var(--paper-dimmest);
-  padding-top: 4px;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--paper-dimmer);
+  padding-top: 1px;
+  transition:
+    color 0.15s,
+    font-weight 0.15s;
+}
+.delay .stair-rung:hover .num {
+  color: var(--paper);
 }
 .delay .stair-rung .body {
   min-width: 0;
@@ -918,93 +927,115 @@ body {
   color: inherit;
 }
 
-.delay .stair-rail {
-  position: absolute;
-  left: 48px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: var(--crack);
-}
-.delay .stair-rung::before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 16px;
-  width: 7px;
-  height: 1px;
-  background: var(--crack-strong);
-}
-
 .delay .stair-rung.active {
   color: var(--paper);
 }
 .delay .stair-rung.active .num {
   color: var(--gold);
+  font-weight: 700;
 }
 .delay .stair-rung.active .kind {
   color: var(--gold);
 }
-.delay .stair-rung.active::before {
-  width: 9px;
-  height: 9px;
-  left: 4px;
-  top: 12px;
-  background: var(--gold);
-  box-shadow: 0 0 0 3px var(--ink);
-}
 
-.delay .stair-rung.done .num {
-  color: var(--paper-dimmer);
-}
-.delay .stair-rung.done::before {
-  background: var(--gold-dim);
-}
-
-.delay .stair-sub-list {
-  grid-column: 2;
-  margin: 10px 0 0 0;
-  padding: 0 0 0 14px;
-  list-style: none;
-  border-left: 1px solid var(--crack);
-}
-.delay .stair-sub-list li {
-  font-family: var(--font-sans);
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--paper-dimmer);
-  padding: 5px 0;
+/* Section header — a collapsible group like "Pataphysics" or "Duchamp".
+   Visually matches a rung but includes a chevron on the right that
+   rotates with `aria-expanded`. */
+.delay .stair-group-header {
+  width: 100%;
+  background: transparent;
+  border: none;
   cursor: pointer;
-  letter-spacing: 0.01em;
+  text-align: left;
+  font-family: inherit;
+  display: grid;
+  grid-template-columns: 26px 1fr auto;
+  gap: 10px;
+  padding: 8px 0;
+  color: var(--paper-dimmer);
+  transition: color 0.15s;
 }
-.delay .stair-sub-list li a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
-.delay .stair-sub-list li:hover,
-.delay .stair-sub-list li a:hover {
+.delay .stair-group-header:hover {
   color: var(--paper);
 }
-.delay .stair-sub-list li.active,
-.delay .stair-sub-list li.active a {
+.delay .stair-group-header .num {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--paper-dimmer);
+  padding-top: 1px;
+  transition: color 0.15s;
+}
+.delay .stair-group-header:hover .num {
+  color: var(--paper);
+}
+.delay .stair-group-header .title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+}
+.delay .stair-group-header .chevron {
+  width: 14px;
+  height: 14px;
+  color: var(--paper-dimmest);
+  transform: rotate(-90deg);
+  transition:
+    transform 0.18s ease,
+    color 0.15s;
+  margin-right: 8px;
+  align-self: center;
+}
+.delay .stair-group-header[aria-expanded='true'] .chevron {
+  transform: rotate(0deg);
+  color: var(--paper-dimmer);
+}
+.delay .stair-group-header.has-active {
+  color: var(--paper);
+}
+.delay .stair-group-header.has-active .num {
   color: var(--gold);
+  font-weight: 700;
+}
+
+/* Children of an open group. Indented under the `§` column with a
+   hairline guide so the hierarchy reads even when many sections open. */
+.delay .stair-group-children {
+  margin: 0 0 6px 36px;
+  padding: 2px 0 2px 14px;
+  border-left: 1px solid var(--crack);
+  list-style: none;
+}
+.delay .stair-group-children .stair-rung {
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+  padding: 6px 0;
+}
+.delay .stair-group-children .stair-rung .num {
+  font-size: 14px;
+  color: var(--paper-dimmest);
+}
+.delay .stair-group-children .stair-rung .title {
+  font-size: 14px;
+}
+.delay .stair-group-children .stair-empty {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 13px;
+  color: var(--paper-dimmer);
+  padding: 4px 0;
 }
 
+/* Errata label that opens the secondary cluster. */
 .delay .stair-section-label {
-  grid-column: 1 / -1;
-  margin: 20px 0 8px;
+  margin: 22px 0 6px;
   font-family: var(--font-sans);
   font-size: 9.5px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--gold);
-  padding-left: 0;
   border-top: 1px solid var(--crack);
-  padding-top: 14px;
+  padding-top: 16px;
 }
 .delay .stair-section-label:first-of-type {
   border-top: none;

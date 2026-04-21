@@ -29,12 +29,14 @@ export default function HomePage() {
       <div>
         <div className="mb-3 flex items-baseline justify-between gap-4">
           <Eyebrow tone="gold">Eldenglass · TL;DR</Eyebrow>
-          <Spec>§ 00 · the claim, literally</Spec>
+          <Spec>the claim, literally</Spec>
         </div>
         <Crackline seed="home-top" tone="gold" />
       </div>
 
-      {/* Hero — title over a ghost of the Large Glass */}
+      {/* Hero — title over a ghost of the Large Glass. The picture itself
+          lives in full on the author page; here it's the stage the claim
+          sits in front of. */}
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
