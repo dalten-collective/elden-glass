@@ -43,8 +43,14 @@ export async function SiteShell({ children }: { children: ReactNode }) {
       </aside>
 
       <div className="flex min-h-screen flex-1 flex-col lg:ml-[300px]">
-        {/* Mobile seal strip — carries the menu on phones */}
-        <header className="lg:hidden">
+        {/* Mobile seal strip — sticky so the menu stays reachable deep
+            into long-read scrolls. `pt-safe` keeps the strip below any
+            notch; the ink background extends up into the safe-area so
+            the status-bar region stays on the same ground. */}
+        <header
+          className="sticky top-0 z-[60] pt-safe lg:hidden"
+          style={{ background: 'var(--ink)' }}
+        >
           <SealStrip navigation={navigation} stairSeal={stairSeal} />
         </header>
 

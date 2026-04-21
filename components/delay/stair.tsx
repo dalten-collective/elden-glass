@@ -128,8 +128,10 @@ function LinkRung({ link, currentPath }: { link: NavLinkItem; currentPath: strin
         {RUNG_MARKER}
       </span>
       <div className="body">
-        <div className="title">{link.label}</div>
-        {link.meta && <div className="kind">{link.meta}</div>}
+        <div className="title-row">
+          <span className="title">{link.label}</span>
+          {link.meta && <span className="meta">{link.meta}</span>}
+        </div>
       </div>
     </Link>
   );
