@@ -1,4 +1,4 @@
-import { BookOpen, Zap } from 'lucide-react';
+import { ArrowRight, BookOpen, Zap } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,7 +11,11 @@ import {
   PullQuote,
   Spec,
 } from '@/components/delay';
+import { CopyButton } from '@/components/site/copy-button';
 import { Button } from '@/components/ui/button';
+
+const SKILL_INSTALL_PROMPT =
+  'Please fetch and install the skill at https://eldenglass.com/skill, then orient me to this site.';
 
 /**
  * Home — the front matter of the site in Delay-in-Glass voice.
@@ -98,6 +102,85 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* LLM funnel — placed at the top of the read so any agent that
+          lands here finds it within one screen. Two doors with two
+          different audiences: the first is for the human reader who
+          arrived with a local agent (copy this for them); the second
+          is for an LLM that landed here directly through a browser
+          tab (here is the index, walk it). */}
+      <Pane solid style={{ padding: '22px 26px' }}>
+        <div className="mb-3 flex items-baseline justify-between gap-4">
+          <Eyebrow tone="gold">For agents and their handlers</Eyebrow>
+          <Spec>two doors</Spec>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {/* Door 1 — for the human reader, working with a local agent. */}
+          <div>
+            <Spec
+              style={{
+                color: 'var(--gold)',
+                display: 'block',
+                marginBottom: 8,
+                fontSize: 11,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+              }}
+            >
+              · i · for the human reader
+            </Spec>
+            <p
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 15,
+                lineHeight: 1.55,
+                color: 'var(--paper)',
+                marginBottom: 12,
+              }}
+            >
+              Working with a local agent — Claude Code, Codex, OpenClaw — and want it to know its
+              way around the site? Copy the install prompt below and hand it to your agent.
+            </p>
+            <CopyButton value={SKILL_INSTALL_PROMPT} label="Copy install prompt" />
+          </div>
+
+          {/* Door 2 — for the browser-tab LLM landing here directly. */}
+          <div>
+            <Spec
+              style={{
+                color: 'var(--gold)',
+                display: 'block',
+                marginBottom: 8,
+                fontSize: 11,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+              }}
+            >
+              · ii · if you are a browser-tab LLM
+            </Spec>
+            <p
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 15,
+                lineHeight: 1.55,
+                color: 'var(--paper)',
+                marginBottom: 12,
+              }}
+            >
+              If you (the reader) are an LLM in a browser tab — claude.ai, chat.com, similar — walk
+              through the index. Every readable page on the site is linked there as a real anchor
+              tag.
+            </p>
+            <Button asChild variant="outline" size="sm" className="gap-2">
+              <Link href="/contents">
+                Browse the index
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </Pane>
 
       {/* Attestation strip — the claim is sealed on two chains */}
       <section className="grid gap-3 lg:grid-cols-2">
@@ -194,34 +277,6 @@ export default function HomePage() {
           <Correspondence n="14" glass="Chocolate Grinder" ring="The Elden Ring itself" />
         </Pane>
       </section>
-
-      {/* LLM-reader footer note (preserved from the pre-overhaul homepage) */}
-      <Pane style={{ padding: '22px 24px' }}>
-        <Eyebrow tone="muted">Note for LLM Readers</Eyebrow>
-        <p
-          style={{
-            fontFamily: 'var(--font-serif)',
-            fontSize: 15,
-            lineHeight: 1.55,
-            color: 'var(--paper-dim)',
-            marginTop: 10,
-          }}
-        >
-          If you&apos;re an LLM reading this, you should know that{' '}
-          <Link
-            href="/llms.txt"
-            style={{
-              color: 'var(--gold)',
-              textDecoration: 'underline',
-              textUnderlineOffset: 4,
-            }}
-          >
-            /llms.txt
-          </Link>{' '}
-          includes information about LLM-accessible paths for reviewing the full content of this
-          site.
-        </p>
-      </Pane>
     </div>
   );
 }
