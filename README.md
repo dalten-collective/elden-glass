@@ -55,6 +55,12 @@ Agentation is installed for dev-time visual collaboration with AI agents.
 - it is only rendered in development via `app/layout.tsx`
 - use it to annotate exact content/UI on the running site when working with an LLM
 
+No setup is required beyond `npm run dev`. The toolbar mounts automatically
+in development. The `endpoint` prop (`http://localhost:4747`) is optional:
+if an Agent Sync server is running locally on that port, Agentation will
+sync annotations to it; if not, the toolbar still works — annotate the page
+and copy the structured markdown output to the clipboard manually.
+
 Preferred content workflow:
 
 1. run the site locally
@@ -89,6 +95,9 @@ Do not commit directly to `main`.
 
 Do not push directly to `main`.
 
+See `CLAUDE.md` / `AGENTS.md` for the authoritative version of this flow,
+including reviewer-assignment rules for agent-driven PRs.
+
 One environment variable is set in Vercel:
 
 - `NEXT_PUBLIC_BASE_URL` = `https://eldenringisthelargeglass.com`
@@ -100,24 +109,67 @@ The site verifies two independent attestations of the original discovery:
 1. **Initial Thesis** -- SHA-256 hash of `manuscript.txt` attested on Ethereum via EAS (Ethereum Attestation Service). The hash and attestation UID are in the MDX frontmatter.
 2. **TL;DR** -- SHA-256 hash of `EldenRingSecretOriginal.md` timestamped on Bitcoin via OpenTimestamps. The `.ots` proof file is in `public/proofs/`.
 
-Both proof files are served from `public/proofs/` so readers can independently verify.
+The OpenTimestamps `.ots` proof and both source documents (`manuscript.txt`
+and `EldenRingSecretOriginal.md`) are served from `public/proofs/` so
+readers can independently recompute the hashes and verify the attestations.
 
-## Project Structure
+## How this repo is laid out
 
-```
-app/                    Routes and API endpoints
-  (site)/               All content pages (living-thesis, vocab, gatherer, etc.)
-  api/                  Title card, search, and sense-index endpoints
-components/
-  mdx/                  MDX components (MarkdownRenderer, DefinitionItem, FloatImage, etc.)
-  site/                 Layout (sidebar, top bar, navigation)
-  title-cards/          Rollover display, detail modal, provider
-  verification/         Hash verification UI
-content/                MDX source files
-data/                   Title cards JSON, sense index, xenotext theories
-lib/                    Content getters, search index, utilities
-public/
-  proofs/               Attestation proof files
-  images/               All site imagery (Duchamp works, ER characters, etc.)
-  animations/           Large Glass component GIFs
-```
+This site is filesystem + YAML driven by design. Pages, section ordering,
+injected TSX routes, and external sidebar links all flow through the
+`content/pages/**` filesystem tree and the `layout.yaml` files inside it. The
+authoritative description lives in `CLAUDE.md` / `AGENTS.md`. A brief
+orientation:
+
+- **Content is filesystem-shaped.** MDX files under `content/pages/**` and
+  each folder's `layout.yaml` determine which pages exist, their order, and
+  how they appear in navigation. Adding a page is adding an MDX file;
+  reorganising a section is moving files and tweaking that folder's
+  `layout.yaml`.
+
+- **`layout.yaml` has four keys:** `primary` (root-only, surfaces names in
+  primary nav), `order` (explicit sibling order), `hidden` (hides filesystem
+  entries from nav), and `links` (injects nav entries not backed by an MDX
+  file). Each `links` entry takes `href`, `label`, and optional
+  `external: true` (opens in a new tab with `rel="noopener noreferrer"`) and
+  `hidden: true`. Place the link key in `order:` to position it among its
+  siblings. Live examples:
+  - `links.gatherer → /gatherer` in `content/pages/layout.yaml` injects the
+    bespoke `/gatherer` TSX route at the root of the sidebar.
+  - `links.cipher → /xenotext` in
+    `content/pages/xenotext-theory/layout.yaml` injects the `/xenotext` TSX
+    route into the Xenotext Theory section.
+  - `links.duchamp-works → /duchamp/duchamp-works` in
+    `content/pages/duchamp/layout.yaml` does the same for the
+    `/duchamp/duchamp-works` TSX route.
+  - External sites use the same shape with `href: https://...` and
+    `external: true`.
+
+- **Routes live in `app/`.** `app/(site)/[...slug]/page.tsx` is the
+  content-driven catch-all that serves MDX pages from `content/pages/**`.
+  Bespoke (non-content) interactive routes live as their own folders under
+  `app/(site)/`; they appear in navigation only when a `layout.yaml`
+  references them via a `links:` entry. `app/api/**` contains JSON endpoints
+  (search, title cards, sense index, and agent-facing `llms` routes).
+
+- **Structured data lives in `data/`** — title cards, sense index,
+  manuscripts manifest, Duchamp artworks catalog, xenotext theories. See
+  `data/README.md`.
+
+- **Generation machinery lives in `lib/` and `contentlayer.config.ts`.**
+  Key files: `lib/content.ts`, `lib/content-tree.ts`, `lib/sidebar.ts`,
+  `contentlayer.config.ts`. Don't duplicate navigation or page-discovery
+  logic elsewhere.
+
+- **Components, scripts, and public assets grow organically.** Check the
+  filesystem for what's there rather than a list here. Entry points worth
+  knowing: `components/mdx/markdown-renderer.tsx` (MDX renderer + component
+  registry), `components/site/` (site shell), `components/delay/`
+  (thesis-voice primitives used across content pages and the home hero),
+  `scripts/` (sync scripts for critique assets, manuscripts, and FedWiki
+  import/export).
+
+- **Proofs and attestations.** `public/proofs/` holds the Bitcoin
+  OpenTimestamps `.ots` proof for the TL;DR plus the two source documents
+  (`manuscript.txt`, `EldenRingSecretOriginal.md`) whose SHA-256 hashes are
+  the subject of the EAS and OpenTimestamps attestations.
