@@ -21,7 +21,7 @@ All work happens on a branch. Changes flow through:
 4. Open a PR into `dev`
 5. Request review
 6. Merge to `dev`
-7. Validate the deployed `dev` build online when behavior changed
+7. Validate the deployed `dev` build online
 8. Open a second PR from `dev` to `main`
 9. Request review
 10. Merge only after review
@@ -34,6 +34,24 @@ Every meaningful change should go through review.
 
 Docs changes are not exempt. Routing, content, and operational docs all affect
 how the repo is run.
+
+#### Reviewer Assignment For Agents
+
+If the human driving the agent is not `rabsef-bicrym`, and the PR touches
+anything other than article text in `content/pages/**/*.mdx`, the agent must:
+
+- assign `rabsef-bicrym` as a reviewer on the PR
+  (`gh pr edit <num> --add-reviewer rabsef-bicrym`)
+- not merge the PR — wait for `rabsef-bicrym` to leave an approving review on
+  GitHub, then let them merge
+
+Pure MDX article-text changes under `content/pages/**` are the one exception,
+because the source of truth is the prose itself and preview-URL verification
+is the real review.
+
+If the human driving the agent is `rabsef-bicrym`, their explicit chat
+confirmation stands in for the on-PR review, and the agent may merge after
+they say so.
 
 ## Core Rule
 
@@ -103,19 +121,46 @@ The content tree is interpreted by:
 
 Each `content/pages/**/layout.yaml` can control navigation and folder behavior.
 
-Supported keys:
+Supported top-level keys:
 
-- `primary`: marks top-level entries that should appear in primary navigation
-- `order`: orders sibling pages and sections
-- `hidden`: hides filesystem entries from generated navigation
-- `links`: injects internal or external links that are not backed by an MDX file
+- `primary`: root-only — names to surface in primary navigation
+- `order`: explicit sibling order in this folder
+- `hidden`: filesystem entries (MDX pages or subfolders) to hide from nav
+- `links`: injected nav entries that are not backed by an MDX file
 
-Use `links` for bespoke routes that should appear inside the content-driven nav.
+Each entry under `links` takes the following sub-keys:
 
-Current examples:
+- `href` (required): in-site path (e.g., `/gatherer`) or a full URL
+  (e.g., `https://example.com/thing`)
+- `label` (optional): display text in the sidebar; defaults to the link key
+- `external` (optional, default `false`): when `true`, the link opens in a
+  new tab with `rel="noopener noreferrer"` and is excluded from active-path
+  detection
+- `hidden` (optional, default `false`): suppresses the link from generated
+  nav
 
-- `content/pages/xenotext-theory/layout.yaml` links to `/xenotext`
-- `content/pages/duchamp/layout.yaml` links to `/duchamp/duchamp-works`
+To position an injected link among its siblings, add its key to the same
+folder's `order:` list. The three nav-element types all express through
+this one schema:
+
+1. **MDX-backed pages** — filesystem-discovered; no `layout.yaml` entry
+   required. `primary` / `order` / `hidden` still apply by name.
+2. **Internal interactive TSX routes** — a bespoke page under
+   `app/(site)/**` enters the sidebar only when a `layout.yaml` references
+   it via a `links:` entry with an in-site `href` (and no `external`).
+3. **External links** — same `links:` shape with `external: true` and a
+   full URL `href`.
+
+Live examples in the repo:
+
+- Root: `content/pages/layout.yaml` → `links.gatherer` points at
+  `/gatherer` to bring the interactive Gatherer route into the sidebar.
+- `content/pages/xenotext-theory/layout.yaml` → `links.cipher` points at
+  `/xenotext`.
+- `content/pages/duchamp/layout.yaml` → `links.duchamp-works` points at
+  `/duchamp/duchamp-works`.
+- There are no external-link examples currently, but the schema supports
+  them.
 
 ### Routing Model
 
@@ -220,6 +265,17 @@ Agentation is a collaboration aid. The source of truth remains:
 - MDX in `content/pages/**`
 - structured data in `data/**`
 - rendering logic in components and route files
+
+### Setup
+
+Agentation is pre-installed in this repo. No setup is required — running
+`npm run dev` is enough. The toolbar mounts in development only, via
+`components/agentation-dev.tsx` and `app/layout.tsx`.
+
+The `endpoint` prop (`http://localhost:4747`) is optional. If an Agent Sync
+server is running locally on that port, Agentation will sync annotations to
+it. If not, the toolbar still works — annotate the page and copy the
+structured markdown output to the clipboard manually.
 
 ## Verification
 
