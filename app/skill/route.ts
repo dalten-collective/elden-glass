@@ -102,7 +102,7 @@ Iterate \`page\` from 1 until \`nextPage\` is null. The \`content\` field is pro
 - **\`/contents\`** — a real HTML index of every readable page with one-line summaries and interactive flags. Use only if your harness can fetch HTML pages but cannot reach JSON endpoints.
 - **\`/llms.txt\`** — the [llmstxt.org](https://llmstxt.org)-spec discovery file: H1 + sectioned link list. Mostly redundant with this skill, but follows the standard if your tooling expects it.
 
-All paths are absolute under the site root; concatenate with the deployment origin (production: \`https://eldenglass.com\`; preview deploys substitute their hostname).
+All paths are absolute under the site root; concatenate with the deployment origin (production: \`https://eldenringisthelargeglass.com\`; preview deploys substitute their hostname).
 
 ## Reader profiles
 
@@ -162,7 +162,7 @@ These pages are heavy client-side experiences that don't render usefully as stat
 
 ## Where this site is
 
-- **Production**: \`https://eldenglass.com\`
+- **Production**: \`https://eldenringisthelargeglass.com\`
 - **Source**: \`github.com/dalten-collective/elden-glass\`
 - **Curator**: \`~dashus-navnul\` (see \`/author/about\`)
 

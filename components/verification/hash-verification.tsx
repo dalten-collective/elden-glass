@@ -128,7 +128,7 @@ export function HashVerification({
               hash above.
             </p>
             <div className="glass-card border border-dashed border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.5)] p-4 text-xs">
-              <pre className="overflow-x-auto text-[var(--text-secondary)]">{`curl -O https://eldenglass.com${hashableFileUrl}
+              <pre className="overflow-x-auto text-[var(--text-secondary)]">{`curl -O https://eldenringisthelargeglass.com${hashableFileUrl}
 shasum -a 256 ${hashableFile}`}</pre>
             </div>
           </section>
@@ -146,7 +146,7 @@ shasum -a 256 ${hashableFile}`}</pre>
               </p>
               <div className="glass-card border border-dashed border-[var(--border-emphasis)] bg-[rgb(var(--bg-primary-rgb)/0.5)] p-4 text-xs">
                 <pre className="overflow-x-auto text-[var(--text-secondary)]">{`pip install opentimestamps-client
-curl -O https://eldenglass.com${otsFileUrl}
+curl -O https://eldenringisthelargeglass.com${otsFileUrl}
 ots verify -f ${hashableFile} ${bitcoinOts}`}</pre>
               </div>
               <p className="text-xs text-[var(--text-tertiary)]">
