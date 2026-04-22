@@ -35,11 +35,12 @@ const jetBrainsMono = JetBrains_Mono({
 /**
  * Canonical site URL. In production this should be set via NEXT_PUBLIC_BASE_URL
  * (Vercel sets it automatically; the sitemap already reads from the same var).
- * The fallback is the eldenglass.com production domain so local dev still
- * renders absolute OG/Twitter image URLs rather than localhost references,
- * which silences Next's "metadataBase is not set" build-time warning.
+ * The fallback is the eldenringisthelargeglass.com production domain so local
+ * dev still renders absolute OG/Twitter image URLs rather than localhost
+ * references, which silences Next's "metadataBase is not set" build-time
+ * warning.
  */
-const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenglass.com';
+const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenringisthelargeglass.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

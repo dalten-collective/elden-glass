@@ -17,7 +17,7 @@ import { buildSidebar, type NavItem, type NavLinkItem, type NavSectionItem } fro
  */
 export const dynamic = 'force-static';
 
-const SITE_URL = 'https://eldenglass.com';
+const SITE_URL = 'https://eldenringisthelargeglass.com';
 
 const SUMMARY = `> A scholarly-pataphysical research site arguing that FromSoftware's Elden Ring is a literal performance of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even (The Large Glass). Discovery attested on Ethereum (EAS) on 17 Nov 2025 and timestamped on Bitcoin (OpenTimestamps) on 21 Nov 2025.
 
