@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenglass.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenringisthelargeglass.com';
 
 interface FeedItem {
   title: string;

@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 import { allContentPagesSorted, getCritiques } from '@/lib/content';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenglass.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenringisthelargeglass.com';
 const now = new Date();
 
 const staticRoutes = [
