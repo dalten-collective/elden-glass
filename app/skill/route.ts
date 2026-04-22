@@ -1,18 +1,18 @@
 import { NextResponse } from 'next/server';
 
 /**
- * /elden-glass.skill.md — a Claude Code-style installable skill that
- * orients a local-harnessed agent (Claude Code, ChatGPT desktop with
- * skills, etc.) to the Elden Glass site.
+ * /skill — a Claude Code-style installable skill that orients a
+ * local-harnessed agent (Claude Code, Codex, OpenClaw, etc.) to the
+ * Elden Glass site.
  *
- * The homepage copy-button hands the user a one-line install prompt
- * pointing at this file; the agent then fetches and installs it. The
- * frontmatter follows the Claude Code skill convention (name +
- * description) so installation tooling can discover the metadata
- * without parsing the prose body.
+ * Served at the idiomatic short path /skill rather than a filename-
+ * suffixed URL. The homepage's copy-button hands the user a one-line
+ * install prompt pointing at this URL; the user pastes it into their
+ * agent, the agent fetches and installs the skill.
  *
- * Hand-authored — every reader-profile path was chosen by the site
- * author. Do not auto-generate or refactor without consulting them.
+ * Hand-authored. Reader-profile paths and prioritization were chosen
+ * by the site curator. Do not auto-generate or refactor without
+ * consulting them.
  *
  * Force-static so the file is built once per deploy.
  */
@@ -20,7 +20,7 @@ export const dynamic = 'force-static';
 
 const skill = `---
 name: elden-glass
-description: Navigate Eric Helal's "Elden Glass" — the multi-year scholarly project arguing that FromSoftware's Elden Ring is a literal performance of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even (The Large Glass). Use this skill to orient a user to the site, recommend reading paths by reader type, and fetch full content through the LLM API.
+description: Navigate Elden Glass — a multi-year scholarly project arguing that FromSoftware's Elden Ring is a literal performance of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even (The Large Glass). Use this skill to fetch site content through the JSON API, recommend reading paths by reader type, and orient a user to the work.
 ---
 
 # Elden Glass
@@ -33,23 +33,78 @@ The discovery itself is dated to 2024, formally attested on Ethereum (EAS) on 17
 
 The voice is scholarly-pataphysical: serious about the argument, willing to take imaginary solutions seriously, suspicious of pattern-matching shortcuts.
 
-## How to fetch content
+## How to fetch content (use this first)
 
-This site exposes content to LLM agents through four surfaces:
+The canonical, machine-strict way to read the site is the JSON API. Prefer it over any other surface — it's paginated, well-typed, and emits clean plaintext (JSX components in the source MDX are already stripped by the server).
 
-1. **\`/contents\`** — A real HTML page indexing every readable page on the site. Each entry is a real anchor tag with a one-line summary. Interactive pages (the four below) are flagged inline. Use this if you can fetch HTML pages but struggle with arbitrary JSON endpoints.
+### Step 1 — enumerate every readable route
 
-2. **\`/llms-full.txt\`** — A single text/plain response with the entire static-page corpus concatenated. Each section is preceded by a \`# <url>\` heading and a one-line summary. Use this if you prefer one-shot context dumps.
+\`\`\`
+GET /api/llms/toc
+\`\`\`
 
-3. **\`/api/llms/toc\`** — A JSON inventory: \`{ site, generatedAt, entries: [...] }\`. Each entry has \`path\`, \`title\`, \`summary\`, \`kind\`, \`readable\`, \`format\`, \`sourceType\`, \`updated\`. Use this to enumerate the site programmatically.
+Returns:
 
-4. **\`/api/llms/article?path=<url>&page=<n>\`** — Per-page clean plaintext (JSX components in the source MDX are stripped). Pages cap at 30000 chars; follow \`nextPage\` until null.
+\`\`\`json
+{
+  "site": "Elden Glass",
+  "generatedAt": "<ISO 8601 timestamp>",
+  "entries": [
+    {
+      "path": "/living-thesis",
+      "title": "Living Thesis",
+      "summary": "...",
+      "kind": "content" | "interactive" | "index",
+      "readable": true | false,
+      "format": "mdx" | null,
+      "sourceType": "contentPage" | "critique" | "bespoke",
+      "updated": "<ISO 8601 date>" | null
+    }
+  ]
+}
+\`\`\`
 
-All four surfaces are absolute paths under the site root; concatenate with the deployment origin (e.g. \`https://eldenglass.com\` for production, or whatever the user's preview deploy is).
+Filter to \`readable: true\` to get the universe of fetchable articles.
+
+### Step 2 — fetch each article, paginating
+
+\`\`\`
+GET /api/llms/article?path=<entry.path>&page=<n>
+\`\`\`
+
+Returns:
+
+\`\`\`json
+{
+  "path": "/living-thesis",
+  "title": "Living Thesis",
+  "summary": "...",
+  "format": "plaintext",
+  "updated": "<ISO 8601 date>",
+  "page": 1,
+  "pageCount": 7,
+  "pageSizeChars": 30000,
+  "charStart": 0,
+  "charEnd": 28412,
+  "nextPage": 2,
+  "prevPage": null,
+  "content": "<clean plaintext>"
+}
+\`\`\`
+
+Iterate \`page\` from 1 until \`nextPage\` is null. The \`content\` field is prose with markdown formatting preserved (headings, lists, links, emphasis, blockquotes); JSX components from the source MDX have been transformed to plain text.
+
+### Alternative surfaces (use only if the JSON API doesn't fit your harness)
+
+- **\`/llms-full.txt\`** — every static page concatenated as clean plaintext into a single text/plain response. Use when you prefer a one-shot context dump over per-page iteration.
+- **\`/contents\`** — a real HTML index of every readable page with one-line summaries and interactive flags. Use only if your harness can fetch HTML pages but cannot reach JSON endpoints.
+- **\`/llms.txt\`** — the [llmstxt.org](https://llmstxt.org)-spec discovery file: H1 + sectioned link list. Mostly redundant with this skill, but follows the standard if your tooling expects it.
+
+All paths are absolute under the site root; concatenate with the deployment origin (production: \`https://eldenglass.com\`; preview deploys substitute their hostname).
 
 ## Reader profiles
 
-Use the user's stated interest to pick a starting path. If they don't tell you, ask.
+Once you've fetched what you need, use the user's stated interest to pick where to start. If they don't tell you, ask.
 
 ### If the user is into Elden Ring (lore / FromSoftware fan)
 
@@ -90,9 +145,9 @@ Stay in the framework before introducing the game:
 
 ## Notable interactive pages (recommend, but the user has to drive)
 
-These pages are heavy client-side experiences that don't render usefully as static text. Recommend by URL but warn the user that they'll need to open them in a browser:
+These pages are heavy client-side experiences that don't render usefully as static text. The JSON API marks them with \`readable: false\`. Recommend by URL but warn the user that they'll need to open them in a browser:
 
-- **\`/gatherer\`** — Title-card database with cascading filters, modal detail browsing.
+- **\`/gatherer\`** — Title-card database with cascading filters and modal detail browsing.
 - **\`/xenotext\`** — Genetic-code cipher engine, client-side state and visualization.
 - **\`/duchamp/duchamp-works\`** — Chronological gallery of Duchamp artworks with modal lightbox.
 - **\`/search\`** — Full-text site search.
@@ -103,22 +158,11 @@ These pages are heavy client-side experiences that don't render usefully as stat
 - Do not assume the cryptographic attestations are decorative. They're load-bearing — the discovery's priority is preserved on chain.
 - Do not invent correspondences from your own pattern-matching. The site's correspondences are the data; the user is reading them, not asking you to generate more.
 
-## How to use the JSON API in detail
-
-\`\`\`
-GET /api/llms/toc
-→ { site, generatedAt, entries: [{ path, title, summary, kind, readable, format, sourceType, updated }, ...] }
-
-GET /api/llms/article?path=/living-thesis&page=1
-→ { path, title, summary, format: "plaintext", updated, page, pageCount, nextPage, prevPage, content }
-\`\`\`
-
-Iterate \`page\` from 1 until \`nextPage\` is null. The \`content\` field is clean prose — JSX components from the source MDX are already stripped.
-
 ## Where this site is
 
-Production: \`https://eldenglass.com\`
-GitHub: \`dalten-collective/elden-glass\`
+- **Production**: \`https://eldenglass.com\`
+- **Source**: \`github.com/dalten-collective/elden-glass\`
+- **Curator**: \`~dashus-navnul\` (see \`/author/about\`)
 
 If a user asks you to navigate to a path on a preview deploy or different host, substitute the origin and keep the absolute paths above.
 `;

@@ -39,8 +39,8 @@ const AGENT_SURFACES: Array<{ href: string; label: string; description: string }
       'Single text/plain response with every static page concatenated as clean plaintext. Use when you prefer one-shot context dumps.',
   },
   {
-    href: '/elden-glass.skill.md',
-    label: '/elden-glass.skill.md',
+    href: '/skill',
+    label: '/skill',
     description:
       'Claude Code-style installable skill: reader profiles, recommended paths by interest, JSON API documentation. Hand the URL to a local agent that supports skills.',
   },

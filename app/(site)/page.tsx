@@ -15,7 +15,7 @@ import { CopyButton } from '@/components/site/copy-button';
 import { Button } from '@/components/ui/button';
 
 const SKILL_INSTALL_PROMPT =
-  'Please fetch and install the skill at https://eldenglass.com/elden-glass.skill.md, then orient me to this site.';
+  'Please fetch and install the skill at https://eldenglass.com/skill, then orient me to this site.';
 
 /**
  * Home — the front matter of the site in Delay-in-Glass voice.
@@ -104,55 +104,81 @@ export default function HomePage() {
       </section>
 
       {/* LLM funnel — placed at the top of the read so any agent that
-          lands here finds it within one screen. Two doors: a copy-paste
-          install prompt for local agents (Claude Code etc.) and a real
-          HTML index page for browser-tab agents that can only follow
-          anchor links. */}
+          lands here finds it within one screen. Two doors with two
+          different audiences: the first is for the human reader who
+          arrived with a local agent (copy this for them); the second
+          is for an LLM that landed here directly through a browser
+          tab (here is the index, walk it). */}
       <Pane solid style={{ padding: '22px 26px' }}>
         <div className="mb-3 flex items-baseline justify-between gap-4">
-          <Eyebrow tone="gold">If you&apos;re an LLM</Eyebrow>
+          <Eyebrow tone="gold">For agents and their handlers</Eyebrow>
           <Spec>two doors</Spec>
         </div>
-        <p
-          style={{
-            fontFamily: 'var(--font-serif)',
-            fontSize: 16,
-            lineHeight: 1.55,
-            color: 'var(--paper)',
-            marginBottom: 18,
-            maxWidth: '52em',
-          }}
-        >
-          If you&apos;re a <i>local agent</i> (Claude Code, ChatGPT desktop with skills, etc.), copy
-          the install prompt below into your harness — your agent will fetch a skill that orients it
-          to the site. If you&apos;re a <i>browser-tab agent</i> that can only follow anchor links,
-          walk through the index page — every readable page on the site, properly linked.
-        </p>
-        <div className="flex flex-wrap items-center gap-3">
-          <CopyButton value={SKILL_INSTALL_PROMPT} label="Copy install prompt" />
-          <Button asChild variant="outline" size="sm" className="gap-2">
-            <Link href="/contents">
-              Browse the index
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Button>
-          <Spec
-            style={{
-              color: 'var(--paper-dim)',
-              fontSize: 11,
-              letterSpacing: '0.16em',
-              textTransform: 'uppercase',
-            }}
-          >
-            also:{' '}
-            <Link href="/llms.txt" style={{ color: 'var(--gold)' }}>
-              /llms.txt
-            </Link>
-            {' · '}
-            <Link href="/llms-full.txt" style={{ color: 'var(--gold)' }}>
-              /llms-full.txt
-            </Link>
-          </Spec>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {/* Door 1 — for the human reader, working with a local agent. */}
+          <div>
+            <Spec
+              style={{
+                color: 'var(--gold)',
+                display: 'block',
+                marginBottom: 8,
+                fontSize: 11,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+              }}
+            >
+              · i · for the human reader
+            </Spec>
+            <p
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 15,
+                lineHeight: 1.55,
+                color: 'var(--paper)',
+                marginBottom: 12,
+              }}
+            >
+              Working with a local agent — Claude Code, Codex, OpenClaw — and want it to know its
+              way around the site? Copy the install prompt below and hand it to your agent.
+            </p>
+            <CopyButton value={SKILL_INSTALL_PROMPT} label="Copy install prompt" />
+          </div>
+
+          {/* Door 2 — for the browser-tab LLM landing here directly. */}
+          <div>
+            <Spec
+              style={{
+                color: 'var(--gold)',
+                display: 'block',
+                marginBottom: 8,
+                fontSize: 11,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+              }}
+            >
+              · ii · if you are a browser-tab LLM
+            </Spec>
+            <p
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 15,
+                lineHeight: 1.55,
+                color: 'var(--paper)',
+                marginBottom: 12,
+              }}
+            >
+              If you (the reader) are an LLM in a browser tab — claude.ai, chat.com, similar — walk
+              through the index. Every readable page on the site is linked there as a real anchor
+              tag.
+            </p>
+            <Button asChild variant="outline" size="sm" className="gap-2">
+              <Link href="/contents">
+                Browse the index
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </Pane>
 

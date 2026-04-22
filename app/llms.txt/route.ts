@@ -19,9 +19,9 @@ export const dynamic = 'force-static';
 
 const SITE_URL = 'https://eldenglass.com';
 
-const SUMMARY = `> Eric Helal's research site arguing that FromSoftware's Elden Ring is a literal performance of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even (The Large Glass). Discovery attested on Ethereum (EAS) on 17 Nov 2025 and timestamped on Bitcoin (OpenTimestamps) on 21 Nov 2025.
+const SUMMARY = `> A scholarly-pataphysical research site arguing that FromSoftware's Elden Ring is a literal performance of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even (The Large Glass). Discovery attested on Ethereum (EAS) on 17 Nov 2025 and timestamped on Bitcoin (OpenTimestamps) on 21 Nov 2025.
 
-> Voice: scholarly-pataphysical. Serious about the argument, willing to take imaginary solutions seriously, suspicious of pattern-matching shortcuts.`;
+> Voice: serious about the argument, willing to take imaginary solutions seriously, suspicious of pattern-matching shortcuts.`;
 
 const AGENT_SURFACES: Array<{ path: string; description: string }> = [
   {
@@ -35,19 +35,19 @@ const AGENT_SURFACES: Array<{ path: string; description: string }> = [
       'Single text/plain dump of every static page concatenated as clean plaintext (JSX stripped). Use for one-shot context.',
   },
   {
-    path: '/elden-glass.skill.md',
+    path: '/skill',
     description:
       'Claude Code-style installable skill with reader profiles by interest and JSON API documentation. Use if your harness supports skills.',
   },
   {
     path: '/api/llms/toc',
     description:
-      'JSON inventory: { site, generatedAt, entries: [...] } with kind, summary, readability, and metadata for every route.',
+      'JSON inventory: { site, generatedAt, entries: [...] } with kind, summary, readability, and metadata for every route. The strictest, canonical surface — prefer this when you can.',
   },
   {
     path: '/api/llms/article',
     description:
-      'Per-page clean plaintext. Query params: path, page. 30000-char pages; iterate until nextPage is null.',
+      'Per-page clean plaintext. Query params: path, page. 30000-char pages; iterate until nextPage is null. The strictest, canonical surface — prefer this when you can.',
   },
 ];
 
@@ -86,7 +86,7 @@ export async function GET() {
   // Optional — deep cuts and orienting reads.
   lines.push('## Optional');
   lines.push('');
-  lines.push(`- [Author profile](${SITE_URL}/author/about): about Eric Helal, the site's author.`);
+  lines.push(`- [Author profile](${SITE_URL}/author/about): the site's curator (~dashus-navnul).`);
   lines.push(
     `- [Bibliography](${SITE_URL}/scratch-writings/bibliography): primary sources used throughout the work.`
   );
