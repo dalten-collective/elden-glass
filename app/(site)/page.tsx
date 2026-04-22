@@ -1,4 +1,4 @@
-import { BookOpen, Zap } from 'lucide-react';
+import { BookOpen, Bot, Zap } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -43,7 +43,7 @@ export default function HomePage() {
       {/* Running head + seeded crackline */}
       <div>
         <div className="mb-3 flex items-baseline justify-between gap-4">
-          <Eyebrow tone="gold">Eldenglass · TL;DR</Eyebrow>
+          <Eyebrow tone="gold">Home</Eyebrow>
           <Spec>the claim, literally</Spec>
         </div>
         <Crackline seed="home-top" tone="gold" />
@@ -97,17 +97,24 @@ export default function HomePage() {
             </Spec>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="gap-2">
-              <Link href="/tldr">
-                <Zap className="h-4 w-4" />
-                TL;DR
-              </Link>
-            </Button>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <CopyButton
+              value={UNIVERSAL_AGENT_PROMPT}
+              label="Copy Prompt"
+              variant="default"
+              size="lg"
+              icon={<Bot className="h-4 w-4" />}
+            />
             <Button asChild variant="outline" size="lg" className="gap-2">
               <Link href="/living-thesis">
                 <BookOpen className="h-4 w-4" />
-                Read the Living Thesis
+                Living Thesis
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="gap-2">
+              <Link href="/tldr">
+                <Zap className="h-4 w-4" />
+                TL;DR
               </Link>
             </Button>
           </div>
