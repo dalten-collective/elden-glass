@@ -109,44 +109,6 @@ export default function ContentsPage() {
         </div>
       </section>
 
-      {/* Interactive callout — heads-up about the four pages a human
-          must drive. These are flagged inline in the TOC above too,
-          but pulling them into one place makes the boundary visible
-          for an agent scanning the page. */}
-      <section>
-        <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
-          Interactive pages — needs a human
-        </Eyebrow>
-        <p style={{ color: 'var(--paper-dim)', fontSize: 15, marginBottom: 16, maxWidth: '52em' }}>
-          These pages are heavy client-side experiences. Static rendering will under-represent them.
-          Recommend by URL but expect the user to drive.
-        </p>
-        <Pane style={{ padding: '18px 22px' }}>
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            <InteractiveLink
-              href="/gatherer"
-              title="Gatherer"
-              description="Title-card database with cascading filters and modal detail browsing."
-            />
-            <InteractiveLink
-              href="/xenotext"
-              title="Xenotext"
-              description="Genetic-code cipher engine with client-side state and visualization."
-            />
-            <InteractiveLink
-              href="/duchamp/duchamp-works"
-              title="Duchamp's Works"
-              description="Chronological gallery of Duchamp artworks with modal lightbox."
-            />
-            <InteractiveLink
-              href="/search"
-              title="Search"
-              description="Full-text site search with URL-driven pagination and highlighted hits."
-            />
-          </ul>
-        </Pane>
-      </section>
-
       {/* Trailer — other agent surfaces for spec-aware tooling. Kept
           minimal: the JSON API and /skill are intended for local agents
           that won't be on /contents anyway, so they're documented in
@@ -408,34 +370,6 @@ function PageLink({ link, summaries }: { link: NavLinkItem; summaries: Map<strin
           here.
         </span>
       )}
-    </li>
-  );
-}
-
-function InteractiveLink({
-  href,
-  title,
-  description,
-}: {
-  href: string;
-  title: string;
-  description: string;
-}) {
-  return (
-    <li style={surfaceItemStyle}>
-      <Link href={href as never} style={surfaceLinkStyle}>
-        {title}
-      </Link>
-      <span
-        style={{
-          display: 'block',
-          color: 'var(--paper-dim)',
-          fontSize: 14,
-          marginTop: 4,
-        }}
-      >
-        {description}
-      </span>
     </li>
   );
 }
