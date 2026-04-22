@@ -19,11 +19,7 @@ order:
   - cosmology
   - critiques
   - author
-  - contents
 links:
   gatherer:
     href: /gatherer
     label: Elden Ring Item Cards
-  contents:
-    href: /contents
-    label: Contents · Apparatus for Agents
