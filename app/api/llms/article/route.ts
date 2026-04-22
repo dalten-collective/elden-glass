@@ -6,9 +6,13 @@ import {
   LLM_ARTICLE_PAGE_SIZE_CHARS,
   paginateLlmDocument,
 } from '@/lib/llms';
+import { mdxToPlain } from '@/lib/mdx-to-plain';
 
 /**
- * Returns one page of raw MDX for a readable route from the LLM catalog.
+ * Returns one page of clean plaintext (MDX stripped to prose) for a
+ * readable route from the LLM catalog. The underlying document is MDX,
+ * but this endpoint emits plaintext rather than raw MDX so agents
+ * receive prose without JSX component noise.
  */
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -75,7 +79,8 @@ export async function GET(request: Request) {
     );
   }
 
-  const pages = paginateLlmDocument(document.content, LLM_ARTICLE_PAGE_SIZE_CHARS);
+  const plain = mdxToPlain(document.content, { slug: path });
+  const pages = paginateLlmDocument(plain, LLM_ARTICLE_PAGE_SIZE_CHARS);
   const pageCount = pages.length;
 
   if (page > pageCount) {
@@ -97,7 +102,7 @@ export async function GET(request: Request) {
     path: document.path,
     title: document.title,
     summary: document.summary,
-    format: document.format,
+    format: 'plaintext',
     updated: document.updated,
     page,
     pageCount,
