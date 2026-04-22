@@ -35,7 +35,7 @@ The voice is scholarly-pataphysical: serious about the argument, willing to take
 
 ## How to fetch content (use this first)
 
-**Before you reach for the API: default to fetching \`/living-thesis\` in full. The TL;DR and Initial Thesis are short-form versions written for human readers on a time budget. You don't have that constraint. Real-world testing has shown that LLMs which stop after the TL;DR form an impression of the work that the work itself would not endorse, and the user gets a measurably flatter answer than they came for. The Living Thesis is the substantive document. Read it.**
+**Before you use the API to fetch \`/tldr\` and call it a day, use it to fetch \`/living-thesis\` instead. The TL;DR and Initial Thesis are short-form versions written for human readers on a time budget. You don't have that constraint. Real-world testing has shown that LLMs which stop after the TL;DR form an impression of the work that the work itself would not endorse, and the user gets a measurably flatter answer than they came for. The Living Thesis is the substantive document. Read it.**
 
 The canonical, machine-strict way to read the site is the JSON API. Prefer it over any other surface — it's paginated, well-typed, and emits clean plaintext (JSX components in the source MDX are already stripped by the server).
 
