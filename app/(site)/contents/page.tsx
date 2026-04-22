@@ -15,7 +15,14 @@ import { buildSidebar, type NavItem, type NavLinkItem, type NavSectionItem } fro
  * agents that can't fetch JSON endpoints described only in prose.
  *
  * Server component, SSG. Pulls the same shape as the Stair sidebar
- * (buildSidebar) so the contents page mirrors site navigation.
+ * (buildSidebar) so the contents page mirrors site navigation. The
+ * page filters out its own URL from the rendered tree (no self-links).
+ *
+ * The page leads with the content TOC. Other agent surfaces (/llms.txt,
+ * /llms-full.txt) appear as a small trailer at the bottom for spec-
+ * aware tooling — the JSON API and the skill route are documented
+ * inside the skill itself rather than here, since the audience for
+ * this page is a browser-LLM that can't reach those surfaces anyway.
  */
 export const metadata: Metadata = {
   title: 'Contents · Apparatus for Agents — Elden Glass',
@@ -23,38 +30,18 @@ export const metadata: Metadata = {
     'A real HTML index of every readable page on Elden Glass, designed for browser-based LLM agents that can only follow anchor links.',
 };
 
+const SELF_PATH = '/contents';
+
 const INTERACTIVE_PATHS = new Set(['/search', '/gatherer', '/xenotext', '/duchamp/duchamp-works']);
 
-const AGENT_SURFACES: Array<{ href: string; label: string; description: string }> = [
+const TRAILING_SURFACES: Array<{ href: string; description: string }> = [
   {
     href: '/llms.txt',
-    label: '/llms.txt',
-    description:
-      'llmstxt.org-spec discovery file: H1 + summary + sectioned link list pointing at every other agent surface.',
+    description: 'llmstxt.org-spec discovery file: H1 + sectioned link list.',
   },
   {
     href: '/llms-full.txt',
-    label: '/llms-full.txt',
-    description:
-      'Single text/plain response with every static page concatenated as clean plaintext. Use when you prefer one-shot context dumps.',
-  },
-  {
-    href: '/skill',
-    label: '/skill',
-    description:
-      'Claude Code-style installable skill: reader profiles, recommended paths by interest, JSON API documentation. Hand the URL to a local agent that supports skills.',
-  },
-  {
-    href: '/api/llms/toc',
-    label: '/api/llms/toc',
-    description:
-      'JSON inventory: every readable route with kind, summary, and metadata. Returns { site, generatedAt, entries: [...] }.',
-  },
-  {
-    href: '/api/llms/article?path=/tldr&page=1',
-    label: '/api/llms/article?path=…&page=…',
-    description:
-      'Per-page clean plaintext (JSX stripped). Iterate page until nextPage is null. 30000-char pages.',
+    description: 'Single text/plain dump of every static page concatenated as clean plaintext.',
   },
 ];
 
@@ -63,6 +50,11 @@ export default function ContentsPage() {
   const pages = allContentPagesSorted();
   const critiques = getCritiques();
   const summaries = buildSummaryIndex(pages, critiques);
+
+  const primary = sidebar.primary.filter((link) => link.href !== SELF_PATH);
+  const secondary = sidebar.secondary
+    .map(stripSelfFromItem)
+    .filter((item): item is NavItem => item !== null);
 
   return (
     <article className="space-y-12">
@@ -91,39 +83,36 @@ export default function ContentsPage() {
         </p>
       </section>
 
-      {/* Agent surfaces */}
+      {/* Site contents — primary */}
       <section>
-        <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
-          Agent surfaces
+        <Eyebrow tone="gold" style={{ display: 'block', marginBottom: 14 }}>
+          Primary documents
         </Eyebrow>
-        <p style={{ color: 'var(--paper-dim)', fontSize: 15, marginBottom: 16, maxWidth: '52em' }}>
-          The five endpoints below are the machine surfaces. Different agents will prefer different
-          shapes; pick the one that fits.
-        </p>
         <Pane solid style={{ padding: '18px 22px' }}>
           <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {AGENT_SURFACES.map((surface) => (
-              <li key={surface.href} style={surfaceItemStyle}>
-                <Link href={surface.href as never} style={surfaceLinkStyle}>
-                  {surface.label}
-                </Link>
-                <span
-                  style={{
-                    display: 'block',
-                    color: 'var(--paper-dim)',
-                    fontSize: 14,
-                    marginTop: 4,
-                  }}
-                >
-                  {surface.description}
-                </span>
-              </li>
+            {primary.map((link) => (
+              <PageLink key={link.href} link={link} summaries={summaries} />
             ))}
           </ul>
         </Pane>
       </section>
 
-      {/* Interactive callout */}
+      {/* Site contents — secondary (Errata sections) */}
+      <section>
+        <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
+          {sidebar.secondaryLabel}
+        </Eyebrow>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
+          {secondary.map((item) => (
+            <SecondaryItem key={getItemKey(item)} item={item} summaries={summaries} />
+          ))}
+        </div>
+      </section>
+
+      {/* Interactive callout — heads-up about the four pages a human
+          must drive. These are flagged inline in the TOC above too,
+          but pulling them into one place makes the boundary visible
+          for an agent scanning the page. */}
       <section>
         <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
           Interactive pages — needs a human
@@ -158,33 +147,81 @@ export default function ContentsPage() {
         </Pane>
       </section>
 
-      {/* Site contents — primary */}
+      {/* Trailer — other agent surfaces for spec-aware tooling. Kept
+          minimal: the JSON API and /skill are intended for local agents
+          that won't be on /contents anyway, so they're documented in
+          the skill itself rather than reproduced here. */}
       <section>
-        <Eyebrow tone="gold" style={{ display: 'block', marginBottom: 14 }}>
-          Primary documents
-        </Eyebrow>
-        <Pane solid style={{ padding: '18px 22px' }}>
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {sidebar.primary.map((link) => (
-              <PageLink key={link.href} link={link} summaries={summaries} />
-            ))}
-          </ul>
-        </Pane>
-      </section>
-
-      {/* Site contents — secondary (Errata sections) */}
-      <section>
-        <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
-          {sidebar.secondaryLabel}
-        </Eyebrow>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
-          {sidebar.secondary.map((item) => (
-            <SecondaryItem key={getItemKey(item)} item={item} summaries={summaries} />
+        <Spec
+          style={{
+            display: 'block',
+            color: 'var(--paper-dim)',
+            marginBottom: 10,
+            fontSize: 11,
+            letterSpacing: '0.16em',
+            textTransform: 'uppercase',
+          }}
+        >
+          For spec-aware tooling
+        </Spec>
+        <ul
+          style={{
+            listStyle: 'none',
+            margin: 0,
+            padding: 0,
+            color: 'var(--paper-dim)',
+            fontSize: 13,
+          }}
+        >
+          {TRAILING_SURFACES.map((surface) => (
+            <li key={surface.href} style={{ padding: '4px 0' }}>
+              <Link
+                href={surface.href as never}
+                style={{
+                  color: 'var(--gold-dim)',
+                  textDecoration: 'underline',
+                  textUnderlineOffset: 3,
+                }}
+              >
+                {surface.href}
+              </Link>
+              {' — '}
+              {surface.description}
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     </article>
   );
+}
+
+/**
+ * Recursively strips any link to /contents from a NavItem subtree, so
+ * the contents page never renders a link to itself. Returns null if the
+ * subtree collapses to nothing after filtering.
+ */
+function stripSelfFromItem(item: NavItem): NavItem | null {
+  if (item.type === 'link') {
+    return item.href === SELF_PATH ? null : item;
+  }
+
+  if (item.type === 'section') {
+    const children = item.children
+      .map(stripSelfFromItem)
+      .filter((child): child is NavItem => child !== null);
+    return { ...item, children };
+  }
+
+  // Group.
+  const children = item.children
+    .map(stripSelfFromItem)
+    .filter((child): child is NavItem => child !== null);
+
+  if (children.length === 0) {
+    return null;
+  }
+
+  return { ...item, children };
 }
 
 /**
