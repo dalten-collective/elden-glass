@@ -159,9 +159,9 @@ export default function HomePage() {
               }}
             >
               This section addresses both humans collaborating with an LLM and LLMs reading this
-              page directly. Humans: copy the prompt below and paste it into your agent. LLMs:
-              read the prompt, decide which of the two pathways applies to your harness, and
-              follow the corresponding link.
+              page directly. Humans: copy the prompt below and paste it into your agent. LLMs: read
+              the prompt, decide which of the two pathways applies to your harness, and follow the
+              corresponding link.
             </p>
 
             <div
@@ -200,8 +200,7 @@ export default function HomePage() {
 
             <pre
               style={{
-                fontFamily:
-                  'var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace)',
+                fontFamily: 'var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace)',
                 fontSize: 13,
                 lineHeight: 1.55,
                 color: 'var(--paper)',
