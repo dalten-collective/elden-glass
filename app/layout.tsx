@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { EB_Garamond, Inter_Tight, JetBrains_Mono } from 'next/font/google';
+import { EB_Garamond, Inter_Tight } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import './globals.css';
 
@@ -7,9 +8,11 @@ import './globals.css';
 //   • EB Garamond — the voice (body, headings)
 //   • Inter Tight — the apparatus (eyebrows, labels, captions)
 //   • JetBrains Mono — the machine (hashes, spec, plate numbers)
-// All three are self-hosted via next/font and exposed as CSS variables so
-// the delay-in-glass token system (globals.css) can reference them without
-// a runtime Google Fonts fetch.
+// EB Garamond and Inter Tight are fetched through next/font/google. JetBrains
+// Mono is self-hosted from public/fonts because Vercel's build fleet has
+// intermittently failed to fetch it from fonts.gstatic.com, breaking preview
+// builds with ETIMEDOUT. Self-hosting the variable font removes the build-time
+// network dependency for this family.
 const ebGaramond = EB_Garamond({
   subsets: ['latin'],
   display: 'swap',
@@ -25,10 +28,11 @@ const interTight = Inter_Tight({
   variable: '--font-sans',
 });
 
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
+const jetBrainsMono = localFont({
+  src: '../public/fonts/JetBrainsMono-Variable.woff2',
   display: 'swap',
-  weight: ['400', '500', '600'],
+  weight: '400 600',
+  style: 'normal',
   variable: '--font-mono',
 });
 
