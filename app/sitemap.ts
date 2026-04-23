@@ -16,7 +16,7 @@ const staticRoutes = [
 
 /**
  * Generates the sitemap from the current content tree plus the handful of
- * bespoke routes that do not originate from Contentlayer.
+ * bespoke routes that do not originate from MDX content.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = staticRoutes.map((route) => ({

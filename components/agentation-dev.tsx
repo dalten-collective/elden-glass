@@ -2,6 +2,8 @@
 
 import { Agentation } from 'agentation';
 
+const endpoint = process.env.NEXT_PUBLIC_AGENTATION_ENDPOINT || undefined;
+
 export function AgentationDev() {
-  return <Agentation endpoint="http://localhost:4747" />;
+  return <Agentation endpoint={endpoint} />;
 }

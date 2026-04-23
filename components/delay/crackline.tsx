@@ -137,7 +137,6 @@ export function Crackline({
       />
       {branches.map((bp, i) => (
         <polyline
-          // eslint-disable-next-line react/no-array-index-key
           key={i}
           points={poly(bp)}
           fill="none"
@@ -149,7 +148,6 @@ export function Crackline({
         />
       ))}
       {dots.map(([x, y, rr], i) => (
-        // eslint-disable-next-line react/no-array-index-key
         <circle key={i} cx={x} cy={y} r={rr} fill={stroke} opacity="0.55" />
       ))}
     </svg>

@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config '../tailwind.config.mjs';
 
 /* ═══════════════════════════════════════════════════════════════
    DELAY IN GLASS — a design system for the Elden Glass thesis
@@ -933,6 +932,16 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.delay .stair-rung .external-icon {
+  width: 12px;
+  height: 12px;
+  color: var(--paper-dimmer);
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.delay .stair-rung:hover .external-icon {
+  color: var(--gold);
+}
 .delay .stair-rung .meta {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -1360,7 +1369,7 @@ body {
     background: var(--ink-2);
   }
   .sidebar-link-active {
-    @apply sidebar-link text-[var(--paper)];
+    @apply flex items-center gap-2 rounded-none px-3 py-2 text-sm text-[var(--paper)] transition-colors;
     background: var(--ink-2);
     border-left: 2px solid var(--gold);
   }

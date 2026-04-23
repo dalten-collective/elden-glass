@@ -16,10 +16,10 @@ export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
     <button
       type="button"
       onClick={() => onSelect(artwork)}
-      className="group flex flex-col gap-3 text-left focus-visible:outline-none"
+      className="group flex cursor-pointer flex-col gap-3 text-left focus-visible:outline-none"
     >
       <div
-        className="relative aspect-[3/4] overflow-hidden rounded-sm ring-1 ring-[rgb(201_169_97/0.12)] transition-[box-shadow,transform,ring-color] duration-500 ease-out group-hover:-translate-y-0.5 group-hover:ring-[rgb(201_169_97/0.55)] group-focus-visible:ring-2 group-focus-visible:ring-[var(--accent-gold)]"
+        className="relative aspect-[3/4] cursor-pointer overflow-hidden rounded-sm ring-1 ring-[rgb(201_169_97/0.12)] transition-[box-shadow,transform,ring-color] duration-500 ease-out group-hover:-translate-y-0.5 group-hover:ring-[rgb(201_169_97/0.55)] group-focus-visible:ring-2 group-focus-visible:ring-[var(--accent-gold)]"
         style={{
           background: 'linear-gradient(135deg, #12100d 0%, #1a1511 50%, #12100d 100%)',
           boxShadow:
@@ -31,7 +31,7 @@ export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
           alt={artwork.title}
           fill
           sizes="(max-width: 640px) 45vw, 30vw"
-          className="object-contain p-3 transition-transform duration-700 ease-out group-hover:scale-[1.015]"
+          className="cursor-pointer object-contain p-3 transition-transform duration-700 ease-out group-hover:scale-[1.015]"
           unoptimized
         />
         <div

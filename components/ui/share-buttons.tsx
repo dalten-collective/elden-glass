@@ -1,6 +1,6 @@
 'use client';
 
-import { Twitter, Link2, Mail, MessageCircle } from 'lucide-react';
+import { Link2, Mail, MessageCircle, Send } from 'lucide-react';
 import { useState } from 'react';
 
 interface ShareButtonsProps {
@@ -62,7 +62,7 @@ export function ShareButtons({
         className={buttonClass}
         title="Share on X/Twitter"
       >
-        <Twitter size={iconSize} className="text-[var(--text-secondary)]" />
+        <Send size={iconSize} className="text-[var(--text-secondary)]" />
         {variant === 'default' && <span className="text-[var(--text-secondary)]">X</span>}
       </a>
 

@@ -31,6 +31,40 @@ const TitleCardContext = createContext<TitleCardContextType>({
   showCardById: () => {},
 });
 
+function makeBidirectionalConnections(cards: TitleCard[]): TitleCard[] {
+  const processedCards = cards.map((card) => ({
+    ...card,
+    connections: card.connections ? [...card.connections] : undefined,
+  }));
+
+  for (const card of processedCards) {
+    if (!card.connections) {
+      continue;
+    }
+
+    for (const connection of card.connections) {
+      const connectedCard = processedCards.find((candidate) => candidate.id === connection.cardId);
+      if (!connectedCard) {
+        continue;
+      }
+
+      connectedCard.connections ??= [];
+      const hasReverseConnection = connectedCard.connections.some(
+        (reverseConnection) => reverseConnection.cardId === card.id
+      );
+
+      if (!hasReverseConnection) {
+        connectedCard.connections.push({
+          cardId: card.id,
+          label: card.title,
+        });
+      }
+    }
+  }
+
+  return processedCards;
+}
+
 export function useTitleCards() {
   return useContext(TitleCardContext);
 }
@@ -83,51 +117,6 @@ export function TitleCardProvider({ children }: { children: React.ReactNode }) {
       console.error('Failed to fetch title cards:', error);
     }
   }, []);
-
-  // Helper function to ensure all grace connections are bidirectional
-  const makeBidirectionalConnections = (cards: TitleCard[]): TitleCard[] => {
-    // Create a mutable copy of the cards
-    const processedCards = cards.map((card) => ({
-      ...card,
-      connections: card.connections ? [...card.connections] : undefined,
-    }));
-
-    // For each card with connections
-    for (let i = 0; i < processedCards.length; i++) {
-      const card = processedCards[i];
-      if (!card.connections) continue;
-
-      // For each connection this card has
-      for (let j = 0; j < card.connections.length; j++) {
-        const connection = card.connections[j];
-
-        // Find the connected card
-        const connectedCardIndex = processedCards.findIndex((c) => c.id === connection.cardId);
-        if (connectedCardIndex === -1) continue;
-
-        const connectedCard = processedCards[connectedCardIndex];
-
-        // Check if the connected card already has a reverse connection
-        if (!connectedCard.connections) {
-          connectedCard.connections = [];
-        }
-
-        const hasReverseConnection = connectedCard.connections.some(
-          (conn) => conn.cardId === card.id
-        );
-
-        // If no reverse connection exists, add it
-        if (!hasReverseConnection) {
-          connectedCard.connections.push({
-            cardId: card.id,
-            label: card.title,
-          });
-        }
-      }
-    }
-
-    return processedCards;
-  };
 
   // Preload GIF images for faster display
   const preloadGifs = (cardsToPreload: TitleCard[]) => {

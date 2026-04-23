@@ -81,8 +81,8 @@ Current examples of intentionally bespoke routes include:
 These are not content pages. Do not migrate them into MDX unless explicitly
 requested.
 
-If a page already reads from Contentlayer and `MarkdownRenderer`, keep using
-that path.
+If a page already reads from `lib/content.ts` and `MarkdownRenderer`, keep
+using that path.
 
 ## Site Structure
 
@@ -111,7 +111,6 @@ Examples:
 
 The content tree is interpreted by:
 
-- `contentlayer.config.ts`
 - `lib/content.ts`
 - `lib/content-tree.ts`
 - `components/mdx/markdown-renderer.tsx`

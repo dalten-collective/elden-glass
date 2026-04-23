@@ -8,16 +8,17 @@ Live at [eldenringisthelargeglass.com](https://eldenringisthelargeglass.com).
 
 ## Stack
 
-- Next.js 13.5.6 (App Router)
-- Contentlayer 0.3.4 (MDX pipeline)
-- Tailwind CSS
-- TypeScript
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS 4
+- TypeScript 6
+- Filesystem-backed MDX loading through `lib/content.ts`
 - Vercel (deployment)
 - Agentation (dev-only annotation workflow)
 
 ## Content Architecture
 
-All long-form content lives in `content/` as MDX files compiled by Contentlayer.
+All long-form content lives in `content/` as MDX files loaded through `lib/content.ts`.
 
 This is not a site where editorial content should be hardcoded into TypeScript. Route pages should remain thin and should render content loaded through `lib/content.ts` and `components/mdx/markdown-renderer.tsx`.
 
@@ -40,7 +41,7 @@ npm install
 npm run dev        # starts on localhost:3000
 ```
 
-The dev server runs Contentlayer on startup to compile MDX. First boot takes ~10s; subsequent hot reloads are fast.
+The dev server reads MDX content directly from `content/` and renders it through the shared Markdown renderer.
 
 ```bash
 npm run typecheck  # tsc --noEmit
@@ -156,10 +157,10 @@ orientation:
   manuscripts manifest, Duchamp artworks catalog, xenotext theories. See
   `data/README.md`.
 
-- **Generation machinery lives in `lib/` and `contentlayer.config.ts`.**
+- **Generation machinery lives in `lib/`.**
   Key files: `lib/content.ts`, `lib/content-tree.ts`, `lib/sidebar.ts`,
-  `contentlayer.config.ts`. Don't duplicate navigation or page-discovery
-  logic elsewhere.
+  and `components/mdx/markdown-renderer.tsx`. Don't duplicate navigation or
+  page-discovery logic elsewhere.
 
 - **Components, scripts, and public assets grow organically.** Check the
   filesystem for what's there rather than a list here. Entry points worth

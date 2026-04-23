@@ -8,15 +8,16 @@ import { Button } from '@/components/ui/button';
 import { getCritiqueBySlug, getCritiques } from '@/lib/content';
 
 interface CritiquePageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
   return getCritiques().map((critique) => ({ slug: critique.slug }));
 }
 
-export default function CritiquePage({ params }: CritiquePageProps) {
-  const critique = getCritiqueBySlug(params.slug);
+export default async function CritiquePage({ params }: CritiquePageProps) {
+  const resolvedParams = await params;
+  const critique = getCritiqueBySlug(resolvedParams.slug);
 
   if (!critique) {
     notFound();
@@ -68,7 +69,7 @@ export default function CritiquePage({ params }: CritiquePageProps) {
             <CardTitle className="text-base text-[var(--text-secondary)]">Response</CardTitle>
           </CardHeader>
           <CardContent>
-            <MarkdownRenderer code={critique.body.code} />
+            <MarkdownRenderer source={critique.body.raw} />
           </CardContent>
         </Card>
       </div>

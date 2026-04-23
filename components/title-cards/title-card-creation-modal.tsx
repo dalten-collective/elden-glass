@@ -7,6 +7,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { TitleCard, HeaderPopup } from '@/types/title-cards';
 
+interface TitleCardsAllResponse {
+  cards: TitleCard[];
+}
+
 interface TitleCardCreationModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -48,10 +52,9 @@ export function TitleCardCreationModal({ isOpen, onClose }: TitleCardCreationMod
   useEffect(() => {
     const loadCards = async () => {
       try {
-        const response = await fetch('/api/title-cards');
-        const data = await response.json();
-        // API returns array directly
-        setAvailableCards(Array.isArray(data) ? data : []);
+        const response = await fetch('/api/title-cards/all');
+        const data: TitleCardsAllResponse = await response.json();
+        setAvailableCards(data.cards);
       } catch (error) {
         console.error('Failed to load cards:', error);
       }

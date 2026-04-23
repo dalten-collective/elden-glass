@@ -21,6 +21,7 @@
  *   <AttestCard …>X</AttestCard>         → X  (body kept, props dropped)
  *   <Plate no="i" caption="C">X</Plate>  → [Plate i — C]\n\nX
  *   <FloatImage src="s" alt="a">X</…>    → ![a](s)\n\nX
+ *   <RuneFigure src="s" alt="a">X</…>    → ![a](s)\n\nX
  *   <MagnifierImage …>                   → like FloatImage
  *   <ManuscriptDisplay filename="f" />   → [Manuscript: f]
  *   <PullQuote attribution=…>X</…>       → > X\n> — attribution
@@ -409,6 +410,7 @@ function renderComponent(
     case 'ConceptCard':
     case 'EvidencePoint':
     case 'LinkPreview':
+    case 'RuneGrid':
       return body;
 
     // Figures.
@@ -420,6 +422,7 @@ function renderComponent(
     }
 
     case 'FloatImage':
+    case 'RuneFigure':
     case 'MagnifierImage': {
       const src = stringAttr(attrs, 'src') ?? '';
       const alt = stringAttr(attrs, 'alt') ?? '';
