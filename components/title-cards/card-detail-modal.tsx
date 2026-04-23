@@ -7,6 +7,10 @@ import { ShareButtons } from '@/components/ui/share-buttons';
 
 import type { TitleCard } from '@/types/title-cards';
 
+interface TitleCardsAllResponse {
+  cards: TitleCard[];
+}
+
 // Helper to check if a URL is a GIF.
 const isGif = (url: string | undefined | null): boolean => {
   if (!url) return false;
@@ -36,17 +40,14 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
   >([]);
 
   // Fetch other cards so we can resolve connection titles when a
-  // connection entry was saved without an explicit label. We still use
-  // /api/title-cards (the paginated endpoint) because we only need
-  // enough cards to resolve this card's connections, not a full lookup
-  // table — the TitleCardProvider is responsible for the full set.
+  // connection entry was saved without an explicit label.
   useEffect(() => {
     const fetchCards = async () => {
       try {
-        const response = await fetch('/api/title-cards');
+        const response = await fetch('/api/title-cards/all');
         if (response.ok) {
-          const data = await response.json();
-          setAllCards(data.filter((c: TitleCard) => c.id !== card.id));
+          const data: TitleCardsAllResponse = await response.json();
+          setAllCards(data.cards.filter((c) => c.id !== card.id));
         }
       } catch (error) {
         console.error('Failed to fetch cards:', error);

@@ -14,11 +14,11 @@
  * same rules.
  */
 
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { type ReactNode, useEffect, useMemo, useState } from 'react';
+import { type ReactNode, useMemo, useState } from 'react';
 
 import { GlobalSearch } from '@/components/site/global-search';
 import type { NavItem, NavLinkItem, NavSectionItem, SiteNavigation } from '@/lib/sidebar';
@@ -130,6 +130,9 @@ function LinkRung({ link, currentPath }: { link: NavLinkItem; currentPath: strin
       <div className="body">
         <div className="title-row">
           <span className="title">{link.label}</span>
+          {link.external && (
+            <ExternalLink className="external-icon" aria-label="External link" strokeWidth={2} />
+          )}
           {link.meta && <span className="meta">{link.meta}</span>}
         </div>
       </div>
@@ -160,19 +163,15 @@ function SecondaryEntry({ item, currentPath }: { item: NavItem; currentPath: str
 }
 
 function SectionGroup({ section, currentPath }: { section: NavSectionItem; currentPath: string }) {
-  // A section auto-opens when any of its descendants matches the active
-  // path. If the reader navigates into or out of the section, we re-sync
-  // with the auto state — but we never stomp a user's manual toggle
-  // while they stay inside the section.
+  // A section auto-opens when any descendant matches the active path.
+  // Manual toggles are tracked separately so the open state can be
+  // derived during render without effect-driven state synchronization.
   const hasActive = useMemo(
     () => section.children.some((child) => itemMatchesPath(child, currentPath)),
     [section.children, currentPath]
   );
-  const [open, setOpen] = useState(hasActive);
-
-  useEffect(() => {
-    if (hasActive) setOpen(true);
-  }, [hasActive]);
+  const [manuallyOpen, setManuallyOpen] = useState(false);
+  const open = hasActive || manuallyOpen;
 
   const headerCls = ['stair-group-header', hasActive && 'has-active'].filter(Boolean).join(' ');
 
@@ -181,7 +180,7 @@ function SectionGroup({ section, currentPath }: { section: NavSectionItem; curre
       <button
         type="button"
         className={headerCls}
-        onClick={() => setOpen((value) => !value)}
+        onClick={() => setManuallyOpen((value) => !value)}
         aria-expanded={open}
       >
         <span className="num" aria-hidden="true">

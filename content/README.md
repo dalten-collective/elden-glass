@@ -1,6 +1,6 @@
 # Content Authoring Guide
 
-This guide explains how to write and manage all markdown content for the Elden Glass project using the new Next.js + Contentlayer pipeline. Keep this file under `/content/README.md` so editors can find it quickly.
+This guide explains how to write and manage all markdown content for the Elden Glass project using the Next.js MDX pipeline in `lib/content.ts` and `components/mdx/markdown-renderer.tsx`. Keep this file under `/content/README.md` so editors can find it quickly.
 
 ---
 
@@ -387,12 +387,12 @@ Horizontal rule above
 
 ---
 
-## Contentlayer + Next.js Reference
+## MDX + Next.js Reference
 
-- Content files live under `/content/` and are compiled by Contentlayer (`npm run content`).
-- The generated typings are stored in `.contentlayer/` and imported via `contentlayer/generated`.
-- `npm run dev` / `npm run build` automatically run the asset sync step and Contentlayer build.
-- Avoid manual edits to `.contentlayer/`; it regenerates on every build.
+- Content files live under `/content/` and are read by `lib/content.ts`.
+- Frontmatter is parsed from each MDX file and validated before routes render.
+- `npm run dev` / `npm run build` automatically run the asset sync steps before Next starts.
+- Rendered MDX uses the shared component registry in `components/mdx/markdown-renderer.tsx`.
 
 ---
 

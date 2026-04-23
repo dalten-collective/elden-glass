@@ -1,29 +1,10 @@
-'use client';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import type { MDXRemoteProps } from 'next-mdx-remote/rsc';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
+import remarkGfm from 'remark-gfm';
 
-import {
-  createContext,
-  type ComponentPropsWithoutRef,
-  type ReactNode,
-  useContext,
-  useEffect,
-} from 'react';
-import { cn } from '@/lib/utils';
-import { useMDXComponent } from 'next-contentlayer/hooks';
-import { FloatImage } from './float-image';
-import { ItemCard } from '@/components/items/item-card';
 import { ArtworkCard } from '@/components/artworks/artwork-card';
-import { LinkPreview } from './link-preview';
-import { MagnifierImage } from './magnifier-image';
-import { DefinitionItem } from './definition-item';
-import { HashVerification } from '@/components/verification/hash-verification';
-import { ManuscriptDisplay } from './manuscript-display';
-import { EvidencePoint } from './evidence-point';
-import { EvidenceGroup } from './evidence-group';
-import { Callout } from './callout';
-import { CalloutRow } from './callout-row';
-import { Quote } from './quote';
-import { ConceptCard } from './concept-card';
-import { GoldText } from './gold-text';
 import { EldenOrrery } from '@/components/astrology/elden-orrery';
 import {
   AsideInline,
@@ -41,16 +22,26 @@ import {
   Ref,
   Spec,
 } from '@/components/delay';
-import { getNextSearchBlockId, normalizeSearchBlockText } from '@/lib/search-blocks';
+import { ItemCard } from '@/components/items/item-card';
+import { HashVerification } from '@/components/verification/hash-verification';
+import { cn } from '@/lib/utils';
+import { Callout } from './callout';
+import { CalloutRow } from './callout-row';
+import { ConceptCard } from './concept-card';
+import { DefinitionItem } from './definition-item';
+import { EvidenceGroup } from './evidence-group';
+import { EvidencePoint } from './evidence-point';
+import { FloatImage } from './float-image';
+import { GoldText } from './gold-text';
+import { LinkPreview } from './link-preview';
+import { MagnifierImage } from './magnifier-image';
+import { ManuscriptDisplay } from './manuscript-display';
+import { Quote } from './quote';
+import { remarkSearchBlocks } from '@/lib/search-blocks';
+import { RuneFigure, RuneGrid } from './rune-figure';
+import { SearchTargetFlash } from './search-block-client';
 
-type SearchBlockContextValue = {
-  seenCounts: Map<string, number>;
-  insideListItem: boolean;
-};
-
-const SearchBlockContext = createContext<SearchBlockContextValue | null>(null);
-
-const components = {
+const mdxComponents = {
   FloatImage,
   ItemCard,
   ArtworkCard,
@@ -65,6 +56,8 @@ const components = {
   CalloutRow,
   Quote,
   ConceptCard,
+  RuneFigure,
+  RuneGrid,
   EldenOrrery,
   GoldText,
   // Delay-in-Glass primitives available to MDX authors. Named components
@@ -84,130 +77,50 @@ const components = {
   PullQuote,
   Ref,
   Spec,
-  p: AddressableParagraph,
-  li: AddressableListItem,
 };
 
+const mdxOptions = {
+  remarkPlugins: [remarkGfm, remarkSearchBlocks],
+  rehypePlugins: [
+    rehypeSlug,
+    [
+      rehypeAutolinkHeadings,
+      {
+        // Append an anchor link after each heading. The default behavior
+        // wraps heading text in an anchor, which would swallow clicks on
+        // title-card terms rendered inside headings.
+        behavior: 'append',
+        properties: {
+          className: ['heading-anchor'],
+          'aria-label': 'Link to this heading',
+        },
+        content: {
+          type: 'text',
+          value: '#',
+        },
+      },
+    ],
+  ],
+} as NonNullable<MDXRemoteProps['options']>['mdxOptions'];
+
 interface MarkdownRendererProps {
-  code: string;
+  source: string;
   className?: string;
 }
 
-export function MarkdownRenderer({ code, className }: MarkdownRendererProps) {
-  const Component = useMDXComponent(code);
-  const searchBlockContext: SearchBlockContextValue = {
-    seenCounts: new Map<string, number>(),
-    insideListItem: false,
-  };
-
-  useFlashTargetedSearchBlock();
-
+/**
+ * Renders repository MDX content with the site's registered component set
+ * and search-addressable paragraph/list anchors.
+ */
+export function MarkdownRenderer({ source, className }: MarkdownRendererProps) {
   return (
-    <SearchBlockContext.Provider value={searchBlockContext}>
-      <div className={cn('prose prose-lg prose-invert max-w-none', className)}>
-        <Component components={components} />
-      </div>
-    </SearchBlockContext.Provider>
+    <div className={cn('prose prose-lg prose-invert max-w-none', className)}>
+      <MDXRemote
+        source={source}
+        components={mdxComponents}
+        options={{ mdxOptions, parseFrontmatter: false }}
+      />
+      <SearchTargetFlash />
+    </div>
   );
-}
-
-function AddressableParagraph({ children, ...props }: ComponentPropsWithoutRef<'p'>) {
-  const context = useContext(SearchBlockContext);
-
-  if (!context || context.insideListItem) {
-    return <p {...props}>{children}</p>;
-  }
-
-  const id = getSearchBlockId(children, context);
-  return (
-    <p {...props} id={id} data-search-block={id ? 'true' : undefined}>
-      {children}
-    </p>
-  );
-}
-
-function AddressableListItem({ children, ...props }: ComponentPropsWithoutRef<'li'>) {
-  const context = useContext(SearchBlockContext);
-  const id = context ? getSearchBlockId(children, context) : undefined;
-
-  return (
-    <SearchBlockContext.Provider
-      value={{
-        seenCounts: context?.seenCounts ?? new Map<string, number>(),
-        insideListItem: true,
-      }}
-    >
-      <li {...props} id={id} data-search-block={id ? 'true' : undefined}>
-        {children}
-      </li>
-    </SearchBlockContext.Provider>
-  );
-}
-
-function getSearchBlockId(children: ReactNode, context: SearchBlockContextValue) {
-  const text = normalizeSearchBlockText(extractText(children));
-
-  if (!text) {
-    return undefined;
-  }
-
-  return getNextSearchBlockId(text, context.seenCounts);
-}
-
-function extractText(node: ReactNode): string {
-  if (node === null || node === undefined || typeof node === 'boolean') {
-    return '';
-  }
-
-  if (typeof node === 'string' || typeof node === 'number') {
-    return String(node);
-  }
-
-  if (Array.isArray(node)) {
-    return node.map(extractText).join(' ');
-  }
-
-  if (typeof node === 'object' && 'props' in node) {
-    return extractText(node.props.children);
-  }
-
-  return '';
-}
-
-function useFlashTargetedSearchBlock() {
-  useEffect(() => {
-    let timeoutId: number | undefined;
-
-    const flashTarget = () => {
-      const hash = window.location.hash;
-      const targetId = hash.startsWith('#') ? decodeURIComponent(hash.slice(1)) : '';
-
-      if (!targetId) {
-        return;
-      }
-
-      const target = document.getElementById(targetId);
-      if (!target || target.dataset.searchBlock !== 'true') {
-        return;
-      }
-
-      target.classList.remove('search-target-flash');
-      void target.getBoundingClientRect();
-      target.classList.add('search-target-flash');
-
-      window.clearTimeout(timeoutId);
-      timeoutId = window.setTimeout(() => {
-        target.classList.remove('search-target-flash');
-      }, 4000);
-    };
-
-    const frameId = window.requestAnimationFrame(flashTarget);
-    window.addEventListener('hashchange', flashTarget);
-
-    return () => {
-      window.cancelAnimationFrame(frameId);
-      window.removeEventListener('hashchange', flashTarget);
-      window.clearTimeout(timeoutId);
-    };
-  }, []);
 }

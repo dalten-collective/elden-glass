@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { EB_Garamond, Inter_Tight } from 'next/font/google';
 import localFont from 'next/font/local';
 
@@ -90,14 +90,20 @@ export const metadata: Metadata = {
       "A blockchain-verified discovery proving Elden Ring reimagines Duchamp's The Large Glass",
     images: ['/images/replica-large-glass.jpg'],
   },
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover',
-  themeColor: '#c9a961',
   alternates: {
     types: {
       'application/rss+xml': '/feed.xml',
       'text/plain': '/llms.txt',
     },
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: 'cover',
+  themeColor: '#c9a961',
 };
 
 import { AgentationDev } from '@/components/agentation-dev';
@@ -108,7 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   // as a CSS variable consumed by the tokens.
   const fontVars = `${ebGaramond.variable} ${interTight.variable} ${jetBrainsMono.variable}`;
   return (
-    <html lang="en" className={fontVars}>
+    <html lang="en" className={fontVars} data-scroll-behavior="smooth">
       <body className="delay">
         {children}
         {process.env.NODE_ENV === 'development' && <AgentationDev />}

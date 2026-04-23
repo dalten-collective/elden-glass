@@ -113,7 +113,7 @@ export function ContentPageRenderer({ doc }: { doc: ContentPage }) {
 
       <PageToc headings={doc.headings} />
 
-      <MarkdownRenderer code={doc.body.code} />
+      <MarkdownRenderer source={doc.body.raw} />
     </div>
   );
 }

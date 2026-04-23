@@ -45,24 +45,41 @@ export function extractSearchableBlocks(raw: string): SearchableBlock[] {
   return blocks;
 }
 
+/**
+ * Adds search-result anchors to rendered MDX using the same traversal that
+ * builds the search index. Doing this during compilation keeps SSR and client
+ * hydration from recalculating block IDs independently.
+ */
+export function remarkSearchBlocks() {
+  return (tree: Root) => {
+    const seenCounts = new Map<string, number>();
+    collectSearchableBlocks(tree.children, [], seenCounts, { insideListItem: false }, addBlockId);
+  };
+}
+
+type SearchBlockVisitor = (node: Content, block: SearchableBlock) => void;
+
 function collectSearchableBlocks(
   nodes: Content[],
   blocks: SearchableBlock[],
   seenCounts: Map<string, number>,
-  context: { insideListItem: boolean }
+  context: { insideListItem: boolean },
+  visitor?: SearchBlockVisitor
 ) {
   for (const node of nodes) {
     if (node.type === 'listItem') {
       const text = normalizeSearchBlockText(toString(node));
 
       if (text.length > 0) {
-        blocks.push({
+        const block = {
           id: getNextSearchBlockId(text, seenCounts),
           text,
-        });
+        };
+        blocks.push(block);
+        visitor?.(node, block);
       }
 
-      collectChildBlocks(node, blocks, seenCounts, { insideListItem: true });
+      collectChildBlocks(node, blocks, seenCounts, { insideListItem: true }, visitor);
       continue;
     }
 
@@ -70,16 +87,18 @@ function collectSearchableBlocks(
       const text = normalizeSearchBlockText(toString(node));
 
       if (text.length > 0) {
-        blocks.push({
+        const block = {
           id: getNextSearchBlockId(text, seenCounts),
           text,
-        });
+        };
+        blocks.push(block);
+        visitor?.(node, block);
       }
 
       continue;
     }
 
-    collectChildBlocks(node, blocks, seenCounts, context);
+    collectChildBlocks(node, blocks, seenCounts, context, visitor);
   }
 }
 
@@ -87,13 +106,29 @@ function collectChildBlocks(
   node: Content,
   blocks: SearchableBlock[],
   seenCounts: Map<string, number>,
-  context: { insideListItem: boolean }
+  context: { insideListItem: boolean },
+  visitor?: SearchBlockVisitor
 ) {
   if (!('children' in node) || !Array.isArray(node.children)) {
     return;
   }
 
-  collectSearchableBlocks(node.children as Content[], blocks, seenCounts, context);
+  collectSearchableBlocks(node.children as Content[], blocks, seenCounts, context, visitor);
+}
+
+function addBlockId(node: Content, block: SearchableBlock) {
+  const nodeWithData = node as Content & {
+    data?: {
+      hProperties?: Record<string, unknown>;
+    };
+  };
+
+  nodeWithData.data = nodeWithData.data ?? {};
+  nodeWithData.data.hProperties = {
+    ...nodeWithData.data.hProperties,
+    id: block.id,
+    'data-search-block': 'true',
+  };
 }
 
 function slugifySearchBlockText(text: string): string {

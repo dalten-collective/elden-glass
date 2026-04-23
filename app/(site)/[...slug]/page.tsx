@@ -6,15 +6,16 @@ import { allContentPagesSorted, getContentPageBySlug } from '@/lib/content';
 import { getFirstContentPageSlugInFolder } from '@/lib/content-tree';
 
 interface PageProps {
-  params: { slug: string[] };
+  params: Promise<{ slug: string[] }>;
 }
 
 export function generateStaticParams() {
   return allContentPagesSorted().map((doc) => ({ slug: doc.slug.split('/') }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const requestedSlug = params.slug.join('/');
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const requestedSlug = resolvedParams.slug.join('/');
   const folderFallbackSlug = getFirstContentPageSlugInFolder(requestedSlug);
   const doc =
     getContentPageBySlug(requestedSlug) ??
@@ -30,8 +31,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function ContentPageRoute({ params }: PageProps) {
-  const requestedSlug = params.slug.join('/');
+export default async function ContentPageRoute({ params }: PageProps) {
+  const resolvedParams = await params;
+  const requestedSlug = resolvedParams.slug.join('/');
   const doc = getContentPageBySlug(requestedSlug);
 
   if (doc) {
