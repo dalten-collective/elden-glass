@@ -1,14 +1,6 @@
-import * as contentlayerGenerated from 'contentlayer/generated';
-import type { ContentPage } from './content';
+import { allContentPagesSorted } from './content';
 import titleCardsData from '../data/title-cards.json';
 import { extractSearchableBlocks } from './search-blocks';
-
-const allContentPages =
-  (
-    contentlayerGenerated as typeof contentlayerGenerated & {
-      allContentPages?: ContentPage[];
-    }
-  ).allContentPages ?? [];
 
 export interface SearchResult {
   id: string;
@@ -31,7 +23,7 @@ function buildSearchIndex(): SearchResult[] {
   const index: SearchResult[] = [];
   let idCounter = 0;
 
-  const allDocs = allContentPages.map((doc) => ({
+  const allDocs = allContentPagesSorted().map((doc) => ({
     ...doc,
     page: doc.url,
     pageTitle: doc.title,

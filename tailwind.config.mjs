@@ -1,9 +1,9 @@
-import type { Config } from 'tailwindcss';
-import { fontFamily } from 'tailwindcss/defaultTheme';
 import typography from '@tailwindcss/typography';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-const config: Config = {
-  darkMode: ['class'],
+/** @type {import('tailwindcss').Config} */
+const config = {
+  darkMode: 'class',
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './content/**/*.{md,mdx}'],
   theme: {
     extend: {
@@ -22,14 +22,15 @@ const config: Config = {
         },
         success: '#5c8a5a',
       },
-      // Delay in Glass type stacks.
-      //   serif  — EB Garamond (the voice)
-      //   sans   — Inter Tight (the apparatus)
-      //   mono   — JetBrains Mono (the machine)
       fontFamily: {
-        serif: ['var(--font-serif)', 'Garamond', 'Sorts Mill Goudy', ...fontFamily.serif],
-        sans: ['var(--font-sans)', ...fontFamily.sans],
-        mono: ['var(--font-mono)', ...fontFamily.mono],
+        serif: [
+          'var(--font-serif)',
+          'Garamond',
+          'Sorts Mill Goudy',
+          ...defaultTheme.fontFamily.serif,
+        ],
+        sans: ['var(--font-sans)', ...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-mono)', ...defaultTheme.fontFamily.mono],
       },
       boxShadow: {
         panel: '0 20px 50px rgba(0, 0, 0, 0.35)',

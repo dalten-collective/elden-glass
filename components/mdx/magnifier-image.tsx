@@ -20,6 +20,7 @@ export function MagnifierImage({
   const [showMagnifier, setShowMagnifier] = useState(false);
   const [magnifierPosition, setMagnifierPosition] = useState({ x: 0, y: 0 });
   const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
+  const [imageNaturalSize, setImageNaturalSize] = useState({ width: 0, height: 0 });
   const imgRef = useRef<HTMLImageElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
@@ -51,6 +52,12 @@ export function MagnifierImage({
         onMouseEnter={() => setShowMagnifier(true)}
         onMouseLeave={() => setShowMagnifier(false)}
         onMouseMove={handleMouseMove}
+        onLoad={(event) => {
+          setImageNaturalSize({
+            width: event.currentTarget.naturalWidth,
+            height: event.currentTarget.naturalHeight,
+          });
+        }}
         style={{ cursor: 'crosshair' }}
       />
 
@@ -69,8 +76,8 @@ export function MagnifierImage({
             style={{
               backgroundImage: `url('${src}')`,
               backgroundRepeat: 'no-repeat',
-              backgroundSize: `${imgRef.current?.naturalWidth ? imgRef.current.naturalWidth * zoomLevel : 0}px ${
-                imgRef.current?.naturalHeight ? imgRef.current.naturalHeight * zoomLevel : 0
+              backgroundSize: `${imageNaturalSize.width * zoomLevel}px ${
+                imageNaturalSize.height * zoomLevel
               }px`,
               backgroundPosition: `-${imagePosition.x * zoomLevel - magnifierSize / 2}px -${
                 imagePosition.y * zoomLevel - magnifierSize / 2

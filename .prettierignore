@@ -1,5 +1,6 @@
 .contentlayer
 .next
+next-env.d.ts
 node_modules
 coverage
 data/title-cards.json

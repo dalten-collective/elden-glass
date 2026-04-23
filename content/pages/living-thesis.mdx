@@ -140,19 +140,15 @@ The twenty years did not start from an empty canvas. In the decade before Ducham
 
 Look at the Elden Ring symbol on the cover of the game. It is the Chocolate Grinder viewed from above: three circles overlapping, anchored top and bottom by cross-shapes that correspond to the Louis XV Chassis (the four-legged table the rollers rest on) and the Necktie (the disc that caps them). Godrick's Great Rune shows this most cleanly. Look closely and you can see three overlapping cylinders intersecting at their central axis. That is a top-down projection of the Chocolate Grinder, rendered as a single piece of jewelry.
 
-<div className="my-6 flex justify-center">
-  <div className="max-w-[280px]">
-    <img
-      src="/images/items/godricks-great-rune.png"
-      alt="Godrick's Great Rune"
-      className="w-full rounded bg-black/20 p-3"
-    />
-    <p className="text-xs text-gray-400 mt-2 text-center">
-      Godrick's Great Rune. Three cylinders overlapping at the central axis, anchored top and
-      bottom. Compare with Chocolate Grinder, No. 2 above.
-    </p>
-  </div>
-</div>
+<RuneFigure
+  src="/images/items/godricks-great-rune.png"
+  alt="Godrick's Great Rune"
+  className="mx-auto my-6 max-w-[280px]"
+  imagePadding="md"
+>
+  Godrick's Great Rune. Three cylinders overlapping at the central axis, anchored top and bottom.
+  Compare with Chocolate Grinder, No. 2 above.
+</RuneFigure>
 
 The same visual logic governs the rest of the Great Runes. The Elden Ring in Marika's world was a single artifact until the Shattering broke it, after which the fragments were distributed to her demigod children. Each fragment retained a piece of the original's mechanism. Each surviving Great Rune corresponds to a named part of the Chocolate Grinder:
 
@@ -160,91 +156,51 @@ The same visual logic governs the rest of the Great Runes. The Elden Ring in Mar
 - **Godrick's and Morgott's Great Runes**: the anchor runes, explicitly named as such in the game's lore, that hold the structure together from top and bottom. Godrick's is the Louis XV Chassis. Morgott's is the Necktie.
 - **Miquella's Great Rune**: shaped as a cross and semicircle that does not overlay cleanly onto the other five. It corresponds to the Scissors and Sieves, which sit beside the Chocolate Grinder in _The Large Glass_ rather than forming part of its core cylinder.
 
-<div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-6">
-  <div>
-    <img
-      src="/images/items/radahns-great-rune.png"
-      alt="Radahn's Great Rune"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Radahn — roller</p>
-  </div>
-  <div>
-    <img
-      src="/images/items/malenias-great-rune.png"
-      alt="Malenia's Great Rune"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Malenia — roller</p>
-  </div>
-  <div>
-    <img
-      src="/images/items/rykards-great-rune.png"
-      alt="Rykard's Great Rune"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Rykard — roller</p>
-  </div>
-  <div>
-    <img
-      src="/images/items/morgotts-great-rune.png"
-      alt="Morgott's Great Rune"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Morgott — Necktie (anchor)</p>
-  </div>
-  <div>
-    <img
-      src="/images/items/miquellas-great-rune.png"
-      alt="Miquella's Great Rune"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Miquella — scissors &amp; sieves</p>
-  </div>
-  <div>
-    <img
-      src="/images/items/mohgs-great-rune.png"
-      alt="Mohg's Great Rune"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Mohg — unmapped</p>
-  </div>
-</div>
+<RuneGrid>
+  <RuneFigure src="/images/items/radahns-great-rune.png" alt="Radahn's Great Rune">
+    Radahn — roller
+  </RuneFigure>
+  <RuneFigure src="/images/items/malenias-great-rune.png" alt="Malenia's Great Rune">
+    Malenia — roller
+  </RuneFigure>
+  <RuneFigure src="/images/items/rykards-great-rune.png" alt="Rykard's Great Rune">
+    Rykard — roller
+  </RuneFigure>
+  <RuneFigure src="/images/items/morgotts-great-rune.png" alt="Morgott's Great Rune">
+    Morgott — Necktie (anchor)
+  </RuneFigure>
+  <RuneFigure src="/images/items/miquellas-great-rune.png" alt="Miquella's Great Rune">
+    Miquella — scissors &amp; sieves
+  </RuneFigure>
+  <RuneFigure src="/images/items/mohgs-great-rune.png" alt="Mohg's Great Rune">
+    Mohg — unmapped
+  </RuneFigure>
+</RuneGrid>
 
 Two Great Runes do not fit the core mechanism cleanly. Mohg's Great Rune (Mohg is Morgott's twin brother, cursed with the blood of the Omen) and Rennala's _Great Rune of the Unborn_ (Rennala is Radagon's former wife, whose rune governs respawning rather than the politics of the Shattering) stand slightly outside the main identification. I classify them the same way Duchamp classifies the Butterfly Pump and the Boxing Match in his own notes: as components that exist in the framework but resist the clean one-to-one mapping the rest of the runes allow. For the purposes of this document I am listing them here for completeness, and setting them aside.
 
 The three Mending Runes carry the correspondence into a different part of Duchamp's apparatus. Recall that the three Mending Runes are forged by three named Tarnished (Goldmask, the Dung Eater, and Fia), each of whom has stepped outside the normal Tarnished-becomes-Elden-Lord cycle to produce a rune that changes the terms of the repair rather than simply enabling it. These three Tarnished are the Three Nets of _The Large Glass_. Each Net, in Duchamp's scheme, captures and processes information from the Bachelors and feeds transformed data to the Bride. Each Mending Rune does the same thing in the game's vocabulary: it takes lived experience (the philosophical commitment of the Tarnished who forged it) and transforms it into a structural modification to the Elden Ring when it is placed inside the reassembled Ring at the foot of the Erdtree. The Nets are where the Bachelor machine receives a message back from its lower half, and the Mending Runes are where the Elden Ring receives one.
 
-<div className="grid grid-cols-3 gap-3 my-6">
-  <div>
-    <img
-      src="/images/items/mending-rune-of-perfect-order.png"
-      alt="Mending Rune of Perfect Order"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">
-      Goldmask — Mending Rune of Perfect Order
-    </p>
-  </div>
-  <div>
-    <img
-      src="/images/items/mending-rune-of-the-fell-curse.png"
-      alt="Mending Rune of the Fell Curse"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">
-      Dung Eater — Mending Rune of the Fell Curse
-    </p>
-  </div>
-  <div>
-    <img
-      src="/images/items/mending-rune-of-the-death-prince.png"
-      alt="Mending Rune of the Death Prince"
-      className="w-full rounded bg-black/20 p-2"
-    />
-    <p className="text-xs text-gray-400 mt-1 text-center">Fia — Mending Rune of the Death Prince</p>
-  </div>
-</div>
+<RuneGrid>
+  <RuneFigure
+    src="/images/items/mending-rune-of-perfect-order.png"
+    alt="Mending Rune of Perfect Order"
+  >
+    Goldmask — Mending Rune of Perfect Order
+  </RuneFigure>
+  <RuneFigure
+    src="/images/items/mending-rune-of-the-fell-curse.png"
+    alt="Mending Rune of the Fell Curse"
+  >
+    Dung Eater — Mending Rune of the Fell Curse
+  </RuneFigure>
+  <RuneFigure
+    src="/images/items/mending-rune-of-the-death-prince.png"
+    alt="Mending Rune of the Death Prince"
+  >
+    Fia — Mending Rune of the Death Prince
+  </RuneFigure>
+</RuneGrid>
 
 Note the mechanism the game describes for the player's endgame. After slaying the demigods, the Tarnished collects their Great Runes and carries them, along with one of the three Mending Runes, to the foot of the Erdtree. There, the runes are reassembled into the Elden Ring, which the new Elden Lord then repairs with the chosen Mending Rune's addition. This is the game saying out loud what the thesis of this document is arguing: the Great Runes are pieces of a broken machine, and reassembling them is the literal goal of the game. The machine they reassemble into is the Chocolate Grinder.
 

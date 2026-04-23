@@ -13,7 +13,7 @@
  */
 
 import { usePathname } from 'next/navigation';
-import { type ReactNode, useMemo, useState } from 'react';
+import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
 import type { NavItem, SiteNavigation } from '@/lib/sidebar';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
@@ -30,6 +30,26 @@ export function SealStrip({ navigation, stairSeal }: SealStripProps) {
   const [open, setOpen] = useState(false);
 
   const where = useMemo(() => findActiveNode(navigation, pathname), [navigation, pathname]);
+
+  useEffect(() => {
+    if (!open) {
+      document.body.style.pointerEvents = '';
+    }
+  }, [open]);
+
+  useEffect(() => {
+    const restoreAfterPageShow = () => {
+      setOpen(false);
+      document.body.style.pointerEvents = '';
+    };
+
+    window.addEventListener('pageshow', restoreAfterPageShow);
+
+    return () => {
+      window.removeEventListener('pageshow', restoreAfterPageShow);
+      document.body.style.pointerEvents = '';
+    };
+  }, []);
 
   // Progress tick — how far through the primary stack the reader is.
   const progress = useMemo(() => {
@@ -50,7 +70,13 @@ export function SealStrip({ navigation, stairSeal }: SealStripProps) {
         </div>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <button type="button" className="ss-menu" aria-label="Open navigation">
+            <button
+              type="button"
+              className="ss-menu"
+              aria-label="Open navigation"
+              aria-expanded={open}
+              onClick={() => setOpen(true)}
+            >
               menu
             </button>
           </SheetTrigger>
