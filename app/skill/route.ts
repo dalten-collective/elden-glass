@@ -59,7 +59,7 @@ Returns:
       "kind": "content" | "interactive" | "index",
       "readable": true | false,
       "format": "mdx" | null,
-      "sourceType": "contentPage" | "critique" | "bespoke",
+      "sourceType": "contentPage" | "critique" | "layoutLink" | "bespoke",
       "updated": "<ISO 8601 date>" | null
     }
   ]
@@ -149,7 +149,7 @@ Stay in the framework before introducing the game:
 
 These pages are heavy client-side experiences that don't render usefully as static text. The JSON API marks them with \`readable: false\`. Recommend by URL but warn the user that they'll need to open them in a browser:
 
-- **\`/gatherer\`** — Title-card database with cascading filters and modal detail browsing.
+- **\`/gatherer\`** — Item-card database with cascading filters and modal detail browsing.
 - **\`/xenotext\`** — Genetic-code cipher engine, client-side state and visualization.
 - **\`/duchamp/duchamp-works\`** — Chronological gallery of Duchamp artworks with modal lightbox.
 - **\`/search\`** — Full-text site search.

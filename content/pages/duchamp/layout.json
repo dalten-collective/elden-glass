@@ -3,7 +3,9 @@
   "links": {
     "duchamp-works": {
       "href": "/duchamp/duchamp-works",
-      "label": "Duchamp Works"
+      "label": "Duchamp Works",
+      "kind": "interactive",
+      "summary": "Interactive catalogue raisonne view of Duchamp artworks with modal detail browsing rather than article text."
     }
   }
 }

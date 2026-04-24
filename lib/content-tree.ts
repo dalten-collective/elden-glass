@@ -14,6 +14,8 @@ export type ContentEntry = {
 export type LayoutLink = {
   href: string;
   label: string;
+  summary: string;
+  kind: 'interactive' | 'index';
   external?: boolean;
   hidden?: boolean;
 };
@@ -29,6 +31,8 @@ const layoutLinkSchema = z
   .object({
     href: z.string().min(1),
     label: z.string().optional(),
+    summary: z.string().min(1),
+    kind: z.enum(['interactive', 'index']).default('interactive'),
     external: z.boolean().optional(),
     hidden: z.boolean().optional(),
   })

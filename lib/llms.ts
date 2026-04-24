@@ -1,15 +1,15 @@
+import { getContentPageBySlug, getCritiqueBySlug } from '@/lib/content';
 import {
-  allContentPagesSorted,
-  getContentPageBySlug,
-  getCritiqueBySlug,
-  getCritiques,
-} from '@/lib/content';
+  getRouteCatalog,
+  type RouteCatalogEntry,
+  type RouteCatalogSource,
+} from '@/lib/route-catalog';
 
 export const LLM_ARTICLE_PAGE_SIZE_CHARS = 30_000;
 
 export type LlmRouteKind = 'content' | 'interactive' | 'index';
 export type LlmRouteFormat = 'mdx' | null;
-export type LlmRouteSource = 'contentPage' | 'critique' | 'bespoke';
+export type LlmRouteSource = RouteCatalogSource;
 
 export type LlmRouteEntry = {
   path: string;
@@ -22,9 +22,7 @@ export type LlmRouteEntry = {
   updated: string | null;
 };
 
-type InternalLlmRouteEntry = LlmRouteEntry & {
-  sourceSlug?: string;
-};
+type InternalLlmRouteEntry = LlmRouteEntry & Pick<RouteCatalogEntry, 'sourceSlug'>;
 
 export type LlmReadableDocument = {
   path: string;
@@ -34,73 +32,6 @@ export type LlmReadableDocument = {
   updated: string | null;
   content: string;
 };
-
-const staticLlmRoutes: InternalLlmRouteEntry[] = [
-  {
-    path: '/',
-    title: 'Home',
-    summary:
-      'Landing page introducing the Elden Glass thesis and pointing readers toward the main research documents.',
-    kind: 'index',
-    readable: false,
-    format: null,
-    sourceType: 'bespoke',
-    updated: null,
-  },
-  {
-    path: '/critiques',
-    title: 'Critiques & Responses',
-    summary:
-      'Index page listing critique dossiers and response essays about prior Elden Ring scholarship.',
-    kind: 'index',
-    readable: false,
-    format: null,
-    sourceType: 'bespoke',
-    updated: null,
-  },
-  {
-    path: '/gatherer',
-    title: 'Item Cards',
-    summary: 'Interactive database and search interface for structured item-card data.',
-    kind: 'interactive',
-    readable: false,
-    format: null,
-    sourceType: 'bespoke',
-    updated: null,
-  },
-  {
-    path: '/search',
-    title: 'Search',
-    summary: 'Interactive full-site search interface for the research corpus.',
-    kind: 'interactive',
-    readable: false,
-    format: null,
-    sourceType: 'bespoke',
-    updated: null,
-  },
-  {
-    path: '/xenotext',
-    title: 'Xenotext',
-    summary:
-      'Interactive xenotext cipher and transformation engine with client-side state and visualization.',
-    kind: 'interactive',
-    readable: false,
-    format: null,
-    sourceType: 'bespoke',
-    updated: null,
-  },
-  {
-    path: '/duchamp/duchamp-works',
-    title: "Duchamp's Works",
-    summary:
-      'Interactive catalogue raisonne view of Duchamp artworks with modal detail browsing rather than article text.',
-    kind: 'interactive',
-    readable: false,
-    format: null,
-    sourceType: 'bespoke',
-    updated: null,
-  },
-];
 
 /**
  * Returns the canonical LLM-facing inventory of human-readable site routes.
@@ -216,32 +147,21 @@ export function paginateLlmDocument(content: string, maxChars = LLM_ARTICLE_PAGE
  * Builds the full internal route inventory, including resolver-only fields.
  */
 function getInternalLlmRoutes(): InternalLlmRouteEntry[] {
-  const contentEntries: InternalLlmRouteEntry[] = allContentPagesSorted().map((doc) => ({
-    path: doc.url,
-    title: doc.title,
-    summary: doc.summary,
-    kind: 'content',
-    readable: true,
-    format: 'mdx',
-    sourceType: 'contentPage',
-    sourceSlug: doc.slug,
-    updated: doc.updated,
-  }));
-  const critiqueEntries: InternalLlmRouteEntry[] = getCritiques().map((critique) => ({
-    path: `/critiques/${critique.slug}`,
-    title: critique.title,
-    summary: critique.summary,
-    kind: 'content',
-    readable: true,
-    format: 'mdx',
-    sourceType: 'critique',
-    sourceSlug: critique.slug,
-    updated: critique.updated,
-  }));
-
-  return [...staticLlmRoutes, ...contentEntries, ...critiqueEntries].sort((left, right) =>
-    left.path.localeCompare(right.path)
-  );
+  return getRouteCatalog()
+    .filter((entry) => !entry.external)
+    .map(
+      (entry): InternalLlmRouteEntry => ({
+        path: entry.path,
+        title: entry.title,
+        summary: entry.summary,
+        kind: entry.kind,
+        readable: entry.readable,
+        format: entry.format,
+        sourceType: entry.sourceType,
+        sourceSlug: entry.sourceSlug,
+        updated: entry.updated,
+      })
+    );
 }
 
 function stripInternalRouteFields(entry: InternalLlmRouteEntry): LlmRouteEntry {
