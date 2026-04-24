@@ -6,6 +6,7 @@ const { parseManuscript } = require('../lib/manuscript-core.js');
 const PROOFS_DIR = path.join(process.cwd(), 'public', 'proofs');
 const OUTPUT_PATH = path.join(process.cwd(), 'data', 'manuscripts.json');
 const ELIGIBLE_EXTENSIONS = new Set(['.txt', '.md', '.eml']);
+const CHECK_ONLY = process.argv.includes('--check');
 
 function log(message) {
   console.log(`[sync-manuscripts] ${message}`);
@@ -28,10 +29,9 @@ function isEligibleProofFile(entry) {
   return ELIGIBLE_EXTENSIONS.has(extension) && !isHexDigestFilename(entry.name);
 }
 
-function main() {
+function buildManifest() {
   if (!fs.existsSync(PROOFS_DIR)) {
-    log('No public/proofs directory found, skipping.');
-    process.exit(0);
+    return null;
   }
 
   const entries = fs
@@ -47,9 +47,48 @@ function main() {
     manifest[filename] = parseManuscript(raw);
   }
 
+  return {
+    entries,
+    json: `${JSON.stringify(manifest, null, 2)}\n`,
+  };
+}
+
+function checkManifest(expectedJson) {
+  if (!fs.existsSync(OUTPUT_PATH)) {
+    console.error(
+      '[sync-manuscripts] data/manuscripts.json is missing. Run npm run sync:manuscripts.'
+    );
+    process.exit(1);
+  }
+
+  const currentJson = fs.readFileSync(OUTPUT_PATH, 'utf8');
+
+  if (currentJson !== expectedJson) {
+    console.error(
+      '[sync-manuscripts] data/manuscripts.json is stale. Run npm run sync:manuscripts and commit the result.'
+    );
+    process.exit(1);
+  }
+
+  log('data/manuscripts.json is up to date.');
+}
+
+function main() {
+  const manifest = buildManifest();
+
+  if (!manifest) {
+    log('No public/proofs directory found, skipping.');
+    process.exit(0);
+  }
+
+  if (CHECK_ONLY) {
+    checkManifest(manifest.json);
+    return;
+  }
+
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-  fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
-  log(`Synced ${entries.length} manuscript entries into data/manuscripts.json.`);
+  fs.writeFileSync(OUTPUT_PATH, manifest.json, 'utf8');
+  log(`Synced ${manifest.entries.length} manuscript entries into data/manuscripts.json.`);
 }
 
 try {

@@ -10,6 +10,7 @@ import {
   type LayoutConfig,
   type LayoutLink,
 } from '@/lib/content-tree';
+import { formatShortDate } from '@/lib/dates';
 
 export type NavLinkItem = {
   type: 'link';
@@ -339,28 +340,6 @@ function getPrimaryMeta(doc: ContentPage): string | undefined {
   }
 
   return undefined;
-}
-
-function formatShortDate(iso: string): string {
-  const dateOnly = iso.split('T')[0];
-  const [, monthStr, dayStr] = dateOnly.split('-');
-  const months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  const monthIndex = Number(monthStr) - 1;
-  const day = Number(dayStr);
-  return `${months[monthIndex] ?? ''} ${day}`;
 }
 
 function folderNameToLabel(name: string): string {

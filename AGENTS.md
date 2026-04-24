@@ -131,7 +131,11 @@ Each entry under `links` takes the following sub-keys:
 
 - `href` (required): in-site path (e.g., `/gatherer`) or a full URL
   (e.g., `https://example.com/thing`)
+- `summary` (required): one-line description used by `/contents`, `/llms.txt`,
+  `/api/llms/toc`, and sitemap-adjacent route metadata
 - `label` (optional): display text in the sidebar; defaults to the link key
+- `kind` (optional, default `interactive`): either `interactive` or `index`;
+  marks how route-catalog consumers should describe the route
 - `external` (optional, default `false`): when `true`, the link opens in a
   new tab with `rel="noopener noreferrer"` and is excluded from active-path
   detection
@@ -176,6 +180,13 @@ This means:
 - folder URLs can resolve by redirecting to an ordered child page
 - bespoke routes outside the content tree must be linked explicitly when they
   should appear in navigation
+- `lib/route-catalog.ts` builds the shared route inventory from MDX
+  frontmatter, critique frontmatter, `layout.json` links, and the few genuine
+  non-content app routes such as `/` and `/search`
+- `/contents`, `/llms.txt`, `/api/llms/toc`, and the sitemap should consume
+  the route catalog rather than maintaining their own route-summary lists
+- legacy URL aliases live in `content/redirects.json` and are loaded by
+  `next.config.mjs`
 
 ## Navigation
 
@@ -188,6 +199,7 @@ Important files:
 
 - `lib/sidebar.ts`
 - `lib/content-tree.ts`
+- `lib/route-catalog.ts`
 - `components/site/site-shell.tsx`
 - `components/site/sidebar.tsx`
 - `components/site/mobile-sidebar.tsx`
@@ -197,6 +209,23 @@ Important files:
 If navigation needs to change, update the content tree, the relevant
 `layout.json`, or the shared sidebar builder. Do not recreate the old
 hand-authored nav tree.
+
+## Styling Tokens
+
+Global style tokens live in `app/globals.css`.
+
+Use existing tokens and shared components before adding one-off colors,
+surfaces, borders, shadows, or type styling. If a new visual role is genuinely
+needed, add a named token in `app/globals.css` and use that token from
+components.
+
+Do not introduce `var(--...)` consumers without defining the token in
+`app/globals.css`. `npm run check:tokens` audits this, and `npm run build`
+runs the audit before compiling.
+
+Tailwind utilities are still appropriate for layout, spacing, responsive
+behavior, state, and component-local composition. The boundary is visual
+identity: colors and recurring surfaces should come from the token system.
 
 ## Content Authoring Rules
 
@@ -254,6 +283,11 @@ Examples:
 - `scripts/generate-fedwiki-gatherer.js`
 - `scripts/export-to-fedwiki.js`
 - `scripts/sync-from-fedwiki.js`
+
+Build and dev hooks must not mutate tracked files. Generated artifacts should
+be updated with explicit `npm run sync:*` commands and checked with
+`npm run check:generated`; stale artifacts should fail the hook instead of
+being rewritten during `npm run dev` or `npm run build`.
 
 ## Agentation
 

@@ -1,1 +1,1 @@
-Place critique imagery here. Files sync to public/images/critiques at build time.
+Place critique imagery here, then run `npm run sync:critique-assets` to mirror it to `public/images/critiques`.

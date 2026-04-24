@@ -89,9 +89,9 @@ assets/
     └── item-description.jpg
 ```
 
-> **Critique assets auto-sync**
+> **Critique assets sync**
 >
-> Drop any artwork or screenshots used by critique documents into `content/critique-images/`. During `npm run dev` or `npm run build`, the `scripts/sync-critique-assets.js` helper copies everything in that directory into `public/images/critiques/`, so your markdown can reference them via `/images/critiques/<filename>`.
+> Drop any artwork or screenshots used by critique documents into `content/critique-images/`, then run `npm run sync:critique-assets` to copy them into `public/images/critiques/`. Dev and build run a stale-output check rather than mutating files.
 
 ---
 
@@ -343,7 +343,7 @@ Use descriptive, kebab-case names:
 
 1. Create one MDX file per critique: `content/critiques/<slug>.mdx`.
 2. Required front matter: `title`, `summary`, `targetUrl`, `targetTitle`, `published`, `updated`.
-3. Add screenshots into `content/critique-images/`; the sync script copies them to `public/images/critiques/` so you can reference them via `/images/critiques/<file>`.
+3. Add screenshots into `content/critique-images/`; run `npm run sync:critique-assets` to copy them to `public/images/critiques/` so you can reference them via `/images/critiques/<file>`.
 
 ### About (`content/about.mdx`)
 
