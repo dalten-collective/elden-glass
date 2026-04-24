@@ -33,9 +33,9 @@ Unsure which you are? Quick test: fetch https://eldenringisthelargeglass.com/api
  *
  * Structure mirrors the design spec's TL;DR showcase artboard: eyebrow
  * + seeded crackline; layered hero with a ghost of the Large Glass
- * behind the title; attestation row; a pull-quote from the Initial
- * Thesis; and a correspondences pane that gives casual readers a
- * sample of the mapping before they commit to the long-read.
+ * behind the title; a pull-quote from the Initial Thesis; a
+ * correspondences pane that gives casual readers a sample of the
+ * mapping before they commit to the long-read; and an attestation row.
  */
 export default function HomePage() {
   return (
@@ -230,30 +230,6 @@ export default function HomePage() {
         `}</style>
       </Pane>
 
-      {/* Attestation strip — the claim is sealed on two chains */}
-      <section className="grid gap-3 lg:grid-cols-2">
-        <AttestCard
-          chain="ethereum · eas"
-          title="Initial Thesis"
-          hashHi="0xdce7e265a647611bca0ff61c"
-          hashLo="c832d3e1f522f78e003a86d3f4f72a66ec78842c"
-          sealed="17 · nov · 2025"
-          block="21,304,118"
-          sigil="eth"
-          sealLabel="sealed · eth"
-        />
-        <AttestCard
-          chain="bitcoin · opentimestamps"
-          title="TL;DR"
-          hashHi="5d8e88e20ea4fd62ca6b6b3d"
-          hashLo="603a2ace321e42c8208685c95b4f36640a921db3"
-          sealed="21 · nov · 2025"
-          block="871,402"
-          sigil="btc"
-          sealLabel="sealed · btc"
-        />
-      </section>
-
       {/* Pull-quote from the thesis itself — not marketing copy */}
       <section>
         <PullQuote
@@ -273,7 +249,7 @@ export default function HomePage() {
       <section className="grid gap-8 md:grid-cols-[1.1fr_1fr] md:gap-10">
         <div>
           <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
-            § ii · The Discovery
+            The Discovery
           </Eyebrow>
           <p
             className="flush"
@@ -316,7 +292,7 @@ export default function HomePage() {
               textTransform: 'uppercase',
             }}
           >
-            Correspondences · partial
+            Correspondences
           </Spec>
           <Correspondence n="1" glass="The Bride" ring="Marika the Eternal" />
           <Correspondence n="2" glass="Milky Way / crucifix" ring="Elden Beast" />
@@ -324,6 +300,30 @@ export default function HomePage() {
           <Correspondence n="11" glass="Malic Moulds" ring="The Tarnished · 9 classes" />
           <Correspondence n="14" glass="Chocolate Grinder" ring="The Elden Ring itself" />
         </Pane>
+      </section>
+
+      {/* Attestation strip — the claim is sealed on two chains */}
+      <section className="grid gap-3 lg:grid-cols-2">
+        <AttestCard
+          chain="ethereum · eas"
+          title="Initial Thesis"
+          hashHi="0xdce7e265a647611bca0ff61c"
+          hashLo="c832d3e1f522f78e003a86d3f4f72a66ec78842c"
+          sealed="17 · nov · 2025"
+          block="21,304,118"
+          sigil="eth"
+          sealLabel="sealed · eth"
+        />
+        <AttestCard
+          chain="bitcoin · opentimestamps"
+          title="TL;DR"
+          hashHi="5d8e88e20ea4fd62ca6b6b3d"
+          hashLo="603a2ace321e42c8208685c95b4f36640a921db3"
+          sealed="21 · nov · 2025"
+          block="871,402"
+          sigil="btc"
+          sealLabel="sealed · btc"
+        />
       </section>
     </div>
   );
