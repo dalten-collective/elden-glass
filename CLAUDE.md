@@ -94,7 +94,7 @@ This is a Next.js App Router site.
 - `app/(site)/layout.tsx` wraps the site shell
 - `app/(site)/[...slug]/page.tsx` is the catch-all content route
 - `app/(site)/**/page.tsx` also contains bespoke non-content routes
-- `app/api/**/route.ts` contains APIs for search, sense data, title cards, and related features
+- `app/api/**/route.ts` contains APIs for search, item cards, and related features
 
 ### Content Tree
 
@@ -106,8 +106,8 @@ Examples:
 - `content/pages/tldr.mdx`
 - `content/pages/duchamp/chess/overview.mdx`
 - `content/pages/xenotext-theory/theory.mdx`
-- `content/pages/duchamp/layout.yaml`
-- `content/pages/xenotext-theory/layout.yaml`
+- `content/pages/duchamp/layout.json`
+- `content/pages/xenotext-theory/layout.json`
 
 The content tree is interpreted by:
 
@@ -116,9 +116,9 @@ The content tree is interpreted by:
 - `components/mdx/markdown-renderer.tsx`
 - `components/site/content-page-renderer.tsx`
 
-### YAML Layout Model
+### JSON Layout Model
 
-Each `content/pages/**/layout.yaml` can control navigation and folder behavior.
+Each `content/pages/**/layout.json` can control navigation and folder behavior.
 
 Supported top-level keys:
 
@@ -139,24 +139,24 @@ Each entry under `links` takes the following sub-keys:
   nav
 
 To position an injected link among its siblings, add its key to the same
-folder's `order:` list. The three nav-element types all express through
+folder's `order` list. The three nav-element types all express through
 this one schema:
 
-1. **MDX-backed pages** — filesystem-discovered; no `layout.yaml` entry
+1. **MDX-backed pages** — filesystem-discovered; no `layout.json` entry
    required. `primary` / `order` / `hidden` still apply by name.
 2. **Internal interactive TSX routes** — a bespoke page under
-   `app/(site)/**` enters the sidebar only when a `layout.yaml` references
-   it via a `links:` entry with an in-site `href` (and no `external`).
-3. **External links** — same `links:` shape with `external: true` and a
+   `app/(site)/**` enters the sidebar only when a `layout.json` references
+   it via a `links` entry with an in-site `href` (and no `external`).
+3. **External links** — same `links` shape with `external: true` and a
    full URL `href`.
 
 Live examples in the repo:
 
-- Root: `content/pages/layout.yaml` → `links.gatherer` points at
-  `/gatherer` to bring the interactive Gatherer route into the sidebar.
-- `content/pages/xenotext-theory/layout.yaml` → `links.cipher` points at
+- Root: `content/pages/layout.json` → `links.gatherer` points at
+  `/gatherer` to bring the interactive Item Cards route into the sidebar.
+- `content/pages/xenotext-theory/layout.json` → `links.cipher` points at
   `/xenotext`.
-- `content/pages/duchamp/layout.yaml` → `links.duchamp-works` points at
+- `content/pages/duchamp/layout.json` → `links.duchamp-works` points at
   `/duchamp/duchamp-works`.
 - There are no external-link examples currently, but the schema supports
   them.
@@ -168,11 +168,11 @@ Live examples in the repo:
 
 If a requested slug names a folder instead of a concrete page, the catch-all
 route redirects to the first reachable page in that folder using
-`lib/content-tree.ts` and that folder's `layout.yaml` ordering.
+`lib/content-tree.ts` and that folder's `layout.json` ordering.
 
 This means:
 
-- content routes are filesystem and YAML driven
+- content routes are filesystem and JSON-config driven
 - folder URLs can resolve by redirecting to an ordered child page
 - bespoke routes outside the content tree must be linked explicitly when they
   should appear in navigation
@@ -195,7 +195,7 @@ Important files:
 - `components/site/top-bar.tsx`
 
 If navigation needs to change, update the content tree, the relevant
-`layout.yaml`, or the shared sidebar builder. Do not recreate the old
+`layout.json`, or the shared sidebar builder. Do not recreate the old
 hand-authored nav tree.
 
 ## Content Authoring Rules
@@ -222,22 +222,23 @@ Not everything is MDX. Structured data lives in `data/`.
 Important examples:
 
 - `data/title-cards.json`
-- `data/title-cards-split/*.json`
-- `data/sense-index.json`
 - `data/xenotext-theories.json`
 
 Important related APIs:
 
 - `app/api/title-cards/route.ts`
-- `app/api/title-cards/all/route.ts`
-- `app/api/title-cards/catalog/route.ts`
-- `app/api/title-cards/category/route.ts`
+- `app/api/title-cards/[id]/route.ts`
 - `app/api/search/route.ts`
-- `app/api/related-by-sense/route.ts`
-- `app/api/sense-index/route.ts`
 
-If the user is changing Gatherer or title-card data, update the source data or
+If the user is changing Item Cards data, update the source data or
 the scripts that produce it. Do not fake data changes in the UI layer.
+
+`data/title-cards.json` is the canonical item-card source; runtime code should
+read it through `lib/title-cards.ts`.
+
+Item-card taxonomy is first-class: `section` is the primary Item Cards grouping,
+`category` is the second-level grouping, and `subcategory` is the optional
+third-level grouping.
 
 ## Scripts
 
@@ -305,7 +306,7 @@ If a requested change feels editorial, inspect `content/pages/**` first.
 
 If it feels like navigation or route discoverability, inspect:
 
-- `content/pages/**/layout.yaml`
+- `content/pages/**/layout.json`
 - `lib/content-tree.ts`
 - `lib/sidebar.ts`
 - `app/(site)/[...slug]/page.tsx`

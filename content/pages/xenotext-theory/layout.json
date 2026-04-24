@@ -1,0 +1,9 @@
+{
+  "order": ["cipher", "theory"],
+  "links": {
+    "cipher": {
+      "href": "/xenotext",
+      "label": "Xenotext Cipher"
+    }
+  }
+}

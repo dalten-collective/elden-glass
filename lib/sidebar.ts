@@ -41,7 +41,7 @@ export type SiteNavigation = {
 };
 
 /**
- * Builds sidebar navigation from the content tree, using layout.yaml only for
+ * Builds sidebar navigation from the content tree, using layout.json only for
  * ordering and injected link entries.
  */
 export function buildSidebar(): SiteNavigation {
@@ -220,7 +220,7 @@ function buildSection(folderSlug: string): NavSectionItem {
 }
 
 /**
- * Resolves either a real filesystem child or an injected YAML link into a nav
+ * Resolves either a real filesystem child or an injected config link into a nav
  * item.
  */
 function buildSectionChild(
