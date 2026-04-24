@@ -13,6 +13,14 @@ interface CelestialBody {
   frozen?: boolean;
 }
 
+function svgNumber(value: number) {
+  return value.toFixed(6);
+}
+
+function svgTranslate(x: number, y: number) {
+  return `translate(${svgNumber(x)}, ${svgNumber(y)})`;
+}
+
 export function EldenOrrery() {
   const [radahnFallen, setRadahnFallen] = useState(false);
   const [time, setTime] = useState(0);
@@ -161,7 +169,7 @@ export function EldenOrrery() {
           {/* Orbit paths */}
 
           {/* Moon driveshaft gear ring */}
-          <g transform={`translate(${centerX}, ${centerY})`}>
+          <g transform={svgTranslate(centerX, centerY)}>
             {/* Gear teeth - rotating with the moon */}
             {gearTeeth.map((tooth, i) => {
               const rotatedAngle = tooth.angle + moonAngle;
@@ -172,10 +180,10 @@ export function EldenOrrery() {
               return (
                 <line
                   key={`tooth-${i}`}
-                  x1={x1}
-                  y1={y1}
-                  x2={x2}
-                  y2={y2}
+                  x1={svgNumber(x1)}
+                  y1={svgNumber(y1)}
+                  x2={svgNumber(x2)}
+                  y2={svgNumber(y2)}
                   stroke="rgba(200,200,220,0.4)"
                   strokeWidth="2"
                 />
@@ -216,7 +224,7 @@ export function EldenOrrery() {
           ))}
 
           {/* Erdtree at center */}
-          <g transform={`translate(${centerX}, ${centerY})`}>
+          <g transform={svgTranslate(centerX, centerY)}>
             {/* Erdtree glow */}
             <circle r="40" fill="url(#erdtreeGlow)" />
             {/* Erdtree trunk */}
@@ -231,7 +239,7 @@ export function EldenOrrery() {
           </g>
 
           {/* Marika */}
-          <g transform={`translate(${centerX + marikaX}, ${centerY + marikaY})`}>
+          <g transform={svgTranslate(centerX + marikaX, centerY + marikaY)}>
             <circle r="12" fill="url(#marikaGlow)" />
             <circle r="8" fill="#f1c40f" />
             <text y="20" textAnchor="middle" fill="white" fontSize="8" fontFamily="serif">
@@ -240,7 +248,7 @@ export function EldenOrrery() {
           </g>
 
           {/* Radagon (Mars) */}
-          <g transform={`translate(${centerX + radagonX}, ${centerY + radagonY})`}>
+          <g transform={svgTranslate(centerX + radagonX, centerY + radagonY)}>
             <circle r="12" fill="url(#radagonGlow)" />
             <circle r="8" fill="#e74c3c" />
             <text y="20" textAnchor="middle" fill="white" fontSize="8" fontFamily="serif">
@@ -259,23 +267,23 @@ export function EldenOrrery() {
 
           {/* Connection line between Marika and Radagon */}
           <line
-            x1={centerX + marikaX}
-            y1={centerY + marikaY}
-            x2={centerX + radagonX}
-            y2={centerY + radagonY}
+            x1={svgNumber(centerX + marikaX)}
+            y1={svgNumber(centerY + marikaY)}
+            x2={svgNumber(centerX + radagonX)}
+            y2={svgNumber(centerY + radagonY)}
             stroke="rgba(255,255,255,0.3)"
             strokeWidth="1"
             strokeDasharray="4,4"
           />
 
           {/* THE MOON - The Driveshaft (Same moon, two faces: Full Moon / Dark Moon) */}
-          <g transform={`translate(${centerX + moonX}, ${centerY + moonY})`}>
+          <g transform={svgTranslate(centerX + moonX, centerY + moonY)}>
             {/* Mechanical connection lines to center - showing it drives the system */}
             <line
               x1={0}
               y1={0}
-              x2={-moonX * 0.7}
-              y2={-moonY * 0.7}
+              x2={svgNumber(-moonX * 0.7)}
+              y2={svgNumber(-moonY * 0.7)}
               stroke="rgba(200,200,220,0.2)"
               strokeWidth="1"
               strokeDasharray="3,3"
@@ -344,25 +352,25 @@ export function EldenOrrery() {
           {/* TYCHOS Moon-Mars Mechanical Linkage */}
           {/* The Moon drives Radagon (Mars) - showing the driveshaft connection */}
           <line
-            x1={centerX + moonX}
-            y1={centerY + moonY}
-            x2={centerX + radagonX}
-            y2={centerY + radagonY}
+            x1={svgNumber(centerX + moonX)}
+            y1={svgNumber(centerY + moonY)}
+            x2={svgNumber(centerX + radagonX)}
+            y2={svgNumber(centerY + radagonY)}
             stroke="rgba(231,76,60,0.3)"
             strokeWidth="2"
             strokeDasharray="6,4"
           />
           {/* Gear tooth at the connection point on Moon's side */}
           <circle
-            cx={centerX + moonX * 1.15}
-            cy={centerY + moonY * 1.15}
+            cx={svgNumber(centerX + moonX * 1.15)}
+            cy={svgNumber(centerY + moonY * 1.15)}
             r="3"
             fill="rgba(200,200,220,0.5)"
           />
           {/* Gear tooth at Radagon's side */}
           <circle
-            cx={centerX + radagonX * 0.85}
-            cy={centerY + radagonY * 0.85}
+            cx={svgNumber(centerX + radagonX * 0.85)}
+            cy={svgNumber(centerY + radagonY * 0.85)}
             r="3"
             fill="rgba(231,76,60,0.5)"
           />
@@ -371,7 +379,7 @@ export function EldenOrrery() {
           {stars.map((s) => {
             const pos = getPosition(s, !radahnFallen);
             return (
-              <g key={s.id} transform={`translate(${centerX + pos.x}, ${centerY + pos.y})`}>
+              <g key={s.id} transform={svgTranslate(centerX + pos.x, centerY + pos.y)}>
                 {/* Star glow */}
                 <circle r={s.size * 2} fill={`${s.color}33`} />
                 <circle r={s.size} fill={s.color} />

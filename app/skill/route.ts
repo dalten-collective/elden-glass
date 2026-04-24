@@ -59,7 +59,7 @@ Returns:
       "kind": "content" | "interactive" | "index",
       "readable": true | false,
       "format": "mdx" | null,
-      "sourceType": "contentPage" | "critique" | "bespoke",
+      "sourceType": "contentPage" | "critique" | "layoutLink" | "bespoke",
       "updated": "<ISO 8601 date>" | null
     }
   ]
@@ -114,7 +114,7 @@ Start in the lore corner and expand outward as their patience allows. Skim the d
 
 1. **\`/tldr\`** — One-page version of the claim, with the fastest route to "what does this mean for the game I played."
 2. **\`/cosmology/astrology\`** and **\`/cosmology/daisugi-cosmology\`** — Game-internal worldbuilding read through the thesis lens.
-3. **\`/gatherer\`** — Interactive title-card database of every named item, character, and location, cross-linked to the correspondences. *This page is interactive — recommend the user open it themselves; static rendering will under-represent it.*
+3. **\`/gatherer\`** — Interactive item-card database covering Elden Ring, Duchamp, pataphysics, and related reference material. *This page is interactive — recommend the user open it themselves; static rendering will under-represent it.*
 4. If they're still with you, escalate to **\`/initial-thesis\`** then **\`/living-thesis\`**.
 
 ### If the user is an art critic, Duchampian, or modern art scholar
@@ -149,7 +149,7 @@ Stay in the framework before introducing the game:
 
 These pages are heavy client-side experiences that don't render usefully as static text. The JSON API marks them with \`readable: false\`. Recommend by URL but warn the user that they'll need to open them in a browser:
 
-- **\`/gatherer\`** — Title-card database with cascading filters and modal detail browsing.
+- **\`/gatherer\`** — Item-card database with cascading filters and modal detail browsing.
 - **\`/xenotext\`** — Genetic-code cipher engine, client-side state and visualization.
 - **\`/duchamp/duchamp-works\`** — Chronological gallery of Duchamp artworks with modal lightbox.
 - **\`/search\`** — Full-text site search.

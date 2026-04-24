@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { Crackline, Eyebrow, Pane, Spec } from '@/components/delay';
-import { allContentPagesSorted, getCritiques, type ContentPage } from '@/lib/content';
+import { getRouteCatalogIndex, type RouteCatalogEntry } from '@/lib/route-catalog';
 import { buildSidebar, type NavItem, type NavLinkItem, type NavSectionItem } from '@/lib/sidebar';
 
 /**
@@ -32,8 +32,6 @@ export const metadata: Metadata = {
 
 const SELF_PATH = '/contents';
 
-const INTERACTIVE_PATHS = new Set(['/search', '/gatherer', '/xenotext', '/duchamp/duchamp-works']);
-
 const TRAILING_SURFACES: Array<{ href: string; description: string }> = [
   {
     href: '/llms.txt',
@@ -47,9 +45,7 @@ const TRAILING_SURFACES: Array<{ href: string; description: string }> = [
 
 export default function ContentsPage() {
   const sidebar = buildSidebar();
-  const pages = allContentPagesSorted();
-  const critiques = getCritiques();
-  const summaries = buildSummaryIndex(pages, critiques);
+  const catalog = getRouteCatalogIndex();
 
   const primary = sidebar.primary.filter((link) => link.href !== SELF_PATH);
   const secondary = sidebar.secondary
@@ -121,7 +117,7 @@ export default function ContentsPage() {
         <Pane solid style={{ padding: '18px 22px' }}>
           <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {primary.map((link) => (
-              <PageLink key={link.href} link={link} summaries={summaries} />
+              <PageLink key={link.href} link={link} catalog={catalog} />
             ))}
           </ul>
         </Pane>
@@ -134,7 +130,7 @@ export default function ContentsPage() {
         </Eyebrow>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
           {secondary.map((item) => (
-            <SecondaryItem key={getItemKey(item)} item={item} summaries={summaries} />
+            <SecondaryItem key={getItemKey(item)} item={item} catalog={catalog} />
           ))}
         </div>
       </section>
@@ -220,12 +216,18 @@ function stripSelfFromItem(item: NavItem): NavItem | null {
  * Renders one entry in the secondary stack — either a top-level link or
  * a section with its children flattened beneath a section heading.
  */
-function SecondaryItem({ item, summaries }: { item: NavItem; summaries: Map<string, string> }) {
+function SecondaryItem({
+  item,
+  catalog,
+}: {
+  item: NavItem;
+  catalog: Map<string, RouteCatalogEntry>;
+}) {
   if (item.type === 'link') {
     return (
       <Pane solid style={{ padding: '18px 22px' }}>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-          <PageLink link={item} summaries={summaries} />
+          <PageLink link={item} catalog={catalog} />
         </ul>
       </Pane>
     );
@@ -235,13 +237,13 @@ function SecondaryItem({ item, summaries }: { item: NavItem; summaries: Map<stri
     return (
       <Pane solid style={{ padding: '18px 22px' }}>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-          {item.children.map((child) => renderChild(child, summaries))}
+          {item.children.map((child) => renderChild(child, catalog))}
         </ul>
       </Pane>
     );
   }
 
-  return <SectionBlock section={item} summaries={summaries} />;
+  return <SectionBlock section={item} catalog={catalog} />;
 }
 
 /**
@@ -251,10 +253,10 @@ function SecondaryItem({ item, summaries }: { item: NavItem; summaries: Map<stri
  */
 function SectionBlock({
   section,
-  summaries,
+  catalog,
 }: {
   section: NavSectionItem;
-  summaries: Map<string, string>;
+  catalog: Map<string, RouteCatalogEntry>;
 }) {
   return (
     <div>
@@ -277,7 +279,7 @@ function SectionBlock({
           </p>
         ) : (
           <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {section.children.map((child) => renderChild(child, summaries))}
+            {section.children.map((child) => renderChild(child, catalog))}
           </ul>
         )}
       </Pane>
@@ -285,9 +287,9 @@ function SectionBlock({
   );
 }
 
-function renderChild(child: NavItem, summaries: Map<string, string>) {
+function renderChild(child: NavItem, catalog: Map<string, RouteCatalogEntry>) {
   if (child.type === 'link') {
-    return <PageLink key={child.href} link={child} summaries={summaries} />;
+    return <PageLink key={child.href} link={child} catalog={catalog} />;
   }
 
   if (child.type === 'section') {
@@ -309,7 +311,7 @@ function renderChild(child: NavItem, summaries: Map<string, string>) {
           § {child.label}
         </Spec>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-          {child.children.map((grandchild) => renderChild(grandchild, summaries))}
+          {child.children.map((grandchild) => renderChild(grandchild, catalog))}
         </ul>
       </li>
     );
@@ -319,7 +321,7 @@ function renderChild(child: NavItem, summaries: Map<string, string>) {
     return (
       <li key={`group-${Math.random()}`} style={{ listStyle: 'none' }}>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-          {child.children.map((grandchild) => renderChild(grandchild, summaries))}
+          {child.children.map((grandchild) => renderChild(grandchild, catalog))}
         </ul>
       </li>
     );
@@ -328,9 +330,16 @@ function renderChild(child: NavItem, summaries: Map<string, string>) {
   return null;
 }
 
-function PageLink({ link, summaries }: { link: NavLinkItem; summaries: Map<string, string> }) {
-  const summary = summaries.get(link.href);
-  const isInteractive = INTERACTIVE_PATHS.has(link.href);
+function PageLink({
+  link,
+  catalog,
+}: {
+  link: NavLinkItem;
+  catalog: Map<string, RouteCatalogEntry>;
+}) {
+  const entry = catalog.get(link.href);
+  const summary = entry?.summary;
+  const isInteractive = entry?.kind === 'interactive';
   const isExternal = link.external === true;
 
   return (
@@ -417,24 +426,6 @@ const surfaceLinkStyle = {
   textDecorationColor: 'var(--gold-dim)',
   textUnderlineOffset: 4,
 } as const;
-
-function buildSummaryIndex(pages: ContentPage[], critiques: ReturnType<typeof getCritiques>) {
-  const map = new Map<string, string>();
-
-  for (const page of pages) {
-    if (page.summary) {
-      map.set(page.url, page.summary);
-    }
-  }
-
-  for (const critique of critiques) {
-    if (critique.summary) {
-      map.set(`/critiques/${critique.slug}`, critique.summary);
-    }
-  }
-
-  return map;
-}
 
 function getItemKey(item: NavItem): string {
   if (item.type === 'link') return item.href;

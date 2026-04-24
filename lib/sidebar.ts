@@ -10,6 +10,7 @@ import {
   type LayoutConfig,
   type LayoutLink,
 } from '@/lib/content-tree';
+import { formatShortDate } from '@/lib/dates';
 
 export type NavLinkItem = {
   type: 'link';
@@ -41,7 +42,7 @@ export type SiteNavigation = {
 };
 
 /**
- * Builds sidebar navigation from the content tree, using layout.yaml only for
+ * Builds sidebar navigation from the content tree, using layout.json only for
  * ordering and injected link entries.
  */
 export function buildSidebar(): SiteNavigation {
@@ -220,7 +221,7 @@ function buildSection(folderSlug: string): NavSectionItem {
 }
 
 /**
- * Resolves either a real filesystem child or an injected YAML link into a nav
+ * Resolves either a real filesystem child or an injected config link into a nav
  * item.
  */
 function buildSectionChild(
@@ -339,28 +340,6 @@ function getPrimaryMeta(doc: ContentPage): string | undefined {
   }
 
   return undefined;
-}
-
-function formatShortDate(iso: string): string {
-  const dateOnly = iso.split('T')[0];
-  const [, monthStr, dayStr] = dateOnly.split('-');
-  const months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  const monthIndex = Number(monthStr) - 1;
-  const day = Number(dayStr);
-  return `${months[monthIndex] ?? ''} ${day}`;
 }
 
 function folderNameToLabel(name: string): string {

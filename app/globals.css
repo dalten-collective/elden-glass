@@ -87,11 +87,13 @@
      ──────────────────────────────────────────────────────────── */
   --bg-primary: var(--ink);
   --bg-secondary: var(--ink-2);
+  --bg-tertiary: var(--ink-3);
   --bg-elevated: var(--pane);
   --text-primary: var(--paper);
   --text-secondary: var(--paper-dim);
   --text-tertiary: var(--paper-dimmer);
   --accent-gold: var(--gold);
+  --accent-gold-hover: var(--gold-bright);
   --accent-blue: var(--glass-blue);
   --accent-purple: #8b61c9;
   --accent-muted: var(--gold-dim);

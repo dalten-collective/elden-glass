@@ -1,0 +1,27 @@
+{
+  "primary": ["home", "living-thesis", "tldr", "initial-thesis", "master-list"],
+  "order": [
+    "home",
+    "living-thesis",
+    "tldr",
+    "initial-thesis",
+    "master-list",
+    "gatherer",
+    "scratch-writings",
+    "duchamp",
+    "pataphysics",
+    "bachelor-machines",
+    "xenotext-theory",
+    "cosmology",
+    "critiques",
+    "author"
+  ],
+  "links": {
+    "gatherer": {
+      "href": "/gatherer",
+      "label": "Item Cards",
+      "kind": "interactive",
+      "summary": "Interactive item-card database covering Elden Ring, Duchamp, pataphysics, and related reference material."
+    }
+  }
+}
