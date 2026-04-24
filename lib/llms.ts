@@ -60,9 +60,8 @@ const staticLlmRoutes: InternalLlmRouteEntry[] = [
   },
   {
     path: '/gatherer',
-    title: 'Elden Ring Item Cards',
-    summary:
-      'Interactive database and search interface for Elden Ring title cards and related structured item data.',
+    title: 'Item Cards',
+    summary: 'Interactive database and search interface for structured item-card data.',
     kind: 'interactive',
     readable: false,
     format: null,

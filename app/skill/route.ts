@@ -114,7 +114,7 @@ Start in the lore corner and expand outward as their patience allows. Skim the d
 
 1. **\`/tldr\`** — One-page version of the claim, with the fastest route to "what does this mean for the game I played."
 2. **\`/cosmology/astrology\`** and **\`/cosmology/daisugi-cosmology\`** — Game-internal worldbuilding read through the thesis lens.
-3. **\`/gatherer\`** — Interactive title-card database of every named item, character, and location, cross-linked to the correspondences. *This page is interactive — recommend the user open it themselves; static rendering will under-represent it.*
+3. **\`/gatherer\`** — Interactive item-card database covering Elden Ring, Duchamp, pataphysics, and related reference material. *This page is interactive — recommend the user open it themselves; static rendering will under-represent it.*
 4. If they're still with you, escalate to **\`/initial-thesis\`** then **\`/living-thesis\`**.
 
 ### If the user is an art critic, Duchampian, or modern art scholar

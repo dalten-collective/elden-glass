@@ -29,6 +29,11 @@ interface ApiResponse {
   subcategories: string[];
 }
 
+interface CardResponse {
+  card?: TitleCard;
+  error?: string;
+}
+
 const SHOW_LOCAL_FEDWIKI_LINK = process.env.NODE_ENV === 'development';
 
 function isApiResponse(value: unknown): value is ApiResponse {
@@ -69,6 +74,7 @@ function GathererContent() {
   const urlCategory = searchParams.get('category') || '';
   const urlSubcategory = searchParams.get('subcategory') || '';
   const urlSource = searchParams.get('source') || '';
+  const urlCardId = searchParams.get('card') || '';
 
   // Local input state (for debouncing)
   const [searchInput, setSearchInput] = useState(urlQuery);
@@ -79,7 +85,7 @@ function GathererContent() {
   const [error, setError] = useState<string | null>(null);
 
   // UI state
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
   const [selectedCard, setSelectedCard] = useState<TitleCard | null>(null);
 
   // Update URL with new params
@@ -110,6 +116,22 @@ function GathererContent() {
       router.push(queryString ? `/gatherer?${queryString}` : '/gatherer', { scroll: false });
     },
     [router, urlQuery, urlPage, urlSection, urlCategory, urlSubcategory, urlSource]
+  );
+
+  const updateSelectedCardUrl = useCallback(
+    (cardId: string | null) => {
+      const newParams = new URLSearchParams(searchParams.toString());
+
+      if (cardId) {
+        newParams.set('card', cardId);
+      } else {
+        newParams.delete('card');
+      }
+
+      const queryString = newParams.toString();
+      router.push(queryString ? `/gatherer?${queryString}` : '/gatherer', { scroll: false });
+    },
+    [router, searchParams]
   );
 
   // Debounce search input -> URL
@@ -162,6 +184,40 @@ function GathererContent() {
     fetchData();
   }, [urlQuery, urlPage, urlSection, urlCategory, urlSubcategory, urlSource]);
 
+  useEffect(() => {
+    if (!urlCardId) {
+      setSelectedCard(null);
+      return;
+    }
+
+    const controller = new AbortController();
+
+    async function fetchSelectedCard() {
+      setSelectedCard(null);
+
+      try {
+        const response = await fetch(`/api/title-cards/${encodeURIComponent(urlCardId)}`, {
+          signal: controller.signal,
+        });
+        const result = (await response.json()) as CardResponse;
+
+        if (response.ok && result.card) {
+          setSelectedCard(result.card);
+        }
+      } catch (err) {
+        if (err instanceof DOMException && err.name === 'AbortError') {
+          return;
+        }
+
+        console.error('Failed to fetch selected title card:', err);
+      }
+    }
+
+    fetchSelectedCard();
+
+    return () => controller.abort();
+  }, [urlCardId]);
+
   // Filter handlers that reset cascading filters
   const handleSectionChange = (section: string) => {
     updateUrl({
@@ -196,18 +252,22 @@ function GathererContent() {
 
   const hasActiveFilters = urlQuery || urlSection || urlCategory || urlSubcategory || urlSource;
 
-  const handleCardClick = useCallback((card: TitleCard) => {
-    setSelectedCard(card);
-  }, []);
+  const handleCardClick = useCallback(
+    (card: TitleCard) => {
+      setSelectedCard(card);
+      updateSelectedCardUrl(card.id);
+    },
+    [updateSelectedCardUrl]
+  );
 
   return (
     <div className="min-h-screen bg-[var(--bg-primary)]">
       {/* Header */}
       <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-6 py-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-2">Gatherer</h1>
+          <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-2">Item Cards</h1>
           <p className="text-[var(--text-secondary)]">
-            Browse and search {data?.total?.toLocaleString() || '...'} title cards in the database
+            Browse and search {data?.total?.toLocaleString() || '...'} structured item cards
           </p>
           {SHOW_LOCAL_FEDWIKI_LINK && (
             <a
@@ -260,17 +320,17 @@ function GathererContent() {
 
         {/* Filters */}
         {showFilters && (
-          <div className="bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-lg p-4 mb-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mb-6 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-secondary)] p-3 sm:p-4">
+            <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
               {/* Section Filter */}
               <div>
-                <label className="block text-xs uppercase tracking-wider text-[var(--text-tertiary)] mb-2">
+                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
                   Section
                 </label>
                 <select
                   value={urlSection}
                   onChange={(e) => handleSectionChange(e.target.value)}
-                  className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Sections</option>
                   {data?.sections?.map((section) => (
@@ -283,13 +343,13 @@ function GathererContent() {
 
               {/* Category Filter */}
               <div>
-                <label className="block text-xs uppercase tracking-wider text-[var(--text-tertiary)] mb-2">
+                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
                   Category
                 </label>
                 <select
                   value={urlCategory}
                   onChange={(e) => handleCategoryChange(e.target.value)}
-                  className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Categories</option>
                   {data?.categories?.map((category) => (
@@ -302,13 +362,13 @@ function GathererContent() {
 
               {/* Subcategory Filter */}
               <div>
-                <label className="block text-xs uppercase tracking-wider text-[var(--text-tertiary)] mb-2">
+                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
                   Subcategory
                 </label>
                 <select
                   value={urlSubcategory}
                   onChange={(e) => handleSubcategoryChange(e.target.value)}
-                  className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Subcategories</option>
                   {data?.subcategories?.map((subcategory) => (
@@ -321,13 +381,13 @@ function GathererContent() {
 
               {/* Source Filter */}
               <div>
-                <label className="block text-xs uppercase tracking-wider text-[var(--text-tertiary)] mb-2">
+                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
                   Source
                 </label>
                 <select
                   value={urlSource}
                   onChange={(e) => handleSourceChange(e.target.value)}
-                  className="w-full px-3 py-2 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)]"
+                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Sources</option>
                   <option value="base">Base Game</option>
@@ -339,16 +399,16 @@ function GathererContent() {
 
             {/* Quick Section Filters */}
             {data?.sections && data.sections.length > 0 && (
-              <div className="mt-4 pt-4 border-t border-[var(--border-subtle)]">
-                <label className="block text-xs uppercase tracking-wider text-[var(--text-tertiary)] mb-2">
+              <div className="mt-3 border-t border-[var(--border-subtle)] pt-3 sm:mt-4 sm:pt-4">
+                <label className="mb-2 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:text-xs">
                   Quick Filters
                 </label>
-                <div className="flex flex-wrap gap-2">
+                <div className="-mx-3 flex max-h-11 gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:max-h-none sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
                   {data.sections.map((section) => (
                     <button
                       key={section}
                       onClick={() => handleSectionChange(section === urlSection ? '' : section)}
-                      className={`px-3 py-1.5 rounded-full text-sm transition ${
+                      className={`shrink-0 rounded-full px-3 py-1 text-xs transition sm:py-1.5 sm:text-sm ${
                         urlSection === section
                           ? 'bg-[var(--accent-gold)] text-black'
                           : 'bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-[var(--border-subtle)]'
@@ -465,7 +525,13 @@ function GathererContent() {
 
       {/* Card Detail Modal — read-only view */}
       {selectedCard && (
-        <CardDetailModal card={selectedCard} onClose={() => setSelectedCard(null)} />
+        <CardDetailModal
+          card={selectedCard}
+          onClose={() => {
+            setSelectedCard(null);
+            updateSelectedCardUrl(null);
+          }}
+        />
       )}
     </div>
   );
@@ -502,6 +568,11 @@ const CardTile = memo(function CardTile({
   onClick: (card: TitleCard) => void;
 }) {
   const isDLC = card.source === 'dlc';
+  const [imageFailed, setImageFailed] = useState(false);
+
+  useEffect(() => {
+    setImageFailed(false);
+  }, [card.image]);
 
   return (
     <button
@@ -512,7 +583,7 @@ const CardTile = memo(function CardTile({
           : 'border-[var(--accent-gold)]/30 hover:border-[var(--accent-gold)]'
       }`}
     >
-      {card.image && (
+      {card.image && !imageFailed && (
         <div className="relative w-full h-32 mb-3 rounded overflow-hidden bg-[var(--bg-primary)]">
           <Image
             src={card.image}
@@ -520,6 +591,7 @@ const CardTile = memo(function CardTile({
             fill
             className="object-contain"
             loading="lazy"
+            onError={() => setImageFailed(true)}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
         </div>

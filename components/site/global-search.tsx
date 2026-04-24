@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, BookText } from 'lucide-react';
-import { useTitleCards } from '@/components/title-cards/title-card-provider';
 
 interface SearchResult {
   id: string;
@@ -27,7 +26,6 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-  const { showCardById } = useTitleCards();
   const searchRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -120,9 +118,10 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
     setIsOpen(false);
     setQuery('');
 
-    // Handle title card results - show the card popup
     if (result.type === 'titlecard' && result.cardId) {
-      showCardById(result.cardId);
+      router.push(
+        `/gatherer?card=${encodeURIComponent(result.cardId)}&q=${encodeURIComponent(result.sentence)}`
+      );
       return;
     }
 
