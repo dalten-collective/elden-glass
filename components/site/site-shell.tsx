@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { SealStrip } from '@/components/delay/seal-strip';
 import { StairNav } from '@/components/delay/stair';
 import { getContentPageBySlug } from '@/lib/content';
+import { formatShortDate } from '@/lib/dates';
 import { buildSidebar } from '@/lib/sidebar';
 
 /**
@@ -60,26 +61,4 @@ export async function SiteShell({ children }: { children: ReactNode }) {
       </div>
     </div>
   );
-}
-
-function formatShortDate(iso: string): string {
-  const dateOnly = iso.split('T')[0];
-  const [, monthStr, dayStr] = dateOnly.split('-');
-  const months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  const monthIndex = Number(monthStr) - 1;
-  const day = Number(dayStr);
-  return `${months[monthIndex] ?? ''} ${day}`;
 }

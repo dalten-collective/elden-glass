@@ -149,9 +149,9 @@ function SearchContent() {
           </form>
 
           <p className="text-sm text-[var(--text-tertiary)] mt-3">
-            Search through all documents and pages. For title cards, use the{' '}
+            Search through all documents and pages. For item cards, use{' '}
             <Link href="/gatherer" className="text-[var(--accent-gold)] hover:underline">
-              Gatherer
+              Item Cards
             </Link>
             .
           </p>

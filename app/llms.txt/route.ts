@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import { allContentPagesSorted, getCritiques } from '@/lib/content';
+import { getRouteCatalogIndex } from '@/lib/route-catalog';
 import { buildSidebar, type NavItem, type NavLinkItem, type NavSectionItem } from '@/lib/sidebar';
 
 /**
@@ -53,7 +53,7 @@ const AGENT_SURFACES: Array<{ path: string; description: string }> = [
 
 export async function GET() {
   const sidebar = buildSidebar();
-  const summaries = buildSummaryIndex();
+  const catalog = getRouteCatalogIndex();
 
   const lines: string[] = [];
   lines.push('# Elden Glass');
@@ -66,7 +66,7 @@ export async function GET() {
   lines.push('');
   for (const link of sidebar.primary) {
     if (link.href === '/') continue; // The home page is the file's context, not a destination.
-    appendLink(lines, link, summaries);
+    appendLink(lines, link, catalog);
   }
   lines.push('');
 
@@ -80,16 +80,14 @@ export async function GET() {
 
   // Each Errata section gets its own H2, mirroring the Stair sidebar.
   for (const item of sidebar.secondary) {
-    appendSecondaryItem(lines, item, summaries);
+    appendSecondaryItem(lines, item, catalog);
   }
 
   // Optional — deep cuts and orienting reads.
   lines.push('## Optional');
   lines.push('');
-  lines.push(`- [Author profile](${SITE_URL}/author/about): the site's curator (~dashus-navnul).`);
-  lines.push(
-    `- [Bibliography](${SITE_URL}/scratch-writings/bibliography): primary sources used throughout the work.`
-  );
+  appendCatalogPath(lines, catalog, '/author/about', 'Author profile');
+  appendCatalogPath(lines, catalog, '/scratch-writings/bibliography', 'Bibliography');
   lines.push('');
 
   return new NextResponse(lines.join('\n'), {
@@ -100,30 +98,34 @@ export async function GET() {
   });
 }
 
-function appendSecondaryItem(lines: string[], item: NavItem, summaries: Map<string, string>): void {
+function appendSecondaryItem(
+  lines: string[],
+  item: NavItem,
+  catalog: ReturnType<typeof getRouteCatalogIndex>
+): void {
   if (item.type === 'link') {
     // A bare link in the secondary stack — emit as a standalone "## Label" with one entry.
     lines.push(`## ${item.label}`);
     lines.push('');
-    appendLink(lines, item, summaries);
+    appendLink(lines, item, catalog);
     lines.push('');
     return;
   }
 
   if (item.type === 'group') {
     for (const child of item.children) {
-      appendSecondaryItem(lines, child, summaries);
+      appendSecondaryItem(lines, child, catalog);
     }
     return;
   }
 
-  appendSectionAsH2(lines, item, summaries);
+  appendSectionAsH2(lines, item, catalog);
 }
 
 function appendSectionAsH2(
   lines: string[],
   section: NavSectionItem,
-  summaries: Map<string, string>
+  catalog: ReturnType<typeof getRouteCatalogIndex>
 ): void {
   lines.push(`## ${section.label}`);
   lines.push('');
@@ -136,19 +138,19 @@ function appendSectionAsH2(
 
   for (const child of section.children) {
     if (child.type === 'link') {
-      appendLink(lines, child, summaries);
+      appendLink(lines, child, catalog);
     } else if (child.type === 'section') {
       // Nested section — emit children inline with a sub-bullet header.
       lines.push(`- **${child.label}**`);
       for (const grand of child.children) {
         if (grand.type === 'link') {
-          appendLink(lines, grand, summaries, '  ');
+          appendLink(lines, grand, catalog, '  ');
         }
       }
     } else if (child.type === 'group') {
       for (const grand of child.children) {
         if (grand.type === 'link') {
-          appendLink(lines, grand, summaries);
+          appendLink(lines, grand, catalog);
         }
       }
     }
@@ -160,30 +162,22 @@ function appendSectionAsH2(
 function appendLink(
   lines: string[],
   link: NavLinkItem,
-  summaries: Map<string, string>,
+  catalog: ReturnType<typeof getRouteCatalogIndex>,
   indent = ''
 ): void {
   const url = link.external ? link.href : `${SITE_URL}${link.href}`;
-  const summary = summaries.get(link.href);
+  const summary = catalog.get(link.href)?.summary;
   const trailer = summary ? `: ${summary}` : '';
   lines.push(`${indent}- [${link.label}](${url})${trailer}`);
 }
 
-/** Builds a url → summary map from every readable doc on the site. */
-function buildSummaryIndex(): Map<string, string> {
-  const map = new Map<string, string>();
-
-  for (const doc of allContentPagesSorted()) {
-    if (doc.summary) {
-      map.set(doc.url, doc.summary);
-    }
-  }
-
-  for (const critique of getCritiques()) {
-    if (critique.summary) {
-      map.set(`/critiques/${critique.slug}`, critique.summary);
-    }
-  }
-
-  return map;
+function appendCatalogPath(
+  lines: string[],
+  catalog: ReturnType<typeof getRouteCatalogIndex>,
+  path: string,
+  label: string
+): void {
+  const summary = catalog.get(path)?.summary;
+  const trailer = summary ? `: ${summary}` : '';
+  lines.push(`- [${label}](${SITE_URL}${path})${trailer}`);
 }

@@ -1,7 +1,10 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'fs';
 import path from 'path';
 
+import { z } from 'zod';
+
 export const CONTENT_PAGES_DIR = path.join(process.cwd(), 'content', 'pages');
+const LAYOUT_CONFIG_FILE = 'layout.json';
 
 export type ContentEntry = {
   kind: 'directory' | 'page';
@@ -11,6 +14,8 @@ export type ContentEntry = {
 export type LayoutLink = {
   href: string;
   label: string;
+  summary: string;
+  kind: 'interactive' | 'index';
   external?: boolean;
   hidden?: boolean;
 };
@@ -22,8 +27,46 @@ export type LayoutConfig = {
   links: Record<string, LayoutLink>;
 };
 
+const layoutLinkSchema = z
+  .object({
+    href: z.string().min(1),
+    label: z.string().optional(),
+    summary: z.string().min(1),
+    kind: z.enum(['interactive', 'index']).default('interactive'),
+    external: z.boolean().optional(),
+    hidden: z.boolean().optional(),
+  })
+  .strict()
+  .transform((link) => ({
+    ...link,
+    label: link.label ?? '',
+  }));
+
+const layoutConfigSchema = z
+  .object({
+    primary: z.array(z.string().min(1)).optional(),
+    order: z.array(z.string().min(1)).optional(),
+    hidden: z.array(z.string().min(1)).optional(),
+    links: z.record(z.string().regex(/^[A-Za-z0-9_-]+$/), layoutLinkSchema).optional(),
+  })
+  .strict()
+  .transform((config) => ({
+    primary: config.primary ?? [],
+    order: config.order ?? [],
+    hidden: config.hidden ?? [],
+    links: Object.fromEntries(
+      Object.entries(config.links ?? {}).map(([key, link]) => [
+        key,
+        {
+          ...link,
+          label: link.label || key,
+        },
+      ])
+    ),
+  }));
+
 /**
- * Returns the first content page slug within a folder, using layout.yaml order
+ * Returns the first content page slug within a folder, using layout.json order
  * when present and alphabetical fallback otherwise.
  */
 export function getFirstContentPageSlugInFolder(folderSlug: string): string | null {
@@ -99,112 +142,152 @@ export function getOrderedContentEntries(directoryPath: string): ContentEntry[] 
 }
 
 /**
- * Reads the limited layout.yaml schema used by the content tree.
+ * Reads and validates the layout.json schema used by the content tree.
  */
 export function readLayoutConfig(directoryPath: string): LayoutConfig {
-  const layoutPath = path.join(directoryPath, 'layout.yaml');
+  const layoutPath = path.join(directoryPath, LAYOUT_CONFIG_FILE);
 
   if (!existsSync(layoutPath)) {
     return { primary: [], order: [], hidden: [], links: {} };
   }
 
-  const lines = readFileSync(layoutPath, 'utf8').split('\n');
-  const config: LayoutConfig = { primary: [], order: [], hidden: [], links: {} };
-  let section: 'primary' | 'order' | 'hidden' | 'links' | null = null;
-  let currentLink: string | null = null;
+  let parsed: unknown;
+  const source = readFileSync(layoutPath, 'utf8');
 
-  for (const line of lines) {
-    const trimmed = line.trim();
+  try {
+    parsed = JSON.parse(source);
+  } catch (error) {
+    throw new Error(`Invalid layout config JSON in ${formatLayoutPath(layoutPath)}: ${error}`);
+  }
 
-    if (!trimmed || trimmed.startsWith('#')) {
-      continue;
-    }
+  assertNoDuplicateJsonKeys(source, layoutPath);
 
-    const indent = line.match(/^\s*/)?.[0].length ?? 0;
+  const result = layoutConfigSchema.safeParse(parsed);
+  if (!result.success) {
+    throw new Error(
+      `Invalid layout config in ${formatLayoutPath(layoutPath)}: ${result.error.message}`
+    );
+  }
 
-    if (indent === 0) {
-      currentLink = null;
+  return result.data;
+}
 
-      if (/^order:\s*$/.test(trimmed)) {
-        section = 'order';
-        continue;
-      }
+function formatLayoutPath(layoutPath: string): string {
+  return path.relative(process.cwd(), layoutPath);
+}
 
-      if (/^primary:\s*$/.test(trimmed)) {
-        section = 'primary';
-        continue;
-      }
+/**
+ * JSON.parse accepts duplicate object keys, so inspect the valid source text to
+ * keep navigation config failures explicit.
+ */
+function assertNoDuplicateJsonKeys(source: string, layoutPath: string): void {
+  let index = 0;
 
-      if (/^hidden:\s*$/.test(trimmed)) {
-        section = 'hidden';
-        continue;
-      }
-
-      if (/^links:\s*$/.test(trimmed)) {
-        section = 'links';
-        continue;
-      }
-
-      section = null;
-      continue;
-    }
-
-    if (section === 'primary' || section === 'order' || section === 'hidden') {
-      const itemMatch = trimmed.match(/^-\s+(.+?)\s*$/);
-
-      if (itemMatch) {
-        const target =
-          section === 'primary'
-            ? config.primary
-            : section === 'order'
-              ? config.order
-              : config.hidden;
-        target.push(stripYamlValue(itemMatch[1]));
-      }
-
-      continue;
-    }
-
-    if (section === 'links') {
-      if (indent === 2) {
-        const linkMatch = trimmed.match(/^([A-Za-z0-9_-]+):\s*$/);
-
-        if (linkMatch) {
-          currentLink = linkMatch[1];
-          config.links[currentLink] = {
-            href: '',
-            label: currentLink,
-          };
-        }
-
-        continue;
-      }
-
-      if (indent === 4 && currentLink) {
-        const propertyMatch = trimmed.match(/^([A-Za-z0-9_-]+):\s*(.+?)\s*$/);
-
-        if (!propertyMatch) {
-          continue;
-        }
-
-        const [, property, rawValue] = propertyMatch;
-        const value = stripYamlValue(rawValue);
-
-        if (property === 'external' || property === 'hidden') {
-          config.links[currentLink][property] = value === 'true';
-          continue;
-        }
-
-        if (property === 'href' || property === 'label') {
-          config.links[currentLink][property] = value;
-        }
-      }
+  function skipWhitespace(): void {
+    while (/\s/.test(source[index] ?? '')) {
+      index += 1;
     }
   }
 
-  return config;
-}
+  function parseString(): string {
+    const start = index;
+    index += 1;
 
-function stripYamlValue(value: string): string {
-  return value.replace(/^['"]|['"]$/g, '').trim();
+    while (index < source.length) {
+      const char = source[index];
+
+      if (char === '"') {
+        index += 1;
+        return JSON.parse(source.slice(start, index)) as string;
+      }
+
+      if (char === '\\') {
+        index += 1;
+
+        if (index < source.length) {
+          index += 1;
+        }
+
+        continue;
+      }
+
+      index += 1;
+    }
+
+    return '';
+  }
+
+  function parsePrimitive(): void {
+    while (index < source.length && !/[,\]}]/.test(source[index])) {
+      index += 1;
+    }
+  }
+
+  function parseArray(): void {
+    index += 1;
+    skipWhitespace();
+
+    while (index < source.length && source[index] !== ']') {
+      parseValue();
+      skipWhitespace();
+
+      if (source[index] === ',') {
+        index += 1;
+        skipWhitespace();
+      }
+    }
+
+    index += 1;
+  }
+
+  function parseObject(): void {
+    const keys = new Set<string>();
+    index += 1;
+    skipWhitespace();
+
+    while (index < source.length && source[index] !== '}') {
+      const key = parseString();
+
+      if (keys.has(key)) {
+        throw new Error(`Duplicate key "${key}" in ${formatLayoutPath(layoutPath)}`);
+      }
+
+      keys.add(key);
+      skipWhitespace();
+      index += 1;
+      skipWhitespace();
+      parseValue();
+      skipWhitespace();
+
+      if (source[index] === ',') {
+        index += 1;
+        skipWhitespace();
+      }
+    }
+
+    index += 1;
+  }
+
+  function parseValue(): void {
+    skipWhitespace();
+
+    if (source[index] === '{') {
+      parseObject();
+      return;
+    }
+
+    if (source[index] === '[') {
+      parseArray();
+      return;
+    }
+
+    if (source[index] === '"') {
+      parseString();
+      return;
+    }
+
+    parsePrimitive();
+  }
+
+  parseValue();
 }

@@ -1,0 +1,11 @@
+{
+  "order": ["cipher", "theory"],
+  "links": {
+    "cipher": {
+      "href": "/xenotext",
+      "label": "Xenotext Cipher",
+      "kind": "interactive",
+      "summary": "Interactive xenotext cipher and genetic-code transformation engine with client-side state and visualization."
+    }
+  }
+}

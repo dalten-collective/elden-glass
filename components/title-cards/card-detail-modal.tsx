@@ -1,15 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { X, ExternalLink, Sparkles } from 'lucide-react';
+import { X, ExternalLink } from 'lucide-react';
 import { ShareButtons } from '@/components/ui/share-buttons';
 
 import type { TitleCard } from '@/types/title-cards';
-
-interface TitleCardsAllResponse {
-  cards: TitleCard[];
-}
 
 // Helper to check if a URL is a GIF.
 const isGif = (url: string | undefined | null): boolean => {
@@ -30,56 +26,15 @@ interface CardDetailModalProps {
  * "View card" button on the rollover.
  */
 export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
-  const [allCards, setAllCards] = useState<TitleCard[]>([]);
-  const [relatedBySense, setRelatedBySense] = useState<
-    Array<{
-      sense: string;
-      senseLabel: string;
-      cards: Array<{ id: string; title: string; category?: string }>;
-    }>
-  >([]);
+  const [imageFailed, setImageFailed] = useState(false);
 
-  // Fetch other cards so we can resolve connection titles when a
-  // connection entry was saved without an explicit label.
   useEffect(() => {
-    const fetchCards = async () => {
-      try {
-        const response = await fetch('/api/title-cards/all');
-        if (response.ok) {
-          const data: TitleCardsAllResponse = await response.json();
-          setAllCards(data.cards.filter((c) => c.id !== card.id));
-        }
-      } catch (error) {
-        console.error('Failed to fetch cards:', error);
-      }
-    };
-    fetchCards();
-  }, [card.id]);
-
-  // Fetch semantically related cards (same WordNet sense keys).
-  useEffect(() => {
-    const fetchRelated = async () => {
-      if (!card.senses || card.senses.length === 0) {
-        setRelatedBySense([]);
-        return;
-      }
-      try {
-        const response = await fetch(`/api/related-by-sense?id=${card.id}`);
-        if (response.ok) {
-          const data = await response.json();
-          setRelatedBySense(data.related || []);
-        }
-      } catch (error) {
-        console.error('Failed to fetch related cards:', error);
-        setRelatedBySense([]);
-      }
-    };
-    fetchRelated();
-  }, [card.id, card.senses]);
+    setImageFailed(false);
+  }, [card.image]);
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-75"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4 lg:left-[300px]"
       onClick={onClose}
     >
       <div
@@ -101,7 +56,7 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
         {/* Content */}
         <div className="p-6 space-y-4">
           {/* Image */}
-          {card.image && (
+          {card.image && !imageFailed && (
             <div className="relative w-full h-64 rounded bg-[var(--bg-primary)] flex items-center justify-center overflow-hidden">
               {isGif(card.image) ? (
                 // Native img for GIFs in modal — better performance than
@@ -111,6 +66,7 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
                   src={card.image}
                   alt={card.title}
                   className="max-w-full max-h-full object-contain"
+                  onError={() => setImageFailed(true)}
                 />
               ) : (
                 <Image
@@ -119,6 +75,7 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
                   fill
                   className="object-contain"
                   unoptimized
+                  onError={() => setImageFailed(true)}
                 />
               )}
             </div>
@@ -151,6 +108,13 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
           </div>
 
           {/* Category */}
+          <div>
+            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
+              Section
+            </label>
+            <p className="text-sm text-[var(--text-secondary)]">{card.section || 'N/A'}</p>
+          </div>
+
           <div>
             <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
               Category
@@ -199,90 +163,35 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
             )}
           </div>
 
-          {/* Guidance of Grace Connections */}
+          {/* Connections */}
           <div>
             <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Guidance of Grace Connections
+              Connections
             </label>
             {card.connections && card.connections.length > 0 ? (
               <div className="space-y-2">
-                {card.connections.map((connection, index) => {
-                  const connectedCard = allCards.find((c) => c.id === connection.cardId);
-                  return (
-                    <div key={index} className="flex items-center gap-2 text-sm">
-                      <span className="text-[var(--accent-gold)]">✦</span>
-                      <span className="text-[var(--text-secondary)]">
-                        {connection.label || connectedCard?.title || 'Unknown Card'}
-                      </span>
-                    </div>
-                  );
-                })}
+                {card.connections.map((connection, index) => (
+                  <div key={index} className="flex items-center gap-2 text-sm">
+                    <span className="text-[var(--accent-gold)]">✦</span>
+                    <span className="text-[var(--text-secondary)]">
+                      {connection.label || connection.linkedTitle || connection.cardId}
+                    </span>
+                  </div>
+                ))}
               </div>
             ) : (
               <p className="text-sm text-[var(--text-tertiary)] italic">No connections</p>
             )}
           </div>
 
-          {/* Related by Meaning (Semantic Connections) */}
-          {relatedBySense.length > 0 && (
-            <div>
-              <label className="flex items-center gap-2 text-sm font-medium text-[var(--text-secondary)] mb-2">
-                <Sparkles className="h-4 w-4 text-purple-400" />
-                Related by Meaning
-              </label>
-              <div className="space-y-3">
-                {relatedBySense.map((senseGroup) => (
-                  <div key={senseGroup.sense} className="pl-2 border-l-2 border-purple-400/30">
-                    <div className="text-xs text-purple-300 mb-1 font-mono">
-                      {senseGroup.senseLabel}
-                    </div>
-                    <div className="flex flex-wrap gap-1">
-                      {senseGroup.cards.map((relatedCard) => (
-                        <span
-                          key={relatedCard.id}
-                          className="inline-flex items-center px-2 py-0.5 text-xs bg-purple-500/10 text-purple-200 rounded border border-purple-500/20 hover:bg-purple-500/20 cursor-default"
-                          title={relatedCard.category || 'No category'}
-                        >
-                          {relatedCard.title}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Semantic Tags */}
-          {card.senses && card.senses.length > 0 && (
-            <div>
-              <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-                Semantic Tags
-              </label>
-              <div className="flex flex-wrap gap-1">
-                {card.senses.slice(0, 8).map((sense) => (
-                  <span
-                    key={sense}
-                    className="inline-flex items-center px-2 py-0.5 text-xs bg-[var(--bg-primary)] text-[var(--text-tertiary)] rounded border border-[var(--border-subtle)] font-mono"
-                  >
-                    {sense}
-                  </span>
-                ))}
-                {card.senses.length > 8 && (
-                  <span className="text-xs text-[var(--text-tertiary)]">
-                    +{card.senses.length - 8} more
-                  </span>
-                )}
-              </div>
-            </div>
-          )}
-
           {/* Share */}
           <div className="pt-4 border-t border-[var(--border-subtle)]">
             <ShareButtons
               title={`${card.title} - Elden Glass`}
               description={
-                card.description.slice(0, 200) + (card.description.length > 200 ? '...' : '')
+                card.description
+                  ? card.description.slice(0, 200) + (card.description.length > 200 ? '...' : '')
+                  : ''
               }
               variant="default"
               className="share-buttons"

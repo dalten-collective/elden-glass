@@ -495,7 +495,8 @@ function renderComponent(
 
     case 'TitleCard': {
       const id = stringAttr(attrs, 'id') ?? '';
-      return `[title card: ${id}]`;
+      const label = body.trim();
+      return label ? `${label} [title card: ${id}]` : `[title card: ${id}]`;
     }
 
     // Fallback: unknown tags — unwrap if paired, drop if self-closing.

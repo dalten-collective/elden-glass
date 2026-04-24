@@ -23,6 +23,7 @@ import {
   Spec,
 } from '@/components/delay';
 import { ItemCard } from '@/components/items/item-card';
+import { TitleCard } from '@/components/title-cards/title-card-inline';
 import { HashVerification } from '@/components/verification/hash-verification';
 import { cn } from '@/lib/utils';
 import { Callout } from './callout';
@@ -44,6 +45,7 @@ import { SearchTargetFlash } from './search-block-client';
 const mdxComponents = {
   FloatImage,
   ItemCard,
+  TitleCard,
   ArtworkCard,
   LinkPreview,
   MagnifierImage,

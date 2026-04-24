@@ -1,70 +1,77 @@
-export interface HeaderPopup {
-  type: 'titlecard' | 'note' | 'image' | 'webpage';
-  titleCardId?: string; // For type: 'titlecard'
-  note?: string; // For type: 'note'
-  imageUrl?: string; // For type: 'image' or auto-fetched webpage preview
-  title?: string; // For type: 'webpage' or 'note'
-  url?: string; // For type: 'webpage' - clickable link
-}
+import { z } from 'zod';
 
-export interface TitleCard {
-  id: string;
-  term: string; // The word/phrase that triggers this card (stored lowercase for matching)
-  aliases?: string[]; // Additional words/phrases that also trigger this card (stored lowercase)
-  scope: 'global' | 'instance'; // global = all instances, instance = specific location
-  instanceId?: string; // For instance-scoped cards, unique ID of the specific occurrence
-  title: string;
-  description: string;
-  image?: string; // Optional image URL/path (single image cards)
-  images?: string[]; // Optional array of image URLs for split/composite cards
-  section?: string; // Legacy field - will be migrated to category/subcategory
-  category?: string; // Main category (e.g., "Works of Marcel Duchamp", "Elden Ring")
-  subcategory?: string; // Optional subcategory (e.g., "The Readymades", "The Large Glass")
-  source?: 'base' | 'dlc'; // For Elden Ring cards: base game or Shadow of the Erdtree DLC
-  links?: Array<{
-    label: string;
-    url: string;
-  }>;
-  // Split card configuration
-  isSplit?: boolean; // Whether this is a split card (multiple images side-by-side)
-  splitCardIds?: string[]; // IDs of cards referenced in this split card
-  headerPopup?: HeaderPopup; // Optional header popup above split cards
-  // Guidance of Grace connections
-  connections?: Array<{
-    cardId: string; // ID of the connected card
-    label?: string; // Optional label for the connection
-  }>;
-  // Semantic senses (from WordNet via Diomora)
-  senses?: string[]; // WordNet sense keys e.g. ["queen.n.01", "deity.n.01"]
-  axes?: number[]; // Computed axes for each sense (for Nock addressing)
-  createdAt: string;
-  updatedAt: string;
-}
+/**
+ * Schema for optional popups attached to title-card headers.
+ */
+export const headerPopupSchema = z
+  .object({
+    type: z.enum(['titlecard', 'note', 'image', 'webpage']),
+    titleCardId: z.string().optional(),
+    note: z.string().optional(),
+    imageUrl: z.string().optional(),
+    title: z.string().optional(),
+    url: z.string().optional(),
+  })
+  .strict();
 
-export interface TitleCardDatabase {
-  cards: TitleCard[];
-}
+/**
+ * Schema for one canonical item-card record.
+ */
+export const titleCardSchema = z
+  .object({
+    id: z.string(),
+    term: z.string(),
+    aliases: z.array(z.string()).optional(),
+    scope: z.enum(['global', 'instance']).optional(),
+    instanceId: z.string().optional(),
+    title: z.string(),
+    description: z.string().nullable(),
+    image: z.string().nullable().optional(),
+    images: z.array(z.string()).optional(),
+    section: z.string().nullable().optional(),
+    category: z.string().nullable().optional(),
+    subcategory: z.string().nullable().optional(),
+    source: z.string().nullable().optional(),
+    links: z
+      .array(
+        z
+          .object({
+            label: z.string(),
+            url: z.string(),
+          })
+          .strict()
+      )
+      .optional(),
+    isSplit: z.boolean().optional(),
+    splitCardIds: z.array(z.string()).optional(),
+    headerPopup: headerPopupSchema.optional(),
+    connections: z
+      .array(
+        z
+          .object({
+            cardId: z.string(),
+            label: z.string().optional(),
+            linkedTitle: z.string().optional(),
+          })
+          .strict()
+      )
+      .optional(),
+    senses: z.array(z.string()).optional(),
+    axes: z.array(z.number()).optional(),
+    createdAt: z.string(),
+    updatedAt: z.string(),
+  })
+  .strict();
 
-export interface CreateTitleCardRequest {
-  term: string;
-  scope: 'global' | 'instance';
-  instanceId?: string;
-  title: string;
-  description: string;
-  image?: string;
-  links?: Array<{
-    label: string;
-    url: string;
-  }>;
-}
+/**
+ * Schema for the canonical item-card database at data/title-cards.json.
+ */
+export const titleCardDatabaseSchema = z
+  .object({
+    cards: z.array(titleCardSchema),
+  })
+  .strict();
 
-export interface UpdateTitleCardRequest {
-  id: string;
-  title?: string;
-  description?: string;
-  image?: string;
-  links?: Array<{
-    label: string;
-    url: string;
-  }>;
-}
+export type HeaderPopup = z.infer<typeof headerPopupSchema>;
+export type TitleCard = z.infer<typeof titleCardSchema>;
+export type TitleCardDatabase = z.infer<typeof titleCardDatabaseSchema>;

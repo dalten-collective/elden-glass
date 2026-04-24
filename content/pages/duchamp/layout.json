@@ -1,0 +1,11 @@
+{
+  "order": ["rhonda-shearer", "readymades", "chess", "the-boxes", "duchamp-works"],
+  "links": {
+    "duchamp-works": {
+      "href": "/duchamp/duchamp-works",
+      "label": "Duchamp Works",
+      "kind": "interactive",
+      "summary": "Interactive catalogue raisonne view of Duchamp artworks with modal detail browsing rather than article text."
+    }
+  }
+}

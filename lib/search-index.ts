@@ -1,6 +1,6 @@
 import { allContentPagesSorted } from './content';
-import titleCardsData from '../data/title-cards.json';
 import { extractSearchableBlocks } from './search-blocks';
+import { getTitleCards, scoreTitleCardMatch } from './title-cards';
 
 export interface SearchResult {
   id: string;
@@ -10,7 +10,7 @@ export interface SearchResult {
   pageTitle: string;
   targetId?: string; // The block anchor to navigate to on the page
   type?: 'content' | 'titlecard'; // Type of result
-  cardId?: string; // For title cards, the card ID
+  cardId?: string; // For item cards, the card ID
 }
 
 function extractSentences(text: string): string[] {
@@ -76,44 +76,21 @@ export function getSearchIndex(): SearchResult[] {
   return searchIndex;
 }
 
-// Search title cards and return matching results
+// Search item cards and return matching results.
 function searchTitleCards(query: string): SearchResult[] {
-  const lowerQuery = query.toLowerCase();
-  const results: SearchResult[] = [];
-
-  const cards = (
-    titleCardsData as {
-      cards: Array<{
-        id: string;
-        term: string;
-        title: string;
-        description: string;
-        section?: string;
-        category?: string;
-        source?: string;
-      }>;
-    }
-  ).cards;
-
-  for (const card of cards) {
-    const lowerTerm = card.term.toLowerCase();
-    const lowerTitle = card.title.toLowerCase();
-
-    // Check if query matches term or title
-    if (lowerTerm.includes(lowerQuery) || lowerTitle.includes(lowerQuery)) {
-      results.push({
-        id: `titlecard-${card.id}`,
-        sentence: card.title,
-        context: card.description.slice(0, 150) + '...',
-        page: '', // Title cards don't navigate to a page directly
-        pageTitle: card.section || 'Vocabulary',
-        type: 'titlecard',
-        cardId: card.id,
-      });
-    }
-  }
-
-  return results;
+  return getTitleCards()
+    .map((card) => ({ card, score: scoreTitleCardMatch(card, query) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.card.title.localeCompare(b.card.title))
+    .map(({ card }) => ({
+      id: `titlecard-${card.id}`,
+      sentence: card.title,
+      context: card.description ? `${card.description.slice(0, 150)}...` : '',
+      page: '', // Title cards don't navigate to a page directly
+      pageTitle: card.section || 'Vocabulary',
+      type: 'titlecard',
+      cardId: card.id,
+    }));
 }
 
 export function searchContent(query: string, limit = 10): SearchResult[] {
@@ -122,7 +99,7 @@ export function searchContent(query: string, limit = 10): SearchResult[] {
   const index = getSearchIndex();
   const lowerQuery = query.toLowerCase();
 
-  // First, get matching title cards (these go first)
+  // First, get matching item cards (these go first)
   const titleCardResults = searchTitleCards(query);
 
   // Score each content result based on relevance
@@ -158,7 +135,7 @@ export function searchContent(query: string, limit = 10): SearchResult[] {
     .sort((a, b) => b.score - a.score)
     .map(({ result }) => result);
 
-  // Combine: title cards first, then content results
+  // Combine: item cards first, then content results
   const combined = [...titleCardResults, ...contentResults];
 
   return combined.slice(0, limit);
