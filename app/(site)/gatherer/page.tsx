@@ -129,9 +129,9 @@ function GathererContent() {
       }
 
       const queryString = newParams.toString();
-      router.push(queryString ? `/gatherer?${queryString}` : '/gatherer', { scroll: false });
+      window.history.replaceState(null, '', queryString ? `/gatherer?${queryString}` : '/gatherer');
     },
-    [router, searchParams]
+    [searchParams]
   );
 
   // Debounce search input -> URL
@@ -190,11 +190,19 @@ function GathererContent() {
       return;
     }
 
+    if (selectedCard?.id === urlCardId) {
+      return;
+    }
+
+    const pageCard = data?.cards.find((card) => card.id === urlCardId);
+    if (pageCard) {
+      setSelectedCard(pageCard);
+      return;
+    }
+
     const controller = new AbortController();
 
     async function fetchSelectedCard() {
-      setSelectedCard(null);
-
       try {
         const response = await fetch(`/api/title-cards/${encodeURIComponent(urlCardId)}`, {
           signal: controller.signal,
@@ -216,7 +224,7 @@ function GathererContent() {
     fetchSelectedCard();
 
     return () => controller.abort();
-  }, [urlCardId]);
+  }, [data?.cards, selectedCard?.id, urlCardId]);
 
   // Filter handlers that reset cascading filters
   const handleSectionChange = (section: string) => {
