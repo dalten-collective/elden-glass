@@ -962,7 +962,7 @@
       "category": null,
       "subcategory": null,
       "source": null,
-      "image": null,
+      "image": "/images/duchamp/paintings/the-bride-stripped-bare-by-her-bachelors-1923.jpg",
       "images": [],
       "connections": [
         {
@@ -988,7 +988,7 @@
       ],
       "links": [],
       "createdAt": "2024-11-30T00:20:00.000Z",
-      "updatedAt": "2025-12-01T03:13:07.700Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "large.s.01",
         "glass.n.01",
@@ -1014,6 +1014,17 @@
         441345,
         679937,
         527361
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "the-bride-stripped-bare-by-her-bachelors-1923.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 53,
+        "year": "1923"
+      },
+      "aliases": [
+        "The Bride Stripped Bare by Her Bachelors"
       ]
     },
     {
@@ -127196,7 +127207,7 @@
       "category": "The Large Glass",
       "subcategory": "Preparatory Works for The Large Glass",
       "source": null,
-      "image": "https://uploads4.wikiart.org/images/marcel-duchamp/king-and-queen-surrounded-by-swift-nudes-1912.jpg!Large.jpg",
+      "image": "/images/duchamp/paintings/king-and-queen-surrounded-by-swift-nudes-1912.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -127206,7 +127217,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2025-12-01T03:13:07.494Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "king.n.01",
         "queen.n.01",
@@ -127224,7 +127235,15 @@
         571393,
         796673,
         550913
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "king-and-queen-surrounded-by-swift-nudes-1912.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 30,
+        "year": "1912"
+      }
     },
     {
       "id": "1be36163adf51",
@@ -127318,7 +127337,7 @@
       "category": "The Large Glass",
       "subcategory": "Components",
       "source": null,
-      "image": "https://images.nortonsimon.org/iipsrv/iipsrv.fcgi?QLT=100&IIIF=P196338.jpf/full/!668,1002/0/default.jpg",
+      "image": "/images/duchamp/paintings/nine-malice-moulds.jpg",
       "images": [],
       "connections": [
         {
@@ -127393,7 +127412,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.011Z",
-      "updatedAt": "2025-12-01T03:13:07.557Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "nine.s.01",
         "component.n.01",
@@ -127409,7 +127428,14 @@
         550913,
         796673,
         449537
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "nine-malice-moulds.jpg",
+        "period": "Undated Works",
+        "periodYears": "",
+        "displayOrder": 70
+      }
     },
     {
       "id": "0e7acf2a06b3f",
@@ -128584,7 +128610,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:40:00.000Z",
-      "updatedAt": "2025-12-06T22:40:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "wedge.n.01",
         "chastity.n.01",
@@ -128606,7 +128632,14 @@
         455681,
         441345,
         655617
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1954",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 60
+      }
     },
     {
       "id": "female-fig-leaf",
@@ -128618,7 +128651,7 @@
       "category": "Erotic Objects",
       "subcategory": null,
       "source": null,
-      "image": "https://www.toutfait.com/wp-content/uploads/2010/07/Big_Gallery_Image_5511.jpg",
+      "image": "/images/duchamp/paintings/female-fig-leaf-cover-design-for-le-surrealisme-1956.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -128628,7 +128661,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "female.a.01",
         "fig.n.01",
@@ -128654,6 +128687,17 @@
         556033,
         444417,
         556033
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "female-fig-leaf-cover-design-for-le-surrealisme-1956.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 61,
+        "year": "1956"
+      },
+      "aliases": [
+        "Female Fig Leaf (Cover Design for Le Surréalisme)"
       ]
     },
     {
@@ -128676,7 +128720,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "dart.n.01",
         "object.n.01",
@@ -128702,7 +128746,14 @@
         863745,
         547841,
         1123329
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1951/1962",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 59
+      }
     },
     {
       "id": "not-a-shoe",
@@ -128724,7 +128775,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "not.r.01",
         "a.n.01",
@@ -128752,7 +128803,14 @@
         661505,
         1123329,
         571393
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1950",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 58
+      }
     },
     {
       "id": "with-my-tongue-in-my-cheek",
@@ -128764,7 +128822,7 @@
       "category": "Erotic Objects",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads6.wikiart.org/images/marcel-duchamp/with-my-tongue-in-my-cheek-1959.jpg",
+      "image": "/images/duchamp/paintings/with-my-tongue-in-my-cheek-1959.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -128774,7 +128832,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "tongue.n.01",
         "in.n.01",
@@ -128800,7 +128858,15 @@
         1031937,
         549889,
         1200129
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "with-my-tongue-in-my-cheek-1959.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 63,
+        "year": "1959"
+      }
     },
     {
       "id": "selected-details-after-courbet",
@@ -128812,7 +128878,7 @@
       "category": "Late Etchings",
       "subcategory": null,
       "source": null,
-      "image": "https://www.toutfait.com/issues/issue_1/Notes/images/Marceaux.jpg",
+      "image": "/images/duchamp/paintings/selected-details-after-courbet-1968.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -128822,7 +128888,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "selected.a.01",
         "details.n.01",
@@ -128848,7 +128914,15 @@
         878593,
         559105,
         558593
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "selected-details-after-courbet-1968.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 67,
+        "year": "1968"
+      }
     },
     {
       "id": "coffee-mill",
@@ -128870,7 +128944,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "coffee.n.01",
         "mill.n.01",
@@ -128894,7 +128968,14 @@
         750593,
         983041,
         638977
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1911",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 22
+      }
     },
     {
       "id": "chocolate-grinder-no-1",
@@ -128906,7 +128987,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads7.wikiart.org/images/marcel-duchamp/chocolate-grinder-no-1-1913.jpg",
+      "image": "/images/duchamp/paintings/chocolate-grinder-1914.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -128916,7 +128997,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "chocolate.n.01",
         "grinder.n.01",
@@ -128948,6 +129029,17 @@
         338945,
         1433601,
         452609
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "chocolate-grinder-1914.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 37,
+        "year": "1914"
+      },
+      "aliases": [
+        "Chocolate Grinder"
       ]
     },
     {
@@ -128960,7 +129052,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads3.wikiart.org/images/marcel-duchamp/chocolate-grinder-1914.jpg",
+      "image": "/images/duchamp/paintings/chocolate-grinder-1914-1.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -128970,7 +129062,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "chocolate.n.01",
         "grinder.n.01",
@@ -128998,6 +129090,17 @@
         755713,
         668673,
         878593
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "chocolate-grinder-1914-1.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 38,
+        "year": "1914"
+      },
+      "aliases": [
+        "Chocolate Grinder (variant)"
       ]
     },
     {
@@ -129020,7 +129123,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "m.n.01",
         "painting.n.01",
@@ -129038,7 +129141,14 @@
         975361,
         869121,
         536577
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1918",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 46
+      }
     },
     {
       "id": "young-man-and-girl-in-spring",
@@ -129050,7 +129160,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "http://www.toutfait.com/images/articles/godwin/image001.jpg",
+      "image": "/images/duchamp/paintings/young-girl-and-man-in-spring-1911.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129060,7 +129170,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "young.s.01",
         "man.n.01",
@@ -129090,6 +129200,17 @@
         991233,
         653313,
         792577
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "young-girl-and-man-in-spring-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 27,
+        "year": "1911"
+      },
+      "aliases": [
+        "Young Girl and Man in Spring"
       ]
     },
     {
@@ -129102,7 +129223,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://www.toutfait.com/wp-content/uploads/2010/07/Big_Gallery_Image_1597.jpg",
+      "image": "/images/duchamp/paintings/network-of-stoppages-1914.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129112,7 +129233,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:45:00.000Z",
-      "updatedAt": "2025-12-06T22:45:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "network.n.01",
         "pattern.n.01",
@@ -129136,7 +129257,15 @@
         684033,
         334849,
         867585
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "network-of-stoppages-1914.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 39,
+        "year": "1914"
+      }
     },
     {
       "id": "nude-descending-a-staircase",
@@ -129148,7 +129277,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads6.wikiart.org/images/marcel-duchamp/nude-descending-a-staircase-no-2-1912.jpg",
+      "image": "/images/duchamp/paintings/nude-descending-a-staircase-no-2-1912.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129158,7 +129287,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "nude.s.01",
         "descending.a.01",
@@ -129188,6 +129317,17 @@
         661505,
         338945,
         463873
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "nude-descending-a-staircase-no-2-1912.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 31,
+        "year": "1912"
+      },
+      "aliases": [
+        "Nude Descending a Staircase No. 2"
       ]
     },
     {
@@ -129200,7 +129340,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://www.toutfait.com/issues/volume2/issue_4/articles/giunti/images/42_big.jpg",
+      "image": "/images/duchamp/paintings/bride-1912.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129210,7 +129350,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "bride.n.01",
         "piece.n.01",
@@ -129234,6 +129374,17 @@
         575489,
         1002497,
         677889
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "bride-1912.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 29,
+        "year": "1912"
+      },
+      "aliases": [
+        "Bride"
       ]
     },
     {
@@ -129246,7 +129397,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads1.wikiart.org/images/marcel-duchamp/transition-of-virgin-into-a-bride-1912.jpg",
+      "image": "/images/duchamp/paintings/transition-of-virgin-into-a-bride-1912.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129256,7 +129407,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "passage.n.01",
         "virgin.s.01",
@@ -129282,6 +129433,17 @@
         755713,
         658433,
         1090561
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "transition-of-virgin-into-a-bride-1912.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 33,
+        "year": "1912"
+      },
+      "aliases": [
+        "Transition of Virgin into a Bride"
       ]
     },
     {
@@ -129294,7 +129456,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads4.wikiart.org/images/marcel-duchamp/sad-young-man-in-a-train-1911.jpg",
+      "image": "/images/duchamp/paintings/sad-young-man-in-a-train-1911.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129304,7 +129466,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "sad.s.01",
         "young.s.01",
@@ -129336,6 +129498,17 @@
         440321,
         898561,
         444417
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "sad-young-man-in-a-train-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 24,
+        "year": "1911"
+      },
+      "aliases": [
+        "Sad Young Man in a Train"
       ]
     },
     {
@@ -129348,7 +129521,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads0.wikiart.org/images/marcel-duchamp/portrait-of-chess-players-1911.jpg",
+      "image": "/images/duchamp/paintings/portrait-of-chess-players-1911.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129358,7 +129531,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "portrait.n.01",
         "chess.n.01",
@@ -129378,7 +129551,15 @@
         755713,
         641025,
         675841
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-chess-players-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 23,
+        "year": "1911"
+      }
     },
     {
       "id": "etant-donnes",
@@ -129390,7 +129571,7 @@
       "category": "Installations",
       "subcategory": null,
       "source": null,
-      "image": "http://www.toutfait.com/images/articles/godwin/image020.jpg",
+      "image": "/images/duchamp/paintings/given-1-the-waterfall-2-the-illuminating-gas-1966.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129400,7 +129581,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "philadelphia.n.01",
         "museum.n.01",
@@ -129422,6 +129603,17 @@
         461825,
         768001,
         455681
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "given-1-the-waterfall-2-the-illuminating-gas-1966.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 64,
+        "year": "1966"
+      },
+      "aliases": [
+        "Given: 1. The Waterfall, 2. The Illuminating Gas"
       ]
     },
     {
@@ -129444,7 +129636,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "three.s.01",
         "standard.s.01",
@@ -129468,7 +129660,14 @@
         435201,
         651265,
         783361
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1913-14",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 35
+      }
     },
     {
       "id": "selected-details-after-ingres-ii",
@@ -129490,7 +129689,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "selected.a.01",
         "details.n.01",
@@ -129516,7 +129715,14 @@
         666625,
         437249,
         543745
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "year": "1968",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 68
+      }
     },
     {
       "id": "sonata",
@@ -129528,7 +129734,7 @@
       "category": "Paintings",
       "subcategory": null,
       "source": null,
-      "image": "https://uploads2.wikiart.org/images/marcel-duchamp/sonata-1911.jpg",
+      "image": "/images/duchamp/paintings/sonata-1911.jpg",
       "images": [],
       "connections": [],
       "links": [
@@ -129538,7 +129744,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2025-12-06T22:50:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "sonata.n.01",
         "philadelphia.n.01",
@@ -129560,7 +129766,15 @@
         973825,
         670721,
         549889
-      ]
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "sonata-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 25,
+        "year": "1911"
+      }
     },
     {
       "id": "delay-in-glass",
@@ -135367,12 +135581,12 @@
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
-      "image": null,
+      "image": "/images/duchamp/paintings/l-h-o-o-q-mona-lisa-with-moustache-1919.jpg",
       "images": [],
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T13:00:00.000Z",
-      "updatedAt": "2025-12-23T13:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z",
       "senses": [
         "duchamp.n.01",
         "famous.s.01",
@@ -135390,6 +135604,17 @@
         878593,
         644097,
         421889
+      ],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "l-h-o-o-q-mona-lisa-with-moustache-1919.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 48,
+        "year": "1919"
+      },
+      "aliases": [
+        "L.H.O.O.Q. (Mona Lisa with Moustache)"
       ]
     },
     {
@@ -138738,6 +138963,1276 @@
         780289,
         855041
       ]
+    },
+    {
+      "id": "duchamp-work-yvonne-in-kimono-1901",
+      "term": "yvonne in kimono",
+      "title": "Yvonne in Kimono",
+      "description": null,
+      "image": "/images/duchamp/paintings/yvonne-in-kimono-1901.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "yvonne-in-kimono-1901.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 0,
+        "year": "1901"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-yvonne-duchamp-1901",
+      "term": "portrait of yvonne duchamp",
+      "title": "Portrait of Yvonne Duchamp",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-yvonne-duchamp-1901.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-yvonne-duchamp-1901.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 1,
+        "year": "1901"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-church-at-blainville-1902",
+      "term": "church at blainville",
+      "title": "Church at Blainville",
+      "description": null,
+      "image": "/images/duchamp/paintings/church-at-blainville-1902.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "church-at-blainville-1902.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 2,
+        "year": "1902"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-landscape-at-blainville-1902",
+      "term": "landscape at blainville",
+      "title": "Landscape at Blainville",
+      "description": null,
+      "image": "/images/duchamp/paintings/landscape-at-blainville-1902.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "landscape-at-blainville-1902.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 3,
+        "year": "1902"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-parva-domus-magna-quies-1902",
+      "term": "parva domus magna quies",
+      "title": "Parva Domus Magna Quies",
+      "description": null,
+      "image": "/images/duchamp/paintings/parva-domus-magna-quies-1902.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "parva-domus-magna-quies-1902.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 4,
+        "year": "1902"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-play-1902",
+      "term": "play",
+      "title": "Play",
+      "description": null,
+      "image": "/images/duchamp/paintings/play-1902.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "play-1902.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 5,
+        "year": "1902"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-man-seated-by-a-window-1907",
+      "term": "man seated by a window",
+      "title": "Man Seated by a Window",
+      "description": null,
+      "image": "/images/duchamp/paintings/man-seated-by-a-window-1907.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "man-seated-by-a-window-1907.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 6,
+        "year": "1907"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-chauvel-1910",
+      "term": "chauvel",
+      "title": "Chauvel",
+      "description": null,
+      "image": "/images/duchamp/paintings/chauvel-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "chauvel-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 7,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-chess-game-1910",
+      "term": "chess game",
+      "title": "Chess Game",
+      "description": null,
+      "image": "/images/duchamp/paintings/chess-game-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "chess-game-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 8,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-laundry-barge-1910",
+      "term": "laundry barge",
+      "title": "Laundry Barge",
+      "description": null,
+      "image": "/images/duchamp/paintings/laundry-barge-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "laundry-barge-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 9,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-nude-with-black-stockings-1910",
+      "term": "nude with black stockings",
+      "title": "Nude with Black Stockings",
+      "description": null,
+      "image": "/images/duchamp/paintings/nude-with-black-stockings-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "nude-with-black-stockings-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 10,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-dr-dumouchel-1910",
+      "term": "portrait of dr dumouchel",
+      "title": "Portrait of Dr. Dumouchel",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-dr-dumouchel-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-dr-dumouchel-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 11,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-dr-ferdinand-tribout-1910",
+      "term": "portrait of dr ferdinand tribout",
+      "title": "Portrait of Dr. Ferdinand Tribout",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-dr-ferdinand-tribout-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-dr-ferdinand-tribout-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 12,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-the-artist-s-father-1910",
+      "term": "portrait of the artists father",
+      "title": "Portrait of the Artist's Father",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-the-artist-s-father-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-the-artist-s-father-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 13,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-standing-nude-1910",
+      "term": "standing nude",
+      "title": "Standing Nude",
+      "description": null,
+      "image": "/images/duchamp/paintings/standing-nude-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "standing-nude-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 14,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-standing-nude-1910-1",
+      "term": "standing nude variant",
+      "title": "Standing Nude (variant)",
+      "description": null,
+      "image": "/images/duchamp/paintings/standing-nude-1910-1.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "standing-nude-1910-1.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 15,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-two-nudes-1910",
+      "term": "two nudes",
+      "title": "Two Nudes",
+      "description": null,
+      "image": "/images/duchamp/paintings/two-nudes-1910.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Early Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "two-nudes-1910.jpg",
+        "period": "Early Works",
+        "periodYears": "1901-1910",
+        "displayOrder": 16,
+        "year": "1910"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-about-young-sister-1911",
+      "term": "about young sister",
+      "title": "About Young Sister",
+      "description": null,
+      "image": "/images/duchamp/paintings/about-young-sister-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "about-young-sister-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 17,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-baptism-1911",
+      "term": "baptism",
+      "title": "Baptism",
+      "description": null,
+      "image": "/images/duchamp/paintings/baptism-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "baptism-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 18,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-japanese-apple-tree-1911",
+      "term": "japanese apple tree",
+      "title": "Japanese Apple Tree",
+      "description": null,
+      "image": "/images/duchamp/paintings/japanese-apple-tree-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "japanese-apple-tree-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 19,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-landscape-study-for-paradise-1911",
+      "term": "landscape study for paradise",
+      "title": "Landscape Study for Paradise",
+      "description": null,
+      "image": "/images/duchamp/paintings/landscape-study-for-paradise-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "landscape-study-for-paradise-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 20,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-dulcinea-1911",
+      "term": "portrait dulcinea",
+      "title": "Portrait Dulcinea",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-dulcinea-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-dulcinea-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 21,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-the-chess-players-1911",
+      "term": "the chess players",
+      "title": "The Chess Players",
+      "description": null,
+      "image": "/images/duchamp/paintings/the-chess-players-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "the-chess-players-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 26,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-yvonne-and-magdeleine-torn-in-tatters-1911",
+      "term": "yvonne and magdeleine torn in tatters",
+      "title": "Yvonne and Magdeleine Torn in Tatters",
+      "description": null,
+      "image": "/images/duchamp/paintings/yvonne-and-magdeleine-torn-in-tatters-1911.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "yvonne-and-magdeleine-torn-in-tatters-1911.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 28,
+        "year": "1911"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-gustave-candel-s-mother-1912",
+      "term": "portrait of gustave candels mother",
+      "title": "Portrait of Gustave Candel's Mother",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-gustave-candel-s-mother-1912.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-gustave-candel-s-mother-1912.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 32,
+        "year": "1912"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-bicycle-wheel-1913",
+      "term": "bicycle wheel",
+      "title": "Bicycle Wheel",
+      "description": null,
+      "image": "/images/duchamp/paintings/bicycle-wheel-1913.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "bicycle-wheel-1913.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 34,
+        "year": "1913"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-bottlerack-1914",
+      "term": "bottlerack",
+      "title": "Bottlerack",
+      "description": null,
+      "image": "/images/duchamp/paintings/bottlerack-1914.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Major Period",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "bottlerack-1914.jpg",
+        "period": "Major Period",
+        "periodYears": "1911-1914",
+        "displayOrder": 36,
+        "year": "1914"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-glider-containing-a-water-mill-in-neighboring-metals-1915",
+      "term": "glider containing a water mill in neighboring metals",
+      "title": "Glider Containing a Water Mill in Neighboring Metals",
+      "description": null,
+      "image": "/images/duchamp/paintings/glider-containing-a-water-mill-in-neighboring-metals-1915.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "glider-containing-a-water-mill-in-neighboring-metals-1915.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 40,
+        "year": "1915"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-in-advance-of-the-broken-arm-1915",
+      "term": "in advance of the broken arm",
+      "title": "In Advance of the Broken Arm",
+      "description": null,
+      "image": "/images/duchamp/paintings/in-advance-of-the-broken-arm-1915.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "in-advance-of-the-broken-arm-1915.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 41,
+        "year": "1915"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-apolinere-enamelled-1916",
+      "term": "apolinere enameled",
+      "title": "Apolinère Enameled",
+      "description": null,
+      "image": "/images/duchamp/paintings/apolinere-enamelled-1916.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "apolinere-enamelled-1916.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 42,
+        "year": "1916"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-with-hidden-noise-1916",
+      "term": "with hidden noise",
+      "title": "With Hidden Noise",
+      "description": null,
+      "image": "/images/duchamp/paintings/with-hidden-noise-1916.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "with-hidden-noise-1916.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 43,
+        "year": "1916"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-fountain-1917",
+      "term": "fountain",
+      "title": "Fountain",
+      "description": null,
+      "image": "/images/duchamp/paintings/fountain-1917.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "fountain-1917.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 44,
+        "year": "1917"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-to-be-looked-at-from-the-other-side-of-the-glass-with-one-eye-close-to-for-almost-an-hour-1918",
+      "term": "to be looked at from the other side of the glass",
+      "title": "To Be Looked at (from the Other Side of the Glass)",
+      "description": null,
+      "image": "/images/duchamp/paintings/to-be-looked-at-from-the-other-side-of-the-glass-with-one-eye-close-to-for-almost-an-hour-1918.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "to-be-looked-at-from-the-other-side-of-the-glass-with-one-eye-close-to-for-almost-an-hour-1918.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 45,
+        "year": "1918"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-50-cc-of-paris-air-1919",
+      "term": "50 cc of paris air",
+      "title": "50 cc of Paris Air",
+      "description": null,
+      "image": "/images/duchamp/paintings/50-cc-of-paris-air-1919.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "50-cc-of-paris-air-1919.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 47,
+        "year": "1919"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-fresh-widow-1920",
+      "term": "fresh widow",
+      "title": "Fresh Widow",
+      "description": null,
+      "image": "/images/duchamp/paintings/fresh-widow-1920.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "fresh-widow-1920.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 49,
+        "year": "1920"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-rotary-glass-plates-precision-optics-1920",
+      "term": "rotary glass plates precision optics",
+      "title": "Rotary Glass Plates (Precision Optics)",
+      "description": null,
+      "image": "/images/duchamp/paintings/rotary-glass-plates-precision-optics-1920.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "rotary-glass-plates-precision-optics-1920.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 50,
+        "year": "1920"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-the-brawl-at-austerlitz-1921",
+      "term": "the brawl at austerlitz",
+      "title": "The Brawl at Austerlitz",
+      "description": null,
+      "image": "/images/duchamp/paintings/the-brawl-at-austerlitz-1921.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "the-brawl-at-austerlitz-1921.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 51,
+        "year": "1921"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-disks-bearing-spirals-1923",
+      "term": "disks bearing spirals",
+      "title": "Disks Bearing Spirals",
+      "description": null,
+      "image": "/images/duchamp/paintings/disks-bearing-spirals-1923.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "disks-bearing-spirals-1923.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 52,
+        "year": "1923"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-monte-carlo-bond-1924",
+      "term": "monte carlo bond",
+      "title": "Monte Carlo Bond",
+      "description": null,
+      "image": "/images/duchamp/paintings/monte-carlo-bond-1924.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "monte-carlo-bond-1924.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 54,
+        "year": "1924"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-rotary-demisphere-1925",
+      "term": "rotary demisphere",
+      "title": "Rotary Demisphere",
+      "description": null,
+      "image": "/images/duchamp/paintings/rotary-demisphere-1925.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "rotary-demisphere-1925.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 55,
+        "year": "1925"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-cover-design-for-view-magazine-1945",
+      "term": "cover design for view magazine",
+      "title": "Cover Design for View Magazine",
+      "description": null,
+      "image": "/images/duchamp/paintings/cover-design-for-view-magazine-1945.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "cover-design-for-view-magazine-1945.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 56,
+        "year": "1945"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-please-touch-cover-design-for-le-surrealisme-1947",
+      "term": "please touch cover design for le surrealisme",
+      "title": "Please Touch (Cover Design for Le Surréalisme)",
+      "description": null,
+      "image": "/images/duchamp/paintings/please-touch-cover-design-for-le-surrealisme-1947.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "please-touch-cover-design-for-le-surrealisme-1947.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 57,
+        "year": "1947"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-self-portrait-in-profile-1958",
+      "term": "self portrait in profile",
+      "title": "Self Portrait in Profile",
+      "description": null,
+      "image": "/images/duchamp/paintings/self-portrait-in-profile-1958.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "self-portrait-in-profile-1958.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 62,
+        "year": "1958"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-study-for-given-1-the-waterfall-2-illuminating-gas",
+      "term": "study for given 1 the waterfall 2 illuminating gas",
+      "title": "Study for Given: 1. The Waterfall, 2. Illuminating Gas",
+      "description": null,
+      "image": "/images/duchamp/paintings/study-for-given-1-the-waterfall-2-illuminating-gas.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "study-for-given-1-the-waterfall-2-illuminating-gas.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 65
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-the-bec-auer-1967",
+      "term": "the bec auer",
+      "title": "The Bec Auer",
+      "description": null,
+      "image": "/images/duchamp/paintings/the-bec-auer-1967.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "the-bec-auer-1967.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 66,
+        "year": "1967"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-selected-details-after-cranach-1968",
+      "term": "selected details after cranach",
+      "title": "Selected Details After Cranach",
+      "description": null,
+      "image": "/images/duchamp/paintings/selected-details-after-cranach-1968.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Readymades & Later Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "selected-details-after-cranach-1968.jpg",
+        "period": "Readymades & Later Works",
+        "periodYears": "1915-1968",
+        "displayOrder": 69,
+        "year": "1968"
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-jacques-villon",
+      "term": "portrait of jacques villon",
+      "title": "Portrait of Jacques Villon",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-jacques-villon.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Undated Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-jacques-villon.jpg",
+        "period": "Undated Works",
+        "periodYears": "",
+        "displayOrder": 71
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-portrait-of-yvonne-duchamp",
+      "term": "portrait of yvonne duchamp",
+      "title": "Portrait of Yvonne Duchamp",
+      "description": null,
+      "image": "/images/duchamp/paintings/portrait-of-yvonne-duchamp.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Undated Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "portrait-of-yvonne-duchamp.jpg",
+        "period": "Undated Works",
+        "periodYears": "",
+        "displayOrder": 72
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "duchamp-work-the-bush",
+      "term": "the bush",
+      "title": "The Bush",
+      "description": null,
+      "image": "/images/duchamp/paintings/the-bush.jpg",
+      "images": [],
+      "section": "Marcel Duchamp",
+      "category": "Undated Works",
+      "subcategory": null,
+      "source": null,
+      "links": [],
+      "connections": [],
+      "senses": [],
+      "axes": [],
+      "artwork": {
+        "kind": "duchamp-work",
+        "filename": "the-bush.jpg",
+        "period": "Undated Works",
+        "periodYears": "",
+        "displayOrder": 73
+      },
+      "createdAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-24T00:00:00.000Z"
     }
   ]
 }

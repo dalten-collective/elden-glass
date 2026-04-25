@@ -4,7 +4,6 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 
-import { ArtworkCard } from '@/components/artworks/artwork-card';
 import { EldenOrrery } from '@/components/astrology/elden-orrery';
 import {
   AsideInline,
@@ -46,7 +45,6 @@ const mdxComponents = {
   FloatImage,
   ItemCard,
   TitleCard,
-  ArtworkCard,
   LinkPreview,
   MagnifierImage,
   DefinitionItem,

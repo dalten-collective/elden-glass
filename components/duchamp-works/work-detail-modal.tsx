@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -30,18 +31,24 @@ function MetaPair({ label, children }: MetaPairProps) {
 }
 
 export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModalProps) {
+  const [imageFailed, setImageFailed] = useState(false);
+
+  useEffect(() => {
+    setImageFailed(false);
+  }, [artwork?.id]);
+
   if (!artwork) {
     return null;
   }
 
-  const imagePath = `/images/duchamp/paintings/${artwork.filename}`;
+  const imagePath = getDuchampArtworkImage(artwork);
 
   const hasMeta =
-    artwork.medium ||
-    artwork.dimensions ||
-    artwork.collection ||
-    artwork.currentLocation ||
-    artwork.sourceUrl;
+    artwork.artwork.medium ||
+    artwork.artwork.dimensions ||
+    artwork.artwork.collection ||
+    artwork.artwork.currentLocation ||
+    artwork.artwork.sourceUrl;
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
@@ -72,16 +79,23 @@ export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModal
               boxShadow: 'inset 0 0 80px rgba(0,0,0,0.6)',
             }}
           >
-            <div className="relative h-full w-full">
-              <Image
-                src={imagePath}
-                alt={artwork.title}
-                fill
-                sizes="(max-width: 768px) 96vw, 55vw"
-                className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
-                unoptimized
-              />
-            </div>
+            {imagePath && !imageFailed ? (
+              <div className="relative h-full w-full">
+                <Image
+                  src={imagePath}
+                  alt={artwork.title}
+                  fill
+                  sizes="(max-width: 768px) 96vw, 55vw"
+                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
+                  unoptimized={imagePath.startsWith('/')}
+                  onError={() => setImageFailed(true)}
+                />
+              </div>
+            ) : (
+              <p className="font-serif text-base italic text-[var(--text-tertiary)]">
+                Image not available
+              </p>
+            )}
           </div>
 
           <div className="flex min-h-0 flex-col overflow-y-auto border-t border-[rgb(201_169_97/0.12)] md:border-l md:border-t-0">
@@ -92,25 +106,31 @@ export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModal
               <DialogPrimitive.Title className="font-serif text-xl leading-tight text-[var(--text-primary)] sm:text-[1.45rem]">
                 {artwork.title}
               </DialogPrimitive.Title>
-              {artwork.year && (
+              {artwork.artwork.year && (
                 <p className="font-serif text-sm italic text-[var(--text-tertiary)]">
-                  {artwork.year}
+                  {artwork.artwork.year}
                 </p>
               )}
             </div>
 
             {hasMeta && (
               <dl className="space-y-4 border-b border-[rgb(201_169_97/0.12)] px-6 py-5">
-                {artwork.medium && <MetaPair label="Medium">{artwork.medium}</MetaPair>}
-                {artwork.dimensions && <MetaPair label="Dimensions">{artwork.dimensions}</MetaPair>}
-                {artwork.collection && <MetaPair label="Collection">{artwork.collection}</MetaPair>}
-                {artwork.currentLocation && (
-                  <MetaPair label="Location">{artwork.currentLocation}</MetaPair>
+                {artwork.artwork.medium && (
+                  <MetaPair label="Medium">{artwork.artwork.medium}</MetaPair>
                 )}
-                {artwork.sourceUrl && (
+                {artwork.artwork.dimensions && (
+                  <MetaPair label="Dimensions">{artwork.artwork.dimensions}</MetaPair>
+                )}
+                {artwork.artwork.collection && (
+                  <MetaPair label="Collection">{artwork.artwork.collection}</MetaPair>
+                )}
+                {artwork.artwork.currentLocation && (
+                  <MetaPair label="Location">{artwork.artwork.currentLocation}</MetaPair>
+                )}
+                {artwork.artwork.sourceUrl && (
                   <MetaPair label="Source">
                     <a
-                      href={artwork.sourceUrl}
+                      href={artwork.artwork.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-[var(--accent-gold)] transition-colors hover:text-[var(--text-primary)]"
@@ -123,22 +143,22 @@ export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModal
               </dl>
             )}
 
-            {artwork.note && (
+            {artwork.description && (
               <blockquote className="relative border-b border-[rgb(201_169_97/0.12)] px-6 py-5">
                 <span
                   aria-hidden
                   className="absolute left-6 top-5 h-[calc(100%-2.5rem)] w-0.5 bg-[var(--accent-gold)] opacity-60"
                 />
                 <p className="pl-4 font-serif text-sm italic leading-relaxed text-[var(--text-secondary)]">
-                  {artwork.note}
+                  {artwork.description}
                 </p>
               </blockquote>
             )}
 
-            {artwork.articleSlug && (
+            {artwork.artwork.articleSlug && (
               <div className="mt-auto px-6 py-5">
                 <Link
-                  href={`/${artwork.articleSlug}` as never}
+                  href={`/${artwork.artwork.articleSlug}` as never}
                   onClick={() => onOpenChange(false)}
                   className="group inline-flex w-full items-center justify-between gap-3 rounded-sm border border-[rgb(201_169_97/0.35)] bg-[rgba(201,169,97,0.04)] px-4 py-3 font-serif text-sm text-[var(--accent-gold)] transition-all hover:border-[var(--accent-gold)] hover:bg-[rgba(201,169,97,0.1)] hover:text-[var(--text-primary)]"
                 >
@@ -151,5 +171,12 @@ export function WorkDetailModal({ artwork, open, onOpenChange }: WorkDetailModal
         </DialogPrimitive.Content>
       </DialogPrimitive.Portal>
     </DialogPrimitive.Root>
+  );
+}
+
+function getDuchampArtworkImage(artwork: DuchampArtwork): string | null {
+  return (
+    artwork.image ??
+    (artwork.artwork.filename ? `/images/duchamp/paintings/${artwork.artwork.filename}` : null)
   );
 }
