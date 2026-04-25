@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { getTitleCards, scoreTitleCardMatch, toPublicTitleCard } from '@/lib/title-cards';
+import { searchItemCards } from '@/lib/search-index';
+import { getTitleCards, toPublicTitleCard } from '@/lib/title-cards';
 
 export const dynamic = 'force-dynamic';
 
@@ -36,11 +37,7 @@ export async function GET(request: Request) {
 
     // Apply filters
     if (query) {
-      cards = cards
-        .map((card) => ({ card, score: scoreTitleCardMatch(card, query) }))
-        .filter(({ score }) => score > 0)
-        .sort((a, b) => b.score - a.score || a.card.title.localeCompare(b.card.title))
-        .map(({ card }) => card);
+      cards = searchItemCards(query);
     }
 
     if (section) {
