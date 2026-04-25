@@ -1,1 +1,1 @@
-export type { DuchampArtwork, DuchampPeriod } from '@/lib/duchamp-artworks-schema';
+export type { DuchampArtwork, DuchampPeriod } from '@/lib/duchamp-artworks';

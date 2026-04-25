@@ -153,9 +153,9 @@ orientation:
   references them via a `links:` entry. `app/api/**` contains JSON endpoints
   (search, title cards, sense index, and agent-facing `llms` routes).
 
-- **Structured data lives in `data/`** — title cards, sense index,
-  manuscripts manifest, Duchamp artworks catalog, xenotext theories. See
-  `data/README.md`.
+- **Structured data lives in `data/`** — title cards, including Duchamp
+  artwork metadata, sense index, manuscripts manifest, and xenotext theories.
+  See `data/README.md`.
 
 - **Generation machinery lives in `lib/`.**
   Key files: `lib/content.ts`, `lib/content-tree.ts`, `lib/sidebar.ts`,

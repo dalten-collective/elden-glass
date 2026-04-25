@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import type { DuchampArtwork } from '@/types/duchamp-artworks';
@@ -10,7 +11,12 @@ interface DuchampWorkTileProps {
 }
 
 export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
-  const imagePath = `/images/duchamp/paintings/${artwork.filename}`;
+  const imagePath = getDuchampArtworkImage(artwork);
+  const [imageFailed, setImageFailed] = useState(false);
+
+  useEffect(() => {
+    setImageFailed(false);
+  }, [imagePath]);
 
   return (
     <button
@@ -26,14 +32,21 @@ export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
             '0 0 24px rgba(0,0,0,0.65), inset 0 1px 1px rgba(201,169,97,0.08), inset 0 -1px 1px rgba(0,0,0,0.4)',
         }}
       >
-        <Image
-          src={imagePath}
-          alt={artwork.title}
-          fill
-          sizes="(max-width: 640px) 45vw, 30vw"
-          className="cursor-pointer object-contain p-3 transition-transform duration-700 ease-out group-hover:scale-[1.015]"
-          unoptimized
-        />
+        {imagePath && !imageFailed ? (
+          <Image
+            src={imagePath}
+            alt={artwork.title}
+            fill
+            sizes="(max-width: 640px) 45vw, 30vw"
+            className="cursor-pointer object-contain p-3 transition-transform duration-700 ease-out group-hover:scale-[1.015]"
+            unoptimized={imagePath.startsWith('/')}
+            onError={() => setImageFailed(true)}
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center p-4 text-center font-serif text-sm italic text-[var(--text-tertiary)]">
+            Image not available
+          </div>
+        )}
         <div
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
           style={{
@@ -47,10 +60,19 @@ export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
         <h3 className="font-serif text-sm leading-snug text-[var(--text-primary)] transition-colors duration-300 group-hover:text-[var(--accent-gold)]">
           {artwork.title}
         </h3>
-        {artwork.year && (
-          <p className="font-serif text-xs italic text-[var(--text-tertiary)]">{artwork.year}</p>
+        {artwork.artwork.year && (
+          <p className="font-serif text-xs italic text-[var(--text-tertiary)]">
+            {artwork.artwork.year}
+          </p>
         )}
       </div>
     </button>
+  );
+}
+
+function getDuchampArtworkImage(artwork: DuchampArtwork): string | null {
+  return (
+    artwork.image ??
+    (artwork.artwork.filename ? `/images/duchamp/paintings/${artwork.artwork.filename}` : null)
   );
 }

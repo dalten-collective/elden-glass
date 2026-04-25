@@ -1,88 +1,68 @@
 # Duchamp Works Data README
 
-This file documents the JSON data that powers the `/duchamp/duchamp-works` gallery. It is written for authors and editors who want to update the catalog without touching TypeScript or React.
+This file documents the item-card data that powers the `/duchamp/duchamp-works` gallery.
 
-## Where data lives
+## Where Data Lives
 
-- Duchamp catalog data lives in `data/duchamp-artworks.json`.
-- The schema is enforced by `lib/duchamp-artworks-schema.ts`.
-- The data is parsed in `lib/duchamp-artworks.ts`, so schema validation runs during the site build.
+- Duchamp works are canonical item cards in `data/title-cards.json`.
+- The schema is enforced by `types/title-cards.ts`.
+- The gallery is derived by `lib/duchamp-artworks.ts`.
 - Image files for this catalog live in `public/images/duchamp/paintings/`.
 
-The JSON file is a top-level array of periods. Each period has a `title`, a `years` label, and a `works` array:
+There is no separate Duchamp artwork catalog. A card appears in the gallery when it has an
+`artwork` block with `kind: "duchamp-work"`.
 
-```json
-[
-  {
-    "title": "Major Period",
-    "years": "1911-1914",
-    "works": [
-      {
-        "title": "Bride",
-        "year": "1912",
-        "filename": "bride-1912.jpg"
-      }
-    ]
-  }
-]
-```
+## Item-Card Shape
 
-## Schema reference
-
-The fields below apply to each object inside a period's `works` array.
-
-| Field             | Required?                                                    | Example                                                              | Rules                                                                                     |
-| ----------------- | ------------------------------------------------------------ | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `title`           | Yes                                                          | `"Bride"`                                                            | Plain text string.                                                                        |
-| `year`            | Optional in the schema, but expected for new catalog entries | `"1912"`                                                             | String value. Use the display year you want readers to see.                               |
-| `filename`        | Yes                                                          | `"bride-1912.jpg"`                                                   | Plain text string. This should match an image file in `public/images/duchamp/paintings/`. |
-| `medium`          | Optional                                                     | `"Oil on canvas"`                                                    | Plain text string.                                                                        |
-| `dimensions`      | Optional                                                     | `"89.5 x 55.9 cm"`                                                   | Plain text string.                                                                        |
-| `collection`      | Optional                                                     | `"Philadelphia Museum of Art"`                                       | Plain text string.                                                                        |
-| `currentLocation` | Optional                                                     | `"Philadelphia"`                                                     | Plain text string.                                                                        |
-| `sourceUrl`       | Optional                                                     | `"https://www.philamuseum.org/collection/object/51449"`              | Must be a full URL, including `https://`.                                                 |
-| `note`            | Optional                                                     | `"Painted during Duchamp's transition into the Large Glass period."` | Plain text string with a maximum of **200 words**.                                        |
-| `articleSlug`     | Optional                                                     | `"impossible-bed-i"`                                                 | Plain text string. Must **not** start with a leading slash.                               |
-
-## How to add a work
-
-1. Open `data/duchamp-artworks.json`.
-2. Find the period where the new work belongs, then open that period's `works` array.
-3. Paste a new object inside that `works` array. Put it next to the other works in that period, using normal JSON commas.
-4. For a new catalog entry, use `title`, `year`, and `filename` as your minimum fields.
-5. Name the image file in kebab-case with a year suffix, such as `impossible-bed-i-1966.jpg`.
-6. Place that image file in `public/images/duchamp/paintings/`.
-7. Add any optional metadata you have, such as `medium`, `dimensions`, `collection`, `currentLocation`, `sourceUrl`, `note`, or `articleSlug`.
-8. Save the JSON and run `npm run build` (or `npm run check`) so the schema validator can confirm the entry is valid.
-
-Example entry:
+The item card owns the title, description, links, connections, section, category, and search identity.
+The `artwork` block only stores gallery-specific metadata:
 
 ```json
 {
-  "title": "Impossible Bed",
-  "year": "1966",
-  "filename": "impossible-bed-i-1966.jpg",
-  "medium": "Photograph",
-  "sourceUrl": "https://example.com/impossible-bed",
-  "articleSlug": "impossible-bed-i"
+  "id": "duchamp-work-bicycle-wheel-1913",
+  "term": "bicycle wheel",
+  "title": "Bicycle Wheel",
+  "description": null,
+  "image": "/images/duchamp/paintings/bicycle-wheel-1913.jpg",
+  "section": "Marcel Duchamp",
+  "category": "Major Period",
+  "artwork": {
+    "kind": "duchamp-work",
+    "year": "1913",
+    "period": "Major Period",
+    "periodYears": "1911-1914",
+    "displayOrder": 33
+  },
+  "createdAt": "2026-04-24T00:00:00.000Z",
+  "updatedAt": "2026-04-24T00:00:00.000Z"
 }
 ```
 
-## How to link a work to a full article
+## Artwork Metadata
 
-Add an `articleSlug` field to the work entry:
+| Field             | Required? | Example                                                 | Rules                                                                                                |
+| ----------------- | --------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `kind`            | Yes       | `"duchamp-work"`                                        | Literal marker used by the gallery filter.                                                           |
+| `filename`        | Optional  | `"bride-1912.jpg"`                                      | Must match an image file in `public/images/duchamp/paintings/` when local fallback lookup is needed. |
+| `period`          | Yes       | `"Major Period"`                                        | Gallery grouping label.                                                                              |
+| `displayOrder`    | Yes       | `28`                                                    | Non-negative integer used to sort works inside and across periods.                                   |
+| `year`            | Optional  | `"1912"`                                                | Display year.                                                                                        |
+| `periodYears`     | Optional  | `"1911-1914"`                                           | Display range for the period heading.                                                                |
+| `medium`          | Optional  | `"Oil on canvas"`                                       | Plain text string.                                                                                   |
+| `dimensions`      | Optional  | `"89.5 x 55.9 cm"`                                      | Plain text string.                                                                                   |
+| `collection`      | Optional  | `"Philadelphia Museum of Art"`                          | Plain text string.                                                                                   |
+| `currentLocation` | Optional  | `"Philadelphia"`                                        | Plain text string.                                                                                   |
+| `sourceUrl`       | Optional  | `"https://www.philamuseum.org/collection/object/51449"` | Must be a full URL, including `https://`.                                                            |
+| `articleSlug`     | Optional  | `"duchamp/rhonda-shearer/impossible-bed-i"`             | Must not start with a leading slash.                                                                 |
 
-```json
-"articleSlug": "impossible-bed-i"
-```
+## How To Add A Work
 
-That slug resolves against the site's catch-all MDX route, so an MDX file at `content/pages/impossible-bed-i.mdx` will be reachable from the work card. For the article authoring pattern, use `content/pages/impossible-bed-i.mdx` as the model instead of duplicating MDX guidance here.
+1. Open `data/title-cards.json`.
+2. Add or update an item card for the work.
+3. Set `image` to the local gallery image path when one is available.
+4. Add an `artwork` block with at least `kind`, `period`, and `displayOrder`.
+5. Place local image files in `public/images/duchamp/paintings/`.
+6. Run `npm run check` so the item-card schema validates the entry.
 
-## What happens if I break the schema
-
-If the JSON does not match the schema, the site build fails when `lib/duchamp-artworks.ts` parses `data/duchamp-artworks.json`. The error points to the field path and explains the problem, which makes it straightforward to fix the entry and rerun the build. A typical message looks like this:
-
-```text
-path: [0, "works", 0, "articleSlug"]
-message: articleSlug must not start with a leading slash.
-```
+Use an existing item card when one already represents the work. The goal is one canonical card with
+the story and gallery metadata together, not a separate artwork record that can drift.
