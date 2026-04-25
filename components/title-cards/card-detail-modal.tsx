@@ -74,7 +74,6 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
                   alt={card.title}
                   fill
                   className="object-contain"
-                  unoptimized
                   onError={() => setImageFailed(true)}
                 />
               )}

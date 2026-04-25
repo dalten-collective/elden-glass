@@ -15,6 +15,31 @@ export const headerPopupSchema = z
   .strict();
 
 /**
+ * Optional metadata for item cards that also represent catalogued artworks.
+ */
+export const artworkMetadataSchema = z
+  .object({
+    kind: z.literal('duchamp-work'),
+    filename: z.string().optional(),
+    year: z.string().optional(),
+    period: z.string(),
+    periodYears: z.string().optional(),
+    displayOrder: z.number().int().nonnegative(),
+    medium: z.string().optional(),
+    dimensions: z.string().optional(),
+    collection: z.string().optional(),
+    currentLocation: z.string().optional(),
+    sourceUrl: z.string().url().optional(),
+    articleSlug: z
+      .string()
+      .refine((value) => !value.startsWith('/'), {
+        message: 'articleSlug must not start with a leading slash.',
+      })
+      .optional(),
+  })
+  .strict();
+
+/**
  * Schema for one canonical item-card record.
  */
 export const titleCardSchema = z
@@ -45,6 +70,7 @@ export const titleCardSchema = z
     isSplit: z.boolean().optional(),
     splitCardIds: z.array(z.string()).optional(),
     headerPopup: headerPopupSchema.optional(),
+    artwork: artworkMetadataSchema.optional(),
     connections: z
       .array(
         z
@@ -73,5 +99,6 @@ export const titleCardDatabaseSchema = z
   .strict();
 
 export type HeaderPopup = z.infer<typeof headerPopupSchema>;
+export type ArtworkMetadata = z.infer<typeof artworkMetadataSchema>;
 export type TitleCard = z.infer<typeof titleCardSchema>;
 export type TitleCardDatabase = z.infer<typeof titleCardDatabaseSchema>;

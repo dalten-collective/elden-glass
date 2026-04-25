@@ -1,14 +1,8 @@
-'use client';
-
-import { useState } from 'react';
-
-import { DuchampWorkTile } from '@/components/duchamp-works/duchamp-work-tile';
-import { WorkDetailModal } from '@/components/duchamp-works/work-detail-modal';
-import { duchampArtworks } from '@/lib/duchamp-artworks';
-import type { DuchampArtwork } from '@/types/duchamp-artworks';
+import { DuchampWorksGallery } from '@/components/duchamp-works/duchamp-works-gallery';
+import { getDuchampArtworkPeriods } from '@/lib/duchamp-artworks';
 
 export default function DuchampWorksPreviewPage() {
-  const [selectedArtwork, setSelectedArtwork] = useState<DuchampArtwork | null>(null);
+  const periods = getDuchampArtworkPeriods();
 
   return (
     <>
@@ -26,52 +20,7 @@ export default function DuchampWorksPreviewPage() {
         </p>
       </header>
 
-      <div className="space-y-16 sm:space-y-20">
-        {duchampArtworks.map((period) => (
-          <section key={period.title} aria-labelledby={slugify(period.title)}>
-            <header className="mb-6 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[rgb(201_169_97/0.18)] pb-4">
-              <h2
-                id={slugify(period.title)}
-                className="font-serif text-xl leading-tight text-[var(--text-primary)] sm:text-2xl"
-              >
-                {period.title}
-              </h2>
-              {period.years && (
-                <p className="font-serif text-xs uppercase tracking-[0.3em] text-[var(--accent-gold)] sm:text-sm">
-                  {period.years}
-                </p>
-              )}
-            </header>
-
-            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-10">
-              {period.works.map((artwork) => (
-                <DuchampWorkTile
-                  key={artwork.filename}
-                  artwork={artwork}
-                  onSelect={setSelectedArtwork}
-                />
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
-
-      <WorkDetailModal
-        artwork={selectedArtwork}
-        open={selectedArtwork !== null}
-        onOpenChange={(open) => {
-          if (!open) {
-            setSelectedArtwork(null);
-          }
-        }}
-      />
+      <DuchampWorksGallery periods={periods} />
     </>
   );
-}
-
-function slugify(value: string): string {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
 }
