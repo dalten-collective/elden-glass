@@ -68,19 +68,6 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Prevent body scroll when search is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
-
   // Go to search page
   const goToSearchPage = () => {
     if (query.trim()) {
@@ -172,7 +159,7 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
         <div
           className={
             variant === 'sidebar'
-              ? 'fixed left-[300px] top-[120px] w-[500px] bg-[var(--ink-2)] border border-[var(--pane-edge)] shadow-2xl overflow-hidden z-[100] max-h-[70vh] overflow-y-auto'
+              ? 'absolute left-0 right-0 top-full mt-2 max-h-[60vh] overflow-y-auto border border-[var(--pane-edge)] bg-[var(--ink-2)] shadow-2xl z-[100] lg:fixed lg:left-[300px] lg:right-auto lg:top-[120px] lg:mt-0 lg:w-[min(500px,calc(100vw-320px))] lg:max-h-[70vh]'
               : 'absolute top-full mt-2 w-full bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-50 max-h-[70vh] overflow-y-auto'
           }
         >
