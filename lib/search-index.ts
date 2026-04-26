@@ -14,6 +14,7 @@ export interface SearchDocument {
   title: string;
   pageTitle: string;
   summary: string;
+  context: string;
   body: string;
   headings: string;
   section: string;
@@ -63,6 +64,7 @@ const STORE_FIELDS = [
   'title',
   'pageTitle',
   'summary',
+  'context',
   'body',
   'section',
   'category',
@@ -209,6 +211,7 @@ function contentPageToSearchDocuments(page: ContentPage): SearchDocument[] {
     title: page.title,
     pageTitle: page.title,
     summary: page.summary,
+    context: page.summary,
     headings: page.headings.map((heading) => heading.text).join(' '),
     section: '',
     category: '',
@@ -228,6 +231,7 @@ function contentPageToSearchDocuments(page: ContentPage): SearchDocument[] {
     ...extractSearchableBlocks(page.body.raw).map((block, index) => ({
       ...base,
       id: `content:${page.slug}:${index}:${block.id}`,
+      summary: '',
       body: block.text,
       targetId: block.id,
     })),
@@ -240,6 +244,7 @@ function critiqueToSearchDocuments(critique: Critique): SearchDocument[] {
     title: critique.title,
     pageTitle: critique.title,
     summary: critique.summary,
+    context: critique.summary,
     headings: '',
     section: 'Critiques',
     category: critique.targetTitle,
@@ -259,6 +264,7 @@ function critiqueToSearchDocuments(critique: Critique): SearchDocument[] {
     ...extractSearchableBlocks(critique.body.raw).map((block, index) => ({
       ...base,
       id: `critique:${critique.slug}:${index}:${block.id}`,
+      summary: '',
       body: block.text,
       targetId: block.id,
     })),
@@ -277,6 +283,7 @@ function getCustomPageSearchDocuments(): SearchDocument[] {
       title: entry.title,
       pageTitle: entry.title,
       summary: entry.summary,
+      context: entry.summary,
       body: entry.summary,
       headings: '',
       section: entry.kind,
@@ -298,6 +305,7 @@ function titleCardToSearchDocument(card: TitleCard): SearchDocument {
     title: publicCard.title,
     pageTitle: publicCard.section || 'Item Cards',
     summary: publicCard.description ?? '',
+    context: publicCard.description ?? '',
     body: publicCard.description ?? '',
     headings: '',
     section: publicCard.section ?? '',
@@ -317,7 +325,7 @@ function toSearchResult(document: SearchDocument): SearchResult {
       document.kind === 'custom-page'
         ? document.title
         : snippetFromText(document.body || document.title),
-    context: snippetFromText(document.summary || document.body),
+    context: snippetFromText(document.context || document.summary || document.body),
     page: document.url,
     pageTitle: document.pageTitle,
     targetId: document.targetId,

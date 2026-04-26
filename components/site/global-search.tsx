@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, BookText } from 'lucide-react';
+import { dispatchSearchTarget, savePendingSearchTarget } from '@/lib/search-navigation';
 
 interface SearchResult {
   id: string;
@@ -15,11 +16,21 @@ interface SearchResult {
   cardId?: string;
 }
 
+const SEARCH_PREVIEW_LIMIT = 8;
+const SEARCH_PREVIEW_CANDIDATE_LIMIT = 64;
+const SEARCH_PREVIEW_MAX_RESULTS_PER_PAGE = 2;
+
 interface GlobalSearchProps {
   variant?: 'sidebar' | 'topbar';
+  onSearchNavigate?: (navigate: () => void) => void;
+  onResultNavigate?: (navigate: () => void) => void;
 }
 
-export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
+export function GlobalSearch({
+  variant = 'topbar',
+  onSearchNavigate,
+  onResultNavigate,
+}: GlobalSearchProps) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +39,11 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
   const router = useRouter();
   const searchRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const shouldShowPreview = variant !== 'sidebar' || Boolean(onResultNavigate);
 
   // Debounced search
   useEffect(() => {
-    if (query.length < 2) {
+    if (!shouldShowPreview || query.length < 2) {
       setResults([]);
       setIsOpen(false);
       return;
@@ -40,10 +52,11 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
     setIsLoading(true);
     const timer = setTimeout(async () => {
       try {
-        // Get top 8 results for dropdown preview
-        const response = await fetch(`/api/search?q=${encodeURIComponent(query)}&limit=8`);
+        const response = await fetch(
+          `/api/search?q=${encodeURIComponent(query)}&limit=${SEARCH_PREVIEW_CANDIDATE_LIMIT}`
+        );
         const data = await response.json();
-        setResults(data.results || []);
+        setResults(buildPreviewResults(data.results || []));
         setIsOpen(true); // Always show dropdown when searching
         setSelectedIndex(0);
       } catch (error) {
@@ -54,7 +67,7 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
     }, 300);
 
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, shouldShowPreview]);
 
   // Click outside to close
   useEffect(() => {
@@ -70,13 +83,23 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
 
   // Go to search page
   const goToSearchPage = () => {
+    const destination = query.trim() ? `/search?q=${encodeURIComponent(query.trim())}` : '/search';
+
+    const navigate = () => router.push(destination as any);
+
     if (query.trim()) {
       setIsOpen(false);
       setQuery('');
-      router.push(`/search?q=${encodeURIComponent(query.trim())}`);
     } else {
-      router.push('/search');
+      setIsOpen(false);
     }
+
+    if (onSearchNavigate) {
+      onSearchNavigate(navigate);
+      return;
+    }
+
+    navigate();
   };
 
   // Keyboard navigation
@@ -105,15 +128,34 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
     setIsOpen(false);
     setQuery('');
 
-    if (result.type === 'titlecard' && result.cardId) {
-      router.push(
-        `/gatherer?card=${encodeURIComponent(result.cardId)}&q=${encodeURIComponent(result.sentence)}`
-      );
+    const navigate = () => {
+      if (result.type === 'titlecard' && result.cardId) {
+        router.push(
+          `/gatherer?card=${encodeURIComponent(result.cardId)}&q=${encodeURIComponent(result.sentence)}`
+        );
+        return;
+      }
+
+      if (result.targetId) {
+        if (window.location.pathname === result.page) {
+          dispatchSearchTarget(result.targetId);
+          return;
+        }
+
+        savePendingSearchTarget({ page: result.page, targetId: result.targetId });
+        router.push(result.page as any, { scroll: false });
+        return;
+      }
+
+      router.push(result.page as any);
+    };
+
+    if (onResultNavigate) {
+      onResultNavigate(navigate);
       return;
     }
 
-    const destination = result.targetId ? `${result.page}#${result.targetId}` : result.page;
-    router.push(destination as any);
+    navigate();
   };
 
   const handleClear = () => {
@@ -140,7 +182,9 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
-          onFocus={() => query.length >= 2 && results.length > 0 && setIsOpen(true)}
+          onFocus={() =>
+            shouldShowPreview && query.length >= 2 && results.length > 0 && setIsOpen(true)
+          }
           placeholder="Search the site..."
           className="w-full pl-10 pr-10 py-2 bg-[rgb(var(--bg-secondary-rgb)/0.5)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] focus:border-transparent transition-all"
         />
@@ -155,11 +199,11 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
       </div>
 
       {/* Dropdown Results */}
-      {isOpen && (
+      {shouldShowPreview && isOpen && (
         <div
           className={
             variant === 'sidebar'
-              ? 'absolute left-0 right-0 top-full mt-2 max-h-[60vh] overflow-y-auto border border-[var(--pane-edge)] bg-[var(--ink-2)] shadow-2xl z-[100] lg:fixed lg:left-[300px] lg:right-auto lg:top-[120px] lg:mt-0 lg:w-[min(500px,calc(100vw-320px))] lg:max-h-[70vh]'
+              ? 'absolute left-0 right-0 top-full mt-2 max-h-[60vh] overflow-y-auto border border-[var(--pane-edge)] bg-[var(--ink-2)] shadow-2xl z-[100]'
               : 'absolute top-full mt-2 w-full bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-50 max-h-[70vh] overflow-y-auto'
           }
         >
@@ -231,6 +275,27 @@ export function GlobalSearch({ variant = 'topbar' }: GlobalSearchProps) {
       )}
     </div>
   );
+}
+
+function buildPreviewResults(results: SearchResult[]): SearchResult[] {
+  const pageCounts = new Map<string, number>();
+  const preview: SearchResult[] = [];
+
+  for (const result of results) {
+    const count = pageCounts.get(result.page) ?? 0;
+    if (count >= SEARCH_PREVIEW_MAX_RESULTS_PER_PAGE) {
+      continue;
+    }
+
+    pageCounts.set(result.page, count + 1);
+    preview.push(result);
+
+    if (preview.length >= SEARCH_PREVIEW_LIMIT) {
+      return preview;
+    }
+  }
+
+  return preview;
 }
 
 // Helper function to highlight matching text

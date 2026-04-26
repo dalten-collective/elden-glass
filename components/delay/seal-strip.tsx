@@ -83,7 +83,18 @@ export function SealStrip({ navigation, stairSeal }: SealStripProps) {
           <SheetContent className="w-[min(26rem,calc(100vw-1rem))] max-w-[calc(100vw-1rem)] p-0">
             <SheetTitle className="sr-only">Elden Glass Navigation</SheetTitle>
             <div onClick={(event) => handleSheetNav(event, () => setOpen(false))}>
-              <StairNav navigation={navigation} seal={stairSeal} />
+              <StairNav
+                navigation={navigation}
+                seal={stairSeal}
+                onSearchNavigate={(navigate) => {
+                  setOpen(false);
+                  window.setTimeout(navigate, 180);
+                }}
+                onSearchResultNavigate={(navigate) => {
+                  setOpen(false);
+                  window.setTimeout(navigate, 180);
+                }}
+              />
             </div>
           </SheetContent>
         </Sheet>

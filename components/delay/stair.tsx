@@ -34,13 +34,22 @@ type StairNavProps = {
   navigation: SiteNavigation;
   /** Optional bottom-of-stair seal — e.g. "LIVING · THESIS / Updated Apr 21". */
   seal?: StairSealCopy;
+  /** Lets mobile chrome close before the search page navigation runs. */
+  onSearchNavigate?: (navigate: () => void) => void;
+  /** Lets mobile chrome close before a selected search result navigates. */
+  onSearchResultNavigate?: (navigate: () => void) => void;
 };
 
 // Single marker for every rung and section header. Changing the glyph
 // in one place ripples through the whole stair.
 const RUNG_MARKER = '§';
 
-export function StairNav({ navigation, seal }: StairNavProps) {
+export function StairNav({
+  navigation,
+  seal,
+  onSearchNavigate,
+  onSearchResultNavigate,
+}: StairNavProps) {
   const pathname = usePathname() ?? '/';
 
   return (
@@ -74,7 +83,11 @@ export function StairNav({ navigation, seal }: StairNavProps) {
       </div>
 
       <div style={{ margin: '0 0 24px', paddingRight: 8 }}>
-        <GlobalSearch variant="sidebar" />
+        <GlobalSearch
+          variant="sidebar"
+          onSearchNavigate={onSearchNavigate}
+          onResultNavigate={onSearchResultNavigate}
+        />
       </div>
 
       {navigation.primary.map((item) => (
