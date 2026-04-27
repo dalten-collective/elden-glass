@@ -143,8 +143,16 @@ function MartianOrbitMark() {
           x2="0"
           y2="-25"
         >
-          <stop offset="0%" stopColor="var(--martian-dot-trail, var(--gold-bright))" stopOpacity="0.82" />
-          <stop offset="100%" stopColor="var(--martian-dot-trail, var(--gold-bright))" stopOpacity="0" />
+          <stop
+            offset="0%"
+            stopColor="var(--martian-dot-trail, var(--gold-bright))"
+            stopOpacity="0.82"
+          />
+          <stop
+            offset="100%"
+            stopColor="var(--martian-dot-trail, var(--gold-bright))"
+            stopOpacity="0"
+          />
         </linearGradient>
         <linearGradient
           id={ids.trailDeimos}
@@ -204,13 +212,7 @@ function MartianOrbitMark() {
           strokeLinecap="round"
           strokeWidth="1.6"
         />
-        <rect
-          x="23"
-          y="-2"
-          width="4"
-          height="4"
-          fill="var(--martian-dot, var(--gold-bright))"
-        />
+        <rect x="23" y="-2" width="4" height="4" fill="var(--martian-dot, var(--gold-bright))" />
       </g>
 
       <g>
