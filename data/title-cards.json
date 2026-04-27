@@ -130600,24 +130600,6 @@
       ]
     },
     {
-      "id": "card-1765387634511-w7ly9vsuh",
-      "term": "elden ring",
-      "scope": "instance",
-      "title": "Elden Ring (Video Game)",
-      "description": "elden ring explanatoin",
-      "category": "Elden Ring",
-      "links": [],
-      "isSplit": false,
-      "createdAt": "2025-12-10T17:27:14.511Z",
-      "updatedAt": "2025-12-10T17:27:14.513Z",
-      "senses": [
-        "ring.n.01"
-      ],
-      "axes": [
-        442369
-      ]
-    },
-    {
       "id": "card-golden-bough-sympathetic-magic",
       "term": "sympathetic magic",
       "scope": "global",
