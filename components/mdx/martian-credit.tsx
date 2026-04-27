@@ -58,24 +58,82 @@ function computeDiscCells(): Cell[] {
 
 const DISC_CELLS = computeDiscCells();
 
+function usePrefersReducedMotion(): boolean {
+  const [prefersReducedMotion, setPrefersReducedMotion] = React.useState(true);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const syncPreference = () => setPrefersReducedMotion(mediaQuery.matches);
+
+    syncPreference();
+    mediaQuery.addEventListener('change', syncPreference);
+    return () => mediaQuery.removeEventListener('change', syncPreference);
+  }, []);
+
+  return prefersReducedMotion;
+}
+
 /**
  * A retinted Martian Engineering orbit mark adapted for the Elden Glass palette.
  */
 function MartianOrbitMark() {
+  const prefersReducedMotion = usePrefersReducedMotion();
   const rawId = React.useId();
   const id = rawId.replace(/:/g, '');
   const ids = {
     trailPhobos: `${id}-tp`,
     trailDeimos: `${id}-td`,
+    transitionReset: `${id}-transition-reset`,
   };
 
   return (
     <svg
+      id={ids.transitionReset}
       className="block h-9 w-9 overflow-visible"
       viewBox="-50 -50 100 100"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
+      <style>
+        {`
+          #${ids.transitionReset},
+          #${ids.transitionReset} * {
+            transition-property: none;
+            transition-duration: 0s;
+            text-transform: none;
+          }
+
+          #${ids.transitionReset} {
+            display: block;
+            overflow: visible;
+          }
+
+          #${ids.transitionReset} text {
+            font-variant-caps: normal;
+            font-variant-ligatures: none;
+            letter-spacing: normal;
+            line-height: normal;
+            text-decoration: none;
+            text-rendering: geometricPrecision;
+            white-space: pre;
+          }
+
+          #${ids.transitionReset} path,
+          #${ids.transitionReset} rect,
+          #${ids.transitionReset} text {
+            vector-effect: none;
+          }
+
+          #${ids.transitionReset} rect,
+          #${ids.transitionReset} text,
+          #${ids.transitionReset} stop {
+            transition-property: fill, stop-color;
+            transition-duration: 260ms;
+            transition-timing-function: ease-out;
+          }
+        `}
+      </style>
+
       <defs>
         <linearGradient
           id={ids.trailPhobos}
@@ -85,8 +143,8 @@ function MartianOrbitMark() {
           x2="0"
           y2="-25"
         >
-          <stop offset="0%" stopColor="var(--gold-bright)" stopOpacity="0.82" />
-          <stop offset="100%" stopColor="var(--gold-bright)" stopOpacity="0" />
+          <stop offset="0%" stopColor="var(--martian-dot-trail, var(--gold-bright))" stopOpacity="0.82" />
+          <stop offset="100%" stopColor="var(--martian-dot-trail, var(--gold-bright))" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id={ids.trailDeimos}
@@ -96,8 +154,8 @@ function MartianOrbitMark() {
           x2="0"
           y2="-40"
         >
-          <stop offset="0%" stopColor="var(--paper-dim)" stopOpacity="0.68" />
-          <stop offset="100%" stopColor="var(--paper-dim)" stopOpacity="0" />
+          <stop offset="0%" stopColor="var(--martian-moon, var(--paper-dim))" stopOpacity="0.68" />
+          <stop offset="100%" stopColor="var(--martian-moon, var(--paper-dim))" stopOpacity="0" />
         </linearGradient>
       </defs>
 
@@ -109,7 +167,11 @@ function MartianOrbitMark() {
             y={cell.y}
             width={CELL_SIZE}
             height={CELL_SIZE}
-            fill={cell.phase === 'bright' ? 'var(--pane)' : 'var(--ink)'}
+            fill={
+              cell.phase === 'bright'
+                ? 'var(--martian-disc-bright, var(--border-emphasis))'
+                : 'var(--martian-disc-dark, var(--ink-3))'
+            }
           />
         ))}
       </g>
@@ -125,14 +187,16 @@ function MartianOrbitMark() {
       </text>
 
       <g>
-        <animateTransform
-          attributeName="transform"
-          type="rotate"
-          from="0 0 0"
-          to="360 0 0"
-          dur="5s"
-          repeatCount="indefinite"
-        />
+        {!prefersReducedMotion && (
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 0 0"
+            to="360 0 0"
+            dur="5s"
+            repeatCount="indefinite"
+          />
+        )}
         <path
           d="M 25 0 A 25 25 0 0 0 0 -25"
           fill="none"
@@ -140,18 +204,26 @@ function MartianOrbitMark() {
           strokeLinecap="round"
           strokeWidth="1.6"
         />
-        <rect x="23" y="-2" width="4" height="4" fill="var(--gold-bright)" />
+        <rect
+          x="23"
+          y="-2"
+          width="4"
+          height="4"
+          fill="var(--martian-dot, var(--gold-bright))"
+        />
       </g>
 
       <g>
-        <animateTransform
-          attributeName="transform"
-          type="rotate"
-          from="0 0 0"
-          to="360 0 0"
-          dur="10s"
-          repeatCount="indefinite"
-        />
+        {!prefersReducedMotion && (
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 0 0"
+            to="360 0 0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        )}
         <path
           d="M 40 0 A 40 40 0 0 0 0 -40"
           fill="none"
@@ -161,20 +233,22 @@ function MartianOrbitMark() {
         />
         <g transform="translate(40, 0)">
           <g>
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              from="0 0 0"
-              to="-360 0 0"
-              dur="10s"
-              repeatCount="indefinite"
-            />
+            {!prefersReducedMotion && (
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 0 0"
+                to="-360 0 0"
+                dur="10s"
+                repeatCount="indefinite"
+              />
+            )}
             <text
               x="0"
               y="-2"
               textAnchor="middle"
               dominantBaseline="central"
-              className="select-none fill-[var(--paper-dim)] font-mono text-[22px] font-medium"
+              className="select-none fill-[var(--martian-moon,var(--paper-dim))] font-mono text-[22px] font-medium"
             >
               e
             </text>
@@ -195,12 +269,12 @@ export function MartianCredit() {
         <Dialog.Trigger asChild>
           <button
             type="button"
-            className="group inline-flex items-center gap-2 rounded-sm border border-[var(--glass-edge)] bg-[rgb(var(--bg-secondary-rgb)/0.45)] px-2.5 py-1.5 text-left font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--paper-dimmer)] opacity-75 transition hover:border-[var(--gold-dim)] hover:text-[var(--paper-dim)] hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-dim)]"
+            className="group inline-flex cursor-pointer items-center gap-2 rounded-sm border border-[var(--glass-edge)] bg-[rgb(var(--bg-secondary-rgb)/0.45)] px-2.5 py-1.5 text-left font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--paper-dimmer)] opacity-75 transition [--martian-disc-bright:var(--border-emphasis)] [--martian-disc-dark:var(--ink-3)] [--martian-dot:var(--gold-bright)] [--martian-dot-trail:var(--gold-bright)] [--martian-moon:var(--paper-dim)] hover:border-[var(--gold-dim)] hover:text-[var(--paper-dim)] hover:opacity-100 hover:[--martian-disc-bright:#5a4a32] hover:[--martian-disc-dark:#211d18] hover:[--martian-dot:var(--paper)] hover:[--martian-dot-trail:var(--paper)] hover:[--martian-moon:var(--paper)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-dim)] focus-visible:[--martian-disc-bright:#5a4a32] focus-visible:[--martian-disc-dark:#211d18] focus-visible:[--martian-dot:var(--paper)] focus-visible:[--martian-dot-trail:var(--paper)] focus-visible:[--martian-moon:var(--paper)]"
             aria-label="About the Martian Engineering build"
           >
             <MartianOrbitMark />
             <span className="leading-tight">
-              quietly powered by
+              proudly supported by
               <span className="block text-[var(--gold)]">Martian.Engineering</span>
             </span>
           </button>
@@ -222,24 +296,26 @@ export function MartianCredit() {
 
           <div className="space-y-4 px-5 py-5 font-serif text-[17px] leading-relaxed text-[var(--paper-dim)]">
             <p>
-              Martian Engineering built this site pro bono because the argument was too strange, too
-              specific, and too alive to leave in a pile of notes.
-            </p>
-            <p>
-              The site is a custom Next.js instrument: authored MDX drives the content tree,
+              This site is a custom Next.js instrument. Authored MDX drives the content tree,
               navigation, contents, sitemap, and LLM surfaces; structured item cards power the
-              Gatherer and the Duchamp works view; MiniSearch indexes prose and cards through one
-              local search layer; result links land on addressable prose blocks instead of vague
+              Gatherer and Duchamp works view. MiniSearch indexes prose and cards through one local
+              search layer, and result links land on addressable prose blocks instead of vague
               pages.
             </p>
             <p>
-              The attestation pieces, fedwiki import/export scripts, local manuscript checks, and
-              quiet little search behaviors are all part of the same idea: make the scholarship feel
-              like a working apparatus, not a brochure.
+              The argument is intentionally sprawling, so the site is optimized for agent experience
+              as well as human review. Full local agents, browser-based LLM harnesses, and stranger
+              rigs can reach the material, traverse it, and present it without scraping around the
+              edges.
             </p>
             <p>
-              The mark is a machine too: a Bayer-dithered planet with an <code>m</code> at center, a
-              quick dot, and a slower <code>e</code> orbiting back into alignment.
+              Every piece follows the same principle: make the scholarship feel like a working
+              apparatus, perhaps even a delay, rather than a brochure.
+            </p>
+            <p>
+              Martian Engineering built this site pro bono because the argument was too strange, too
+              specific, and too alive to leave in a pile of notes. The footer you clicked is a
+              machine too: a Bayer-dithered planet-in-starfield with the Martian signature in orbit.
             </p>
             <div className="border-t border-[var(--pane-edge)] pt-4">
               <a
