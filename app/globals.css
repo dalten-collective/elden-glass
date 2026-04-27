@@ -102,6 +102,13 @@
   --success-green: var(--verdigris);
   --accent-red: var(--rust);
 
+  /* Martian credit mark — site-specific retint controls */
+  --martian-disc-bright: var(--border-emphasis);
+  --martian-disc-dark: var(--ink-3);
+  --martian-dot: var(--gold-bright);
+  --martian-dot-trail: var(--gold-bright);
+  --martian-moon: var(--paper-dim);
+
   /* RGB tuples for rgba() consumers */
   --bg-primary-rgb: 10 9 8;
   --bg-secondary-rgb: 19 17 15;
