@@ -36,6 +36,7 @@ import { GoldText } from './gold-text';
 import { LinkPreview } from './link-preview';
 import { MagnifierImage } from './magnifier-image';
 import { ManuscriptDisplay } from './manuscript-display';
+import { MartianCredit } from './martian-credit';
 import { Quote } from './quote';
 import { remarkSearchBlocks } from '@/lib/search-blocks';
 import { RuneFigure, RuneGrid } from './rune-figure';
@@ -50,6 +51,7 @@ const mdxComponents = {
   DefinitionItem,
   HashVerification,
   ManuscriptDisplay,
+  MartianCredit,
   EvidencePoint,
   EvidenceGroup,
   Callout,
