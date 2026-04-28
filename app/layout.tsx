@@ -107,6 +107,7 @@ export const viewport: Viewport = {
 };
 
 import { AgentationDev } from '@/components/agentation-dev';
+import { PostHogMount } from '@/components/analytics/posthog-mount';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   // `delay` scopes the entire site under the Delay-in-Glass token system
@@ -116,6 +117,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={fontVars} data-scroll-behavior="smooth">
       <body className="delay">
+        <PostHogMount />
         {children}
         {process.env.NODE_ENV === 'development' && <AgentationDev />}
       </body>
