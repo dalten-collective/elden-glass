@@ -371,3 +371,5 @@
 {"type":"dep_add","timestamp":"2026-04-28T22:13:37.994979Z","issue_id":"pb-ba4.5","payload":{"dep_type":"blocks","depends_on":"pb-ba4.4"}}
 {"type":"dep_add","timestamp":"2026-04-28T22:13:42.083937Z","issue_id":"pb-ba4.6","payload":{"dep_type":"blocks","depends_on":"pb-ba4.3"}}
 {"type":"dep_add","timestamp":"2026-04-28T22:13:44.617287Z","issue_id":"pb-ba4.6","payload":{"dep_type":"blocks","depends_on":"pb-ba4.5"}}
+{"type":"status_update","timestamp":"2026-04-28T23:28:18.010075Z","issue_id":"pb-ba4.1","payload":{"status":"in_progress"}}
+{"type":"close","timestamp":"2026-04-28T23:33:25.981845Z","issue_id":"pb-ba4.1","payload":{}}
