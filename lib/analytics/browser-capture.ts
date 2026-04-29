@@ -17,14 +17,12 @@
 import posthog from 'posthog-js';
 
 import {
-  buildEngagementTickProperties,
   buildInternalLinkClickProperties,
   buildItemCardOpenProperties,
   buildOutboundLinkClickProperties,
   buildSearchResultClickProperties,
   buildSearchSubmitProperties,
   buildSidebarNavigateProperties,
-  type EngagementDepth,
   type ItemCardSource,
   type SearchResultType,
   type SearchVia,
@@ -113,12 +111,5 @@ export function captureItemCardOpen(input: {
       cardSubcategory: input.cardSubcategory,
       source: input.source,
     })
-  );
-}
-
-export function captureEngagementTick(input: { depth: EngagementDepth }): void {
-  safeCapture(
-    'human_engagement_tick',
-    buildEngagementTickProperties({ fromPath: currentPath(), depth: input.depth })
   );
 }

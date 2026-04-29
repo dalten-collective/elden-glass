@@ -20,7 +20,7 @@
  *   - Browser-classified clients on human-facing surfaces (home,
  *     mdx_content, bespoke_interactive, search, item_cards,
  *     ax_route_catalog) are skipped to avoid double-counting against the
- *     `human_pageview` browser event. AX-only surfaces (`ax_llms_text`,
+ *     native `$pageview` browser event. AX-only surfaces (`ax_llms_text`,
  *     `ax_llms_toc`, `feeds`, `sitemap_catalog`) are always captured —
  *     they are intentionally classified as AX traffic regardless of UA.
  *
@@ -74,9 +74,9 @@ export function captureAxRouteRequest(input: AxCaptureInput): Promise<void> {
   const isBrowser = classification.agent_family === 'browser';
   const axSurface = AX_ONLY_FAMILIES.has(family);
 
-  // On non-AX surfaces, ordinary browsers are already counted by the
-  // human_pageview client event. Skipping them here is the dedupe rule
-  // the docs/analytics.md acceptance criterion calls for.
+  // On non-AX surfaces, ordinary browsers are already counted by
+  // native PostHog browser analytics. Skipping them here is the dedupe
+  // rule the docs/analytics.md acceptance criterion calls for.
   if (!axSurface && isBrowser) return Promise.resolve();
 
   const isUnknownAgentOnAxSurface = axSurface && classification.agent_family === 'unknown';

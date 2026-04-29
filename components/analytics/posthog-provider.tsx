@@ -1,10 +1,7 @@
 'use client';
 
 import { Suspense, useEffect, useRef, useState } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
 import posthog from 'posthog-js';
-
-import { routeFamilyForPath } from '@/lib/analytics/route-family';
 
 import { EngagementTracker } from './engagement-tracker';
 
@@ -15,13 +12,12 @@ import { EngagementTracker } from './engagement-tracker';
  *   - Initializes posthog-js once on mount, using values handed to it by the
  *     server-side mount component (no env reads happen here).
  *   - Honors Do Not Track, Sec-GPC, and a hard local opt-out marker.
- *   - Disables PostHog autocapture and built-in pageview capture so our
- *     vocabulary in docs/analytics.md owns event names.
- *   - Routes both the initial pageview and App Router route-change pageviews
- *     through a single `PageviewTracker` effect so there is exactly one
- *     `human_pageview` emitter and a single dedupe ref. The tracker is
- *     mounted only after `posthog.init` has resolved (`loaded` callback
- *     flips ready state), avoiding capture against a not-yet-loaded global.
+ *   - Lets PostHog own canonical Web Analytics events (`$pageview`,
+ *     `$pageleave`, scroll properties, and `$web_vitals`) so the native
+ *     dashboards and setup checklist work as intended.
+ *   - Mounts custom Elden Glass interaction tracking only after
+ *     `posthog.init` has resolved (`loaded` callback flips ready state),
+ *     avoiding capture against a not-yet-loaded global.
  *   - Does nothing if any required input is missing — analytics must degrade
  *     silently and never break rendering.
  */
@@ -69,64 +65,6 @@ function shouldSuppressInBrowser(): boolean {
   return false;
 }
 
-/**
- * Properties attached to every `human_pageview` event. Kept minimal per the
- * data-hygiene rules in docs/analytics.md — no PII, no untrimmed UA, no full
- * URL with query string.
- */
-function readPageviewProperties() {
-  if (typeof window === 'undefined') return {};
-  return {
-    referrer: typeof document !== 'undefined' && document.referrer ? document.referrer : null,
-    locale: navigator.language ?? null,
-    viewport_w: window.innerWidth,
-    viewport_h: window.innerHeight,
-  };
-}
-
-/**
- * Internal tracker that listens for App Router navigation and emits the
- * `human_pageview` event for each unique pathname (+ search params) shown.
- *
- * This is the only `human_pageview` emitter. The provider mounts it only
- * after `posthog.init`'s `loaded` callback has resolved, so the very first
- * effect run captures the initial pageview against an already-initialized
- * client. Subsequent App Router navigations re-run the effect with new
- * `pathname` / `searchParams` values; the dedupe ref ensures each
- * (pathname, search) tuple fires at most once.
- *
- * Wrapped in <Suspense> by the parent because `useSearchParams` requires a
- * suspense boundary in App Router.
- */
-function PageviewTracker({ debug }: { debug: boolean }) {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const lastReportedRef = useRef<string | null>(null);
-
-  useEffect(() => {
-    if (!pathname) return;
-    if (typeof window === 'undefined') return;
-
-    const queryString = searchParams?.toString() ?? '';
-    const fullKey = queryString ? `${pathname}?${queryString}` : pathname;
-    if (lastReportedRef.current === fullKey) return;
-    lastReportedRef.current = fullKey;
-
-    const properties = {
-      route_family: routeFamilyForPath(pathname),
-      path: pathname,
-      ...readPageviewProperties(),
-    };
-
-    posthog.capture('human_pageview', properties);
-    if (debug) {
-      console.debug('[analytics] human_pageview', properties);
-    }
-  }, [pathname, searchParams, debug]);
-
-  return null;
-}
-
 export function PostHogProvider({ apiKey, apiHost, env, debug }: Props) {
   const initRef = useRef(false);
   const [ready, setReady] = useState(false);
@@ -139,13 +77,18 @@ export function PostHogProvider({ apiKey, apiHost, env, debug }: Props) {
 
     posthog.init(apiKey, {
       api_host: apiHost,
-      // Our event vocabulary in docs/analytics.md owns the names; turn off
-      // PostHog's automatic capture so it does not produce parallel events.
+      defaults: '2026-01-30',
+      // Keep click autocapture quiet for now, but let PostHog emit the
+      // canonical web analytics events its dashboards expect.
       autocapture: false,
-      capture_pageview: false,
-      capture_pageleave: false,
+      capture_pageview: 'history_change',
+      capture_pageleave: 'if_capture_pageview',
+      capture_performance: {
+        web_vitals: true,
+      },
       // Defensive: this site has no logged-in concept and no recording use.
       disable_session_recording: true,
+      disable_scroll_properties: false,
       // Defer profile creation until something explicitly identifies a user.
       person_profiles: 'identified_only',
       // Belt-and-suspenders alongside our own DNT/GPC checks.
@@ -156,11 +99,6 @@ export function PostHogProvider({ apiKey, apiHost, env, debug }: Props) {
           instance.debug();
           console.debug('[analytics] posthog initialized', { env, host: apiHost });
         }
-        // Hand off all `human_pageview` emission to PageviewTracker by
-        // marking the provider ready. Mounting the tracker now means its
-        // first effect run captures the initial pageview against an
-        // already-loaded client, with no parallel capture from this
-        // callback to double-count against.
         setReady(true);
       },
     });
@@ -170,7 +108,6 @@ export function PostHogProvider({ apiKey, apiHost, env, debug }: Props) {
 
   return (
     <Suspense fallback={null}>
-      <PageviewTracker debug={debug} />
       <EngagementTracker />
     </Suspense>
   );

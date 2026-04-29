@@ -144,6 +144,31 @@ When PostHog project IDs differ between preview and production
 (recommended), the same code path picks the right key from the
 environment, so no code change is required to promote.
 
+## PostHog Project Settings
+
+The PostHog setup checklist is partly code and partly PostHog project
+configuration.
+
+Configure **Authorized URLs** in PostHog for:
+
+- `https://eldenringisthelargeglass.com`
+- `https://elden-glass.vercel.app`
+- `https://elden-glass-git-dev-erichelal-3278s-projects.vercel.app`
+- PR / branch preview URLs used for validation, or a project-level
+  Vercel wildcard if PostHog accepts it for the account.
+
+The current code enables the checklist's canonical web events:
+
+- `$pageview`
+- `$pageleave`
+- scroll-depth properties on pageview/pageleave events
+- `$web_vitals`
+
+Reverse proxying is useful for ad-blocker resilience, but it is not
+enabled yet. If this becomes necessary, use a non-obvious same-origin
+path and route both `/static/*` and `/array/*` to the PostHog asset
+origin for the US Cloud project.
+
 ## Data Hygiene Rules
 
 These are non-negotiable. Any analytics PR that violates them must be
@@ -253,10 +278,14 @@ Within a prefix, names use `<prefix>_<noun>_<verb>` where possible.
 
 Current emitted event vocabulary:
 
-- `human_pageview` — emitted on route change in the App Router.
-  Properties include `route_family`, `path`, `referrer`, `locale`,
-  `viewport_w`, `viewport_h`. The browser provider registers
-  `environment` as a PostHog super-property.
+- `$pageview` — emitted by PostHog's native browser SDK on initial load
+  and App Router history changes. This is the primary human pageview
+  event for PostHog Web Analytics.
+- `$pageleave` — emitted by PostHog's native browser SDK when a pageview
+  ends. This powers native session-duration, bounce-rate, and scroll-depth
+  reporting.
+- `$web_vitals` — emitted by PostHog's native browser SDK for Core Web
+  Vitals. This powers the Web Analytics performance view.
 - `human_internal_link_click` — clicks on links to in-site routes.
   Properties: `from_route_family`, `from_path`, `to_route_family`,
   `to_path`.
@@ -277,9 +306,6 @@ Current emitted event vocabulary:
   `route_family`, `path`, `card_id`, `card_section`,
   `card_category`, `card_subcategory`, `source` (`gatherer_grid`,
   `mdx_inline`, or `deep_link`).
-- `human_engagement_tick` — read-depth heartbeat emitted at most once
-  per `(path, depth_pct)` on `mdx_content` routes. Properties:
-  `route_family`, `path`, `depth_pct` (`25`, `50`, `75`, or `100`).
 - `ax_route_request` — server-side request to any tracked route.
   Properties: `environment`, `route_family`, `path`, `method`,
   `user_agent`, `referrer`, `status`, `is_js_likely`, `ax_surface`,
@@ -318,8 +344,9 @@ saved cards.
 
 | Card                 | Event filter                                             | Breakdowns / properties                                                                           | Question answered                                                     |
 | -------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Human arrivals       | `human_pageview`                                         | `path`, `route_family`, `referrer`                                                                | What brought humans here, and which surfaces did they enter?          |
-| Reading depth        | `human_engagement_tick`                                  | `path`, `depth_pct`                                                                               | Which MDX pages hold attention past 25/50/75/100 percent?             |
+| Human arrivals       | `$pageview`                                              | `$pathname`, `$current_url`, `$referrer`                                                          | What brought humans here, and which surfaces did they enter?          |
+| Reading depth        | `$pageleave` / Web Analytics scroll-depth properties     | `$pathname`, previous-pageview scroll properties                                                  | Which pages hold attention and how far do readers scroll?             |
+| Web vitals           | `$web_vitals`                                            | LCP, INP, CLS, FCP metrics                                                                        | What real-user performance issues affect readers?                     |
 | Internal searches    | `human_search_submit`                                    | `query`, `query_length`, `via`                                                                    | What are humans trying to find from `/search` or global search?       |
 | Search result clicks | `human_search_result_click`                              | `query`, `result_type`, `result_route_family`, `result_rank`                                      | Which searches lead to useful clicks?                                 |
 | Navigation use       | `human_internal_link_click` and `human_sidebar_navigate` | `from_path`, `to_path`, `to_route_family`, `surface`                                              | How do humans move through the site shell and content links?          |
@@ -327,26 +354,26 @@ saved cards.
 | AX route requests    | `ax_route_request`                                       | `route_family`, `path`, `method`, `status`, `ax_surface`, `is_js_likely`, `agent_surface_unknown` | Which AX and content routes are being fetched by non-browser clients? |
 | Agent classification | `agent_classified`                                       | `agent_family`, `agent_product`, `agent_mode`, `confidence`, `matched_token`, `route_family`      | Which known agents accessed AX routes or ordinary content?            |
 
-Do not build reports from PostHog autocapture events. The browser
-provider disables `autocapture`, `capture_pageview`, and
-`capture_pageleave`; the `human_*`, `ax_*`, and `agent_*` events above
-are the only supported vocabulary.
+PostHog owns generic web analytics. Use `$pageview`, `$pageleave`,
+scroll-depth properties, `$web_vitals`, and the native Web Analytics UI
+for ordinary traffic questions. Use custom `human_*` events only where
+they add Elden Glass-specific interaction semantics, and use `ax_*` /
+`agent_*` events for agent-experience traffic.
 
 ### Human Analytics Review
 
 Run this weekly and after material releases.
 
-- Start with `human_pageview` filtered to `environment=production`.
-  Break down by `path` and `route_family` to see which authored pages,
-  bespoke interactive routes, and search surfaces are drawing traffic.
-- Use `referrer` on `human_pageview` for broad acquisition source
+- Start with PostHog Web Analytics or `$pageview` filtered to
+  `environment=production`. Break down by `$pathname`, `$current_url`,
+  and `$referrer` to see which authored pages, bespoke interactive
+  routes, and search surfaces are drawing traffic.
+- Use `$referrer` / referrer dimensions on `$pageview` for broad acquisition source
   hints. Treat it as incomplete: browsers and referrer policies often
   suppress or trim it, and Google query text belongs in GSC.
-- Use `human_engagement_tick` only for `mdx_content` pages. A page that
-  reaches `depth_pct=75` or `100` is holding attention better than a
-  page that only records `25`; do not compare these ticks to `/search`,
-  `/gatherer`, `/xenotext`, or AX routes because those surfaces do not
-  emit read-depth ticks.
+- Use PostHog's Web Analytics scroll-depth/session-duration data for
+  reading depth. Treat short sessions carefully: some readers may get
+  the point from a short page without scrolling deeply.
 - Review `human_search_submit` by `query`, `query_length`, and `via`.
   `via=page` means the `/search` page; `via=global` means the global
   search surface. A repeated query with few
@@ -368,8 +395,8 @@ pages.
   impressions, clicks, CTR, and average position for the canonical
   production domain.
 - Answer "what brought humans here from Google?" with GSC query and
-  page data, then compare those landing pages to PostHog
-  `human_pageview` and `human_engagement_tick` behavior.
+  page data, then compare those landing pages to PostHog Web Analytics
+  pageview, session-duration, and scroll-depth behavior.
 - Watch for pages with impressions but low CTR. Those need title,
   summary, or snippet work before they need analytics code changes.
 - Watch for pages with clicks but low read depth in PostHog. Those
@@ -439,7 +466,8 @@ It does not answer "total LLM usage of the site."
   user-agent string. User agents can still be spoofed.
 - `confidence=medium` currently applies to ordinary browser tokens.
   Browser AX events appear only on AX-only surfaces because browser
-  traffic on human-facing surfaces is owned by `human_pageview`.
+  traffic on human-facing surfaces is owned by native `$pageview`
+  browser analytics.
 - `confidence=none` and `agent_family=unknown` mean no known token
   matched. On AX-only surfaces, these events are still useful as
   `agent_surface_unknown=true`, but they must not be attributed to a
@@ -454,10 +482,8 @@ It does not answer "total LLM usage of the site."
 
 ### Weekly Checklist
 
-- Check `human_pageview` top paths, route families, and referrers for
-  unexpected shifts.
-- Check `human_engagement_tick` for MDX pages that attract traffic but
-  do not hold attention past `depth_pct=50`.
+- Check Web Analytics top paths, referrers, session duration, and
+  scroll depth for unexpected shifts.
 - Check `human_search_submit` and `human_search_result_click` for
   unanswered or poorly ranked internal search intent.
 - Check `human_item_card_open` for Gatherer taxonomy areas that deserve
@@ -490,14 +516,14 @@ Browser checks:
 - Open an item card from `/gatherer` and, where a page includes one,
   an inline MDX item card.
 - In PostHog, filter to `environment=preview` and confirm the expected
-  `human_pageview`, `human_search_submit`,
-  `human_search_result_click`, `human_internal_link_click`,
-  `human_sidebar_navigate`, `human_outbound_link_click`, and
-  `human_item_card_open` events appear with the properties documented
-  above.
-- On an MDX page, scroll far enough to trigger `depth_pct=25` and
-  `depth_pct=50`; confirm `human_engagement_tick` appears only for
-  `route_family=mdx_content`.
+  `$pageview`, `$pageleave`, `$web_vitals`,
+  `human_search_submit`, `human_search_result_click`,
+  `human_internal_link_click`, `human_sidebar_navigate`,
+  `human_outbound_link_click`, and `human_item_card_open` events appear
+  with the properties documented above.
+- On an MDX page, scroll before navigating away; confirm PostHog's
+  native pageleave/scroll-depth properties populate rather than looking
+  for a custom read-depth event.
 
 AX checks:
 
@@ -575,10 +601,10 @@ Verification:
 - Load `http://localhost:3000`. Confirm a request to the configured
   PostHog host appears in DevTools → Network.
 - Trigger a search, click an internal link, click an outbound link.
-- In the PostHog dev project, confirm `human_pageview`,
-  `human_search_submit`, `human_internal_link_click`, and
+- In the PostHog dev project, confirm `$pageview`, `$pageleave`,
+  `$web_vitals`, `human_search_submit`, `human_internal_link_click`, and
   `human_outbound_link_click` events arrive within ~1 minute, with
-  `route_family` populated and `environment=local`.
+  `environment=local`.
 - Hit `/llms.txt` directly with `curl`. Confirm an `ax_route_request`
   event arrives in PostHog with `route_family=ax_llms_text` and a
   `user_agent` matching `curl/...`.

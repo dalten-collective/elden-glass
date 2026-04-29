@@ -10,15 +10,12 @@ import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
 
 import {
-  ENGAGEMENT_DEPTHS,
-  buildEngagementTickProperties,
   buildInternalLinkClickProperties,
   buildItemCardOpenProperties,
   buildOutboundLinkClickProperties,
   buildSearchResultClickProperties,
   buildSearchSubmitProperties,
   buildSidebarNavigateProperties,
-  shouldEmitEngagementTicks,
 } from './browser-events.ts';
 
 test('internal-link click captures from/to route families and paths', () => {
@@ -113,31 +110,4 @@ test('item-card open keeps null taxonomy when caller did not have it', () => {
   assert.equal(props.card_category, null);
   assert.equal(props.card_subcategory, null);
   assert.equal(props.source, 'mdx_inline');
-});
-
-test('engagement-tick records the threshold and route family', () => {
-  for (const depth of ENGAGEMENT_DEPTHS) {
-    const props = buildEngagementTickProperties({
-      fromPath: '/living-thesis',
-      depth,
-    });
-    assert.equal(props.depth_pct, depth);
-    assert.equal(props.path, '/living-thesis');
-    assert.equal(props.route_family, 'mdx_content');
-  }
-});
-
-test('engagement ticks fire only on read-oriented surfaces', () => {
-  // Read surface — yes.
-  assert.equal(shouldEmitEngagementTicks('/living-thesis'), true);
-  assert.equal(shouldEmitEngagementTicks('/duchamp/chess/overview'), true);
-
-  // Bespoke / interactive surfaces — restrained: no ticks.
-  assert.equal(shouldEmitEngagementTicks('/gatherer'), false);
-  assert.equal(shouldEmitEngagementTicks('/xenotext'), false);
-  assert.equal(shouldEmitEngagementTicks('/search'), false);
-
-  // AX-only surfaces never emit human ticks.
-  assert.equal(shouldEmitEngagementTicks('/llms.txt'), false);
-  assert.equal(shouldEmitEngagementTicks('/api/llms/toc'), false);
 });
