@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import type { TitleCard } from '@/types/title-cards';
 import { CardDetailModal } from '@/components/title-cards/card-detail-modal';
+import { captureItemCardOpen } from '@/lib/analytics/browser-capture';
 
 const CARDS_PER_PAGE = 48;
 
@@ -196,6 +197,13 @@ function GathererContent() {
 
     const pageCard = data?.cards.find((card) => card.id === urlCardId);
     if (pageCard) {
+      captureItemCardOpen({
+        cardId: pageCard.id,
+        cardSection: pageCard.section ?? null,
+        cardCategory: pageCard.category ?? null,
+        cardSubcategory: pageCard.subcategory ?? null,
+        source: 'deep_link',
+      });
       setSelectedCard(pageCard);
       return;
     }
@@ -210,7 +218,15 @@ function GathererContent() {
         const result = (await response.json()) as CardResponse;
 
         if (response.ok && result.card) {
-          setSelectedCard(result.card);
+          const fetched = result.card;
+          captureItemCardOpen({
+            cardId: fetched.id,
+            cardSection: fetched.section ?? null,
+            cardCategory: fetched.category ?? null,
+            cardSubcategory: fetched.subcategory ?? null,
+            source: 'deep_link',
+          });
+          setSelectedCard(fetched);
         }
       } catch (err) {
         if (err instanceof DOMException && err.name === 'AbortError') {
@@ -262,6 +278,13 @@ function GathererContent() {
 
   const handleCardClick = useCallback(
     (card: TitleCard) => {
+      captureItemCardOpen({
+        cardId: card.id,
+        cardSection: card.section ?? null,
+        cardCategory: card.category ?? null,
+        cardSubcategory: card.subcategory ?? null,
+        source: 'gatherer_grid',
+      });
       setSelectedCard(card);
       updateSelectedCardUrl(card.id);
     },

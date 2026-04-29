@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, BookText } from 'lucide-react';
+import { captureSearchResultClick, captureSearchSubmit } from '@/lib/analytics/browser-capture';
 import { dispatchSearchTarget, savePendingSearchTarget } from '@/lib/search-navigation';
 
 interface SearchResult {
@@ -83,11 +84,16 @@ export function GlobalSearch({
 
   // Go to search page
   const goToSearchPage = () => {
-    const destination = query.trim() ? `/search?q=${encodeURIComponent(query.trim())}` : '/search';
+    const trimmed = query.trim();
+    const destination = trimmed ? `/search?q=${encodeURIComponent(trimmed)}` : '/search';
+
+    if (trimmed) {
+      captureSearchSubmit({ query: trimmed, via: 'global' });
+    }
 
     const navigate = () => router.push(destination as any);
 
-    if (query.trim()) {
+    if (trimmed) {
       setIsOpen(false);
       setQuery('');
     } else {
@@ -124,9 +130,18 @@ export function GlobalSearch({
     }
   };
 
-  const handleSelectResult = (result: SearchResult) => {
+  const handleSelectResult = (result: SearchResult, rank: number) => {
+    const submittedQuery = query;
     setIsOpen(false);
     setQuery('');
+
+    const resultPath = result.type === 'titlecard' && result.cardId ? '/gatherer' : result.page;
+    captureSearchResultClick({
+      query: submittedQuery,
+      resultPath,
+      resultRank: rank,
+      resultType: result.type === 'titlecard' ? 'titlecard' : 'content',
+    });
 
     const navigate = () => {
       if (result.type === 'titlecard' && result.cardId) {
@@ -218,7 +233,7 @@ export function GlobalSearch({
               {results.map((result, index) => (
                 <button
                   key={result.id}
-                  onClick={() => handleSelectResult(result)}
+                  onClick={() => handleSelectResult(result, index)}
                   onMouseEnter={() => setSelectedIndex(index)}
                   className={`w-full text-left px-4 py-3 border-b border-[var(--border-subtle)] last:border-b-0 transition-colors ${
                     index === selectedIndex

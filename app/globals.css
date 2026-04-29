@@ -985,6 +985,15 @@ body {
 /* Section header — a collapsible group like "Pataphysics" or "Duchamp".
    Visually matches a rung but includes a chevron on the right that
    rotates with `aria-expanded`. */
+.delay .stair-group {
+  margin: 0;
+}
+.delay .stair-group > summary {
+  list-style: none;
+}
+.delay .stair-group > summary::-webkit-details-marker {
+  display: none;
+}
 .delay .stair-group-header {
   width: 100%;
   background: transparent;
@@ -1030,7 +1039,7 @@ body {
   margin-right: 8px;
   align-self: center;
 }
-.delay .stair-group-header[aria-expanded='true'] .chevron {
+.delay .stair-group[open] > .stair-group-header .chevron {
   transform: rotate(0deg);
   color: var(--paper-dimmer);
 }

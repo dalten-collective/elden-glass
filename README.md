@@ -103,6 +103,16 @@ One environment variable is set in Vercel:
 
 - `NEXT_PUBLIC_BASE_URL` = `https://eldenringisthelargeglass.com`
 
+## Analytics
+
+The analytics stack and deployment contract are documented in
+[`docs/analytics.md`](./docs/analytics.md). That document is the source
+of truth for the provider stack (PostHog Cloud + Google Search Console),
+the required Vercel environment variables, the data-hygiene rules, the
+route-family vocabulary, the event-naming convention, and the local
+verification steps. Read it before adding analytics code or wiring up
+provider SDKs.
+
 ## Blockchain Attestations
 
 The site verifies two independent attestations of the original discovery:
