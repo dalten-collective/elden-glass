@@ -38,6 +38,12 @@ type StairNavProps = {
   onSearchNavigate?: (navigate: () => void) => void;
   /** Lets mobile chrome close before a selected search result navigates. */
   onSearchResultNavigate?: (navigate: () => void) => void;
+  /**
+   * Tags the rendered DOM with a navigation surface so the analytics
+   * engagement tracker can emit `human_sidebar_navigate` instead of
+   * `human_internal_link_click` for clicks inside the stair.
+   */
+  surface?: 'desktop' | 'mobile';
 };
 
 // Single marker for every rung and section header. Changing the glyph
@@ -49,11 +55,12 @@ export function StairNav({
   seal,
   onSearchNavigate,
   onSearchResultNavigate,
+  surface = 'desktop',
 }: StairNavProps) {
   const pathname = usePathname() ?? '/';
 
   return (
-    <div className="stair">
+    <div className="stair" data-eg-nav-surface={surface}>
       <Link
         href="/"
         style={{

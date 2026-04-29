@@ -86,6 +86,7 @@ export function SealStrip({ navigation, stairSeal }: SealStripProps) {
               <StairNav
                 navigation={navigation}
                 seal={stairSeal}
+                surface="mobile"
                 onSearchNavigate={(navigate) => {
                   setOpen(false);
                   window.setTimeout(navigate, 180);

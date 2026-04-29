@@ -6,6 +6,8 @@ import posthog from 'posthog-js';
 
 import { routeFamilyForPath } from '@/lib/analytics/route-family';
 
+import { EngagementTracker } from './engagement-tracker';
+
 /**
  * Browser-side PostHog initializer and pageview tracker.
  *
@@ -169,6 +171,7 @@ export function PostHogProvider({ apiKey, apiHost, env, debug }: Props) {
   return (
     <Suspense fallback={null}>
       <PageviewTracker debug={debug} />
+      <EngagementTracker />
     </Suspense>
   );
 }
