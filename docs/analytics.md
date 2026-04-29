@@ -6,8 +6,10 @@ the deployment configuration, the data-hygiene rules, the route-family
 vocabulary, the event-naming convention, and the local verification
 steps.
 
-It is documentation only. Provider SDKs are not installed and analytics
-code is not yet wired up.
+The provider SDKs and runtime capture code are wired in by the sibling
+tasks under `pb-ba4`. This document remains the source of truth for
+reviewing that implementation and for operating the dashboards after
+deployment.
 
 If a downstream task needs to deviate from this contract, update this
 document in the same PR rather than letting the code and the contract
@@ -249,43 +251,283 @@ identifies what kind of observer produced the event.
 
 Within a prefix, names use `<prefix>_<noun>_<verb>` where possible.
 
-Initial event vocabulary (downstream tasks own implementation; this
-list defines the names so siblings stay coherent):
+Current emitted event vocabulary:
 
 - `human_pageview` — emitted on route change in the App Router.
   Properties include `route_family`, `path`, `referrer`, `locale`,
-  `viewport_w`, `viewport_h`.
+  `viewport_w`, `viewport_h`. The browser provider registers
+  `environment` as a PostHog super-property.
 - `human_internal_link_click` — clicks on links to in-site routes.
-  Properties include `from_route_family`, `to_route_family`,
+  Properties: `from_route_family`, `from_path`, `to_route_family`,
   `to_path`.
 - `human_outbound_link_click` — clicks on links whose host is not the
-  site's host. Properties include `from_route_family`, `to_host`. Do
-  not record full outbound URLs verbatim if they contain query
-  strings.
-- `human_search_submit` — search form submitted. Property: `query`
-  (the text the user submitted, see hygiene rules).
+  site's host. Properties: `from_route_family`, `from_path`,
+  `to_host`. Do not record full outbound URLs verbatim.
+- `human_sidebar_navigate` — sidebar/topbar navigation use. Properties:
+  `from_route_family`, `from_path`, `to_route_family`, `to_path`,
+  `surface` (`desktop` or `mobile`).
+- `human_search_submit` — search form submitted. Properties:
+  `route_family`, `path`, `query`, `query_length`, `via` (`page` or
+  `global`). The `query` is only the text the user submitted; see the
+  hygiene rules.
 - `human_search_result_click` — click on a result in the search UI.
-  Properties: `query`, `result_route_family`, `result_rank`.
-- `human_sidebar_navigate` — sidebar/topbar navigation use. Property:
-  `to_route_family`.
+  Properties: `route_family`, `path`, `query`, `result_route_family`,
+  `result_rank`, `result_type` (`content` or `titlecard`).
 - `human_item_card_open` — opening an item card detail. Properties:
-  `card_section`, `card_category`, `card_subcategory`.
-- `human_engagement_tick` — periodic visibility/engagement heartbeat
-  used to estimate read time. Cadence and exact properties are
-  decided in `pb-ba4.3`.
+  `route_family`, `path`, `card_id`, `card_section`,
+  `card_category`, `card_subcategory`, `source` (`gatherer_grid`,
+  `mdx_inline`, or `deep_link`).
+- `human_engagement_tick` — read-depth heartbeat emitted at most once
+  per `(path, depth_pct)` on `mdx_content` routes. Properties:
+  `route_family`, `path`, `depth_pct` (`25`, `50`, `75`, or `100`).
 - `ax_route_request` — server-side request to any tracked route.
-  Properties: `route_family`, `path`, `status`, `user_agent`,
-  `referrer`, `is_js_likely`.
+  Properties: `environment`, `route_family`, `path`, `method`,
+  `user_agent`, `referrer`, `status`, `is_js_likely`, `ax_surface`,
+  `agent_surface_unknown`.
 - `agent_classified` — paired classification output. Properties:
-  `agent_family`, `agent_product`, `agent_mode`, `confidence`.
-  See `pb-ba4.4` for the classifier vocabulary.
-- `system_route_catalog_built` — emitted when the catalog
-  regenerates, if the team decides to track it. Optional.
+  `environment`, `path`, `route_family`, `ax_surface`,
+  `agent_family`, `agent_product`, `agent_mode`, `confidence`,
+  `matched_token`, `agent_surface_unknown`. The event is emitted in
+  the same server-side PostHog batch as its matching
+  `ax_route_request`.
 
 Property values must be primitive (string, number, boolean) wherever
 possible. Nested objects are allowed only when they cleanly map to a
 PostHog property dictionary; we are not using PostHog as a generic
 event store.
+
+## Maintainer Review Workflow
+
+Eric should review analytics in two places:
+
+1. **PostHog** for product behavior, human engagement, internal
+   search, item-card use, and AX / LLM traffic.
+2. **Google Search Console** for Google search acquisition and indexing
+   health. GSC query data is not ingested into PostHog, so SEO review
+   always happens in GSC.
+
+Keep Preview and Production separate. All PostHog saved views should
+include an `environment` filter. Use `environment=production` for the
+weekly site review, and `environment=preview` for PR or release-adjacent
+validation.
+
+### Expected PostHog Saved Views
+
+Create a dashboard named **Elden Glass Analytics Review** with these
+saved cards.
+
+| Card                 | Event filter                                             | Breakdowns / properties                                                                           | Question answered                                                     |
+| -------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Human arrivals       | `human_pageview`                                         | `path`, `route_family`, `referrer`                                                                | What brought humans here, and which surfaces did they enter?          |
+| Reading depth        | `human_engagement_tick`                                  | `path`, `depth_pct`                                                                               | Which MDX pages hold attention past 25/50/75/100 percent?             |
+| Internal searches    | `human_search_submit`                                    | `query`, `query_length`, `via`                                                                    | What are humans trying to find from `/search` or global search?       |
+| Search result clicks | `human_search_result_click`                              | `query`, `result_type`, `result_route_family`, `result_rank`                                      | Which searches lead to useful clicks?                                 |
+| Navigation use       | `human_internal_link_click` and `human_sidebar_navigate` | `from_path`, `to_path`, `to_route_family`, `surface`                                              | How do humans move through the site shell and content links?          |
+| Item-card opens      | `human_item_card_open`                                   | `card_section`, `card_category`, `card_subcategory`, `source`                                     | Which Gatherer / title-card taxonomy areas attract use?               |
+| AX route requests    | `ax_route_request`                                       | `route_family`, `path`, `method`, `status`, `ax_surface`, `is_js_likely`, `agent_surface_unknown` | Which AX and content routes are being fetched by non-browser clients? |
+| Agent classification | `agent_classified`                                       | `agent_family`, `agent_product`, `agent_mode`, `confidence`, `matched_token`, `route_family`      | Which known agents accessed AX routes or ordinary content?            |
+
+Do not build reports from PostHog autocapture events. The browser
+provider disables `autocapture`, `capture_pageview`, and
+`capture_pageleave`; the `human_*`, `ax_*`, and `agent_*` events above
+are the only supported vocabulary.
+
+### Human Analytics Review
+
+Run this weekly and after material releases.
+
+- Start with `human_pageview` filtered to `environment=production`.
+  Break down by `path` and `route_family` to see which authored pages,
+  bespoke interactive routes, and search surfaces are drawing traffic.
+- Use `referrer` on `human_pageview` for broad acquisition source
+  hints. Treat it as incomplete: browsers and referrer policies often
+  suppress or trim it, and Google query text belongs in GSC.
+- Use `human_engagement_tick` only for `mdx_content` pages. A page that
+  reaches `depth_pct=75` or `100` is holding attention better than a
+  page that only records `25`; do not compare these ticks to `/search`,
+  `/gatherer`, `/xenotext`, or AX routes because those surfaces do not
+  emit read-depth ticks.
+- Review `human_search_submit` by `query`, `query_length`, and `via`.
+  `via=page` means the `/search` page; `via=global` means the global
+  search surface. A repeated query with few
+  `human_search_result_click` events is a content or ranking signal.
+- Review `human_search_result_click` by `result_rank`,
+  `result_type`, and `result_route_family`. High-value queries should
+  produce low-rank clicks to `content` or `titlecard` results.
+- Review `human_item_card_open` by taxonomy properties and `source`.
+  `source=gatherer_grid` measures Gatherer browsing, `mdx_inline`
+  measures inline card interest inside prose, and `deep_link` measures
+  direct card opens.
+
+### Search Console Review
+
+Run this weekly, and again after publishing or reorganizing major MDX
+pages.
+
+- In **Performance > Search results**, inspect queries, pages,
+  impressions, clicks, CTR, and average position for the canonical
+  production domain.
+- Answer "what brought humans here from Google?" with GSC query and
+  page data, then compare those landing pages to PostHog
+  `human_pageview` and `human_engagement_tick` behavior.
+- Watch for pages with impressions but low CTR. Those need title,
+  summary, or snippet work before they need analytics code changes.
+- Watch for pages with clicks but low read depth in PostHog. Those
+  may need better above-the-fold framing, route summaries, or internal
+  links.
+- In **Indexing > Pages** and **Sitemaps**, confirm that `/sitemap.xml`
+  is accepted and that important MDX pages are indexed. GSC indexing
+  state answers a different question than PostHog traffic volume.
+
+### AX / LLM Traffic Review
+
+Run this weekly and after any release that changes `/llms.txt`,
+`/api/llms/toc`, `/contents`, route summaries, sitemap output, or
+robots behavior.
+
+- Start with `ax_route_request` filtered to
+  `environment=production`. Break down by `route_family` and `path`.
+  AX-native surfaces are `ax_llms_text`, `ax_llms_toc`,
+  `ax_route_catalog`, `feeds`, and `sitemap_catalog`.
+- To see agents reading ordinary authored pages, filter
+  `ax_route_request` to `route_family=mdx_content` and
+  `ax_surface=false`. Browser user agents on human-facing surfaces are
+  skipped server-side, so these rows represent non-browser clients that
+  reached content routes.
+- Use `status` to catch broken AX access. Repeated non-2xx statuses on
+  `/llms.txt`, `/api/llms/toc`, `/contents`, `/sitemap.xml`, or
+  `/robots.txt` should be treated as release blockers.
+- Use `agent_surface_unknown=true` to find AX surface requests where
+  the user agent did not match a known agent or browser rule. These
+  are real requests, but not attributable to a named provider.
+- Review the paired `agent_classified` event by `agent_family`,
+  `agent_product`, `agent_mode`, `confidence`, and `matched_token`.
+  It is emitted in the same server-side batch as the corresponding
+  `ax_route_request`, with the same `distinct_id` and timestamp.
+
+### Claude And Other Agent Distinctions
+
+The classifier intentionally distinguishes provider, product, and mode.
+Use all three fields before making claims.
+
+| Provider signal | `agent_product`    | `agent_mode` | Interpretation                                                     |
+| --------------- | ------------------ | ------------ | ------------------------------------------------------------------ |
+| Anthropic       | `ClaudeBot`        | `training`   | Anthropic crawler documented for model-training corpus collection. |
+| Anthropic       | `Claude-SearchBot` | `search`     | Anthropic search / indexing crawler.                               |
+| Anthropic       | `Claude-User`      | `user_fetch` | Fetch made on behalf of a Claude user prompt.                      |
+| OpenAI          | `GPTBot`           | `training`   | OpenAI crawler documented for model-training corpus collection.    |
+| OpenAI          | `OAI-SearchBot`    | `search`     | OpenAI search / indexing crawler.                                  |
+| OpenAI          | `ChatGPT-User`     | `user_fetch` | Fetch made on behalf of a ChatGPT user prompt.                     |
+| Perplexity      | `Perplexity-User`  | `user_fetch` | Fetch made on behalf of a Perplexity user prompt.                  |
+
+When Eric wants to know whether user-triggered Claude or OpenAI fetches
+are happening, filter `agent_classified` to
+`agent_family=anthropic`, `agent_product=Claude-User`,
+`agent_mode=user_fetch`, or to `agent_family=openai`,
+`agent_product=ChatGPT-User`, `agent_mode=user_fetch`. Then inspect the
+paired `ax_route_request.path` / `route_family` distribution around the
+same time window. `ClaudeBot`, `Claude-SearchBot`, `GPTBot`, and
+`OAI-SearchBot` answer different questions and should not be counted as
+user-triggered fetches.
+
+### Confidence Caveats
+
+Analytics here answers "what requests and browser events did we see?"
+It does not answer "total LLM usage of the site."
+
+- `confidence=high` means a known published agent token matched the
+  user-agent string. User agents can still be spoofed.
+- `confidence=medium` currently applies to ordinary browser tokens.
+  Browser AX events appear only on AX-only surfaces because browser
+  traffic on human-facing surfaces is owned by `human_pageview`.
+- `confidence=none` and `agent_family=unknown` mean no known token
+  matched. On AX-only surfaces, these events are still useful as
+  `agent_surface_unknown=true`, but they must not be attributed to a
+  provider.
+- LLMs can read copied text, cached content, screenshots, search
+  snippets, or third-party indexes without making a fresh request to
+  Elden Glass. Do not infer total Claude/OpenAI/LLM use from these
+  server events alone.
+- Google Search Console and PostHog use different measurement models.
+  GSC is the authority for Google query and indexing questions;
+  PostHog is the authority for site behavior and AX request events.
+
+### Weekly Checklist
+
+- Check `human_pageview` top paths, route families, and referrers for
+  unexpected shifts.
+- Check `human_engagement_tick` for MDX pages that attract traffic but
+  do not hold attention past `depth_pct=50`.
+- Check `human_search_submit` and `human_search_result_click` for
+  unanswered or poorly ranked internal search intent.
+- Check `human_item_card_open` for Gatherer taxonomy areas that deserve
+  better links or prose integration.
+- Check GSC Performance for query/page changes and GSC Indexing for
+  sitemap or indexing problems.
+- Check `ax_route_request` status and route-family distribution for AX
+  surfaces.
+- Check `agent_classified` for Claude/OpenAI user-fetch evidence and
+  for unexpected spikes in training, search, or unknown traffic.
+
+### Preview And Release Manual Verification
+
+Run these steps on every preview deployment that changes analytics,
+routes, AX surfaces, search, or route metadata. Set
+`PREVIEW_URL` to the Vercel preview origin, with no trailing slash.
+
+```bash
+export PREVIEW_URL=https://example-git-branch-project.vercel.app
+```
+
+Browser checks:
+
+- Open `$PREVIEW_URL` in a normal browser session and load at least one
+  MDX page, `/search`, and `/gatherer`.
+- Submit a search from `/search`; submit another from global search.
+  Click at least one search result.
+- Click an internal content link, a sidebar/topbar navigation link,
+  and an outbound link.
+- Open an item card from `/gatherer` and, where a page includes one,
+  an inline MDX item card.
+- In PostHog, filter to `environment=preview` and confirm the expected
+  `human_pageview`, `human_search_submit`,
+  `human_search_result_click`, `human_internal_link_click`,
+  `human_sidebar_navigate`, `human_outbound_link_click`, and
+  `human_item_card_open` events appear with the properties documented
+  above.
+- On an MDX page, scroll far enough to trigger `depth_pct=25` and
+  `depth_pct=50`; confirm `human_engagement_tick` appears only for
+  `route_family=mdx_content`.
+
+AX checks:
+
+```bash
+curl -A 'Claude-User/1.0 (+https://www.anthropic.com)' "$PREVIEW_URL/llms.txt"
+curl -A 'ClaudeBot/1.0 (+https://www.anthropic.com)' "$PREVIEW_URL/tldr"
+curl -A 'ChatGPT-User/1.0 (+https://openai.com)' "$PREVIEW_URL/api/llms/toc"
+curl -A 'GPTBot/1.0' "$PREVIEW_URL/contents"
+curl -A 'curl/8.5.0' "$PREVIEW_URL/llms.txt"
+```
+
+- Confirm each request creates an `ax_route_request` and paired
+  `agent_classified` event in `environment=preview`.
+- Confirm `Claude-User` and `ChatGPT-User` classify as
+  `agent_mode=user_fetch`, while `ClaudeBot` and `GPTBot` do not.
+- Confirm the plain `curl/...` request to `/llms.txt` has
+  `agent_family=unknown`, `confidence=none`, and
+  `agent_surface_unknown=true`.
+- Confirm `/tldr` with `ClaudeBot` records `route_family=mdx_content`
+  and `ax_surface=false`.
+
+Production checks after merge:
+
+- Repeat a smaller version of the browser and AX checks on the
+  canonical production domain, filtering PostHog to
+  `environment=production`.
+- In GSC, use URL Inspection for changed production URLs after they
+  deploy. Preview URLs are not the SEO source of truth.
+- If any AX endpoint returns a non-2xx `status` in PostHog, fix that
+  before treating the release as validated.
 
 ## Local Verification
 
@@ -300,6 +542,9 @@ Setup:
 ```bash
 unset NEXT_PUBLIC_POSTHOG_KEY
 unset NEXT_PUBLIC_POSTHOG_HOST
+unset POSTHOG_API_KEY
+unset POSTHOG_HOST
+unset ANALYTICS_DISABLED
 npm run dev
 ```
 
@@ -369,7 +614,7 @@ hand today.
 - `AGENTS.md` and `CLAUDE.md` — operating model. Promotion path
   (feature branch → dev → main) governs how analytics changes ship.
 - `lib/route-catalog.ts` — source of truth for route metadata. The
-  route-family mapping lives next to this when it is created.
+  route-family mapping is implemented by `lib/analytics/route-family.ts`.
 - `vercel.json` — current Vercel config. Analytics does not require
   changes here.
 - Parent epic: `pb-ba4`. Sibling tasks: `pb-ba4.2` (browser
