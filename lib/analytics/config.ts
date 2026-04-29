@@ -70,3 +70,37 @@ export function getBrowserAnalyticsConfig(): AnalyticsBrowserConfig {
 export function isAnalyticsHardDisabledServerSide(): boolean {
   return asBool(process.env.ANALYTICS_DISABLED);
 }
+
+export type AnalyticsServerConfig = {
+  /** True only when both required server PostHog vars are present and not killed. */
+  enabled: boolean;
+  /** Server-only PostHog project API key. */
+  key: string;
+  /** Server-only PostHog ingestion host. */
+  host: string;
+  /** Free-form environment label tagged on every event. */
+  env: string;
+};
+
+/**
+ * Resolve the server-side analytics configuration from server-only env vars.
+ *
+ * Reads `POSTHOG_API_KEY` and `POSTHOG_HOST` per docs/analytics.md and honors
+ * the `ANALYTICS_DISABLED=1` kill switch. Missing required vars degrade
+ * silently to `enabled: false` so callers (middleware, route handlers) can
+ * short-circuit without breaking responses.
+ *
+ * Server-only on purpose: the Node code path must never depend on
+ * `NEXT_PUBLIC_*` mirrors of these values, even when the project policy
+ * happens to use the same key for browser and server.
+ */
+export function getServerAnalyticsConfig(): AnalyticsServerConfig {
+  const env = deriveEnvLabel();
+  if (isAnalyticsHardDisabledServerSide()) {
+    return { enabled: false, key: '', host: '', env };
+  }
+  const key = process.env.POSTHOG_API_KEY ?? '';
+  const host = process.env.POSTHOG_HOST ?? '';
+  const enabled = key.length > 0 && host.length > 0;
+  return { enabled, key, host, env };
+}
