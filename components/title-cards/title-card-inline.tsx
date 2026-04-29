@@ -12,6 +12,7 @@ import { createPortal } from 'react-dom';
 import Image from 'next/image';
 import { Database, ExternalLink } from 'lucide-react';
 
+import { captureItemCardOpen } from '@/lib/analytics/browser-capture';
 import type { TitleCard as TitleCardRecord } from '@/types/title-cards';
 
 type TitleCardProps = {
@@ -214,6 +215,13 @@ export function TitleCard({ id, children }: TitleCardProps) {
       return;
     }
 
+    captureItemCardOpen({
+      cardId: id,
+      cardSection: card?.section ?? null,
+      cardCategory: card?.category ?? null,
+      cardSubcategory: card?.subcategory ?? null,
+      source: 'mdx_inline',
+    });
     openPreview({ x: event.clientX, y: event.clientY });
   }
 

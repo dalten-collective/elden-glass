@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense, useCallback, memo } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Search, X, FileText, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { captureSearchResultClick, captureSearchSubmit } from '@/lib/analytics/browser-capture';
 
 interface SearchResult {
   id: string;
@@ -102,8 +103,10 @@ function SearchContent() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchInput.trim()) {
-      router.push(buildUrl({ q: searchInput.trim(), page: 1 }) as '/search');
+    const trimmed = searchInput.trim();
+    if (trimmed) {
+      captureSearchSubmit({ query: trimmed, via: 'page' });
+      router.push(buildUrl({ q: trimmed, page: 1 }) as '/search');
     } else {
       router.push('/search');
     }
@@ -176,8 +179,13 @@ function SearchContent() {
               Showing {(urlPage - 1) * 20 + 1}-{Math.min(urlPage * 20, total)} of {total} result
               {total !== 1 ? 's' : ''} for &quot;{urlQuery}&quot;
             </p>
-            {results.map((result) => (
-              <SearchResultItem key={result.id} result={result} query={urlQuery} />
+            {results.map((result, index) => (
+              <SearchResultItem
+                key={result.id}
+                result={result}
+                query={urlQuery}
+                rank={(urlPage - 1) * 20 + index}
+              />
             ))}
 
             {/* Pagination */}
@@ -221,15 +229,25 @@ function SearchContent() {
 const SearchResultItem = memo(function SearchResultItem({
   result,
   query,
+  rank,
 }: {
   result: SearchResult;
   query: string;
+  rank: number;
 }) {
   const href = result.targetId ? `${result.page}#${result.targetId}` : result.page;
 
   return (
     <Link
       href={href as any}
+      onClick={() =>
+        captureSearchResultClick({
+          query,
+          resultPath: result.page,
+          resultRank: rank,
+          resultType: 'content',
+        })
+      }
       className="block p-4 -mx-4 rounded-lg hover:bg-[var(--bg-secondary)] transition group"
     >
       {/* Page Title */}

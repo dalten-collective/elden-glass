@@ -8,10 +8,10 @@
  * in bold gold. No numbered rungs, no mixed glyphs, no square nodes —
  * the voice is scholarly-serif apparatus end to end.
  *
- * Secondary sections ("Pataphysics", "Duchamp", etc.) are collapsible.
- * A section auto-opens when the reader's path is inside it, and can be
- * toggled manually via its chevron. Nested sections recurse with the
- * same rules.
+ * Secondary sections ("Pataphysics", "Duchamp", etc.) are native
+ * disclosure groups. A section auto-opens when the reader's path is
+ * inside it, and the browser can still toggle it after a back/forward
+ * cache restore even if React's delegated click handler has not resumed.
  */
 
 import { ChevronDown, ExternalLink } from 'lucide-react';
@@ -38,6 +38,12 @@ type StairNavProps = {
   onSearchNavigate?: (navigate: () => void) => void;
   /** Lets mobile chrome close before a selected search result navigates. */
   onSearchResultNavigate?: (navigate: () => void) => void;
+  /**
+   * Tags the rendered DOM with a navigation surface so the analytics
+   * engagement tracker can emit `human_sidebar_navigate` instead of
+   * `human_internal_link_click` for clicks inside the stair.
+   */
+  surface?: 'desktop' | 'mobile';
 };
 
 // Single marker for every rung and section header. Changing the glyph
@@ -49,11 +55,12 @@ export function StairNav({
   seal,
   onSearchNavigate,
   onSearchResultNavigate,
+  surface = 'desktop',
 }: StairNavProps) {
   const pathname = usePathname() ?? '/';
 
   return (
-    <div className="stair">
+    <div className="stair" data-eg-nav-surface={surface}>
       <Link
         href="/"
         style={{
@@ -177,8 +184,8 @@ function SecondaryEntry({ item, currentPath }: { item: NavItem; currentPath: str
 
 function SectionGroup({ section, currentPath }: { section: NavSectionItem; currentPath: string }) {
   // A section auto-opens when any descendant matches the active path.
-  // Manual toggles are tracked separately so the open state can be
-  // derived during render without effect-driven state synchronization.
+  // Manual toggles are tracked separately, but the underlying disclosure
+  // is native so it remains usable after browser history restores.
   const hasActive = useMemo(
     () => section.children.some((child) => itemMatchesPath(child, currentPath)),
     [section.children, currentPath]
@@ -189,31 +196,30 @@ function SectionGroup({ section, currentPath }: { section: NavSectionItem; curre
   const headerCls = ['stair-group-header', hasActive && 'has-active'].filter(Boolean).join(' ');
 
   return (
-    <div>
-      <button
-        type="button"
-        className={headerCls}
-        onClick={() => setManuallyOpen((value) => !value)}
-        aria-expanded={open}
-      >
+    <details
+      className="stair-group"
+      open={open}
+      onToggle={(event) => {
+        setManuallyOpen(event.currentTarget.open);
+      }}
+    >
+      <summary className={headerCls} aria-expanded={open}>
         <span className="num" aria-hidden="true">
           {RUNG_MARKER}
         </span>
         <span className="title">{section.label}</span>
         <ChevronDown className="chevron" aria-hidden="true" />
-      </button>
-      {open && (
-        <div className="stair-group-children">
-          {section.children.length === 0 ? (
-            <div className="stair-empty">{section.emptyLabel ?? 'Nothing here yet.'}</div>
-          ) : (
-            section.children.map((child) => (
-              <SecondaryEntry key={keyForItem(child)} item={child} currentPath={currentPath} />
-            ))
-          )}
-        </div>
-      )}
-    </div>
+      </summary>
+      <div className="stair-group-children">
+        {section.children.length === 0 ? (
+          <div className="stair-empty">{section.emptyLabel ?? 'Nothing here yet.'}</div>
+        ) : (
+          section.children.map((child) => (
+            <SecondaryEntry key={keyForItem(child)} item={child} currentPath={currentPath} />
+          ))
+        )}
+      </div>
+    </details>
   );
 }
 
