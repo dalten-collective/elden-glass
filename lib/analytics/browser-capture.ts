@@ -17,14 +17,12 @@
 import posthog from 'posthog-js';
 
 import {
-  buildEngagementTickProperties,
   buildInternalLinkClickProperties,
   buildItemCardOpenProperties,
   buildOutboundLinkClickProperties,
   buildSearchResultClickProperties,
   buildSearchSubmitProperties,
   buildSidebarNavigateProperties,
-  type EngagementDepth,
   type ItemCardSource,
   type SearchResultType,
   type SearchVia,
@@ -45,6 +43,15 @@ function safeCapture(eventName: string, properties: Record<string, unknown>): vo
   }
 }
 
+function destinationUrl(path: string): string | null {
+  if (typeof window === 'undefined') return null;
+  try {
+    return new URL(path, window.location.origin).href;
+  } catch {
+    return null;
+  }
+}
+
 export function captureInternalLinkClick(input: { toPath: string }): void {
   safeCapture(
     'human_internal_link_click',
@@ -60,14 +67,16 @@ export function captureOutboundLinkClick(input: { toHost: string }): void {
 }
 
 export function captureSidebarNavigate(input: { toPath: string; surface: Surface }): void {
-  safeCapture(
-    'human_sidebar_navigate',
-    buildSidebarNavigateProperties({
+  const currentUrl = destinationUrl(input.toPath);
+  const standardDestinationProperties = currentUrl ? { $current_url: currentUrl } : {};
+  safeCapture('human_sidebar_navigate', {
+    ...buildSidebarNavigateProperties({
       fromPath: currentPath(),
       toPath: input.toPath,
       surface: input.surface,
-    })
-  );
+    }),
+    ...standardDestinationProperties,
+  });
 }
 
 export function captureSearchSubmit(input: { query: string; via: SearchVia }): void {
@@ -113,12 +122,5 @@ export function captureItemCardOpen(input: {
       cardSubcategory: input.cardSubcategory,
       source: input.source,
     })
-  );
-}
-
-export function captureEngagementTick(input: { depth: EngagementDepth }): void {
-  safeCapture(
-    'human_engagement_tick',
-    buildEngagementTickProperties({ fromPath: currentPath(), depth: input.depth })
   );
 }

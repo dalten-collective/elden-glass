@@ -108,7 +108,7 @@ test('no-op for unmapped /api/* path (unknown family)', async () => {
   assert.equal(calls.length, 0);
 });
 
-test('no-op for browser UA on a content surface (human_pageview owns this)', async () => {
+test('no-op for browser UA on a content surface (native browser analytics owns this)', async () => {
   configureProvider();
   await captureAxRouteRequest({
     method: 'GET',

@@ -12,7 +12,7 @@
  * that file plus a builder here — components must not assemble event
  * payloads inline.
  */
-import { routeFamilyForPath, type RouteFamily } from './route-family.ts';
+import { routeFamilyForPath } from './route-family.ts';
 
 export type Surface = 'desktop' | 'mobile';
 
@@ -21,10 +21,6 @@ export type ItemCardSource = 'gatherer_grid' | 'mdx_inline' | 'deep_link';
 export type SearchVia = 'page' | 'global';
 
 export type SearchResultType = 'content' | 'titlecard';
-
-/** Allowed read-engagement thresholds. Restrained per docs/analytics.md. */
-export const ENGAGEMENT_DEPTHS = [25, 50, 75, 100] as const;
-export type EngagementDepth = (typeof ENGAGEMENT_DEPTHS)[number];
 
 /** Internal-link click — same-host navigation the SPA owns. */
 export function buildInternalLinkClickProperties(input: {
@@ -67,6 +63,7 @@ export function buildSidebarNavigateProperties(input: {
     from_path: input.fromPath,
     to_route_family: routeFamilyForPath(input.toPath),
     to_path: input.toPath,
+    $pathname: input.toPath,
     surface: input.surface,
   };
 }
@@ -132,24 +129,4 @@ export function buildItemCardOpenProperties(input: {
     card_subcategory: input.cardSubcategory,
     source: input.source,
   };
-}
-
-/** Periodic read-depth heartbeat. Fires at most once per (path, depth). */
-export function buildEngagementTickProperties(input: {
-  fromPath: string;
-  depth: EngagementDepth;
-}): Record<string, unknown> {
-  return {
-    route_family: routeFamilyForPath(input.fromPath),
-    path: input.fromPath,
-    depth_pct: input.depth,
-  };
-}
-
-/** Route families on which read-depth ticks are meaningful. */
-const ENGAGEMENT_FAMILIES: ReadonlySet<RouteFamily> = new Set(['mdx_content']);
-
-/** Returns true when read-depth ticks should be emitted on the given path. */
-export function shouldEmitEngagementTicks(path: string): boolean {
-  return ENGAGEMENT_FAMILIES.has(routeFamilyForPath(path));
 }
