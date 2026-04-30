@@ -214,10 +214,13 @@ hand-authored nav tree.
 
 Global style tokens live in `app/globals.css`.
 
-Use existing tokens and shared components before adding one-off colors,
-surfaces, borders, shadows, or type styling. If a new visual role is genuinely
-needed, add a named token in `app/globals.css` and use that token from
-components.
+The full style-system contract lives in `docs/style-system.md`. Follow it for
+new work.
+
+Use canonical Delay in Glass tokens and shared components before adding
+one-off colors, surfaces, borders, shadows, or type styling. If a new visual
+role is genuinely needed, add one named token in `app/globals.css` and use that
+token from components.
 
 Do not introduce `var(--...)` consumers without defining the token in
 `app/globals.css`. `npm run check:tokens` audits this, and `npm run build`
@@ -226,6 +229,10 @@ runs the audit before compiling.
 Tailwind utilities are still appropriate for layout, spacing, responsive
 behavior, state, and component-local composition. The boundary is visual
 identity: colors and recurring surfaces should come from the token system.
+
+Run `npm run audit:styles` to review legacy-token usage, raw colors, static
+inline styles, and hand-rolled surfaces. The audit is advisory until a category
+is explicitly promoted into CI.
 
 ## Content Authoring Rules
 
