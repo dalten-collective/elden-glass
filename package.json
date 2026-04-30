@@ -10,6 +10,7 @@
     "check:generated": "npm run check:critique-assets && npm run check:manuscripts",
     "check:manuscripts": "node scripts/sync-manuscripts.js --check",
     "check:tokens": "node scripts/check-css-tokens.js",
+    "audit:styles": "node scripts/audit-style-system.js",
     "lint": "eslint . --max-warnings=0",
     "lint:actions": "github-actionlint",
     "typecheck": "next typegen && tsc --noEmit -p tsconfig.typecheck.json",
