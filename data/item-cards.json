@@ -140382,6 +140382,254 @@
       },
       "createdAt": "2026-04-24T00:00:00.000Z",
       "updatedAt": "2026-04-24T00:00:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-anomalos",
+      "term": "anomalos",
+      "aliases": [
+        "variance",
+        "variance/anomalos",
+        "anomaly of the aporia"
+      ],
+      "scope": "global",
+      "title": "Anomalos (Bök: Variance)",
+      "description": "Bök's first declension of exception: variance, or the anomaly of the aporia. The anomalos is the repressed part of a rule that ensures the rule does not work, the case that disrupts a system built around equivalence. Retained separately from the broader Anomaly card because it records Bök's technical triad of variance, alliance, and deviance.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-anomaly",
+          "linkedTitle": "Anomaly"
+        },
+        {
+          "cardId": "pata-pataphysics",
+          "linkedTitle": "'Pataphysics"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-syzygia",
+      "term": "syzygia",
+      "aliases": [
+        "alliance",
+        "alliance/syzygy",
+        "syzygy of the chiasm"
+      ],
+      "scope": "global",
+      "title": "Syzygia (Bök: Alliance)",
+      "description": "Bök's second declension of exception: alliance, or the syzygy of the chiasm. Syzygia names the moment when opposed terms are neither simply united nor parted, a conjunction that confuses categorical difference. Retained separately from the core Syzygy card because it records Bök's technical declension in the thesis vocabulary.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-syzygy",
+          "linkedTitle": "Syzygy (Core Thesis)"
+        },
+        {
+          "cardId": "pata-vocab-bok-anomalos",
+          "linkedTitle": "Anomalos (Bök: Variance)"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-paralogy",
+      "term": "paralogy",
+      "aliases": [
+        "ludic language-game",
+        "invoke anomaly",
+        "abnormal and unknown"
+      ],
+      "scope": "global",
+      "title": "Paralogy",
+      "description": "In Bök's Lyotard-inflected account, paralogy is the ludic language-game that proves itself by inconsistency and inefficiency: it convolves problems, invokes anomaly, and seeks what is abnormal and unknown. It is the scientific posture most compatible with pataphysics because it treats exceptions as discoveries rather than errors.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-vocab-bok-paradigm",
+          "linkedTitle": "Paradigm"
+        },
+        {
+          "cardId": "pata-anomaly",
+          "linkedTitle": "Anomaly"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-paradigm",
+      "term": "paradigm",
+      "aliases": [
+        "nomic language-game",
+        "normal science",
+        "revoke anomaly"
+      ],
+      "scope": "global",
+      "title": "Paradigm",
+      "description": "In Bök's account after Kuhn, a paradigm is a nomic language-game that proves its consistency and efficiency by solving problems and revoking anomaly for the sake of what is normal and known. The card is paired with Paralogy because Bök defines pataphysical poetics against this normalizing scientific posture.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-vocab-bok-paralogy",
+          "linkedTitle": "Paralogy"
+        },
+        {
+          "cardId": "pata-anomaly",
+          "linkedTitle": "Anomaly"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-royal-science",
+      "term": "royal science",
+      "aliases": [
+        "state science",
+        "standardized metaphysics",
+        "Cartesian space"
+      ],
+      "scope": "global",
+      "title": "Royal Science",
+      "description": "Bök's Deleuze-and-Guattari-derived name for standardized metaphysics: truth deployed by the state in Cartesian space on behalf of instrumental imperatives such as law and order. It is the official science that pataphysics and nomad science disturb by insisting on exceptions, trial, and anomalous cases.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-vocab-bok-nomad-science",
+          "linkedTitle": "Nomad Science"
+        },
+        {
+          "cardId": "pata-pataphysics",
+          "linkedTitle": "'Pataphysics"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-nomad-science",
+      "term": "nomad science",
+      "aliases": [
+        "bastardized metaphysics",
+        "Riemannian space",
+        "trial and error"
+      ],
+      "scope": "global",
+      "title": "Nomad Science",
+      "description": "Bök's Deleuze-and-Guattari-derived counterpoint to royal science: a bastardized metaphysics deployed against the state in Riemannian space, putting truth at risk through experimental trial and error. It helps explain why pataphysics values wandering, deformation, and exception over stable law.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-vocab-bok-royal-science",
+          "linkedTitle": "Royal Science"
+        },
+        {
+          "cardId": "pata-stoppage",
+          "linkedTitle": "Stoppage (étalon)"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-poetic-wisdom",
+      "term": "poetic wisdom",
+      "aliases": [
+        "credible impossibility",
+        "as if",
+        "nuovo scienza"
+      ],
+      "scope": "global",
+      "title": "Poetic Wisdom",
+      "description": "Bök uses Vico's poetic wisdom for the productive error that demands belief in a credible impossibility: an 'as if' that can become the premise for a new science. This card anchors the thesis's bridge between poetry and science, where imaginary solutions can become usable forms of knowledge.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-imaginary-solutions",
+          "linkedTitle": "Imaginary Solutions"
+        },
+        {
+          "cardId": "pata-vocab-bok-paralogy",
+          "linkedTitle": "Paralogy"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
+    },
+    {
+      "id": "pata-vocab-bok-lucid-writing",
+      "term": "lucid writing",
+      "aliases": [
+        "crystallography",
+        "oneiric science",
+        "lucid dreaming"
+      ],
+      "scope": "global",
+      "title": "Lucid Writing",
+      "description": "In the preface to his thesis, Bök describes his own Crystallography as an act of lucid writing: not transparent communication, but exploratory reflexivity patterned like lucid dreaming. The term matters because it names the thesis's own method, a pataphysical writing that is aware of its status as dream and system.",
+      "section": "Pataphysics",
+      "category": "Vocabulary",
+      "subcategory": "Bök Thesis",
+      "source": "Christian Bök, 'Pataphysics: The Poetics of an Imaginary Science (York University, 1997)",
+      "image": null,
+      "images": [],
+      "connections": [
+        {
+          "cardId": "pata-pataphysics",
+          "linkedTitle": "'Pataphysics"
+        },
+        {
+          "cardId": "pata-vocab-bok-poetic-wisdom",
+          "linkedTitle": "Poetic Wisdom"
+        }
+      ],
+      "links": [],
+      "createdAt": "2026-04-30T06:19:00.000Z",
+      "updatedAt": "2026-04-30T06:19:00.000Z"
     }
   ]
 }
