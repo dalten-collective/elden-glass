@@ -723,10 +723,10 @@
       "term": "elden ring",
       "scope": "global",
       "title": "Elden Ring",
-      "description": "FromSoftware's 2022 magnum opus. An open-world action RPG created by Hidetaka Miyazaki with worldbuilding by George R.R. Martin.\n\nSites of Grace = Connection points in the apparatus",
-      "section": null,
-      "category": null,
-      "subcategory": null,
+      "description": "FromSoftware's 2022 open-world action RPG, directed by Hidetaka Miyazaki with worldbuilding by George R. R. Martin. This root card anchors the site's Elden Ring corpus: Sites of Grace, the Lands Between, and the playable apparatus that the thesis reads as a three-dimensional realization of The Large Glass.",
+      "section": "Elden Ring",
+      "category": "Canonical Root",
+      "subcategory": "Game",
       "source": null,
       "image": null,
       "images": [],
@@ -754,7 +754,7 @@
       ],
       "links": [],
       "createdAt": "2024-11-30T00:20:00.000Z",
-      "updatedAt": "2025-12-08T15:49:34.056Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "ring.n.01",
         "magnum.n.01",
@@ -777,10 +777,10 @@
       "term": "marcel duchamp",
       "scope": "global",
       "title": "Marcel Duchamp",
-      "description": "1887-1968. French-American artist who abandoned \"retinal art\" for conceptual work. Chess player. Provocateur. The most influential artist of the 20th century.",
-      "section": null,
-      "category": null,
-      "subcategory": null,
+      "description": "1887-1968. French-American artist who abandoned merely retinal art for conceptual operations, chess, readymades, and The Bride Stripped Bare by Her Bachelors, Even. This root card anchors the Duchamp corpus behind the site's Large Glass comparison.",
+      "section": "Marcel Duchamp",
+      "category": "Canonical Root",
+      "subcategory": "Artist",
       "source": null,
       "image": null,
       "images": [],
@@ -804,7 +804,7 @@
       ],
       "links": [],
       "createdAt": "2024-11-30T00:20:00.000Z",
-      "updatedAt": "2025-12-01T03:13:07.529Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "marcel.n.01",
         "duchamp.n.01",
@@ -839,10 +839,10 @@
       "term": "the discovery",
       "scope": "global",
       "title": "The Discovery",
-      "description": "The Erdtree IS the Bride. The Tarnished ARE the Bachelors. The entire cosmology of the Lands Between maps onto Duchamp's apparatus.\n\nFollow links. The evidence emerges from connections.",
-      "section": null,
-      "category": null,
-      "subcategory": null,
+      "description": "The discovery at the center of the site: the Erdtree is the Bride, the Tarnished are the Bachelors, and the cosmology of the Lands Between maps onto Duchamp's apparatus. This card is intentionally a thesis root rather than a narrow item record; follow its connections to see the evidence emerge.",
+      "section": "Elden Glass",
+      "category": "Canonical Root",
+      "subcategory": "Thesis",
       "source": null,
       "image": null,
       "images": [],
@@ -882,7 +882,7 @@
       ],
       "links": [],
       "createdAt": "2024-11-30T00:20:00.000Z",
-      "updatedAt": "2025-12-01T03:13:07.698Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "discovery.n.01",
         "bride.n.01",
@@ -903,10 +903,10 @@
       "term": "the green box",
       "scope": "global",
       "title": "The Green Box",
-      "description": null,
-      "section": null,
-      "category": null,
-      "subcategory": null,
+      "description": "Duchamp's 1934 Green Box, a collection of notes, diagrams, and textual fragments for The Bride Stripped Bare by Her Bachelors, Even. The box functions as a technical manual for The Large Glass and is therefore a primary source for the site's item-card correspondences.",
+      "section": "Marcel Duchamp",
+      "category": "Primary Sources",
+      "subcategory": "Box Notes",
       "source": null,
       "image": "/images/duchamp-notes/green-box/note1.jpg",
       "images": [],
@@ -942,7 +942,7 @@
       ],
       "links": [],
       "createdAt": "2024-11-30T00:20:00.000Z",
-      "updatedAt": "2025-12-01T03:13:07.699Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "green.s.01",
         "box.n.01"
@@ -958,9 +958,9 @@
       "scope": "global",
       "title": "The Large Glass",
       "description": "Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even (1915 to 1923) is a unique image text system in which the physical object is complemented by hundreds of preparatory notes the artist considered to be as important as the object itself. The work depicts a mechanical erotic apparatus: the Bride's 'blossoming' above, the Bachelors' futile machinery below. Gas flows, gears turn, desire circulates, but the two realms never truly connect.",
-      "section": null,
-      "category": null,
-      "subcategory": null,
+      "section": "Marcel Duchamp",
+      "category": "Canonical Root",
+      "subcategory": "Artwork",
       "source": null,
       "image": "/images/duchamp/paintings/the-bride-stripped-bare-by-her-bachelors-1923.jpg",
       "images": [],
@@ -988,7 +988,7 @@
       ],
       "links": [],
       "createdAt": "2024-11-30T00:20:00.000Z",
-      "updatedAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "large.s.01",
         "glass.n.01",
@@ -51953,7 +51953,7 @@
     },
     {
       "id": "258e2f4df919b",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Apologies\"",
       "scope": "global",
       "title": "Prattling Pate \"Apologies\"",
       "description": "Emits a voice that says \"Apologies\"",
@@ -51966,7 +51966,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.215Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -51978,11 +51978,14 @@
         546817,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "e581594576455",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Hello\"",
       "scope": "global",
       "title": "Prattling Pate \"Hello\"",
       "description": "Emits a voice that says \"Hello\"",
@@ -51995,7 +51998,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.214Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52009,11 +52012,14 @@
         544769,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "e1369b7dbbe62",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Let's get to it\"",
       "scope": "global",
       "title": "Prattling Pate \"Let's get to it\"",
       "description": "Emits a voice that says \"Let's get to it\"",
@@ -52026,7 +52032,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.215Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52042,11 +52048,14 @@
         327681,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "e4fb477f4fdec",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"My beloved\"",
       "scope": "global",
       "title": "Prattling Pate \"My beloved\"",
       "description": "Emits a voice that says \"My beloved\"",
@@ -52059,7 +52068,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.215Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52073,11 +52082,14 @@
         755713,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "839c5d0ca307a",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Please help\"",
       "scope": "global",
       "title": "Prattling Pate \"Please help\"",
       "description": "Emits a voice that says \"Please help\"",
@@ -52090,7 +52102,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.215Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52106,11 +52118,14 @@
         435201,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "0cd5f6d765be6",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Thank you\"",
       "scope": "global",
       "title": "Prattling Pate \"Thank you\"",
       "description": "Emits a voice that says \"Thank you\"",
@@ -52123,7 +52138,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.214Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52137,11 +52152,14 @@
         547073,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "2fbc1141ebfa7",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Wonderful\"",
       "scope": "global",
       "title": "Prattling Pate \"Wonderful\"",
       "description": "Emits a voice that says \"Wonderful\"",
@@ -52154,7 +52172,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.215Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52168,11 +52186,14 @@
         1006593,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
       "id": "15fa9c6d26d48",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"You're beautiful\"",
       "scope": "global",
       "title": "Prattling Pate \"You're beautiful\"",
       "description": "Emits a voice that says \"You're beautiful\"",
@@ -52185,7 +52206,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.215Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "voice.n.01",
@@ -52199,6 +52220,9 @@
         984577,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
@@ -112760,7 +112784,7 @@
     },
     {
       "id": "ba6a1ef4ca118",
-      "term": "prattling pate ",
+      "term": "Prattling Pate \"Lamentation\"",
       "scope": "global",
       "title": "Prattling Pate \"Lamentation\"",
       "description": "Emits a blissful lamentation",
@@ -112773,7 +112797,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.270Z",
-      "updatedAt": "2025-12-01T03:13:07.588Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "pate.n.01",
         "blissful.s.01",
@@ -112787,6 +112811,9 @@
         1208321,
         866305,
         646145
+      ],
+      "aliases": [
+        "prattling pate "
       ]
     },
     {
@@ -126831,10 +126858,10 @@
     },
     {
       "id": "01bf4fbe77353",
-      "term": "boxing match",
+      "term": "Boxing Match (Large Glass Component)",
       "scope": "global",
-      "title": "Boxing Match",
-      "description": "Component 14 of The Large Glass",
+      "title": "Boxing Match (Large Glass Component)",
+      "description": "Component 14 of The Large Glass. Preserved as the concise Duchamp component card; the separate animation card describes the moving mechanism and Andrew Stafford visualization.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -126844,7 +126871,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.276Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "boxing.n.01",
         "match.n.01",
@@ -126862,11 +126889,14 @@
         550913,
         796673,
         449537
+      ],
+      "aliases": [
+        "boxing match"
       ]
     },
     {
       "id": "7c96fc00cf904",
-      "term": "capillary tubes",
+      "term": "Capillary Tubes (Large Glass Component)",
       "scope": "global",
       "title": "Capillary Tubes (Large Glass Component)",
       "description": "Component 3 of The Large Glass: the conduits that carry the bachelors' illuminating gas after it leaves the Malic Moulds. Preserved as the concise Duchamp component card; see the animation and pataphysical vocabulary cards for interpretive expansions.",
@@ -126888,7 +126918,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.012Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "capillary.s.01",
         "component.n.01",
@@ -126904,6 +126934,9 @@
         550913,
         796673,
         449537
+      ],
+      "aliases": [
+        "capillary tubes"
       ]
     },
     {
@@ -126911,7 +126944,7 @@
       "term": "sleigh",
       "scope": "global",
       "title": "Chariot/Sleigh",
-      "description": "Component 1 of The Large Glass",
+      "description": "Component 1 of The Large Glass: the chariot or sleigh assembly in the Bachelor realm. This concise component card is retained as a structural index entry for the apparatus.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -126921,7 +126954,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.010Z",
-      "updatedAt": "2025-12-01T03:13:07.298Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "sleigh.n.01",
         "component.n.01",
@@ -126944,7 +126977,7 @@
       "term": "chocolate grinder",
       "scope": "global",
       "title": "Chocolate Grinder",
-      "description": "Component 4 of The Large Glass",
+      "description": "Component 4 of The Large Glass: the Chocolate Grinder, the bachelor-machine mechanism whose rotating drums become central to the site's Elden Ring correspondence.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -126959,7 +126992,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.012Z",
-      "updatedAt": "2025-12-01T03:13:07.299Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "chocolate.n.01",
         "grinder.n.01",
@@ -126984,7 +127017,7 @@
       "term": "chocolate grinder no. 1",
       "scope": "global",
       "title": "Chocolate Grinder (No. 1)",
-      "description": "1913, oil and pencil on canvas",
+      "description": "1913 oil and pencil on canvas study for the Chocolate Grinder. Retained as a preparatory-work card distinct from the Glass component entry.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Preparatory Works for The Large Glass",
@@ -126999,7 +127032,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2025-12-01T03:13:07.299Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "chocolate.n.01",
         "grinder.n.01",
@@ -127028,7 +127061,7 @@
       "term": "chocolate grinder no. 2",
       "scope": "global",
       "title": "Chocolate Grinder (No. 2)",
-      "description": "1914",
+      "description": "1914 Chocolate Grinder study. Retained as a preparatory-work card distinct from both the 1913 study and the finished Glass component entry.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Preparatory Works for The Large Glass",
@@ -127043,7 +127076,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2025-12-01T03:13:07.299Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "chocolate.n.01",
         "grinder.n.01",
@@ -127066,7 +127099,7 @@
       "term": "splashes",
       "scope": "global",
       "title": "Cradle or Splashes",
-      "description": "Component 12 of The Large Glass",
+      "description": "Component 12 of The Large Glass: the cradle or splashes region in the lower apparatus. Retained as a concise structural component card.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127076,7 +127109,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.317Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "component.n.01",
         "large.s.01",
@@ -127097,7 +127130,7 @@
       "term": "desire gears",
       "scope": "global",
       "title": "Desire gears",
-      "description": "Component 8 of The Large Glass",
+      "description": "Component 8 of The Large Glass: the desire gears that help articulate the Bachelor machine's frustrated erotic mechanics.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127107,7 +127140,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.013Z",
-      "updatedAt": "2025-12-01T03:13:07.339Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "desire.n.01",
         "component.n.01",
@@ -127130,7 +127163,7 @@
       "term": "draught piston",
       "scope": "global",
       "title": "Draught Piston",
-      "description": "Component 9 of The Large Glass",
+      "description": "Component 9 of The Large Glass: the draught piston, part of the Bachelor apparatus and its circulation of desire through mechanical operations.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127140,7 +127173,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.013Z",
-      "updatedAt": "2025-12-01T03:13:07.354Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "draught.n.01",
         "piston.n.01",
@@ -127202,7 +127235,7 @@
       "term": "king and queen surrounded by swift nudes",
       "scope": "global",
       "title": "King and Queen Surrounded by Swift Nudes",
-      "description": "1912",
+      "description": "1912 Duchamp painting from the Munich period. Retained as a preparatory-work card because its swift nudes and royal pair anticipate the Glass's Bride/Bachelor logic.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Preparatory Works for The Large Glass",
@@ -127217,7 +127250,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "king.n.01",
         "queen.n.01",
@@ -127332,7 +127365,7 @@
       "term": "nine malic moulds",
       "scope": "global",
       "title": "Nine Malic Moulds/Cemetery of Uniforms and Liveries",
-      "description": "Component 2 of The Large Glass",
+      "description": "Component 2 of The Large Glass: the Nine Malic Moulds, also called the Cemetery of Uniforms and Liveries. These Bachelor forms are central to the site's Tarnished correspondence.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127412,7 +127445,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.011Z",
-      "updatedAt": "2026-04-24T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "nine.s.01",
         "component.n.01",
@@ -127442,7 +127475,7 @@
       "term": "nine shots",
       "scope": "global",
       "title": "Nine Shots",
-      "description": "Component 17 of The Large Glass",
+      "description": "Component 17 of The Large Glass: the Nine Shots. Retained as a structural component card for the apparatus's chance-marking operation.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127452,7 +127485,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.557Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "nine.s.01",
         "component.n.01",
@@ -127472,7 +127505,7 @@
     },
     {
       "id": "62ed18b9bf418",
-      "term": "nude descending a staircase",
+      "term": "Nude Descending a Staircase, No. 2 (Preparatory Work)",
       "scope": "global",
       "title": "Nude Descending a Staircase, No. 2 (Preparatory Work)",
       "description": "1912 painting, Philadelphia Museum of Art. Preserved as the Large Glass preparatory-work card in the Duchamp corpus; the separate Paintings card carries the fuller artwork description and reception context.",
@@ -127490,7 +127523,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "nude.s.01",
         "descending.a.01",
@@ -127512,6 +127545,9 @@
         334849,
         796673,
         550913
+      ],
+      "aliases": [
+        "nude descending a staircase"
       ]
     },
     {
@@ -127519,7 +127555,7 @@
       "term": "oculist witnesses",
       "scope": "global",
       "title": "Oculist Witnesses",
-      "description": "Component 13 of The Large Glass",
+      "description": "Component 13 of The Large Glass: the Oculist Witnesses, the optical witnesses in the lower apparatus. Retained as a concise structural component card.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127529,7 +127565,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.568Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "oculist.n.01",
         "component.n.01",
@@ -127621,10 +127657,10 @@
     },
     {
       "id": "68fd62a81272",
-      "term": "butterfly pump",
+      "term": "Region of Butterfly Pump (Large Glass Component)",
       "scope": "global",
-      "title": "Region of Butterfly Pump",
-      "description": "Component 10 of The Large Glass",
+      "title": "Region of Butterfly Pump (Large Glass Component)",
+      "description": "Component 10 of The Large Glass. Preserved as the concise Duchamp component card; the separate animation card describes the propelling mechanism and Stafford visualization.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127634,7 +127670,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.613Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "butterfly.n.01",
         "pump.n.01",
@@ -127652,6 +127688,9 @@
         550913,
         796673,
         449537
+      ],
+      "aliases": [
+        "butterfly pump"
       ]
     },
     {
@@ -127844,7 +127883,7 @@
       "term": "sex cylinder",
       "scope": "global",
       "title": "Sex cylinder",
-      "description": "Component 7 of The Large Glass",
+      "description": "Component 7 of The Large Glass: the sex cylinder, part of the Bride-side machinery and the Glass's mechanical-erotic vocabulary.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127854,7 +127893,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.013Z",
-      "updatedAt": "2025-12-01T03:13:07.653Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "sex.n.01",
         "cylinder.n.01",
@@ -127876,10 +127915,10 @@
     },
     {
       "id": "f61eb4a3c81bc",
-      "term": "sieves",
+      "term": "Sieves (Large Glass Component)",
       "scope": "global",
-      "title": "Sieves",
-      "description": "Component 5 of The Large Glass",
+      "title": "Sieves (Large Glass Component)",
+      "description": "Component 5 of The Large Glass. Preserved as the concise Duchamp component card; the separate animation card explains the gas-capturing mechanism and Stafford visualization.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -127889,7 +127928,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.013Z",
-      "updatedAt": "2025-12-01T03:13:07.659Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "component.n.01",
         "large.s.01",
@@ -127903,6 +127942,9 @@
         550913,
         796673,
         449537
+      ],
+      "aliases": [
+        "sieves"
       ]
     },
     {
@@ -128044,7 +128086,7 @@
       "term": "tender of gravity",
       "scope": "global",
       "title": "Tender of Gravity",
-      "description": "Component 16 of The Large Glass",
+      "description": "Component 16 of The Large Glass: the Tender of Gravity. Retained as a structural component card for the apparatus's gravity and fall logic.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -128054,7 +128096,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.697Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "tender.s.01",
         "gravity.n.01",
@@ -128076,10 +128118,10 @@
     },
     {
       "id": "7dd02f98f7e64",
-      "term": "the bride",
+      "term": "The Bride (Preparatory Painting)",
       "scope": "global",
-      "title": "The Bride (Mariée)",
-      "description": "1912",
+      "title": "The Bride (Preparatory Painting)",
+      "description": "1912 preparatory painting for The Large Glass. Retained separately from the Large Glass component card because it records Duchamp's Munich-period painting that helped generate the Bride motif.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Preparatory Works for The Large Glass",
@@ -128094,7 +128136,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2025-12-01T03:13:07.698Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "bride.n.01",
         "artwork.n.01",
@@ -128104,14 +128146,17 @@
         530433,
         796673,
         550913
+      ],
+      "aliases": [
+        "the bride"
       ]
     },
     {
       "id": "1d20f52214cbf",
-      "term": "the bride",
+      "term": "The Bride / Pendu Femelle (Large Glass Component)",
       "scope": "global",
-      "title": "The Bride/Pendu femelle",
-      "description": "Component 6 of The Large Glass",
+      "title": "The Bride / Pendu Femelle (Large Glass Component)",
+      "description": "Component 6 of The Large Glass: the Bride or pendu femelle in the upper realm. Retained separately from the 1912 preparatory painting card because this entry identifies the component inside the Glass apparatus.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -128130,7 +128175,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.013Z",
-      "updatedAt": "2025-12-01T03:13:07.698Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "bride.n.01",
         "component.n.01",
@@ -128146,11 +128191,14 @@
         550913,
         796673,
         449537
+      ],
+      "aliases": [
+        "the bride"
       ]
     },
     {
       "id": "324a80534f97e",
-      "term": "passage from virgin to bride",
+      "term": "The Passage from Virgin to Bride (Preparatory Work)",
       "scope": "global",
       "title": "The Passage from Virgin to Bride (Preparatory Work)",
       "description": "July-August 1912, MoMA New York. Preserved as the Large Glass preparatory-work card for Duchamp's Munich-period transition from Virgin to Bride; the separate Paintings card carries fuller artwork context.",
@@ -128168,7 +128216,7 @@
         }
       ],
       "createdAt": "2025-12-01T01:41:16.015Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "passage.n.01",
         "virgin.s.01",
@@ -128190,6 +128238,9 @@
         463873,
         796673,
         550913
+      ],
+      "aliases": [
+        "passage from virgin to bride"
       ]
     },
     {
@@ -128197,7 +128248,7 @@
       "term": "slopes of flow",
       "scope": "global",
       "title": "Toboggan or Plastic/Slopes of flow",
-      "description": "Component 11 of The Large Glass",
+      "description": "Component 11 of The Large Glass: the toboggan or plastic slopes of flow. Retained as a structural component card for the apparatus's channels and descent logic.",
       "section": "Marcel Duchamp",
       "category": "The Large Glass",
       "subcategory": "Components",
@@ -128207,7 +128258,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-01T01:41:16.014Z",
-      "updatedAt": "2025-12-01T03:13:07.704Z",
+      "updatedAt": "2026-04-30T05:58:00.000Z",
       "senses": [
         "flow.n.01",
         "component.n.01",
@@ -129269,7 +129320,7 @@
     },
     {
       "id": "nude-descending-a-staircase",
-      "term": "nude descending a staircase",
+      "term": "Nude Descending a Staircase, No. 2 (Painting)",
       "scope": "global",
       "title": "Nude Descending a Staircase, No. 2 (Painting)",
       "description": "1912. Philadelphia Museum of Art. \"A painting that helped to introduce Modern Art to New York with a bang in 1913.\" Duchamp's last \"clear attempt to use a traditional modality of retinal art to express a conceptual or gray matter art.\" When asked if the nude was male or female, Duchamp replied: \"Is it a woman? No. Is it a man? No. To tell you the truth, I have never thought which it is.\" This broader Paintings entry is distinct from the preparatory-work card used in the Large Glass grouping. — Tout-Fait",
@@ -129287,7 +129338,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "nude.s.01",
         "descending.a.01",
@@ -129327,7 +129378,8 @@
         "year": "1912"
       },
       "aliases": [
-        "Nude Descending a Staircase No. 2"
+        "Nude Descending a Staircase No. 2",
+        "nude descending a staircase"
       ]
     },
     {
@@ -129389,7 +129441,7 @@
     },
     {
       "id": "passage-from-virgin-to-bride",
-      "term": "passage from virgin to bride",
+      "term": "The Passage from Virgin to Bride (Painting)",
       "scope": "global",
       "title": "The Passage from Virgin to Bride (Painting)",
       "description": "1912. Painted in Munich alongside The Bride. One of the key works from Duchamp's Munich period where he \"discovered the theme of his Grand Oeuvre\" and produced related works including Virgin (No. 1), Virgin (No. 2), and Mécanique de la Pudeur. — Tout-Fait. Retained as the broader Paintings entry, distinct from the Large Glass preparatory-work card.",
@@ -129407,7 +129459,7 @@
         }
       ],
       "createdAt": "2025-12-06T22:50:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "passage.n.01",
         "virgin.s.01",
@@ -129443,7 +129495,8 @@
         "year": "1912"
       },
       "aliases": [
-        "Transition of Virgin into a Bride"
+        "Transition of Virgin into a Bride",
+        "passage from virgin to bride"
       ]
     },
     {
@@ -130165,7 +130218,7 @@
     },
     {
       "id": "capillary-tubes",
-      "term": "capillary tubes",
+      "term": "The Capillary Tubes (Animation)",
       "scope": "global",
       "title": "The Capillary Tubes (Animation)",
       "description": "Animation-focused card from understandingduchamp.com. The bachelor gas flows out of the molds into conduits called the Capillary Tubes; the malic gas begins to liquefy, and toward the end of the tubes \"the gas takes on a liquid elemental state.\" Distinct from the terse Large Glass component card and the pataphysical vocabulary card.",
@@ -130196,7 +130249,7 @@
         }
       ],
       "createdAt": "2025-12-06T23:50:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "capillary.s.01",
         "gas.n.01",
@@ -130212,14 +130265,17 @@
         353281,
         796673,
         550913
+      ],
+      "aliases": [
+        "capillary tubes"
       ]
     },
     {
       "id": "sieves",
-      "term": "sieves",
+      "term": "The Sieves (Animation)",
       "scope": "global",
-      "title": "The Sieves",
-      "description": "\"The gas is captured by a series of Sieves. The Sieves are cone-shaped. They're propelled through the Sieves by a device called the Butterfly Pump. Inside the sieves, the gas is 'dazed'. The butterfly 'drives the spangles of the liquified gas towards a drying pump'.\" Animation by Andrew Stafford. — understandingduchamp.com",
+      "title": "The Sieves (Animation)",
+      "description": "The gas is captured by a series of Sieves. The Sieves are cone-shaped. They're propelled through the Sieves by a device called the Butterfly Pump. Inside the sieves, the gas is 'dazed'. The butterfly 'drives the spangles of the liquified gas towards a drying pump'.\" Animation by Andrew Stafford. — understandingduchamp.com Retained separately from the Duchamp component card because it documents the animated mechanism and source interpretation from understandingduchamp.com.",
       "section": "Animations",
       "category": "The Large Glass",
       "subcategory": null,
@@ -130247,7 +130303,7 @@
         }
       ],
       "createdAt": "2025-12-06T23:50:00.000Z",
-      "updatedAt": "2025-12-06T23:50:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "gas.n.01",
         "butterfly.n.01",
@@ -130269,14 +130325,17 @@
         638977,
         796673,
         550913
+      ],
+      "aliases": [
+        "sieves"
       ]
     },
     {
       "id": "butterfly-pump",
-      "term": "butterfly pump",
+      "term": "The Butterfly Pump (Animation)",
       "scope": "global",
-      "title": "The Butterfly Pump",
-      "description": "\"The Butterfly Pump is a propelling mechanism. The butterfly 'drives the spangles of the liquified gas towards a drying pump.' The form may have been inspired by the suction pumps on petrol cans of Duchamp's era.\" Animation by Andrew Stafford. — understandingduchamp.com",
+      "title": "The Butterfly Pump (Animation)",
+      "description": "The Butterfly Pump is a propelling mechanism. The butterfly 'drives the spangles of the liquified gas towards a drying pump.' The form may have been inspired by the suction pumps on petrol cans of Duchamp's era.\" Animation by Andrew Stafford. — understandingduchamp.com Retained separately from the Duchamp component card because it documents the animated mechanism and source interpretation from understandingduchamp.com.",
       "section": "Animations",
       "category": "The Large Glass",
       "subcategory": null,
@@ -130300,7 +130359,7 @@
         }
       ],
       "createdAt": "2025-12-06T23:50:00.000Z",
-      "updatedAt": "2025-12-06T23:50:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "butterfly.n.01",
         "pump.n.01",
@@ -130320,6 +130379,9 @@
         322561,
         796673,
         550913
+      ],
+      "aliases": [
+        "butterfly pump"
       ]
     },
     {
@@ -130438,10 +130500,10 @@
     },
     {
       "id": "boxing-match",
-      "term": "boxing match",
+      "term": "The Boxing Match (Animation)",
       "scope": "global",
-      "title": "The Boxing Match",
-      "description": "\"The Boxing Match is a mechanism within the Fate Machine. It features 'combat marble' rams that strike each other. The mechanism runs on a clockwork spring, 'the fall of the mobile weights'. The Boxing Match introduces an element of controlled violence into the operation of fate.\" Animation by Andrew Stafford. — understandingduchamp.com",
+      "title": "The Boxing Match (Animation)",
+      "description": "The Boxing Match is a mechanism within the Fate Machine. It features 'combat marble' rams that strike each other. The mechanism runs on a clockwork spring, 'the fall of the mobile weights'. The Boxing Match introduces an element of controlled violence into the operation of fate.\" Animation by Andrew Stafford. — understandingduchamp.com Retained separately from the Duchamp component card because it documents the animated mechanism and source interpretation from understandingduchamp.com.",
       "section": "Animations",
       "category": "The Large Glass",
       "subcategory": null,
@@ -130469,7 +130531,7 @@
         }
       ],
       "createdAt": "2025-12-06T23:50:00.000Z",
-      "updatedAt": "2025-12-06T23:50:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "boxing.n.01",
         "match.n.01",
@@ -130493,6 +130555,9 @@
         642049,
         796673,
         550913
+      ],
+      "aliases": [
+        "boxing match"
       ]
     },
     {
@@ -131578,7 +131643,7 @@
     },
     {
       "id": "pata-capillary-tubes",
-      "term": "capillary tubes",
+      "term": "Capillary Tubes (Pataphysical Vocabulary)",
       "scope": "global",
       "title": "Capillary Tubes (Pataphysical Vocabulary)",
       "description": "Pataphysical reading of the Large Glass component: curved forms derived from the Three Standard Stoppages templates. The illuminating gas from the Malic Moulds travels through these tubes after passing through the Sieves. This card is retained separately from the Duchamp component and animation cards because it foregrounds chance-generated curves as pathways for desire's transformation.",
@@ -131587,7 +131652,7 @@
       "links": [],
       "connections": [],
       "createdAt": "2025-12-14T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "capillary.s.01",
         "large.s.01",
@@ -131607,6 +131672,9 @@
         549889,
         870401,
         1324545
+      ],
+      "aliases": [
+        "capillary tubes"
       ]
     },
     {
@@ -131646,7 +131714,7 @@
     },
     {
       "id": "pata-clinamen",
-      "term": "clinamen",
+      "term": "Clinamen (Core Thesis)",
       "scope": "global",
       "title": "Clinamen (Core Thesis)",
       "description": "One of the Two Laws of Pataphysics. From Lucretius's De rerum natura: 'so that the mind itself may not be subject / To inner necessity in what it does— / And fetch and carry like a captive slave— / The tiny swerve of atoms plays its part / At unanticipated times and places.' For Lucretius, 'atoms are to matter what letters are to words.' The clinamen 'marks an atom's deviation from its path, its aberration from a stable flow, and its consequent collision with other atoms to produce a new material formation.' The key insight: 'Whereas science would work to suppress any deviance from its own regulatory laws... pataphysics seeks their proliferation and operates at the very moment and place where the law is insufficient to prevent the clinamen.' Compare to the Golden Order's Law of Causality—which enforces determinism, cause preceding effect. Clinamen is the escape from Causality, the tiny swerve that frees the mind from inner necessity. Where Causality binds, Clinamen liberates. Every ending that breaks the cycle is a clinamen. Retained as the site's core thesis card because it explicitly maps the pataphysical law onto Elden Ring's Law of Causality and endings.",
@@ -131668,7 +131736,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "causality.n.01",
         "laws.n.01",
@@ -131686,11 +131754,14 @@
         553985,
         1006593,
         463873
+      ],
+      "aliases": [
+        "clinamen"
       ]
     },
     {
       "id": "pata-syzygy",
-      "term": "syzygy",
+      "term": "Syzygy (Core Thesis)",
       "scope": "global",
       "title": "Syzygy (Core Thesis)",
       "description": "One of the Two Laws of Pataphysics. 'In its astronomical use, syzygy refers to a conjunction or opposition of the systems of two planets in their orbit around a third; in its biological deployment the term denotes the conjunction of two organisms without the loss of identity.' Crucially: conjunction WITHOUT loss of identity. 'Syzygies make manifest those momentary oppositions and conjunctions in verbal meanings (as puns and portmanteaux, such as Jarry's famous semantic conjunction of space and time, ether and eternity in the word \"ethernity\").' Compare to the Golden Order's Law of Regression—which forces all things to converge back to their source, absorbing difference into unity. Syzygy allows conjunction while preserving difference; Regression demands convergence that erases it. Radagon and Marika ARE a true syzygy—two beings conjoined who RETAIN their opposing identities, orbiting the Elden Ring in eternal opposition. Marika shatters; Radagon repairs. Neither will absorbs the other. The discovery that Elden Ring corresponds to The Large Glass is a true syzygy: conjunction across a century without either work losing its identity. Retained as the site's core thesis card because it explicitly maps syzygy onto Regression, Marika/Radagon, and the Elden Ring/Large Glass conjunction.",
@@ -131712,7 +131783,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "syzygy.n.01",
         "conjunction.n.01",
@@ -131730,6 +131801,9 @@
         459777,
         1115137,
         1059841
+      ],
+      "aliases": [
+        "syzygy"
       ]
     },
     {
@@ -131770,7 +131844,7 @@
     },
     {
       "id": "pata-ethernity",
-      "term": "ethernity",
+      "term": "Ethernity (Core Thesis)",
       "scope": "global",
       "title": "Ethernity (Core Thesis)",
       "description": "Not eternity—ethernity. Jarry's invented realm, the space Dr. Faustroll enters after 'making the gesture of dying.' A place outside time and space entirely. Farum Azula exists in ethernity—frozen outside the normal flow of time, waiting at the junction between worlds. Ranni's thousand-year voyage occurs in ethernity. The Roundtable Hold, accessible only through grace, floats in ethernity. These are not places in the world but places supplementary to it. Retained as the core thesis card because it applies Jarry's realm to Farum Azula, Ranni's voyage, and Roundtable Hold.",
@@ -131784,7 +131858,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "space.n.01",
         "outside.s.01",
@@ -131798,6 +131872,9 @@
         441345,
         905217,
         541697
+      ],
+      "aliases": [
+        "ethernity"
       ]
     },
     {
@@ -131838,7 +131915,7 @@
     },
     {
       "id": "pata-livres-pairs",
-      "term": "livres pairs",
+      "term": "Livres Pairs (Core Term)",
       "scope": "global",
       "title": "Livres Pairs (Core Term)",
       "description": "Equivalent books. Jarry's notion that different works can be structurally equivalent while asserting simultaneously that similar things are not identical (A ≠ A). Dr. Faustroll's library contains twenty-seven 'equivalent books' that together compose a complete picture of his intellectual world. The Soulsborne games are livres pairs—Dark Souls, Bloodborne, Sekiro, Elden Ring are equivalent but not identical, each a different angle on the same underlying structure. The Large Glass and Elden Ring are livres pairs across media and centuries. Retained separately as the core term card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
@@ -131856,7 +131933,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "equivalent.s.01",
         "different.s.01",
@@ -131870,6 +131947,9 @@
         964097,
         442369,
         678913
+      ],
+      "aliases": [
+        "livres pairs"
       ]
     },
     {
@@ -131914,7 +131994,7 @@
     },
     {
       "id": "pata-bosse-de-nage",
-      "term": "Bosse-de-Nage",
+      "term": "Bosse-de-Nage (Core Figure)",
       "scope": "global",
       "title": "Bosse-de-Nage (Core Figure)",
       "description": "The hydrocephalic, dog-faced baboon who serves as Dr. Faustroll's cabin boy. His only utterance is 'Ha ha.' Later strangled by Faustroll and resurrected through 'subfumigation.' The name means 'swimming hump.' His 'Ha ha' is not laughter but a complete philosophical statement, explored in a chapter titled 'Concerning Some Further and More Evident Meanings of the Words Ha Ha.' The spirit summons in Elden Ring who appear, fight, and vanish with minimal communication are Bosse-de-Nages—companions whose contribution is presence and action, not explanation. Retained as the fuller figure card because it includes the Elden Ring spirit-summon analogy.",
@@ -131928,7 +132008,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "hydrocephalic.a.01",
         "dog.n.01",
@@ -131948,14 +132028,17 @@
         337921,
         994305,
         549889
+      ],
+      "aliases": [
+        "Bosse-de-Nage"
       ]
     },
     {
       "id": "pata-the-sieve",
-      "term": "sieve",
+      "term": "The Sieve (Faustroll Object)",
       "scope": "global",
-      "title": "The Sieve",
-      "description": "Dr. Faustroll's twelve-meter copper-mesh skiff that floats on water by surface tension alone. The vessel for his voyage 'from Paris to Paris by sea.' The real challenge of sailing in a sieve is that it requires constant attention to the act of bailing—maintaining 'a precarious balance at the intersection of imminent submersion and pataphysical buoyancy.' This is the condition of playing a FromSoftware game: you are always about to sink, always bailing, always requiring absolute presence to stay afloat. The game is a sieve. The lore is a sieve. You sail or you drown.",
+      "title": "The Sieve (Faustroll Object)",
+      "description": "Dr. Faustroll's twelve-meter copper-mesh skiff that floats on water by surface tension alone. The vessel for his voyage 'from Paris to Paris by sea.' The real challenge of sailing in a sieve is that it requires constant attention to the act of bailing—maintaining 'a precarious balance at the intersection of imminent submersion and pataphysical buoyancy.' This is the condition of playing a FromSoftware game: you are always about to sink, always bailing, always requiring absolute presence to stay afloat. The game is a sieve. The lore is a sieve. You sail or you drown. Retained as the fuller object card, distinct from the concise vocabulary entry.",
       "section": "'Pataphysics",
       "category": "Pataphysical Objects",
       "links": [],
@@ -131966,7 +132049,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2025-12-22T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "sieve.n.01",
         "always.r.01",
@@ -131984,11 +132067,14 @@
         679937,
         553985,
         664577
+      ],
+      "aliases": [
+        "sieve"
       ]
     },
     {
       "id": "pata-gidouille",
-      "term": "gidouille",
+      "term": "Gidouille (Core Object)",
       "scope": "global",
       "title": "Gidouille (Core Object)",
       "description": "Ubu's belly. A belly so big and singular in appetite that it required the invention of its own term. The spiral on Ubu's stomach, symbol of his insatiable consumption. Often depicted as a spiral—the same shape as the Elden Ring itself, the same shape as the grace that guides the Tarnished, the same shape as the cycle that keeps repeating. The gidouille consumes everything and produces nothing but merdre. The Erdtree is a gidouille—a golden spiral that consumes the dead and produces only more of itself. Retained separately as the core object card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
@@ -131997,7 +132083,7 @@
       "links": [],
       "connections": [],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "spiral.s.01",
         "shape.n.01",
@@ -132011,6 +132097,9 @@
         548865,
         314369,
         890881
+      ],
+      "aliases": [
+        "gidouille"
       ]
     },
     {
@@ -132055,7 +132144,7 @@
     },
     {
       "id": "pata-jocoserious",
-      "term": "jocoserious",
+      "term": "Jocoserious (Core Concept)",
       "scope": "global",
       "title": "Jocoserious (Core Concept)",
       "description": "Serious humor. Humorous seriousness. The term is usually attributed to Joyce, but Jarry was practicing it decades earlier. The jocoserious is not comedy that undermines seriousness, nor seriousness that tolerates comedy—it is the recognition that the deepest truths can only be approached through laughter. FromSoftware's design is jocoserious: 'Try finger, but hole' exists in the same game as Millicent's tragedy. The memes and the meaning are not separate registers but the same register operating at different frequencies. Retained as the thesis-facing concept card because it explicitly applies the term to FromSoftware's design register.",
@@ -132064,7 +132153,7 @@
       "links": [],
       "connections": [],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "seriousness.n.01",
         "comedy.n.01",
@@ -132084,11 +132173,14 @@
         450561,
         802561,
         550913
+      ],
+      "aliases": [
+        "jocoserious"
       ]
     },
     {
       "id": "pata-hermeneutic-paranoia",
-      "term": "hermeneutic paranoia",
+      "term": "Hermeneutic Paranoia (Core Concept)",
       "scope": "global",
       "title": "Hermeneutic Paranoia (Core Concept)",
       "description": "The condition induced by Jarry's texts: a compulsion to constantly search for hidden signs, symbols, and allusions—'to see signs everywhere, to interpret the smallest aspect of the text, to suspect meaning beneath every particle of the work.' But there is also its opposite: anti-hermeneutic paranoia, the fear that all apparent meaning is just a prank. The lore community lives in both paranoias simultaneously. Everything connects AND nothing means anything. The item descriptions are profound AND they're trolling you. Both are true. This is the correct way to read. Retained separately as the core concept card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
@@ -132106,7 +132198,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "hermeneutic.a.01",
         "paranoia.n.01",
@@ -132128,6 +132220,9 @@
         1130241,
         645121,
         635905
+      ],
+      "aliases": [
+        "hermeneutic paranoia"
       ]
     },
     {
@@ -132204,7 +132299,7 @@
     },
     {
       "id": "pata-patadata",
-      "term": "patadata",
+      "term": "Patadata (Computing Concept)",
       "scope": "global",
       "title": "Patadata (Computing Concept)",
       "description": "A pataphysical intelligence layer built on RDF triples (object, relation, value) where the relation slot can be a pataphysical term. Where normal metadata describes things accurately, patadata embraces what Cory Doctorow called 'metacrap': people lie, people are lazy, schemas aren't neutral, metrics influence results, there's more than one way to describe something. Patadata uses the Panalogy Principle: 'If you understand something in only one way then you scarcely understand it at all... if you represent something in several ways, then when one fails you can switch to another.' The lore community produces patadata constantly—multiple contradictory interpretations of the same item description, each valid from a different angle. The title card system itself is patadata: objects connected by grace relations that express pataphysical correspondences. Retained as the fuller computing concept card for the title-card system itself.",
@@ -132222,7 +132317,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "relation.n.01",
         "people.n.01",
@@ -132238,11 +132333,14 @@
         1106177,
         1297409,
         553985
+      ],
+      "aliases": [
+        "patadata"
       ]
     },
     {
       "id": "pata-syzygy-surfer",
-      "term": "Syzygy Surfer",
+      "term": "Syzygy Surfer (Computing Concept)",
       "scope": "global",
       "title": "Syzygy Surfer (Computing Concept)",
       "description": "A pataphysical search engine that doesn't take you where you want to go, but somewhere you didn't expect and are glad you arrived. Unlike random search engines, it produces 'surprising yet charming encounters' through three modes: Syzygy search finds unexpected alignments between terms. Clinamen search transforms definitions into creative deviations. Anomaly search finds occurrences missing common referents—the exceptions. The lore community operates as a collective Syzygy Surfer. Every theory is a search result. Every 'wait, what if...' is a clinamen query. Every 'why doesn't anyone mention...' is an anomaly search. The discovery that Elden Ring corresponds to The Large Glass was itself a syzygy—not looking for Duchamp, finding Duchamp through unexpected alignment, arriving somewhere unexpected and being glad to have arrived. Retained separately as the computing concept card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
@@ -132268,7 +132366,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "syzygy.n.01",
         "surfer.n.01",
@@ -132284,6 +132382,9 @@
         1103361,
         999169,
         418817
+      ],
+      "aliases": [
+        "Syzygy Surfer"
       ]
     },
     {
@@ -132400,7 +132501,7 @@
     },
     {
       "id": "pata-intraphysics",
-      "term": "intraphysics",
+      "term": "Intraphysics (Core Concept)",
       "scope": "global",
       "title": "Intraphysics (Core Concept)",
       "description": "'To take a piece of wood and a piece of iron and find their continuity, and from there seek to transform one into the other, that is intraphysics.' Boris Rybak's science of 'unauthorized equivalence, of reckless analogy.' The intraphysicist 'concerns himself not only with that which is, has been, and will be, but also creates ideas with irrational content that he then dissects; he studies what might have been... the imaged concretization of the unimaginable.' Where physics studies what is, and metaphysics studies what must be, intraphysics studies the impossible continuity between unlike things. Every item description that connects a mundane object to cosmic significance practices intraphysics. The Dectus Medallion is half a piece of metal; it is also the key to the Altus Plateau; it is also a symbol of covenant; it is also a game mechanic. Finding the continuity between these—that is intraphysics. Retained separately as the core concept card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
@@ -132414,7 +132515,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "piece.n.01",
         "continuity.n.01",
@@ -132434,6 +132535,9 @@
         427009,
         434177,
         1011969
+      ],
+      "aliases": [
+        "intraphysics"
       ]
     },
     {
@@ -132600,10 +132704,10 @@
     },
     {
       "id": "pata-oulipo-constraints",
-      "term": "anoulipism",
+      "term": "oulipo constraints",
       "scope": "global",
       "title": "Anoulipism & Synthoulipism",
-      "description": "The Oulipo—Ouvroir de Littérature Potentielle, 'Workshop of Potential Literature'—founded by François Le Lionnais and Raymond Queneau. Its dual practice: 'to research (anoulipism) and create (synthoulipism) forms and constraints with which literature has been or could be written.' Anoulipism discovers existing constraints; synthoulipism invents new ones. Perec's novel without the letter 'e' is synthoulipism. Finding that sonnets already constrain in particular ways is anoulipism. Miyazaki practices both. Anoulipism: discovering how Duchamp's Large Glass constrains, then working within those constraints. Synthoulipism: inventing the fragmentary lore system, the boss-locked narrative, the death-loop structure. The Oulipo recognized that all literature operates under constraints, visible or invisible—the pataphysician makes the constraints explicit and plays with them deliberately.",
+      "description": "The Oulipo—Ouvroir de Littérature Potentielle, 'Workshop of Potential Literature'—founded by François Le Lionnais and Raymond Queneau. Its dual practice: 'to research (anoulipism) and create (synthoulipism) forms and constraints with which literature has been or could be written.' Anoulipism discovers existing constraints; synthoulipism invents new ones. Perec's novel without the letter 'e' is synthoulipism. Finding that sonnets already constrain in particular ways is anoulipism. Miyazaki practices both. Anoulipism: discovering how Duchamp's Large Glass constrains, then working within those constraints. Synthoulipism: inventing the fragmentary lore system, the boss-locked narrative, the death-loop structure. The Oulipo recognized that all literature operates under constraints, visible or invisible—the pataphysician makes the constraints explicit and plays with them deliberately. Term adjusted from plain “anoulipism” because this core practice card covers the Oulipo pairing of anoulipism and synthoulipism, not only the narrower vocabulary term.",
       "section": "'Pataphysics",
       "category": "Pataphysical Practice",
       "links": [],
@@ -132614,7 +132718,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2025-12-22T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "literature.n.01",
         "workshop.n.01"
@@ -132940,10 +133044,10 @@
     },
     {
       "id": "pata-neo-scientific-novel",
-      "term": "neo-scientific novel",
+      "term": "faustroll neo-scientific novel",
       "scope": "global",
-      "title": "The Neo-Scientific Novel",
-      "description": "The full title of Jarry's masterwork: 'Exploits and Opinions of Dr. Faustroll, Pataphysician (A Neo-Scientific Novel).' A genre that presents invented knowledge with the gravity of scientific fact—complete with precise measurements, technical vocabulary, and methodological rigor—while the content is patently absurd. The neo-scientific novel doesn't parody science; it practices science on impossible objects. Faustroll's measurements of God's surface area. The exact specifications of his sieve-boat. The chemical formula for his time machine. Elden Ring is a neo-scientific novel in game form. Item descriptions read like field notes. The game tracks exact damage numbers, scaling coefficients, frame data. The Golden Order has laws, theorems, fundamentals. All of this scientific apparatus applied to a world where a woman can become a tree, where death is a temporary inconvenience, where the moon is a person. Neo-scientific: rigorous method, impossible object.",
+      "title": "The Neo-Scientific Novel (Faustroll)",
+      "description": "The full title of Jarry's masterwork: 'Exploits and Opinions of Dr. Faustroll, Pataphysician (A Neo-Scientific Novel).' A genre that presents invented knowledge with the gravity of scientific fact—complete with precise measurements, technical vocabulary, and methodological rigor—while the content is patently absurd. The neo-scientific novel doesn't parody science; it practices science on impossible objects. Faustroll's measurements of God's surface area. The exact specifications of his sieve-boat. The chemical formula for his time machine. Elden Ring is a neo-scientific novel in game form. Item descriptions read like field notes. The game tracks exact damage numbers, scaling coefficients, frame data. The Golden Order has laws, theorems, fundamentals. All of this scientific apparatus applied to a world where a woman can become a tree, where death is a temporary inconvenience, where the moon is a person. Neo-scientific: rigorous method, impossible object. Term adjusted because this fuller literature card is anchored in Faustroll as a genre model, distinct from the concise vocabulary definition.",
       "section": "'Pataphysics",
       "category": "Pataphysical Literature",
       "links": [],
@@ -132958,7 +133062,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2025-12-22T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "novel.s.01",
         "scientific.a.01",
@@ -132982,7 +133086,7 @@
     },
     {
       "id": "pata-definitional-literature",
-      "term": "definitional literature",
+      "term": "Definitional Literature (Core Practice)",
       "scope": "global",
       "title": "Definitional Literature (Core Practice)",
       "description": "A pataphysical writing practice theorized by the Oulipo: 'In a given statement, one replaces each significant word by one of its definitions from a given dictionary; the operation is repeated on the new sentence thus obtained, and so on.' Also called 'semo-definitional literature' or LSD (Littérature Sémo-Définitionnelle). Each word spirals into its definition, which spirals into further definitions, 'production automatique de littérature française.' The goal: revealing that language contains 'its own inner principle of proliferation'—meaning generates meaning generates meaning without end. The lore community practices definitional literature constantly. What is the Erdtree? A tree that is also grace that is also the Greater Will's instrument that is also a prison that is also... Each definition opens into further definitions. What is a Tarnished? The definition never stabilizes. 'One can operate definitional literature in the most mechanical way'—and the wiki does exactly that, mechanically expanding each term into its component definitions. Retained separately as the core practice card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
@@ -133000,7 +133104,7 @@
         }
       ],
       "createdAt": "2025-12-22T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "literature.n.01",
         "definition.n.01",
@@ -133014,6 +133118,9 @@
         753665,
         550913,
         454657
+      ],
+      "aliases": [
+        "definitional literature"
       ]
     },
     {
@@ -133719,10 +133826,10 @@
     },
     {
       "id": "pata-merdre",
-      "term": "merdre",
+      "term": "Merdre! (Core Term)",
       "scope": "global",
-      "title": "Merdre!",
-      "description": "'The (in)famous neological euphemism that is the first word spoken in Jarry's Ubu Roi: \"Merdre!\"' Shit with an extra letter. The clinamen applied to profanity—a tiny swerve that transforms the expected into the unexpected. When Ubu spoke this word on opening night in 1896, it caused a riot. The audience heard 'merde' (shit) but saw 'merdre'—same but different, obscene but not quite, the familiar made strange by a single letter. This is pataphysics in miniature: the smallest possible deviation creating the maximum possible disruption. The 'r' is a clinamen. It swerves the word from its expected path. Atoms are to matter what letters are to words—and one letter changes everything. Every FromSoftware neologism works this way: 'Tarnished' (tarnish + vanished?), 'Elden' (elder + golden?), 'Erdtree' (earth + tree but German). The clinamen at the level of the letter. Merdre!",
+      "title": "Merdre! (Core Term)",
+      "description": "'The (in)famous neological euphemism that is the first word spoken in Jarry's Ubu Roi: \"Merdre!\"' Shit with an extra letter. The clinamen applied to profanity—a tiny swerve that transforms the expected into the unexpected. When Ubu spoke this word on opening night in 1896, it caused a riot. The audience heard 'merde' (shit) but saw 'merdre'—same but different, obscene but not quite, the familiar made strange by a single letter. This is pataphysics in miniature: the smallest possible deviation creating the maximum possible disruption. The 'r' is a clinamen. It swerves the word from its expected path. Atoms are to matter what letters are to words—and one letter changes everything. Every FromSoftware neologism works this way: 'Tarnished' (tarnish + vanished?), 'Elden' (elder + golden?), 'Erdtree' (earth + tree but German). The clinamen at the level of the letter. Merdre! Retained as the core term card because it links Jarry's neological swerve to clinamen and transformation.",
       "section": "'Pataphysics",
       "category": "Core Pataphysical Terms",
       "links": [],
@@ -133737,7 +133844,7 @@
         }
       ],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2025-12-23T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "letter.n.01",
         "word.n.01",
@@ -133753,6 +133860,9 @@
         870913,
         886273,
         667649
+      ],
+      "aliases": [
+        "merdre"
       ]
     },
     {
@@ -134816,7 +134926,7 @@
     },
     {
       "id": "pata-vocab-b4-syzygy-surfer",
-      "term": "syzygy surfer",
+      "term": "Syzygy Surfer (Vocabulary)",
       "title": "Syzygy Surfer (Vocabulary)",
       "description": "A pataphysical search tool designed to find connections through syzygy, clinamen, and anomaly rather than conventional Boolean search. Seeks unexpected alignments and coincidences across datasets. Retained separately as the vocabulary card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -134827,7 +134937,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T12:44:30.194Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "syzygy.n.01",
         "surfer.n.01",
@@ -134847,6 +134957,9 @@
         427009,
         771073,
         662273
+      ],
+      "aliases": [
+        "syzygy surfer"
       ]
     },
     {
@@ -134876,7 +134989,7 @@
     },
     {
       "id": "pata-vocab-b4-patadata",
-      "term": "patadata",
+      "term": "Patadata (Vocabulary)",
       "title": "Patadata (Vocabulary)",
       "description": "Data structured according to pataphysical principles, emphasizing the exceptional, the anomalous, and the contradictory rather than the typical or average. Contrasts with conventional metadata focused on standardization. Retained as the concise vocabulary definition contrasting patadata with conventional metadata.",
       "section": "Pataphysics",
@@ -134887,7 +135000,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T12:44:30.194Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "data.n.01",
         "structured.a.01",
@@ -134907,6 +135020,9 @@
         999425,
         1447937,
         662273
+      ],
+      "aliases": [
+        "patadata"
       ]
     },
     {
@@ -136179,8 +136295,8 @@
     {
       "id": "pata-vocab-b2-college-pataphysique",
       "term": "collège de 'pataphysique",
-      "title": "Collège de 'Pataphysique",
-      "description": "Official organization founded to preserve and extend Jarry's pataphysical philosophy. Numerous artists including Asger Jorn and James Brewton were inspired by its official-sounding societies and institutes to create their own pataphysical institutions.",
+      "title": "Collège de 'Pataphysique (Institution)",
+      "description": "Official organization founded to preserve and extend Jarry's pataphysical philosophy. Numerous artists including Asger Jorn and James Brewton were inspired by its official-sounding societies and institutes to create their own pataphysical institutions. Retained as the institution-level vocabulary entry focused on the organization and its influence.",
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
@@ -136189,7 +136305,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T13:00:00.000Z",
-      "updatedAt": "2025-12-23T13:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "de.n.01",
         "official.a.01",
@@ -136277,7 +136393,7 @@
     },
     {
       "id": "pata-vocab-b2-syzygy",
-      "term": "syzygy",
+      "term": "Syzygy (Vocabulary: Astronomy/Biology/Language)",
       "title": "Syzygy (Vocabulary: Astronomy/Biology/Language)",
       "description": "One of two laws regulating pataphysics. In astronomy, a conjunction or opposition of two planets in orbit around a third. In biology, conjunction of two organisms without loss of identity. In language, momentary oppositions and conjunctions in verbal meanings (puns and portmanteaux). Retained as a compact vocabulary import distinguishing the astronomical, biological, and linguistic senses.",
       "section": "Pataphysics",
@@ -136288,7 +136404,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T13:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "syzygy.n.01",
         "conjunction.n.01",
@@ -136310,11 +136426,14 @@
         557057,
         665345,
         552961
+      ],
+      "aliases": [
+        "syzygy"
       ]
     },
     {
       "id": "pata-vocab-b2-clinamen",
-      "term": "clinamen",
+      "term": "Clinamen (Vocabulary: Lucretian Swerve)",
       "title": "Clinamen (Vocabulary: Lucretian Swerve)",
       "description": "From ancient Greek particle physics via Lucretius: the swerve or deviation of an atom from its path, causing collision with other atoms to produce new formations. In pataphysics and poetry, the clinamen marks deviation from stable flow, the moment where law is insufficient to prevent aberration. Retained as a compact vocabulary import focused on the Lucretian and poetic definition rather than the Elden Ring application.",
       "section": "Pataphysics",
@@ -136325,7 +136444,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T13:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "deviation.n.01",
         "ancient.s.01",
@@ -136347,11 +136466,14 @@
         684033,
         443393,
         439297
+      ],
+      "aliases": [
+        "clinamen"
       ]
     },
     {
       "id": "pata-vocab-b2-ethernity",
-      "term": "ethernity",
+      "term": "Ethernity (Vocabulary: Ether/Eternity)",
       "title": "Ethernity (Vocabulary: Ether/Eternity)",
       "description": "Jarry's portmanteau word fusing ether and eternity, anticipating Einstein's fusion of space and time. Describes immobile ether that is not luminiferous, contrasting with perishable, circularly mobile luminiferous ether. Retained as the compact vocabulary entry focused on Jarry's portmanteau and the ether/eternity distinction.",
       "section": "Pataphysics",
@@ -136362,7 +136484,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T13:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "ether.n.01",
         "portmanteau.n.01",
@@ -136378,6 +136500,9 @@
         905217,
         883713,
         675841
+      ],
+      "aliases": [
+        "ethernity"
       ]
     },
     {
@@ -137146,7 +137271,7 @@
     },
     {
       "id": "pata-vocab-b2-oulipo",
-      "term": "oulipo",
+      "term": "Oulipo (Vocabulary: Constraints)",
       "title": "Oulipo (Vocabulary: Constraints)",
       "description": "Literary movement known for voluntary submission to linguistic constraints including palindromes, acrostics, lipograms, rhopalics, and homophonic translations. An offshoot of the Collège de 'Pataphysique. Retained separately as the vocabulary: constraints card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -137157,7 +137282,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T13:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "literary.s.01",
         "movement.n.01",
@@ -137173,6 +137298,9 @@
         1036801,
         1126401,
         1109505
+      ],
+      "aliases": [
+        "oulipo"
       ]
     },
     {
@@ -137278,7 +137406,7 @@
     },
     {
       "id": "pata-vocab-b1-jocoserious",
-      "term": "jocoserious",
+      "term": "Jocoserious (Vocabulary)",
       "title": "Jocoserious (Vocabulary)",
       "description": "A term coined by Joyce describing art that combines humor and seriousness. Jarry's pataphysics embodies this quality decades before Joyce named it. Duchamp called for art with humor that added a note of seriousness. The deeply serious humor at the substance of pataphysics. Retained as the vocabulary entry focused on Joyce, Jarry, and Duchamp.",
       "section": "Pataphysics",
@@ -137289,7 +137417,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "humor.n.01",
         "joyce.n.01",
@@ -137303,13 +137431,16 @@
         334849,
         1248257,
         450561
+      ],
+      "aliases": [
+        "jocoserious"
       ]
     },
     {
       "id": "pata-vocab-b1-neo-scientific-novel",
       "term": "neo-scientific novel",
-      "title": "Neo-Scientific Novel",
-      "description": "Jarry's designation for Exploits and Opinions of Dr. Faustroll, Pataphysician. A novel form that blurs the lines between fiction and nonfiction, literature and science, nonsense and philosophy. It situates science in the realm of the imaginary and speculative while making use of actual scientific and mathematical theories.",
+      "title": "Neo-Scientific Novel (Vocabulary)",
+      "description": "Jarry's designation for Exploits and Opinions of Dr. Faustroll, Pataphysician. A novel form that blurs the lines between fiction and nonfiction, literature and science, nonsense and philosophy. It situates science in the realm of the imaginary and speculative while making use of actual scientific and mathematical theories. Retained as the concise vocabulary entry for Jarry's genre label.",
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
@@ -137318,7 +137449,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2025-12-23T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "novel.s.01",
         "science.n.01",
@@ -137394,9 +137525,9 @@
     },
     {
       "id": "pata-vocab-b1-merdre",
-      "term": "merdre",
-      "title": "Merdre",
-      "description": "The French word for 'shit' with an extra 'r', the first word of Ubu Roi that caused a riot. A thinly veiled expletive that symbolically threw excrement at the audience, eliciting both outraged protests and uproarious laughter. Ubu's signature robotic repetition reveals him as the embodiment of Bergsonian comedy—laughable as he reminds us of a mere machine.",
+      "term": "Merdre (Vocabulary)",
+      "title": "Merdre (Vocabulary)",
+      "description": "The French word for 'shit' with an extra 'r', the first word of Ubu Roi that caused a riot. A thinly veiled expletive that symbolically threw excrement at the audience, eliciting both outraged protests and uproarious laughter. Ubu's signature robotic repetition reveals him as the embodiment of Bergsonian comedy—laughable as he reminds us of a mere machine. Retained as the vocabulary entry focused on Ubu Roi's scandalous opening word and theatrical reception.",
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
@@ -137405,7 +137536,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2025-12-23T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "word.n.01",
         "french.a.01",
@@ -137425,6 +137556,9 @@
         337921,
         456705,
         680705
+      ],
+      "aliases": [
+        "merdre"
       ]
     },
     {
@@ -137499,7 +137633,7 @@
     },
     {
       "id": "pata-vocab-b1-livres-pairs",
-      "term": "livres pairs",
+      "term": "Livres Pairs (Vocabulary)",
       "title": "Livres Pairs (Vocabulary)",
       "description": "Equivalent books. Jarry often played with notions of equivalence and difference, asserting simultaneously that books could be equivalent and that, when examined closely, things that appear similar are not (A ≠ A). Retained separately as the vocabulary card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -137510,7 +137644,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "equivalent.s.01",
         "often.r.01",
@@ -137528,11 +137662,14 @@
         1059841,
         999937,
         1587969
+      ],
+      "aliases": [
+        "livres pairs"
       ]
     },
     {
       "id": "pata-vocab-b1-ethernity",
-      "term": "ethernity",
+      "term": "Ethernity (Vocabulary: Faustroll)",
       "title": "Ethernity (Vocabulary: Faustroll)",
       "description": "A truly pataphysical realm completely outside of time and space. In book 7 of Faustroll, the protagonist sinks his sieve and drowns himself, making 'the gesture of dying' and is translated to ethernity. From ethernity, Faustroll offers a geometrical proof of God's existence leading to the solution '8 = 0'. Retained separately because it anchors the term in Faustroll's death-gesture and the 8 = 0 proof.",
       "section": "Pataphysics",
@@ -137543,7 +137680,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "truly.r.01",
         "realm.n.01",
@@ -137561,6 +137698,9 @@
         441345,
         536577,
         437249
+      ],
+      "aliases": [
+        "ethernity"
       ]
     },
     {
@@ -137598,7 +137738,7 @@
     },
     {
       "id": "pata-vocab-b1-bosse-de-nage",
-      "term": "bosse-de-nage",
+      "term": "Bosse-de-Nage (Vocabulary)",
       "title": "Bosse-de-Nage (Vocabulary)",
       "description": "Dr. Faustroll's cabin boy, a hydrocephalic dog-faced baboon capable of only one utterance: 'Ha ha.' Bosse-de-Nage personifies the instinctual reaction that, together with Panmuphle's intellectual seriousness, represents mutually exclusive opposites that Faustroll (and Jarry) insist can coexist. In pataphysical logic: 1 + 1 = 3. Retained as the vocabulary entry emphasizing the 1 + 1 = 3 pataphysical logic.",
       "section": "Pataphysics",
@@ -137609,7 +137749,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "cabin.n.01",
         "boy.n.01",
@@ -137629,6 +137769,9 @@
         640001,
         730113,
         994305
+      ],
+      "aliases": [
+        "bosse-de-nage"
       ]
     },
     {
@@ -137666,9 +137809,9 @@
     },
     {
       "id": "pata-vocab-b1-sieve-vessel",
-      "term": "sieve",
-      "title": "Sieve (Vessel)",
-      "description": "Dr. Faustroll's vessel for his voyage from Paris to Paris: a twelve-meter-long copper-mesh skiff that floats on water by surface tension. The real challenge of setting sail in a sieve is keeping water from seeping in—it requires constant attention to bailing out the boat to maintain precarious balance at the intersection of imminent submersion and pataphysical buoyancy.",
+      "term": "Sieve (Vocabulary: Vessel)",
+      "title": "Sieve (Vocabulary: Vessel)",
+      "description": "Dr. Faustroll's vessel for his voyage from Paris to Paris: a twelve-meter-long copper-mesh skiff that floats on water by surface tension. The real challenge of setting sail in a sieve is keeping water from seeping in—it requires constant attention to bailing out the boat to maintain precarious balance at the intersection of imminent submersion and pataphysical buoyancy. Retained as the vocabulary entry for Faustroll's vessel.",
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
@@ -137677,7 +137820,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2025-12-23T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "sieve.n.01",
         "paris.n.01",
@@ -137701,11 +137844,14 @@
         443393,
         664577,
         439297
+      ],
+      "aliases": [
+        "sieve"
       ]
     },
     {
       "id": "pata-vocab-b1-clinamen",
-      "term": "clinamen",
+      "term": "Clinamen (Vocabulary: Collège Usage)",
       "title": "Clinamen (Vocabulary: Collège Usage)",
       "description": "One of the Collège de 'Pataphysique's idiosyncratic concepts with uniquely pataphysical connotations. The smallest possible aberration or swerve. A term borrowed from Lucretius referring to the unpredictable swerve of atoms that allows for free will and spontaneous variation in an otherwise deterministic universe. Retained separately because this entry records the Collège de 'Pataphysique usage and the free-will emphasis.",
       "section": "Pataphysics",
@@ -137716,7 +137862,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "swerve.n.01",
         "idiosyncratic.s.01",
@@ -137728,11 +137874,14 @@
         1431553,
         914177,
         886273
+      ],
+      "aliases": [
+        "clinamen"
       ]
     },
     {
       "id": "pata-vocab-b1-syzygy-pata",
-      "term": "syzygy",
+      "term": "Syzygy (Vocabulary: Pataphysical)",
       "title": "Syzygy (Vocabulary: Pataphysical)",
       "description": "One of the Collège's idiosyncratic concepts. In astronomy, the alignment of three celestial bodies. In pataphysics, it represents moments of conjunction where opposites meet without canceling each other out. The Collège uses this term with uniquely pataphysical connotations. Retained separately because it records the Collège-style pataphysical sense: conjunction without cancellation.",
       "section": "Pataphysics",
@@ -137743,7 +137892,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:35:00.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "syzygy.n.01",
         "idiosyncratic.s.01",
@@ -137759,6 +137908,9 @@
         982017,
         549889,
         973825
+      ],
+      "aliases": [
+        "syzygy"
       ]
     },
     {
@@ -137823,9 +137975,9 @@
     },
     {
       "id": "pata-vocab-b1-college-de-pataphysique",
-      "term": "collège de 'pataphysique",
-      "title": "Collège de 'Pataphysics",
-      "description": "A parodically formal collective formed in Paris in 1948 to explore 'the science.' With Dr. Faustroll as Inamovable Curator, Marcel Duchamp as Grand Satrap, and members including Boris Vian, Max Ernst, Raymond Queneau, Man Ray, Jean Dubuffet, Groucho Marx, and Eugène Ionesco. An intentional contradiction in terms: a 'pataphysical institution.'",
+      "term": "collège de 'pataphysique membership",
+      "title": "Collège de 'Pataphysique (Membership)",
+      "description": "A parodically formal collective formed in Paris in 1948 to explore 'the science.' With Dr. Faustroll as Inamovable Curator, Marcel Duchamp as Grand Satrap, and members including Boris Vian, Max Ernst, Raymond Queneau, Man Ray, Jean Dubuffet, Groucho Marx, and Eugène Ionesco. An intentional contradiction in terms: a 'pataphysical institution.' Term adjusted because this entry is chiefly useful for its named-members context rather than as a second generic institution card.",
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
@@ -137834,7 +137986,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2025-12-23T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "de.n.01",
         "formal.s.01",
@@ -137858,7 +138010,7 @@
     },
     {
       "id": "pata-vocab-b1-oulipo",
-      "term": "oulipo",
+      "term": "Oulipo (Vocabulary: Workshop)",
       "title": "Oulipo (Vocabulary: Workshop)",
       "description": "Ouvroir de Littérature Potentielle—Workshop of Potential Literature. A subcommittee of the Collège de 'Pataphysique founded in 1960 by François Le Lionnais and Raymond Queneau. Consists of mathematicians and writers researching and creating forms and constraints with which literature has been or could be written. Retained separately as the vocabulary: workshop card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -137869,7 +138021,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "literature.n.01",
         "workshop.n.01",
@@ -137881,13 +138033,16 @@
         914433,
         999937,
         1328129
+      ],
+      "aliases": [
+        "oulipo"
       ]
     },
     {
       "id": "pata-vocab-b1-anoulipism",
       "term": "anoulipism",
-      "title": "Anoulipism",
-      "description": "The Oulipo's term for research into forms and constraints that have already been used in literature. The analytical side of Oulipian practice, studying what has been done. Complements synthoulipism, which creates new forms.",
+      "title": "Anoulipism (Vocabulary)",
+      "description": "The Oulipo's term for research into forms and constraints that have already been used in literature. The analytical side of Oulipian practice, studying what has been done. Complements synthoulipism, which creates new forms. Retained as the narrow vocabulary entry for anoulipism specifically, distinct from the broader Oulipo constraints practice card.",
       "section": "Pataphysics",
       "category": "Vocabulary",
       "subcategory": "Unrolled",
@@ -137896,7 +138051,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2025-12-23T00:00:00.000Z",
+      "updatedAt": "2026-04-30T05:56:00.000Z",
       "senses": [
         "term.n.01",
         "research.n.01",
@@ -138128,7 +138283,7 @@
     },
     {
       "id": "pata-vocab-b1-definitional-literature",
-      "term": "definitional literature",
+      "term": "Definitional Literature (Vocabulary)",
       "title": "Definitional Literature (Vocabulary)",
       "description": "A technique pioneered by Stefan Themerson and developed by the Oulipo, with experiments by Georges Perec and Marcel Bénabou. Literature that uses definitions as its primary compositional method, interrogating the metaphors of 'machine' and 'engine' as they relate to textual production. Retained separately as the vocabulary card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -138139,7 +138294,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "literature.n.01",
         "technique.n.01",
@@ -138151,6 +138306,9 @@
         989185,
         975361,
         643073
+      ],
+      "aliases": [
+        "definitional literature"
       ]
     },
     {
@@ -138188,7 +138346,7 @@
     },
     {
       "id": "pata-vocab-b1-gidouille",
-      "term": "gidouille",
+      "term": "Gidouille (Vocabulary)",
       "title": "Gidouille (Vocabulary)",
       "description": "Père Ubu's immense belly, so big and singular in appetite that it required the invention of its own term. Represents Ubu's insatiable, infantile ego and embodiment of pure appetite and defecation. Part of Ubu's appearance along with three mismatched teeth and a retractable ear. Retained separately as the vocabulary card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -138199,7 +138357,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "appetite.n.01",
         "immense.s.01",
@@ -138219,6 +138377,9 @@
         886785,
         1009665,
         450561
+      ],
+      "aliases": [
+        "gidouille"
       ]
     },
     {
@@ -138334,7 +138495,7 @@
     },
     {
       "id": "pata-vocab-b1-hermeneutic-paranoia",
-      "term": "hermeneutic paranoia",
+      "term": "Hermeneutic Paranoia (Vocabulary)",
       "title": "Hermeneutic Paranoia (Vocabulary)",
       "description": "A compulsion induced by Faustroll to constantly search for hidden signs, symbols, and allusions. The text leads readers to see signs everywhere, interpret every aspect, suspect meaning under each particle of the work. One is immersed in an ocean of endless meaning and interconnection from the theological to the mathematical. Retained separately as the vocabulary card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -138345,7 +138506,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "hermeneutic.a.01",
         "paranoia.n.01",
@@ -138365,6 +138526,9 @@
         1130241,
         645121,
         635905
+      ],
+      "aliases": [
+        "hermeneutic paranoia"
       ]
     },
     {
@@ -138742,7 +138906,7 @@
     },
     {
       "id": "pata-vocab-b1-intraphysics",
-      "term": "intraphysics",
+      "term": "Intraphysics (Vocabulary)",
       "title": "Intraphysics (Vocabulary)",
       "description": "Boris Rybak's concept developed during the wartime period. Part of the pataphysical activities that occurred in the years leading up to the founding of the Collège de 'Pataphysique in 1948. Associated with the Main à Plume group and postwar surrealism. Retained separately as the vocabulary card so duplicate search results identify this entry's intended scope rather than appearing as an accidental duplicate.",
       "section": "Pataphysics",
@@ -138753,7 +138917,7 @@
       "connections": [],
       "links": [],
       "createdAt": "2025-12-23T00:00:00.000Z",
-      "updatedAt": "2026-04-29T11:36:30.000Z",
+      "updatedAt": "2026-04-30T05:57:00.000Z",
       "senses": [
         "concept.n.01",
         "developed.a.01",
@@ -138767,6 +138931,9 @@
         779265,
         658433,
         450305
+      ],
+      "aliases": [
+        "intraphysics"
       ]
     },
     {

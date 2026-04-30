@@ -24,7 +24,9 @@
     "sync:to-wiki": "node scripts/export-to-fedwiki.js",
     "sync:gatherer": "node scripts/generate-fedwiki-gatherer.js",
     "predev": "npm run check:generated",
-    "prebuild": "npm run check:generated && npm run check:tokens"
+    "prebuild": "npm run check:generated && npm run check:tokens",
+    "audit:title-cards": "node scripts/audit-title-cards.js",
+    "check:title-cards": "node scripts/audit-title-cards.js --fail-on-duplicate-titles"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
