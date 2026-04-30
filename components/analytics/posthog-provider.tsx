@@ -89,6 +89,12 @@ export function PostHogProvider({ apiKey, apiHost, env, debug }: Props) {
       // Remote project settings can enable this separately from general
       // autocapture. Keep it off until we intentionally add dead-click review.
       capture_dead_clicks: false,
+      // Heatmaps also use the dead-click extension internally. Keep them off
+      // until review explicitly includes that product surface.
+      capture_heatmaps: false,
+      __extensionClasses: {
+        deadClicksAutocapture: undefined,
+      },
       // Defensive: this site has no logged-in concept and no recording use.
       disable_session_recording: true,
       disable_scroll_properties: false,
