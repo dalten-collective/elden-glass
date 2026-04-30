@@ -3,7 +3,7 @@
 
 The wizard audited the existing PostHog integration in Elden Glass and found it already comprehensively instrumented. All browser-side events were wired up across the PostHog provider, engagement tracker, search pages, and item card components. It also confirmed environment variables are set correctly and built a PostHog dashboard with five insights.
 
-Codex follow-up on `pb-ba4.7/posthog-wizard-baseline`: the browser provider now lets PostHog emit canonical Web Analytics events (`$pageview`, `$pageleave`, scroll properties, and `$web_vitals`) instead of replacing them with custom pageview/read-depth events. The custom event layer is now limited to Elden Glass-specific interactions and AX analytics. The wizard-created `middleware.ts` was removed because Next.js 16 rejects projects that contain both `middleware.ts` and `proxy.ts`; `proxy.ts` is the correct active request proxy entrypoint for this repo.
+Codex follow-up on `pb-ba4.7/posthog-wizard-baseline`: the browser provider now lets PostHog emit canonical Web Analytics events (`$pageview`, `$pageleave`, scroll properties, and `$web_vitals`) instead of replacing them with custom pageview/read-depth events. The custom event layer is now limited to Elden Glass-specific interactions and AX analytics. Browser-side PostHog requests now go through the same-origin `/ingest` reverse proxy configured in `next.config.mjs`. The wizard-created `middleware.ts` was removed because Next.js 16 rejects projects that contain both `middleware.ts` and `proxy.ts`; `proxy.ts` is the correct active request proxy entrypoint for this repo.
 
 ## Changes made
 

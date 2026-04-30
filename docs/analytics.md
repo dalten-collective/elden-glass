@@ -164,10 +164,20 @@ The current code enables the checklist's canonical web events:
 - scroll-depth properties on pageview/pageleave events
 - `$web_vitals`
 
-Reverse proxying is useful for ad-blocker resilience, but it is not
-enabled yet. If this becomes necessary, use a non-obvious same-origin
-path and route both `/static/*` and `/array/*` to the PostHog asset
-origin for the US Cloud project.
+Browser-side PostHog traffic is routed through the same-origin
+`/ingest` reverse proxy configured in `next.config.mjs`. The browser
+SDK uses `/ingest` as its `api_host`, while the Next.js rewrites
+forward requests to the PostHog Cloud project host:
+
+- `/ingest/static/:path*` → PostHog asset origin `/static/:path*`
+- `/ingest/array/:path*` → PostHog asset origin `/array/:path*`
+- `/ingest/:path*` → PostHog ingest origin `/:path*`
+
+The rewrite targets derive from `NEXT_PUBLIC_POSTHOG_HOST`; the current
+US Cloud project routes assets to `https://us-assets.i.posthog.com` and
+ingest requests to `https://us.i.posthog.com`. Server-side AX capture
+continues to use `POSTHOG_HOST` directly because browser tracking
+blockers do not affect server-to-server event capture.
 
 ## Data Hygiene Rules
 
