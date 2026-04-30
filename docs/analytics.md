@@ -304,7 +304,10 @@ Current emitted event vocabulary:
   `to_host`. Do not record full outbound URLs verbatim.
 - `human_sidebar_navigate` — sidebar/topbar navigation use. Properties:
   `from_route_family`, `from_path`, `to_route_family`, `to_path`,
-  `surface` (`desktop` or `mobile`).
+  `$pathname`, `$current_url`, `surface` (`desktop` or `mobile`). The
+  PostHog standard URL fields intentionally point at the destination so
+  PostHog's event list and URL breakdowns read as navigation outcomes;
+  `from_path` preserves the source page.
 - `human_search_submit` — search form submitted. Properties:
   `route_family`, `path`, `query`, `query_length`, `via` (`page` or
   `global`). The `query` is only the text the user submitted; see the

@@ -63,6 +63,7 @@ export function buildSidebarNavigateProperties(input: {
     from_path: input.fromPath,
     to_route_family: routeFamilyForPath(input.toPath),
     to_path: input.toPath,
+    $pathname: input.toPath,
     surface: input.surface,
   };
 }

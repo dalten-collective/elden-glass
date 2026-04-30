@@ -49,6 +49,7 @@ test('sidebar-navigate distinguishes desktop and mobile surfaces', () => {
   });
   assert.equal(desktop.surface, 'desktop');
   assert.equal(desktop.to_route_family, 'bespoke_interactive');
+  assert.equal(desktop.$pathname, '/gatherer');
 
   const mobile = buildSidebarNavigateProperties({
     fromPath: '/',
