@@ -18,7 +18,7 @@ import { ChevronDown, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { type ReactNode, useMemo, useState } from 'react';
+import { type ReactNode, useCallback, useMemo, useState } from 'react';
 
 import { GlobalSearch } from '@/components/site/global-search';
 import type { NavItem, NavLinkItem, NavSectionItem, SiteNavigation } from '@/lib/sidebar';
@@ -46,6 +46,11 @@ type StairNavProps = {
   surface?: 'desktop' | 'mobile';
 };
 
+type SectionExpansionControls = {
+  manuallyOpenSectionIds: Set<string>;
+  setSectionManuallyOpen: (sectionId: string, open: boolean) => void;
+};
+
 // Single marker for every rung and section header. Changing the glyph
 // in one place ripples through the whole stair.
 const RUNG_MARKER = '§';
@@ -58,6 +63,24 @@ export function StairNav({
   surface = 'desktop',
 }: StairNavProps) {
   const pathname = usePathname() ?? '/';
+  const [manuallyOpenSectionIds, setManuallyOpenSectionIds] = useState<Set<string>>(
+    () => new Set()
+  );
+  const setSectionManuallyOpen = useCallback((sectionId: string, open: boolean) => {
+    setManuallyOpenSectionIds((current) => {
+      const next = new Set(current);
+      if (open) {
+        next.add(sectionId);
+      } else {
+        next.delete(sectionId);
+      }
+      return next;
+    });
+  }, []);
+  const expansionControls = {
+    manuallyOpenSectionIds,
+    setSectionManuallyOpen,
+  };
 
   return (
     <div className="stair" data-eg-nav-surface={surface}>
@@ -105,7 +128,12 @@ export function StairNav({
         <>
           <div className="stair-section-label">{navigation.secondaryLabel}</div>
           {navigation.secondary.map((item) => (
-            <SecondaryEntry key={keyForItem(item)} item={item} currentPath={pathname} />
+            <SecondaryEntry
+              key={keyForItem(item)}
+              item={item}
+              currentPath={pathname}
+              expansionControls={expansionControls}
+            />
           ))}
         </>
       )}
@@ -166,7 +194,15 @@ function LinkRung({ link, currentPath }: { link: NavLinkItem; currentPath: strin
 // flatten through.
 // ─────────────────────────────────────────────────────────────
 
-function SecondaryEntry({ item, currentPath }: { item: NavItem; currentPath: string }) {
+function SecondaryEntry({
+  item,
+  currentPath,
+  expansionControls,
+}: {
+  item: NavItem;
+  currentPath: string;
+  expansionControls: SectionExpansionControls;
+}) {
   if (item.type === 'link') {
     return <LinkRung link={item} currentPath={currentPath} />;
   }
@@ -174,24 +210,38 @@ function SecondaryEntry({ item, currentPath }: { item: NavItem; currentPath: str
     return (
       <>
         {item.children.map((child) => (
-          <SecondaryEntry key={keyForItem(child)} item={child} currentPath={currentPath} />
+          <SecondaryEntry
+            key={keyForItem(child)}
+            item={child}
+            currentPath={currentPath}
+            expansionControls={expansionControls}
+          />
         ))}
       </>
     );
   }
-  return <SectionGroup section={item} currentPath={currentPath} />;
+  return (
+    <SectionGroup section={item} currentPath={currentPath} expansionControls={expansionControls} />
+  );
 }
 
-function SectionGroup({ section, currentPath }: { section: NavSectionItem; currentPath: string }) {
+function SectionGroup({
+  section,
+  currentPath,
+  expansionControls,
+}: {
+  section: NavSectionItem;
+  currentPath: string;
+  expansionControls: SectionExpansionControls;
+}) {
   // A section auto-opens when any descendant matches the active path.
-  // Manual toggles are tracked separately, but the underlying disclosure
-  // is native so it remains usable after browser history restores.
+  // Manual toggles are tracked once at the stair root, but the underlying
+  // disclosure is native so it remains usable after browser history restores.
   const hasActive = useMemo(
     () => section.children.some((child) => itemMatchesPath(child, currentPath)),
     [section.children, currentPath]
   );
-  const [manuallyOpen, setManuallyOpen] = useState(false);
-  const open = hasActive || manuallyOpen;
+  const open = hasActive || expansionControls.manuallyOpenSectionIds.has(section.id);
 
   const headerCls = ['stair-group-header', hasActive && 'has-active'].filter(Boolean).join(' ');
 
@@ -200,7 +250,10 @@ function SectionGroup({ section, currentPath }: { section: NavSectionItem; curre
       className="stair-group"
       open={open}
       onToggle={(event) => {
-        setManuallyOpen(event.currentTarget.open);
+        const nextOpen = event.currentTarget.open;
+        if (!hasActive || !nextOpen) {
+          expansionControls.setSectionManuallyOpen(section.id, nextOpen);
+        }
       }}
     >
       <summary className={headerCls} aria-expanded={open}>
@@ -215,7 +268,12 @@ function SectionGroup({ section, currentPath }: { section: NavSectionItem; curre
           <div className="stair-empty">{section.emptyLabel ?? 'Nothing here yet.'}</div>
         ) : (
           section.children.map((child) => (
-            <SecondaryEntry key={keyForItem(child)} item={child} currentPath={currentPath} />
+            <SecondaryEntry
+              key={keyForItem(child)}
+              item={child}
+              currentPath={currentPath}
+              expansionControls={expansionControls}
+            />
           ))
         )}
       </div>
