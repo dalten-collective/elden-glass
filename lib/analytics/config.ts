@@ -13,8 +13,10 @@ export type AnalyticsBrowserConfig = {
   enabled: boolean;
   /** Public PostHog project API key (browser-safe). */
   key: string;
-  /** PostHog ingestion host (browser-safe). */
+  /** Browser SDK API host. Uses the same-origin reverse proxy when enabled. */
   host: string;
+  /** Raw PostHog ingestion host used by the Next.js reverse proxy rewrites. */
+  directHost: string;
   /** Free-form environment label tagged on every event. */
   env: string;
   /** When true, the browser shim emits verbose console logs. */
@@ -55,11 +57,11 @@ function deriveEnvLabel(): string {
  */
 export function getBrowserAnalyticsConfig(): AnalyticsBrowserConfig {
   const key = process.env.NEXT_PUBLIC_POSTHOG_KEY ?? '';
-  const host = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? '';
+  const directHost = process.env.NEXT_PUBLIC_POSTHOG_HOST ?? '';
   const debug = asBool(process.env.NEXT_PUBLIC_ANALYTICS_DEBUG);
   const env = deriveEnvLabel();
-  const enabled = key.length > 0 && host.length > 0;
-  return { enabled, key, host, env, debug };
+  const enabled = key.length > 0 && directHost.length > 0;
+  return { enabled, key, host: '/_eg/mark', directHost, env, debug };
 }
 
 /**
