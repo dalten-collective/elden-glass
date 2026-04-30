@@ -165,13 +165,13 @@ The current code enables the checklist's canonical web events:
 - `$web_vitals`
 
 Browser-side PostHog traffic is routed through the same-origin
-`/ingest` reverse proxy configured in `next.config.mjs`. The browser
-SDK uses `/ingest` as its `api_host`, while the Next.js rewrites
+`/_eg/mark` reverse proxy configured in `next.config.mjs`. The browser
+SDK uses `/_eg/mark` as its `api_host`, while the Next.js rewrites
 forward requests to the PostHog Cloud project host:
 
-- `/ingest/static/:path*` → PostHog asset origin `/static/:path*`
-- `/ingest/array/:path*` → PostHog asset origin `/array/:path*`
-- `/ingest/:path*` → PostHog ingest origin `/:path*`
+- `/_eg/mark/static/:path*` → PostHog asset origin `/static/:path*`
+- `/_eg/mark/array/:path*` → PostHog asset origin `/array/:path*`
+- `/_eg/mark/:path*` → PostHog ingest origin `/:path*`
 
 The rewrite targets derive from `NEXT_PUBLIC_POSTHOG_HOST`; the current
 US Cloud project routes assets to `https://us-assets.i.posthog.com` and

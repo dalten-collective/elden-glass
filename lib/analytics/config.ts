@@ -61,7 +61,7 @@ export function getBrowserAnalyticsConfig(): AnalyticsBrowserConfig {
   const debug = asBool(process.env.NEXT_PUBLIC_ANALYTICS_DEBUG);
   const env = deriveEnvLabel();
   const enabled = key.length > 0 && directHost.length > 0;
-  return { enabled, key, host: '/ingest', directHost, env, debug };
+  return { enabled, key, host: '/_eg/mark', directHost, env, debug };
 }
 
 /**

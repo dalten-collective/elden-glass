@@ -35,6 +35,8 @@ function getPostHogRewriteOrigins() {
   return { ingestHost, assetsHost };
 }
 
+const postHogProxyPath = '/_eg/mark';
+
 const nextConfig = {
   typedRoutes: true,
   skipTrailingSlashRedirect: true,
@@ -45,15 +47,15 @@ const nextConfig = {
     const { ingestHost, assetsHost } = getPostHogRewriteOrigins();
     return [
       {
-        source: '/ingest/static/:path*',
+        source: `${postHogProxyPath}/static/:path*`,
         destination: `${assetsHost}/static/:path*`,
       },
       {
-        source: '/ingest/array/:path*',
+        source: `${postHogProxyPath}/array/:path*`,
         destination: `${assetsHost}/array/:path*`,
       },
       {
-        source: '/ingest/:path*',
+        source: `${postHogProxyPath}/:path*`,
         destination: `${ingestHost}/:path*`,
       },
     ];
