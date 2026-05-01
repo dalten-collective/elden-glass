@@ -1530,6 +1530,134 @@ body {
   }
 }
 
+/* Home page — route-specific composition over Delay primitives.
+   These are intentionally unlayered so they can replace former inline
+   styles that overrode the base Delay type rules. */
+.home-glass-image {
+  object-fit: contain;
+  filter: sepia(0.25) contrast(0.9) brightness(0.8);
+}
+.home-glass-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--ink) 0%, transparent 45%, var(--ink) 100%);
+}
+.delay .home-hero-eyebrow {
+  display: block;
+  margin-bottom: 20px;
+}
+.delay .home-hero-title {
+  margin-bottom: 24px;
+  font-size: clamp(40px, 7vw, 72px);
+}
+.home-gold {
+  color: var(--gold);
+}
+.home-hero-rule {
+  width: 56px;
+  height: 1px;
+  background: var(--gold);
+}
+.delay .home-hero-spec {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.delay .home-llm-pane {
+  padding: 18px 22px;
+}
+.llm-disclosure {
+  margin: 0;
+}
+.llm-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+.llm-disclosure[open] .llm-disclosure-indicator {
+  transform: rotate(90deg);
+}
+.home-llm-summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+.delay .llm-disclosure-indicator {
+  display: inline-block;
+  color: var(--gold);
+  transform-origin: center;
+  transition: transform 0.15s ease;
+}
+.home-llm-body {
+  padding-top: 18px;
+}
+.home-llm-copy {
+  margin-bottom: 14px;
+  color: var(--paper);
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.home-llm-links {
+  color: var(--paper-dim);
+  font-family: var(--font-serif);
+  font-size: 14px;
+}
+.home-inline-link {
+  color: var(--gold);
+}
+.delay .home-prompt-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.home-prompt-block {
+  margin: 0;
+  padding: 16px 18px;
+  overflow-wrap: anywhere;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--paper);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+.delay .home-section-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+}
+.home-discovery-lead {
+  color: var(--paper);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.home-discovery-copy {
+  margin-top: 14px;
+  color: var(--paper-dim);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.delay .home-correspondence-pane {
+  padding: 20px 22px;
+}
+.delay .home-correspondence-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 .float-image::after {
   content: '';
   display: block;
