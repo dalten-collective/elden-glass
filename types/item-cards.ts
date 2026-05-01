@@ -1,12 +1,12 @@
 import { z } from 'zod';
 
 /**
- * Schema for optional popups attached to title-card headers.
+ * Schema for optional popups attached to item-card headers.
  */
 export const headerPopupSchema = z
   .object({
-    type: z.enum(['titlecard', 'note', 'image', 'webpage']),
-    titleCardId: z.string().optional(),
+    type: z.enum(['itemcard', 'note', 'image', 'webpage']),
+    itemCardId: z.string().optional(),
     note: z.string().optional(),
     imageUrl: z.string().optional(),
     title: z.string().optional(),
@@ -42,7 +42,7 @@ export const artworkMetadataSchema = z
 /**
  * Schema for one canonical item-card record.
  */
-export const titleCardSchema = z
+export const itemCardSchema = z
   .object({
     id: z.string(),
     term: z.string(),
@@ -90,15 +90,15 @@ export const titleCardSchema = z
   .strict();
 
 /**
- * Schema for the canonical item-card database at data/title-cards.json.
+ * Schema for the canonical item-card database at data/item-cards.json.
  */
-export const titleCardDatabaseSchema = z
+export const itemCardDatabaseSchema = z
   .object({
-    cards: z.array(titleCardSchema),
+    cards: z.array(itemCardSchema),
   })
   .strict();
 
 export type HeaderPopup = z.infer<typeof headerPopupSchema>;
 export type ArtworkMetadata = z.infer<typeof artworkMetadataSchema>;
-export type TitleCard = z.infer<typeof titleCardSchema>;
-export type TitleCardDatabase = z.infer<typeof titleCardDatabaseSchema>;
+export type ItemCard = z.infer<typeof itemCardSchema>;
+export type ItemCardDatabase = z.infer<typeof itemCardDatabaseSchema>;

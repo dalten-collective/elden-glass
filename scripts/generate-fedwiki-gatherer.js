@@ -2,17 +2,17 @@
 
 /**
  * Generate a standalone HTML Gatherer page for Federated Wiki
- * This embeds all title cards data directly in the HTML
+ * This embeds all item cards data directly in the HTML
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const TITLE_CARDS_PATH = path.join(__dirname, '../data/title-cards.json');
+const ITEM_CARDS_PATH = path.join(__dirname, '../data/item-cards.json');
 const OUTPUT_PATH = path.join(process.env.HOME, '.wiki/assets/gatherer.html');
 
-// Read title cards
-const data = JSON.parse(fs.readFileSync(TITLE_CARDS_PATH, 'utf8'));
+// Read item cards
+const data = JSON.parse(fs.readFileSync(ITEM_CARDS_PATH, 'utf8'));
 const cards = Array.isArray(data) ? data : data.cards || [];
 
 // Extract unique values for filters
@@ -26,7 +26,7 @@ const html = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gatherer - Title Card Browser</title>
+  <title>Gatherer - Item Card Browser</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -109,7 +109,7 @@ const html = `<!DOCTYPE html>
 </head>
 <body>
   <h1>Gatherer</h1>
-  <input type="text" class="search-box" placeholder="Search ${cards.length} title cards..." id="search">
+  <input type="text" class="search-box" placeholder="Search ${cards.length} item cards..." id="search">
   <div class="filter-toggle" id="filterToggle">▶ Filters</div>
   <div class="filters" id="filters">
     <div class="filter-section">
@@ -224,5 +224,5 @@ const html = `<!DOCTYPE html>
 
 fs.writeFileSync(OUTPUT_PATH, html);
 console.log(`Generated Gatherer HTML at: ${OUTPUT_PATH}`);
-console.log(`Contains ${cards.length} title cards`);
+console.log(`Contains ${cards.length} item cards`);
 console.log(`\nAccess at: http://localhost:3000/assets/gatherer.html`);
