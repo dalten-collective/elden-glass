@@ -62,39 +62,28 @@ export default function HomePage() {
             alt=""
             fill
             sizes="520px"
-            style={{
-              objectFit: 'contain',
-              filter: 'sepia(.25) contrast(.9) brightness(.8)',
-            }}
+            className="home-glass-image"
           />
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'linear-gradient(90deg, var(--ink) 0%, transparent 45%, var(--ink) 100%)',
-            }}
-          />
+          <div className="home-glass-fade" />
         </div>
 
         <div className="relative max-w-3xl">
-          <Eyebrow tone="gold" style={{ display: 'block', marginBottom: 20 }}>
+          <Eyebrow tone="gold" className="home-hero-eyebrow">
             Elden Ring&apos;s Final Secret
           </Eyebrow>
-          <h1 className="h1" style={{ fontSize: 'clamp(40px, 7vw, 72px)', marginBottom: 24 }}>
+          <h1 className="h1 home-hero-title">
             <i>Elden Ring</i> is
             <br />
             Marcel Duchamp&apos;s{' '}
-            <span style={{ color: 'var(--gold)' }}>
+            <span className="home-gold">
               &ldquo;The Bride Stripped Bare
               <br />
               by Her Bachelors, Even.&rdquo;
             </span>
           </h1>
           <div className="flex items-center gap-4">
-            <div style={{ width: 56, height: 1, background: 'var(--gold)' }} />
-            <Spec style={{ letterSpacing: '0.18em', textTransform: 'uppercase', fontSize: 12 }}>
-              The claim, literally.
-            </Spec>
+            <div className="home-hero-rule" />
+            <Spec className="home-hero-spec">The claim, literally.</Spec>
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -128,106 +117,42 @@ export default function HomePage() {
           sees the prompt, the code block, and the anchor-tag fallback
           without needing to simulate a click. Humans copy the prompt
           for their local agent; LLMs read it in place and self-route. */}
-      <Pane solid style={{ padding: '18px 22px' }}>
-        <details className="llm-disclosure" style={{ margin: 0 }}>
-          <summary
-            style={{
-              cursor: 'pointer',
-              listStyle: 'none',
-              display: 'flex',
-              alignItems: 'baseline',
-              justifyContent: 'space-between',
-              gap: 16,
-              userSelect: 'none',
-            }}
-          >
+      <Pane solid className="home-llm-pane">
+        <details className="llm-disclosure">
+          <summary className="home-llm-summary">
             <Eyebrow tone="gold">Instructions for Large Language Models</Eyebrow>
-            <Spec
-              className="llm-disclosure-indicator"
-              style={{
-                color: 'var(--gold)',
-                transition: 'transform 0.15s ease',
-                display: 'inline-block',
-                transformOrigin: 'center',
-              }}
-            >
-              ▸
-            </Spec>
+            <Spec className="llm-disclosure-indicator">▸</Spec>
           </summary>
 
-          <div style={{ paddingTop: 18 }}>
-            <p
-              style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: 15,
-                lineHeight: 1.55,
-                color: 'var(--paper)',
-                marginBottom: 14,
-              }}
-            >
+          <div className="home-llm-body">
+            <p className="home-llm-copy">
               This section addresses both humans collaborating with an LLM and LLMs reading this
               page directly. Humans: copy the prompt below and paste it into your agent. LLMs: read
               the prompt, decide which of the two pathways applies to your harness, and follow the
               corresponding link.
             </p>
 
-            <div
-              className="mb-4 flex flex-wrap items-center gap-3"
-              style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: 14,
-                color: 'var(--paper-dim)',
-              }}
-            >
+            <div className="home-llm-links mb-4 flex flex-wrap items-center gap-3">
               <CopyButton value={UNIVERSAL_AGENT_PROMPT} label="Copy prompt" />
               <span>
                 Direct links for browser-tab LLMs:{' '}
-                <Link href="/skill" style={{ color: 'var(--gold)' }}>
+                <Link href="/skill" className="home-inline-link">
                   /skill
                 </Link>
                 {' · '}
-                <Link href="/contents" style={{ color: 'var(--gold)' }}>
+                <Link href="/contents" className="home-inline-link">
                   /contents
                 </Link>
               </span>
             </div>
 
-            <Spec
-              style={{
-                display: 'block',
-                color: 'var(--gold)',
-                fontSize: 11,
-                letterSpacing: '0.18em',
-                textTransform: 'uppercase',
-                marginBottom: 8,
-              }}
-            >
-              ↓ the prompt
-            </Spec>
+            <Spec className="home-prompt-label">↓ the prompt</Spec>
 
-            <pre
-              style={{
-                fontFamily: 'var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace)',
-                fontSize: 13,
-                lineHeight: 1.55,
-                color: 'var(--paper)',
-                background: 'rgba(0, 0, 0, 0.28)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                borderRadius: 6,
-                padding: '16px 18px',
-                margin: 0,
-                whiteSpace: 'pre-wrap',
-                overflowWrap: 'anywhere',
-              }}
-            >
+            <pre className="home-prompt-block">
               <code>{UNIVERSAL_AGENT_PROMPT}</code>
             </pre>
           </div>
         </details>
-        <style>{`
-          .llm-disclosure summary::-webkit-details-marker { display: none; }
-          .llm-disclosure[open] .llm-disclosure-indicator { transform: rotate(90deg); }
-        `}</style>
       </Pane>
 
       {/* Pull-quote from the thesis itself — not marketing copy */}
@@ -248,52 +173,25 @@ export default function HomePage() {
       {/* A taste of the correspondences — the bridge into the thesis */}
       <section className="grid gap-8 md:grid-cols-[1.1fr_1fr] md:gap-10">
         <div>
-          <Eyebrow tone="rust" style={{ display: 'block', marginBottom: 14 }}>
+          <Eyebrow tone="rust" className="home-section-eyebrow">
             The Discovery
           </Eyebrow>
-          <p
-            className="flush"
-            style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 18,
-              lineHeight: 1.55,
-              color: 'var(--paper)',
-            }}
-          >
+          <p className="flush home-discovery-lead">
             <i>The Large Glass</i> tells a story of unrequited love within two planes of shattered
             glass: the lower Realm of the Bachelors and the higher Realm of the Bride. Duchamp
             described the work as <i>&ldquo;a delay in glass,&rdquo;</i> in the same way one would
             say <i>&ldquo;a poem in prose&rdquo;</i> — events happening in &ldquo;a world of
             yellow,&rdquo; repeating themselves in a never-ending cycle.
           </p>
-          <p
-            style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 18,
-              lineHeight: 1.55,
-              color: 'var(--paper-dim)',
-              marginTop: 14,
-            }}
-          >
+          <p className="home-discovery-copy">
             The nine Malic Moulds — the Bachelors — represent a{' '}
             <i>&ldquo;cemetery of uniforms or liveries,&rdquo;</i> animated by the Love Gasoline
             rained down by the Bride, crucified beneath the Milky Way.
           </p>
         </div>
 
-        <Pane solid style={{ padding: '20px 22px' }}>
-          <Spec
-            style={{
-              color: 'var(--gold)',
-              display: 'block',
-              marginBottom: 12,
-              fontSize: 11,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-            }}
-          >
-            Correspondences
-          </Spec>
+        <Pane solid className="home-correspondence-pane">
+          <Spec className="home-correspondence-label">Correspondences</Spec>
           <Correspondence n="1" glass="The Bride" ring="Marika the Eternal" />
           <Correspondence n="2" glass="Milky Way / crucifix" ring="Elden Beast" />
           <Correspondence n="3" glass="Three Nets" ring="Three Mending Runes" />
