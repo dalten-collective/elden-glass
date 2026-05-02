@@ -24,7 +24,8 @@
     "sync:to-wiki": "node scripts/export-to-fedwiki.js",
     "sync:gatherer": "node scripts/generate-fedwiki-gatherer.js",
     "predev": "npm run check:generated",
-    "prebuild": "npm run check:generated && npm run check:tokens"
+    "prebuild": "npm run check:generated && npm run check:tokens",
+    "check:updated-dates": "node scripts/check-updated-date-drift.js"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
