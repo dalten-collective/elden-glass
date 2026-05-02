@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CARD_PATH = path.join(process.cwd(), 'data', 'title-cards.json');
+const CARD_PATH = path.join(process.cwd(), 'data', 'item-cards.json');
 const SHORT_DESCRIPTION_LIMIT = 35;
 
 function normalize(value) {
