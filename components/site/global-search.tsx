@@ -187,7 +187,7 @@ export function GlobalSearch({
         <button
           onClick={goToSearchPage}
           type="button"
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)] hover:text-[var(--accent-gold)] transition-colors z-10"
+          className="global-search-icon-button absolute left-3 top-1/2 z-10 -translate-y-1/2"
         >
           <Search className="h-4 w-4" />
         </button>
@@ -201,12 +201,12 @@ export function GlobalSearch({
             shouldShowPreview && query.length >= 2 && results.length > 0 && setIsOpen(true)
           }
           placeholder="Search the site..."
-          className="w-full pl-10 pr-10 py-2 bg-[rgb(var(--bg-secondary-rgb)/0.5)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] focus:border-transparent transition-all"
+          className="global-search-input w-full py-2 pl-10 pr-10 text-sm focus:outline-none"
         />
         {query && (
           <button
             onClick={handleClear}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
+            className="global-search-clear absolute right-3 top-1/2 -translate-y-1/2"
           >
             <X className="h-4 w-4" />
           </button>
@@ -218,16 +218,14 @@ export function GlobalSearch({
         <div
           className={
             variant === 'sidebar'
-              ? 'absolute left-0 right-0 top-full mt-2 max-h-[60vh] overflow-y-auto border border-[var(--pane-edge)] bg-[var(--ink-2)] shadow-2xl z-[100]'
-              : 'absolute top-full mt-2 w-full bg-[var(--bg-secondary)] border border-[var(--border-emphasis)] rounded-lg shadow-2xl overflow-hidden z-50 max-h-[70vh] overflow-y-auto'
+              ? 'global-search-dropdown global-search-dropdown--sidebar absolute left-0 right-0 top-full z-[100] mt-2 max-h-[60vh] overflow-y-auto'
+              : 'global-search-dropdown global-search-dropdown--topbar absolute top-full z-50 mt-2 max-h-[70vh] w-full overflow-hidden overflow-y-auto'
           }
         >
           {isLoading ? (
-            <div className="p-4 text-center text-sm text-[var(--text-tertiary)]">Searching...</div>
+            <div className="global-search-empty p-4 text-center text-sm">Searching...</div>
           ) : results.length === 0 ? (
-            <div className="p-4 text-center text-sm text-[var(--text-tertiary)]">
-              No results found
-            </div>
+            <div className="global-search-empty p-4 text-center text-sm">No results found</div>
           ) : (
             <div>
               {results.map((result, index) => (
@@ -235,38 +233,36 @@ export function GlobalSearch({
                   key={result.id}
                   onClick={() => handleSelectResult(result, index)}
                   onMouseEnter={() => setSelectedIndex(index)}
-                  className={`w-full text-left px-4 py-3 border-b border-[var(--border-subtle)] last:border-b-0 transition-colors ${
-                    index === selectedIndex
-                      ? 'bg-[rgb(var(--accent-gold-rgb)/0.1)] border-l-2 border-l-[var(--accent-gold)]'
-                      : 'hover:bg-[rgb(var(--bg-primary-rgb)/0.5)]'
+                  className={`global-search-result w-full px-4 py-3 text-left ${
+                    index === selectedIndex ? 'is-selected' : ''
                   }`}
                 >
                   {/* Item Card badge or Page Title */}
                   <div className="flex items-center gap-2 mb-1">
                     {result.type === 'itemcard' ? (
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-[rgb(var(--accent-gold-rgb)/0.2)] text-[var(--accent-gold)] text-[10px] uppercase tracking-[0.1em] font-medium rounded">
+                      <span className="global-search-badge inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.1em]">
                         <BookText className="h-3 w-3" />
                         Definition
                       </span>
                     ) : (
-                      <span className="text-[10px] uppercase tracking-[0.15em] text-[var(--accent-gold)] font-light">
+                      <span className="global-search-result-page text-[10px] font-light uppercase tracking-[0.15em]">
                         {result.pageTitle}
                       </span>
                     )}
                     {result.type === 'itemcard' && result.pageTitle && (
-                      <span className="text-[10px] text-[var(--text-tertiary)]">
+                      <span className="global-search-result-meta text-[10px]">
                         {result.pageTitle}
                       </span>
                     )}
                   </div>
 
                   {/* Sentence/Match */}
-                  <div className="text-sm text-[var(--text-primary)] font-medium mb-1 line-clamp-2">
+                  <div className="global-search-result-sentence mb-1 line-clamp-2 text-sm font-medium">
                     {highlightMatch(result.sentence, query)}
                   </div>
 
                   {/* Context */}
-                  <div className="text-xs text-[var(--text-tertiary)] line-clamp-2">
+                  <div className="global-search-result-context line-clamp-2 text-xs">
                     {result.context}
                   </div>
                 </button>
@@ -275,7 +271,7 @@ export function GlobalSearch({
           )}
 
           {/* Footer with keyboard shortcuts */}
-          <div className="px-4 py-2 bg-[rgb(var(--bg-primary-rgb)/0.5)] border-t border-[var(--border-subtle)] flex items-center justify-between text-[10px] text-[var(--text-tertiary)]">
+          <div className="global-search-footer flex items-center justify-between px-4 py-2 text-[10px]">
             {results.length > 0 ? (
               <>
                 <span>↑↓ Navigate</span>
@@ -320,7 +316,7 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   const parts = text.split(new RegExp(`(${query})`, 'gi'));
   return parts.map((part, index) =>
     part.toLowerCase() === query.toLowerCase() ? (
-      <mark key={index} className="bg-[var(--accent-gold)] text-[var(--bg-primary)] px-0.5 rounded">
+      <mark key={index} className="global-search-highlight px-0.5">
         {part}
       </mark>
     ) : (
