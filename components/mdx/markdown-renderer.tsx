@@ -45,6 +45,7 @@ const mdxComponents = {
   FloatImage,
   ItemCard,
   LinkPreview,
+  a: LinkPreview,
   MagnifierImage,
   DefinitionItem,
   HashVerification,

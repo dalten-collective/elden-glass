@@ -1,138 +1,204 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useRef, useState, type AnchorHTMLAttributes, type ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 
-interface LinkPreviewProps {
-  href: string;
-  children: React.ReactNode;
+type PreviewPosition = {
+  left: number;
+  top: number;
+};
+
+interface LinkPreviewProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  href?: string;
+  children: ReactNode;
 }
 
-export function LinkPreview({ href, children }: LinkPreviewProps) {
+const PREVIEW_WIDTH = 360;
+const PREVIEW_HEIGHT = 260;
+const VIEWPORT_MARGIN = 16;
+const CURSOR_OFFSET = 18;
+
+function getPreviewPosition(x: number, y: number): PreviewPosition {
+  if (typeof window === 'undefined') {
+    return { left: x + CURSOR_OFFSET, top: y + CURSOR_OFFSET };
+  }
+
+  const fitsRight = x + CURSOR_OFFSET + PREVIEW_WIDTH <= window.innerWidth - VIEWPORT_MARGIN;
+  const fitsBelow = y + CURSOR_OFFSET + PREVIEW_HEIGHT <= window.innerHeight - VIEWPORT_MARGIN;
+
+  return {
+    left: fitsRight
+      ? x + CURSOR_OFFSET
+      : Math.max(VIEWPORT_MARGIN, x - PREVIEW_WIDTH - CURSOR_OFFSET),
+    top: fitsBelow
+      ? y + CURSOR_OFFSET
+      : Math.max(VIEWPORT_MARGIN, window.innerHeight - PREVIEW_HEIGHT - VIEWPORT_MARGIN),
+  };
+}
+
+function isExternalUrl(href: string): boolean {
+  return /^https?:\/\//i.test(href);
+}
+
+function isImageUrl(href: string): boolean {
+  return /\.(jpg|jpeg|png|gif|webp|svg)(\?.*)?$/i.test(href);
+}
+
+function getHostname(href: string): string {
+  try {
+    return new URL(href).hostname.replace(/^www\./, '');
+  } catch {
+    return href;
+  }
+}
+
+export function LinkPreview({ href = '', children, className, ...props }: LinkPreviewProps) {
   const [showPreview, setShowPreview] = useState(false);
-  const [previewPosition, setPreviewPosition] = useState({ x: 0, y: 0 });
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [pinned, setPinned] = useState(false);
+  const [position, setPosition] = useState<PreviewPosition | null>(null);
+  const [frameFailed, setFrameFailed] = useState(false);
+  const hideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const handleMouseEnter = async (e: React.MouseEvent) => {
-    // Clear any pending hide timeout
-    if (hideTimeoutRef.current) {
-      clearTimeout(hideTimeoutRef.current);
-      hideTimeoutRef.current = null;
-    }
+  const external = isExternalUrl(href);
+  const previewable = external;
+  const imagePreview = isImageUrl(href);
+  const hostname = external ? getHostname(href) : null;
 
-    setPreviewPosition({ x: e.clientX, y: e.clientY });
+  function clearHideTimer() {
+    if (!hideTimeoutRef.current) return;
+    clearTimeout(hideTimeoutRef.current);
+    hideTimeoutRef.current = null;
+  }
 
-    // Determine image URL immediately
-    let url: string | null = null;
+  function openPreview(x: number, y: number) {
+    if (!previewable) return;
+    clearHideTimer();
+    setFrameFailed(false);
+    setPosition(getPreviewPosition(x, y));
+    setShowPreview(true);
+  }
 
-    if (href.match(/\.(jpg|jpeg|png|gif|webp|svg)$/i)) {
-      url = href;
-    } else if (href.includes('wikipedia.org')) {
-      // For Wikipedia links, try to fetch preview image via API
-      try {
-        const pageName = href.split('/wiki/')[1];
-        if (pageName) {
-          const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${pageName}`;
-          const response = await fetch(apiUrl);
-          const data = await response.json();
-          if (data.thumbnail?.source) {
-            url = data.thumbnail.source;
-          }
-        }
-      } catch (error) {
-        console.error('Failed to fetch Wikipedia preview:', error);
-      }
-    } else if (href.includes('metmuseum.org')) {
-      url = '/images/large-glass.jpg';
-    } else if (href.includes('moma.org/collection/works/32786')) {
-      url = '/images/top-inscription-milky-way.jpg';
-    }
-
-    if (url) {
-      setImageUrl(url);
-      setShowPreview(true);
-    }
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    setPreviewPosition({ x: e.clientX, y: e.clientY });
-  };
-
-  const handleMouseLeave = () => {
-    // Delay hiding to allow moving to preview
-    hideTimeoutRef.current = setTimeout(() => {
-      setShowPreview(false);
-    }, 300);
-  };
-
-  const handlePreviewMouseEnter = () => {
-    // Cancel hiding when mouse enters preview
-    if (hideTimeoutRef.current) {
-      clearTimeout(hideTimeoutRef.current);
-      hideTimeoutRef.current = null;
-    }
-  };
-
-  const handlePreviewMouseLeave = () => {
-    // Hide immediately when leaving preview
+  function closePreview(force = false) {
+    if (pinned && !force) return;
+    clearHideTimer();
+    setPinned(false);
     setShowPreview(false);
-  };
+  }
 
-  const isExternal = href.startsWith('http');
+  function scheduleClose() {
+    if (pinned) return;
+    clearHideTimer();
+    hideTimeoutRef.current = setTimeout(() => closePreview(), 180);
+  }
+
+  const sharedClassName = ['text-[var(--accent-gold)] hover:underline relative', className]
+    .filter(Boolean)
+    .join(' ');
+
+  const sharedHandlers = previewable
+    ? {
+        onMouseEnter: (event: React.MouseEvent<HTMLAnchorElement>) => {
+          props.onMouseEnter?.(event);
+          openPreview(event.clientX, event.clientY);
+        },
+        onFocus: (event: React.FocusEvent<HTMLAnchorElement>) => {
+          props.onFocus?.(event);
+          const rect = event.currentTarget.getBoundingClientRect();
+          openPreview(rect.left, rect.bottom);
+        },
+        onMouseLeave: (event: React.MouseEvent<HTMLAnchorElement>) => {
+          props.onMouseLeave?.(event);
+          scheduleClose();
+        },
+        onBlur: (event: React.FocusEvent<HTMLAnchorElement>) => {
+          props.onBlur?.(event);
+          scheduleClose();
+        },
+        onClick: props.onClick,
+      }
+    : {};
+
+  const link = external ? (
+    <a
+      {...props}
+      href={href}
+      target={props.target ?? '_blank'}
+      rel={props.rel ?? 'noopener noreferrer'}
+      className={sharedClassName}
+      {...sharedHandlers}
+    >
+      {children}
+    </a>
+  ) : (
+    <Link href={href || '#'} className={sharedClassName} {...sharedHandlers}>
+      {children}
+    </Link>
+  );
 
   return (
     <>
-      {isExternal ? (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[var(--accent-gold)] hover:underline relative"
-          onMouseEnter={handleMouseEnter}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-        >
-          {children}
-        </a>
-      ) : (
-        <Link
-          href={href as any}
-          className="text-[var(--accent-gold)] hover:underline relative"
-          onMouseEnter={handleMouseEnter}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-        >
-          {children}
-        </Link>
-      )}
-
-      {showPreview && imageUrl && (
-        <div
-          className="fixed z-50"
-          style={{
-            left: `${previewPosition.x + 20}px`,
-            top: `${previewPosition.y - 100}px`,
-          }}
-          onMouseEnter={handlePreviewMouseEnter}
-          onMouseLeave={handlePreviewMouseLeave}
-        >
-          <div className="bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-lg shadow-xl overflow-hidden">
-            <div className="relative w-64 h-48">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={imageUrl}
-                alt="Link preview"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  console.error('Image failed to load:', imageUrl);
-                  setShowPreview(false);
-                }}
-              />
+      {link}
+      {showPreview &&
+        position &&
+        createPortal(
+          <aside
+            className={`external-link-preview ${pinned ? 'external-link-preview--pinned' : ''}`}
+            style={{ left: position.left, top: position.top }}
+            onMouseEnter={clearHideTimer}
+            onMouseLeave={scheduleClose}
+          >
+            <div className="external-link-preview__toolbar">
+              <span className="external-link-preview__eyebrow">External page</span>
+              <button
+                type="button"
+                className="external-link-preview__close"
+                onClick={() => closePreview(true)}
+                aria-label="Close external page preview"
+              >
+                ×
+              </button>
             </div>
-          </div>
-        </div>
-      )}
+            <div className="external-link-preview__body">
+              <div className="external-link-preview__meta">
+                <ExternalLink className="h-3.5 w-3.5" />
+                <span>{hostname}</span>
+              </div>
+              <p className="external-link-preview__title">{children}</p>
+              {imagePreview ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={href}
+                  alt="External link preview"
+                  className="external-link-preview__image"
+                />
+              ) : frameFailed ? (
+                <p className="external-link-preview__fallback">
+                  This site blocks embedded previews. Open the source page to read it.
+                </p>
+              ) : (
+                <iframe
+                  src={href}
+                  title={`Preview of ${hostname ?? href}`}
+                  className="external-link-preview__frame"
+                  loading="lazy"
+                  sandbox="allow-same-origin"
+                  onError={() => setFrameFailed(true)}
+                />
+              )}
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="external-link-preview__open"
+              >
+                Open source page
+              </a>
+            </div>
+          </aside>,
+          document.body
+        )}
     </>
   );
 }
