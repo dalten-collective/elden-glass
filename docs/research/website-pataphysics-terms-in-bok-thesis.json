@@ -6,18 +6,14 @@
     {
       "term": "3 Standard Stoppages (Canned Chance)",
       "normalized": "3 standard stoppages canned chance",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "A Poster Within a Poster",
       "normalized": "a poster within a poster",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -25,9 +21,7 @@
       "term": "abnormal and unknown",
       "normalized": "abnormal and unknown",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-paralogy"
-      ],
+      "titleCardIds": ["pata-vocab-bok-paralogy"],
       "thesisMatches": [
         {
           "line": 1417,
@@ -39,26 +33,20 @@
       "term": "Absolute Love",
       "normalized": "absolute love",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-absolute-love"
-      ],
+      "titleCardIds": ["pata-absolute-love"],
       "thesisMatches": []
     },
     {
       "term": "Académie Québécoise de 'Pataphysique",
       "normalized": "acad mie qu b coise de pataphysique",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-academie-quebecoise"
-      ],
+      "titleCardIds": ["pata-vocab-b4-academie-quebecoise"],
       "thesisMatches": []
     },
     {
       "term": "Aesthetic Computing",
       "normalized": "aesthetic computing",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -66,53 +54,41 @@
       "term": "Aesthetic Relativity",
       "normalized": "aesthetic relativity",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-aesthetic-relativity"
-      ],
+      "titleCardIds": ["pata-aesthetic-relativity"],
       "thesisMatches": []
     },
     {
       "term": "Age of Magic",
       "normalized": "age of magic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Age of Religion",
       "normalized": "age of religion",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Age of Science",
       "normalized": "age of science",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Agricultural Machine",
       "normalized": "agricultural machine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Air Cooler",
       "normalized": "air cooler",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -120,26 +96,20 @@
       "term": "ALAMO",
       "normalized": "alamo",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-alamo"
-      ],
+      "titleCardIds": ["pata-vocab-b4-alamo"],
       "thesisMatches": []
     },
     {
       "term": "Alchemical Semen / Sperm",
       "normalized": "alchemical semen sperm",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Aleatory",
       "normalized": "aleatory",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -167,9 +137,7 @@
     {
       "term": "Alfred Jarry",
       "normalized": "alfred jarry",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -194,19 +162,14 @@
       "term": "Algorhythm",
       "normalized": "algorhythm",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-algorhythm"
-      ],
+      "titleCardIds": ["pata-vocab-b4-algorhythm"],
       "thesisMatches": []
     },
     {
       "term": "alliance",
       "normalized": "alliance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-syzygy",
-        "pata-vocab-bok-syzygia"
-      ],
+      "titleCardIds": ["pata-syzygy", "pata-vocab-bok-syzygia"],
       "thesisMatches": [
         {
           "line": 104,
@@ -234,36 +197,27 @@
       "term": "alliance/syzygy",
       "normalized": "alliance syzygy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-syzygy",
-        "pata-vocab-bok-syzygia"
-      ],
+      "titleCardIds": ["pata-syzygy", "pata-vocab-bok-syzygia"],
       "thesisMatches": []
     },
     {
       "term": "American Dream-Girl",
       "normalized": "american dream girl",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-american-dream-girl"
-      ],
+      "titleCardIds": ["pata-vocab-b2-american-dream-girl"],
       "thesisMatches": []
     },
     {
       "term": "An-artist",
       "normalized": "an artist",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Anaglyph / Chéminée Anaglyphe (1968)",
       "normalized": "anaglyph ch min e anaglyphe 1968",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -271,17 +225,13 @@
       "term": "Analogical Thought",
       "normalized": "analogical thought",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-analogical-thought"
-      ],
+      "titleCardIds": ["pata-analogical-thought"],
       "thesisMatches": []
     },
     {
       "term": "Anamnesis",
       "normalized": "anamnesis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -293,9 +243,7 @@
     {
       "term": "Anamorphosis",
       "normalized": "anamorphosis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -303,26 +251,20 @@
       "term": "androgyne",
       "normalized": "androgyne",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-androgyne"
-      ],
+      "titleCardIds": ["pata-androgyne"],
       "thesisMatches": []
     },
     {
       "term": "Animalady",
       "normalized": "animalady",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-animalady"
-      ],
+      "titleCardIds": ["pata-animalady"],
       "thesisMatches": []
     },
     {
       "term": "Animatismic",
       "normalized": "animatismic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -350,22 +292,15 @@
     {
       "term": "Animism",
       "normalized": "animism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Anomalos",
       "normalized": "anomalos",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-anomaly",
-        "pata-vocab-bok-anomalos"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-anomaly", "pata-vocab-bok-anomalos"],
       "thesisMatches": [
         {
           "line": 104,
@@ -393,18 +328,14 @@
       "term": "Anomalos (Bök: Variance)",
       "normalized": "anomalos b k variance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-anomalos"
-      ],
+      "titleCardIds": ["pata-vocab-bok-anomalos"],
       "thesisMatches": []
     },
     {
       "term": "Anomaly",
       "normalized": "anomaly",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-anomaly"
-      ],
+      "titleCardIds": ["pata-anomaly"],
       "thesisMatches": [
         {
           "line": 476,
@@ -432,9 +363,7 @@
       "term": "anomaly of the aporia",
       "normalized": "anomaly of the aporia",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-anomalos"
-      ],
+      "titleCardIds": ["pata-vocab-bok-anomalos"],
       "thesisMatches": [
         {
           "line": 4300,
@@ -446,18 +375,14 @@
       "term": "Anomaly Search",
       "normalized": "anomaly search",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-anomaly-search"
-      ],
+      "titleCardIds": ["pata-vocab-b4-anomaly-search"],
       "thesisMatches": []
     },
     {
       "term": "anoulipism",
       "normalized": "anoulipism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-anoulipism"
-      ],
+      "titleCardIds": ["pata-vocab-b1-anoulipism"],
       "thesisMatches": [
         {
           "line": 7976,
@@ -469,26 +394,20 @@
       "term": "Anoulipism & Synthoulipism",
       "normalized": "anoulipism synthoulipism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-oulipo-constraints"
-      ],
+      "titleCardIds": ["pata-oulipo-constraints"],
       "thesisMatches": []
     },
     {
       "term": "Anoulipism (Vocabulary)",
       "normalized": "anoulipism vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-anoulipism"
-      ],
+      "titleCardIds": ["pata-vocab-b1-anoulipism"],
       "thesisMatches": []
     },
     {
       "term": "Anti-Art in the Eye of the Beholder",
       "normalized": "anti art in the eye of the beholder",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -496,35 +415,27 @@
       "term": "anti-bachelor machine",
       "normalized": "anti bachelor machine",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-anti-bachelor-machine"
-      ],
+      "titleCardIds": ["pata-anti-bachelor-machine"],
       "thesisMatches": []
     },
     {
       "term": "Anti-Degree",
       "normalized": "anti degree",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-anti-degree"
-      ],
+      "titleCardIds": ["pata-vocab-b4-anti-degree"],
       "thesisMatches": []
     },
     {
       "term": "Anti-Hermeneutic Paranoia",
       "normalized": "anti hermeneutic paranoia",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-anti-hermeneutic-paranoia"
-      ],
+      "titleCardIds": ["pata-vocab-b1-anti-hermeneutic-paranoia"],
       "thesisMatches": []
     },
     {
       "term": "Antinomic",
       "normalized": "antinomic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -532,17 +443,13 @@
       "term": "Antinomy",
       "normalized": "antinomy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-antinomy"
-      ],
+      "titleCardIds": ["pata-vocab-b1-antinomy"],
       "thesisMatches": []
     },
     {
       "term": "Aporia",
       "normalized": "aporia",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -571,17 +478,13 @@
       "term": "Apostrophe in 'Pataphysics",
       "normalized": "apostrophe in pataphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-apostrophe-pataphysics"
-      ],
+      "titleCardIds": ["pata-vocab-b1-apostrophe-pataphysics"],
       "thesisMatches": []
     },
     {
       "term": "Apparatus",
       "normalized": "apparatus",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -598,9 +501,7 @@
       "term": "arbitrary exceptions",
       "normalized": "arbitrary exceptions",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-exception"
-      ],
+      "titleCardIds": ["pata-the-exception"],
       "thesisMatches": [
         {
           "line": 703,
@@ -611,29 +512,21 @@
     {
       "term": "Arbor-Type",
       "normalized": "arbor type",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-arbor-type"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-arbor-type"],
       "thesisMatches": []
     },
     {
       "term": "Arborescent",
       "normalized": "arborescent",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Art Coefficient",
       "normalized": "art coefficient",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -641,53 +534,41 @@
       "term": "Art in a Raw State",
       "normalized": "art in a raw state",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-art-raw-state"
-      ],
+      "titleCardIds": ["pata-art-raw-state"],
       "thesisMatches": []
     },
     {
       "term": "Art Mode",
       "normalized": "art mode",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-art-mode"
-      ],
+      "titleCardIds": ["pata-art-mode"],
       "thesisMatches": []
     },
     {
       "term": "art raw state",
       "normalized": "art raw state",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-art-raw-state"
-      ],
+      "titleCardIds": ["pata-art-raw-state"],
       "thesisMatches": []
     },
     {
       "term": "ARTA",
       "normalized": "arta",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-arta"
-      ],
+      "titleCardIds": ["pata-vocab-b4-arta"],
       "thesisMatches": []
     },
     {
       "term": "Assisted Readymade",
       "normalized": "assisted readymade",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Bachelor Machine (Machine Célibataire)",
       "normalized": "bachelor machine machine c libataire",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -695,18 +576,14 @@
       "term": "Base Alphabet",
       "normalized": "base alphabet",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-base-alphabet"
-      ],
+      "titleCardIds": ["pata-vocab-b2-base-alphabet"],
       "thesisMatches": []
     },
     {
       "term": "bastardized metaphysics",
       "normalized": "bastardized metaphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-nomad-science"
-      ],
+      "titleCardIds": ["pata-vocab-bok-nomad-science"],
       "thesisMatches": [
         {
           "line": 1379,
@@ -717,9 +594,7 @@
     {
       "term": "Binocular 4-D Vision",
       "normalized": "binocular 4 d vision",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -727,39 +602,28 @@
       "term": "Black Humor",
       "normalized": "black humor",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-black-humor"
-      ],
+      "titleCardIds": ["pata-vocab-b1-black-humor"],
       "thesisMatches": []
     },
     {
       "term": "Blossoming",
       "normalized": "blossoming",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Boîte-en-valise",
       "normalized": "bo te en valise",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Bosse-de-Nage",
       "normalized": "bosse de nage",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-bosse-de-nage",
-        "pata-vocab-b1-bosse-de-nage"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-bosse-de-nage", "pata-vocab-b1-bosse-de-nage"],
       "thesisMatches": [
         {
           "line": 4005,
@@ -783,35 +647,27 @@
       "term": "Bosse-de-Nage (Core Figure)",
       "normalized": "bosse de nage core figure",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-bosse-de-nage"
-      ],
+      "titleCardIds": ["pata-bosse-de-nage"],
       "thesisMatches": []
     },
     {
       "term": "Bosse-de-Nage (Vocabulary)",
       "normalized": "bosse de nage vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-bosse-de-nage"
-      ],
+      "titleCardIds": ["pata-vocab-b1-bosse-de-nage"],
       "thesisMatches": []
     },
     {
       "term": "bourbaki",
       "normalized": "bourbaki",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-bourbaki"
-      ],
+      "titleCardIds": ["pata-vocab-b4-bourbaki"],
       "thesisMatches": []
     },
     {
       "term": "Boxing Match",
       "normalized": "boxing match",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -819,17 +675,13 @@
       "term": "bpNichol",
       "normalized": "bpnichol",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-bpnichol"
-      ],
+      "titleCardIds": ["pata-vocab-b2-bpnichol"],
       "thesisMatches": []
     },
     {
       "term": "Bricolage",
       "normalized": "bricolage",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -841,18 +693,14 @@
     {
       "term": "Bride's Domain",
       "normalized": "bride s domain",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Brisset's Linguistic Machine",
       "normalized": "brisset s linguistic machine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -860,17 +708,13 @@
       "term": "Brissetism",
       "normalized": "brissetism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-brissetism"
-      ],
+      "titleCardIds": ["pata-vocab-b2-brissetism"],
       "thesisMatches": []
     },
     {
       "term": "À bruit secret (With Hidden Noise)",
       "normalized": "bruit secret with hidden noise",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -878,26 +722,20 @@
       "term": "Caesura",
       "normalized": "caesura",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-caesura"
-      ],
+      "titleCardIds": ["pata-caesura"],
       "thesisMatches": []
     },
     {
       "term": "Calidus Parvulus",
       "normalized": "calidus parvulus",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-calidus-parvulus"
-      ],
+      "titleCardIds": ["pata-vocab-b4-calidus-parvulus"],
       "thesisMatches": []
     },
     {
       "term": "Canadian \"Pataphysicians",
       "normalized": "canadian pataphysicians",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -926,9 +764,7 @@
       "term": "Canadian \"Pataphysics",
       "normalized": "canadian pataphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-canadian-pataphysics"
-      ],
+      "titleCardIds": ["pata-vocab-b1-canadian-pataphysics"],
       "thesisMatches": [
         {
           "line": 9677,
@@ -956,36 +792,28 @@
       "term": "capillary tubes",
       "normalized": "capillary tubes",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-capillary-tubes"
-      ],
+      "titleCardIds": ["pata-capillary-tubes"],
       "thesisMatches": []
     },
     {
       "term": "Capillary Tubes (Pataphysical Vocabulary)",
       "normalized": "capillary tubes pataphysical vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-capillary-tubes"
-      ],
+      "titleCardIds": ["pata-capillary-tubes"],
       "thesisMatches": []
     },
     {
       "term": "Caput Magnum",
       "normalized": "caput magnum",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-caput-magnum"
-      ],
+      "titleCardIds": ["pata-vocab-b4-caput-magnum"],
       "thesisMatches": []
     },
     {
       "term": "Cartesian space",
       "normalized": "cartesian space",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-royal-science"
-      ],
+      "titleCardIds": ["pata-vocab-bok-royal-science"],
       "thesisMatches": [
         {
           "line": 1376,
@@ -996,27 +824,21 @@
     {
       "term": "Cast Shadows and the Fourth Dimension",
       "normalized": "cast shadows and the fourth dimension",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Catachresis",
       "normalized": "catachresis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Catamnesis",
       "normalized": "catamnesis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1029,9 +851,7 @@
       "term": "celibate machine",
       "normalized": "celibate machine",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-celibate-machine"
-      ],
+      "titleCardIds": ["pata-celibate-machine"],
       "thesisMatches": [
         {
           "line": 7415,
@@ -1042,9 +862,7 @@
     {
       "term": "Cemetery of Uniforms and Liveries",
       "normalized": "cemetery of uniforms and liveries",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1052,9 +870,7 @@
       "term": "Cent Mille Milliards de Poèmes",
       "normalized": "cent mille milliards de po mes",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-cent-mille-milliards"
-      ],
+      "titleCardIds": ["pata-vocab-b4-cent-mille-milliards"],
       "thesisMatches": [
         {
           "line": 9010,
@@ -1065,9 +881,7 @@
     {
       "term": "Chiasm",
       "normalized": "chiasm",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1095,23 +909,15 @@
     {
       "term": "Chocolate Grinder (Broyeuse de Chocolat)",
       "normalized": "chocolate grinder broyeuse de chocolat",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Clinamen",
       "normalized": "clinamen",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-clinamen",
-        "pata-vocab-b1-clinamen",
-        "pata-vocab-b2-clinamen"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-clinamen", "pata-vocab-b1-clinamen", "pata-vocab-b2-clinamen"],
       "thesisMatches": [
         {
           "line": 106,
@@ -1139,26 +945,20 @@
       "term": "Clinamen (Core Thesis)",
       "normalized": "clinamen core thesis",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-clinamen"
-      ],
+      "titleCardIds": ["pata-clinamen"],
       "thesisMatches": []
     },
     {
       "term": "Clinamen Search",
       "normalized": "clinamen search",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-clinamen-search"
-      ],
+      "titleCardIds": ["pata-vocab-b4-clinamen-search"],
       "thesisMatches": []
     },
     {
       "term": "Clinamen (The Painting Machine)",
       "normalized": "clinamen the painting machine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1166,107 +966,83 @@
       "term": "Clinamen (Vocabulary: Collège Usage)",
       "normalized": "clinamen vocabulary coll ge usage",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-clinamen"
-      ],
+      "titleCardIds": ["pata-vocab-b1-clinamen"],
       "thesisMatches": []
     },
     {
       "term": "Clinamen (Vocabulary: Lucretian Swerve)",
       "normalized": "clinamen vocabulary lucretian swerve",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-clinamen"
-      ],
+      "titleCardIds": ["pata-vocab-b2-clinamen"],
       "thesisMatches": []
     },
     {
       "term": "coition through the glass",
       "normalized": "coition through the glass",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-coition-glass-pane"
-      ],
+      "titleCardIds": ["pata-coition-glass-pane"],
       "thesisMatches": []
     },
     {
       "term": "Coition Through the Glass Pane",
       "normalized": "coition through the glass pane",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-coition-glass-pane"
-      ],
+      "titleCardIds": ["pata-coition-glass-pane"],
       "thesisMatches": []
     },
     {
       "term": "collège de 'pataphysique",
       "normalized": "coll ge de pataphysique",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-college-pataphysique"
-      ],
+      "titleCardIds": ["pata-vocab-b2-college-pataphysique"],
       "thesisMatches": []
     },
     {
       "term": "Collège de 'Pataphysique (Institution)",
       "normalized": "coll ge de pataphysique institution",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-college-pataphysique"
-      ],
+      "titleCardIds": ["pata-vocab-b2-college-pataphysique"],
       "thesisMatches": []
     },
     {
       "term": "Collège de 'Pataphysique (Membership)",
       "normalized": "coll ge de pataphysique membership",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-college-de-pataphysique"
-      ],
+      "titleCardIds": ["pata-vocab-b1-college-de-pataphysique"],
       "thesisMatches": []
     },
     {
       "term": "Colleges of Unreason",
       "normalized": "colleges of unreason",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-colleges-of-unreason"
-      ],
+      "titleCardIds": ["pata-vocab-b4-colleges-of-unreason"],
       "thesisMatches": []
     },
     {
       "term": "Combinatorialism",
       "normalized": "combinatorialism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-combinatorialism"
-      ],
+      "titleCardIds": ["pata-vocab-b4-combinatorialism"],
       "thesisMatches": []
     },
     {
       "term": "Combine Print",
       "normalized": "combine print",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-combine-print"
-      ],
+      "titleCardIds": ["pata-vocab-b2-combine-print"],
       "thesisMatches": []
     },
     {
       "term": "Comparative Vandalism",
       "normalized": "comparative vandalism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-comparative-vandalism"
-      ],
+      "titleCardIds": ["pata-vocab-b2-comparative-vandalism"],
       "thesisMatches": []
     },
     {
       "term": "Compars",
       "normalized": "compars",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1278,18 +1054,14 @@
     {
       "term": "Conditions of a Language (Prime Words)",
       "normalized": "conditions of a language prime words",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Coniunctio Oppositorum",
       "normalized": "coniunctio oppositorum",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1297,35 +1069,27 @@
       "term": "Conscious Constraint",
       "normalized": "conscious constraint",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-conscious-constraint"
-      ],
+      "titleCardIds": ["pata-conscious-constraint"],
       "thesisMatches": []
     },
     {
       "term": "Constraint-Based Writing",
       "normalized": "constraint based writing",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-constraint-based-writing"
-      ],
+      "titleCardIds": ["pata-vocab-b4-constraint-based-writing"],
       "thesisMatches": []
     },
     {
       "term": "Contagious Magic (Law of Contact)",
       "normalized": "contagious magic law of contact",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Conventionalism (Poincaré)",
       "normalized": "conventionalism poincar",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1333,27 +1097,21 @@
       "term": "Correlations of Expectations",
       "normalized": "correlations of expectations",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-correlations-expectations"
-      ],
+      "titleCardIds": ["pata-vocab-b2-correlations-expectations"],
       "thesisMatches": []
     },
     {
       "term": "credible impossibility",
       "normalized": "credible impossibility",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-poetic-wisdom"
-      ],
+      "titleCardIds": ["pata-vocab-bok-poetic-wisdom"],
       "thesisMatches": []
     },
     {
       "term": "crystallography",
       "normalized": "crystallography",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-lucid-writing"
-      ],
+      "titleCardIds": ["pata-vocab-bok-lucid-writing"],
       "thesisMatches": [
         {
           "line": 346,
@@ -1365,17 +1123,13 @@
       "term": "Culture Jamming",
       "normalized": "culture jamming",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-culture-jamming"
-      ],
+      "titleCardIds": ["pata-vocab-b4-culture-jamming"],
       "thesisMatches": []
     },
     {
       "term": "Cuttage / Cuttation",
       "normalized": "cuttage cuttation",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1383,17 +1137,13 @@
       "term": "Cyanotype",
       "normalized": "cyanotype",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-cyanotype"
-      ],
+      "titleCardIds": ["pata-vocab-b2-cyanotype"],
       "thesisMatches": []
     },
     {
       "term": "Cyborganismic",
       "normalized": "cyborganismic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1422,9 +1172,7 @@
       "term": "Détournement",
       "normalized": "d tournement",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-detournement"
-      ],
+      "titleCardIds": ["pata-vocab-b2-detournement"],
       "thesisMatches": [
         {
           "line": 4842,
@@ -1436,45 +1184,34 @@
       "term": "Deep Learning",
       "normalized": "deep learning",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-deep-learning"
-      ],
+      "titleCardIds": ["pata-vocab-b4-deep-learning"],
       "thesisMatches": []
     },
     {
       "term": "definitional literature",
       "normalized": "definitional literature",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-definitional-literature",
-        "pata-vocab-b1-definitional-literature"
-      ],
+      "titleCardIds": ["pata-definitional-literature", "pata-vocab-b1-definitional-literature"],
       "thesisMatches": []
     },
     {
       "term": "Definitional Literature (Core Practice)",
       "normalized": "definitional literature core practice",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-definitional-literature"
-      ],
+      "titleCardIds": ["pata-definitional-literature"],
       "thesisMatches": []
     },
     {
       "term": "Definitional Literature (Vocabulary)",
       "normalized": "definitional literature vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-definitional-literature"
-      ],
+      "titleCardIds": ["pata-vocab-b1-definitional-literature"],
       "thesisMatches": []
     },
     {
       "term": "Delay in Glass",
       "normalized": "delay in glass",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1482,26 +1219,20 @@
       "term": "Der Schauplatz der Träume",
       "normalized": "der schauplatz der tr ume",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-schauplatz"
-      ],
+      "titleCardIds": ["pata-schauplatz"],
       "thesisMatches": []
     },
     {
       "term": "Desire-Magneto",
       "normalized": "desire magneto",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Deterritorialization",
       "normalized": "deterritorialization",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1509,9 +1240,7 @@
       "term": "deviance",
       "normalized": "deviance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-clinamen"
-      ],
+      "titleCardIds": ["pata-clinamen"],
       "thesisMatches": [
         {
           "line": 106,
@@ -1539,17 +1268,13 @@
       "term": "deviance/clinamen",
       "normalized": "deviance clinamen",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-clinamen"
-      ],
+      "titleCardIds": ["pata-clinamen"],
       "thesisMatches": []
     },
     {
       "term": "Différance",
       "normalized": "diff rance",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1557,35 +1282,27 @@
       "term": "Digressors",
       "normalized": "digressors",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-digressors"
-      ],
+      "titleCardIds": ["pata-vocab-b4-digressors"],
       "thesisMatches": []
     },
     {
       "term": "Disambiguation",
       "normalized": "disambiguation",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-disambiguation"
-      ],
+      "titleCardIds": ["pata-vocab-b4-disambiguation"],
       "thesisMatches": []
     },
     {
       "term": "Disoccultation",
       "normalized": "disoccultation",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-disoccultation"
-      ],
+      "titleCardIds": ["pata-vocab-b1-disoccultation"],
       "thesisMatches": []
     },
     {
       "term": "Dispars",
       "normalized": "dispars",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1606,53 +1323,41 @@
       "term": "Doctrine of Equivalence",
       "normalized": "doctrine of equivalence",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-doctrine-equivalence"
-      ],
+      "titleCardIds": ["pata-doctrine-equivalence"],
       "thesisMatches": []
     },
     {
       "term": "doppelgänger",
       "normalized": "doppelg nger",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-doppelganger"
-      ],
+      "titleCardIds": ["pata-doppelganger"],
       "thesisMatches": []
     },
     {
       "term": "dr. faustroll",
       "normalized": "dr faustroll",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-dr-faustroll"
-      ],
+      "titleCardIds": ["pata-vocab-b1-dr-faustroll"],
       "thesisMatches": []
     },
     {
       "term": "Dr. Faustroll (Core Figure)",
       "normalized": "dr faustroll core figure",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-dr-faustroll"
-      ],
+      "titleCardIds": ["pata-dr-faustroll"],
       "thesisMatches": []
     },
     {
       "term": "Dr. Faustroll (Vocabulary)",
       "normalized": "dr faustroll vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-dr-faustroll"
-      ],
+      "titleCardIds": ["pata-vocab-b1-dr-faustroll"],
       "thesisMatches": []
     },
     {
       "term": "Draft Pistons",
       "normalized": "draft pistons",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1665,17 +1370,13 @@
       "term": "Dream-Work",
       "normalized": "dream work",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-dream-work"
-      ],
+      "titleCardIds": ["pata-vocab-b1-dream-work"],
       "thesisMatches": []
     },
     {
       "term": "Duchamp's Alchemical Confession",
       "normalized": "duchamp s alchemical confession",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1683,26 +1384,20 @@
       "term": "Durée",
       "normalized": "dur e",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-duree"
-      ],
+      "titleCardIds": ["pata-vocab-b2-duree"],
       "thesisMatches": []
     },
     {
       "term": "Dust Breeding",
       "normalized": "dust breeding",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Ectype",
       "normalized": "ectype",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1722,18 +1417,14 @@
     {
       "term": "Electrical Stripping",
       "normalized": "electrical stripping",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Emancipated Metal",
       "normalized": "emancipated metal",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1741,67 +1432,49 @@
       "term": "Enactive Knowledge",
       "normalized": "enactive knowledge",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-enactive-knowledge"
-      ],
+      "titleCardIds": ["pata-vocab-b4-enactive-knowledge"],
       "thesisMatches": []
     },
     {
       "term": "Epiphenomena",
       "normalized": "epiphenomena",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-epiphenomena"
-      ],
+      "titleCardIds": ["pata-epiphenomena"],
       "thesisMatches": []
     },
     {
       "term": "Epiphenomenalism",
       "normalized": "epiphenomenalism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-epiphenomenalism"
-      ],
+      "titleCardIds": ["pata-vocab-b1-epiphenomenalism"],
       "thesisMatches": []
     },
     {
       "term": "Epiphenomenon",
       "normalized": "epiphenomenon",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-epiphenomenon"
-      ],
+      "titleCardIds": ["pata-epiphenomenon"],
       "thesisMatches": []
     },
     {
       "term": "Equivalent Islands",
       "normalized": "equivalent islands",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-equivalent-islands"
-      ],
+      "titleCardIds": ["pata-vocab-b1-equivalent-islands"],
       "thesisMatches": []
     },
     {
       "term": "Establish a Society",
       "normalized": "establish a society",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Ethernity",
       "normalized": "ethernity",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-ethernity",
-        "pata-vocab-b1-ethernity",
-        "pata-vocab-b2-ethernity"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-ethernity", "pata-vocab-b1-ethernity", "pata-vocab-b2-ethernity"],
       "thesisMatches": [
         {
           "line": 3284,
@@ -1829,45 +1502,35 @@
       "term": "Ethernity (Core Thesis)",
       "normalized": "ethernity core thesis",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-ethernity"
-      ],
+      "titleCardIds": ["pata-ethernity"],
       "thesisMatches": []
     },
     {
       "term": "Ethernity (Vocabulary: Ether/Eternity)",
       "normalized": "ethernity vocabulary ether eternity",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-ethernity"
-      ],
+      "titleCardIds": ["pata-vocab-b2-ethernity"],
       "thesisMatches": []
     },
     {
       "term": "Ethernity (Vocabulary: Faustroll)",
       "normalized": "ethernity vocabulary faustroll",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-ethernity"
-      ],
+      "titleCardIds": ["pata-vocab-b1-ethernity"],
       "thesisMatches": []
     },
     {
       "term": "Ethos of the Unknown",
       "normalized": "ethos of the unknown",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-ethos-of-unknown"
-      ],
+      "titleCardIds": ["pata-vocab-b4-ethos-of-unknown"],
       "thesisMatches": []
     },
     {
       "term": "Evergreen Review",
       "normalized": "evergreen review",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-evergreen-review"
-      ],
+      "titleCardIds": ["pata-vocab-b2-evergreen-review"],
       "thesisMatches": [
         {
           "line": 13563,
@@ -1879,9 +1542,7 @@
       "term": "exception",
       "normalized": "exception",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-exception"
-      ],
+      "titleCardIds": ["pata-the-exception"],
       "thesisMatches": [
         {
           "line": 102,
@@ -1908,9 +1569,7 @@
     {
       "term": "Exegesis",
       "normalized": "exegesis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -1922,9 +1581,7 @@
     {
       "term": "Extra Rapid Exposure",
       "normalized": "extra rapid exposure",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -1932,38 +1589,28 @@
       "term": "extraordinary ordinary",
       "normalized": "extraordinary ordinary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-extraordinary-ordinary"
-      ],
+      "titleCardIds": ["pata-extraordinary-ordinary"],
       "thesisMatches": []
     },
     {
       "term": "Falsehood of Truth",
       "normalized": "falsehood of truth",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-falsehood-truth"
-      ],
+      "titleCardIds": ["pata-vocab-b2-falsehood-truth"],
       "thesisMatches": []
     },
     {
       "term": "FalsTrue",
       "normalized": "falstrue",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-falstrue"
-      ],
+      "titleCardIds": ["pata-vocab-b4-falstrue"],
       "thesisMatches": []
     },
     {
       "term": "Faustroll",
       "normalized": "faustroll",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-dr-faustroll"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-dr-faustroll"],
       "thesisMatches": [
         {
           "line": 937,
@@ -1991,17 +1638,13 @@
       "term": "faustroll neo-scientific novel",
       "normalized": "faustroll neo scientific novel",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-neo-scientific-novel"
-      ],
+      "titleCardIds": ["pata-neo-scientific-novel"],
       "thesisMatches": []
     },
     {
       "term": "Fifth Wall",
       "normalized": "fifth wall",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2009,26 +1652,20 @@
       "term": "fourth dimension",
       "normalized": "fourth dimension",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-fourth-dimension"
-      ],
+      "titleCardIds": ["pata-fourth-dimension"],
       "thesisMatches": []
     },
     {
       "term": "Frame Analysis",
       "normalized": "frame analysis",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-frame-analysis"
-      ],
+      "titleCardIds": ["pata-frame-analysis"],
       "thesisMatches": []
     },
     {
       "term": "French Oulipians",
       "normalized": "french oulipians",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2056,18 +1693,14 @@
     {
       "term": "Friction Reintegrated",
       "normalized": "friction reintegrated",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Frustration (Bök)",
       "normalized": "frustration b k",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2075,9 +1708,7 @@
       "term": "gay science",
       "normalized": "gay science",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-gay-science"
-      ],
+      "titleCardIds": ["pata-vocab-b1-gay-science"],
       "thesisMatches": [
         {
           "line": 13226,
@@ -2089,39 +1720,28 @@
       "term": "Gay Science / La Gaya Scienza",
       "normalized": "gay science la gaya scienza",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-gay-science"
-      ],
+      "titleCardIds": ["pata-vocab-b1-gay-science"],
       "thesisMatches": []
     },
     {
       "term": "Gematria",
       "normalized": "gematria",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-gematria"
-      ],
+      "titleCardIds": ["pata-vocab-b2-gematria"],
       "thesisMatches": []
     },
     {
       "term": "Generative Art",
       "normalized": "generative art",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Gidouille",
       "normalized": "gidouille",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-gidouille",
-        "pata-vocab-b1-gidouille"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-gidouille", "pata-vocab-b1-gidouille"],
       "thesisMatches": [
         {
           "line": 994,
@@ -2137,26 +1757,20 @@
       "term": "Gidouille (Core Object)",
       "normalized": "gidouille core object",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-gidouille"
-      ],
+      "titleCardIds": ["pata-gidouille"],
       "thesisMatches": []
     },
     {
       "term": "Gidouille (Vocabulary)",
       "normalized": "gidouille vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-gidouille"
-      ],
+      "titleCardIds": ["pata-vocab-b1-gidouille"],
       "thesisMatches": []
     },
     {
       "term": "Given: The Waterfall / The Illuminating Gas",
       "normalized": "given the waterfall the illuminating gas",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2164,26 +1778,20 @@
       "term": "Graffiti Pataphysic",
       "normalized": "graffiti pataphysic",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-graffiti-pataphysic"
-      ],
+      "titleCardIds": ["pata-vocab-b2-graffiti-pataphysic"],
       "thesisMatches": []
     },
     {
       "term": "Grand Satrap",
       "normalized": "grand satrap",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-grand-satrap"
-      ],
+      "titleCardIds": ["pata-vocab-b1-grand-satrap"],
       "thesisMatches": []
     },
     {
       "term": "Green Box (Boîte Verte)",
       "normalized": "green box bo te verte",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2191,35 +1799,27 @@
       "term": "Grenzübertritt",
       "normalized": "grenz bertritt",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-grenzubertritt"
-      ],
+      "titleCardIds": ["pata-grenzubertritt"],
       "thesisMatches": []
     },
     {
       "term": "grenzubertritt",
       "normalized": "grenzubertritt",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-grenzubertritt"
-      ],
+      "titleCardIds": ["pata-grenzubertritt"],
       "thesisMatches": []
     },
     {
       "term": "Gunslinger",
       "normalized": "gunslinger",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-gunslinger"
-      ],
+      "titleCardIds": ["pata-vocab-b2-gunslinger"],
       "thesisMatches": []
     },
     {
       "term": "Ha Ha",
       "normalized": "ha ha",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2235,18 +1835,14 @@
     {
       "term": "Hadaly (Villiers de l'Isle-Adam)",
       "normalized": "hadaly villiers de l isle adam",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Haecceity",
       "normalized": "haecceity",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2254,17 +1850,13 @@
       "term": "Hall of Uselessness",
       "normalized": "hall of uselessness",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-hall-of-uselessness"
-      ],
+      "titleCardIds": ["pata-vocab-b4-hall-of-uselessness"],
       "thesisMatches": []
     },
     {
       "term": "Handler of Gravity (Tender of Gravity)",
       "normalized": "handler of gravity tender of gravity",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2272,63 +1864,48 @@
       "term": "hermeneutic paranoia",
       "normalized": "hermeneutic paranoia",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-hermeneutic-paranoia",
-        "pata-vocab-b1-hermeneutic-paranoia"
-      ],
+      "titleCardIds": ["pata-hermeneutic-paranoia", "pata-vocab-b1-hermeneutic-paranoia"],
       "thesisMatches": []
     },
     {
       "term": "Hermeneutic Paranoia (Core Concept)",
       "normalized": "hermeneutic paranoia core concept",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-hermeneutic-paranoia"
-      ],
+      "titleCardIds": ["pata-hermeneutic-paranoia"],
       "thesisMatches": []
     },
     {
       "term": "Hermeneutic Paranoia (Vocabulary)",
       "normalized": "hermeneutic paranoia vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-hermeneutic-paranoia"
-      ],
+      "titleCardIds": ["pata-vocab-b1-hermeneutic-paranoia"],
       "thesisMatches": []
     },
     {
       "term": "Heterotopia",
       "normalized": "heterotopia",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Hinge Picture",
       "normalized": "hinge picture",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Homo Ludens",
       "normalized": "homo ludens",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Homoeopathic Magic (Law of Similarity)",
       "normalized": "homoeopathic magic law of similarity",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2336,35 +1913,27 @@
       "term": "Hors Concors",
       "normalized": "hors concors",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-hors-concors"
-      ],
+      "titleCardIds": ["pata-vocab-b2-hors-concors"],
       "thesisMatches": []
     },
     {
       "term": "Hyper-landscape",
       "normalized": "hyper landscape",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Hyperreality",
       "normalized": "hyperreality",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Hypophysical Analysis",
       "normalized": "hypophysical analysis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2372,35 +1941,27 @@
       "term": "Hypothetics",
       "normalized": "hypothetics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-hypothetics"
-      ],
+      "titleCardIds": ["pata-vocab-b4-hypothetics"],
       "thesisMatches": []
     },
     {
       "term": "Identifying (Loss of Visual Memory)",
       "normalized": "identifying loss of visual memory",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Illuminating Gas (Gaz d'éclairage)",
       "normalized": "illuminating gas gaz d clairage",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Imaginary Solution",
       "normalized": "imaginary solution",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2428,9 +1989,7 @@
     {
       "term": "Imaginary Solution (Hugill's Framework)",
       "normalized": "imaginary solution hugill s framework",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2438,9 +1997,7 @@
       "term": "Imaginary Solutions",
       "normalized": "imaginary solutions",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-imaginary-solutions"
-      ],
+      "titleCardIds": ["pata-imaginary-solutions"],
       "thesisMatches": [
         {
           "line": 702,
@@ -2467,9 +2024,7 @@
     {
       "term": "Immanence",
       "normalized": "immanence",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2477,26 +2032,20 @@
       "term": "Inamovable Curator",
       "normalized": "inamovable curator",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-inamovable-curator"
-      ],
+      "titleCardIds": ["pata-vocab-b1-inamovable-curator"],
       "thesisMatches": []
     },
     {
       "term": "inconnu",
       "normalized": "inconnu",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-inconnu-insolite"
-      ],
+      "titleCardIds": ["pata-inconnu-insolite"],
       "thesisMatches": []
     },
     {
       "term": "Indeterminacy",
       "normalized": "indeterminacy",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2504,44 +2053,34 @@
       "term": "Ineluctable Logic",
       "normalized": "ineluctable logic",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-ineluctable-logic"
-      ],
+      "titleCardIds": ["pata-vocab-b2-ineluctable-logic"],
       "thesisMatches": []
     },
     {
       "term": "Infra Mince",
       "normalized": "infra mince",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-infra-mince"
-      ],
+      "titleCardIds": ["pata-infra-mince"],
       "thesisMatches": []
     },
     {
       "term": "Infra Slim (Infra Mince) - Dimensional",
       "normalized": "infra slim infra mince dimensional",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Infrathin (Inframince)",
       "normalized": "infrathin inframince",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Instantaneous State of Rest",
       "normalized": "instantaneous state of rest",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2549,26 +2088,20 @@
       "term": "intentional accident",
       "normalized": "intentional accident",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-intentional-accident"
-      ],
+      "titleCardIds": ["pata-intentional-accident"],
       "thesisMatches": []
     },
     {
       "term": "Interactivity",
       "normalized": "interactivity",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Interface",
       "normalized": "interface",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2581,9 +2114,7 @@
       "term": "Interzone",
       "normalized": "interzone",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-interzone"
-      ],
+      "titleCardIds": ["pata-interzone"],
       "thesisMatches": [
         {
           "line": 246,
@@ -2611,54 +2142,41 @@
       "term": "intraphysics",
       "normalized": "intraphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-intraphysics",
-        "pata-vocab-b1-intraphysics"
-      ],
+      "titleCardIds": ["pata-intraphysics", "pata-vocab-b1-intraphysics"],
       "thesisMatches": []
     },
     {
       "term": "Intraphysics (Core Concept)",
       "normalized": "intraphysics core concept",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-intraphysics"
-      ],
+      "titleCardIds": ["pata-intraphysics"],
       "thesisMatches": []
     },
     {
       "term": "Intraphysics (Vocabulary)",
       "normalized": "intraphysics vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-intraphysics"
-      ],
+      "titleCardIds": ["pata-vocab-b1-intraphysics"],
       "thesisMatches": []
     },
     {
       "term": "invoke anomaly",
       "normalized": "invoke anomaly",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-paralogy"
-      ],
+      "titleCardIds": ["pata-vocab-bok-paralogy"],
       "thesisMatches": []
     },
     {
       "term": "Ironism of Affirmation",
       "normalized": "ironism of affirmation",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Irrationalism",
       "normalized": "irrationalism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2687,17 +2205,13 @@
       "term": "irreducible",
       "normalized": "irreducible",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-particular-irreducible"
-      ],
+      "titleCardIds": ["pata-particular-irreducible"],
       "thesisMatches": []
     },
     {
       "term": "Italian Futurists",
       "normalized": "italian futurists",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2726,17 +2240,13 @@
       "term": "Ivanhoe Game",
       "normalized": "ivanhoe game",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-ivi-machine"
-      ],
+      "titleCardIds": ["pata-vocab-b4-ivi-machine"],
       "thesisMatches": []
     },
     {
       "term": "Jarryites",
       "normalized": "jarryites",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -2757,36 +2267,27 @@
       "term": "jocoserious",
       "normalized": "jocoserious",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-jocoserious",
-        "pata-vocab-b1-jocoserious"
-      ],
+      "titleCardIds": ["pata-jocoserious", "pata-vocab-b1-jocoserious"],
       "thesisMatches": []
     },
     {
       "term": "Jocoserious (Core Concept)",
       "normalized": "jocoserious core concept",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-jocoserious"
-      ],
+      "titleCardIds": ["pata-jocoserious"],
       "thesisMatches": []
     },
     {
       "term": "Jocoserious (Vocabulary)",
       "normalized": "jocoserious vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-jocoserious"
-      ],
+      "titleCardIds": ["pata-vocab-b1-jocoserious"],
       "thesisMatches": []
     },
     {
       "term": "Joey the Mechanical Boy",
       "normalized": "joey the mechanical boy",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2794,55 +2295,41 @@
       "term": "Joke-Work",
       "normalized": "joke work",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-joke-work"
-      ],
+      "titleCardIds": ["pata-vocab-b1-joke-work"],
       "thesisMatches": []
     },
     {
       "term": "L'Accident",
       "normalized": "l accident",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-intentional-accident"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-intentional-accident"],
       "thesisMatches": []
     },
     {
       "term": "L.H.O.O.Q.",
       "normalized": "l h o o q",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-lhooq"
-      ],
+      "titleCardIds": ["pata-vocab-b2-lhooq"],
       "thesisMatches": []
     },
     {
       "term": "Labyrinth of the 3 Directions",
       "normalized": "labyrinth of the 3 directions",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Landscape as Theatre",
       "normalized": "landscape as theatre",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Lapis Philosophorum",
       "normalized": "lapis philosophorum",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2850,35 +2337,27 @@
       "term": "laws governing exceptions",
       "normalized": "laws governing exceptions",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-exception"
-      ],
+      "titleCardIds": ["pata-the-exception"],
       "thesisMatches": []
     },
     {
       "term": "Lettristic Patalogic",
       "normalized": "lettristic patalogic",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-lettristic-patalogic"
-      ],
+      "titleCardIds": ["pata-vocab-b2-lettristic-patalogic"],
       "thesisMatches": []
     },
     {
       "term": "Liminal/Liminoid",
       "normalized": "liminal liminoid",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Limit the No. of Rdymades Yearly",
       "normalized": "limit the no of rdymades yearly",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2886,17 +2365,13 @@
       "term": "Linguatilt",
       "normalized": "linguatilt",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-linguatilt"
-      ],
+      "titleCardIds": ["pata-vocab-b2-linguatilt"],
       "thesisMatches": []
     },
     {
       "term": "Litanies of the Chariot",
       "normalized": "litanies of the chariot",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -2904,73 +2379,56 @@
       "term": "Literal Nominalism",
       "normalized": "literal nominalism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-literal-nominalism"
-      ],
+      "titleCardIds": ["pata-literal-nominalism"],
       "thesisMatches": []
     },
     {
       "term": "Literate Projector",
       "normalized": "literate projector",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-literate-projector"
-      ],
+      "titleCardIds": ["pata-vocab-b2-literate-projector"],
       "thesisMatches": []
     },
     {
       "term": "livres pairs",
       "normalized": "livres pairs",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-livres-pairs",
-        "pata-vocab-b1-livres-pairs"
-      ],
+      "titleCardIds": ["pata-livres-pairs", "pata-vocab-b1-livres-pairs"],
       "thesisMatches": []
     },
     {
       "term": "Livres Pairs (Core Term)",
       "normalized": "livres pairs core term",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-livres-pairs"
-      ],
+      "titleCardIds": ["pata-livres-pairs"],
       "thesisMatches": []
     },
     {
       "term": "Livres Pairs (Vocabulary)",
       "normalized": "livres pairs vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-livres-pairs"
-      ],
+      "titleCardIds": ["pata-vocab-b1-livres-pairs"],
       "thesisMatches": []
     },
     {
       "term": "London Institute of 'Pataphysics",
       "normalized": "london institute of pataphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-london-institute"
-      ],
+      "titleCardIds": ["pata-vocab-b4-london-institute"],
       "thesisMatches": []
     },
     {
       "term": "lucid dreaming",
       "normalized": "lucid dreaming",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-lucid-writing"
-      ],
+      "titleCardIds": ["pata-vocab-bok-lucid-writing"],
       "thesisMatches": []
     },
     {
       "term": "Lucid Writing",
       "normalized": "lucid writing",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-lucid-writing"
-      ],
+      "titleCardIds": ["pata-vocab-bok-lucid-writing"],
       "thesisMatches": [
         {
           "line": 352,
@@ -2989,9 +2447,7 @@
     {
       "term": "Ludic",
       "normalized": "ludic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3020,9 +2476,7 @@
       "term": "ludic language-game",
       "normalized": "ludic language game",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-paralogy"
-      ],
+      "titleCardIds": ["pata-vocab-bok-paralogy"],
       "thesisMatches": [
         {
           "line": 1415,
@@ -3034,35 +2488,27 @@
       "term": "Ludic Reality",
       "normalized": "ludic reality",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-ludic-reality"
-      ],
+      "titleCardIds": ["pata-ludic-reality"],
       "thesisMatches": []
     },
     {
       "term": "Machine of Absolute Rest",
       "normalized": "machine of absolute rest",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-machine-absolute-rest"
-      ],
+      "titleCardIds": ["pata-machine-absolute-rest"],
       "thesisMatches": []
     },
     {
       "term": "Magic Circle",
       "normalized": "magic circle",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Magic Squares (Carrés Magiques)",
       "normalized": "magic squares carr s magiques",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -3070,35 +2516,27 @@
       "term": "Main à Plume",
       "normalized": "main plume",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-main-a-plume"
-      ],
+      "titleCardIds": ["pata-vocab-b1-main-a-plume"],
       "thesisMatches": []
     },
     {
       "term": "Make a Sick Picture or a Sick Readymade",
       "normalized": "make a sick picture or a sick readymade",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Malic (Malic Moulds)",
       "normalized": "malic malic moulds",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Malic Molds (Moules Mâlic)",
       "normalized": "malic molds moules m lic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -3106,17 +2544,13 @@
       "term": "Marvelous Accidentalism",
       "normalized": "marvelous accidentalism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-marvelous-accidentalism"
-      ],
+      "titleCardIds": ["pata-vocab-b2-marvelous-accidentalism"],
       "thesisMatches": []
     },
     {
       "term": "Mathesis",
       "normalized": "mathesis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3144,9 +2578,7 @@
     {
       "term": "Mechanismic",
       "normalized": "mechanismic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3175,30 +2607,21 @@
       "term": "Melbourne Institute of Pataphysical Studies",
       "normalized": "melbourne institute of pataphysical studies",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-melbourne-institute"
-      ],
+      "titleCardIds": ["pata-vocab-b4-melbourne-institute"],
       "thesisMatches": []
     },
     {
       "term": "Menippean Satire",
       "normalized": "menippean satire",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-menippean-satire"
-      ],
+      "titleCardIds": ["pata-vocab-b2-menippean-satire"],
       "thesisMatches": []
     },
     {
       "term": "Merdre",
       "normalized": "merdre",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-merdre",
-        "pata-vocab-b1-merdre"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-merdre", "pata-vocab-b1-merdre"],
       "thesisMatches": [
         {
           "line": 2479,
@@ -3210,35 +2633,27 @@
       "term": "Merdre! (Core Term)",
       "normalized": "merdre core term",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-merdre"
-      ],
+      "titleCardIds": ["pata-merdre"],
       "thesisMatches": []
     },
     {
       "term": "Merdre (Vocabulary)",
       "normalized": "merdre vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-merdre"
-      ],
+      "titleCardIds": ["pata-vocab-b1-merdre"],
       "thesisMatches": []
     },
     {
       "term": "Metacrap",
       "normalized": "metacrap",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-metacrap"
-      ],
+      "titleCardIds": ["pata-vocab-b4-metacrap"],
       "thesisMatches": []
     },
     {
       "term": "Metalepsis",
       "normalized": "metalepsis",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3254,45 +2669,35 @@
     {
       "term": "Metaphor as Red Herring",
       "normalized": "metaphor as red herring",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Milky Way",
       "normalized": "milky way",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Mimetic",
       "normalized": "mimetic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Mirrorical Return",
       "normalized": "mirrorical return",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Misprision",
       "normalized": "misprision",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3321,53 +2726,41 @@
       "term": "Modifications",
       "normalized": "modifications",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-modifications"
-      ],
+      "titleCardIds": ["pata-vocab-b2-modifications"],
       "thesisMatches": []
     },
     {
       "term": "Modus Loquendi",
       "normalized": "modus loquendi",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-modus-loquendi"
-      ],
+      "titleCardIds": ["pata-modus-loquendi"],
       "thesisMatches": []
     },
     {
       "term": "moral repugnance",
       "normalized": "moral repugnance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-moral-repugnance"
-      ],
+      "titleCardIds": ["pata-moral-repugnance"],
       "thesisMatches": []
     },
     {
       "term": "Mount Analogue",
       "normalized": "mount analogue",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-mount-analogue"
-      ],
+      "titleCardIds": ["pata-vocab-b2-mount-analogue"],
       "thesisMatches": []
     },
     {
       "term": "Musical Sculpture",
       "normalized": "musical sculpture",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Mutt and Mott",
       "normalized": "mutt and mott",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -3375,18 +2768,14 @@
       "term": "Narrenschiff",
       "normalized": "narrenschiff",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-narrenschiff"
-      ],
+      "titleCardIds": ["pata-narrenschiff"],
       "thesisMatches": []
     },
     {
       "term": "neo-scientific novel",
       "normalized": "neo scientific novel",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-neo-scientific-novel"
-      ],
+      "titleCardIds": ["pata-vocab-b1-neo-scientific-novel"],
       "thesisMatches": [
         {
           "line": 3281,
@@ -3398,74 +2787,56 @@
       "term": "Neo-Scientific Novel (Vocabulary)",
       "normalized": "neo scientific novel vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-neo-scientific-novel"
-      ],
+      "titleCardIds": ["pata-vocab-b1-neo-scientific-novel"],
       "thesisMatches": []
     },
     {
       "term": "Neoliberal University",
       "normalized": "neoliberal university",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-neoliberal-university"
-      ],
+      "titleCardIds": ["pata-vocab-b4-neoliberal-university"],
       "thesisMatches": []
     },
     {
       "term": "Neoscientific Novel",
       "normalized": "neoscientific novel",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-neoscientific-novel"
-      ],
+      "titleCardIds": ["pata-vocab-b2-neoscientific-novel"],
       "thesisMatches": []
     },
     {
       "term": "Nepohumanism",
       "normalized": "nepohumanism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-nepohumanism"
-      ],
+      "titleCardIds": ["pata-nepohumanism"],
       "thesisMatches": []
     },
     {
       "term": "Nicolas Bourbaki",
       "normalized": "nicolas bourbaki",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-bourbaki"
-      ],
+      "titleCardIds": ["pata-vocab-b4-bourbaki"],
       "thesisMatches": []
     },
     {
       "term": "Nightletta",
       "normalized": "nightletta",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-nightletta"
-      ],
+      "titleCardIds": ["pata-vocab-b2-nightletta"],
       "thesisMatches": []
     },
     {
       "term": "No Tation",
       "normalized": "no tation",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-no-tation"
-      ],
+      "titleCardIds": ["pata-vocab-b2-no-tation"],
       "thesisMatches": []
     },
     {
       "term": "Nomad Science",
       "normalized": "nomad science",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-bok-nomad-science"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-bok-nomad-science"],
       "thesisMatches": [
         {
           "line": 1381,
@@ -3492,9 +2863,7 @@
     {
       "term": "Nomic",
       "normalized": "nomic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3523,9 +2892,7 @@
       "term": "nomic language-game",
       "normalized": "nomic language game",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-paradigm"
-      ],
+      "titleCardIds": ["pata-vocab-bok-paradigm"],
       "thesisMatches": [
         {
           "line": 1399,
@@ -3537,36 +2904,28 @@
       "term": "normal science",
       "normalized": "normal science",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-paradigm"
-      ],
+      "titleCardIds": ["pata-vocab-bok-paradigm"],
       "thesisMatches": []
     },
     {
       "term": "Notation",
       "normalized": "notation",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-notation"
-      ],
+      "titleCardIds": ["pata-vocab-b2-notation"],
       "thesisMatches": []
     },
     {
       "term": "Nowlege",
       "normalized": "nowlege",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-nowlege"
-      ],
+      "titleCardIds": ["pata-nowlege"],
       "thesisMatches": []
     },
     {
       "term": "nuovo scienza",
       "normalized": "nuovo scienza",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-poetic-wisdom"
-      ],
+      "titleCardIds": ["pata-vocab-bok-poetic-wisdom"],
       "thesisMatches": [
         {
           "line": 1787,
@@ -3578,53 +2937,41 @@
       "term": "Objective Chance",
       "normalized": "objective chance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-objective-chance"
-      ],
+      "titleCardIds": ["pata-objective-chance"],
       "thesisMatches": []
     },
     {
       "term": "Observable Evidence Over Artist Declaration",
       "normalized": "observable evidence over artist declaration",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Observer Effect",
       "normalized": "observer effect",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Obvious, But Not for Blind Men",
       "normalized": "obvious but not for blind men",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Oculist Witnesses (Oculist Charts)",
       "normalized": "oculist witnesses oculist charts",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "One Big Joke",
       "normalized": "one big joke",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -3632,9 +2979,7 @@
       "term": "oneiric science",
       "normalized": "oneiric science",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-lucid-writing"
-      ],
+      "titleCardIds": ["pata-vocab-bok-lucid-writing"],
       "thesisMatches": [
         {
           "line": 362,
@@ -3646,18 +2991,14 @@
       "term": "Only the Comic is Serious",
       "normalized": "only the comic is serious",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-only-comic-serious"
-      ],
+      "titleCardIds": ["pata-vocab-b2-only-comic-serious"],
       "thesisMatches": []
     },
     {
       "term": "ontology",
       "normalized": "ontology",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-ontology"
-      ],
+      "titleCardIds": ["pata-vocab-b4-ontology"],
       "thesisMatches": [
         {
           "line": 1663,
@@ -3669,17 +3010,13 @@
       "term": "Ontology (Computing)",
       "normalized": "ontology computing",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-ontology"
-      ],
+      "titleCardIds": ["pata-vocab-b4-ontology"],
       "thesisMatches": []
     },
     {
       "term": "Opaque Screen vs. Transparent Window",
       "normalized": "opaque screen vs transparent window",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -3687,17 +3024,13 @@
       "term": "Ordure",
       "normalized": "ordure",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-ordure"
-      ],
+      "titleCardIds": ["pata-vocab-b2-ordure"],
       "thesisMatches": []
     },
     {
       "term": "Organismic",
       "normalized": "organismic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3725,27 +3058,21 @@
     {
       "term": "Orphan, Atheist, Bachelor",
       "normalized": "orphan atheist bachelor",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Oscillating Density",
       "normalized": "oscillating density",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Ostranenie",
       "normalized": "ostranenie",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -3762,19 +3089,14 @@
       "term": "Otherworldly Humanity",
       "normalized": "otherworldly humanity",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-otherworldly-humanity"
-      ],
+      "titleCardIds": ["pata-otherworldly-humanity"],
       "thesisMatches": []
     },
     {
       "term": "oulipo",
       "normalized": "oulipo",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-oulipo",
-        "pata-vocab-b2-oulipo"
-      ],
+      "titleCardIds": ["pata-vocab-b1-oulipo", "pata-vocab-b2-oulipo"],
       "thesisMatches": [
         {
           "line": 7594,
@@ -3802,53 +3124,41 @@
       "term": "oulipo constraints",
       "normalized": "oulipo constraints",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-oulipo-constraints"
-      ],
+      "titleCardIds": ["pata-oulipo-constraints"],
       "thesisMatches": []
     },
     {
       "term": "Oulipo (Vocabulary: Constraints)",
       "normalized": "oulipo vocabulary constraints",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-oulipo"
-      ],
+      "titleCardIds": ["pata-vocab-b2-oulipo"],
       "thesisMatches": []
     },
     {
       "term": "Oulipo (Vocabulary: Workshop)",
       "normalized": "oulipo vocabulary workshop",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-oulipo"
-      ],
+      "titleCardIds": ["pata-vocab-b1-oulipo"],
       "thesisMatches": []
     },
     {
       "term": "Paidia and Ludus",
       "normalized": "paidia and ludus",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Painting of Precision, and Beauty of Indifference",
       "normalized": "painting of precision and beauty of indifference",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Palimpsest",
       "normalized": "palimpsest",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -3856,47 +3166,35 @@
       "term": "Palindromic Ontology",
       "normalized": "palindromic ontology",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-palindromic-ontology"
-      ],
+      "titleCardIds": ["pata-vocab-b2-palindromic-ontology"],
       "thesisMatches": []
     },
     {
       "term": "Panalogy",
       "normalized": "panalogy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-panalogy"
-      ],
+      "titleCardIds": ["pata-vocab-b4-panalogy"],
       "thesisMatches": []
     },
     {
       "term": "Panalogy Principle",
       "normalized": "panalogy principle",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-panalogy-principle"
-      ],
+      "titleCardIds": ["pata-panalogy-principle"],
       "thesisMatches": []
     },
     {
       "term": "Panmuphle",
       "normalized": "panmuphle",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-panmuphle"
-      ],
+      "titleCardIds": ["pata-vocab-b1-panmuphle"],
       "thesisMatches": []
     },
     {
       "term": "Paradigm",
       "normalized": "paradigm",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-bok-paradigm"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-bok-paradigm"],
       "thesisMatches": [
         {
           "line": 114,
@@ -3923,12 +3221,8 @@
     {
       "term": "Paralogy",
       "normalized": "paralogy",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-bok-paralogy"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-bok-paralogy"],
       "thesisMatches": [
         {
           "line": 115,
@@ -3956,18 +3250,14 @@
       "term": "Paratus Adversario",
       "normalized": "paratus adversario",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-paratus-adversario"
-      ],
+      "titleCardIds": ["pata-vocab-b4-paratus-adversario"],
       "thesisMatches": []
     },
     {
       "term": "Parthenogenesis",
       "normalized": "parthenogenesis",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-parthenogenesis"
-      ],
+      "titleCardIds": ["pata-parthenogenesis"],
       "thesisMatches": [
         {
           "line": 12022,
@@ -3979,18 +3269,14 @@
       "term": "Partial Knowledge",
       "normalized": "partial knowledge",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-partial-knowledge"
-      ],
+      "titleCardIds": ["pata-vocab-b4-partial-knowledge"],
       "thesisMatches": []
     },
     {
       "term": "Passing",
       "normalized": "passing",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-passing"
-      ],
+      "titleCardIds": ["pata-passing"],
       "thesisMatches": [
         {
           "line": 8522,
@@ -4002,81 +3288,62 @@
       "term": "pata-mechanics",
       "normalized": "pata mechanics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-quantum-pataphysics"
-      ],
+      "titleCardIds": ["pata-quantum-pataphysics"],
       "thesisMatches": []
     },
     {
       "term": "Patacademy",
       "normalized": "patacademy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-patacademy"
-      ],
+      "titleCardIds": ["pata-vocab-b4-patacademy"],
       "thesisMatches": []
     },
     {
       "term": "Patacomic",
       "normalized": "patacomic",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-patacomic"
-      ],
+      "titleCardIds": ["pata-vocab-b2-patacomic"],
       "thesisMatches": []
     },
     {
       "term": "patadata",
       "normalized": "patadata",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-patadata",
-        "pata-vocab-b4-patadata"
-      ],
+      "titleCardIds": ["pata-patadata", "pata-vocab-b4-patadata"],
       "thesisMatches": []
     },
     {
       "term": "Patadata (Computing Concept)",
       "normalized": "patadata computing concept",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-patadata"
-      ],
+      "titleCardIds": ["pata-patadata"],
       "thesisMatches": []
     },
     {
       "term": "Patadata (Vocabulary)",
       "normalized": "patadata vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-patadata"
-      ],
+      "titleCardIds": ["pata-vocab-b4-patadata"],
       "thesisMatches": []
     },
     {
       "term": "Patalgorithm",
       "normalized": "patalgorithm",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-patalgorithm"
-      ],
+      "titleCardIds": ["pata-vocab-b4-patalgorithm"],
       "thesisMatches": []
     },
     {
       "term": "Pataphallics",
       "normalized": "pataphallics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-pataphallics"
-      ],
+      "titleCardIds": ["pata-vocab-b1-pataphallics"],
       "thesisMatches": []
     },
     {
       "term": "Pataphor",
       "normalized": "pataphor",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4084,26 +3351,20 @@
       "term": "Pataphysical Calendar",
       "normalized": "pataphysical calendar",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-pataphysical-calendar"
-      ],
+      "titleCardIds": ["pata-vocab-b1-pataphysical-calendar"],
       "thesisMatches": []
     },
     {
       "term": "Pataphysical Doppelgänger",
       "normalized": "pataphysical doppelg nger",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-doppelganger"
-      ],
+      "titleCardIds": ["pata-doppelganger"],
       "thesisMatches": []
     },
     {
       "term": "Pataphysical Doubt",
       "normalized": "pataphysical doubt",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4111,27 +3372,21 @@
       "term": "'Pataphysical Hardware Company",
       "normalized": "pataphysical hardware company",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-pataphysical-hardware"
-      ],
+      "titleCardIds": ["pata-vocab-b2-pataphysical-hardware"],
       "thesisMatches": []
     },
     {
       "term": "pataphysical studios",
       "normalized": "pataphysical studios",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-pataphysical-studios"
-      ],
+      "titleCardIds": ["pata-vocab-b4-pataphysical-studios"],
       "thesisMatches": []
     },
     {
       "term": "'pataphysicians",
       "normalized": "pataphysicians",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-pataphysicians-apostrophe"
-      ],
+      "titleCardIds": ["pata-vocab-b2-pataphysicians-apostrophe"],
       "thesisMatches": [
         {
           "line": 372,
@@ -4159,20 +3414,14 @@
       "term": "'Pataphysicians avec Apostrophe",
       "normalized": "pataphysicians avec apostrophe",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-pataphysicians-apostrophe"
-      ],
+      "titleCardIds": ["pata-vocab-b2-pataphysicians-apostrophe"],
       "thesisMatches": []
     },
     {
       "term": "'Pataphysics",
       "normalized": "pataphysics",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-pataphysics"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-pataphysics"],
       "thesisMatches": [
         {
           "line": 1,
@@ -4199,27 +3448,21 @@
     {
       "term": "Pataphysics (Baudrillard)",
       "normalized": "pataphysics baudrillard",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "'Pataphysics Engine",
       "normalized": "pataphysics engine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "'Pataphysics is Patient",
       "normalized": "pataphysics is patient",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4227,98 +3470,76 @@
       "term": "pataquerical",
       "normalized": "pataquerical",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-pataquericals"
-      ],
+      "titleCardIds": ["pata-pataquericals"],
       "thesisMatches": []
     },
     {
       "term": "Pataquericals",
       "normalized": "pataquericals",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-pataquericals"
-      ],
+      "titleCardIds": ["pata-pataquericals"],
       "thesisMatches": []
     },
     {
       "term": "pataqueronormative",
       "normalized": "pataqueronormative",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-pataqueronormativities"
-      ],
+      "titleCardIds": ["pata-pataqueronormativities"],
       "thesisMatches": []
     },
     {
       "term": "Pataqueronormativities",
       "normalized": "pataqueronormativities",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-pataqueronormativities"
-      ],
+      "titleCardIds": ["pata-pataqueronormativities"],
       "thesisMatches": []
     },
     {
       "term": "Patatarget",
       "normalized": "patatarget",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-patatarget"
-      ],
+      "titleCardIds": ["pata-vocab-b2-patatarget"],
       "thesisMatches": []
     },
     {
       "term": "Paysage fautif (Faulty Landscape)",
       "normalized": "paysage fautif faulty landscape",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Peigne / Péne",
       "normalized": "peigne p ne",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Pendu Femelle (Female Hanged Body)",
       "normalized": "pendu femelle female hanged body",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Perspective as Symbolic Form",
       "normalized": "perspective as symbolic form",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Perspective + Transparency + Motion",
       "normalized": "perspective transparency motion",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Perspectivism",
       "normalized": "perspectivism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -4346,29 +3567,21 @@
     {
       "term": "Phenomenon of Stretching in the Unit of Length",
       "normalized": "phenomenon of stretching in the unit of length",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Phynance",
       "normalized": "phynance",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-b1-phynance"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-b1-phynance"],
       "thesisMatches": []
     },
     {
       "term": "Physick-Stick",
       "normalized": "physick stick",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -4388,27 +3601,21 @@
     {
       "term": "Piggy Bank (Canned Goods)",
       "normalized": "piggy bank canned goods",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Playful Physics",
       "normalized": "playful physics",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Plumbing as Art",
       "normalized": "plumbing as art",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4416,20 +3623,14 @@
       "term": "Plunderphonics",
       "normalized": "plunderphonics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-plunderphonics"
-      ],
+      "titleCardIds": ["pata-vocab-b2-plunderphonics"],
       "thesisMatches": []
     },
     {
       "term": "Poetic Wisdom",
       "normalized": "poetic wisdom",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-bok-poetic-wisdom"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-bok-poetic-wisdom"],
       "thesisMatches": [
         {
           "line": 248,
@@ -4456,9 +3657,7 @@
     {
       "term": "Points of Correspondence / Non-Correspondence",
       "normalized": "points of correspondence non correspondence",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4466,26 +3665,20 @@
       "term": "polysemy",
       "normalized": "polysemy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-polysemy"
-      ],
+      "titleCardIds": ["pata-vocab-b1-polysemy"],
       "thesisMatches": []
     },
     {
       "term": "Polysemy / Polyphony",
       "normalized": "polysemy polyphony",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-polysemy"
-      ],
+      "titleCardIds": ["pata-vocab-b1-polysemy"],
       "thesisMatches": []
     },
     {
       "term": "Post-Euclidean Geometry",
       "normalized": "post euclidean geometry",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4493,36 +3686,28 @@
       "term": "Potache",
       "normalized": "potache",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-potache"
-      ],
+      "titleCardIds": ["pata-vocab-b2-potache"],
       "thesisMatches": []
     },
     {
       "term": "PRASCAL",
       "normalized": "prascal",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-prascal"
-      ],
+      "titleCardIds": ["pata-vocab-b4-prascal"],
       "thesisMatches": []
     },
     {
       "term": "Precocious Imbecility",
       "normalized": "precocious imbecility",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-precocious-imbecility"
-      ],
+      "titleCardIds": ["pata-vocab-b1-precocious-imbecility"],
       "thesisMatches": []
     },
     {
       "term": "Probable Systems",
       "normalized": "probable systems",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-probable-systems"
-      ],
+      "titleCardIds": ["pata-vocab-b2-probable-systems"],
       "thesisMatches": [
         {
           "line": 9746,
@@ -4549,9 +3734,7 @@
     {
       "term": "Programming as Art Form",
       "normalized": "programming as art form",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4559,17 +3742,13 @@
       "term": "Projective Geometry",
       "normalized": "projective geometry",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-projective-geometry"
-      ],
+      "titleCardIds": ["pata-projective-geometry"],
       "thesisMatches": []
     },
     {
       "term": "Prototype",
       "normalized": "prototype",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -4590,62 +3769,48 @@
       "term": "Psychopathological Comedy",
       "normalized": "psychopathological comedy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-psychopathological-comedy"
-      ],
+      "titleCardIds": ["pata-psychopathological-comedy"],
       "thesisMatches": []
     },
     {
       "term": "Psychopathology",
       "normalized": "psychopathology",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-psychopathology"
-      ],
+      "titleCardIds": ["pata-vocab-b1-psychopathology"],
       "thesisMatches": []
     },
     {
       "term": "Quantum Computing",
       "normalized": "quantum computing",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-quantum-computing"
-      ],
+      "titleCardIds": ["pata-vocab-b4-quantum-computing"],
       "thesisMatches": []
     },
     {
       "term": "Quantum Entanglement",
       "normalized": "quantum entanglement",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-quantum-entanglement"
-      ],
+      "titleCardIds": ["pata-vocab-b4-quantum-entanglement"],
       "thesisMatches": []
     },
     {
       "term": "Quantum Pataphysics",
       "normalized": "quantum pataphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-quantum-pataphysics"
-      ],
+      "titleCardIds": ["pata-quantum-pataphysics"],
       "thesisMatches": []
     },
     {
       "term": "Qubit",
       "normalized": "qubit",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-qubit"
-      ],
+      "titleCardIds": ["pata-vocab-b4-qubit"],
       "thesisMatches": []
     },
     {
       "term": "R. Mutt",
       "normalized": "r mutt",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4653,62 +3818,48 @@
       "term": "radical democracy criticism",
       "normalized": "radical democracy criticism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-radical-democracy-criticism"
-      ],
+      "titleCardIds": ["pata-radical-democracy-criticism"],
       "thesisMatches": []
     },
     {
       "term": "Radical Democracy of Criticism",
       "normalized": "radical democracy of criticism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-radical-democracy-criticism"
-      ],
+      "titleCardIds": ["pata-radical-democracy-criticism"],
       "thesisMatches": []
     },
     {
       "term": "rdf",
       "normalized": "rdf",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-rdf"
-      ],
+      "titleCardIds": ["pata-vocab-b4-rdf"],
       "thesisMatches": []
     },
     {
       "term": "RDF (Resource Description Framework)",
       "normalized": "rdf resource description framework",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-rdf"
-      ],
+      "titleCardIds": ["pata-vocab-b4-rdf"],
       "thesisMatches": []
     },
     {
       "term": "Readymade",
       "normalized": "readymade",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Reception Theory (Las Hilanderas)",
       "normalized": "reception theory las hilanderas",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Reciprocal Readymade",
       "normalized": "reciprocal readymade",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4716,44 +3867,34 @@
       "term": "Recurrent Literature",
       "normalized": "recurrent literature",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-recurrent-literature"
-      ],
+      "titleCardIds": ["pata-vocab-b1-recurrent-literature"],
       "thesisMatches": []
     },
     {
       "term": "Regime of Coincidence / Ministry of Gravity",
       "normalized": "regime of coincidence ministry of gravity",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Rehabilitated Perspective",
       "normalized": "rehabilitated perspective",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Repetition of Difference",
       "normalized": "repetition of difference",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Retinal Art",
       "normalized": "retinal art",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4761,35 +3902,27 @@
       "term": "retinal painting",
       "normalized": "retinal painting",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-retinal-painting"
-      ],
+      "titleCardIds": ["pata-retinal-painting"],
       "thesisMatches": []
     },
     {
       "term": "Retinal Painting (Reinterpreted)",
       "normalized": "retinal painting reinterpreted",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-retinal-painting"
-      ],
+      "titleCardIds": ["pata-retinal-painting"],
       "thesisMatches": []
     },
     {
       "term": "revoke anomaly",
       "normalized": "revoke anomaly",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-paradigm"
-      ],
+      "titleCardIds": ["pata-vocab-bok-paradigm"],
       "thesisMatches": []
     },
     {
       "term": "Rhizome",
       "normalized": "rhizome",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4797,9 +3930,7 @@
       "term": "Riemannian space",
       "normalized": "riemannian space",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-nomad-science"
-      ],
+      "titleCardIds": ["pata-vocab-bok-nomad-science"],
       "thesisMatches": [
         {
           "line": 1385,
@@ -4810,21 +3941,15 @@
     {
       "term": "Roussel's Machines",
       "normalized": "roussel s machines",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Royal Science",
       "normalized": "royal science",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-bok-royal-science"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-bok-royal-science"],
       "thesisMatches": [
         {
           "line": 1370,
@@ -4851,18 +3976,14 @@
     {
       "term": "Rrose Sélavy",
       "normalized": "rrose s lavy",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Sans le Savoir",
       "normalized": "sans le savoir",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4870,46 +3991,35 @@
       "term": "Satanic Devices",
       "normalized": "satanic devices",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-satanic-devices"
-      ],
+      "titleCardIds": ["pata-vocab-b2-satanic-devices"],
       "thesisMatches": []
     },
     {
       "term": "schauplatz traume",
       "normalized": "schauplatz traume",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-schauplatz"
-      ],
+      "titleCardIds": ["pata-schauplatz"],
       "thesisMatches": []
     },
     {
       "term": "science of arbitrary exceptions",
       "normalized": "science of arbitrary exceptions",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-pataphysics"
-      ],
+      "titleCardIds": ["pata-pataphysics"],
       "thesisMatches": []
     },
     {
       "term": "science of exceptions",
       "normalized": "science of exceptions",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-pataphysics"
-      ],
+      "titleCardIds": ["pata-pataphysics"],
       "thesisMatches": []
     },
     {
       "term": "science of imaginary solutions",
       "normalized": "science of imaginary solutions",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-imaginary-solutions",
-        "pata-vocab-b1-science-imaginary-solutions"
-      ],
+      "titleCardIds": ["pata-imaginary-solutions", "pata-vocab-b1-science-imaginary-solutions"],
       "thesisMatches": [
         {
           "line": 702,
@@ -4929,62 +4039,48 @@
       "term": "scroll",
       "normalized": "scroll",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-scroll"
-      ],
+      "titleCardIds": ["pata-the-scroll"],
       "thesisMatches": []
     },
     {
       "term": "Semantic Proliferation",
       "normalized": "semantic proliferation",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-semantic-proliferation"
-      ],
+      "titleCardIds": ["pata-semantic-proliferation"],
       "thesisMatches": []
     },
     {
       "term": "Semantic Web",
       "normalized": "semantic web",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-semantic-web"
-      ],
+      "titleCardIds": ["pata-vocab-b4-semantic-web"],
       "thesisMatches": []
     },
     {
       "term": "sensism",
       "normalized": "sensism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-sensism"
-      ],
+      "titleCardIds": ["pata-sensism"],
       "thesisMatches": []
     },
     {
       "term": "Sensism / Sensist",
       "normalized": "sensism sensist",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-sensism"
-      ],
+      "titleCardIds": ["pata-sensism"],
       "thesisMatches": []
     },
     {
       "term": "Sex Cylinder (Wasp)",
       "normalized": "sex cylinder wasp",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Shadows Cast by Readymades",
       "normalized": "shadows cast by readymades",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -4992,26 +4088,20 @@
       "term": "ship of fools",
       "normalized": "ship of fools",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-ship-of-fools"
-      ],
+      "titleCardIds": ["pata-vocab-b1-ship-of-fools"],
       "thesisMatches": []
     },
     {
       "term": "Ship of Fools / Narrenschiff",
       "normalized": "ship of fools narrenschiff",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-ship-of-fools"
-      ],
+      "titleCardIds": ["pata-vocab-b1-ship-of-fools"],
       "thesisMatches": []
     },
     {
       "term": "Shots (9 Shots)",
       "normalized": "shots 9 shots",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5019,10 +4109,7 @@
       "term": "sieve",
       "normalized": "sieve",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-sieve",
-        "pata-vocab-b1-sieve-vessel"
-      ],
+      "titleCardIds": ["pata-the-sieve", "pata-vocab-b1-sieve-vessel"],
       "thesisMatches": [
         {
           "line": 3196,
@@ -5050,35 +4137,27 @@
       "term": "Sieve (Vocabulary: Vessel)",
       "normalized": "sieve vocabulary vessel",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-sieve-vessel"
-      ],
+      "titleCardIds": ["pata-vocab-b1-sieve-vessel"],
       "thesisMatches": []
     },
     {
       "term": "Sign and Design",
       "normalized": "sign and design",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-sign-design"
-      ],
+      "titleCardIds": ["pata-vocab-b2-sign-design"],
       "thesisMatches": []
     },
     {
       "term": "simplexes korzybski",
       "normalized": "simplexes korzybski",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-simplexes"
-      ],
+      "titleCardIds": ["pata-simplexes"],
       "thesisMatches": []
     },
     {
       "term": "Simulacrum",
       "normalized": "simulacrum",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5090,18 +4169,14 @@
     {
       "term": "Slightly Distending",
       "normalized": "slightly distending",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Souffleur (Puffer / Breather)",
       "normalized": "souffleur puffer breather",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5109,26 +4184,20 @@
       "term": "Sovereign Stupidity",
       "normalized": "sovereign stupidity",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-sovereign-stupidity"
-      ],
+      "titleCardIds": ["pata-sovereign-stupidity"],
       "thesisMatches": []
     },
     {
       "term": "Spangles (Fog of Spangles)",
       "normalized": "spangles fog of spangles",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Specifications for Readymades",
       "normalized": "specifications for readymades",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5136,18 +4205,14 @@
       "term": "SpecLab",
       "normalized": "speclab",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-speclab"
-      ],
+      "titleCardIds": ["pata-vocab-b4-speclab"],
       "thesisMatches": []
     },
     {
       "term": "Speculative Learning",
       "normalized": "speculative learning",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-speculative-learning"
-      ],
+      "titleCardIds": ["pata-vocab-b4-speculative-learning"],
       "thesisMatches": [
         {
           "line": 7751,
@@ -5159,26 +4224,20 @@
       "term": "spiral pataphysics",
       "normalized": "spiral pataphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-spiral"
-      ],
+      "titleCardIds": ["pata-spiral"],
       "thesisMatches": []
     },
     {
       "term": "Splash (Uncorking)",
       "normalized": "splash uncorking",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Stéréoscopie à la main (1918-19)",
       "normalized": "st r oscopie la main 1918 19",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5186,35 +4245,27 @@
       "term": "standardized metaphysics",
       "normalized": "standardized metaphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-royal-science"
-      ],
+      "titleCardIds": ["pata-vocab-bok-royal-science"],
       "thesisMatches": []
     },
     {
       "term": "state science",
       "normalized": "state science",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-royal-science"
-      ],
+      "titleCardIds": ["pata-vocab-bok-royal-science"],
       "thesisMatches": []
     },
     {
       "term": "Stieglitz's Aestheticization",
       "normalized": "stieglitz s aestheticization",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Stochastic",
       "normalized": "stochastic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5222,35 +4273,27 @@
       "term": "stoppage etalon",
       "normalized": "stoppage etalon",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-stoppage"
-      ],
+      "titleCardIds": ["pata-stoppage"],
       "thesisMatches": []
     },
     {
       "term": "Stoppage (étalon)",
       "normalized": "stoppage talon",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-stoppage"
-      ],
+      "titleCardIds": ["pata-stoppage"],
       "thesisMatches": []
     },
     {
       "term": "Stream of Consciousness",
       "normalized": "stream of consciousness",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-stream-of-consciousness"
-      ],
+      "titleCardIds": ["pata-vocab-b1-stream-of-consciousness"],
       "thesisMatches": []
     },
     {
       "term": "Sub-urbanism",
       "normalized": "sub urbanism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5258,27 +4301,21 @@
       "term": "Suicide by Hallucination",
       "normalized": "suicide by hallucination",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-suicide-hallucination"
-      ],
+      "titleCardIds": ["pata-vocab-b2-suicide-hallucination"],
       "thesisMatches": []
     },
     {
       "term": "Superposition",
       "normalized": "superposition",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-superposition"
-      ],
+      "titleCardIds": ["pata-vocab-b4-superposition"],
       "thesisMatches": []
     },
     {
       "term": "Surface Tension",
       "normalized": "surface tension",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-surface-tension"
-      ],
+      "titleCardIds": ["pata-vocab-b1-surface-tension"],
       "thesisMatches": [
         {
           "line": 4097,
@@ -5293,9 +4330,7 @@
     {
       "term": "Surrationalism",
       "normalized": "surrationalism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5323,9 +4358,7 @@
     {
       "term": "Swerve",
       "normalized": "swerve",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5353,27 +4386,21 @@
     {
       "term": "Sympathetic Magic",
       "normalized": "sympathetic magic",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Sympathetic Magic of the War-Dance",
       "normalized": "sympathetic magic of the war dance",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Syncretism",
       "normalized": "syncretism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5386,41 +4413,28 @@
       "term": "Synthoulipism",
       "normalized": "synthoulipism",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-synthoulipism"
-      ],
+      "titleCardIds": ["pata-vocab-b1-synthoulipism"],
       "thesisMatches": []
     },
     {
       "term": "Syzygia",
       "normalized": "syzygia",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-syzygy",
-        "pata-vocab-bok-syzygia"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-syzygy", "pata-vocab-bok-syzygia"],
       "thesisMatches": []
     },
     {
       "term": "Syzygia (Bök: Alliance)",
       "normalized": "syzygia b k alliance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-syzygia"
-      ],
+      "titleCardIds": ["pata-vocab-bok-syzygia"],
       "thesisMatches": []
     },
     {
       "term": "syzygy",
       "normalized": "syzygy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-syzygy",
-        "pata-vocab-b1-syzygy-pata",
-        "pata-vocab-b2-syzygy"
-      ],
+      "titleCardIds": ["pata-syzygy", "pata-vocab-b1-syzygy-pata", "pata-vocab-b2-syzygy"],
       "thesisMatches": [
         {
           "line": 4602,
@@ -5448,90 +4462,69 @@
       "term": "Syzygy (Core Thesis)",
       "normalized": "syzygy core thesis",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-syzygy"
-      ],
+      "titleCardIds": ["pata-syzygy"],
       "thesisMatches": []
     },
     {
       "term": "syzygy of the chiasm",
       "normalized": "syzygy of the chiasm",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-syzygia"
-      ],
+      "titleCardIds": ["pata-vocab-bok-syzygia"],
       "thesisMatches": []
     },
     {
       "term": "Syzygy Surfer",
       "normalized": "syzygy surfer",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-syzygy-surfer",
-        "pata-vocab-b4-syzygy-surfer"
-      ],
+      "titleCardIds": ["pata-syzygy-surfer", "pata-vocab-b4-syzygy-surfer"],
       "thesisMatches": []
     },
     {
       "term": "Syzygy Surfer (Computing Concept)",
       "normalized": "syzygy surfer computing concept",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-syzygy-surfer"
-      ],
+      "titleCardIds": ["pata-syzygy-surfer"],
       "thesisMatches": []
     },
     {
       "term": "Syzygy Surfer (Vocabulary)",
       "normalized": "syzygy surfer vocabulary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-syzygy-surfer"
-      ],
+      "titleCardIds": ["pata-vocab-b4-syzygy-surfer"],
       "thesisMatches": []
     },
     {
       "term": "Syzygy (Vocabulary: Astronomy/Biology/Language)",
       "normalized": "syzygy vocabulary astronomy biology language",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-syzygy"
-      ],
+      "titleCardIds": ["pata-vocab-b2-syzygy"],
       "thesisMatches": []
     },
     {
       "term": "Syzygy (Vocabulary: Pataphysical)",
       "normalized": "syzygy vocabulary pataphysical",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-syzygy-pata"
-      ],
+      "titleCardIds": ["pata-vocab-b1-syzygy-pata"],
       "thesisMatches": []
     },
     {
       "term": "Témoins Oculistes",
       "normalized": "t moins oculistes",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-temoins-oculistes"
-      ],
+      "titleCardIds": ["pata-vocab-b1-temoins-oculistes"],
       "thesisMatches": []
     },
     {
       "term": "Talionism",
       "normalized": "talionism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Étant Donnés",
       "normalized": "tant donn s",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5539,9 +4532,7 @@
       "term": "Tautology",
       "normalized": "tautology",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-tautology"
-      ],
+      "titleCardIds": ["pata-tautology"],
       "thesisMatches": [
         {
           "line": 3812,
@@ -5557,17 +4548,13 @@
       "term": "TEAnO",
       "normalized": "teano",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-teano"
-      ],
+      "titleCardIds": ["pata-vocab-b4-teano"],
       "thesisMatches": []
     },
     {
       "term": "Teratism",
       "normalized": "teratism",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5583,56 +4570,42 @@
     {
       "term": "Tertiary Artefacts",
       "normalized": "tertiary artefacts",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The 1912 Censorship",
       "normalized": "the 1912 censorship",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Androgyne",
       "normalized": "the androgyne",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-androgyne"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-androgyne"],
       "thesisMatches": []
     },
     {
       "term": "The Anti-Bachelor Machine",
       "normalized": "the anti bachelor machine",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-anti-bachelor-machine"
-      ],
+      "titleCardIds": ["pata-anti-bachelor-machine"],
       "thesisMatches": []
     },
     {
       "term": "The Bachelor Grinds His Chocolate Himself",
       "normalized": "the bachelor grinds his chocolate himself",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Bride",
       "normalized": "the bride",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5648,18 +4621,14 @@
     {
       "term": "The Bride's Motor",
       "normalized": "the bride s motor",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Capillary Tubes",
       "normalized": "the capillary tubes",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5667,35 +4636,27 @@
       "term": "The Celibate Machine",
       "normalized": "the celibate machine",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-celibate-machine"
-      ],
+      "titleCardIds": ["pata-celibate-machine"],
       "thesisMatches": []
     },
     {
       "term": "The Clock in Profile",
       "normalized": "the clock in profile",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Closed Circuit",
       "normalized": "the closed circuit",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Creative Act",
       "normalized": "the creative act",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -5707,18 +4668,14 @@
     {
       "term": "The Death's Head",
       "normalized": "the death s head",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Deluxe Edition",
       "normalized": "the deluxe edition",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5726,9 +4683,7 @@
       "term": "The Exception",
       "normalized": "the exception",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-exception"
-      ],
+      "titleCardIds": ["pata-the-exception"],
       "thesisMatches": [
         {
           "line": 407,
@@ -5756,17 +4711,13 @@
       "term": "The Extraordinary Ordinary",
       "normalized": "the extraordinary ordinary",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-extraordinary-ordinary"
-      ],
+      "titleCardIds": ["pata-extraordinary-ordinary"],
       "thesisMatches": []
     },
     {
       "term": "The Fate Machine",
       "normalized": "the fate machine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5774,44 +4725,34 @@
       "term": "The Fourth Dimension",
       "normalized": "the fourth dimension",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-fourth-dimension"
-      ],
+      "titleCardIds": ["pata-fourth-dimension"],
       "thesisMatches": []
     },
     {
       "term": "The 'From' Question",
       "normalized": "the from question",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Géométral vs. The Visual",
       "normalized": "the g om tral vs the visual",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Halo of the Bride",
       "normalized": "the halo of the bride",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Harrow (Kafka)",
       "normalized": "the harrow kafka",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5819,26 +4760,20 @@
       "term": "The Inconnu & Insolite",
       "normalized": "the inconnu insolite",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-inconnu-insolite"
-      ],
+      "titleCardIds": ["pata-inconnu-insolite"],
       "thesisMatches": []
     },
     {
       "term": "The Intelligence of Evil",
       "normalized": "the intelligence of evil",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Large Glass",
       "normalized": "the large glass",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5846,53 +4781,41 @@
       "term": "The Last Refuge",
       "normalized": "the last refuge",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-moral-repugnance"
-      ],
+      "titleCardIds": ["pata-moral-repugnance"],
       "thesisMatches": []
     },
     {
       "term": "The Layers of Confusion",
       "normalized": "the layers of confusion",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Loophole",
       "normalized": "the loophole",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Love Machine (Jarry)",
       "normalized": "the love machine jarry",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Maelström (Poe)",
       "normalized": "the maelstr m poe",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Megamachine",
       "normalized": "the megamachine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5900,26 +4823,20 @@
       "term": "The Neo-Scientific Novel (Faustroll)",
       "normalized": "the neo scientific novel faustroll",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-neo-scientific-novel"
-      ],
+      "titleCardIds": ["pata-neo-scientific-novel"],
       "thesisMatches": []
     },
     {
       "term": "The Nets",
       "normalized": "the nets",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Oculist Witnesses (Eyewitnesses)",
       "normalized": "the oculist witnesses eyewitnesses",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5927,36 +4844,28 @@
       "term": "The Particular & The Irreducible",
       "normalized": "the particular the irreducible",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-particular-irreducible"
-      ],
+      "titleCardIds": ["pata-particular-irreducible"],
       "thesisMatches": []
     },
     {
       "term": "The Pataphysical Studios",
       "normalized": "the pataphysical studios",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-pataphysical-studios"
-      ],
+      "titleCardIds": ["pata-vocab-b4-pataphysical-studios"],
       "thesisMatches": []
     },
     {
       "term": "The Pataphysics Times",
       "normalized": "the pataphysics times",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-pataphysics-times"
-      ],
+      "titleCardIds": ["pata-vocab-b2-pataphysics-times"],
       "thesisMatches": []
     },
     {
       "term": "The Possible",
       "normalized": "the possible",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-possible"
-      ],
+      "titleCardIds": ["pata-the-possible"],
       "thesisMatches": [
         {
           "line": 2652,
@@ -5971,18 +4880,14 @@
     {
       "term": "The Richard Mutt Case",
       "normalized": "the richard mutt case",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Scissors",
       "normalized": "the scissors",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -5990,17 +4895,13 @@
       "term": "The Scroll",
       "normalized": "the scroll",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-scroll"
-      ],
+      "titleCardIds": ["pata-the-scroll"],
       "thesisMatches": []
     },
     {
       "term": "The Sewing Machine and Umbrella",
       "normalized": "the sewing machine and umbrella",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6008,17 +4909,13 @@
       "term": "The Sieve (Faustroll Object)",
       "normalized": "the sieve faustroll object",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-the-sieve"
-      ],
+      "titleCardIds": ["pata-the-sieve"],
       "thesisMatches": []
     },
     {
       "term": "The Sieves / Parasols",
       "normalized": "the sieves parasols",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6026,17 +4923,13 @@
       "term": "The Simplexes",
       "normalized": "the simplexes",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-simplexes"
-      ],
+      "titleCardIds": ["pata-simplexes"],
       "thesisMatches": []
     },
     {
       "term": "The Spectator Makes the Picture",
       "normalized": "the spectator makes the picture",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6044,53 +4937,41 @@
       "term": "The Spiral",
       "normalized": "the spiral",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-spiral"
-      ],
+      "titleCardIds": ["pata-spiral"],
       "thesisMatches": []
     },
     {
       "term": "The Splash",
       "normalized": "the splash",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Summoning",
       "normalized": "the summoning",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Three Positions",
       "normalized": "the three positions",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Tombstone",
       "normalized": "the tombstone",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Triple 'By'",
       "normalized": "the triple by",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6098,53 +4979,41 @@
       "term": "The Two Laws",
       "normalized": "the two laws",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-two-laws"
-      ],
+      "titleCardIds": ["pata-two-laws"],
       "thesisMatches": []
     },
     {
       "term": "The Two-Zone Structure",
       "normalized": "the two zone structure",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Vapors (Love Gasoline)",
       "normalized": "the vapors love gasoline",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Viewer Makes the Picture",
       "normalized": "the viewer makes the picture",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Visual Pyramid",
       "normalized": "the visual pyramid",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "The Water Mill / Glider",
       "normalized": "the water mill glider",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6152,26 +5021,20 @@
       "term": "Theatre of the Absurd",
       "normalized": "theatre of the absurd",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-theatre-of-absurd"
-      ],
+      "titleCardIds": ["pata-vocab-b1-theatre-of-absurd"],
       "thesisMatches": []
     },
     {
       "term": "Timetrain",
       "normalized": "timetrain",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-timetrain"
-      ],
+      "titleCardIds": ["pata-vocab-b2-timetrain"],
       "thesisMatches": []
     },
     {
       "term": "Timid-Power (Love Gasoline)",
       "normalized": "timid power love gasoline",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6179,44 +5042,34 @@
       "term": "Todesarten",
       "normalized": "todesarten",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-todesarten"
-      ],
+      "titleCardIds": ["pata-todesarten"],
       "thesisMatches": []
     },
     {
       "term": "Topological Transformation",
       "normalized": "topological transformation",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-topological-transformation"
-      ],
+      "titleCardIds": ["pata-topological-transformation"],
       "thesisMatches": []
     },
     {
       "term": "Transcendental Laziness",
       "normalized": "transcendental laziness",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-transcendental-laziness"
-      ],
+      "titleCardIds": ["pata-transcendental-laziness"],
       "thesisMatches": []
     },
     {
       "term": "Transversal",
       "normalized": "transversal",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Traumwelt",
       "normalized": "traumwelt",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -6241,9 +5094,7 @@
       "term": "trial and error",
       "normalized": "trial and error",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-bok-nomad-science"
-      ],
+      "titleCardIds": ["pata-vocab-bok-nomad-science"],
       "thesisMatches": [
         {
           "line": 1386,
@@ -6258,18 +5109,14 @@
     {
       "term": "Tu m' as Panorama of the Index",
       "normalized": "tu m as panorama of the index",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Turing Machine",
       "normalized": "turing machine",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6277,17 +5124,13 @@
       "term": "Twisted Witz",
       "normalized": "twisted witz",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-twisted-witz"
-      ],
+      "titleCardIds": ["pata-vocab-b1-twisted-witz"],
       "thesisMatches": []
     },
     {
       "term": "Two Degrees of Separation",
       "normalized": "two degrees of separation",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6295,17 +5138,13 @@
       "term": "two laws",
       "normalized": "two laws",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-two-laws"
-      ],
+      "titleCardIds": ["pata-two-laws"],
       "thesisMatches": []
     },
     {
       "term": "Ubermensch",
       "normalized": "ubermensch",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -6326,64 +5165,48 @@
       "term": "Uboolean Logic",
       "normalized": "uboolean logic",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-uboolean-logic"
-      ],
+      "titleCardIds": ["pata-vocab-b4-uboolean-logic"],
       "thesisMatches": []
     },
     {
       "term": "Ubu Roi",
       "normalized": "ubu roi",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
-      "titleCardIds": [
-        "pata-vocab-b1-ubu-roi"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
+      "titleCardIds": ["pata-vocab-b1-ubu-roi"],
       "thesisMatches": []
     },
     {
       "term": "Ultrasexagenarian Ephebe",
       "normalized": "ultrasexagenarian ephebe",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-ultrasexagenarian-ephebe"
-      ],
+      "titleCardIds": ["pata-vocab-b1-ultrasexagenarian-ephebe"],
       "thesisMatches": []
     },
     {
       "term": "underacademy",
       "normalized": "underacademy",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-underacademy"
-      ],
+      "titleCardIds": ["pata-vocab-b4-underacademy"],
       "thesisMatches": []
     },
     {
       "term": "UnderAcademy College",
       "normalized": "underacademy college",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-underacademy"
-      ],
+      "titleCardIds": ["pata-vocab-b4-underacademy"],
       "thesisMatches": []
     },
     {
       "term": "Useful Uselessness",
       "normalized": "useful uselessness",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b4-useful-uselessness"
-      ],
+      "titleCardIds": ["pata-vocab-b4-useful-uselessness"],
       "thesisMatches": []
     },
     {
       "term": "Vapor of Inertia",
       "normalized": "vapor of inertia",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6391,10 +5214,7 @@
       "term": "variance",
       "normalized": "variance",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-anomaly",
-        "pata-vocab-bok-anomalos"
-      ],
+      "titleCardIds": ["pata-anomaly", "pata-vocab-bok-anomalos"],
       "thesisMatches": [
         {
           "line": 104,
@@ -6422,18 +5242,13 @@
       "term": "variance/anomalos",
       "normalized": "variance anomalos",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-anomaly",
-        "pata-vocab-bok-anomalos"
-      ],
+      "titleCardIds": ["pata-anomaly", "pata-vocab-bok-anomalos"],
       "thesisMatches": []
     },
     {
       "term": "Virtuality",
       "normalized": "virtuality",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -6462,26 +5277,20 @@
       "term": "Virtualized",
       "normalized": "virtualized",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-virtualized"
-      ],
+      "titleCardIds": ["pata-virtualized"],
       "thesisMatches": []
     },
     {
       "term": "Walter Arensberg",
       "normalized": "walter arensberg",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Wanted: $2,000 Reward",
       "normalized": "wanted 2 000 reward",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
@@ -6489,26 +5298,20 @@
       "term": "Wartime Pataphysics",
       "normalized": "wartime pataphysics",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b1-wartime-pataphysics"
-      ],
+      "titleCardIds": ["pata-vocab-b1-wartime-pataphysics"],
       "thesisMatches": []
     },
     {
       "term": "Wilson-Lincoln System",
       "normalized": "wilson lincoln system",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     },
     {
       "term": "Wunderkammern",
       "normalized": "wunderkammern",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": [
         {
@@ -6529,17 +5332,13 @@
       "term": "Xenochrony",
       "normalized": "xenochrony",
       "websiteSources": [],
-      "titleCardIds": [
-        "pata-vocab-b2-xenochrony"
-      ],
+      "titleCardIds": ["pata-vocab-b2-xenochrony"],
       "thesisMatches": []
     },
     {
       "term": "Yours Pataphysically",
       "normalized": "yours pataphysically",
-      "websiteSources": [
-        "content/pages/pataphysics/vocabulary.mdx"
-      ],
+      "websiteSources": ["content/pages/pataphysics/vocabulary.mdx"],
       "titleCardIds": [],
       "thesisMatches": []
     }
