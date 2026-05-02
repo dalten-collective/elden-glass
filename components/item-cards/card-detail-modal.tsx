@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { X, ExternalLink } from 'lucide-react';
 import { ShareButtons } from '@/components/ui/share-buttons';
 
-import type { TitleCard } from '@/types/title-cards';
+import type { ItemCard } from '@/types/item-cards';
 
 // Helper to check if a URL is a GIF.
 const isGif = (url: string | undefined | null): boolean => {
@@ -14,14 +14,14 @@ const isGif = (url: string | undefined | null): boolean => {
 };
 
 interface CardDetailModalProps {
-  card: TitleCard;
+  card: ItemCard;
   onClose: () => void;
 }
 
 /**
- * Read-only modal for viewing a full title card. Previously this modal
+ * Read-only modal for viewing a full item card. Previously this modal
  * supported an inline edit flow (Edit button in the header, input fields,
- * debounced auto-save, PATCH to /api/title-cards). That entire path was
+ * debounced auto-save, PATCH to /api/item-cards). That entire path was
  * removed — the modal is now purely informational and is reached via the
  * "View card" button on the rollover.
  */

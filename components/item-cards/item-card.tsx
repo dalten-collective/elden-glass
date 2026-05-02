@@ -13,15 +13,15 @@ import Image from 'next/image';
 import { Database, ExternalLink } from 'lucide-react';
 
 import { captureItemCardOpen } from '@/lib/analytics/browser-capture';
-import type { TitleCard as TitleCardRecord } from '@/types/title-cards';
+import type { ItemCard as ItemCardRecord } from '@/types/item-cards';
 
-type TitleCardProps = {
+type ItemCardProps = {
   id: string;
   children: ReactNode;
 };
 
-type TitleCardResponse = {
-  card?: TitleCardRecord;
+type ItemCardResponse = {
+  card?: ItemCardRecord;
   error?: string;
 };
 
@@ -65,15 +65,15 @@ function getPreviewPosition(
 }
 
 /**
- * Renders an explicit read-only MDX title-card reference.
+ * Renders an explicit read-only MDX item-card reference.
  */
-export function TitleCard({ id, children }: TitleCardProps) {
+export function ItemCard({ id, children }: ItemCardProps) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
   const [anchorPoint, setAnchorPoint] = useState<ViewportPoint | null>(null);
   const [position, setPosition] = useState<PreviewPosition | null>(null);
-  const [card, setCard] = useState<TitleCardRecord | null>(null);
+  const [card, setCard] = useState<ItemCardRecord | null>(null);
   const [error, setError] = useState<string | null>(null);
   const closeTimerRef = useRef<number | null>(null);
   const previewRef = useRef<HTMLDivElement | null>(null);
@@ -178,13 +178,13 @@ export function TitleCard({ id, children }: TitleCardProps) {
 
     async function loadCard() {
       try {
-        const response = await fetch(`/api/title-cards/${encodeURIComponent(id)}`, {
+        const response = await fetch(`/api/item-cards/${encodeURIComponent(id)}`, {
           signal: controller.signal,
         });
-        const data = (await response.json()) as TitleCardResponse;
+        const data = (await response.json()) as ItemCardResponse;
 
         if (!response.ok || !data.card) {
-          setError(data.error ?? 'Title card unavailable');
+          setError(data.error ?? 'Item card unavailable');
           return;
         }
 
@@ -194,7 +194,7 @@ export function TitleCard({ id, children }: TitleCardProps) {
           return;
         }
 
-        setError('Title card unavailable');
+        setError('Item card unavailable');
       }
     }
 
@@ -229,7 +229,7 @@ export function TitleCard({ id, children }: TitleCardProps) {
     <>
       <button
         type="button"
-        className="inline cursor-pointer border-0 bg-transparent p-0 align-baseline [font:inherit] text-[var(--accent-gold)] underline decoration-[var(--gold-dim)] decoration-1 underline-offset-4 hover:text-[var(--gold-bright)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-gold)]"
+        className="item-card-trigger"
         onMouseEnter={handleEnter}
         onMouseLeave={scheduleClose}
         onFocus={(event) => {
@@ -248,24 +248,20 @@ export function TitleCard({ id, children }: TitleCardProps) {
             ref={previewRef}
             aria-hidden={!open}
             inert={!open}
-            className={`fixed z-[90] w-[min(340px,calc(100vw-32px))] rounded-md border border-[var(--border-emphasis)] bg-[var(--bg-secondary)] p-0 text-left shadow-2xl ${
-              visible ? 'opacity-100' : 'pointer-events-none opacity-0'
+            className={`item-card-popover fixed z-[90] w-[min(340px,calc(100vw-32px))] ${
+              visible ? 'item-card-popover--visible' : ''
             }`}
             style={{
               left: position.left,
               top: position.top,
-              transitionProperty: 'opacity',
-              transitionDuration: '120ms',
-              transitionTimingFunction: 'ease-out',
-              willChange: 'opacity',
             }}
             onMouseEnter={clearCloseTimer}
             onMouseLeave={scheduleClose}
           >
             {card ? (
-              <TitleCardPreview card={card} />
+              <ItemCardPreview card={card} />
             ) : (
-              <TitleCardStatus message={error ?? 'Loading...'} />
+              <ItemCardStatus message={error ?? 'Loading...'} />
             )}
           </div>,
           document.body
@@ -274,11 +270,11 @@ export function TitleCard({ id, children }: TitleCardProps) {
   );
 }
 
-function TitleCardStatus({ message }: { message: string }) {
-  return <div className="p-4 text-sm text-[var(--text-secondary)]">{message}</div>;
+function ItemCardStatus({ message }: { message: string }) {
+  return <div className="item-card-status">{message}</div>;
 }
 
-function TitleCardPreview({ card }: { card: TitleCardRecord }) {
+function ItemCardPreview({ card }: { card: ItemCardRecord }) {
   const image = card.image ?? card.images?.[0];
   const [imageFailed, setImageFailed] = useState(false);
 
@@ -287,16 +283,16 @@ function TitleCardPreview({ card }: { card: TitleCardRecord }) {
   }, [image]);
 
   return (
-    <div className="overflow-hidden rounded-md">
+    <div className="item-card-preview">
       {image && !imageFailed && (
-        <div className="relative flex h-36 items-center justify-center bg-[var(--bg-primary)]">
+        <div className="item-card-preview__media">
           {isGif(image) ? (
             // Native img keeps animated cards cheap in this small preview.
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={image}
               alt={card.title}
-              className="max-h-full max-w-full object-contain"
+              className="item-card-preview__image"
               onError={() => setImageFailed(true)}
             />
           ) : (
@@ -312,26 +308,24 @@ function TitleCardPreview({ card }: { card: TitleCardRecord }) {
         </div>
       )}
 
-      <div className="space-y-3 p-4">
-        <div>
-          <p className="font-serif text-lg leading-tight text-[var(--accent-gold)]">{card.title}</p>
+      <div className="item-card-preview__body">
+        <div className="item-card-preview__header">
+          <p className="item-card-preview__title">{card.title}</p>
           {(card.category || card.subcategory) && (
-            <p className="mt-1 text-xs italic text-[var(--text-tertiary)]">
+            <p className="item-card-preview__meta">
               {[card.category, card.subcategory].filter(Boolean).join(' - ')}
             </p>
           )}
         </div>
 
-        <p className="line-clamp-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-          {card.description}
-        </p>
+        <p className="item-card-preview__description line-clamp-4">{card.description}</p>
 
-        <div className="flex flex-wrap gap-2 border-t border-[var(--border-subtle)] pt-3">
+        <div className="item-card-preview__actions">
           <a
             href={`/gatherer?card=${encodeURIComponent(card.id)}&q=${encodeURIComponent(
               card.term || card.title
             )}`}
-            className="inline-flex items-center gap-1.5 text-xs text-[var(--accent-gold)] hover:underline"
+            className="item-card-preview__link"
           >
             <Database className="h-3.5 w-3.5" />
             Open Item Card
@@ -342,7 +336,7 @@ function TitleCardPreview({ card }: { card: TitleCardRecord }) {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs text-[var(--accent-gold)] hover:underline"
+              className="item-card-preview__link"
             >
               <ExternalLink className="h-3.5 w-3.5" />
               {link.label}

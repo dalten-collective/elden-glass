@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Sync title cards from Federated Wiki pages
- * Reads all pages from ~/.wiki/pages/ and converts them to title-cards.json
+ * Sync item cards from Federated Wiki pages
+ * Reads all pages from ~/.wiki/pages/ and converts them to item-cards.json
  * Fedwiki is the source of truth, this generates the local cache
  */
 
@@ -10,9 +10,9 @@ const fs = require('fs');
 const path = require('path');
 
 const FEDWIKI_PAGES_PATH = path.join(process.env.HOME, '.wiki/pages');
-const TITLE_CARDS_PATH = path.join(__dirname, '../data/title-cards.json');
+const ITEM_CARDS_PATH = path.join(__dirname, '../data/item-cards.json');
 
-// Pages to skip (not title cards)
+// Pages to skip (not item cards)
 const SKIP_PAGES = new Set(['welcome-visitors', 'gatherer', 'how-to-wiki', 'recent-changes']);
 
 // Parse category path from first story item
@@ -98,7 +98,7 @@ function generateId() {
   return Math.random().toString(16).substring(2, 18);
 }
 
-// Convert a fedwiki page to title card format
+// Convert a fedwiki page to item card format
 function pageToCard(pageData, filename, allPageSlugs) {
   const card = {
     id: generateId(),
@@ -238,12 +238,12 @@ async function syncFromFedwiki() {
     return (a.title || '').localeCompare(b.title || '');
   });
 
-  // Write to title-cards.json
+  // Write to item-cards.json
   const output = { cards };
-  fs.writeFileSync(TITLE_CARDS_PATH, JSON.stringify(output, null, 2));
+  fs.writeFileSync(ITEM_CARDS_PATH, JSON.stringify(output, null, 2));
 
   console.log(`\nSync complete!`);
-  console.log(`  - ${cards.length} cards synced to title-cards.json`);
+  console.log(`  - ${cards.length} cards synced to item-cards.json`);
   console.log(`  - ${cardsByTitle.size} unique titles`);
   if (errors > 0) {
     console.log(`  - ${errors} errors occurred`);

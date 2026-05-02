@@ -13,14 +13,14 @@ import {
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
-import type { TitleCard } from '@/types/title-cards';
-import { CardDetailModal } from '@/components/title-cards/card-detail-modal';
+import type { ItemCard } from '@/types/item-cards';
+import { CardDetailModal } from '@/components/item-cards/card-detail-modal';
 import { captureItemCardOpen } from '@/lib/analytics/browser-capture';
 
 const CARDS_PER_PAGE = 48;
 
 interface ApiResponse {
-  cards: TitleCard[];
+  cards: ItemCard[];
   total: number;
   page: number;
   limit: number;
@@ -31,7 +31,7 @@ interface ApiResponse {
 }
 
 interface CardResponse {
-  card?: TitleCard;
+  card?: ItemCard;
   error?: string;
 }
 
@@ -87,7 +87,7 @@ function GathererContent() {
 
   // UI state
   const [showFilters, setShowFilters] = useState(true);
-  const [selectedCard, setSelectedCard] = useState<TitleCard | null>(null);
+  const [selectedCard, setSelectedCard] = useState<ItemCard | null>(null);
 
   // Update URL with new params
   const updateUrl = useCallback(
@@ -166,12 +166,12 @@ function GathererContent() {
         if (urlSubcategory) params.set('subcategory', urlSubcategory);
         if (urlSource) params.set('source', urlSource);
 
-        const response = await fetch(`/api/title-cards?${params.toString()}`);
+        const response = await fetch(`/api/item-cards?${params.toString()}`);
         if (!response.ok) throw new Error('Failed to fetch cards');
 
         const result = await response.json();
         if (!isApiResponse(result)) {
-          throw new Error('Title card API returned an unexpected response shape');
+          throw new Error('Item card API returned an unexpected response shape');
         }
 
         setData(result);
@@ -212,7 +212,7 @@ function GathererContent() {
 
     async function fetchSelectedCard() {
       try {
-        const response = await fetch(`/api/title-cards/${encodeURIComponent(urlCardId)}`, {
+        const response = await fetch(`/api/item-cards/${encodeURIComponent(urlCardId)}`, {
           signal: controller.signal,
         });
         const result = (await response.json()) as CardResponse;
@@ -233,7 +233,7 @@ function GathererContent() {
           return;
         }
 
-        console.error('Failed to fetch selected title card:', err);
+        console.error('Failed to fetch selected item card:', err);
       }
     }
 
@@ -277,7 +277,7 @@ function GathererContent() {
   const hasActiveFilters = urlQuery || urlSection || urlCategory || urlSubcategory || urlSource;
 
   const handleCardClick = useCallback(
-    (card: TitleCard) => {
+    (card: ItemCard) => {
       captureItemCardOpen({
         cardId: card.id,
         cardSection: card.section ?? null,
@@ -595,8 +595,8 @@ const CardTile = memo(function CardTile({
   card,
   onClick,
 }: {
-  card: TitleCard;
-  onClick: (card: TitleCard) => void;
+  card: ItemCard;
+  onClick: (card: ItemCard) => void;
 }) {
   const isDLC = card.source === 'dlc';
   const [imageFailed, setImageFailed] = useState(false);

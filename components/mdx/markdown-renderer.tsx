@@ -21,8 +21,7 @@ import {
   Ref,
   Spec,
 } from '@/components/delay';
-import { ItemCard } from '@/components/items/item-card';
-import { TitleCard } from '@/components/title-cards/title-card-inline';
+import { ItemCard } from '@/components/item-cards/item-card';
 import { HashVerification } from '@/components/verification/hash-verification';
 import { cn } from '@/lib/utils';
 import { Callout } from './callout';
@@ -45,7 +44,6 @@ import { SearchTargetFlash } from './search-block-client';
 const mdxComponents = {
   FloatImage,
   ItemCard,
-  TitleCard,
   LinkPreview,
   MagnifierImage,
   DefinitionItem,
@@ -90,7 +88,7 @@ const mdxOptions = {
       {
         // Append an anchor link after each heading. The default behavior
         // wraps heading text in an anchor, which would swallow clicks on
-        // title-card terms rendered inside headings.
+        // item-card terms rendered inside headings.
         behavior: 'append',
         properties: {
           className: ['heading-anchor'],

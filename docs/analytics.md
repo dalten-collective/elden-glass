@@ -246,7 +246,7 @@ content moves.
 | `mdx_content`         | `/living-thesis`, `/duchamp/chess/overview`, any catch-all MDX URL | Content from `content/pages/**` rendered through the catch-all.                      |
 | `bespoke_interactive` | `/xenotext`, `/duchamp/duchamp-works`, `/gatherer`                 | Bespoke TSX routes called out in `AGENTS.md` and `CLAUDE.md`.                        |
 | `search`              | `/search`, `/api/search`                                           | Both the page and its API.                                                           |
-| `item_cards`          | `/api/title-cards`, `/api/title-cards/[id]`                        | The structured item-card APIs. The `/gatherer` page itself is `bespoke_interactive`. |
+| `item_cards`          | `/api/item-cards`, `/api/item-cards/[id]`                          | The structured item-card APIs. The `/gatherer` page itself is `bespoke_interactive`. |
 | `ax_llms_text`        | `/llms.txt`                                                        | Plain-text agent guide.                                                              |
 | `ax_llms_toc`         | `/api/llms/toc`                                                    | Machine-readable agent table of contents.                                            |
 | `ax_route_catalog`    | `/contents`, anything else built on `lib/route-catalog.ts`         | Human-and-agent-readable route inventory.                                            |
@@ -314,7 +314,7 @@ Current emitted event vocabulary:
   hygiene rules.
 - `human_search_result_click` — click on a result in the search UI.
   Properties: `route_family`, `path`, `query`, `result_route_family`,
-  `result_rank`, `result_type` (`content` or `titlecard`).
+  `result_rank`, `result_type` (`content` or `itemcard`).
 - `human_item_card_open` — opening an item card detail. Properties:
   `route_family`, `path`, `card_id`, `card_section`,
   `card_category`, `card_subcategory`, `source` (`gatherer_grid`,
@@ -363,7 +363,7 @@ saved cards.
 | Internal searches    | `human_search_submit`                                    | `query`, `query_length`, `via`                                                                    | What are humans trying to find from `/search` or global search?       |
 | Search result clicks | `human_search_result_click`                              | `query`, `result_type`, `result_route_family`, `result_rank`                                      | Which searches lead to useful clicks?                                 |
 | Navigation use       | `human_internal_link_click` and `human_sidebar_navigate` | `from_path`, `to_path`, `to_route_family`, `surface`                                              | How do humans move through the site shell and content links?          |
-| Item-card opens      | `human_item_card_open`                                   | `card_section`, `card_category`, `card_subcategory`, `source`                                     | Which Gatherer / title-card taxonomy areas attract use?               |
+| Item-card opens      | `human_item_card_open`                                   | `card_section`, `card_category`, `card_subcategory`, `source`                                     | Which Gatherer / item-card taxonomy areas attract use?                |
 | AX route requests    | `ax_route_request`                                       | `route_family`, `path`, `method`, `status`, `ax_surface`, `is_js_likely`, `agent_surface_unknown` | Which AX and content routes are being fetched by non-browser clients? |
 | Agent classification | `agent_classified`                                       | `agent_family`, `agent_product`, `agent_mode`, `confidence`, `matched_token`, `route_family`      | Which known agents accessed AX routes or ordinary content?            |
 
@@ -393,7 +393,7 @@ Run this weekly and after material releases.
   `human_search_result_click` events is a content or ranking signal.
 - Review `human_search_result_click` by `result_rank`,
   `result_type`, and `result_route_family`. High-value queries should
-  produce low-rank clicks to `content` or `titlecard` results.
+  produce low-rank clicks to `content` or `itemcard` results.
 - Review `human_item_card_open` by taxonomy properties and `source`.
   `source=gatherer_grid` measures Gatherer browsing, `mdx_inline`
   measures inline card interest inside prose, and `deep_link` measures

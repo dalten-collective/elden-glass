@@ -20,7 +20,7 @@ export type ItemCardSource = 'gatherer_grid' | 'mdx_inline' | 'deep_link';
 
 export type SearchVia = 'page' | 'global';
 
-export type SearchResultType = 'content' | 'titlecard';
+export type SearchResultType = 'content' | 'itemcard';
 
 /** Internal-link click — same-host navigation the SPA owns. */
 export function buildInternalLinkClickProperties(input: {
