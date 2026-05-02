@@ -13,7 +13,7 @@ interface SearchResult {
   page: string;
   pageTitle: string;
   targetId?: string;
-  type?: 'content' | 'titlecard';
+  type?: 'content' | 'itemcard';
   cardId?: string;
 }
 
@@ -135,16 +135,16 @@ export function GlobalSearch({
     setIsOpen(false);
     setQuery('');
 
-    const resultPath = result.type === 'titlecard' && result.cardId ? '/gatherer' : result.page;
+    const resultPath = result.type === 'itemcard' && result.cardId ? '/gatherer' : result.page;
     captureSearchResultClick({
       query: submittedQuery,
       resultPath,
       resultRank: rank,
-      resultType: result.type === 'titlecard' ? 'titlecard' : 'content',
+      resultType: result.type === 'itemcard' ? 'itemcard' : 'content',
     });
 
     const navigate = () => {
-      if (result.type === 'titlecard' && result.cardId) {
+      if (result.type === 'itemcard' && result.cardId) {
         router.push(
           `/gatherer?card=${encodeURIComponent(result.cardId)}&q=${encodeURIComponent(result.sentence)}`
         );
@@ -241,9 +241,9 @@ export function GlobalSearch({
                       : 'hover:bg-[rgb(var(--bg-primary-rgb)/0.5)]'
                   }`}
                 >
-                  {/* Title Card badge or Page Title */}
+                  {/* Item Card badge or Page Title */}
                   <div className="flex items-center gap-2 mb-1">
-                    {result.type === 'titlecard' ? (
+                    {result.type === 'itemcard' ? (
                       <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-[rgb(var(--accent-gold-rgb)/0.2)] text-[var(--accent-gold)] text-[10px] uppercase tracking-[0.1em] font-medium rounded">
                         <BookText className="h-3 w-3" />
                         Definition
@@ -253,7 +253,7 @@ export function GlobalSearch({
                         {result.pageTitle}
                       </span>
                     )}
-                    {result.type === 'titlecard' && result.pageTitle && (
+                    {result.type === 'itemcard' && result.pageTitle && (
                       <span className="text-[10px] text-[var(--text-tertiary)]">
                         {result.pageTitle}
                       </span>

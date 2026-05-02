@@ -3,8 +3,8 @@
 next-env.d.ts
 node_modules
 coverage
-data/title-cards.json
-data/title-cards-split
+data/item-cards.json
+data/item-cards-split
 data/sense-index.json
 public/images
 public/animations

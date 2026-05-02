@@ -32,7 +32,7 @@ If you are changing:
 
 start in `content/`, not in `app/(site)/*.tsx`.
 
-Structured interactive datasets live in `data/`, especially the title-card system.
+Structured interactive datasets live in `data/`, especially the item-card system.
 
 ## Local Development
 
@@ -161,9 +161,9 @@ orientation:
   Bespoke (non-content) interactive routes live as their own folders under
   `app/(site)/`; they appear in navigation only when a `layout.yaml`
   references them via a `links:` entry. `app/api/**` contains JSON endpoints
-  (search, title cards, sense index, and agent-facing `llms` routes).
+  (search, item cards, sense index, and agent-facing `llms` routes).
 
-- **Structured data lives in `data/`** — title cards, including Duchamp
+- **Structured data lives in `data/`** — item cards, including Duchamp
   artwork metadata, sense index, manuscripts manifest, and xenotext theories.
   See `data/README.md`.
 

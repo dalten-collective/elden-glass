@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { searchItemCards } from '@/lib/search-index';
-import { getTitleCards, toPublicTitleCard } from '@/lib/title-cards';
+import { getItemCards, toPublicItemCard } from '@/lib/item-cards';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,7 +23,7 @@ export async function GET(request: Request) {
     // Special param to get just metadata (sections, categories, etc.)
     const metaOnly = searchParams.get('meta') === 'true';
 
-    const allCards = getTitleCards();
+    const allCards = getItemCards();
     let cards = allCards;
 
     // If meta only, return filter options quickly
@@ -89,7 +89,7 @@ export async function GET(request: Request) {
     const paginatedCards = cards.slice(start, start + limit);
 
     return NextResponse.json({
-      cards: paginatedCards.map(toPublicTitleCard),
+      cards: paginatedCards.map(toPublicItemCard),
       total,
       page,
       limit,

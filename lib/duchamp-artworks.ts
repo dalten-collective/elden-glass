@@ -1,7 +1,7 @@
-import { getTitleCards, toPublicTitleCard, type PublicTitleCard } from '@/lib/title-cards';
+import { getItemCards, toPublicItemCard, type PublicItemCard } from '@/lib/item-cards';
 
-export type DuchampArtwork = PublicTitleCard & {
-  artwork: NonNullable<PublicTitleCard['artwork']>;
+export type DuchampArtwork = PublicItemCard & {
+  artwork: NonNullable<PublicItemCard['artwork']>;
 };
 
 export type DuchampPeriod = {
@@ -16,12 +16,12 @@ export type DuchampPeriod = {
 export function getDuchampArtworkPeriods(): DuchampPeriod[] {
   const periods = new Map<string, DuchampPeriod>();
 
-  for (const card of getTitleCards()) {
+  for (const card of getItemCards()) {
     if (card.artwork?.kind !== 'duchamp-work') {
       continue;
     }
 
-    const artwork = toPublicTitleCard(card) as DuchampArtwork;
+    const artwork = toPublicItemCard(card) as DuchampArtwork;
     const period = periods.get(artwork.artwork.period) ?? {
       title: artwork.artwork.period,
       years: artwork.artwork.periodYears ?? '',

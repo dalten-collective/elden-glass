@@ -257,20 +257,20 @@ Not everything is MDX. Structured data lives in `data/`.
 
 Important examples:
 
-- `data/title-cards.json`
+- `data/item-cards.json`
 - `data/xenotext-theories.json`
 
 Important related APIs:
 
-- `app/api/title-cards/route.ts`
-- `app/api/title-cards/[id]/route.ts`
+- `app/api/item-cards/route.ts`
+- `app/api/item-cards/[id]/route.ts`
 - `app/api/search/route.ts`
 
 If the user is changing Item Cards data, update the source data or
 the scripts that produce it. Do not fake data changes in the UI layer.
 
-`data/title-cards.json` is the canonical item-card source; runtime code should
-read it through `lib/title-cards.ts`.
+`data/item-cards.json` is the canonical item-card source; runtime code should
+read it through `lib/item-cards.ts`.
 
 Item-card taxonomy is first-class: `section` is the primary Item Cards grouping,
 `category` is the second-level grouping, and `subcategory` is the optional

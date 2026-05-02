@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
 /**
- * Export Title Cards to Federated Wiki pages
- * Converts each title card to a fed.wiki page JSON format
+ * Export Item Cards to Federated Wiki pages
+ * Converts each item card to a fed.wiki page JSON format
  */
 
 const fs = require('fs');
 const path = require('path');
 
 // Paths
-const TITLE_CARDS_PATH = path.join(__dirname, '../data/title-cards.json');
+const ITEM_CARDS_PATH = path.join(__dirname, '../data/item-cards.json');
 const FEDWIKI_PAGES_PATH = path.expanduser
   ? path.expanduser('~/.wiki/pages')
   : `${process.env.HOME}/.wiki/pages`;
@@ -28,7 +28,7 @@ function toSlug(title) {
     .substring(0, 100);
 }
 
-// Convert a title card to fedwiki page format
+// Convert a item card to fedwiki page format
 function cardToFedwikiPage(card, allCards) {
   const story = [];
   const now = Date.now();
@@ -154,13 +154,13 @@ function cardToFedwikiPage(card, allCards) {
 
 // Main export function
 async function exportToFedwiki() {
-  console.log('Reading title cards...');
+  console.log('Reading item cards...');
 
-  // Read title cards
-  const data = JSON.parse(fs.readFileSync(TITLE_CARDS_PATH, 'utf8'));
+  // Read item cards
+  const data = JSON.parse(fs.readFileSync(ITEM_CARDS_PATH, 'utf8'));
   const cards = Array.isArray(data) ? data : data.cards || [];
 
-  console.log(`Found ${cards.length} title cards`);
+  console.log(`Found ${cards.length} item cards`);
   console.log(`Exporting to: ${FEDWIKI_PAGES_PATH}`);
 
   // Ensure pages directory exists

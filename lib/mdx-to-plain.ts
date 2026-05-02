@@ -34,7 +34,7 @@
  *   <Ref n="1" kind="roman" />           → [^i]
  *   <MarginNote>X</MarginNote>           → (margin: X)
  *   <AsideInline>X</AsideInline>         → (aside: X)
- *   <TitleCard id="x" />                 → [title card: x]
+ *   <ItemCard id="x" />                  → [item card: x]
  *   <HashVerification … />               → dropped (widget)
  *   <EldenOrrery … />                    → dropped (widget)
  *   unknown <Tag … />                    → dropped
@@ -493,10 +493,10 @@ function renderComponent(
     case 'AsideInline':
       return ` (aside: ${body.trim()}) `;
 
-    case 'TitleCard': {
+    case 'ItemCard': {
       const id = stringAttr(attrs, 'id') ?? '';
       const label = body.trim();
-      return label ? `${label} [title card: ${id}]` : `[title card: ${id}]`;
+      return label ? `${label} [item card: ${id}]` : `[item card: ${id}]`;
     }
 
     // Fallback: unknown tags — unwrap if paired, drop if self-closing.
