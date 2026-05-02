@@ -4,8 +4,8 @@ This file documents the item-card data that powers the `/duchamp/duchamp-works` 
 
 ## Where Data Lives
 
-- Duchamp works are canonical item cards in `data/title-cards.json`.
-- The schema is enforced by `types/title-cards.ts`.
+- Duchamp works are canonical item cards in `data/item-cards.json`.
+- The schema is enforced by `types/item-cards.ts`.
 - The gallery is derived by `lib/duchamp-artworks.ts`.
 - Image files for this catalog live in `public/images/duchamp/paintings/`.
 
@@ -57,7 +57,7 @@ The `artwork` block only stores gallery-specific metadata:
 
 ## How To Add A Work
 
-1. Open `data/title-cards.json`.
+1. Open `data/item-cards.json`.
 2. Add or update an item card for the work.
 3. Set `image` to the local gallery image path when one is available.
 4. Add an `artwork` block with at least `kind`, `period`, and `displayOrder`.

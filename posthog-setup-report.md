@@ -14,22 +14,22 @@ Codex follow-up on `pb-ba4.7/posthog-wizard-baseline`: the browser provider now 
 
 ## Event inventory
 
-| Event                       | Description                                                                                                          | File                                           |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| `$pageview`                 | Native PostHog pageview on initial load and App Router history changes                                               | `components/analytics/posthog-provider.tsx`    |
-| `$pageleave`                | Native PostHog pageleave with scroll/session properties                                                              | `components/analytics/posthog-provider.tsx`    |
-| `$web_vitals`               | Native PostHog Core Web Vitals capture                                                                               | `components/analytics/posthog-provider.tsx`    |
-| `human_internal_link_click` | Same-host anchor clicks outside nav; from/to path and route_family                                                   | `components/analytics/engagement-tracker.tsx`  |
-| `human_outbound_link_click` | Clicks on external links; records to_host only (no full URL)                                                         | `components/analytics/engagement-tracker.tsx`  |
-| `human_sidebar_navigate`    | Sidebar/topbar nav clicks identified by `data-eg-nav-surface`; includes surface (desktop\|mobile)                    | `components/analytics/engagement-tracker.tsx`  |
-| `human_search_submit`       | Search form submission from `/search` page; via=page                                                                 | `app/(site)/search/page.tsx`                   |
-| `human_search_submit`       | Global search bar submission; via=global                                                                             | `components/site/global-search.tsx`            |
-| `human_search_result_click` | Click on a result in `/search` results list; includes result_rank, result_type                                       | `app/(site)/search/page.tsx`                   |
-| `human_search_result_click` | Click on a result in global search dropdown; result_type=titlecard for item cards                                    | `components/site/global-search.tsx`            |
-| `human_item_card_open`      | Item card opened from the Gatherer grid (source=gatherer_grid) or deep link (source=deep_link)                       | `app/(site)/gatherer/page.tsx`                 |
-| `human_item_card_open`      | Inline MDX title-card reference clicked (source=mdx_inline)                                                          | `components/title-cards/title-card-inline.tsx` |
-| `ax_route_request`          | Server-side: every non-browser, non-static request via Next.js proxy; skips browser clients on human-facing surfaces | `proxy.ts`                                     |
-| `agent_classified`          | Paired with ax_route_request in the same PostHog batch; contains agent_family, agent_product, agent_mode, confidence | `proxy.ts`                                     |
+| Event                       | Description                                                                                                          | File                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `$pageview`                 | Native PostHog pageview on initial load and App Router history changes                                               | `components/analytics/posthog-provider.tsx`   |
+| `$pageleave`                | Native PostHog pageleave with scroll/session properties                                                              | `components/analytics/posthog-provider.tsx`   |
+| `$web_vitals`               | Native PostHog Core Web Vitals capture                                                                               | `components/analytics/posthog-provider.tsx`   |
+| `human_internal_link_click` | Same-host anchor clicks outside nav; from/to path and route_family                                                   | `components/analytics/engagement-tracker.tsx` |
+| `human_outbound_link_click` | Clicks on external links; records to_host only (no full URL)                                                         | `components/analytics/engagement-tracker.tsx` |
+| `human_sidebar_navigate`    | Sidebar/topbar nav clicks identified by `data-eg-nav-surface`; includes surface (desktop\|mobile)                    | `components/analytics/engagement-tracker.tsx` |
+| `human_search_submit`       | Search form submission from `/search` page; via=page                                                                 | `app/(site)/search/page.tsx`                  |
+| `human_search_submit`       | Global search bar submission; via=global                                                                             | `components/site/global-search.tsx`           |
+| `human_search_result_click` | Click on a result in `/search` results list; includes result_rank, result_type                                       | `app/(site)/search/page.tsx`                  |
+| `human_search_result_click` | Click on a result in global search dropdown; result_type=itemcard for item cards                                     | `components/site/global-search.tsx`           |
+| `human_item_card_open`      | Item card opened from the Gatherer grid (source=gatherer_grid) or deep link (source=deep_link)                       | `app/(site)/gatherer/page.tsx`                |
+| `human_item_card_open`      | Inline MDX item-card reference clicked (source=mdx_inline)                                                           | `components/item-cards/item-card.tsx`         |
+| `ax_route_request`          | Server-side: every non-browser, non-static request via Next.js proxy; skips browser clients on human-facing surfaces | `proxy.ts`                                    |
+| `agent_classified`          | Paired with ax_route_request in the same PostHog batch; contains agent_family, agent_product, agent_mode, confidence | `proxy.ts`                                    |
 
 ## Next steps
 

@@ -71,7 +71,7 @@ export function routeFamilyForPath(rawPath: string): RouteFamily {
   }
 
   // Structured item-card APIs (the /gatherer page itself is bespoke).
-  if (path === '/api/title-cards' || path.startsWith('/api/title-cards/')) {
+  if (path === '/api/item-cards' || path.startsWith('/api/item-cards/')) {
     return 'item_cards';
   }
 

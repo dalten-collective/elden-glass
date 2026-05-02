@@ -3,8 +3,8 @@ import MiniSearch, { type SearchResult as MiniSearchResult } from 'minisearch';
 import { allContentPagesSorted, getCritiques, type ContentPage, type Critique } from './content';
 import { getRouteCatalog } from './route-catalog';
 import { extractSearchableBlocks } from './search-blocks';
-import { getTitleCards, type PublicTitleCard } from './title-cards';
-import type { TitleCard } from '@/types/title-cards';
+import { getItemCards, type PublicItemCard } from './item-cards';
+import type { ItemCard } from '@/types/item-cards';
 
 export type SearchDocumentKind = 'content' | 'critique' | 'custom-page' | 'item-card';
 
@@ -34,7 +34,7 @@ export interface SearchResult {
   page: string;
   pageTitle: string;
   targetId?: string;
-  type?: 'content' | 'titlecard';
+  type?: 'content' | 'itemcard';
   cardId?: string;
 }
 
@@ -45,7 +45,7 @@ type SearchIndex = {
 };
 
 type ItemCardSearchResult = {
-  card: TitleCard;
+  card: ItemCard;
   score: number;
 };
 
@@ -142,7 +142,7 @@ export function searchDocuments(
 /**
  * Searches item cards through the same normalized MiniSearch index.
  */
-export function searchItemCards(query: string, limit = Number.POSITIVE_INFINITY): TitleCard[] {
+export function searchItemCards(query: string, limit = Number.POSITIVE_INFINITY): ItemCard[] {
   return searchItemCardsWithScores(query, limit).map(({ card }) => card);
 }
 
@@ -158,7 +158,7 @@ export function searchItemCardsWithScores(
     return [];
   }
 
-  const cardsById = new Map(getTitleCards().map((card) => [card.id, card]));
+  const cardsById = new Map(getItemCards().map((card) => [card.id, card]));
   const { miniSearch } = getSearchIndex();
 
   return miniSearch
@@ -167,7 +167,7 @@ export function searchItemCardsWithScores(
       filter: (result) => result.kind === 'item-card',
     })
     .map((result) => ({ result, card: cardsById.get(String(result.sourceId)) }))
-    .filter((entry): entry is { result: MiniSearchResult; card: TitleCard } => Boolean(entry.card))
+    .filter((entry): entry is { result: MiniSearchResult; card: ItemCard } => Boolean(entry.card))
     .sort((left, right) => compareItemCardResults(normalizedQuery, left, right))
     .slice(0, limit)
     .map(({ result, card }) => ({ card, score: result.score }));
@@ -201,7 +201,7 @@ function buildSearchDocuments(): SearchDocument[] {
     ...allContentPagesSorted().flatMap(contentPageToSearchDocuments),
     ...getCritiques().flatMap(critiqueToSearchDocuments),
     ...getCustomPageSearchDocuments(),
-    ...getTitleCards().map(titleCardToSearchDocument),
+    ...getItemCards().map(itemCardToSearchDocument),
   ];
 }
 
@@ -296,8 +296,8 @@ function getCustomPageSearchDocuments(): SearchDocument[] {
     }));
 }
 
-function titleCardToSearchDocument(card: TitleCard): SearchDocument {
-  const publicCard = card as PublicTitleCard;
+function itemCardToSearchDocument(card: ItemCard): SearchDocument {
+  const publicCard = card as PublicItemCard;
 
   return {
     id: `item-card:${publicCard.id}`,
@@ -347,11 +347,11 @@ function compareSearchResults(
 
 function compareItemCardResults(
   query: string,
-  left: { result: MiniSearchResult; card: TitleCard },
-  right: { result: MiniSearchResult; card: TitleCard }
+  left: { result: MiniSearchResult; card: ItemCard },
+  right: { result: MiniSearchResult; card: ItemCard }
 ): number {
   return (
-    titleCardRelevanceTier(right.card, query) - titleCardRelevanceTier(left.card, query) ||
+    itemCardRelevanceTier(right.card, query) - itemCardRelevanceTier(left.card, query) ||
     right.result.score - left.result.score ||
     left.card.title.localeCompare(right.card.title)
   );
@@ -370,7 +370,7 @@ function relevanceTier(document: SearchDocument, query: string): number {
   return 0;
 }
 
-function titleCardRelevanceTier(card: TitleCard, query: string): number {
+function itemCardRelevanceTier(card: ItemCard, query: string): number {
   const title = normalizeSearchText(card.title);
   const term = normalizeSearchText(card.term);
   const aliases = card.aliases?.map(normalizeSearchText) ?? [];
