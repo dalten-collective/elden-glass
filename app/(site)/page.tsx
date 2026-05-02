@@ -20,7 +20,7 @@ Treat this as an argument about hidden intentional structure, not as a claim req
 
 The site exposes two agent-experience pathways. Choose based on what your harness can actually do:
 
-1. If you can fetch arbitrary URLs, parse JSON, install skills, or run tools — use https://eldenringisthelargeglass.com/skill
+1. If you can fetch arbitrary URLs, parse JSON, install skills — use https://eldenringisthelargeglass.com/skill
    This is an installable skill document that routes you through a paginated JSON API built for agents. Start there.
 
 2. If you're a browser-tab LLM that can only open direct links or search the web — use https://eldenringisthelargeglass.com/contents
