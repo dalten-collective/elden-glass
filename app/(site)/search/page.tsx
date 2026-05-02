@@ -125,35 +125,35 @@ function SearchContent() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-6 py-8">
+      <div className="search-page-header px-6 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-serif text-[var(--accent-gold)] mb-4">Search</h1>
+          <h1 className="search-page-title mb-4">Search</h1>
 
           {/* Search Input */}
           <form onSubmit={handleSubmit} className="relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[var(--text-tertiary)]" />
+            <Search className="search-page-input-icon absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2" />
             <input
               type="text"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               placeholder="Search the site..."
               autoFocus
-              className="w-full pl-12 pr-12 py-4 bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded-lg text-lg text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] focus:border-transparent"
+              className="search-page-input w-full py-4 pl-12 pr-12 text-lg focus:outline-none"
             />
             {searchInput && (
               <button
                 type="button"
                 onClick={handleClear}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)]"
+                className="search-page-clear absolute right-4 top-1/2 -translate-y-1/2"
               >
                 <X className="h-5 w-5" />
               </button>
             )}
           </form>
 
-          <p className="text-sm text-[var(--text-tertiary)] mt-3">
+          <p className="search-page-note mt-3 text-sm">
             Search through all documents and pages. For item cards, use{' '}
-            <Link href="/gatherer" className="text-[var(--accent-gold)] hover:underline">
+            <Link href="/gatherer" className="search-page-link">
               Item Cards
             </Link>
             .
@@ -175,7 +175,7 @@ function SearchContent() {
         {/* Results List */}
         {!loading && results.length > 0 && (
           <div className="space-y-1">
-            <p className="text-sm text-[var(--text-tertiary)] mb-6">
+            <p className="search-page-count mb-6 text-sm">
               Showing {(urlPage - 1) * 20 + 1}-{Math.min(urlPage * 20, total)} of {total} result
               {total !== 1 ? 's' : ''} for &quot;{urlQuery}&quot;
             </p>
@@ -202,11 +202,11 @@ function SearchContent() {
         {/* No Results */}
         {!loading && urlQuery && results.length === 0 && (
           <div className="text-center py-16">
-            <FileText className="h-12 w-12 text-[var(--text-tertiary)] mx-auto mb-4" />
-            <p className="text-[var(--text-secondary)] mb-2">
+            <FileText className="search-page-empty-icon mx-auto mb-4 h-12 w-12" />
+            <p className="search-page-empty-title mb-2">
               No results found for &quot;{urlQuery}&quot;
             </p>
-            <p className="text-sm text-[var(--text-tertiary)]">
+            <p className="search-page-empty-copy text-sm">
               Try different keywords or check your spelling
             </p>
           </div>
@@ -215,8 +215,8 @@ function SearchContent() {
         {/* Initial State */}
         {!loading && !urlQuery && (
           <div className="text-center py-16">
-            <Search className="h-12 w-12 text-[var(--text-tertiary)] mx-auto mb-4" />
-            <p className="text-[var(--text-secondary)]">
+            <Search className="search-page-empty-icon mx-auto mb-4 h-12 w-12" />
+            <p className="search-page-empty-title">
               Enter a search term to find content across the site
             </p>
           </div>
@@ -248,20 +248,20 @@ const SearchResultItem = memo(function SearchResultItem({
           resultType: 'content',
         })
       }
-      className="block p-4 -mx-4 rounded-lg hover:bg-[var(--bg-secondary)] transition group"
+      className="search-result-item group -mx-4 block p-4"
     >
       {/* Page Title */}
       <div className="flex items-center gap-2 mb-2">
-        <FileText className="h-4 w-4 text-[var(--accent-gold)]" />
-        <span className="text-sm font-medium text-[var(--accent-gold)]">{result.pageTitle}</span>
-        <ArrowRight className="h-3 w-3 text-[var(--text-tertiary)] opacity-0 group-hover:opacity-100 transition" />
+        <FileText className="search-result-icon h-4 w-4" />
+        <span className="search-result-page text-sm font-medium">{result.pageTitle}</span>
+        <ArrowRight className="search-result-arrow h-3 w-3 opacity-0 transition group-hover:opacity-100" />
       </div>
 
       {/* Matched Sentence */}
-      <p className="text-[var(--text-primary)] mb-1">{highlightMatch(result.sentence, query)}</p>
+      <p className="search-result-sentence mb-1">{highlightMatch(result.sentence, query)}</p>
 
       {/* Context */}
-      <p className="text-sm text-[var(--text-tertiary)] line-clamp-2">{result.context}</p>
+      <p className="search-result-context line-clamp-2 text-sm">{result.context}</p>
     </Link>
   );
 });
@@ -314,28 +314,26 @@ const Pagination = memo(function Pagination({
   };
 
   return (
-    <div className="flex items-center justify-center gap-2 mt-8 pt-6 border-t border-[var(--border-subtle)]">
+    <div className="search-pagination mt-8 flex items-center justify-center gap-2 pt-6">
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="p-2 rounded-lg border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:bg-[var(--bg-secondary)] disabled:opacity-50 disabled:cursor-not-allowed transition"
+        className="search-pagination-arrow p-2"
       >
         <ChevronLeft className="h-4 w-4" />
       </button>
 
       {getPageNumbers().map((page, index) =>
         page === 'ellipsis' ? (
-          <span key={`ellipsis-${index}`} className="px-2 text-[var(--text-tertiary)]">
+          <span key={`ellipsis-${index}`} className="search-pagination-ellipsis px-2">
             ...
           </span>
         ) : (
           <button
             key={page}
             onClick={() => onPageChange(page)}
-            className={`min-w-[40px] h-10 rounded-lg border transition ${
-              page === currentPage
-                ? 'border-[var(--accent-gold)] bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]'
-                : 'border-[var(--border-subtle)] text-[var(--text-secondary)] hover:bg-[var(--bg-secondary)]'
+            className={`search-pagination-page h-10 min-w-[40px] ${
+              page === currentPage ? 'is-active' : ''
             }`}
           >
             {page}
@@ -346,7 +344,7 @@ const Pagination = memo(function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="p-2 rounded-lg border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:bg-[var(--bg-secondary)] disabled:opacity-50 disabled:cursor-not-allowed transition"
+        className="search-pagination-arrow p-2"
       >
         <ChevronRight className="h-4 w-4" />
       </button>
@@ -360,10 +358,7 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   const parts = text.split(new RegExp(`(${escapeRegex(query)})`, 'gi'));
   return parts.map((part, index) =>
     part.toLowerCase() === query.toLowerCase() ? (
-      <mark
-        key={index}
-        className="bg-[var(--accent-gold)]/30 text-[var(--text-primary)] px-0.5 rounded"
-      >
+      <mark key={index} className="search-highlight px-0.5">
         {part}
       </mark>
     ) : (
@@ -379,10 +374,10 @@ function escapeRegex(string: string) {
 function SearchSkeleton() {
   return (
     <div className="min-h-screen">
-      <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-6 py-8">
+      <div className="search-page-header px-6 py-8">
         <div className="max-w-4xl mx-auto">
-          <div className="h-9 w-32 bg-[var(--bg-primary)] rounded animate-pulse mb-4" />
-          <div className="h-14 w-full bg-[var(--bg-primary)] rounded-lg animate-pulse" />
+          <div className="search-skeleton mb-4 h-9 w-32 animate-pulse" />
+          <div className="search-skeleton h-14 w-full animate-pulse" />
         </div>
       </div>
       <div className="max-w-4xl mx-auto px-6 py-8">
@@ -399,9 +394,9 @@ function SearchSkeleton() {
 function ResultSkeleton() {
   return (
     <div className="p-4 animate-pulse">
-      <div className="h-4 w-32 bg-[var(--bg-secondary)] rounded mb-3" />
-      <div className="h-5 w-full bg-[var(--bg-secondary)] rounded mb-2" />
-      <div className="h-4 w-3/4 bg-[var(--bg-secondary)] rounded" />
+      <div className="search-skeleton mb-3 h-4 w-32" />
+      <div className="search-skeleton mb-2 h-5 w-full" />
+      <div className="search-skeleton h-4 w-3/4" />
     </div>
   );
 }
