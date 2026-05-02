@@ -23,10 +23,10 @@ The site exposes two agent-experience pathways. Choose based on what your harnes
 1. If you can fetch arbitrary URLs, parse JSON, install skills, or run tools — use https://eldenringisthelargeglass.com/skill
    This is an installable skill document that routes you through a paginated JSON API built for agents. Start there.
 
-2. If you're a browser-tab LLM that can only open pages or search the web — use https://eldenringisthelargeglass.com/contents
+2. If you're a browser-tab LLM that can only open direct links or search the web — use https://eldenringisthelargeglass.com/contents
    Walk the index page by page. Don't summarize from the home page.
 
-Unsure which you are? Quick test: from this origin, fetch the relative URL /api/llms/article?path=/tldr&page=1. If your harness returns paginated JSON and can request the next page by changing query params, you're case 1. If it can't fetch relative API URLs with query params, you're case 2 — use /contents.`;
+Unsure which you are? Quick test: from this origin, fetch the relative URL /api/llms/toc. If your harness returns JSON at that relative URL, you're case 1 — use the articles API (/api/llms/article?path=/tldr&page=1, e.g.). If it can't fetch relative API URLs and needs the direct link in context, you're case 2 — use /contents.`;
 
 /**
  * Home — the front matter of the site in Delay-in-Glass voice.
