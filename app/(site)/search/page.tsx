@@ -125,35 +125,35 @@ function SearchContent() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <div className="search-page-header px-6 py-8">
+      <div className="dig-page-band px-6 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="search-page-title mb-4">Search</h1>
+          <h1 className="dig-page-title mb-4">Search</h1>
 
           {/* Search Input */}
           <form onSubmit={handleSubmit} className="relative">
-            <Search className="search-page-input-icon absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2" />
+            <Search className="dig-muted absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2" />
             <input
               type="text"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               placeholder="Search the site..."
               autoFocus
-              className="search-page-input w-full py-4 pl-12 pr-12 text-lg focus:outline-none"
+              className="dig-input w-full py-4 pl-12 pr-12 text-lg focus:outline-none"
             />
             {searchInput && (
               <button
                 type="button"
                 onClick={handleClear}
-                className="search-page-clear absolute right-4 top-1/2 -translate-y-1/2"
+                className="dig-icon-button absolute right-4 top-1/2 -translate-y-1/2"
               >
                 <X className="h-5 w-5" />
               </button>
             )}
           </form>
 
-          <p className="search-page-note mt-3 text-sm">
+          <p className="dig-muted mt-3 text-sm">
             Search through all documents and pages. For item cards, use{' '}
-            <Link href="/gatherer" className="search-page-link">
+            <Link href="/gatherer" className="dig-link">
               Item Cards
             </Link>
             .
@@ -175,7 +175,7 @@ function SearchContent() {
         {/* Results List */}
         {!loading && results.length > 0 && (
           <div className="space-y-1">
-            <p className="search-page-count mb-6 text-sm">
+            <p className="dig-muted mb-6 text-sm">
               Showing {(urlPage - 1) * 20 + 1}-{Math.min(urlPage * 20, total)} of {total} result
               {total !== 1 ? 's' : ''} for &quot;{urlQuery}&quot;
             </p>
@@ -202,23 +202,17 @@ function SearchContent() {
         {/* No Results */}
         {!loading && urlQuery && results.length === 0 && (
           <div className="text-center py-16">
-            <FileText className="search-page-empty-icon mx-auto mb-4 h-12 w-12" />
-            <p className="search-page-empty-title mb-2">
-              No results found for &quot;{urlQuery}&quot;
-            </p>
-            <p className="search-page-empty-copy text-sm">
-              Try different keywords or check your spelling
-            </p>
+            <FileText className="dig-muted mx-auto mb-4 h-12 w-12" />
+            <p className="dig-copy mb-2">No results found for &quot;{urlQuery}&quot;</p>
+            <p className="dig-muted text-sm">Try different keywords or check your spelling</p>
           </div>
         )}
 
         {/* Initial State */}
         {!loading && !urlQuery && (
           <div className="text-center py-16">
-            <Search className="search-page-empty-icon mx-auto mb-4 h-12 w-12" />
-            <p className="search-page-empty-title">
-              Enter a search term to find content across the site
-            </p>
+            <Search className="dig-muted mx-auto mb-4 h-12 w-12" />
+            <p className="dig-copy">Enter a search term to find content across the site</p>
           </div>
         )}
       </div>
@@ -248,20 +242,20 @@ const SearchResultItem = memo(function SearchResultItem({
           resultType: 'content',
         })
       }
-      className="search-result-item group -mx-4 block p-4"
+      className="dig-hover-row group -mx-4 block p-4"
     >
       {/* Page Title */}
       <div className="flex items-center gap-2 mb-2">
-        <FileText className="search-result-icon h-4 w-4" />
-        <span className="search-result-page text-sm font-medium">{result.pageTitle}</span>
-        <ArrowRight className="search-result-arrow h-3 w-3 opacity-0 transition group-hover:opacity-100" />
+        <FileText className="dig-link h-4 w-4" />
+        <span className="dig-link text-sm font-medium">{result.pageTitle}</span>
+        <ArrowRight className="dig-muted h-3 w-3 opacity-0 transition group-hover:opacity-100" />
       </div>
 
       {/* Matched Sentence */}
-      <p className="search-result-sentence mb-1">{highlightMatch(result.sentence, query)}</p>
+      <p className="dig-copy mb-1">{highlightMatch(result.sentence, query)}</p>
 
       {/* Context */}
-      <p className="search-result-context line-clamp-2 text-sm">{result.context}</p>
+      <p className="dig-muted line-clamp-2 text-sm">{result.context}</p>
     </Link>
   );
 });
@@ -314,25 +308,25 @@ const Pagination = memo(function Pagination({
   };
 
   return (
-    <div className="search-pagination mt-8 flex items-center justify-center gap-2 pt-6">
+    <div className="dig-pagination mt-8 flex items-center justify-center gap-2 pt-6">
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="search-pagination-arrow p-2"
+        className="dig-page-button p-2"
       >
         <ChevronLeft className="h-4 w-4" />
       </button>
 
       {getPageNumbers().map((page, index) =>
         page === 'ellipsis' ? (
-          <span key={`ellipsis-${index}`} className="search-pagination-ellipsis px-2">
+          <span key={`ellipsis-${index}`} className="dig-muted px-2">
             ...
           </span>
         ) : (
           <button
             key={page}
             onClick={() => onPageChange(page)}
-            className={`search-pagination-page h-10 min-w-[40px] ${
+            className={`dig-page-button h-10 min-w-[40px] ${
               page === currentPage ? 'is-active' : ''
             }`}
           >
@@ -344,7 +338,7 @@ const Pagination = memo(function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="search-pagination-arrow p-2"
+        className="dig-page-button p-2"
       >
         <ChevronRight className="h-4 w-4" />
       </button>
@@ -358,7 +352,7 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   const parts = text.split(new RegExp(`(${escapeRegex(query)})`, 'gi'));
   return parts.map((part, index) =>
     part.toLowerCase() === query.toLowerCase() ? (
-      <mark key={index} className="search-highlight px-0.5">
+      <mark key={index} className="dig-highlight px-0.5">
         {part}
       </mark>
     ) : (
@@ -374,10 +368,10 @@ function escapeRegex(string: string) {
 function SearchSkeleton() {
   return (
     <div className="min-h-screen">
-      <div className="search-page-header px-6 py-8">
+      <div className="dig-page-band px-6 py-8">
         <div className="max-w-4xl mx-auto">
-          <div className="search-skeleton mb-4 h-9 w-32 animate-pulse" />
-          <div className="search-skeleton h-14 w-full animate-pulse" />
+          <div className="dig-skeleton mb-4 h-9 w-32 animate-pulse" />
+          <div className="dig-skeleton h-14 w-full animate-pulse" />
         </div>
       </div>
       <div className="max-w-4xl mx-auto px-6 py-8">
@@ -394,9 +388,9 @@ function SearchSkeleton() {
 function ResultSkeleton() {
   return (
     <div className="p-4 animate-pulse">
-      <div className="search-skeleton mb-3 h-4 w-32" />
-      <div className="search-skeleton mb-2 h-5 w-full" />
-      <div className="search-skeleton h-4 w-3/4" />
+      <div className="dig-skeleton mb-3 h-4 w-32" />
+      <div className="dig-skeleton mb-2 h-5 w-full" />
+      <div className="dig-skeleton h-4 w-3/4" />
     </div>
   );
 }
