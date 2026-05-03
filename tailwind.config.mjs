@@ -8,19 +8,19 @@ const config = {
   theme: {
     extend: {
       colors: {
-        background: '#0d0d0d',
-        foreground: '#e8e6e3',
-        muted: '#1a1a1a',
-        card: '#1a1a1a',
+        background: 'var(--ink)',
+        foreground: 'var(--paper)',
+        muted: 'var(--ink-3)',
+        card: 'var(--ink-2)',
         accent: {
-          DEFAULT: '#c9a961',
-          muted: '#8a7c5c',
+          DEFAULT: 'var(--gold)',
+          muted: 'var(--gold-dim)',
         },
         border: {
-          subtle: '#2a2a2a',
-          emphasis: '#3a3a3a',
+          subtle: 'var(--pane-edge)',
+          emphasis: 'var(--crack-strong)',
         },
-        success: '#5c8a5a',
+        success: 'var(--verdigris)',
       },
       fontFamily: {
         serif: [
@@ -33,7 +33,7 @@ const config = {
         mono: ['var(--font-mono)', ...defaultTheme.fontFamily.mono],
       },
       boxShadow: {
-        panel: '0 20px 50px rgba(0, 0, 0, 0.35)',
+        panel: 'var(--shadow-panel)',
       },
       typography: {
         DEFAULT: {

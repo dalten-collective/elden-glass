@@ -78,6 +78,7 @@
   --rule: 1px solid var(--crack);
   --rule-strong: 1px solid var(--crack-strong);
   --rule-gold: 1px solid var(--gold-dim);
+  --shadow-panel: 0 20px 50px rgb(0 0 0 / 0.35);
 
   /* ────────────────────────────────────────────────────────────
      Legacy token aliases — keep existing components painting the
@@ -1658,49 +1659,45 @@ body {
   text-transform: uppercase;
 }
 
-/* Search surfaces — shared page and global-search composition over Delay
-   tokens. These classes intentionally replace older legacy-token Tailwind
-   recipes without changing the search interaction model. */
-.search-page-header {
+/* Delay interface recipes — reusable control, list, and feedback surfaces
+   for bespoke app routes. Layout stays in Tailwind; visual identity lives
+   here so feature routes do not grow parallel CSS dialects. */
+.dig-page-band {
   border-bottom: 1px solid var(--pane-edge);
   background: var(--ink-2);
 }
-.search-page-title {
+.dig-page-title {
   color: var(--gold);
   font-family: var(--font-serif);
   font-size: 30px;
   line-height: 1.2;
 }
-.search-page-input-icon,
-.search-page-clear,
-.search-page-note,
-.search-page-count,
-.search-result-arrow,
-.search-result-context,
-.search-pagination-ellipsis,
-.search-page-empty-icon,
-.global-search-icon-button,
-.global-search-clear,
-.global-search-empty,
-.global-search-result-meta,
-.global-search-result-context,
-.global-search-footer {
+.dig-muted {
   color: var(--paper-dimmer);
 }
-.search-page-clear,
-.global-search-icon-button,
-.global-search-clear {
-  transition: color 0.15s ease;
-}
-.search-page-clear:hover,
-.global-search-clear:hover {
+.dig-copy {
   color: var(--paper);
 }
-.global-search-icon-button:hover {
+.dig-link {
   color: var(--gold);
 }
-.search-page-input,
-.global-search-input {
+.dig-link:hover {
+  text-decoration: underline;
+}
+.dig-error {
+  color: var(--rust);
+}
+.dig-icon-button {
+  color: var(--paper-dimmer);
+  transition: color 0.15s ease;
+}
+.dig-icon-button:hover {
+  color: var(--paper);
+}
+.dig-icon-button--accent:hover {
+  color: var(--gold);
+}
+.dig-input {
   border: 1px solid var(--pane-edge);
   border-radius: 8px;
   background: var(--ink);
@@ -1709,47 +1706,74 @@ body {
     border-color 0.15s ease,
     box-shadow 0.15s ease;
 }
-.search-page-input::placeholder,
-.global-search-input::placeholder {
+.dig-input::placeholder {
   color: var(--paper-dimmer);
 }
-.search-page-input:focus,
-.global-search-input:focus {
+.dig-input:focus {
   border-color: transparent;
   box-shadow: 0 0 0 2px var(--gold);
 }
-.global-search-input {
+.dig-input--subtle {
   background: color-mix(in srgb, var(--ink-2) 50%, transparent);
 }
-.search-page-link,
-.search-result-icon,
-.search-result-page,
-.global-search-result-page {
-  color: var(--gold);
-}
-.search-page-link:hover {
-  text-decoration: underline;
-}
-.search-page-empty-title,
-.search-result-sentence,
-.global-search-result-sentence {
+.dig-select {
+  border: 1px solid var(--pane-edge);
+  background: var(--ink);
   color: var(--paper);
 }
-.search-page-empty-copy {
-  color: var(--paper-dimmer);
+.dig-select:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--gold);
 }
-.search-result-item {
+.dig-control-button {
+  border: 1px solid var(--pane-edge);
+  border-radius: 8px;
+  background: var(--ink-2);
+  color: var(--paper-dim);
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+.dig-control-button:hover {
+  color: var(--paper);
+}
+.dig-control-button.is-active {
+  border-color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 10%, transparent);
+  color: var(--gold);
+}
+.dig-control-panel {
+  border: 1px solid var(--pane-edge);
+  border-radius: 8px;
+  background: var(--ink-2);
+}
+.dig-filter-chip {
+  border: 1px solid var(--pane-edge);
+  border-radius: 9999px;
+  background: var(--ink);
+  color: var(--paper-dim);
+  transition: color 0.15s ease;
+}
+.dig-filter-chip:hover {
+  color: var(--paper);
+}
+.dig-filter-chip.is-active {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: var(--ink);
+}
+.dig-hover-row {
   border-radius: 8px;
   transition: background 0.15s ease;
 }
-.search-result-item:hover {
+.dig-hover-row:hover {
   background: var(--ink-2);
 }
-.search-pagination {
+.dig-pagination {
   border-top: 1px solid var(--pane-edge);
 }
-.search-pagination-arrow,
-.search-pagination-page {
+.dig-page-button {
   border: 1px solid var(--pane-edge);
   border-radius: 8px;
   color: var(--paper-dim);
@@ -1759,67 +1783,70 @@ body {
     border-color 0.15s ease,
     color 0.15s ease;
 }
-.search-pagination-arrow:hover,
-.search-pagination-page:hover {
+.dig-page-button:hover {
   background: var(--ink-2);
 }
-.search-pagination-arrow:disabled {
+.dig-page-button:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
-.search-pagination-page.is-active {
+.dig-page-button.is-active {
   border-color: var(--gold);
   background: color-mix(in srgb, var(--gold) 12%, transparent);
   color: var(--gold);
 }
-.search-highlight {
+.dig-page-button--solid-active.is-active {
+  background: var(--gold);
+  color: var(--ink);
+}
+.dig-highlight {
   border-radius: 3px;
   background: color-mix(in srgb, var(--gold) 30%, transparent);
   color: var(--paper);
 }
-.search-skeleton {
+.dig-highlight--solid {
+  background: var(--gold);
+  color: var(--ink);
+}
+.dig-skeleton {
   border-radius: 8px;
   background: var(--ink-2);
 }
-.global-search-dropdown {
+.dig-floating-panel {
   border: 1px solid var(--pane-edge);
   background: var(--ink-2);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
 }
-.global-search-dropdown--topbar {
+.dig-floating-panel--accent-edge {
   border-color: color-mix(in srgb, var(--pane-edge) 90%, var(--gold) 10%);
   border-radius: 8px;
 }
-.global-search-result {
+.dig-result-row {
   border-bottom: 1px solid var(--pane-edge);
   border-left: 2px solid transparent;
   transition:
     background 0.15s ease,
     border-color 0.15s ease;
 }
-.global-search-result:last-child {
+.dig-result-row:last-child {
   border-bottom: 0;
 }
-.global-search-result:hover {
+.dig-result-row:hover {
   background: color-mix(in srgb, var(--ink) 50%, transparent);
 }
-.global-search-result.is-selected {
+.dig-result-row.is-selected {
   border-left-color: var(--gold);
   background: color-mix(in srgb, var(--gold) 10%, transparent);
 }
-.global-search-badge {
+.dig-badge {
   border-radius: 4px;
   background: color-mix(in srgb, var(--gold) 20%, transparent);
   color: var(--gold);
 }
-.global-search-footer {
+.dig-panel-footer {
   border-top: 1px solid var(--pane-edge);
   background: color-mix(in srgb, var(--ink) 50%, transparent);
-}
-.global-search-highlight {
-  border-radius: 3px;
-  background: var(--gold);
-  color: var(--ink);
+  color: var(--paper-dimmer);
 }
 
 /* Inline item-card previews render in a document-body portal, so these

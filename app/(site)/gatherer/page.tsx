@@ -292,12 +292,12 @@ function GathererContent() {
   );
 
   return (
-    <div className="min-h-screen bg-[var(--bg-primary)]">
+    <div className="min-h-screen">
       {/* Header */}
-      <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-6 py-8">
+      <div className="dig-page-band px-6 py-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-serif text-[var(--accent-gold)] mb-2">Item Cards</h1>
-          <p className="text-[var(--text-secondary)]">
+          <h1 className="dig-page-title mb-2 text-4xl">Item Cards</h1>
+          <p className="dig-muted">
             Browse and search {data?.total?.toLocaleString() || '...'} structured item cards
           </p>
           {SHOW_LOCAL_FEDWIKI_LINK && (
@@ -305,7 +305,7 @@ function GathererContent() {
               href="http://localhost:3000/assets/gatherer.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-3 text-sm text-[var(--accent-gold)] hover:underline"
+              className="dig-link mt-3 inline-flex items-center gap-2 text-sm"
             >
               <Globe className="h-4 w-4" />
               Open local Federated Wiki export
@@ -318,18 +318,18 @@ function GathererContent() {
         {/* Search and Filter Toggle */}
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[var(--text-tertiary)]" />
+            <Search className="dig-muted absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2" />
             <input
               type="text"
               placeholder="Search cards by name, term, or description..."
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] focus:border-transparent"
+              className="dig-input dig-input--subtle w-full py-3 pl-10 pr-4 focus:outline-none"
             />
             {searchInput && (
               <button
                 onClick={() => setSearchInput('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)]"
+                className="dig-icon-button absolute right-3 top-1/2 -translate-y-1/2"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -337,10 +337,8 @@ function GathererContent() {
           </div>
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className={`flex items-center gap-2 px-4 py-3 rounded-lg border transition ${
-              showFilters || hasActiveFilters
-                ? 'bg-[var(--accent-gold)]/10 border-[var(--accent-gold)] text-[var(--accent-gold)]'
-                : 'bg-[var(--bg-secondary)] border-[var(--border-subtle)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+            className={`dig-control-button flex items-center gap-2 px-4 py-3 ${
+              showFilters || hasActiveFilters ? 'is-active' : ''
             }`}
           >
             <Filter className="h-5 w-5" />
@@ -351,17 +349,17 @@ function GathererContent() {
 
         {/* Filters */}
         {showFilters && (
-          <div className="mb-6 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-secondary)] p-3 sm:p-4">
+          <div className="dig-control-panel mb-6 p-3 sm:p-4">
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
               {/* Section Filter */}
               <div>
-                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
+                <label className="dig-muted mb-1 block text-[0.65rem] uppercase tracking-wider sm:mb-2 sm:text-xs">
                   Section
                 </label>
                 <select
                   value={urlSection}
                   onChange={(e) => handleSectionChange(e.target.value)}
-                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
+                  className="dig-select w-full rounded px-2 py-1.5 text-sm focus:outline-none sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Sections</option>
                   {data?.sections?.map((section) => (
@@ -374,13 +372,13 @@ function GathererContent() {
 
               {/* Category Filter */}
               <div>
-                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
+                <label className="dig-muted mb-1 block text-[0.65rem] uppercase tracking-wider sm:mb-2 sm:text-xs">
                   Category
                 </label>
                 <select
                   value={urlCategory}
                   onChange={(e) => handleCategoryChange(e.target.value)}
-                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
+                  className="dig-select w-full rounded px-2 py-1.5 text-sm focus:outline-none sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Categories</option>
                   {data?.categories?.map((category) => (
@@ -393,13 +391,13 @@ function GathererContent() {
 
               {/* Subcategory Filter */}
               <div>
-                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
+                <label className="dig-muted mb-1 block text-[0.65rem] uppercase tracking-wider sm:mb-2 sm:text-xs">
                   Subcategory
                 </label>
                 <select
                   value={urlSubcategory}
                   onChange={(e) => handleSubcategoryChange(e.target.value)}
-                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
+                  className="dig-select w-full rounded px-2 py-1.5 text-sm focus:outline-none sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Subcategories</option>
                   {data?.subcategories?.map((subcategory) => (
@@ -412,13 +410,13 @@ function GathererContent() {
 
               {/* Source Filter */}
               <div>
-                <label className="mb-1 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:mb-2 sm:text-xs">
+                <label className="dig-muted mb-1 block text-[0.65rem] uppercase tracking-wider sm:mb-2 sm:text-xs">
                   Source
                 </label>
                 <select
                   value={urlSource}
                   onChange={(e) => handleSourceChange(e.target.value)}
-                  className="w-full rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] px-2 py-1.5 text-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-gold)] sm:rounded-lg sm:px-3 sm:py-2"
+                  className="dig-select w-full rounded px-2 py-1.5 text-sm focus:outline-none sm:rounded-lg sm:px-3 sm:py-2"
                 >
                   <option value="">All Sources</option>
                   <option value="base">Base Game</option>
@@ -430,8 +428,8 @@ function GathererContent() {
 
             {/* Quick Section Filters */}
             {data?.sections && data.sections.length > 0 && (
-              <div className="mt-3 border-t border-[var(--border-subtle)] pt-3 sm:mt-4 sm:pt-4">
-                <label className="mb-2 block text-[0.65rem] uppercase tracking-wider text-[var(--text-tertiary)] sm:text-xs">
+              <div className="mt-3 border-t border-[var(--pane-edge)] pt-3 sm:mt-4 sm:pt-4">
+                <label className="dig-muted mb-2 block text-[0.65rem] uppercase tracking-wider sm:text-xs">
                   Quick Filters
                 </label>
                 <div className="-mx-3 flex max-h-11 gap-2 overflow-x-auto px-3 pb-1 sm:mx-0 sm:max-h-none sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
@@ -439,10 +437,8 @@ function GathererContent() {
                     <button
                       key={section}
                       onClick={() => handleSectionChange(section === urlSection ? '' : section)}
-                      className={`shrink-0 rounded-full px-3 py-1 text-xs transition sm:py-1.5 sm:text-sm ${
-                        urlSection === section
-                          ? 'bg-[var(--accent-gold)] text-black'
-                          : 'bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] border border-[var(--border-subtle)]'
+                      className={`dig-filter-chip shrink-0 px-3 py-1 text-xs sm:py-1.5 sm:text-sm ${
+                        urlSection === section ? 'is-active' : ''
                       }`}
                     >
                       {section}
@@ -453,16 +449,13 @@ function GathererContent() {
             )}
 
             {hasActiveFilters && (
-              <div className="mt-4 pt-4 border-t border-[var(--border-subtle)] flex items-center justify-between">
-                <span className="text-sm text-[var(--text-secondary)]">
+              <div className="mt-4 flex items-center justify-between border-t border-[var(--pane-edge)] pt-4">
+                <span className="dig-muted text-sm">
                   {data
                     ? `Showing ${data.cards.length} of ${data.total.toLocaleString()} matching cards`
                     : 'Loading...'}
                 </span>
-                <button
-                  onClick={clearFilters}
-                  className="text-sm text-[var(--accent-gold)] hover:underline"
-                >
+                <button onClick={clearFilters} className="dig-link text-sm">
                   Clear all filters
                 </button>
               </div>
@@ -473,11 +466,8 @@ function GathererContent() {
         {/* Error State */}
         {error && (
           <div className="text-center py-20">
-            <p className="text-red-500 mb-4">{error}</p>
-            <button
-              onClick={() => window.location.reload()}
-              className="text-[var(--accent-gold)] hover:underline"
-            >
+            <p className="dig-error mb-4">{error}</p>
+            <button onClick={() => window.location.reload()} className="dig-link">
               Try again
             </button>
           </div>
@@ -497,7 +487,7 @@ function GathererContent() {
           <>
             {/* Results Header with Pagination */}
             <div className="flex items-center justify-between mb-4">
-              <div className="text-sm text-[var(--text-secondary)]">
+              <div className="dig-muted text-sm">
                 {loading ? (
                   <span className="animate-pulse">Loading...</span>
                 ) : (
@@ -540,12 +530,9 @@ function GathererContent() {
             {/* No Results */}
             {data.cards.length === 0 && !loading && (
               <div className="text-center py-20">
-                <Database className="h-16 w-16 text-[var(--accent-gold)]/30 mx-auto mb-6" />
-                <p className="text-[var(--text-secondary)] mb-4">No cards match your filters</p>
-                <button
-                  onClick={clearFilters}
-                  className="text-[var(--accent-gold)] hover:underline"
-                >
+                <Database className="dig-link mx-auto mb-6 h-16 w-16 opacity-30" />
+                <p className="dig-muted mb-4">No cards match your filters</p>
+                <button onClick={clearFilters} className="dig-link">
                   Clear all filters
                 </button>
               </div>
@@ -571,15 +558,15 @@ function GathererContent() {
 // Full page skeleton for Suspense fallback
 function GathererSkeleton() {
   return (
-    <div className="min-h-screen bg-[var(--bg-primary)]">
-      <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-secondary)] px-6 py-8">
+    <div className="min-h-screen">
+      <div className="dig-page-band px-6 py-8">
         <div className="max-w-7xl mx-auto">
-          <div className="h-10 w-48 bg-[var(--bg-primary)] rounded animate-pulse mb-2" />
-          <div className="h-5 w-72 bg-[var(--bg-primary)] rounded animate-pulse" />
+          <div className="dig-skeleton mb-2 h-10 w-48 animate-pulse" />
+          <div className="dig-skeleton h-5 w-72 animate-pulse" />
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 py-6">
-        <div className="h-12 w-full bg-[var(--bg-secondary)] rounded-lg animate-pulse mb-6" />
+        <div className="dig-skeleton mb-6 h-12 w-full animate-pulse" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {Array.from({ length: 12 }).map((_, i) => (
             <CardSkeleton key={i} />
@@ -709,7 +696,7 @@ function Pagination({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="p-2 rounded hover:bg-[var(--bg-secondary)] disabled:opacity-30 disabled:cursor-not-allowed transition"
+        className="dig-page-button p-2 disabled:opacity-30"
         aria-label="Previous page"
       >
         <ChevronLeft className="h-4 w-4" />
@@ -717,17 +704,15 @@ function Pagination({
 
       {getPageNumbers().map((page, i) =>
         page === '...' ? (
-          <span key={`ellipsis-${i}`} className="px-2 text-[var(--text-tertiary)]">
+          <span key={`ellipsis-${i}`} className="dig-muted px-2">
             ...
           </span>
         ) : (
           <button
             key={page}
             onClick={() => onPageChange(page as number)}
-            className={`min-w-[36px] h-9 rounded text-sm font-medium transition ${
-              currentPage === page
-                ? 'bg-[var(--accent-gold)] text-black'
-                : 'hover:bg-[var(--bg-secondary)] text-[var(--text-secondary)]'
+            className={`dig-page-button dig-page-button--solid-active h-9 min-w-[36px] text-sm font-medium ${
+              currentPage === page ? 'is-active' : ''
             }`}
           >
             {page}
@@ -738,7 +723,7 @@ function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="p-2 rounded hover:bg-[var(--bg-secondary)] disabled:opacity-30 disabled:cursor-not-allowed transition"
+        className="dig-page-button p-2 disabled:opacity-30"
         aria-label="Next page"
       >
         <ChevronRight className="h-4 w-4" />

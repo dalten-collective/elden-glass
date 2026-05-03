@@ -65,6 +65,34 @@ The older `glass-card` class is legacy. Do not add new `glass-card` call sites.
 When touching a file that already uses it, prefer converting that local surface
 to `Pane` or a more specific Delay primitive.
 
+## Interface Recipes
+
+Bespoke app routes may need compact controls that are not editorial primitives.
+Use the shared `dig-*` recipes before adding route-specific classes:
+
+| Need                         | Use                           |
+| ---------------------------- | ----------------------------- |
+| App-route header band        | `dig-page-band`               |
+| App-route heading            | `dig-page-title`              |
+| Control input                | `dig-input`                   |
+| Subtle/translucent input     | `dig-input dig-input--subtle` |
+| Icon-only control            | `dig-icon-button`             |
+| Floating dropdown/modal pane | `dig-floating-panel`          |
+| Hoverable list row           | `dig-hover-row`               |
+| Selectable result row        | `dig-result-row`              |
+| Pagination rail              | `dig-pagination`              |
+| Pagination button            | `dig-page-button`             |
+| Search/result highlight      | `dig-highlight`               |
+| Badge                        | `dig-badge`                   |
+| Loading placeholder          | `dig-skeleton`                |
+| Muted supporting text        | `dig-muted`                   |
+| Primary body text            | `dig-copy`                    |
+| Gold link/accent text        | `dig-link`                    |
+
+Route names do not belong in global recipe names. A route may keep small local
+classes for unique layout or one-off composition, but repeated control/surface
+roles should be expressed through these shared recipes.
+
 ## Tailwind Boundary
 
 Tailwind remains the layout language.
@@ -87,6 +115,9 @@ Do not use Tailwind to create new visual identity:
 
 If a visual role repeats, make it a named Delay primitive or add one canonical
 token in `app/globals.css`.
+
+`tailwind.config.mjs` must not define an independent palette. Any named Tailwind
+color or shadow extension should point at `app/globals.css` tokens.
 
 ## Inline Styles
 

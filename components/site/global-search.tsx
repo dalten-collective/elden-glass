@@ -187,7 +187,7 @@ export function GlobalSearch({
         <button
           onClick={goToSearchPage}
           type="button"
-          className="global-search-icon-button absolute left-3 top-1/2 z-10 -translate-y-1/2"
+          className="dig-icon-button dig-icon-button--accent absolute left-3 top-1/2 z-10 -translate-y-1/2"
         >
           <Search className="h-4 w-4" />
         </button>
@@ -201,12 +201,12 @@ export function GlobalSearch({
             shouldShowPreview && query.length >= 2 && results.length > 0 && setIsOpen(true)
           }
           placeholder="Search the site..."
-          className="global-search-input w-full py-2 pl-10 pr-10 text-sm focus:outline-none"
+          className="dig-input dig-input--subtle w-full py-2 pl-10 pr-10 text-sm focus:outline-none"
         />
         {query && (
           <button
             onClick={handleClear}
-            className="global-search-clear absolute right-3 top-1/2 -translate-y-1/2"
+            className="dig-icon-button absolute right-3 top-1/2 -translate-y-1/2"
           >
             <X className="h-4 w-4" />
           </button>
@@ -218,14 +218,14 @@ export function GlobalSearch({
         <div
           className={
             variant === 'sidebar'
-              ? 'global-search-dropdown global-search-dropdown--sidebar absolute left-0 right-0 top-full z-[100] mt-2 max-h-[60vh] overflow-y-auto'
-              : 'global-search-dropdown global-search-dropdown--topbar absolute top-full z-50 mt-2 max-h-[70vh] w-full overflow-hidden overflow-y-auto'
+              ? 'dig-floating-panel absolute left-0 right-0 top-full z-[100] mt-2 max-h-[60vh] overflow-y-auto'
+              : 'dig-floating-panel dig-floating-panel--accent-edge absolute top-full z-50 mt-2 max-h-[70vh] w-full overflow-hidden overflow-y-auto'
           }
         >
           {isLoading ? (
-            <div className="global-search-empty p-4 text-center text-sm">Searching...</div>
+            <div className="dig-muted p-4 text-center text-sm">Searching...</div>
           ) : results.length === 0 ? (
-            <div className="global-search-empty p-4 text-center text-sm">No results found</div>
+            <div className="dig-muted p-4 text-center text-sm">No results found</div>
           ) : (
             <div>
               {results.map((result, index) => (
@@ -233,45 +233,41 @@ export function GlobalSearch({
                   key={result.id}
                   onClick={() => handleSelectResult(result, index)}
                   onMouseEnter={() => setSelectedIndex(index)}
-                  className={`global-search-result w-full px-4 py-3 text-left ${
+                  className={`dig-result-row w-full px-4 py-3 text-left ${
                     index === selectedIndex ? 'is-selected' : ''
                   }`}
                 >
                   {/* Item Card badge or Page Title */}
                   <div className="flex items-center gap-2 mb-1">
                     {result.type === 'itemcard' ? (
-                      <span className="global-search-badge inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.1em]">
+                      <span className="dig-badge inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.1em]">
                         <BookText className="h-3 w-3" />
                         Definition
                       </span>
                     ) : (
-                      <span className="global-search-result-page text-[10px] font-light uppercase tracking-[0.15em]">
+                      <span className="dig-link text-[10px] font-light uppercase tracking-[0.15em]">
                         {result.pageTitle}
                       </span>
                     )}
                     {result.type === 'itemcard' && result.pageTitle && (
-                      <span className="global-search-result-meta text-[10px]">
-                        {result.pageTitle}
-                      </span>
+                      <span className="dig-muted text-[10px]">{result.pageTitle}</span>
                     )}
                   </div>
 
                   {/* Sentence/Match */}
-                  <div className="global-search-result-sentence mb-1 line-clamp-2 text-sm font-medium">
+                  <div className="dig-copy mb-1 line-clamp-2 text-sm font-medium">
                     {highlightMatch(result.sentence, query)}
                   </div>
 
                   {/* Context */}
-                  <div className="global-search-result-context line-clamp-2 text-xs">
-                    {result.context}
-                  </div>
+                  <div className="dig-muted line-clamp-2 text-xs">{result.context}</div>
                 </button>
               ))}
             </div>
           )}
 
           {/* Footer with keyboard shortcuts */}
-          <div className="global-search-footer flex items-center justify-between px-4 py-2 text-[10px]">
+          <div className="dig-panel-footer flex items-center justify-between px-4 py-2 text-[10px]">
             {results.length > 0 ? (
               <>
                 <span>↑↓ Navigate</span>
@@ -316,7 +312,7 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   const parts = text.split(new RegExp(`(${query})`, 'gi'));
   return parts.map((part, index) =>
     part.toLowerCase() === query.toLowerCase() ? (
-      <mark key={index} className="global-search-highlight px-0.5">
+      <mark key={index} className="dig-highlight dig-highlight--solid px-0.5">
         {part}
       </mark>
     ) : (
