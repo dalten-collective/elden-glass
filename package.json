@@ -17,14 +17,16 @@
     "test": "node --test lib/**/*.test.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run check:generated && npm run check:tokens && npm run lint && npm run lint:actions && npm run format:check && npm run typecheck && NEXT_TELEMETRY_DISABLED=1 npm run build",
+    "check": "npm run check:generated && npm run check:tokens && npm run check:title-cards && npm run lint && npm run lint:actions && npm run format:check && npm run typecheck && NEXT_TELEMETRY_DISABLED=1 npm run build",
     "sync:critique-assets": "node scripts/sync-critique-assets.js",
     "sync:manuscripts": "node scripts/sync-manuscripts.js",
     "sync:from-wiki": "node scripts/sync-from-fedwiki.js",
     "sync:to-wiki": "node scripts/export-to-fedwiki.js",
     "sync:gatherer": "node scripts/generate-fedwiki-gatherer.js",
     "predev": "npm run check:generated",
-    "prebuild": "npm run check:generated && npm run check:tokens"
+    "prebuild": "npm run check:generated && npm run check:tokens",
+    "audit:title-cards": "node scripts/audit-title-cards.js",
+    "check:title-cards": "node scripts/audit-title-cards.js --check"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
