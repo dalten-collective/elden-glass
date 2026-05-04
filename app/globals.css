@@ -1873,11 +1873,15 @@ body {
   outline-offset: 3px;
 }
 .item-card-popover {
-  overflow: hidden;
-  border: 1px solid var(--pane-edge);
-  border-radius: 6px;
-  background: var(--ink-2);
-  box-shadow: 0 24px 60px rgb(0 0 0 / 0.45);
+  display: flex;
+  overflow: visible;
+  min-height: 96px;
+  max-height: calc(100vh - 32px);
+  flex-direction: column;
+  border: 3px double var(--pane-edge);
+  border-radius: 0;
+  background: var(--ink);
+  box-shadow: 1px 2px 8px 0 rgb(0 0 0 / 0.72);
   opacity: 0;
   pointer-events: none;
   text-align: left;
@@ -1888,6 +1892,229 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+.item-card-popover--pinned {
+  border-color: color-mix(in srgb, var(--gold-dim) 60%, var(--pane-edge) 40%);
+  box-shadow:
+    1px 2px 8px 0 rgb(0 0 0 / 0.76),
+    0 0 0 1px rgb(196 167 106 / 0.1) inset;
+}
+.item-card-popover--maximized {
+  border-radius: 0;
+}
+.item-card-popover--minimized {
+  height: 30px !important;
+  min-height: 30px;
+}
+.item-card-popover__title-bar {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  height: 31px;
+  align-items: center;
+  flex: 0 0 31px;
+  border-bottom: 1px solid color-mix(in srgb, var(--gold-dim) 50%, var(--pane-edge) 50%);
+  background:
+    linear-gradient(135deg, rgb(196 167 106 / 0.12) 25%, transparent 25%) 0 0 / 8px 8px,
+    linear-gradient(135deg, transparent 75%, rgb(196 167 106 / 0.12) 75%) 0 0 / 8px 8px,
+    color-mix(in srgb, var(--ink) 88%, var(--gold-dim) 12%);
+  color: var(--gold-dim);
+  cursor: grab;
+  user-select: none;
+}
+.item-card-popover--minimized .item-card-popover__title-bar {
+  border-bottom: 0;
+  cursor: pointer;
+}
+.item-card-popframe-dragging,
+.item-card-popframe-dragging * {
+  cursor: grabbing !important;
+  user-select: none !important;
+}
+.item-card-popover__actions {
+  position: relative;
+  z-index: 4;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 0 2px;
+}
+.item-card-popover__control {
+  position: relative;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+.item-card-popover__button {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: var(--gold-dim);
+  cursor: pointer;
+  padding: 5px;
+}
+.item-card-popover__button:hover,
+.item-card-popover__button:focus-visible {
+  background: rgb(196 167 106 / 0.1);
+  color: var(--gold-bright);
+  outline: none;
+}
+.item-card-popover__button:active {
+  transform: scale(0.9);
+}
+.item-card-popover__button:disabled {
+  color: rgb(196 167 106 / 0.24);
+  cursor: default;
+}
+.item-card-popover__button svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 1px var(--ink)) drop-shadow(0 0 2px var(--ink));
+  stroke-width: 2;
+}
+.item-card-popover__submenu {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  display: grid;
+  visibility: hidden;
+  grid-template-columns: repeat(3, 28px);
+  gap: 1px;
+  border: 1px solid color-mix(in srgb, var(--gold-dim) 65%, var(--pane-edge) 35%);
+  background: color-mix(in srgb, var(--gold-dim) 65%, var(--pane-edge) 35%);
+  box-shadow: 1px 1px 0 0 rgb(0 0 0 / 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    visibility 100ms ease 180ms,
+    opacity 100ms ease 180ms;
+}
+.item-card-popover__submenu::before {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  height: 6px;
+  content: '';
+}
+.item-card-popover__control--zoom:hover .item-card-popover__submenu,
+.item-card-popover__control--open .item-card-popover__submenu,
+.item-card-popover__submenu:hover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.item-card-popover__submenu .item-card-popover__button {
+  background: var(--ink);
+}
+.item-card-popover__title {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  flex: 1 1 100%;
+  color: var(--paper);
+  filter: drop-shadow(0 0 1px var(--ink)) drop-shadow(0 0 2px var(--ink));
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 0 112px 0 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.item-card-popover__right-slot {
+  width: 28px;
+  height: 100%;
+  flex: 0 0 28px;
+}
+.item-card-popover__scroll {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  background: var(--ink-2);
+  overscroll-behavior: none;
+}
+.item-card-popover__scroll::-webkit-scrollbar {
+  width: 14px;
+}
+.item-card-popover__scroll::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 0 3px var(--ink-2) inset;
+  background: var(--pane-edge);
+}
+.item-card-popover__scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dim);
+}
+.item-card-popover__resize {
+  position: absolute;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.item-card-popover__resize--n,
+.item-card-popover__resize--s {
+  right: 16px;
+  left: 16px;
+  height: 10px;
+  cursor: row-resize;
+}
+.item-card-popover__resize--n {
+  top: -5px;
+}
+.item-card-popover__resize--s {
+  bottom: -5px;
+}
+.item-card-popover__resize--e,
+.item-card-popover__resize--w {
+  top: 16px;
+  bottom: 16px;
+  width: 10px;
+  cursor: col-resize;
+}
+.item-card-popover__resize--e {
+  right: -5px;
+}
+.item-card-popover__resize--w {
+  left: -5px;
+}
+.item-card-popover__resize--ne,
+.item-card-popover__resize--nw,
+.item-card-popover__resize--se,
+.item-card-popover__resize--sw {
+  width: 18px;
+  height: 18px;
+}
+.item-card-popover__resize--ne,
+.item-card-popover__resize--sw {
+  cursor: nesw-resize;
+}
+.item-card-popover__resize--nw,
+.item-card-popover__resize--se {
+  cursor: nwse-resize;
+}
+.item-card-popover__resize--ne {
+  top: -6px;
+  right: -6px;
+}
+.item-card-popover__resize--nw {
+  top: -6px;
+  left: -6px;
+}
+.item-card-popover__resize--se {
+  right: -6px;
+  bottom: -6px;
+}
+.item-card-popover__resize--sw {
+  bottom: -6px;
+  left: -6px;
+}
 .item-card-status {
   padding: 16px;
   color: var(--paper-dim);
@@ -1895,8 +2122,8 @@ body {
   font-size: 14px;
 }
 .item-card-preview {
+  min-height: 100%;
   overflow: hidden;
-  border-radius: 6px;
 }
 .item-card-preview__media {
   position: relative;
