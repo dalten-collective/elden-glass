@@ -3,6 +3,15 @@ import { EB_Garamond, Inter_Tight } from 'next/font/google';
 import localFont from 'next/font/local';
 
 import './globals.css';
+import {
+  absoluteSiteUrl,
+  DEFAULT_OG_IMAGE,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+  SITE_NAME,
+  SITE_ORIGIN,
+  SITE_TITLE,
+} from '@/lib/site-metadata';
 
 // Delay in Glass typography:
 //   • EB Garamond — the voice (body, headings)
@@ -36,31 +45,11 @@ const jetBrainsMono = localFont({
   variable: '--font-mono',
 });
 
-/**
- * Canonical site URL. In production this should be set via NEXT_PUBLIC_BASE_URL
- * (Vercel sets it automatically; the sitemap already reads from the same var).
- * The fallback is the eldenringisthelargeglass.com production domain so local
- * dev still renders absolute OG/Twitter image URLs rather than localhost
- * references, which silences Next's "metadataBase is not set" build-time
- * warning.
- */
-const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://eldenringisthelargeglass.com';
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: 'Elden Glass — Blockchain Verified Lore Discovery',
-  description:
-    "A groundbreaking discovery reveals Elden Ring as a digital reimagining of Marcel Duchamp's The Large Glass. Blockchain-timestamped research with cryptographic verification.",
-  keywords: [
-    'Elden Ring',
-    'Marcel Duchamp',
-    'The Large Glass',
-    'FromSoftware',
-    'Pataphysics',
-    'Game Analysis',
-    'Art History',
-    'Blockchain Verification',
-  ],
+  metadataBase: new URL(SITE_ORIGIN),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  keywords: SITE_KEYWORDS,
   authors: [{ name: 'TGB' }],
   icons: {
     icon: '/images/dashusnavnulsigil.png',
@@ -68,29 +57,22 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: 'Elden Ring Is The Large Glass - Verified Discovery',
-    description:
-      "FromSoftware's masterpiece decoded: A complete digital reimagining of Duchamp's mechanical bride fantasy.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     type: 'website',
     locale: 'en_US',
-    siteName: 'Elden Glass',
-    images: [
-      {
-        url: '/images/replica-large-glass.jpg',
-        width: 800,
-        height: 533,
-        alt: 'The Large Glass replica in Tokyo',
-      },
-    ],
+    siteName: SITE_NAME,
+    url: '/',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Elden Ring Is The Large Glass',
-    description:
-      "A blockchain-verified discovery proving Elden Ring reimagines Duchamp's The Large Glass",
-    images: ['/images/replica-large-glass.jpg'],
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE.url],
   },
   alternates: {
+    canonical: '/',
     types: {
       'application/rss+xml': '/feed.xml',
       'text/plain': '/llms.txt',
@@ -117,10 +99,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={fontVars} data-scroll-behavior="smooth">
       <body className="delay">
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd()) }}
+        />
         <PostHogMount />
         {children}
         {process.env.NODE_ENV === 'development' && <AgentationDev />}
       </body>
     </html>
   );
+}
+
+/**
+ * Describes the site as a WebSite / CreativeWork for search crawlers.
+ */
+function siteJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    alternateName: 'Elden Ring Is The Large Glass',
+    url: absoluteSiteUrl('/'),
+    description: SITE_DESCRIPTION,
+    inLanguage: 'en-US',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Dalten Collective',
+    },
+  };
 }

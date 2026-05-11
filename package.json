@@ -10,6 +10,8 @@
     "check:generated": "npm run check:critique-assets && npm run check:manuscripts",
     "check:manuscripts": "node scripts/sync-manuscripts.js --check",
     "check:tokens": "node scripts/check-css-tokens.js",
+    "traffic:weekly": "node scripts/posthog-weekly-report.js",
+    "audit:search": "node scripts/audit-search-plumbing.js",
     "audit:styles": "node scripts/audit-style-system.js",
     "lint": "eslint . --max-warnings=0",
     "lint:actions": "github-actionlint",
