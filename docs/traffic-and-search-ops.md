@@ -50,6 +50,30 @@ Use this as a regression check after changes to metadata, routing, frontmatter,
 or the route catalog. It is advisory for now; it is not wired into `npm run
 check`.
 
+## IndexNow Submission
+
+The site hosts the IndexNow key file at:
+
+```text
+https://eldenringisthelargeglass.com/cb05d35765734697acbac8a8a77f4b68.txt
+```
+
+After production has deployed the current sitemap, submit it to IndexNow:
+
+```bash
+npm run indexnow:submit
+```
+
+For verification without submitting:
+
+```bash
+npm run indexnow:submit -- --dry-run
+```
+
+The script fetches the live production sitemap, filters URLs to the configured
+host, and posts them to `https://api.indexnow.org/IndexNow` with the hosted key
+location. Use `--limit=N` for a small test submission.
+
 ## Operating Boundary
 
 PostHog answers what visitors and agents actually did on the site. Google
