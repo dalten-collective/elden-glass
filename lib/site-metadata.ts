@@ -3,7 +3,7 @@ export const SITE_ORIGIN =
 
 export const SITE_NAME = 'Elden Glass';
 
-export const SITE_TITLE = 'Elden Ring Is The Large Glass | Elden Glass';
+export const SITE_TITLE = "Elden Glass - Elden Ring and Marcel Duchamp's Large Glass";
 
 export const SITE_DESCRIPTION =
   "A long-form thesis arguing that Elden Ring is a playable realization of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even, with evidence across The Large Glass, the Green Box, Great Runes, and FromSoftware's world design.";

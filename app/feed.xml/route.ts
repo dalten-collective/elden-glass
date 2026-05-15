@@ -36,9 +36,9 @@ function generateRss(items: FeedItem[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elden Glass - The Large Glass Discovery</title>
+    <title>Elden Glass - Elden Ring and Marcel Duchamp's Large Glass</title>
     <link>${BASE_URL}</link>
-    <description>Elden Ring is a digital reimagining of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even. Blockchain-verified research proving FromSoftware's masterpiece is a 'pataphysical artwork.</description>
+    <description>Elden Ring is a digital reimagining of Marcel Duchamp's The Bride Stripped Bare by Her Bachelors, Even. Long-form art criticism tracing FromSoftware's masterpiece through The Large Glass, the Green Box, and 'pataphysics.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${BASE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
