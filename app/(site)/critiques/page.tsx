@@ -4,11 +4,15 @@ import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { getCritiques } from '@/lib/content';
+import { sitePageMetadata } from '@/lib/site-metadata';
 
 export const metadata: Metadata = {
-  title: 'Critiques & Responses - Elden Ring Is The Large Glass',
-  description:
-    'Detailed analyses and responses to existing Elden Ring scholarship through the lens of the Duchamp discovery',
+  ...sitePageMetadata({
+    title: 'Critiques & Responses | Elden Glass',
+    description:
+      'Detailed analyses and responses to existing Elden Ring scholarship through the lens of the Duchamp discovery.',
+    path: '/critiques',
+  }),
 };
 
 export default function CritiquesPage() {

@@ -35,6 +35,7 @@ auditFileContains('app/robots.ts', [
   ["'/api/'", 'Robots route disallows generic API crawling.'],
 ]);
 
+auditBespokeRouteMetadata();
 auditContentFrontmatter();
 
 printReport();
@@ -99,6 +100,17 @@ function auditContentFrontmatter() {
         relativePath,
         `Key route /${slug} has title, summary, and updated metadata.`
       );
+
+      if (slug === 'tldr') {
+        addFinding(
+          typeof parsed.data.seoTitle === 'string' &&
+            parsed.data.seoTitle.includes('Elden Ring Is The Large Glass')
+            ? 'PASS'
+            : 'FAIL',
+          relativePath,
+          'TL;DR has an exact-claim SEO title distinct from its visible title.'
+        );
+      }
       keySlugs.delete(slug);
     }
   }
@@ -116,6 +128,45 @@ function auditContentFrontmatter() {
   if (shortSummaries === 0) {
     addFinding('PASS', 'content/pages', 'No content summaries are shorter than 80 characters.');
   }
+}
+
+/**
+ * Ensures bespoke app routes own route-level metadata instead of inheriting
+ * the homepage canonical, title, Open Graph, and Twitter tags.
+ */
+function auditBespokeRouteMetadata() {
+  const routes = [
+    ['app/(site)/contents/page.tsx', '/contents', "'/contents'"],
+    ['app/(site)/critiques/page.tsx', '/critiques', "'/critiques'"],
+    ['app/(site)/critiques/[slug]/page.tsx', '/critiques/[slug]', '`/critiques/${critique.slug}`'],
+    [
+      'app/(site)/duchamp/duchamp-works/page.tsx',
+      '/duchamp/duchamp-works',
+      "'/duchamp/duchamp-works'",
+    ],
+    ['app/(site)/gatherer/layout.tsx', '/gatherer', "'/gatherer'"],
+    ['app/(site)/search/layout.tsx', '/search', "'/search'"],
+    ['app/(site)/xenotext/layout.tsx', '/xenotext', "'/xenotext'"],
+  ];
+
+  for (const [relativePath, routePath, canonicalNeedle] of routes) {
+    const filePath = path.join(root, relativePath);
+    if (!fs.existsSync(filePath)) {
+      addFinding('FAIL', relativePath, `Missing metadata owner for ${routePath}.`);
+      continue;
+    }
+
+    const source = fs.readFileSync(filePath, 'utf8');
+    addFinding(
+      source.includes('sitePageMetadata') && source.includes(canonicalNeedle) ? 'PASS' : 'FAIL',
+      relativePath,
+      `Bespoke route ${routePath} declares its own canonical metadata.`
+    );
+  }
+
+  auditFileContains('lib/route-catalog.ts', [
+    ["path: '/contents'", 'Route catalog includes /contents in the sitemap inventory.'],
+  ]);
 }
 
 /**

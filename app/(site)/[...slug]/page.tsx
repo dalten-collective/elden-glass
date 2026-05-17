@@ -26,28 +26,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  const title = `${doc.title} | ${SITE_NAME}`;
+  const title = doc.seoTitle ?? `${doc.title} | ${SITE_NAME}`;
+  const description = doc.seoSummary ?? doc.summary;
+  const modifiedTime = doc.seoUpdated ?? doc.updated;
 
   return {
     title,
-    description: doc.summary,
+    description,
     alternates: {
       canonical: doc.url,
     },
     openGraph: {
       title,
-      description: doc.summary,
+      description,
       type: 'article',
       url: doc.url,
       siteName: SITE_NAME,
       publishedTime: doc.date,
-      modifiedTime: doc.updated,
+      modifiedTime,
       images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       card: 'summary_large_image',
       title,
-      description: doc.summary,
+      description,
       images: [DEFAULT_OG_IMAGE.url],
     },
   };
@@ -87,12 +89,12 @@ function contentJsonLd(doc: NonNullable<ReturnType<typeof getContentPageBySlug>>
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: doc.title,
-    description: doc.summary,
+    headline: doc.seoTitle ?? doc.title,
+    description: doc.seoSummary ?? doc.summary,
     url: absoluteSiteUrl(doc.url),
     mainEntityOfPage: absoluteSiteUrl(doc.url),
     datePublished: doc.date,
-    dateModified: doc.updated,
+    dateModified: doc.seoUpdated ?? doc.updated,
     inLanguage: 'en-US',
     isPartOf: {
       '@type': 'WebSite',
