@@ -1,5 +1,13 @@
 import { DuchampWorksGallery } from '@/components/duchamp-works/duchamp-works-gallery';
 import { getDuchampArtworkPeriods } from '@/lib/duchamp-artworks';
+import { sitePageMetadata } from '@/lib/site-metadata';
+
+export const metadata = sitePageMetadata({
+  title: "Duchamp's Works | Elden Glass",
+  description:
+    "A chronological gallery of Marcel Duchamp's works, from early paintings through the readymades, The Large Glass, and late objects.",
+  path: '/duchamp/duchamp-works',
+});
 
 export default function DuchampWorksPreviewPage() {
   const periods = getDuchampArtworkPeriods();

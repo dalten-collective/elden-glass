@@ -38,6 +38,17 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.eldenringisthelargeglass.com"
+        }
+      ],
+      "destination": "https://eldenringisthelargeglass.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/rss",
       "destination": "/feed.xml",
       "permanent": true
