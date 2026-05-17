@@ -6,6 +6,7 @@ import { MarkdownRenderer } from '@/components/mdx/markdown-renderer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { getCritiqueBySlug, getCritiques } from '@/lib/content';
+import { sitePageMetadata } from '@/lib/site-metadata';
 
 interface CritiquePageProps {
   params: Promise<{ slug: string }>;
@@ -13,6 +14,24 @@ interface CritiquePageProps {
 
 export async function generateStaticParams() {
   return getCritiques().map((critique) => ({ slug: critique.slug }));
+}
+
+export async function generateMetadata({ params }: CritiquePageProps) {
+  const resolvedParams = await params;
+  const critique = getCritiqueBySlug(resolvedParams.slug);
+
+  if (!critique) {
+    return {};
+  }
+
+  return sitePageMetadata({
+    title: `${critique.title} | Elden Glass`,
+    description: critique.summary,
+    path: `/critiques/${critique.slug}`,
+    type: 'article',
+    publishedTime: critique.published,
+    modifiedTime: critique.updated,
+  });
 }
 
 export default async function CritiquePage({ params }: CritiquePageProps) {

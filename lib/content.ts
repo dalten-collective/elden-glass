@@ -29,6 +29,9 @@ export type ContentPage = {
   url: string;
   title: string;
   summary: string;
+  seoTitle?: string;
+  seoSummary?: string;
+  seoUpdated?: string;
   updated: string;
   date: string;
   subtitle?: string;
@@ -70,6 +73,9 @@ const optionalStringField = z.string().optional();
 const contentPageFrontmatterSchema = z.object({
   title: z.string(),
   summary: z.string(),
+  seoTitle: optionalStringField,
+  seoSummary: optionalStringField,
+  seoUpdated: dateField.optional(),
   updated: dateField,
   subtitle: optionalStringField,
   eyebrow: optionalStringField,

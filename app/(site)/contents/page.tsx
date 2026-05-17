@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { Crackline, Eyebrow, Pane, Spec } from '@/components/delay';
 import { getRouteCatalogIndex, type RouteCatalogEntry } from '@/lib/route-catalog';
+import { sitePageMetadata } from '@/lib/site-metadata';
 import { buildSidebar, type NavItem, type NavLinkItem, type NavSectionItem } from '@/lib/sidebar';
 
 /**
@@ -25,9 +26,12 @@ import { buildSidebar, type NavItem, type NavLinkItem, type NavSectionItem } fro
  * this page is a browser-LLM that can't reach those surfaces anyway.
  */
 export const metadata: Metadata = {
-  title: 'Contents · Apparatus for Agents — Elden Glass',
-  description:
-    'A real HTML index of every readable page on Elden Glass, designed for browser-based LLM agents that can only follow anchor links.',
+  ...sitePageMetadata({
+    title: 'Contents · Apparatus for Agents | Elden Glass',
+    description:
+      'A real HTML index of every readable page on Elden Glass, designed for browser-based LLM agents that can only follow anchor links.',
+    path: '/contents',
+  }),
 };
 
 const SELF_PATH = '/contents';
