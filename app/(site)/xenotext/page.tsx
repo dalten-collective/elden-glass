@@ -3,7 +3,7 @@
 // genetic-code lookup, and animation — not prose content. Stays bespoke.
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, type ReactNode } from 'react';
 import {
   ArrowDown,
   Dna,
@@ -227,13 +227,37 @@ const dnaToRna: Record<string, string> = {
 
 // Base colors
 const baseColors: Record<string, string> = {
-  A: 'text-green-400',
-  T: 'text-red-400',
-  U: 'text-orange-400',
-  G: 'text-yellow-400',
-  C: 'text-blue-400',
-  '-': 'text-gray-500',
+  A: 'text-[var(--gold)]',
+  T: 'text-[var(--rust)]',
+  U: 'text-[color-mix(in_srgb,var(--rust)_70%,var(--gold))]',
+  G: 'text-[var(--gold)]',
+  C: 'text-[var(--glass-blue)]',
+  '-': 'text-[var(--paper-dimmer)]',
 };
+
+type XenoSectionProps = {
+  accent?: boolean;
+  hero?: boolean;
+  children: ReactNode;
+};
+
+/**
+ * Keeps the bespoke Xenotext tool on Delay pane styling without changing
+ * its client-side cipher behavior.
+ */
+function XenoSection({ accent = false, hero = false, children }: XenoSectionProps) {
+  return (
+    <section
+      className={[
+        'pane',
+        accent ? 'border-[var(--gold)]' : 'pane--solid',
+        hero ? 'p-8 lg:p-12' : 'p-6',
+      ].join(' ')}
+    >
+      {children}
+    </section>
+  );
+}
 
 // =============================================================================
 // BIOLOGICAL PROCESSES
@@ -663,7 +687,7 @@ export default function XenotextPage() {
 
   const renderBase = (base: string, highlight: boolean = false) => (
     <span
-      className={`font-mono ${baseColors[base] || 'text-gray-400'} ${highlight ? 'font-bold' : ''}`}
+      className={`font-mono ${baseColors[base] || 'text-[var(--paper-dimmer)]'} ${highlight ? 'font-bold' : ''}`}
     >
       {base}
     </span>
@@ -672,11 +696,11 @@ export default function XenotextPage() {
   return (
     <div className="space-y-10">
       {/* Hero */}
-      <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-8 lg:p-12">
+      <XenoSection accent hero>
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 mb-4">
-            <Dna className="h-5 w-5 text-[var(--accent-gold)]" />
-            <p className="text-sm uppercase tracking-[0.35em] text-[var(--text-tertiary)]">
+            <Dna className="h-5 w-5 text-[var(--gold)]" />
+            <p className="text-sm uppercase tracking-[0.35em] text-[var(--paper-dimmer)]">
               Biologically Accurate Model
             </p>
           </div>
@@ -686,11 +710,11 @@ export default function XenotextPage() {
             biological transcription and translation.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Origins: GEB */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-4">
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-4">
           Parallel Concepts: Typogenetics and Xenotext
         </h2>
         <div className="prose prose-invert max-w-none">
@@ -747,13 +771,11 @@ export default function XenotextPage() {
             <em>why</em>.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* The Biological Process Explanation */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-4">
-          The Biological Process
-        </h2>
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-4">The Biological Process</h2>
         <div className="prose prose-invert max-w-none">
           <p>This models actual cellular machinery:</p>
           <ol className="space-y-2">
@@ -774,58 +796,56 @@ export default function XenotextPage() {
             </li>
           </ol>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Interactive Transformer */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
-          Transcription Engine
-        </h2>
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">Transcription Engine</h2>
 
         <div className="space-y-6">
           {/* Input */}
           <div>
-            <label className="block text-sm text-[var(--text-tertiary)] mb-2">
+            <label className="block text-sm text-[var(--paper-dimmer)] mb-2">
               Input Sequence (The Greater Will&apos;s Code)
             </label>
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value.toUpperCase())}
-              className="w-full bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded px-4 py-3 text-2xl font-mono tracking-widest text-[var(--text-primary)] focus:border-[var(--accent-gold)] focus:outline-none"
+              className="w-full bg-[var(--ink)] border border-[var(--pane-edge)] rounded px-4 py-3 text-2xl font-mono tracking-widest text-[var(--paper)] focus:border-[var(--gold)] focus:outline-none"
               placeholder="Enter text..."
             />
           </div>
 
           {/* Transform Button */}
           <div className="flex items-center justify-center gap-4">
-            <div className="h-px flex-1 bg-[var(--border-subtle)]" />
+            <div className="h-px flex-1 bg-[var(--pane-edge)]" />
             <button
               onClick={runAnimation}
               disabled={animating}
-              className="flex items-center gap-2 px-6 py-2 bg-[var(--accent-gold)] text-black rounded font-medium hover:bg-[var(--accent-gold-hover)] disabled:opacity-50 transition-colors"
+              className="flex items-center gap-2 px-6 py-2 bg-[var(--gold)] text-[var(--ink)] rounded font-medium hover:bg-[color-mix(in_srgb,var(--gold)_85%,var(--paper))] disabled:opacity-50 transition-colors"
             >
               <FlaskConical className="h-4 w-4" />
               Run Biological Process
             </button>
-            <div className="h-px flex-1 bg-[var(--border-subtle)]" />
+            <div className="h-px flex-1 bg-[var(--pane-edge)]" />
           </div>
 
           {/* Output */}
           <div>
-            <label className="block text-sm text-[var(--text-tertiary)] mb-2">
+            <label className="block text-sm text-[var(--paper-dimmer)] mb-2">
               Output Sequence (The Lands Between&apos;s Response)
             </label>
-            <div className="w-full bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded px-4 py-3 text-2xl font-mono tracking-widest text-[var(--accent-gold)]">
-              {output || <span className="text-[var(--text-tertiary)]">...</span>}
+            <div className="w-full bg-[var(--ink)] border border-[var(--pane-edge)] rounded px-4 py-3 text-2xl font-mono tracking-widest text-[var(--gold)]">
+              {output || <span className="text-[var(--paper-dimmer)]">...</span>}
             </div>
           </div>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Step-by-step biological breakdown */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">
           Biological Transformation Pipeline
         </h2>
 
@@ -840,12 +860,12 @@ export default function XenotextPage() {
                   key={i}
                   className={`flex flex-col items-center p-4 rounded border transition-all duration-300 min-w-[120px] ${
                     isActive
-                      ? 'border-[var(--accent-gold)] bg-[rgb(var(--accent-gold-rgb)/0.1)]'
-                      : 'border-[var(--border-subtle)] bg-[var(--bg-secondary)]'
+                      ? 'border-[var(--gold)] bg-[color-mix(in_srgb,var(--gold)_10%,transparent)]'
+                      : 'border-[var(--pane-edge)] bg-[var(--ink-2)]'
                   }`}
                 >
                   {/* Input Letter */}
-                  <div className="text-2xl font-mono font-bold text-[var(--text-primary)] mb-3">
+                  <div className="text-2xl font-mono font-bold text-[var(--paper)] mb-3">
                     {step.inputLetter === ' ' ? '␣' : step.inputLetter}
                   </div>
 
@@ -853,7 +873,7 @@ export default function XenotextPage() {
                   <div
                     className={`transition-opacity duration-300 ${showPhase >= 1 ? 'opacity-100' : 'opacity-30'}`}
                   >
-                    <div className="text-[0.6rem] text-[var(--text-tertiary)] mb-1">
+                    <div className="text-[0.6rem] text-[var(--paper-dimmer)] mb-1">
                       DNA (5&apos;→3&apos;)
                     </div>
                     <div className="flex gap-0.5">
@@ -864,14 +884,14 @@ export default function XenotextPage() {
                   </div>
 
                   <ArrowDown
-                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 2 ? 'text-[var(--text-tertiary)]' : 'opacity-30'}`}
+                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 2 ? 'text-[var(--paper-dimmer)]' : 'opacity-30'}`}
                   />
 
                   {/* Template Strand */}
                   <div
                     className={`transition-opacity duration-300 ${showPhase >= 2 ? 'opacity-100' : 'opacity-30'}`}
                   >
-                    <div className="text-[0.6rem] text-[var(--text-tertiary)] mb-1">Template</div>
+                    <div className="text-[0.6rem] text-[var(--paper-dimmer)] mb-1">Template</div>
                     <div className="flex gap-0.5">
                       {step.templateStrand.split('').map((base, j) => (
                         <span key={j}>{renderBase(base, showPhase >= 2)}</span>
@@ -880,14 +900,14 @@ export default function XenotextPage() {
                   </div>
 
                   <ArrowDown
-                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 3 ? 'text-[var(--text-tertiary)]' : 'opacity-30'}`}
+                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 3 ? 'text-[var(--paper-dimmer)]' : 'opacity-30'}`}
                   />
 
                   {/* mRNA */}
                   <div
                     className={`transition-opacity duration-300 ${showPhase >= 3 ? 'opacity-100' : 'opacity-30'}`}
                   >
-                    <div className="text-[0.6rem] text-[var(--text-tertiary)] mb-1">mRNA</div>
+                    <div className="text-[0.6rem] text-[var(--paper-dimmer)] mb-1">mRNA</div>
                     <div className="flex gap-0.5">
                       {step.mrnaCodon.split('').map((base, j) => (
                         <span key={j}>{renderBase(base, showPhase >= 3)}</span>
@@ -896,27 +916,29 @@ export default function XenotextPage() {
                   </div>
 
                   <ArrowDown
-                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 4 ? 'text-[var(--text-tertiary)]' : 'opacity-30'}`}
+                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 4 ? 'text-[var(--paper-dimmer)]' : 'opacity-30'}`}
                   />
 
                   {/* Amino Acid */}
                   <div
                     className={`transition-opacity duration-300 ${showPhase >= 4 ? 'opacity-100' : 'opacity-30'}`}
                   >
-                    <div className="text-[0.6rem] text-[var(--text-tertiary)] mb-1">Amino Acid</div>
-                    <div className="text-sm font-mono text-purple-400">{step.aminoAcid}</div>
+                    <div className="text-[0.6rem] text-[var(--paper-dimmer)] mb-1">Amino Acid</div>
+                    <div className="text-sm font-mono text-[var(--glass-blue)]">
+                      {step.aminoAcid}
+                    </div>
                   </div>
 
                   <ArrowDown
-                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 4 ? 'text-[var(--text-tertiary)]' : 'opacity-30'}`}
+                    className={`h-3 w-3 my-1 transition-opacity ${showPhase >= 4 ? 'text-[var(--paper-dimmer)]' : 'opacity-30'}`}
                   />
 
                   {/* Output Letter */}
                   <div
                     className={`text-2xl font-mono font-bold transition-all duration-300 ${
                       showPhase >= 4
-                        ? 'text-[var(--accent-gold)]'
-                        : 'text-[var(--text-tertiary)] opacity-30'
+                        ? 'text-[var(--gold)]'
+                        : 'text-[var(--paper-dimmer)] opacity-30'
                     }`}
                   >
                     {step.outputLetter === ' ' ? '␣' : step.outputLetter}
@@ -930,7 +952,7 @@ export default function XenotextPage() {
         {/* Legend */}
         <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
           <div>
-            <div className="text-[var(--text-tertiary)] mb-1">DNA Bases</div>
+            <div className="text-[var(--paper-dimmer)] mb-1">DNA Bases</div>
             <div className="flex gap-3">
               <span>
                 <span className={baseColors['A']}>A</span> Adenine
@@ -949,18 +971,18 @@ export default function XenotextPage() {
             </div>
           </div>
           <div>
-            <div className="text-[var(--text-tertiary)] mb-1">RNA Base</div>
+            <div className="text-[var(--paper-dimmer)] mb-1">RNA Base</div>
             <span>
               <span className={baseColors['U']}>U</span> Uracil (replaces T)
             </span>
           </div>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Working Pairs */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">Designed Word Pairs</h2>
-        <p className="text-[var(--text-secondary)] mb-6">
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">Designed Word Pairs</h2>
+        <p className="text-[var(--paper-dim)] mb-6">
           Like Bök&apos;s Xenotext, the cipher is designed so meaningful words produce meaningful
           responses through actual biological processes.
         </p>
@@ -970,39 +992,39 @@ export default function XenotextPage() {
             <button
               key={i}
               onClick={() => setInput(pair.call)}
-              className="p-4 bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded hover:border-[var(--accent-gold)] transition-colors text-left"
+              className="p-4 bg-[var(--ink-2)] border border-[var(--pane-edge)] rounded hover:border-[var(--gold)] transition-colors text-left"
             >
               <div className="flex items-center gap-2 mb-2">
-                <span className="font-mono text-lg text-[var(--text-primary)]">{pair.call}</span>
-                <Sparkles className="h-4 w-4 text-[var(--text-tertiary)]" />
-                <span className="font-mono text-lg text-[var(--accent-gold)]">{pair.response}</span>
+                <span className="font-mono text-lg text-[var(--paper)]">{pair.call}</span>
+                <Sparkles className="h-4 w-4 text-[var(--paper-dimmer)]" />
+                <span className="font-mono text-lg text-[var(--gold)]">{pair.response}</span>
               </div>
-              <p className="text-sm text-[var(--text-tertiary)]">{pair.meaning}</p>
+              <p className="text-sm text-[var(--paper-dimmer)]">{pair.meaning}</p>
             </button>
           ))}
         </div>
-      </section>
+      </XenoSection>
 
       {/* Cipher Lab */}
-      <section className="glass-card border border-[var(--accent-gold)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-6">
+      <XenoSection accent>
         <div className="flex items-center gap-3 mb-6">
-          <Wrench className="h-6 w-6 text-[var(--accent-gold)]" />
-          <h2 className="font-serif text-2xl text-[var(--text-primary)]">Cipher Lab</h2>
+          <Wrench className="h-6 w-6 text-[var(--gold)]" />
+          <h2 className="font-serif text-2xl text-[var(--paper)]">Cipher Lab</h2>
         </div>
-        <p className="text-[var(--text-secondary)] mb-6">
+        <p className="text-[var(--paper-dim)] mb-6">
           Create your own xenotext. Like Bök transforming &quot;Orpheus&quot; into
           &quot;Eurydice,&quot; you can design a cipher where one word becomes another through
           biological transcription. Enter two words of equal length&mdash;the system derives the
           letter mappings. Then test other words to see what poems emerge.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid gap-6 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
           {/* Cipher Definition */}
           <div className="space-y-4">
-            <h3 className="font-medium text-[var(--text-primary)]">Define Your Cipher</h3>
+            <h3 className="font-medium text-[var(--paper)]">Define Your Cipher</h3>
 
             <div>
-              <label className="block text-sm text-[var(--text-tertiary)] mb-1">
+              <label className="block text-sm text-[var(--paper-dimmer)] mb-1">
                 Source Word (Input)
               </label>
               <input
@@ -1010,16 +1032,16 @@ export default function XenotextPage() {
                 value={cipherSource}
                 onChange={(e) => setCipherSource(e.target.value.toUpperCase())}
                 placeholder="e.g., FLAME"
-                className="w-full bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded px-3 py-2 font-mono text-[var(--text-primary)] focus:border-[var(--accent-gold)] focus:outline-none"
+                className="w-full bg-[var(--ink)] border border-[var(--pane-edge)] rounded px-3 py-2 font-mono text-[var(--paper)] focus:border-[var(--gold)] focus:outline-none"
               />
             </div>
 
             <div className="flex justify-center">
-              <ArrowDown className="h-5 w-5 text-[var(--text-tertiary)]" />
+              <ArrowDown className="h-5 w-5 text-[var(--paper-dimmer)]" />
             </div>
 
             <div>
-              <label className="block text-sm text-[var(--text-tertiary)] mb-1">
+              <label className="block text-sm text-[var(--paper-dimmer)] mb-1">
                 Target Word (Output)
               </label>
               <input
@@ -1027,29 +1049,29 @@ export default function XenotextPage() {
                 value={cipherTarget}
                 onChange={(e) => setCipherTarget(e.target.value.toUpperCase())}
                 placeholder="e.g., ORDER"
-                className="w-full bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded px-3 py-2 font-mono text-[var(--text-primary)] focus:border-[var(--accent-gold)] focus:outline-none"
+                className="w-full bg-[var(--ink)] border border-[var(--pane-edge)] rounded px-3 py-2 font-mono text-[var(--paper)] focus:border-[var(--gold)] focus:outline-none"
               />
             </div>
 
             {/* Cipher Result */}
             {cipherResult && (
               <div
-                className={`p-3 rounded border ${cipherResult.valid ? 'border-green-500/50 bg-green-500/10' : 'border-red-500/50 bg-red-500/10'}`}
+                className={`p-3 rounded border ${cipherResult.valid ? 'border-[color-mix(in_srgb,var(--gold)_50%,transparent)] bg-[color-mix(in_srgb,var(--gold)_10%,transparent)]' : 'border-[color-mix(in_srgb,var(--rust)_50%,transparent)] bg-[color-mix(in_srgb,var(--rust)_10%,transparent)]'}`}
               >
                 <div className="flex items-center gap-2">
                   {cipherResult.valid ? (
-                    <CheckCircle className="h-4 w-4 text-green-400" />
+                    <CheckCircle className="h-4 w-4 text-[var(--gold)]" />
                   ) : (
-                    <AlertCircle className="h-4 w-4 text-red-400" />
+                    <AlertCircle className="h-4 w-4 text-[var(--rust)]" />
                   )}
                   <span
-                    className={`text-sm ${cipherResult.valid ? 'text-green-400' : 'text-red-400'}`}
+                    className={`text-sm ${cipherResult.valid ? 'text-[var(--gold)]' : 'text-[var(--rust)]'}`}
                   >
                     {cipherResult.message}
                   </span>
                 </div>
                 {cipherResult.valid && cipherResult.cipher && (
-                  <div className="mt-2 text-xs text-[var(--text-tertiary)] font-mono">
+                  <div className="mt-2 text-xs text-[var(--paper-dimmer)] font-mono">
                     {Object.entries(cipherResult.cipher.mappings)
                       .map(([from, to]) => `${from}→${to}`)
                       .join(' ')}
@@ -1062,13 +1084,13 @@ export default function XenotextPage() {
               <button
                 onClick={applyCipher}
                 disabled={!cipherResult?.valid}
-                className="flex-1 px-4 py-2 bg-[var(--accent-gold)] text-black rounded font-medium hover:bg-[var(--accent-gold-hover)] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="flex-1 px-4 py-2 bg-[var(--gold)] text-[var(--ink)] rounded font-medium hover:bg-[color-mix(in_srgb,var(--gold)_85%,var(--paper))] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 Apply Cipher
               </button>
               <button
                 onClick={resetCipher}
-                className="px-4 py-2 border border-[var(--border-subtle)] rounded text-[var(--text-secondary)] hover:border-[var(--text-secondary)] transition-colors"
+                className="px-4 py-2 border border-[var(--pane-edge)] rounded text-[var(--paper-dim)] hover:border-[var(--paper-dim)] transition-colors"
               >
                 Reset
               </button>
@@ -1077,12 +1099,12 @@ export default function XenotextPage() {
 
           {/* Test Area */}
           <div className="space-y-4">
-            <h3 className="font-medium text-[var(--text-primary)]">Test Your Cipher</h3>
+            <h3 className="font-medium text-[var(--paper)]">Test Your Cipher</h3>
 
             {customCipher ? (
               <>
                 <div>
-                  <label className="block text-sm text-[var(--text-tertiary)] mb-1">
+                  <label className="block text-sm text-[var(--paper-dimmer)] mb-1">
                     Test Input
                   </label>
                   <input
@@ -1090,7 +1112,7 @@ export default function XenotextPage() {
                     value={testInput}
                     onChange={(e) => setTestInput(e.target.value.toUpperCase())}
                     placeholder="Type any word..."
-                    className="w-full bg-[var(--bg-primary)] border border-[var(--border-subtle)] rounded px-3 py-2 font-mono text-[var(--text-primary)] focus:border-[var(--accent-gold)] focus:outline-none"
+                    className="w-full bg-[var(--ink)] border border-[var(--pane-edge)] rounded px-3 py-2 font-mono text-[var(--paper)] focus:border-[var(--gold)] focus:outline-none"
                   />
                 </div>
 
@@ -1098,7 +1120,7 @@ export default function XenotextPage() {
                 {testSteps.length > 0 && (
                   <div className="space-y-4">
                     {/* Process explanation */}
-                    <div className="text-xs text-[var(--text-tertiary)] text-center">
+                    <div className="text-xs text-[var(--paper-dimmer)] text-center">
                       Actual biological transformation: DNA → Template → mRNA → Amino Acid → Output
                     </div>
 
@@ -1109,28 +1131,28 @@ export default function XenotextPage() {
                             key={i}
                             className={`flex flex-col items-center p-4 rounded-lg border min-w-[100px] ${
                               step.hasMaping
-                                ? 'border-[var(--accent-gold)]/50 bg-[var(--accent-gold)]/5'
-                                : 'border-red-500/30 bg-red-500/5'
+                                ? 'border-[color-mix(in_srgb,var(--gold)_50%,transparent)] bg-[color-mix(in_srgb,var(--gold)_5%,transparent)]'
+                                : 'border-[color-mix(in_srgb,var(--rust)_30%,transparent)] bg-[color-mix(in_srgb,var(--rust)_5%,transparent)]'
                             }`}
                           >
                             {/* Input Letter */}
-                            <div className="text-[0.6rem] text-[var(--text-tertiary)] mb-1">
+                            <div className="text-[0.6rem] text-[var(--paper-dimmer)] mb-1">
                               INPUT
                             </div>
-                            <div className="text-2xl font-mono font-bold text-[var(--text-primary)] mb-2">
+                            <div className="text-2xl font-mono font-bold text-[var(--paper)] mb-2">
                               {step.inputLetter === ' ' ? '␣' : step.inputLetter}
                             </div>
 
                             {/* DNA Codon */}
-                            <div className="w-full border-t border-[var(--border-subtle)] pt-2 mt-1">
-                              <div className="text-[0.5rem] text-[var(--text-tertiary)] text-center">
+                            <div className="w-full border-t border-[var(--pane-edge)] pt-2 mt-1">
+                              <div className="text-[0.5rem] text-[var(--paper-dimmer)] text-center">
                                 DNA (5&apos;→3&apos;)
                               </div>
                               <div className="flex justify-center gap-0.5 mt-1">
                                 {step.dnaCodon.split('').map((base, j) => (
                                   <span
                                     key={j}
-                                    className={`font-mono text-sm ${baseColors[base] || 'text-gray-400'}`}
+                                    className={`font-mono text-sm ${baseColors[base] || 'text-[var(--paper-dimmer)]'}`}
                                   >
                                     {base}
                                   </span>
@@ -1138,59 +1160,57 @@ export default function XenotextPage() {
                               </div>
                             </div>
 
-                            <ArrowDown className="h-3 w-3 my-1 text-[var(--text-tertiary)]" />
+                            <ArrowDown className="h-3 w-3 my-1 text-[var(--paper-dimmer)]" />
 
                             {/* Template Strand */}
-                            <div className="text-[0.5rem] text-[var(--text-tertiary)]">
-                              Template
-                            </div>
+                            <div className="text-[0.5rem] text-[var(--paper-dimmer)]">Template</div>
                             <div className="flex justify-center gap-0.5 mt-0.5">
                               {step.templateStrand.split('').map((base, j) => (
                                 <span
                                   key={j}
-                                  className={`font-mono text-xs ${baseColors[base] || 'text-gray-400'}`}
+                                  className={`font-mono text-xs ${baseColors[base] || 'text-[var(--paper-dimmer)]'}`}
                                 >
                                   {base}
                                 </span>
                               ))}
                             </div>
 
-                            <ArrowDown className="h-3 w-3 my-1 text-[var(--text-tertiary)]" />
+                            <ArrowDown className="h-3 w-3 my-1 text-[var(--paper-dimmer)]" />
 
                             {/* mRNA */}
-                            <div className="text-[0.5rem] text-[var(--text-tertiary)]">mRNA</div>
+                            <div className="text-[0.5rem] text-[var(--paper-dimmer)]">mRNA</div>
                             <div className="flex justify-center gap-0.5 mt-0.5">
                               {step.mrnaCodon.split('').map((base, j) => (
                                 <span
                                   key={j}
-                                  className={`font-mono text-xs ${baseColors[base] || 'text-gray-400'}`}
+                                  className={`font-mono text-xs ${baseColors[base] || 'text-[var(--paper-dimmer)]'}`}
                                 >
                                   {base}
                                 </span>
                               ))}
                             </div>
 
-                            <ArrowDown className="h-3 w-3 my-1 text-[var(--text-tertiary)]" />
+                            <ArrowDown className="h-3 w-3 my-1 text-[var(--paper-dimmer)]" />
 
                             {/* Amino Acid */}
-                            <div className="text-[0.5rem] text-[var(--text-tertiary)]">
+                            <div className="text-[0.5rem] text-[var(--paper-dimmer)]">
                               Amino Acid
                             </div>
-                            <div className="text-sm font-mono text-purple-400 mt-0.5">
+                            <div className="text-sm font-mono text-[var(--glass-blue)] mt-0.5">
                               {step.aminoAcid}
                             </div>
 
-                            <ArrowDown className="h-3 w-3 my-1 text-[var(--text-tertiary)]" />
+                            <ArrowDown className="h-3 w-3 my-1 text-[var(--paper-dimmer)]" />
 
                             {/* Output Letter */}
-                            <div className="w-full border-t border-[var(--border-subtle)] pt-2 mt-1">
-                              <div className="text-[0.6rem] text-[var(--text-tertiary)] text-center">
+                            <div className="w-full border-t border-[var(--pane-edge)] pt-2 mt-1">
+                              <div className="text-[0.6rem] text-[var(--paper-dimmer)] text-center">
                                 OUTPUT
                               </div>
                             </div>
                             <div
                               className={`text-2xl font-mono font-bold mt-1 ${
-                                step.hasMaping ? 'text-[var(--accent-gold)]' : 'text-red-400'
+                                step.hasMaping ? 'text-[var(--gold)]' : 'text-[var(--rust)]'
                               }`}
                             >
                               {step.outputLetter === ' ' ? '␣' : step.outputLetter}
@@ -1198,7 +1218,9 @@ export default function XenotextPage() {
 
                             {/* Mapping indicator */}
                             {!step.hasMaping && (
-                              <div className="mt-2 text-[0.6rem] text-red-400">no mapping</div>
+                              <div className="mt-2 text-[0.6rem] text-[var(--rust)]">
+                                no mapping
+                              </div>
                             )}
                           </div>
                         ))}
@@ -1206,19 +1228,19 @@ export default function XenotextPage() {
                     </div>
 
                     {/* Active mappings reference */}
-                    <div className="p-3 rounded border border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
-                      <div className="text-xs text-[var(--text-tertiary)] mb-2">
+                    <div className="p-3 rounded border border-[var(--pane-edge)] bg-[var(--ink-2)]">
+                      <div className="text-xs text-[var(--paper-dimmer)] mb-2">
                         Your biological cipher mappings:
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {Object.entries(customCipher.mappings).map(([from, to]) => (
                           <span
                             key={from}
-                            className="px-2 py-1 bg-[var(--bg-primary)] rounded text-xs font-mono"
+                            className="px-2 py-1 bg-[var(--ink)] rounded text-xs font-mono"
                           >
-                            <span className="text-[var(--text-primary)]">{from}</span>
-                            <span className="text-[var(--text-tertiary)] mx-1">→</span>
-                            <span className="text-[var(--accent-gold)]">{to}</span>
+                            <span className="text-[var(--paper)]">{from}</span>
+                            <span className="text-[var(--paper-dimmer)] mx-1">→</span>
+                            <span className="text-[var(--gold)]">{to}</span>
                           </span>
                         ))}
                       </div>
@@ -1227,29 +1249,29 @@ export default function XenotextPage() {
                 )}
 
                 {/* Output Summary */}
-                <div className="p-4 rounded border border-[var(--accent-gold)]/30 bg-[var(--accent-gold)]/5">
+                <div className="p-4 rounded border border-[color-mix(in_srgb,var(--gold)_30%,transparent)] bg-[color-mix(in_srgb,var(--gold)_5%,transparent)]">
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="text-xs text-[var(--text-tertiary)] mb-1">Your Xenotext</div>
-                      <div className="font-mono text-2xl text-[var(--accent-gold)]">
+                      <div className="text-xs text-[var(--paper-dimmer)] mb-1">Your Xenotext</div>
+                      <div className="font-mono text-2xl text-[var(--gold)]">
                         {testOutput || '...'}
                       </div>
                     </div>
                     {testInput && testOutput && (
                       <div className="text-right">
-                        <div className="text-xs text-[var(--text-tertiary)] mb-1">
+                        <div className="text-xs text-[var(--paper-dimmer)] mb-1">
                           Transformation
                         </div>
                         <div className="font-mono text-sm">
-                          <span className="text-[var(--text-primary)]">{testInput}</span>
-                          <span className="text-[var(--text-tertiary)] mx-2">→</span>
-                          <span className="text-[var(--accent-gold)]">{testOutput}</span>
+                          <span className="text-[var(--paper)]">{testInput}</span>
+                          <span className="text-[var(--paper-dimmer)] mx-2">→</span>
+                          <span className="text-[var(--gold)]">{testOutput}</span>
                         </div>
                       </div>
                     )}
                   </div>
                   {testOutput.includes('?') && (
-                    <p className="text-xs text-red-400 mt-2">
+                    <p className="text-xs text-[var(--rust)] mt-2">
                       Letters showing ? have no mapping. Define more word pairs to expand your
                       cipher.
                     </p>
@@ -1257,7 +1279,7 @@ export default function XenotextPage() {
                 </div>
               </>
             ) : (
-              <div className="h-full flex items-center justify-center text-[var(--text-tertiary)] text-sm py-8">
+              <div className="h-full flex items-center justify-center text-[var(--paper-dimmer)] text-sm py-8">
                 Define and apply a cipher to test it here
               </div>
             )}
@@ -1265,9 +1287,9 @@ export default function XenotextPage() {
         </div>
 
         {/* Example Pairs */}
-        <div className="mt-6 pt-6 border-t border-[var(--border-subtle)]">
-          <h3 className="font-medium text-[var(--text-primary)] mb-3">Example Pairs</h3>
-          <p className="text-sm text-[var(--text-tertiary)] mb-3">
+        <div className="mt-6 pt-6 border-t border-[var(--pane-edge)]">
+          <h3 className="font-medium text-[var(--paper)] mb-3">Example Pairs</h3>
+          <p className="text-sm text-[var(--paper-dimmer)] mb-3">
             Click any pair to load it, or create your own. What transformations will you discover?
           </p>
           <div className="flex flex-wrap gap-2">
@@ -1278,27 +1300,27 @@ export default function XenotextPage() {
                   setCipherSource(pair.source);
                   setCipherTarget(pair.target);
                 }}
-                className="px-3 py-1.5 text-sm bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded hover:border-[var(--accent-gold)] transition-colors"
+                className="px-3 py-1.5 text-sm bg-[var(--ink-2)] border border-[var(--pane-edge)] rounded hover:border-[var(--gold)] transition-colors"
               >
                 <span className="font-mono">{pair.source}</span>
-                <span className="text-[var(--text-tertiary)] mx-1">→</span>
-                <span className="font-mono text-[var(--accent-gold)]">{pair.target}</span>
+                <span className="text-[var(--paper-dimmer)] mx-1">→</span>
+                <span className="font-mono text-[var(--gold)]">{pair.target}</span>
               </button>
             ))}
           </div>
         </div>
-      </section>
+      </XenoSection>
 
       {/* The Interpretation */}
-      <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+      <XenoSection accent>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">
           The Elden Beast as Xenotext
         </h2>
         <div className="prose prose-invert max-w-none">
-          <blockquote className="border-l-2 border-[var(--accent-gold)] pl-4 italic text-[var(--text-secondary)]">
+          <blockquote className="border-l-2 border-[var(--gold)] pl-4 italic text-[var(--paper-dim)]">
             &quot;It is said that long ago, the Greater Will sent a golden star bearing a beast into
             the Lands Between, which would later become the Elden Ring.&quot;
-            <footer className="text-sm text-[var(--text-tertiary)] mt-2 not-italic">
+            <footer className="text-sm text-[var(--paper-dimmer)] mt-2 not-italic">
               &mdash; Elden Stars incantation
             </footer>
           </blockquote>
@@ -1324,11 +1346,11 @@ export default function XenotextPage() {
             Lands Between transforms the Greater Will&apos;s code into golden dominion.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Marika as Vessel */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">
           Marika as Deinococcus radiodurans
         </h2>
         <div className="prose prose-invert max-w-none">
@@ -1372,11 +1394,11 @@ export default function XenotextPage() {
             <em>agency</em>.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Visual DNA Motifs */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">
           The Shape of Divine Machinery
         </h2>
         <div className="prose prose-invert max-w-none">
@@ -1409,11 +1431,11 @@ export default function XenotextPage() {
             gene-editing tools. FromSoftware rendered molecular biology as theology.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* The Three Fingers as Mutation */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">
           The Three Fingers: Mutation
         </h2>
         <div className="prose prose-invert max-w-none">
@@ -1439,11 +1461,11 @@ export default function XenotextPage() {
             Will&apos;s code, or the only path to something genuinely new.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Bridging Xenotext and Alchemy */}
-      <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
+      <XenoSection accent>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">
           The Magnum Opus: Where Genetics Meets Alchemy
         </h2>
         <div className="prose prose-invert max-w-none">
@@ -1488,11 +1510,11 @@ export default function XenotextPage() {
             incomplete.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* Why Video Games */}
-      <section className="glass-card border border-[var(--border-emphasis)] bg-gradient-to-b from-[rgb(var(--bg-secondary-rgb)/0.9)] to-[rgb(var(--bg-secondary-rgb)/0.6)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">Why Video Games</h2>
+      <XenoSection accent>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">Why Video Games</h2>
         <div className="prose prose-invert max-w-none">
           <p>
             In 2010, Marina Abramović sat at a table in the Museum of Modern Art and stared at
@@ -1528,7 +1550,7 @@ export default function XenotextPage() {
             &quot;intelligent&quot; solutions, the only effective resistance is to embrace what is
             literally counter-intelligent:
           </p>
-          <blockquote className="border-l-2 border-[var(--accent-gold)] pl-4 italic text-[var(--text-secondary)]">
+          <blockquote className="border-l-2 border-[var(--gold)] pl-4 italic text-[var(--paper-dim)]">
             &quot;When the hypothesis of intelligence ceases to be sovereign and becomes dominant,
             then it is the hypothesis of stupidity that becomes sovereign. A stupidity that might be
             said to be a sort of higher intelligence, on the verge of a radical thought&mdash;that
@@ -1577,9 +1599,7 @@ export default function XenotextPage() {
             body into one&mdash;sitting there, controller in hand, dying to the same boss,
             absolutely present, absolutely useless, absolutely engaged.
           </p>
-          <h3 className="text-xl font-serif text-[var(--text-primary)] mt-8 mb-4">
-            The Social Sculpture
-          </h3>
+          <h3 className="text-xl font-serif text-[var(--paper)] mt-8 mb-4">The Social Sculpture</h3>
           <p>
             But there&apos;s another dimension. Rirkrit Tiravanija built an artistic career by
             bringing people together over meals&mdash;green curry, tom kha soup, pad thai. Nicolas
@@ -1623,7 +1643,7 @@ export default function XenotextPage() {
             trapped in the enduring present of a boss fight. Then the collective transformation:
             social sculpture, the community formed around shared struggle and interpretation.
           </p>
-          <h3 className="text-xl font-serif text-[var(--text-primary)] mt-8 mb-4">
+          <h3 className="text-xl font-serif text-[var(--paper)] mt-8 mb-4">
             The Evolution of the Readymade
           </h3>
           <p>
@@ -1687,7 +1707,7 @@ export default function XenotextPage() {
             This closes the loop. Elden Ring isn&apos;t just <em>referencing</em>{' '}
             Duchamp&mdash;it&apos;s <em>continuing</em> his project:
           </p>
-          <ol className="list-decimal list-inside space-y-1 text-[var(--text-secondary)]">
+          <ol className="list-decimal list-inside space-y-1 text-[var(--paper-dim)]">
             <li>Duchamp invents the readymade (objects)</li>
             <li>Duchamp creates The Large Glass (the machine that never completes)</li>
             <li>The next evolution is activities, not objects</li>
@@ -1708,13 +1728,11 @@ export default function XenotextPage() {
             medium that could make its incompleteness <em>productive</em>.
           </p>
         </div>
-      </section>
+      </XenoSection>
 
       {/* The Geography of Conquest */}
-      <section className="glass-card border border-[var(--border-subtle)] p-6">
-        <h2 className="font-serif text-2xl text-[var(--text-primary)] mb-6">
-          The Geography of Conquest
-        </h2>
+      <XenoSection>
+        <h2 className="font-serif text-2xl text-[var(--paper)] mb-6">The Geography of Conquest</h2>
         <div className="prose prose-invert max-w-none">
           <p>The transformation is written into the land itself.</p>
           <p>
@@ -1746,7 +1764,7 @@ export default function XenotextPage() {
             inhabitants forgot.
           </p>
         </div>
-      </section>
+      </XenoSection>
     </div>
   );
 }
