@@ -126,7 +126,10 @@ export function HashVerification({
               Download the hashable file and compute its SHA-256 hash. The result must match the
               hash above.
             </p>
-            <Pane solid className="rounded-lg border-dashed border-[var(--crack-strong)] p-4 text-xs">
+            <Pane
+              solid
+              className="rounded-lg border-dashed border-[var(--crack-strong)] p-4 text-xs"
+            >
               <pre className="overflow-x-auto text-[var(--paper-dim)]">{`curl -O https://eldenringisthelargeglass.com${hashableFileUrl}
 shasum -a 256 ${hashableFile}`}</pre>
             </Pane>
@@ -139,11 +142,14 @@ shasum -a 256 ${hashableFile}`}</pre>
               </p>
               <p className="text-sm text-[var(--paper-dim)]">
                 Download the OpenTimestamps proof file and verify it against the hashable file with
-                the <code className="text-[var(--gold)]">ots</code> client. This proves the
-                document existed at the Bitcoin block height recorded in the proof, which cannot be
+                the <code className="text-[var(--gold)]">ots</code> client. This proves the document
+                existed at the Bitcoin block height recorded in the proof, which cannot be
                 backdated.
               </p>
-              <Pane solid className="rounded-lg border-dashed border-[var(--crack-strong)] p-4 text-xs">
+              <Pane
+                solid
+                className="rounded-lg border-dashed border-[var(--crack-strong)] p-4 text-xs"
+              >
                 <pre className="overflow-x-auto text-[var(--paper-dim)]">{`pip install opentimestamps-client
 curl -O https://eldenringisthelargeglass.com${otsFileUrl}
 ots verify -f ${hashableFile} ${bitcoinOts}`}</pre>
