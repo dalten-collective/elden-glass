@@ -24,14 +24,7 @@ export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
       onClick={() => onSelect(artwork)}
       className="group flex cursor-pointer flex-col gap-3 text-left focus-visible:outline-none"
     >
-      <div
-        className="relative aspect-[3/4] cursor-pointer overflow-hidden rounded-sm ring-1 ring-[rgb(201_169_97/0.12)] transition-[box-shadow,transform,ring-color] duration-500 ease-out group-hover:-translate-y-0.5 group-hover:ring-[rgb(201_169_97/0.55)] group-focus-visible:ring-2 group-focus-visible:ring-[var(--accent-gold)]"
-        style={{
-          background: 'linear-gradient(135deg, #12100d 0%, #1a1511 50%, #12100d 100%)',
-          boxShadow:
-            '0 0 24px rgba(0,0,0,0.65), inset 0 1px 1px rgba(201,169,97,0.08), inset 0 -1px 1px rgba(0,0,0,0.4)',
-        }}
-      >
+      <div className="pane pane--solid relative aspect-[3/4] cursor-pointer overflow-hidden rounded-sm bg-[linear-gradient(135deg,var(--ink-2)_0%,var(--ink-3)_50%,var(--ink-2)_100%)] ring-1 ring-[color-mix(in_srgb,var(--gold)_12%,transparent)] transition-[box-shadow,transform,ring-color] duration-500 ease-out group-hover:-translate-y-0.5 group-hover:ring-[color-mix(in_srgb,var(--gold)_55%,transparent)] group-focus-visible:ring-2 group-focus-visible:ring-[var(--gold)]">
         {imagePath && !imageFailed ? (
           <Image
             src={imagePath}
@@ -43,25 +36,19 @@ export function DuchampWorkTile({ artwork, onSelect }: DuchampWorkTileProps) {
             onError={() => setImageFailed(true)}
           />
         ) : (
-          <div className="flex h-full items-center justify-center p-4 text-center font-serif text-sm italic text-[var(--text-tertiary)]">
+          <div className="flex h-full items-center justify-center p-4 text-center font-serif text-sm italic text-[var(--paper-dimmer)]">
             Image not available
           </div>
         )}
-        <div
-          className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-          style={{
-            background:
-              'radial-gradient(circle at 50% 40%, rgba(201,169,97,0.08) 0%, transparent 70%)',
-          }}
-        />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,color-mix(in_srgb,var(--gold)_8%,transparent)_0%,transparent_70%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
       </div>
 
       <div className="space-y-0.5 px-1">
-        <h3 className="font-serif text-sm leading-snug text-[var(--text-primary)] transition-colors duration-300 group-hover:text-[var(--accent-gold)]">
+        <h3 className="font-serif text-sm leading-snug text-[var(--paper)] transition-colors duration-300 group-hover:text-[var(--gold)]">
           {artwork.title}
         </h3>
         {artwork.artwork.year && (
-          <p className="font-serif text-xs italic text-[var(--text-tertiary)]">
+          <p className="font-serif text-xs italic text-[var(--paper-dimmer)]">
             {artwork.artwork.year}
           </p>
         )}
