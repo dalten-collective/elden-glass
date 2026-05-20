@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { X, ExternalLink } from 'lucide-react';
 import { ShareButtons } from '@/components/ui/share-buttons';
+import { Eyebrow, Pane, Spec } from '@/components/delay';
 
 import type { ItemCard } from '@/types/item-cards';
 
@@ -34,19 +35,20 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4 lg:left-[300px]"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[color-mix(in_srgb,var(--ink)_75%,transparent)] p-4 lg:left-[300px]"
       onClick={onClose}
     >
-      <div
-        className="bg-[var(--bg-secondary)] border-2 border-[var(--accent-gold)] rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+      <Pane
+        solid
+        className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-lg border-2 border-[var(--gold)]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="sticky top-0 bg-[var(--bg-secondary)] border-b border-[var(--border-subtle)] p-4 flex items-center justify-between">
-          <h2 className="text-2xl font-serif text-[var(--accent-gold)]">Card Details</h2>
+        <div className="sticky top-0 flex items-center justify-between border-b border-[var(--pane-edge)] bg-[var(--ink-2)] p-4">
+          <h2 className="font-serif text-2xl text-[var(--gold)]">Card Details</h2>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-[var(--bg-primary)] rounded transition-colors"
+            className="dig-icon-button rounded p-2 hover:bg-[var(--ink)]"
             aria-label="Close"
           >
             <X className="h-5 w-5" />
@@ -57,7 +59,7 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
         <div className="p-6 space-y-4">
           {/* Image */}
           {card.image && !imageFailed && (
-            <div className="relative w-full h-64 rounded bg-[var(--bg-primary)] flex items-center justify-center overflow-hidden">
+            <div className="relative flex h-64 w-full items-center justify-center overflow-hidden rounded bg-[var(--ink)]">
               {isGif(card.image) ? (
                 // Native img for GIFs in modal — better performance than
                 // next/image for animated assets at this size.
@@ -82,13 +84,11 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
 
           {/* Title */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Title
-            </label>
+            <Eyebrow className="mb-2 block">Title</Eyebrow>
             <div>
-              <p className="text-lg font-semibold text-[var(--accent-gold)]">{card.title}</p>
+              <p className="text-lg font-semibold text-[var(--gold)]">{card.title}</p>
               {card.category && (
-                <p className="text-xs text-[var(--text-secondary)] italic mt-1 font-serif">
+                <p className="mt-1 font-serif text-xs italic text-[var(--paper-dim)]">
                   {card.category}
                   {card.subcategory && ` - ${card.subcategory}`}
                 </p>
@@ -98,50 +98,38 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
 
           {/* Term */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Term
-            </label>
-            <p className="text-sm text-[var(--text-tertiary)] uppercase tracking-wider">
-              {card.term}
+            <Eyebrow className="mb-2 block">Term</Eyebrow>
+            <p>
+              <Spec className="uppercase tracking-wider">{card.term}</Spec>
             </p>
           </div>
 
           {/* Category */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Section
-            </label>
-            <p className="text-sm text-[var(--text-secondary)]">{card.section || 'N/A'}</p>
+            <Eyebrow className="mb-2 block">Section</Eyebrow>
+            <p className="text-sm text-[var(--paper-dim)]">{card.section || 'N/A'}</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Category
-            </label>
-            <p className="text-sm text-[var(--text-secondary)]">{card.category || 'N/A'}</p>
+            <Eyebrow className="mb-2 block">Category</Eyebrow>
+            <p className="text-sm text-[var(--paper-dim)]">{card.category || 'N/A'}</p>
           </div>
 
           {/* Subcategory */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Subcategory
-            </label>
-            <p className="text-sm text-[var(--text-secondary)]">{card.subcategory || 'N/A'}</p>
+            <Eyebrow className="mb-2 block">Subcategory</Eyebrow>
+            <p className="text-sm text-[var(--paper-dim)]">{card.subcategory || 'N/A'}</p>
           </div>
 
           {/* Description */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Description
-            </label>
-            <p className="text-sm text-[var(--text-secondary)]">{card.description}</p>
+            <Eyebrow className="mb-2 block">Description</Eyebrow>
+            <p className="text-sm text-[var(--paper-dim)]">{card.description}</p>
           </div>
 
           {/* Links */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Links
-            </label>
+            <Eyebrow className="mb-2 block">Links</Eyebrow>
             {card.links && card.links.length > 0 ? (
               <div className="space-y-2">
                 {card.links.map((link, index) => (
@@ -150,7 +138,7 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-[var(--accent-gold)] hover:underline"
+                    className="dig-link flex items-center gap-2 text-sm"
                   >
                     <ExternalLink className="h-4 w-4" />
                     {link.label}
@@ -158,33 +146,31 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-[var(--text-tertiary)] italic">No links</p>
+              <p className="text-sm italic text-[var(--paper-dimmer)]">No links</p>
             )}
           </div>
 
           {/* Connections */}
           <div>
-            <label className="block text-sm font-medium text-[var(--text-secondary)] mb-2">
-              Connections
-            </label>
+            <Eyebrow className="mb-2 block">Connections</Eyebrow>
             {card.connections && card.connections.length > 0 ? (
               <div className="space-y-2">
                 {card.connections.map((connection, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm">
-                    <span className="text-[var(--accent-gold)]">✦</span>
-                    <span className="text-[var(--text-secondary)]">
+                    <span className="text-[var(--gold)]">✦</span>
+                    <span className="text-[var(--paper-dim)]">
                       {connection.label || connection.linkedTitle || connection.cardId}
                     </span>
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-[var(--text-tertiary)] italic">No connections</p>
+              <p className="text-sm italic text-[var(--paper-dimmer)]">No connections</p>
             )}
           </div>
 
           {/* Share */}
-          <div className="pt-4 border-t border-[var(--border-subtle)]">
+          <div className="border-t border-[var(--pane-edge)] pt-4">
             <ShareButtons
               title={`${card.title} - Elden Glass`}
               description={
@@ -198,22 +184,22 @@ export function CardDetailModal({ card, onClose }: CardDetailModalProps) {
           </div>
 
           {/* Metadata */}
-          <div className="pt-4 border-t border-[var(--border-subtle)] space-y-2">
-            <div className="flex justify-between text-xs text-[var(--text-tertiary)]">
+          <div className="space-y-2 border-t border-[var(--pane-edge)] pt-4">
+            <div className="flex justify-between text-xs text-[var(--paper-dimmer)]">
               <span>ID:</span>
-              <span className="font-mono">{card.id}</span>
+              <Spec>{card.id}</Spec>
             </div>
-            <div className="flex justify-between text-xs text-[var(--text-tertiary)]">
+            <div className="flex justify-between text-xs text-[var(--paper-dimmer)]">
               <span>Created:</span>
               <span>{new Date(card.createdAt).toLocaleString()}</span>
             </div>
-            <div className="flex justify-between text-xs text-[var(--text-tertiary)]">
+            <div className="flex justify-between text-xs text-[var(--paper-dimmer)]">
               <span>Updated:</span>
               <span>{new Date(card.updatedAt).toLocaleString()}</span>
             </div>
           </div>
         </div>
-      </div>
+      </Pane>
     </div>
   );
 }
