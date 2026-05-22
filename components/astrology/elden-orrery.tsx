@@ -6,12 +6,52 @@ interface CelestialBody {
   id: string;
   name: string;
   color: string;
+  glow: string;
   size: number;
   orbitRadius: number;
   orbitSpeed: number; // degrees per frame
   startAngle: number;
   frozen?: boolean;
 }
+
+const orreryColor = {
+  darkMoon: 'color-mix(in srgb, var(--glass-blue-dim) 55%, var(--ink) 45%)',
+  darkMoonCrater: 'color-mix(in srgb, var(--glass-blue-dim) 35%, var(--ink) 65%)',
+  darkMoonRim: 'color-mix(in srgb, var(--glass-blue) 45%, transparent)',
+  darkMoonStar: 'color-mix(in srgb, var(--paper) 65%, var(--glass-blue) 35%)',
+  erdtreeGlow: 'color-mix(in srgb, var(--gold) 40%, transparent)',
+  erdtreeGlowEnd: 'color-mix(in srgb, var(--gold) 0%, transparent)',
+  fullMoon: 'var(--paper)',
+  fullMoonCrater: 'color-mix(in srgb, var(--paper-dimmer) 50%, transparent)',
+  gear: 'color-mix(in srgb, var(--paper) 40%, transparent)',
+  gearSoft: 'color-mix(in srgb, var(--paper) 30%, transparent)',
+  glassOrbit: 'color-mix(in srgb, var(--paper) 10%, transparent)',
+  goldOrbit: 'color-mix(in srgb, var(--gold) 30%, transparent)',
+  marika: 'var(--gold-bright)',
+  marikaGlow: 'color-mix(in srgb, var(--gold-bright) 60%, transparent)',
+  moonGlow: 'color-mix(in srgb, var(--paper) 50%, transparent)',
+  moonGlowEnd: 'color-mix(in srgb, var(--paper) 0%, transparent)',
+  moonLine: 'color-mix(in srgb, var(--paper) 20%, transparent)',
+  radagon: 'var(--rust)',
+  radagonGlow: 'color-mix(in srgb, var(--rust) 60%, transparent)',
+  radagonGlowSoft: 'color-mix(in srgb, var(--rust) 50%, transparent)',
+  radagonLine: 'color-mix(in srgb, var(--rust) 30%, transparent)',
+  starAmber: 'var(--gold)',
+  starAmberGlow: 'color-mix(in srgb, var(--gold) 20%, transparent)',
+  starBlue: 'var(--glass-blue)',
+  starBlueGlow: 'color-mix(in srgb, var(--glass-blue) 20%, transparent)',
+  starFrozen: 'color-mix(in srgb, var(--rust) 50%, transparent)',
+  starFrozenOrbit: 'color-mix(in srgb, var(--rust) 20%, transparent)',
+  starGlint: 'var(--verdigris)',
+  starGlintGlow: 'color-mix(in srgb, var(--verdigris) 20%, transparent)',
+  starRuin: 'var(--rust)',
+  starRuinGlow: 'color-mix(in srgb, var(--rust) 20%, transparent)',
+  starViolet: 'color-mix(in srgb, var(--glass-blue) 55%, var(--rust) 45%)',
+  starVioletGlow: 'color-mix(in srgb, var(--glass-blue) 12%, var(--rust) 8%)',
+  text: 'var(--paper)',
+  textDim: 'var(--paper-dim)',
+  textDimmer: 'var(--paper-dimmer)',
+};
 
 function svgNumber(value: number) {
   return value.toFixed(6);
@@ -79,7 +119,8 @@ export function EldenOrrery() {
     {
       id: 'star1',
       name: 'Star of Ruin',
-      color: '#ff6b6b',
+      color: orreryColor.starRuin,
+      glow: orreryColor.starRuinGlow,
       size: 4,
       orbitRadius: 180,
       orbitSpeed: 0.3,
@@ -88,7 +129,8 @@ export function EldenOrrery() {
     {
       id: 'star2',
       name: 'Star of Darkness',
-      color: '#9b59b6',
+      color: orreryColor.starViolet,
+      glow: orreryColor.starVioletGlow,
       size: 3,
       orbitRadius: 200,
       orbitSpeed: 0.25,
@@ -97,7 +139,8 @@ export function EldenOrrery() {
     {
       id: 'star3',
       name: 'Star of Ill Omen',
-      color: '#3498db',
+      color: orreryColor.starBlue,
+      glow: orreryColor.starBlueGlow,
       size: 3.5,
       orbitRadius: 165,
       orbitSpeed: 0.35,
@@ -106,7 +149,8 @@ export function EldenOrrery() {
     {
       id: 'star4',
       name: 'Amber Star',
-      color: '#f39c12',
+      color: orreryColor.starAmber,
+      glow: orreryColor.starAmberGlow,
       size: 3,
       orbitRadius: 190,
       orbitSpeed: 0.28,
@@ -115,7 +159,8 @@ export function EldenOrrery() {
     {
       id: 'star5',
       name: 'Glintstone Star',
-      color: '#1abc9c',
+      color: orreryColor.starGlint,
+      glow: orreryColor.starGlintGlow,
       size: 2.5,
       orbitRadius: 175,
       orbitSpeed: 0.32,
@@ -143,28 +188,28 @@ export function EldenOrrery() {
           onClick={() => setRadahnFallen(!radahnFallen)}
           className={`px-4 py-2 rounded font-medium transition-all ${
             radahnFallen
-              ? 'bg-red-600 text-white'
-              : 'bg-[var(--bg-tertiary)] text-[var(--text-secondary)] hover:bg-[var(--bg-secondary)]'
+              ? 'bg-[var(--rust)] text-[var(--paper)]'
+              : 'bg-[var(--ink-3)] text-[var(--paper-dim)] hover:bg-[var(--pane)]'
           }`}
         >
           {radahnFallen ? 'Stars Released' : 'Radahn Holds the Stars'}
         </button>
         <button
           onClick={() => setPaused(!paused)}
-          className="px-4 py-2 rounded bg-[var(--bg-tertiary)] text-[var(--text-secondary)] hover:bg-[var(--bg-secondary)]"
+          className="px-4 py-2 rounded bg-[var(--ink-3)] text-[var(--paper-dim)] hover:bg-[var(--pane)] transition-all"
         >
           {paused ? 'Resume' : 'Pause'}
         </button>
         <button
           onClick={() => setTime(0)}
-          className="px-4 py-2 rounded bg-[var(--bg-tertiary)] text-[var(--text-secondary)] hover:bg-[var(--bg-secondary)]"
+          className="px-4 py-2 rounded bg-[var(--ink-3)] text-[var(--paper-dim)] hover:bg-[var(--pane)] transition-all"
         >
           Reset
         </button>
       </div>
 
       {/* Orrery */}
-      <div className="relative bg-[rgb(5,5,15)] rounded-lg border border-[var(--border-subtle)] overflow-hidden">
+      <div className="pane pane--solid relative rounded-lg overflow-hidden">
         <svg viewBox="0 0 500 500" className="w-full max-w-[600px] mx-auto">
           {/* Orbit paths */}
 
@@ -184,18 +229,13 @@ export function EldenOrrery() {
                   y1={svgNumber(y1)}
                   x2={svgNumber(x2)}
                   y2={svgNumber(y2)}
-                  stroke="rgba(200,200,220,0.4)"
+                  stroke={orreryColor.gear}
                   strokeWidth="2"
                 />
               );
             })}
             {/* Moon orbit path */}
-            <circle
-              r={moonOrbitRadius}
-              fill="none"
-              stroke="rgba(200,200,220,0.3)"
-              strokeWidth="2"
-            />
+            <circle r={moonOrbitRadius} fill="none" stroke={orreryColor.gearSoft} strokeWidth="2" />
           </g>
 
           {/* Binary orbit path */}
@@ -204,7 +244,7 @@ export function EldenOrrery() {
             cy={centerY}
             r={binaryOrbitRadius}
             fill="none"
-            stroke="rgba(212,175,55,0.3)"
+            stroke={orreryColor.goldOrbit}
             strokeWidth="1"
             strokeDasharray="4,4"
           />
@@ -217,7 +257,7 @@ export function EldenOrrery() {
               cy={centerY}
               r={s.orbitRadius}
               fill="none"
-              stroke={radahnFallen ? 'rgba(255,255,255,0.1)' : 'rgba(255,0,0,0.2)'}
+              stroke={radahnFallen ? orreryColor.glassOrbit : orreryColor.starFrozenOrbit}
               strokeWidth="1"
               strokeDasharray={radahnFallen ? '0' : '2,6'}
             />
@@ -230,19 +270,25 @@ export function EldenOrrery() {
             {/* Erdtree trunk */}
             <path
               d="M0,15 L-3,0 L-2,-10 L-5,-15 L0,-30 L5,-15 L2,-10 L3,0 Z"
-              fill="#d4af37"
+              fill={orreryColor.starAmber}
               opacity="0.9"
             />
             {/* Erdtree canopy */}
-            <ellipse cx="0" cy="-25" rx="15" ry="20" fill="rgba(212,175,55,0.6)" />
-            <ellipse cx="0" cy="-28" rx="10" ry="14" fill="rgba(212,175,55,0.8)" />
+            <ellipse cx="0" cy="-25" rx="15" ry="20" fill={orreryColor.erdtreeGlow} />
+            <ellipse cx="0" cy="-28" rx="10" ry="14" fill={orreryColor.goldOrbit} />
           </g>
 
           {/* Marika */}
           <g transform={svgTranslate(centerX + marikaX, centerY + marikaY)}>
             <circle r="12" fill="url(#marikaGlow)" />
-            <circle r="8" fill="#f1c40f" />
-            <text y="20" textAnchor="middle" fill="white" fontSize="8" fontFamily="serif">
+            <circle r="8" fill={orreryColor.marika} />
+            <text
+              y="20"
+              textAnchor="middle"
+              fill={orreryColor.text}
+              fontSize="8"
+              fontFamily="serif"
+            >
               Marika
             </text>
           </g>
@@ -250,14 +296,20 @@ export function EldenOrrery() {
           {/* Radagon (Mars) */}
           <g transform={svgTranslate(centerX + radagonX, centerY + radagonY)}>
             <circle r="12" fill="url(#radagonGlow)" />
-            <circle r="8" fill="#e74c3c" />
-            <text y="20" textAnchor="middle" fill="white" fontSize="8" fontFamily="serif">
+            <circle r="8" fill={orreryColor.radagon} />
+            <text
+              y="20"
+              textAnchor="middle"
+              fill={orreryColor.text}
+              fontSize="8"
+              fontFamily="serif"
+            >
               Radagon
             </text>
             <text
               y="28"
               textAnchor="middle"
-              fill="rgba(231,76,60,0.7)"
+              fill={orreryColor.radagonGlowSoft}
               fontSize="5"
               fontFamily="serif"
             >
@@ -271,7 +323,7 @@ export function EldenOrrery() {
             y1={svgNumber(centerY + marikaY)}
             x2={svgNumber(centerX + radagonX)}
             y2={svgNumber(centerY + radagonY)}
-            stroke="rgba(255,255,255,0.3)"
+            stroke={orreryColor.gearSoft}
             strokeWidth="1"
             strokeDasharray="4,4"
           />
@@ -284,7 +336,7 @@ export function EldenOrrery() {
               y1={0}
               x2={svgNumber(-moonX * 0.7)}
               y2={svgNumber(-moonY * 0.7)}
-              stroke="rgba(200,200,220,0.2)"
+              stroke={orreryColor.moonLine}
               strokeWidth="1"
               strokeDasharray="3,3"
             />
@@ -295,27 +347,27 @@ export function EldenOrrery() {
             {radahnFallen ? (
               <>
                 {/* Dark side of the moon (Ranni's Dark Moon) */}
-                <circle r="10" fill="#2d3748" />
+                <circle r="10" fill={orreryColor.darkMoon} />
                 {/* Dark side surface - cold and star-touched */}
-                <circle cx="-2" cy="-1" r="3" fill="rgba(20,20,40,0.8)" />
-                <circle cx="3" cy="2" r="2" fill="rgba(30,30,50,0.7)" />
+                <circle cx="-2" cy="-1" r="3" fill={orreryColor.darkMoonCrater} />
+                <circle cx="3" cy="2" r="2" fill={orreryColor.darkMoonCrater} />
                 {/* Cold stars embedded in dark surface */}
-                <circle cx="-3" cy="-3" r="1" fill="#a0aec0" />
-                <circle cx="2" cy="-1" r="0.7" fill="#a0aec0" />
-                <circle cx="-1" cy="3" r="0.5" fill="#a0aec0" />
-                <circle cx="4" cy="3" r="0.6" fill="#a0aec0" />
+                <circle cx="-3" cy="-3" r="1" fill={orreryColor.darkMoonStar} />
+                <circle cx="2" cy="-1" r="0.7" fill={orreryColor.darkMoonStar} />
+                <circle cx="-1" cy="3" r="0.5" fill={orreryColor.darkMoonStar} />
+                <circle cx="4" cy="3" r="0.6" fill={orreryColor.darkMoonStar} />
                 {/* Cold rim glow */}
-                <circle r="10" fill="none" stroke="rgba(100,130,180,0.4)" strokeWidth="1" />
+                <circle r="10" fill="none" stroke={orreryColor.darkMoonRim} strokeWidth="1" />
               </>
             ) : (
               <>
                 {/* Bright side of the moon (Rennala's Full Moon) */}
-                <circle r="10" fill="#e8e8f0" />
+                <circle r="10" fill={orreryColor.fullMoon} />
                 {/* Crater details */}
-                <circle cx="-3" cy="-2" r="2" fill="rgba(180,180,190,0.6)" />
-                <circle cx="2" cy="3" r="1.5" fill="rgba(180,180,190,0.5)" />
-                <circle cx="4" cy="-1" r="1" fill="rgba(180,180,190,0.4)" />
-                <circle cx="-1" cy="4" r="0.8" fill="rgba(180,180,190,0.3)" />
+                <circle cx="-3" cy="-2" r="2" fill={orreryColor.fullMoonCrater} />
+                <circle cx="2" cy="3" r="1.5" fill={orreryColor.fullMoonCrater} />
+                <circle cx="4" cy="-1" r="1" fill={orreryColor.fullMoonCrater} />
+                <circle cx="-1" cy="4" r="0.8" fill={orreryColor.fullMoonCrater} />
               </>
             )}
 
@@ -323,7 +375,7 @@ export function EldenOrrery() {
             <text
               y="22"
               textAnchor="middle"
-              fill={radahnFallen ? '#a0aec0' : 'white'}
+              fill={radahnFallen ? orreryColor.darkMoonStar : orreryColor.text}
               fontSize="7"
               fontFamily="serif"
             >
@@ -332,7 +384,7 @@ export function EldenOrrery() {
             <text
               y="30"
               textAnchor="middle"
-              fill={radahnFallen ? 'rgba(100,100,180,0.7)' : 'rgba(200,200,220,0.7)'}
+              fill={radahnFallen ? orreryColor.darkMoonRim : orreryColor.textDim}
               fontSize="5"
               fontFamily="serif"
             >
@@ -341,7 +393,7 @@ export function EldenOrrery() {
             <text
               y="38"
               textAnchor="middle"
-              fill="rgba(200,200,220,0.5)"
+              fill={orreryColor.textDimmer}
               fontSize="4"
               fontFamily="serif"
             >
@@ -356,7 +408,7 @@ export function EldenOrrery() {
             y1={svgNumber(centerY + moonY)}
             x2={svgNumber(centerX + radagonX)}
             y2={svgNumber(centerY + radagonY)}
-            stroke="rgba(231,76,60,0.3)"
+            stroke={orreryColor.radagonLine}
             strokeWidth="2"
             strokeDasharray="6,4"
           />
@@ -365,14 +417,14 @@ export function EldenOrrery() {
             cx={svgNumber(centerX + moonX * 1.15)}
             cy={svgNumber(centerY + moonY * 1.15)}
             r="3"
-            fill="rgba(200,200,220,0.5)"
+            fill={orreryColor.gear}
           />
           {/* Gear tooth at Radagon's side */}
           <circle
             cx={svgNumber(centerX + radagonX * 0.85)}
             cy={svgNumber(centerY + radagonY * 0.85)}
             r="3"
-            fill="rgba(231,76,60,0.5)"
+            fill={orreryColor.radagonGlowSoft}
           />
 
           {/* Stars */}
@@ -381,11 +433,16 @@ export function EldenOrrery() {
             return (
               <g key={s.id} transform={svgTranslate(centerX + pos.x, centerY + pos.y)}>
                 {/* Star glow */}
-                <circle r={s.size * 2} fill={`${s.color}33`} />
+                <circle r={s.size * 2} fill={s.glow} />
                 <circle r={s.size} fill={s.color} />
                 {/* Frozen indicator */}
                 {!radahnFallen && (
-                  <circle r={s.size + 4} fill="none" stroke="rgba(231,76,60,0.5)" strokeWidth="1" />
+                  <circle
+                    r={s.size + 4}
+                    fill="none"
+                    stroke={orreryColor.starFrozen}
+                    strokeWidth="1"
+                  />
                 )}
               </g>
             );
@@ -394,24 +451,24 @@ export function EldenOrrery() {
           {/* Gradient definitions */}
           <defs>
             <radialGradient id="erdtreeGlow">
-              <stop offset="0%" stopColor="rgba(212,175,55,0.4)" />
-              <stop offset="100%" stopColor="rgba(212,175,55,0)" />
+              <stop offset="0%" stopColor={orreryColor.erdtreeGlow} />
+              <stop offset="100%" stopColor={orreryColor.erdtreeGlowEnd} />
             </radialGradient>
             <radialGradient id="marikaGlow">
-              <stop offset="0%" stopColor="rgba(241,196,15,0.6)" />
-              <stop offset="100%" stopColor="rgba(241,196,15,0)" />
+              <stop offset="0%" stopColor={orreryColor.marikaGlow} />
+              <stop offset="100%" stopColor={orreryColor.erdtreeGlowEnd} />
             </radialGradient>
             <radialGradient id="radagonGlow">
-              <stop offset="0%" stopColor="rgba(231,76,60,0.6)" />
-              <stop offset="100%" stopColor="rgba(231,76,60,0)" />
+              <stop offset="0%" stopColor={orreryColor.radagonGlow} />
+              <stop offset="100%" stopColor={orreryColor.erdtreeGlowEnd} />
             </radialGradient>
             <radialGradient id="moonGlow">
-              <stop offset="0%" stopColor="rgba(232,232,240,0.5)" />
-              <stop offset="100%" stopColor="rgba(232,232,240,0)" />
+              <stop offset="0%" stopColor={orreryColor.moonGlow} />
+              <stop offset="100%" stopColor={orreryColor.moonGlowEnd} />
             </radialGradient>
             <radialGradient id="darkMoonGlow">
-              <stop offset="0%" stopColor="rgba(100,100,180,0.4)" />
-              <stop offset="100%" stopColor="rgba(100,100,180,0)" />
+              <stop offset="0%" stopColor={orreryColor.darkMoonRim} />
+              <stop offset="100%" stopColor={orreryColor.moonGlowEnd} />
             </radialGradient>
           </defs>
         </svg>
@@ -421,45 +478,39 @@ export function EldenOrrery() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 text-sm">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 rounded-full relative overflow-hidden">
-            <div
-              className="absolute inset-0 bg-[#e8e8f0]"
-              style={{ clipPath: 'inset(0 50% 0 0)' }}
-            />
-            <div
-              className="absolute inset-0 bg-[#2d3748]"
-              style={{ clipPath: 'inset(0 0 0 50%)' }}
-            />
+            <div className="absolute inset-0 bg-[var(--paper)] [clip-path:inset(0_50%_0_0)]" />
+            <div className="absolute inset-0 bg-[var(--glass-blue-dim)] [clip-path:inset(0_0_0_50%)]" />
           </div>
-          <span className="text-[var(--text-secondary)]">The Moon (Full/Dark)</span>
+          <span className="text-[var(--paper-dim)]">The Moon (Full/Dark)</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-[#f1c40f]" />
-          <span className="text-[var(--text-secondary)]">Marika</span>
+          <div className="w-4 h-4 rounded-full bg-[var(--gold-bright)]" />
+          <span className="text-[var(--paper-dim)]">Marika</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-[#e74c3c]" />
-          <span className="text-[var(--text-secondary)]">Radagon (Mars)</span>
+          <div className="w-4 h-4 rounded-full bg-[var(--rust)]" />
+          <span className="text-[var(--paper-dim)]">Radagon (Mars)</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-[#d4af37]" />
-          <span className="text-[var(--text-secondary)]">Erdtree</span>
+          <div className="w-4 h-4 rounded-full bg-[var(--gold)]" />
+          <span className="text-[var(--paper-dim)]">Erdtree</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-6 h-0.5 bg-[rgba(231,76,60,0.5)]" style={{ borderStyle: 'dashed' }} />
-          <span className="text-[var(--text-secondary)]">Moon-Mars Linkage</span>
+          <div className="w-6 h-0 border-t border-dashed border-[var(--rust)]" />
+          <span className="text-[var(--paper-dim)]">Moon-Mars Linkage</span>
         </div>
       </div>
 
       {/* Explanation */}
-      <div className="text-sm text-[var(--text-tertiary)] space-y-2">
+      <div className="text-sm text-[var(--paper-dimmer)] space-y-2">
         <p>
-          <strong className="text-[var(--text-secondary)]">The Moon as Driveshaft:</strong> In the
-          TYCHOS model, the Moon acts as the mechanical driver of the entire solar system&mdash;a
+          <strong className="text-[var(--paper-dim)]">The Moon as Driveshaft:</strong> In the TYCHOS
+          model, the Moon acts as the mechanical driver of the entire solar system&mdash;a
           driveshaft that keeps all other bodies in synchronized motion. The rotating gear teeth
           show how its orbit powers the entire celestial mechanism.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">Radagon is Mars:</strong> The Moon-Mars
+          <strong className="text-[var(--paper-dim)]">Radagon is Mars:</strong> The Moon-Mars
           relationship in TYCHOS shows Mars orbiting at exactly half the Moon&apos;s angular
           velocity&mdash;a 2:1 resonance. In the Lands Between, Radagon (the red-haired warrior god){' '}
           <em>is</em> Mars. The dashed line shows the mechanical linkage: the Moon literally drives
@@ -467,24 +518,23 @@ export function EldenOrrery() {
           driveshaft.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">One Moon, Two Faces:</strong>{' '}
-          Rennala&apos;s Full Moon and Ranni&apos;s Dark Moon are the <em>same celestial body</em>
+          <strong className="text-[var(--paper-dim)]">One Moon, Two Faces:</strong> Rennala&apos;s
+          Full Moon and Ranni&apos;s Dark Moon are the <em>same celestial body</em>
           &mdash;just different sides. While Radahn holds the stars, we see the bright side
           (Rennala&apos;s domain, the Academy, order). When Radahn falls, the Moon turns to show its
           dark side (Ranni&apos;s domain, enabling the Age of Stars). Mother and daughter share the
           same celestial inheritance.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">The Binary System:</strong> Marika and
-          Radagon orbit each other as a true syzygy&mdash;two gods sharing one vessel but retaining
-          distinct wills. The Erdtree sits at their barycenter, the axis around which all else
-          revolves.
+          <strong className="text-[var(--paper-dim)]">The Binary System:</strong> Marika and Radagon
+          orbit each other as a true syzygy&mdash;two gods sharing one vessel but retaining distinct
+          wills. The Erdtree sits at their barycenter, the axis around which all else revolves.
         </p>
         <p>
-          <strong className="text-[var(--text-secondary)]">Radahn&apos;s Gravity:</strong> While
-          Radahn lives, his mastery of gravity magic holds the stars frozen in place. Toggle
-          &quot;Stars Released&quot; to see what happens when he falls&mdash;the stars resume their
-          motion, the Moon turns to its dark side, and Ranni&apos;s ending becomes possible.
+          <strong className="text-[var(--paper-dim)]">Radahn&apos;s Gravity:</strong> While Radahn
+          lives, his mastery of gravity magic holds the stars frozen in place. Toggle &quot;Stars
+          Released&quot; to see what happens when he falls&mdash;the stars resume their motion, the
+          Moon turns to its dark side, and Ranni&apos;s ending becomes possible.
         </p>
       </div>
     </div>
