@@ -13,10 +13,10 @@ import { captureAxRouteRequest } from '@/lib/analytics/server-capture';
  *   - No-ops when `POSTHOG_API_KEY` / `POSTHOG_HOST` are unset or
  *     `ANALYTICS_DISABLED=1` is set, so this file is safe to leave
  *     mounted in any environment.
- *   - Skips `static_asset` and `unknown` route families.
+ *   - Skips `static_asset`, `telemetry`, and `unknown` route families.
  *   - Skips browser-classified clients on human-facing surfaces, so an
  *     ordinary browser pageview is not double-counted against the
- *     client-side `human_pageview` event. AX-only surfaces (llms.txt,
+ *     client-side `$pageview` event. AX-only surfaces (llms.txt,
  *     api/llms/*, feeds, sitemap, robots.txt) are always captured.
  *
  * The matcher excludes Next.js internals and known static-asset roots so

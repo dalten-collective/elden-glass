@@ -391,3 +391,8 @@
 {"type":"rename","timestamp":"2026-04-29T19:58:49.58297Z","issue_id":"pb-3f7","payload":{"new_id":"pb-ba4.7"}}
 {"type":"dep_add","timestamp":"2026-04-29T19:58:49.58297Z","issue_id":"pb-ba4.7","payload":{"dep_type":"parent-child","depends_on":"pb-ba4"}}
 {"type":"dep_add","timestamp":"2026-04-29T19:58:53.550449Z","issue_id":"pb-ba4","payload":{"dep_type":"blocks","depends_on":"pb-ba4.7"}}
+{"type":"create","timestamp":"2026-09-16T16:53:40.167686Z","issue_id":"pb-35c","payload":{"description":"Production unknown spikes combine recognizable crawlers, browser webviews, scripted audits, assets and PHP/WordPress probes. Expand evidence-based UA classifications, distinguish request surfaces without claiming successful reads, and add historical reporting from raw ax_route_request events. Validate event counts, preserve privacy controls, and document attribution limits.","priority":"2","title":"Separate named crawlers, scripts and probe traffic in AX analytics","type":"task"}}
+{"type":"status_update","timestamp":"2026-09-16T16:54:04.962338Z","issue_id":"pb-35c","payload":{"status":"in_progress"}}
+{"type":"rename","timestamp":"2026-09-16T16:54:04.962338Z","issue_id":"pb-35c","payload":{"new_id":"pb-ba4.8"}}
+{"type":"dep_add","timestamp":"2026-09-16T16:54:04.962338Z","issue_id":"pb-ba4.8","payload":{"dep_type":"parent-child","depends_on":"pb-ba4"}}
+{"type":"close","timestamp":"2026-09-16T17:10:10.490509Z","issue_id":"pb-ba4.8","payload":{}}

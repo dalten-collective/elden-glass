@@ -30,6 +30,8 @@ main().catch((error) => {
  * Emits a markdown weekly traffic report from PostHog HogQL.
  */
 async function main() {
+  if (process.argv.includes('--agents')) return agentTrafficReport();
+
   const [human1d, human7d, human30d, agent7d, daily, topPages, referrers, agents, axPaths] =
     await Promise.all([
       humanSummary(1),
@@ -90,7 +92,7 @@ async function main() {
           coalesce(nullIf(properties['agent_family'], ''), 'unknown') AS family,
           coalesce(nullIf(properties['agent_product'], ''), 'unknown') AS product,
           count() AS events,
-          count(DISTINCT distinct_id) AS actors,
+          count(DISTINCT distinct_id) AS identity_buckets,
           max(timestamp) AS last_seen
         FROM events
         WHERE event = 'agent_classified'
@@ -135,16 +137,17 @@ async function main() {
   console.log('');
   console.log(`## Agent Traffic`);
   console.log('');
-  printSummaryTable([['7d', agent7d]], ['events', 'actors', 'last_seen']);
+  printSummaryTable([['7d', agent7d]], ['requests', 'identity_buckets', 'last_seen']);
   console.log('');
   printTable('Daily Human Trend', daily, ['day', 'pageviews', 'visitors', 'sessions']);
   printTable('Top Human Pages, 7d', topPages, ['path', 'pageviews', 'visitors']);
   printTable('Human Referrers, 7d', referrers, ['referrer', 'pageviews', 'visitors']);
+  console.log('Identity buckets group UA classifications; they are not unique visitors or bots.');
   printTable('Top Agent Identities, 7d', agents, [
     'family',
     'product',
     'events',
-    'actors',
+    'identity_buckets',
     'last_seen',
   ]);
   printTable('Top AX Paths, 7d', axPaths, ['path', 'route_family', 'requests']);
@@ -178,11 +181,11 @@ async function agentSummary(days) {
   const rows = await queryRows(
     `
     SELECT
-      count() AS events,
-      count(DISTINCT distinct_id) AS actors,
+      count() AS requests,
+      count(DISTINCT distinct_id) AS identity_buckets,
       max(timestamp) AS last_seen
     FROM events
-    WHERE event IN ('agent_classified', 'ax_route_request')
+    WHERE event = 'ax_route_request'
       AND properties['environment'] = {environment}
       AND timestamp >= now() - INTERVAL ${Number(days)} DAY
     `,
@@ -194,7 +197,7 @@ async function agentSummary(days) {
 /**
  * Executes one HogQL query and maps returned rows to column names.
  */
-async function queryRows(query, values = {}) {
+async function queryRows(query, values = {}, requireComplete = false) {
   const response = await fetch(`${posthogHost}/api/projects/${projectId}/query/`, {
     method: 'POST',
     headers: {
@@ -216,6 +219,9 @@ async function queryRows(query, values = {}) {
   }
 
   const payload = await response.json();
+  if (requireComplete && (payload.hasMore || !Array.isArray(payload.results))) {
+    throw new Error('Incomplete PostHog query result; narrow the report date window.');
+  }
   const columns = payload.columns || [];
   return (payload.results || []).map((row) =>
     Object.fromEntries(columns.map((column, index) => [column, row[index]]))
@@ -274,5 +280,98 @@ function printTable(title, rows, columns) {
  */
 function formatValue(value) {
   if (value === null || value === undefined || value === '') return '-';
-  return String(value).replace(/\|/g, '\\|');
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/[\r\n]/g, ' ')
+    .replace(/\|/g, '\\|');
+}
+
+/** Print a historical agent report using the same rules as runtime capture. */
+async function agentTrafficReport() {
+  const { analyzeAgentRequests, agentReportWindow } = require('../lib/analytics/agent-report.ts');
+  const window = agentReportWindow(
+    process.env.POSTHOG_REPORT_START,
+    process.env.POSTHOG_REPORT_END
+  );
+  // Group only request events. Paired classification events would double counts.
+  const rows = await queryRows(
+    `
+    SELECT toDate(timestamp) AS day,
+      properties['user_agent'] AS user_agent,
+      properties['path'] AS path,
+      (properties['agent_family'] = 'unknown'
+        OR distinct_id LIKE 'agent:unknown:%'
+        OR distinct_id LIKE 'agent_surface_unknown:%') AS recorded_unknown,
+      count() AS requests
+    FROM events
+    WHERE event = 'ax_route_request'
+      AND properties['environment'] = {environment}
+      AND timestamp >= {start} AND timestamp < {end}
+    GROUP BY day, user_agent, path, recorded_unknown
+    ORDER BY day, path, user_agent
+    LIMIT 50000
+  `,
+    { environment, ...window },
+    true
+  );
+  if (rows.length >= 50000) throw new Error('Report row limit reached; narrow the date window.');
+  const report = analyzeAgentRequests(rows, authoredPaths());
+  if (process.argv.includes('--json')) {
+    console.log(
+      JSON.stringify({ environment, window, classification_version: 2, ...report }, null, 2)
+    );
+    return;
+  }
+
+  // Keep totals complete; ranked tables are explicitly limited for readability.
+  console.log('# Elden Glass Agent Traffic');
+  console.log(
+    `\nEnvironment: ${environment}. UTC window: ${window.start} inclusive to ${window.end} exclusive.`
+  );
+  console.log(
+    `\n${report.requests} recorded requests. ${report.recordedUnknown} recorded as unknown; ${report.remainingUnknown} remain unrecognized under classifier version 2.`
+  );
+  console.log(
+    '\nCounts are requests, not people or successful reads. UA identities are self-reported. Authored paths are matched against this checkout, not a historical deployment.'
+  );
+  console.log(
+    '\nThis replays captured rows only. Browser pageviews and requests omitted by capture are not reconstructed. Stored PostHog events are unchanged.'
+  );
+  const columns = ['label', 'requests', 'paths'];
+  printTable('Products and stated modes', report.products, columns);
+  printTable('Requested surfaces', report.surfaces, columns);
+  printTable('Probe paths by claimed product and mode', report.probeProducts, columns);
+  printTable('Daily requests', report.daily, columns);
+  printTable('Previously unknown: reclassified products', report.unknownProducts, columns);
+  printTable(
+    'Previously unknown: largest daily product counts (top 30)',
+    report.unknownDaily.slice(0, 30),
+    columns
+  );
+  printTable('Still unrecognized: requested surfaces', report.unknownSurfaces, columns);
+  printTable(
+    'Still unrecognized: raw user agents (top 30)',
+    report.unknownUserAgents.slice(0, 30),
+    columns
+  );
+  printTable('Most requested paths (top 20)', report.topPaths.slice(0, 20), columns);
+  printTable('User-fetch products and paths (top 20)', report.userFetchPaths.slice(0, 20), columns);
+}
+
+/** Match filesystem-derived authored URLs using the content system's slug convention. */
+function authoredPaths() {
+  const paths = new Set();
+  for (const [directory, prefix] of [
+    ['content/pages', ''],
+    ['content/critiques', '/critiques'],
+  ]) {
+    if (!fs.existsSync(directory)) continue;
+    for (const filename of fs.readdirSync(directory, { recursive: true })) {
+      if (filename.endsWith('.mdx'))
+        paths.add(`${prefix}/${filename.replaceAll(path.sep, '/').slice(0, -4)}`);
+    }
+  }
+  return paths;
 }
