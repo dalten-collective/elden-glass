@@ -240,26 +240,28 @@ shared dimension that lets a maintainer ask "what is happening on
 which surface" without tying queries to URL strings that change as
 content moves.
 
-| Route family          | Examples                                                           | Notes                                                                                |
-| --------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `home`                | `/`                                                                | The home route only.                                                                 |
-| `mdx_content`         | `/living-thesis`, `/duchamp/chess/overview`, any catch-all MDX URL | Content from `content/pages/**` rendered through the catch-all.                      |
-| `bespoke_interactive` | `/xenotext`, `/duchamp/duchamp-works`, `/gatherer`                 | Bespoke TSX routes called out in `AGENTS.md` and `CLAUDE.md`.                        |
-| `search`              | `/search`, `/api/search`                                           | Both the page and its API.                                                           |
-| `item_cards`          | `/api/item-cards`, `/api/item-cards/[id]`                          | The structured item-card APIs. The `/gatherer` page itself is `bespoke_interactive`. |
-| `ax_llms_text`        | `/llms.txt`                                                        | Plain-text agent guide.                                                              |
-| `ax_llms_toc`         | `/api/llms/toc`                                                    | Machine-readable agent table of contents.                                            |
-| `ax_route_catalog`    | `/contents`, anything else built on `lib/route-catalog.ts`         | Human-and-agent-readable route inventory.                                            |
-| `feeds`               | `/feed.xml`, redirected `/rss`, `/rss.xml`                         | Syndication surfaces.                                                                |
-| `sitemap_catalog`     | `/sitemap.xml`, `/robots.txt`                                      | Crawler-discovery surfaces.                                                          |
-| `redirect`            | Anything matched by `content/redirects.json`                       | Recorded as a redirect hop, not as a destination.                                    |
-| `static_asset`        | `/images/**`, `/proofs/**`, other public files                     | Usually filtered out, but the family exists for AX log analysis.                     |
-| `unknown`             | fallthrough                                                        | Reserved for paths that do not match any known family.                               |
+| Route family          | Examples                                                           | Notes                                                                                     |
+| --------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| `home`                | `/`                                                                | The home route only.                                                                      |
+| `site_path`           | `/living-thesis`, `/duchamp/chess/overview`, any catch-all MDX URL | Unverified site path; may resolve to content, a redirect, or a missing page.              |
+| `bespoke_interactive` | `/xenotext`, `/duchamp/duchamp-works`, `/gatherer`                 | Bespoke TSX routes called out in `AGENTS.md` and `CLAUDE.md`.                             |
+| `search`              | `/search`, `/api/search`                                           | Both the page and its API.                                                                |
+| `item_cards`          | `/api/item-cards`, `/api/item-cards/[id]`                          | The structured item-card APIs. The `/gatherer` page itself is `bespoke_interactive`.      |
+| `ax_llms_text`        | `/llms.txt`                                                        | Plain-text agent guide.                                                                   |
+| `ax_llms_toc`         | `/api/llms/toc`                                                    | Machine-readable agent table of contents.                                                 |
+| `ax_route_catalog`    | `/contents`, anything else built on `lib/route-catalog.ts`         | Human-and-agent-readable route inventory.                                                 |
+| `feeds`               | `/feed.xml`, redirected `/rss`, `/rss.xml`                         | Syndication surfaces.                                                                     |
+| `sitemap_catalog`     | `/sitemap.xml`, `/robots.txt`                                      | Crawler-discovery surfaces.                                                               |
+| `redirect`            | Anything matched by `content/redirects.json`                       | Recorded as a redirect hop, not as a destination.                                         |
+| `static_asset`        | `/images/**`, `/proofs/**`, other public files                     | Usually filtered out, but the family exists for AX log analysis.                          |
+| `probe`               | `/admin.php`, `/wp-content/**`, `/.env`                            | Requests for PHP, WordPress, or exposed configuration paths; no claim of exploit success. |
+| `telemetry`           | `/_eg/mark/**`                                                     | PostHog ingestion proxy requests; excluded from AX capture.                               |
+| `unknown`             | unmapped `/api/**`                                                 | Reserved for paths that do not match any known family.                                    |
 
 Mapping rules:
 
-- The `mdx_content` family is decided by whether the URL is served
-  through `app/(site)/[...slug]/page.tsx`, not by URL string match.
+- The `site_path` family is the fallback for site-shaped paths. Classification
+  runs before route resolution and cannot establish content existence or response status.
 - A request to `/gatherer` is `bespoke_interactive`, even though its
   data layer is `item_cards`. Family describes the surface the user/
   agent is on; data-source dimensions are separate properties.
@@ -322,11 +324,13 @@ Current emitted event vocabulary:
 - `ax_route_request` — server-side request to any tracked route.
   Properties: `environment`, `route_family`, `path`, `method`,
   `user_agent`, `referrer`, `status`, `is_js_likely`, `ax_surface`,
-  `agent_surface_unknown`.
+  `agent_surface_unknown`, `agent_family`, `agent_product`, `agent_mode`,
+  `confidence`, `matched_token`, `classification_version`, `classification_basis`.
 - `agent_classified` — paired classification output. Properties:
   `environment`, `path`, `route_family`, `ax_surface`,
   `agent_family`, `agent_product`, `agent_mode`, `confidence`,
-  `matched_token`, `agent_surface_unknown`. The event is emitted in
+  `matched_token`, `agent_surface_unknown`, `classification_version`,
+  `classification_basis`. The event is emitted in
   the same server-side PostHog batch as its matching
   `ax_route_request`.
 
@@ -429,14 +433,13 @@ robots behavior.
   `environment=production`. Break down by `route_family` and `path`.
   AX-native surfaces are `ax_llms_text`, `ax_llms_toc`,
   `ax_route_catalog`, `feeds`, and `sitemap_catalog`.
-- To see agents reading ordinary authored pages, filter
-  `ax_route_request` to `route_family=mdx_content` and
-  `ax_surface=false`. Browser user agents on human-facing surfaces are
-  skipped server-side, so these rows represent non-browser clients that
-  reached content routes.
-- Use `status` to catch broken AX access. Repeated non-2xx statuses on
-  `/llms.txt`, `/api/llms/toc`, `/contents`, `/sitemap.xml`, or
-  `/robots.txt` should be treated as release blockers.
+- To inspect non-browser requests for site pages, filter
+  `ax_route_request` to `route_family=site_path` and `ax_surface=false`.
+  The path can be an article, redirect, or missing page. Use the historical
+  report to match paths against authored files in the checkout.
+- `status` is nullable. The request proxy does not observe the final response,
+  so null is not evidence of a successful or failed fetch. Verify response
+  failures using deployment logs or a bounded endpoint check.
 - Use `agent_surface_unknown=true` to find AX surface requests where
   the user agent did not match a known agent or browser rule. These
   are real requests, but not attributable to a named provider.
@@ -477,7 +480,7 @@ It does not answer "total LLM usage of the site."
 
 - `confidence=high` means a known published agent token matched the
   user-agent string. User agents can still be spoofed.
-- `confidence=medium` currently applies to ordinary browser tokens.
+- `confidence=medium` applies to browser, generic software, and observed audit tokens.
   Browser AX events appear only on AX-only surfaces because browser
   traffic on human-facing surfaces is owned by native `$pageview`
   browser analytics.
@@ -492,6 +495,86 @@ It does not answer "total LLM usage of the site."
 - Google Search Console and PostHog use different measurement models.
   GSC is the authority for Google query and indexing questions;
   PostHog is the authority for site behavior and AX request events.
+
+### Historical Agent Report
+
+Run `npm run traffic:agents` with `POSTHOG_PERSONAL_API_KEY` available in the
+environment or `.env.local`. It uses the same query connection as
+`npm run traffic:weekly`: `POSTHOG_PROJECT_ID`, `POSTHOG_QUERY_HOST`, and
+`POSTHOG_REPORT_ENV` select the project, API host, and environment. These
+reports query existing events and do not change dashboards or stored events.
+
+The default window is the last 30 complete UTC days. Explicit windows use an
+inclusive start and exclusive end:
+
+```bash
+POSTHOG_REPORT_START=2026-08-17 POSTHOG_REPORT_END=2026-09-16 npm run traffic:agents
+npm run traffic:agents -- --json
+```
+
+The report counts only `ax_route_request`, replays the shared UA and path
+classifiers over raw user agents, and shows product, mode, day, surface,
+previously unknown traffic, remaining unknown strings, user-fetch paths, and probe paths by claimed product.
+It rejects incomplete or row-limited query results; narrow the date window
+when the query exceeds 50,000 grouped rows. Tables marked "top" are ranked
+excerpts; JSON includes every group.
+
+`authored_path_in_checkout` means a path matches an MDX file under
+`content/pages` or `content/critiques` in the checkout running the report.
+It does not establish the content of a historical deployment or response.
+The report cannot reconstruct requests omitted by capture. Browser traffic
+on ordinary pages belongs in browser analytics.
+
+Count requests with one event type. The paired `agent_classified` event is
+another representation of the same request. `distinct_id` groups clients by
+classification, so `identity_buckets` is not a visitor, person, session, or
+unique-bot count.
+
+### Classification Version 2
+
+Both paired events carry `classification_version=2` and
+`classification_basis=user_agent`. The request event also carries the full
+classification, which allows filtering raw UAs and request paths without a
+join. Version 2 uses `site_path` for the unverified site-path fallback;
+historical `mdx_content` values also included missing pages, probes, and assets.
+Use the replay report for comparisons across that boundary.
+
+The classifier recognizes named search, SEO, monitoring, and preview clients:
+
+- [AhrefsBot](https://ahrefs.com/robot/) and
+  [SemrushBot](https://www.semrush.com/bot/) use `seo` for their tooling role.
+  Ahrefs also supplies a search index; the tag does not claim an exclusive use.
+- [AwarioBot](https://awario.com/bots.html) uses `monitoring`.
+- [SeznamBot](https://o-seznam.cz/napoveda/vyhledavani/seznambot/) and
+  [DuckDuckBot](https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot)
+  use `general_search`.
+- [ExaSearchBot](https://crawler.exa.ai/) uses `search`.
+- [DataForSeoBot](https://dataforseo.com/dataforseo-bot) uses `seo`.
+- Twitterbot and [Slackbot-LinkExpanding](https://api.slack.com/robots) use `preview`.
+
+Observed `ImageMetaBot`, `heritrix/`, and `jscrawler/` tokens use `crawl`;
+the classifier makes no training claim. Generic software such as Heritrix,
+jscrawler, Python HTTP libraries, and curl uses `family=unattributed` because
+the software name does not identify its operator. The explicit
+`Codex-agent-experience-audit/` token uses `audit`, also unattributed; it does
+not establish OpenAI ownership or that the site owner ran it.
+
+Embedded WebKit strings can classify as browser-like without a `Safari/`
+token. Native networking strings use `client`, which does not assert a human
+visitor or JavaScript execution. Named agent rules precede browser rules.
+All identity and purpose labels are based on self-reported UA tokens; even
+`confidence=high` is not network or cryptographic verification.
+
+A recognized UA can accompany credential probes. Inspect the probe-product table
+before treating `user_fetch` or a provider name as evidence of content interest.
+The tag describes the token, not verified behavior.
+
+Capture excludes telemetry proxy paths and recognized asset paths, including
+images outside `/images`. The explicit LLM text endpoints and their
+`/.well-known` aliases remain captured. PHP, WordPress, and exposed-configuration path
+patterns, including nested `.git` and `.env` paths, remain captured with
+`route_family=probe`, including requests with browser-shaped UAs. These rules categorize
+requests and do not block clients or certify exploitation.
 
 ### Weekly Checklist
 
@@ -545,17 +628,18 @@ curl -A 'Claude-User/1.0 (+https://www.anthropic.com)' "$PREVIEW_URL/llms.txt"
 curl -A 'ClaudeBot/1.0 (+https://www.anthropic.com)' "$PREVIEW_URL/tldr"
 curl -A 'ChatGPT-User/1.0 (+https://openai.com)' "$PREVIEW_URL/api/llms/toc"
 curl -A 'GPTBot/1.0' "$PREVIEW_URL/contents"
-curl -A 'curl/8.5.0' "$PREVIEW_URL/llms.txt"
+curl -A 'UnlistedClient/1.0' "$PREVIEW_URL/llms.txt"
+curl -A 'Python-urllib/3.14' "$PREVIEW_URL/api/llms/toc"
 ```
 
 - Confirm each request creates an `ax_route_request` and paired
   `agent_classified` event in `environment=preview`.
 - Confirm `Claude-User` and `ChatGPT-User` classify as
   `agent_mode=user_fetch`, while `ClaudeBot` and `GPTBot` do not.
-- Confirm the plain `curl/...` request to `/llms.txt` has
+- Confirm the `UnlistedClient/...` request to `/llms.txt` has
   `agent_family=unknown`, `confidence=none`, and
   `agent_surface_unknown=true`.
-- Confirm `/tldr` with `ClaudeBot` records `route_family=mdx_content`
+- Confirm `/tldr` with `ClaudeBot` records `route_family=site_path`
   and `ax_surface=false`.
 
 Production checks after merge:

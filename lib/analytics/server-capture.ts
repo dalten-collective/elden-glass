@@ -15,10 +15,10 @@
  * Encapsulates the full policy from docs/analytics.md:
  *   - Missing `POSTHOG_API_KEY` / `POSTHOG_HOST` or `ANALYTICS_DISABLED=1`
  *     no-ops the call.
- *   - `static_asset` and `unknown` route families are not AX-relevant and
+ *   - `static_asset`, `telemetry`, and `unknown` route families are not AX-relevant and
  *     are skipped.
  *   - Browser-classified clients on human-facing surfaces (home,
- *     mdx_content, bespoke_interactive, search, item_cards,
+ *     site_path, bespoke_interactive, search, item_cards,
  *     ax_route_catalog) are skipped to avoid double-counting against the
  *     native `$pageview` browser event. AX-only surfaces (`ax_llms_text`,
  *     `ax_llms_toc`, `feeds`, `sitemap_catalog`) are always captured —
@@ -52,7 +52,7 @@ const AX_ONLY_FAMILIES = new Set<RouteFamily>([
 ]);
 
 /** Families that are not meaningful for AX analytics. */
-const SKIPPED_FAMILIES = new Set<RouteFamily>(['static_asset', 'unknown']);
+const SKIPPED_FAMILIES = new Set<RouteFamily>(['static_asset', 'telemetry', 'unknown']);
 
 /** PostHog batch ingestion path (relative to `POSTHOG_HOST`). */
 const BATCH_ENDPOINT = '/batch/';
@@ -77,36 +77,31 @@ export function captureAxRouteRequest(input: AxCaptureInput): Promise<void> {
   // On non-AX surfaces, ordinary browsers are already counted by
   // native PostHog browser analytics. Skipping them here is the dedupe
   // rule the docs/analytics.md acceptance criterion calls for.
-  if (!axSurface && isBrowser) return Promise.resolve();
+  if (!axSurface && isBrowser && family !== 'probe') return Promise.resolve();
 
   const isUnknownAgentOnAxSurface = axSurface && classification.agent_family === 'unknown';
   const distinctId = deriveDistinctId(family, classification, isUnknownAgentOnAxSurface);
   const timestamp = new Date().toISOString();
 
-  const sharedProps = {
-    environment: config.env,
-    route_family: family,
-    path: input.path,
-    method: input.method,
-    user_agent: input.userAgent ?? '',
-    referrer: input.referrer ?? null,
-    status: input.status ?? null,
-    is_js_likely: isBrowser,
-    ax_surface: axSurface,
-    agent_surface_unknown: isUnknownAgentOnAxSurface,
-  };
-
+  // Both events carry the same classification so request queries need no join.
   const classifierProps = {
     environment: config.env,
     path: input.path,
     route_family: family,
     ax_surface: axSurface,
-    agent_family: classification.agent_family,
-    agent_product: classification.agent_product,
-    agent_mode: classification.agent_mode,
-    confidence: classification.confidence,
-    matched_token: classification.matched_token,
+    ...classification,
+    classification_version: 2,
+    classification_basis: 'user_agent',
     agent_surface_unknown: isUnknownAgentOnAxSurface,
+  };
+
+  const sharedProps = {
+    ...classifierProps,
+    method: input.method,
+    user_agent: input.userAgent ?? '',
+    referrer: input.referrer ?? null,
+    status: input.status ?? null,
+    is_js_likely: isBrowser,
   };
 
   const payload = {

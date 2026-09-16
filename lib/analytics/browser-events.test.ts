@@ -24,9 +24,9 @@ test('internal-link click captures from/to route families and paths', () => {
     toPath: '/duchamp/chess/overview',
   });
   assert.equal(props.from_path, '/living-thesis');
-  assert.equal(props.from_route_family, 'mdx_content');
+  assert.equal(props.from_route_family, 'site_path');
   assert.equal(props.to_path, '/duchamp/chess/overview');
-  assert.equal(props.to_route_family, 'mdx_content');
+  assert.equal(props.to_route_family, 'site_path');
 });
 
 test('outbound-link click records only the host, never the full URL', () => {
@@ -35,7 +35,7 @@ test('outbound-link click records only the host, never the full URL', () => {
     toHost: 'example.com',
   });
   assert.equal(props.from_path, '/duchamp/chess/overview');
-  assert.equal(props.from_route_family, 'mdx_content');
+  assert.equal(props.from_route_family, 'site_path');
   assert.equal(props.to_host, 'example.com');
   assert.equal('to_url' in props, false);
   assert.equal('to_path' in props, false);
@@ -77,7 +77,7 @@ test('search-submit captures query text, length, and origin surface', () => {
     via: 'global',
   });
   assert.equal(fromGlobal.via, 'global');
-  assert.equal(fromGlobal.route_family, 'mdx_content');
+  assert.equal(fromGlobal.route_family, 'site_path');
 });
 
 test('search-result click captures rank and result kind without leaking result body', () => {
@@ -89,7 +89,7 @@ test('search-result click captures rank and result kind without leaking result b
     resultType: 'content',
   });
   assert.equal(props.query, 'glass');
-  assert.equal(props.result_route_family, 'mdx_content');
+  assert.equal(props.result_route_family, 'site_path');
   assert.equal(props.result_rank, 2);
   assert.equal(props.result_type, 'content');
   // No matched-sentence / context body should ever be on the payload.

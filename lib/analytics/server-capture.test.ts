@@ -68,7 +68,7 @@ test('no-op when POSTHOG_API_KEY/HOST are unset', async () => {
   await captureAxRouteRequest({
     method: 'GET',
     path: '/llms.txt',
-    userAgent: 'curl/8.5.0',
+    userAgent: 'UnlistedClient/1.0',
     referrer: null,
   });
   assert.equal(calls.length, 0);
@@ -157,7 +157,7 @@ test('captures AX surface for unknown UA and tags agent_surface_unknown', async 
   await captureAxRouteRequest({
     method: 'GET',
     path: '/llms.txt',
-    userAgent: 'curl/8.5.0',
+    userAgent: 'UnlistedClient/1.0',
     referrer: null,
   });
   assert.equal(calls.length, 1);
@@ -185,7 +185,7 @@ test('captures content surface for non-browser UA (Claude-User on /tldr)', async
   const body = readBatch(calls[0]);
 
   const axProps = body.batch[0].properties as Record<string, unknown>;
-  assert.equal(axProps.route_family, 'mdx_content');
+  assert.equal(axProps.route_family, 'site_path');
   assert.equal(axProps.ax_surface, false);
   assert.equal(axProps.is_js_likely, false);
   assert.equal(axProps.referrer, 'https://example.com/agent-context');
@@ -271,4 +271,75 @@ test('posts to POSTHOG_HOST + /batch/ with JSON content type', async () => {
   assert.equal(calls[0].init.method, 'POST');
   const headers = calls[0].init.headers as Record<string, string>;
   assert.equal(headers['Content-Type'], 'application/json');
+});
+
+test('request event carries the same classification and provenance as its pair', async () => {
+  configureProvider();
+  await captureAxRouteRequest({
+    method: 'GET',
+    path: '/tldr',
+    userAgent: 'ExaSearchBot/1.0',
+    referrer: null,
+  });
+  const [request, classification] = readBatch(calls[0]).batch;
+  const requestProps = request.properties as Record<string, unknown>;
+  const classifierProps = classification.properties as Record<string, unknown>;
+  for (const [key, value] of Object.entries(classifierProps))
+    assert.deepEqual(requestProps[key], value, key);
+  assert.equal(requestProps.classification_version, 2);
+  assert.equal(requestProps.classification_basis, 'user_agent');
+  assert.equal(requestProps.user_agent, 'ExaSearchBot/1.0');
+  assert.equal(requestProps.status, null);
+  assert.equal(request.distinct_id, classification.distinct_id);
+  assert.equal(request.timestamp, classification.timestamp);
+});
+
+test('capture drops asset and telemetry noise but preserves probe requests as probes', async () => {
+  configureProvider();
+  for (const path of ['/duchamp/art.jpg', '/_eg/mark/i/v0/e/']) {
+    await captureAxRouteRequest({ method: 'GET', path, userAgent: null, referrer: null });
+  }
+  assert.equal(calls.length, 0);
+  await captureAxRouteRequest({
+    method: 'GET',
+    path: '/admin.php',
+    userAgent: null,
+    referrer: null,
+  });
+  const props = readBatch(calls[0]).batch[0].properties as Record<string, unknown>;
+  assert.equal(props.route_family, 'probe');
+  assert.equal(props.agent_family, 'unknown');
+});
+
+test('probe paths remain observable even when the UA claims to be a browser', async () => {
+  configureProvider();
+  await captureAxRouteRequest({
+    method: 'GET',
+    path: '/admin.php',
+    userAgent: 'Mozilla/5.0 AppleWebKit/537.36 Chrome/124.0 Safari/537.36',
+    referrer: null,
+  });
+  assert.equal(calls.length, 1);
+  const props = readBatch(calls[0]).batch[0].properties as Record<string, unknown>;
+  assert.equal(props.route_family, 'probe');
+  assert.equal(props.agent_family, 'browser');
+});
+
+test('embedded browsers skip ordinary pages while scripts and native clients remain observable', async () => {
+  configureProvider();
+  await captureAxRouteRequest({
+    method: 'GET',
+    path: '/tldr',
+    userAgent: 'Mozilla/5.0 AppleWebKit/605.1.15 Mobile/23G71',
+    referrer: null,
+  });
+  assert.equal(calls.length, 0);
+  for (const userAgent of ['Python-urllib/3.14', 'NetworkingExtension/8624']) {
+    await captureAxRouteRequest({ method: 'GET', path: '/tldr', userAgent, referrer: null });
+    assert.equal(
+      (readBatch(calls.at(-1)!).batch[0].properties as Record<string, unknown>).is_js_likely,
+      false
+    );
+  }
+  assert.equal(calls.length, 2);
 });

@@ -248,10 +248,10 @@ test('whitespace-only UA is unknown', () => {
   assert.equal(r.agent_family, 'unknown');
 });
 
-test('curl UA is unknown (no AI/browser claim)', () => {
+test('curl identifies a script without attributing an operator', () => {
   const r = classifyUserAgent(UA.curl);
-  assert.equal(r.agent_family, 'unknown');
-  assert.equal(r.agent_mode, 'unknown');
+  assert.equal(r.agent_family, 'unattributed');
+  assert.equal(r.agent_mode, 'script');
 });
 
 test('legacy IE6 UA is unknown (no recognized engine token)', () => {
@@ -269,4 +269,54 @@ test('case-insensitive match for AI tokens (lower-cased ClaudeBot)', () => {
 test('arbitrary string with no known token is unknown', () => {
   const r = classifyUserAgent('SomeRandomScraper/9.9 (please stop)');
   assert.equal(r.agent_family, 'unknown');
+});
+
+test('named crawlers take precedence over embedded browser tokens', () => {
+  for (const [token, family, mode] of [
+    ['AhrefsBot/7.0', 'ahrefs', 'seo'],
+    ['AwarioBot/1.0', 'awario', 'monitoring'],
+    ['SeznamBot/4.0', 'seznam', 'general_search'],
+    ['SemrushBot/7~bl', 'semrush', 'seo'],
+    ['DuckDuckBot/1.1', 'duckduckgo', 'general_search'],
+    ['ExaSearchBot/1.0', 'exa', 'search'],
+    ['DataForSeoBot/1.0', 'dataforseo', 'seo'],
+    ['Twitterbot/1.0', 'twitter', 'preview'],
+    ['Slackbot-LinkExpanding 1.0', 'slack', 'preview'],
+  ]) {
+    const result = classifyUserAgent(
+      `Mozilla/5.0 AppleWebKit/537.36 Chrome/124.0 Safari/537.36 ${token}`
+    );
+    assert.equal(result.agent_family, family, token);
+    assert.equal(result.agent_mode, mode, token);
+  }
+});
+
+test('generic software and audit labels do not imply an AI provider or human owner', () => {
+  for (const [ua, mode] of [
+    ['jscrawler/0.1', 'crawl'],
+    ['heritrix/3.14.2 +https://www.image-meta.com', 'crawl'],
+    ['Codex-agent-experience-audit/1.0', 'audit'],
+    ['Python-urllib/3.14', 'script'],
+    ['python-requests/2.0', 'script'],
+    ['NetworkingExtension/8624.5 Network/5812 iOS/26.6.1', 'client'],
+  ]) {
+    const result = classifyUserAgent(ua);
+    assert.equal(result.agent_family, 'unattributed', ua);
+    assert.equal(result.agent_mode, mode, ua);
+    assert.equal(result.confidence, 'medium', ua);
+  }
+  assert.equal(classifyUserAgent('ImageMetaBot/1.0 Image-Classification').agent_mode, 'crawl');
+});
+
+test('iPhone embedded WebKit is browser-like while native networking is not JS evidence', () => {
+  assert.equal(
+    classifyUserAgent(
+      'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6) AppleWebKit/605.1.15 Mobile/23G71 Twitter for iPhone/12.20'
+    ).agent_mode,
+    'browser'
+  );
+  assert.equal(
+    classifyUserAgent('com.apple.WebKit.Networking/21624 Network/5812 macOS/26.6.2').agent_mode,
+    'client'
+  );
 });

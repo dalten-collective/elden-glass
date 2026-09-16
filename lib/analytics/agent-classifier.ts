@@ -53,6 +53,17 @@ export type AgentFamily =
   | 'meta'
   | 'microsoft'
   | 'bytedance'
+  | 'ahrefs'
+  | 'awario'
+  | 'seznam'
+  | 'semrush'
+  | 'duckduckgo'
+  | 'exa'
+  | 'dataforseo'
+  | 'image_meta'
+  | 'twitter'
+  | 'slack'
+  | 'unattributed'
   | 'browser'
   | 'unknown';
 
@@ -64,6 +75,12 @@ export type AgentMode =
   | 'general_search' // traditional web-search engine indexer
   | 'preview' // link unfurling / social-card preview
   | 'browser' // ordinary web browser
+  | 'crawl' // crawler with no narrower documented purpose
+  | 'seo' // search optimization / backlink tooling
+  | 'monitoring' // public web mention monitoring
+  | 'script' // HTTP library or command-line client; operator unknown
+  | 'audit' // explicitly self-described audit; ownership unverified
+  | 'client' // native networking client; no claim of human or JS activity
   | 'unknown';
 
 export type AgentConfidence = 'high' | 'medium' | 'low' | 'none';
@@ -84,6 +101,8 @@ type AgentRule = {
   family: AgentFamily;
   product: string;
   mode: AgentMode;
+  /** Token confidence, never authentication of the requesting operator. */
+  confidence?: AgentConfidence;
 };
 
 // Order matters: more specific tokens must come before less specific
@@ -128,6 +147,79 @@ const AGENT_RULES: AgentRule[] = [
   { token: 'bingbot', family: 'microsoft', product: 'Bingbot', mode: 'general_search' },
   // ByteDance
   { token: 'Bytespider', family: 'bytedance', product: 'Bytespider', mode: 'training' },
+  // Named clients observed in production. Purpose sources are in docs/analytics.md.
+  { token: 'AhrefsBot', family: 'ahrefs', product: 'AhrefsBot', mode: 'seo' },
+  { token: 'AwarioBot', family: 'awario', product: 'AwarioBot', mode: 'monitoring' },
+  { token: 'SeznamBot', family: 'seznam', product: 'SeznamBot', mode: 'general_search' },
+  { token: 'SemrushBot', family: 'semrush', product: 'SemrushBot', mode: 'seo' },
+  { token: 'DuckDuckBot', family: 'duckduckgo', product: 'DuckDuckBot', mode: 'general_search' },
+  { token: 'ExaSearchBot', family: 'exa', product: 'ExaSearchBot', mode: 'search' },
+  { token: 'DataForSeoBot', family: 'dataforseo', product: 'DataForSeoBot', mode: 'seo' },
+  { token: 'Twitterbot', family: 'twitter', product: 'Twitterbot', mode: 'preview' },
+  {
+    token: 'Slackbot-LinkExpanding',
+    family: 'slack',
+    product: 'Slackbot-LinkExpanding',
+    mode: 'preview',
+  },
+  // These strings identify software or state a purpose, not a verified owner.
+  {
+    token: 'ImageMetaBot/',
+    family: 'image_meta',
+    product: 'ImageMetaBot',
+    mode: 'crawl',
+    confidence: 'medium',
+  },
+  {
+    token: 'heritrix/',
+    family: 'unattributed',
+    product: 'Heritrix',
+    mode: 'crawl',
+    confidence: 'medium',
+  },
+  {
+    token: 'jscrawler/',
+    family: 'unattributed',
+    product: 'jscrawler',
+    mode: 'crawl',
+    confidence: 'medium',
+  },
+  {
+    token: 'Codex-agent-experience-audit/',
+    family: 'unattributed',
+    product: 'Codex-agent-experience-audit',
+    mode: 'audit',
+    confidence: 'medium',
+  },
+  {
+    token: 'Python-urllib/',
+    family: 'unattributed',
+    product: 'Python urllib',
+    mode: 'script',
+    confidence: 'medium',
+  },
+  {
+    token: 'python-requests/',
+    family: 'unattributed',
+    product: 'Python requests',
+    mode: 'script',
+    confidence: 'medium',
+  },
+  { token: 'curl/', family: 'unattributed', product: 'curl', mode: 'script', confidence: 'medium' },
+  {
+    token: 'com.apple.WebKit.Networking/',
+    family: 'apple',
+    product: 'WebKit Networking',
+    mode: 'client',
+    confidence: 'medium',
+  },
+  {
+    token: 'NetworkingExtension/',
+    family: 'unattributed',
+    product: 'NetworkingExtension',
+    mode: 'client',
+    confidence: 'medium',
+  },
 ];
 
 // Browser detection is intentionally conservative. Edge / Opera UAs
@@ -139,6 +231,8 @@ const BROWSER_RULES: AgentRule[] = [
   { token: 'Firefox/', family: 'browser', product: 'Firefox', mode: 'browser' },
   { token: 'Chrome/', family: 'browser', product: 'Chrome', mode: 'browser' },
   { token: 'Safari/', family: 'browser', product: 'Safari', mode: 'browser' },
+  // Embedded WebKit UAs, including Twitter for iPhone, may omit Safari/.
+  { token: 'AppleWebKit/', family: 'browser', product: 'WebKit', mode: 'browser' },
 ];
 
 const UNKNOWN: AgentClassification = {
@@ -171,7 +265,7 @@ export function classifyUserAgent(rawUserAgent: string | null | undefined): Agen
         agent_family: rule.family,
         agent_product: rule.product,
         agent_mode: rule.mode,
-        confidence: 'high',
+        confidence: rule.confidence ?? 'high',
         matched_token: rule.token,
       };
     }

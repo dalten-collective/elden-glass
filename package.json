@@ -10,6 +10,7 @@
     "check:generated": "npm run check:critique-assets && npm run check:manuscripts",
     "check:manuscripts": "node scripts/sync-manuscripts.js --check",
     "check:tokens": "node scripts/check-css-tokens.js",
+    "traffic:agents": "node scripts/posthog-weekly-report.js --agents",
     "traffic:weekly": "node scripts/posthog-weekly-report.js",
     "indexnow:submit": "node scripts/submit-indexnow.js",
     "audit:search": "node scripts/audit-search-plumbing.js",
