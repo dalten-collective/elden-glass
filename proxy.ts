@@ -44,7 +44,17 @@ export function proxy(request: NextRequest, event: NextFetchEvent) {
     })
   );
 
-  return NextResponse.next();
+  const response = NextResponse.next();
+  if (
+    request.nextUrl.pathname === '/pataphor' ||
+    request.nextUrl.pathname.startsWith('/pataphor/') ||
+    request.nextUrl.pathname.startsWith('/api/pataphor/')
+  ) {
+    response.headers.set('Cache-Control', 'private, no-store, max-age=0, must-revalidate');
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
+    response.headers.set('Referrer-Policy', 'same-origin');
+  }
+  return response;
 }
 
 export const config = {

@@ -13,10 +13,17 @@
     "bachelor-machines",
     "xenotext-theory",
     "cosmology",
+    "pataphor",
     "critiques",
     "author"
   ],
   "links": {
+    "pataphor": {
+      "href": "/pataphor",
+      "label": "Pataphor · private",
+      "kind": "interactive",
+      "summary": "Password-protected section. An invitation is required to read its contents."
+    },
     "gatherer": {
       "href": "/gatherer",
       "label": "Item Cards",
