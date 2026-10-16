@@ -39,6 +39,9 @@ const postHogProxyPath = '/_eg/mark';
 
 const nextConfig = {
   typedRoutes: true,
+  outputFileTracingIncludes: {
+    '/pataphor': ['./content/pages/pataphor.mdx.enc'],
+  },
   skipTrailingSlashRedirect: true,
   async redirects() {
     return legacyRedirects;
